@@ -1,0 +1,802 @@
+[
+  {
+    "id": "q_ch06_01",
+    "chapter": 6,
+    "question": "What are the three primary categories of search queries in Andrei Broder's classic web search taxonomy?",
+    "options": [
+      "Simple, Complex, and Compound",
+      "Informational, Navigational, and Transactional",
+      "Short-tail, Medium-tail, and Long-tail",
+      "Boolean, Vector, and Probabilistic"
+    ],
+    "correct": 1,
+    "explanation": "Broder's classic taxonomy classifies queries into: Informational (seeking knowledge), Navigational (seeking a specific site), and Transactional (performing an activity/purchase).",
+    "topic": "Broder's Query Taxonomy",
+    "slide_ref": "6. Queries and Interfaces.pptx",
+    "answer": 1
+  },
+  {
+    "id": "q_ch06_02",
+    "chapter": 6,
+    "question": "Which of the following queries is a typical example of a 'Transactional Query'?",
+    "options": [
+      "'Download VLC media player for Windows 11'",
+      "'What is the speed of light?'",
+      "'History of the Roman Empire'",
+      "'Stanford University homepage'"
+    ],
+    "correct": 0,
+    "explanation": "Transactional queries have the intent to perform an action, such as downloading software, buying a product, or booking a ticket.",
+    "topic": "Transactional Queries",
+    "slide_ref": "6. Queries and Interfaces.pptx",
+    "answer": 0
+  },
+  {
+    "id": "q_ch06_03",
+    "chapter": 6,
+    "question": "What does 'Pseudo-Relevance Feedback' (PRF / Blind Relevance Feedback) do to improve search results?",
+    "options": [
+      "It asks the user to manually grade each document with a 5-star rating",
+      "It assumes the top-k retrieved documents from an initial query are relevant, extracts terms with high discriminating power from them, and automatically expands the query for a second search",
+      "It deletes all search logs after 24 hours",
+      "It sends an automated email survey to the user"
+    ],
+    "correct": 1,
+    "explanation": "PRF automates relevance feedback without requiring human user effort: it assumes initial top results are relevant, extracts salient terms, and re-queries the index.",
+    "topic": "Pseudo-Relevance Feedback",
+    "slide_ref": "6. Queries and Interfaces.pptx",
+    "answer": 1
+  },
+  {
+    "id": "q_ch06_04",
+    "chapter": 6,
+    "question": "What is the 'Rocchio Algorithm' used for in vector space query formulation?",
+    "options": [
+      "Adjusting the query vector by moving it toward the centroid of known relevant documents and away from the centroid of non-relevant documents",
+      "Sorting inverted lists by document length",
+      "Compressing integers using variable byte coding",
+      "Determining PageRank scores"
+    ],
+    "correct": 0,
+    "explanation": "Rocchio formula: q_new = alpha * q_old + beta * (centroid of relevant docs) - gamma * (centroid of non-relevant docs).",
+    "topic": "Rocchio Algorithm",
+    "slide_ref": "6. Queries and Interfaces.pptx",
+    "answer": 0
+  },
+  {
+    "id": "q_ch06_05",
+    "chapter": 6,
+    "question": "In the classic Rocchio formula $q_m = \\alpha q_0 + \\beta \\frac{1}{|D_r|} \\sum_{d \\in D_r} d - \\gamma \\frac{1}{|D_{nr}|} \\sum_{d \\in D_{nr}} d$, what does the parameter $\\alpha$ control?",
+    "options": [
+      "The weight assigned to the original user query vector $q_0$",
+      "The learning rate of the neural network",
+      "The PageRank damping factor",
+      "The penalty for misspelled words"
+    ],
+    "correct": 0,
+    "explanation": "Alpha weights the original query vector, ensuring that the modified query does not drift too far from the user's initial intent.",
+    "topic": "Rocchio Parameters",
+    "slide_ref": "6. Queries and Interfaces.pptx",
+    "answer": 0
+  },
+  {
+    "id": "q_ch06_06",
+    "chapter": 6,
+    "question": "What is 'Levenshtein Edit Distance' between two strings?",
+    "options": [
+      "The physical distance between two server racks",
+      "The minimum number of single-character edit operations (Insertions, Deletions, Substitutions) required to transform one string into the other",
+      "The difference in their file sizes in kilobytes",
+      "The number of vowels they share"
+    ],
+    "correct": 1,
+    "explanation": "Levenshtein distance counts the minimum insertions, deletions, and substitutions to convert string s1 into string s2.",
+    "topic": "Levenshtein Distance",
+    "slide_ref": "6. Queries and Interfaces.pptx",
+    "answer": 1
+  },
+  {
+    "id": "q_ch06_07",
+    "chapter": 6,
+    "question": "What is the Levenshtein distance between the strings 'kitten' and 'sitting'?",
+    "options": [
+      "1",
+      "2",
+      "3",
+      "5"
+    ],
+    "correct": 2,
+    "explanation": "Three edits: 1. Substitute 'k' -> 's' ('sitten'), 2. Substitute 'e' -> 'i' ('sittin'), 3. Insert 'g' at the end ('sitting'). Distance = 3.",
+    "topic": "Levenshtein Calculation",
+    "slide_ref": "6. Queries and Interfaces.pptx",
+    "answer": 2
+  },
+  {
+    "id": "q_ch06_08",
+    "chapter": 6,
+    "question": "How does the 'Damerau-Levenshtein Distance' extend standard Levenshtein distance?",
+    "options": [
+      "It adds Transposition of two adjacent characters as a single elementary edit operation (cost = 1)",
+      "It only allows deletions",
+      "It multiplies all edit costs by 2",
+      "It ignores vowels entirely"
+    ],
+    "correct": 0,
+    "explanation": "Damerau-Levenshtein includes adjacent character transposition (e.g., 'teh' -> 'the' counts as 1 edit rather than 2), which accounts for ~80% of human typing errors.",
+    "topic": "Damerau-Levenshtein",
+    "slide_ref": "6. Queries and Interfaces.pptx",
+    "answer": 0
+  },
+  {
+    "id": "q_ch06_09",
+    "chapter": 6,
+    "question": "What is 'Soundex' used for in search engine spelling correction?",
+    "options": [
+      "Phonetic hashing of names/words based on how they sound in spoken English rather than how they are spelled",
+      "Testing server sound cards",
+      "Playing notification chimes when search results load",
+      "Synthesizing text-to-speech audio"
+    ],
+    "correct": 0,
+    "explanation": "Soundex converts English words into 4-character alphanumeric codes (e.g., 'Smith' and 'Smyth' both map to S530) based on consonant phonetic classes.",
+    "topic": "Soundex Phonetic Coding",
+    "slide_ref": "6. Queries and Interfaces.pptx",
+    "answer": 0
+  },
+  {
+    "id": "q_ch06_10",
+    "chapter": 6,
+    "question": "What is the difference between 'Isolated-Word' and 'Context-Sensitive' spelling correction?",
+    "options": [
+      "Isolated-word checks words independently against a dictionary; Context-sensitive examines surrounding words (e.g., correcting 'flew form Boston' to 'flew from Boston')",
+      "Isolated-word requires an internet connection; Context-sensitive works offline",
+      "Isolated-word is for mobile devices; Context-sensitive is for desktops",
+      "Isolated-word is unsupervised; Context-sensitive is supervised"
+    ],
+    "correct": 0,
+    "explanation": "Context-sensitive correction uses n-gram language models to detect valid dictionary words used erroneously in context (e.g., form vs from).",
+    "topic": "Context Spelling Correction",
+    "slide_ref": "6. Queries and Interfaces.pptx",
+    "answer": 0
+  },
+  {
+    "id": "q_ch06_11",
+    "chapter": 6,
+    "question": "In search engine user interface design, what is a 'SERP'?",
+    "options": [
+      "Search Engine Result Page: the web page presented to the user displaying the ranked list of search results, snippets, and ads",
+      "Server Execution Routing Protocol",
+      "Serial Encryption Recovery Program",
+      "System Error Reporting Portal"
+    ],
+    "correct": 0,
+    "explanation": "SERP stands for Search Engine Result Page, the primary interface presenting organic results, rich snippets, ads, and query suggestions.",
+    "topic": "SERP Definition",
+    "slide_ref": "6. Queries and Interfaces.pptx",
+    "answer": 0
+  },
+  {
+    "id": "q_ch06_12",
+    "chapter": 6,
+    "question": "What does 'Query Expansion' accomplish in the query process?",
+    "options": [
+      "It makes the search query font larger on the screen",
+      "It adds related terms, synonyms, or morphological variants to the user query to increase retrieval recall and bridge the vocabulary mismatch problem",
+      "It doubles the length of the document text",
+      "It translates the query into binary code"
+    ],
+    "correct": 1,
+    "explanation": "Query expansion augments the query with synonyms and co-occurring terms (from thesauri or PRF) to match relevant documents that use alternative vocabulary.",
+    "topic": "Query Expansion",
+    "slide_ref": "6. Queries and Interfaces.pptx",
+    "answer": 1
+  },
+  {
+    "id": "q_ch06_13",
+    "chapter": 6,
+    "question": "What is the primary danger of unconstrained, aggressive Query Expansion?",
+    "options": [
+      "'Topic Drift': expanding terms can inadvertently shift the query topic to unrelated concepts, reducing precision (e.g., expanding 'apple' to 'tree', 'fruit', 'orchard' for a computer query)",
+      "The search engine crashes immediately",
+      "Web pages are deleted from the index",
+      "The user's computer loses power"
+    ],
+    "correct": 0,
+    "explanation": "Topic drift occurs when expanded terms dilute the core intent, pulling in irrelevant documents from secondary word senses.",
+    "topic": "Topic Drift",
+    "slide_ref": "6. Queries and Interfaces.pptx",
+    "answer": 0
+  },
+  {
+    "id": "q_ch06_14",
+    "chapter": 6,
+    "question": "What is 'Dynamic Snippet Generation'?",
+    "options": [
+      "Generating a random text summary",
+      "Extracting text fragments from the document that specifically contain the user's query terms in surrounding sentence context, generated dynamically at query time",
+      "Displaying the first 100 characters of the file",
+      "Showing the author's biography"
+    ],
+    "correct": 1,
+    "explanation": "Dynamic snippets locate query terms within the document and extract windowed sentence fragments with bolded highlights.",
+    "topic": "Dynamic Snippets",
+    "slide_ref": "6. Queries and Interfaces.pptx",
+    "answer": 1
+  },
+  {
+    "id": "q_ch06_15",
+    "chapter": 6,
+    "question": "What is a 'Knowledge Graph Card' (or Entity Panel) on a modern SERP?",
+    "options": [
+      "A direct informational box displaying structured facts, images, and attributes about a recognized real-world entity (e.g., Leonardo da Vinci) alongside organic links",
+      "A credit card payment form",
+      "A pop-up advertisement",
+      "A technical server status log"
+    ],
+    "correct": 0,
+    "explanation": "Knowledge panels synthesize facts directly from structured knowledge bases (Wikidata, Google Knowledge Graph) to answer entity queries immediately.",
+    "topic": "Knowledge Panels",
+    "slide_ref": "6. Queries and Interfaces.pptx",
+    "answer": 0
+  },
+  {
+    "id": "q_ch06_16",
+    "chapter": 6,
+    "question": "What is 'Autocomplete' (or Typeahead) in search interfaces?",
+    "options": [
+      "A system that automatically types random words into the search bar",
+      "A predictive interface feature that suggests probable queries in real-time as the user types characters, based on prefix trees (tries) and query log statistics",
+      "A system that fills out credit card numbers",
+      "An automated bot that crawls websites"
+    ],
+    "correct": 1,
+    "explanation": "Autocomplete matches query prefixes against historical query frequency logs using Trie structures to save typing and guide users.",
+    "topic": "Autocomplete Mechanism",
+    "slide_ref": "6. Queries and Interfaces.pptx",
+    "answer": 1
+  },
+  {
+    "id": "q_ch06_17",
+    "chapter": 6,
+    "question": "In statistical query expansion, what does the 'Mutual Information' (MI) between term A and term B measure?",
+    "options": [
+      "How much information the presence of term A provides about the presence of term B in document collections",
+      "The physical distance between two servers",
+      "The execution speed of the query",
+      "The number of vowels in both terms"
+    ],
+    "correct": 0,
+    "explanation": "Mutual Information quantifies statistical co-occurrence: high MI indicates terms appear together much more frequently than independent chance predicts.",
+    "topic": "Mutual Information Expansion",
+    "slide_ref": "6. Queries and Interfaces.pptx",
+    "answer": 0
+  },
+  {
+    "id": "q_ch06_18",
+    "chapter": 6,
+    "question": "What is 'Query Reformulation' (or Query Modification) in user search behavior?",
+    "options": [
+      "When a user modifies, adds, or replaces terms in their query after being dissatisfied with the initial search results",
+      "When the server crashes and reboots",
+      "When a webmaster changes their website URL",
+      "When an ad campaign expires"
+    ],
+    "correct": 0,
+    "explanation": "Query reformulation is the interactive process of refining queries (e.g., adding constraints, fixing typos) based on observing SERP results.",
+    "topic": "Query Reformulation",
+    "slide_ref": "6. Queries and Interfaces.pptx",
+    "answer": 0
+  },
+  {
+    "id": "q_ch06_19",
+    "chapter": 6,
+    "question": "What is 'Faceted Search' (or Guided Navigation)?",
+    "options": [
+      "Searching with faceted cut glass lenses",
+      "A search interface that allows users to progressively filter and narrow down results along multiple predefined dimensional attributes (e.g., Category, Price, Brand, Date)",
+      "A search engine that only operates in French",
+      "Searching without any filters"
+    ],
+    "correct": 1,
+    "explanation": "Faceted search (common in e-commerce) displays dynamic facet counts allowing users to slice and filter large result sets along structured metadata.",
+    "topic": "Faceted Search",
+    "slide_ref": "6. Queries and Interfaces.pptx",
+    "answer": 1
+  },
+  {
+    "id": "q_ch06_20",
+    "chapter": 6,
+    "question": "What is 'Relevance Feedback' in Information Retrieval?",
+    "options": [
+      "A process where the user provides explicit feedback by marking retrieved documents as relevant or non-relevant, which the engine uses to refine the query",
+      "A customer service survey",
+      "A rating on the App Store",
+      "An automated error report"
+    ],
+    "correct": 0,
+    "explanation": "Explicit relevance feedback uses user-marked relevant/non-relevant documents to re-weight terms and re-rank results.",
+    "topic": "Relevance Feedback Concept",
+    "slide_ref": "6. Queries and Interfaces.pptx",
+    "answer": 0
+  },
+  {
+    "id": "q_ch06_21",
+    "chapter": 6,
+    "question": "Why is Explicit Relevance Feedback rarely used by everyday web searchers?",
+    "options": [
+      "Because users find it burdensome and intrusive to manually click 'Relevant' or 'Not Relevant' checkboxes for each result",
+      "Because web browsers do not support checkboxes",
+      "Because relevance feedback is technically impossible",
+      "Because search engines forbid user input"
+    ],
+    "correct": 0,
+    "explanation": "Human users prefer submitting a reformulated query rather than taking time to grade individual documents, making implicit feedback far more practical.",
+    "topic": "Explicit Feedback Reluctance",
+    "slide_ref": "6. Queries and Interfaces.pptx",
+    "answer": 0
+  },
+  {
+    "id": "q_ch06_22",
+    "chapter": 6,
+    "question": "What is 'Implicit Relevance Feedback'?",
+    "options": [
+      "Inferring user interest and relevance indirectly from natural interaction telemetry (click logs, dwell time, mouse hovers, scroll depth) without user effort",
+      "Forcing users to fill out surveys before searching",
+      "Guessing user intent using horoscopes",
+      "Asking users to rate documents on a 1-10 scale"
+    ],
+    "correct": 0,
+    "explanation": "Implicit feedback extracts signals from user behavior (e.g., clicking result #2 and staying on the page for 3 minutes implies relevance).",
+    "topic": "Implicit Feedback Signals",
+    "slide_ref": "6. Queries and Interfaces.pptx",
+    "answer": 0
+  },
+  {
+    "id": "q_ch06_23",
+    "chapter": 6,
+    "question": "What does 'Dwell Time' represent in search engine click log analysis?",
+    "options": [
+      "The physical time the user spent at their computer desk",
+      "The duration of time a user spends on a clicked destination page before returning to the SERP (a short dwell time indicates a 'bounce' / poor relevance)",
+      "The latency of the server hardware",
+      "The duration of the crawler's politeness delay"
+    ],
+    "correct": 1,
+    "explanation": "A high dwell time indicates the user found satisfying content; a dwell time of 2 seconds ('pogo-sticking') signals an unsatisfied click.",
+    "topic": "Dwell Time",
+    "slide_ref": "6. Queries and Interfaces.pptx",
+    "answer": 1
+  },
+  {
+    "id": "q_ch06_24",
+    "chapter": 6,
+    "question": "What is 'Pogo-sticking' in web search user behavior?",
+    "options": [
+      "A user jumping on a physical toy while searching",
+      "A pattern where a user clicks a search result, immediately bounces back to the SERP due to dissatisfaction, clicks another result, and repeats",
+      "A search crawler getting stuck in a loop",
+      "A query containing repeating words"
+    ],
+    "correct": 1,
+    "explanation": "Pogo-sticking is a strong negative implicit signal: bouncing back and forth indicates the top results are failing to meet the user's intent.",
+    "topic": "Pogo-sticking",
+    "slide_ref": "6. Queries and Interfaces.pptx",
+    "answer": 1
+  },
+  {
+    "id": "q_ch06_25",
+    "chapter": 6,
+    "question": "How is 'Dice's Coefficient' defined between two term co-occurrence sets X and Y?",
+    "options": [
+      "2 * |X ∩ Y| / (|X| + |Y|)",
+      "|X ∩ Y| / |X ∪ Y|",
+      "|X| * |Y|",
+      "log(|X| / |Y|)"
+    ],
+    "correct": 0,
+    "explanation": "Dice's coefficient normalizes the shared co-occurrence count by the sum of individual set sizes: 2|X ∩ Y| / (|X| + |Y|).",
+    "topic": "Dice's Coefficient",
+    "slide_ref": "6. Queries and Interfaces.pptx",
+    "answer": 0
+  },
+  {
+    "id": "q_ch06_26",
+    "chapter": 6,
+    "question": "What is a 'KWIC' (Key Word In Context) display?",
+    "options": [
+      "A text snippet format that centers the target query keyword and displays a fixed window of preceding and succeeding words",
+      "A keyboard shortcut on Mac computers",
+      "A keyword encryption algorithm",
+      "A fast crawler protocol"
+    ],
+    "correct": 0,
+    "explanation": "KWIC displays show matched terms highlighted in the middle of a short context window to demonstrate exact grammatical usage.",
+    "topic": "KWIC Display",
+    "slide_ref": "6. Queries and Interfaces.pptx",
+    "answer": 0
+  },
+  {
+    "id": "q_ch06_27",
+    "chapter": 6,
+    "question": "What is 'Query Intent Disambiguation'?",
+    "options": [
+      "Deleting ambiguous search queries",
+      "Identifying the intended meaning of an ambiguous query (e.g., determining whether 'jaguar' refers to the animal, luxury car brand, or operating system) and presenting diverse results",
+      "Translating ambiguous words into Latin",
+      "Forcing the user to choose an intent before searching"
+    ],
+    "correct": 1,
+    "explanation": "Disambiguation predicts the probability distribution over candidate intents and diversifies top results to satisfy different interpretations.",
+    "topic": "Intent Disambiguation",
+    "slide_ref": "6. Queries and Interfaces.pptx",
+    "answer": 1
+  },
+  {
+    "id": "q_ch06_28",
+    "chapter": 6,
+    "question": "In search interfaces, what is 'Infinite Scroll' and what is its main drawback for search engines?",
+    "options": [
+      "Loading more results automatically as the user scrolls down; its drawback is that users can rarely reach footer links and deep result tracking is skewed",
+      "A screen that never stops moving",
+      "A crawler that never stops downloading",
+      "A query that runs forever"
+    ],
+    "correct": 0,
+    "explanation": "Infinite scroll offers seamless browsing on social media, but on search engines it obscures footer navigation and complicates click-depth analytics.",
+    "topic": "Infinite Scroll Trade-off",
+    "slide_ref": "6. Queries and Interfaces.pptx",
+    "answer": 0
+  },
+  {
+    "id": "q_ch06_29",
+    "chapter": 6,
+    "question": "What is a 'Zero-Result Query' (or Null Search)?",
+    "options": [
+      "A query that returns exactly zero search results, indicating vocabulary mismatch, severe typos, or a gap in content coverage",
+      "A query that costs zero dollars",
+      "A query with zero characters",
+      "A query that runs in zero seconds"
+    ],
+    "correct": 0,
+    "explanation": "Zero-result queries signal potential content deficiencies or parsing failures, monitored closely by search teams to build synonym mappings.",
+    "topic": "Zero-Result Queries",
+    "slide_ref": "6. Queries and Interfaces.pptx",
+    "answer": 0
+  },
+  {
+    "id": "q_ch06_30",
+    "chapter": 6,
+    "question": "Why are 'Session Logs' analyzed in search engines?",
+    "options": [
+      "To track sequences of queries, reformulations, and clicks made by a user within a single task session to understand search task progression",
+      "To spy on user banking passwords",
+      "To delete user browsing history",
+      "To optimize server power consumption"
+    ],
+    "correct": 0,
+    "explanation": "Session analysis reveals user journeys, helping train models to predict the user's next query and provide contextual suggestions.",
+    "topic": "Session Logs",
+    "slide_ref": "6. Queries and Interfaces.pptx",
+    "answer": 0
+  },
+  {
+    "id": "q_ch06_31",
+    "chapter": 6,
+    "question": "What is 'Query Drift' during Pseudo-Relevance Feedback?",
+    "options": [
+      "The physical drift of internet cables across ocean floors",
+      "When top-retrieved initial documents contain unrelated high-frequency terms that steer expanded queries away from the user's intended topic",
+      "When a query takes longer than 1 second to execute",
+      "When the user moves their mouse away from the search box"
+    ],
+    "correct": 1,
+    "explanation": "If initial top results include non-relevant documents, terms extracted from them will 'drift' the query toward irrelevant subjects.",
+    "topic": "Query Drift Mechanism",
+    "slide_ref": "6. Queries and Interfaces.pptx",
+    "answer": 1
+  },
+  {
+    "id": "q_ch06_32",
+    "chapter": 6,
+    "question": "In spelling correction, what is a 'Trie' (Prefix Tree) data structure used for?",
+    "options": [
+      "Storing a dictionary of terms hierarchically by character prefix, enabling fast lookup of candidate words with a given prefix or within a small edit distance",
+      "Encrypting hard drive sectors",
+      "Routing internet packets over Wi-Fi",
+      "Sorting search results by date"
+    ],
+    "correct": 0,
+    "explanation": "Tries organize dictionary words sharing common prefixes, allowing rapid pruning when searching for typo corrections or autocomplete candidates.",
+    "topic": "Trie Data Structure",
+    "slide_ref": "6. Queries and Interfaces.pptx",
+    "answer": 0
+  },
+  {
+    "id": "q_ch06_33",
+    "chapter": 6,
+    "question": "What is an 'Isolated Term' spelling error vs a 'Real-Word' spelling error?",
+    "options": [
+      "Isolated error produces a non-word (e.g., 'graffe'); Real-word error produces a valid dictionary word used incorrectly (e.g., 'there' instead of 'their')",
+      "Isolated error occurs in isolation on the moon",
+      "Real-word errors only occur in books",
+      "Isolated errors crash the search engine"
+    ],
+    "correct": 0,
+    "explanation": "Non-word errors fail simple dictionary lookup; real-word errors pass dictionary lookup and require grammatical/n-gram context to detect.",
+    "topic": "Spelling Error Types",
+    "slide_ref": "6. Queries and Interfaces.pptx",
+    "answer": 0
+  },
+  {
+    "id": "q_ch06_34",
+    "chapter": 6,
+    "question": "How do search engines use 'Click-Through Rate' (CTR) in ranking evaluation?",
+    "options": [
+      "CTR = (Clicks on a result) / (Impressions of that result); higher CTR generally indicates higher relevance or appeal of the title and snippet",
+      "CTR measures the internet download speed of the user",
+      "CTR is the price of a computer mouse",
+      "CTR measures the percentage of misspelled queries"
+    ],
+    "correct": 0,
+    "explanation": "CTR measures the proportion of users who clicked on a displayed result, reflecting snippet attractiveness and query relevance.",
+    "topic": "CTR Metric",
+    "slide_ref": "6. Queries and Interfaces.pptx",
+    "answer": 0
+  },
+  {
+    "id": "q_ch06_35",
+    "chapter": 6,
+    "question": "What is 'Position Bias' in search engine result click logs?",
+    "options": [
+      "Users have a strong cognitive tendency to click the top-ranked results regardless of their actual relevance simply because they appear first on the page",
+      "The physical tilt of the user's monitor",
+      "Bias introduced by the user's geographic location",
+      "Bias caused by keyboard layouts"
+    ],
+    "correct": 0,
+    "explanation": "Position bias causes rank 1 to receive far more clicks than rank 5 even when rank 5 is more relevant, requiring debiasing algorithms in ML training.",
+    "topic": "Position Bias",
+    "slide_ref": "6. Queries and Interfaces.pptx",
+    "answer": 0
+  },
+  {
+    "id": "q_ch06_36",
+    "chapter": 6,
+    "question": "What is 'Eye-Tracking' research in search engine user interfaces famously known for demonstrating?",
+    "options": [
+      "The 'Golden Triangle' / F-shaped viewing pattern where user attention is heavily concentrated on the top-left area of the SERP",
+      "That users read every single word on a webpage from top to bottom",
+      "That users only look at images",
+      "That users never read snippets"
+    ],
+    "correct": 0,
+    "explanation": "Eye-tracking studies (e.g., Enquiro, 2005) revealed the F-shaped scanning pattern where users focus on the top 2-3 results and left margins.",
+    "topic": "Golden Triangle",
+    "slide_ref": "6. Queries and Interfaces.pptx",
+    "answer": 0
+  },
+  {
+    "id": "q_ch06_37",
+    "chapter": 6,
+    "question": "What does 'Universal Search' (or Blended Search) mean on modern SERPs?",
+    "options": [
+      "Integrating heterogeneous result types (web pages, images, news, videos, maps, direct answers) into a single unified result list",
+      "A search engine that operates across all planets in the universe",
+      "Searching only university websites",
+      "A search engine translated into all languages"
+    ],
+    "correct": 0,
+    "explanation": "Universal search blends vertical search results (images, maps, news, shopping) seamlessly into standard organic web listings.",
+    "topic": "Universal Search",
+    "slide_ref": "6. Queries and Interfaces.pptx",
+    "answer": 0
+  },
+  {
+    "id": "q_ch06_38",
+    "chapter": 6,
+    "question": "What is 'Query Suggestion' based on Query Log Mining?",
+    "options": [
+      "Recommending popular alternative queries that other users with similar initial queries frequently searched for subsequently in their sessions",
+      "Randomly generating English sentences",
+      "Asking webmasters to suggest queries",
+      "Displaying the search engine developer's favorite topics"
+    ],
+    "correct": 0,
+    "explanation": "By mining historical user session graphs, engines identify high-probability transition queries and suggest them at the bottom of the SERP.",
+    "topic": "Query Suggestions",
+    "slide_ref": "6. Queries and Interfaces.pptx",
+    "answer": 0
+  },
+  {
+    "id": "q_ch06_39",
+    "chapter": 6,
+    "question": "What does an 'AND' query default do in Google compared to classic Boolean retrieval systems?",
+    "options": [
+      "Google treats space-separated terms as an implicit AND query, but ranks documents by relevance rather than returning an unranked boolean set",
+      "Google treats spaces as OR queries",
+      "Google ignores all terms except the first one",
+      "Google requires users to type 'AND' in capital letters"
+    ],
+    "correct": 0,
+    "explanation": "Modern search engines interpret multi-term queries with implicit AND logic, but rank results probabilistically rather than treating all matches equally.",
+    "topic": "Implicit AND",
+    "slide_ref": "6. Queries and Interfaces.pptx",
+    "answer": 0
+  },
+  {
+    "id": "q_ch06_40",
+    "chapter": 6,
+    "question": "What is 'Fuzzy Search' in text query processing?",
+    "options": [
+      "Searching with blurry glasses",
+      "Matching strings that are approximately equal to the query term within a specified edit distance or similarity threshold, tolerating typos",
+      "A search engine that returns random answers",
+      "Searching only for animals with fur"
+    ],
+    "correct": 1,
+    "explanation": "Fuzzy search finds close matches even when query terms or document words contain typographical errors or slight spelling variations.",
+    "topic": "Fuzzy Search",
+    "slide_ref": "6. Queries and Interfaces.pptx",
+    "answer": 1
+  },
+  {
+    "id": "q_ch06_41",
+    "chapter": 6,
+    "question": "What is 'Query Segmentation'?",
+    "options": [
+      "Dividing a multi-word query into meaningful multi-word phrases and entities (e.g., 'new york hotel reviews' -> ['new york', 'hotel reviews'])",
+      "Cutting the search query string in half",
+      "Deleting spaces between words",
+      "Separating queries by user age group"
+    ],
+    "correct": 0,
+    "explanation": "Query segmentation identifies compound semantic units in queries to apply phrase-level scoring rather than isolated word scoring.",
+    "topic": "Query Segmentation",
+    "slide_ref": "6. Queries and Interfaces.pptx",
+    "answer": 0
+  },
+  {
+    "id": "q_ch06_42",
+    "chapter": 6,
+    "question": "In search interfaces, what are 'Breadcrumbs'?",
+    "options": [
+      "Pieces of bread left on keyboards",
+      "A navigational trail displayed on search snippets (e.g., Home > Electronics > Audio > Headphones) showing the page's hierarchical location on the site",
+      "A cookie stored in the browser",
+      "A list of broken links on a website"
+    ],
+    "correct": 1,
+    "explanation": "Breadcrumbs show structural hierarchy, helping users understand site structure and navigate directly to category levels.",
+    "topic": "Breadcrumbs",
+    "slide_ref": "6. Queries and Interfaces.pptx",
+    "answer": 1
+  },
+  {
+    "id": "q_ch06_43",
+    "chapter": 6,
+    "question": "What is 'Direct Answer' (Featured Snippet) on Google SERP?",
+    "options": [
+      "A special card at the very top of the SERP that extracts a concise paragraph, table, or list directly answering the user query without needing to visit the site",
+      "An automated phone call from Google",
+      "A direct message on Twitter",
+      "A sponsored advertisement that costs $10 per click"
+    ],
+    "correct": 0,
+    "explanation": "Featured snippets (Position Zero) extract the factual answer directly from high-authority pages and display it prominently at the top.",
+    "topic": "Featured Snippets",
+    "slide_ref": "6. Queries and Interfaces.pptx",
+    "answer": 0
+  },
+  {
+    "id": "q_ch06_44",
+    "chapter": 6,
+    "question": "What is 'Phonetic Matching' useful for in search engines?",
+    "options": [
+      "Finding names or terms that sound identical despite completely different spellings (e.g., 'Geoff' and 'Jeff', 'Katherine' and 'Catherine')",
+      "Testing the quality of computer speakers",
+      "Recording user voice queries",
+      "Measuring acoustic frequency of servers"
+    ],
+    "correct": 0,
+    "explanation": "Phonetic algorithms (Soundex, Metaphone, Double Metaphone) map homophones to identical hash codes, solving phonetic spelling errors.",
+    "topic": "Phonetic Matching",
+    "slide_ref": "6. Queries and Interfaces.pptx",
+    "answer": 0
+  },
+  {
+    "id": "q_ch06_45",
+    "chapter": 6,
+    "question": "What is 'Query Difficulty Prediction' (Pre-retrieval / Post-retrieval prediction)?",
+    "options": [
+      "Predicting whether a given query will be hard for the search engine to answer accurately, allowing the system to trigger advanced fallback strategies",
+      "Measuring how hard it was for the user to type the query",
+      "Testing the IQ of the user",
+      "Counting the number of letters in the query"
+    ],
+    "correct": 0,
+    "explanation": "Predicting query performance allows search engines to selectively activate computationally expensive models or prompt users for clarification.",
+    "topic": "Query Difficulty",
+    "slide_ref": "6. Queries and Interfaces.pptx",
+    "answer": 0
+  },
+  {
+    "id": "q_ch06_46",
+    "chapter": 6,
+    "question": "In search interfaces, what is 'Query Autocomplete' ranking typically based on?",
+    "options": [
+      "Historical query frequency, recent trending searches, user location, and personalization context",
+      "Strictly alphabetical sorting of all words in existence",
+      "Random selection",
+      "The longest query string available"
+    ],
+    "correct": 0,
+    "explanation": "Autocomplete ranks suggestions by popularity, velocity (trending events), geographic locality, and past user session behavior.",
+    "topic": "Autocomplete Ranking",
+    "slide_ref": "6. Queries and Interfaces.pptx",
+    "answer": 0
+  },
+  {
+    "id": "q_ch06_47",
+    "chapter": 6,
+    "question": "What does the 'Did You Mean?' feature in search engines represent?",
+    "options": [
+      "Automated spelling correction suggestions based on query log frequencies and noisy channel models",
+      "A philosophical question posed to the user",
+      "An advertisement for a grammar school",
+      "A security warning about computer viruses"
+    ],
+    "correct": 0,
+    "explanation": "'Did you mean' suggests plausible high-frequency corrections when an entered query is likely a typo of a popular search term.",
+    "topic": "Did You Mean",
+    "slide_ref": "6. Queries and Interfaces.pptx",
+    "answer": 0
+  },
+  {
+    "id": "q_ch06_48",
+    "chapter": 6,
+    "question": "What is 'Search Session' definition in search log analytics?",
+    "options": [
+      "A sequence of queries and interactions performed by a single user attempting to fulfill one or more information needs within a continuous time window",
+      "The duration of the computer's power-on time",
+      "A meeting between search engine executives",
+      "A single HTTP TCP connection"
+    ],
+    "correct": 0,
+    "explanation": "A search session groups continuous user activity (typically delimited by 30 minutes of inactivity) to analyze task completion.",
+    "topic": "Search Session Definition",
+    "slide_ref": "6. Queries and Interfaces.pptx",
+    "answer": 0
+  },
+  {
+    "id": "q_ch06_49",
+    "chapter": 6,
+    "question": "What is 'Query Log Privacy' and why is it a significant challenge?",
+    "options": [
+      "Search queries often contain sensitive personal data (medical conditions, names, credit card numbers, addresses); anonymizing queries without destroying utility is difficult",
+      "Search logs are public records accessible by anyone",
+      "Computers cannot store private information",
+      "Search logs are legally required to be printed on paper"
+    ],
+    "correct": 0,
+    "explanation": "The infamous 2006 AOL query log release showed that even pseudo-anonymized user IDs can be de-anonymized through unique query sequences.",
+    "topic": "Query Log Privacy",
+    "slide_ref": "6. Queries and Interfaces.pptx",
+    "answer": 0
+  },
+  {
+    "id": "q_ch06_50",
+    "chapter": 6,
+    "question": "What is 'Vertical Search'?",
+    "options": [
+      "Searching for documents displayed vertically on portrait monitors",
+      "A specialized search engine focused on a specific content domain, media type, or industry (e.g., Google Scholar for academic papers, Kayak for flights)",
+      "A search engine that crawls from bottom to top",
+      "A search engine designed for skyscrapers"
+    ],
+    "correct": 1,
+    "explanation": "Verticals focus deeply on single verticals (travel, shopping, news, academic, images) with domain-specific schemas and filters.",
+    "topic": "Vertical Search",
+    "slide_ref": "6. Queries and Interfaces.pptx",
+    "answer": 1
+  }
+]

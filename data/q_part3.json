@@ -1,0 +1,802 @@
+[
+  {
+    "id": "q_ch03_01",
+    "chapter": 3,
+    "question": "What is the primary role of the 'URL Frontier' in a web crawler architecture?",
+    "options": [
+      "To convert HTML files into PDF format",
+      "To store and prioritize discovered URLs waiting to be fetched",
+      "To calculate PageRank scores for all seed pages",
+      "To compress inverted indexes"
+    ],
+    "correct": 1,
+    "explanation": "The URL Frontier is the core data structure managing queues of discovered URLs, enforcing crawl priorities and politeness constraints.",
+    "topic": "URL Frontier",
+    "slide_ref": "3. Crawls and Feeds.pptx",
+    "answer": 1
+  },
+  {
+    "id": "q_ch03_02",
+    "chapter": 3,
+    "question": "Which of the following is considered part of the 'Deep Web' (or Invisible Web)?",
+    "options": [
+      "The Google homepage",
+      "Public news articles on CNN.com",
+      "Content accessible only by submitting forms or behind authentication paywalls",
+      "Static HTML pages linked from Wikipedia"
+    ],
+    "correct": 2,
+    "explanation": "The Deep Web consists of content hidden behind dynamic form queries, logins, paywalls, or unlinked databases that standard web crawlers cannot discover via static links.",
+    "topic": "Deep Web",
+    "slide_ref": "3. Crawls and Feeds.pptx",
+    "answer": 2
+  },
+  {
+    "id": "q_ch03_03",
+    "chapter": 3,
+    "question": "What does the 'Robots Exclusion Protocol' (robots.txt) allow webmasters to do?",
+    "options": [
+      "Specify which URL paths automated web crawlers are allowed or forbidden from fetching",
+      "Encrypt website source code",
+      "Force search engines to rank their website first",
+      "Delete search engine index files"
+    ],
+    "correct": 0,
+    "explanation": "robots.txt is a voluntary standard placed at the root of a domain instructing automated bots which paths to avoid crawling.",
+    "topic": "robots.txt",
+    "slide_ref": "3. Crawls and Feeds.pptx",
+    "answer": 0
+  },
+  {
+    "id": "q_ch03_04",
+    "chapter": 3,
+    "question": "What is a 'Spider Trap' in web crawling?",
+    "options": [
+      "A firewall rule that bans all web traffic",
+      "A website structure with an infinite cycle of dynamically generated links that traps crawlers in an endless fetching loop",
+      "An optical network switch for fiber cables",
+      "A bug in the operating system kernel"
+    ],
+    "correct": 1,
+    "explanation": "Spider traps (e.g., dynamic perpetual calendars, session-ID loops) generate endless unique URLs, causing crawlers to waste resources indefinitely.",
+    "topic": "Spider Traps",
+    "slide_ref": "3. Crawls and Feeds.pptx",
+    "answer": 1
+  },
+  {
+    "id": "q_ch03_05",
+    "chapter": 3,
+    "question": "What is 'Politeness' in web crawler engineering?",
+    "options": [
+      "Displaying polite greetings on the command line interface",
+      "Ensuring the crawler does not overwhelm target web servers by limiting request frequency and obeying robots.txt",
+      "Sending email thank-you notes to webmasters after crawling",
+      "Only crawling websites written in English"
+    ],
+    "correct": 1,
+    "explanation": "Politeness policies restrict request rates per domain/IP (e.g., adding a delay of a few seconds between requests) to prevent server strain.",
+    "topic": "Crawler Politeness",
+    "slide_ref": "3. Crawls and Feeds.pptx",
+    "answer": 1
+  },
+  {
+    "id": "q_ch03_06",
+    "chapter": 3,
+    "question": "In robots.txt, what does the directive 'Disallow: /admin/' indicate to compliant crawlers?",
+    "options": [
+      "The crawler must crawl /admin/ immediately",
+      "The crawler is forbidden from crawling any URL whose path begins with /admin/",
+      "The /admin/ directory will be deleted by the crawler",
+      "The crawler must authenticate using an admin password"
+    ],
+    "correct": 1,
+    "explanation": "Disallow: /admin/ tells compliant web crawlers not to request any resource under the /admin/ path.",
+    "topic": "robots.txt Directives",
+    "slide_ref": "3. Crawls and Feeds.pptx",
+    "answer": 1
+  },
+  {
+    "id": "q_ch03_07",
+    "chapter": 3,
+    "question": "Which HTTP response status code indicates to a crawler that a web page has been permanently moved to a new URL?",
+    "options": [
+      "200 OK",
+      "301 Moved Permanently",
+      "404 Not Found",
+      "503 Service Unavailable"
+    ],
+    "correct": 1,
+    "explanation": "HTTP 301 signals permanent redirection, instructing the crawler to update its index and URL frontier with the new destination URL.",
+    "topic": "HTTP Status Codes",
+    "slide_ref": "3. Crawls and Feeds.pptx",
+    "answer": 1
+  },
+  {
+    "id": "q_ch03_08",
+    "chapter": 3,
+    "question": "What does the 'Freshness' metric of a search engine index measure?",
+    "options": [
+      "How recently the server room was cleaned",
+      "The proportion of indexed pages that accurately reflect the current live state of the web",
+      "The ambient temperature of the server CPU",
+      "The number of new employees hired"
+    ],
+    "correct": 1,
+    "explanation": "Freshness evaluates how closely the index mirrors the latest live content and updates of the web.",
+    "topic": "Index Freshness",
+    "slide_ref": "3. Crawls and Feeds.pptx",
+    "answer": 1
+  },
+  {
+    "id": "q_ch03_09",
+    "chapter": 3,
+    "question": "What is 'Mercator' in search engine history?",
+    "options": [
+      "A famous classic scalable, extensible web crawler architecture designed by Heydon and Najork",
+      "A programming language used for database queries",
+      "A compression algorithm for inverted indexes",
+      "An optical disk drive standard"
+    ],
+    "correct": 0,
+    "explanation": "Mercator is the landmark modular web crawler architecture that introduced the two-tier URL frontier design for politeness and priority.",
+    "topic": "Mercator Crawler",
+    "slide_ref": "3. Crawls and Feeds.pptx",
+    "answer": 0
+  },
+  {
+    "id": "q_ch03_10",
+    "chapter": 3,
+    "question": "Why is DNS resolution often a significant bottleneck during web-scale crawling?",
+    "options": [
+      "Because DNS servers charge money per request",
+      "Resolving domain names to IP addresses over UDP involves network round-trips that can block crawler threads if not cached or handled asynchronously",
+      "DNS servers only operate at night",
+      "DNS resolution deletes URL frontiers"
+    ],
+    "correct": 1,
+    "explanation": "Standard synchronous DNS lookups block worker threads; high-performance crawlers implement custom asynchronous multi-threaded DNS caches.",
+    "topic": "DNS Bottleneck",
+    "slide_ref": "3. Crawls and Feeds.pptx",
+    "answer": 1
+  },
+  {
+    "id": "q_ch03_11",
+    "chapter": 3,
+    "question": "What is an 'XML Sitemap'?",
+    "options": [
+      "A visual diagram drawn for human visitors",
+      "A structured XML document provided by webmasters listing URLs on their site and metadata like update frequency and priority to assist crawlers",
+      "A proprietary file format used exclusively by Microsoft Word",
+      "A CSS file for styling mobile pages"
+    ],
+    "correct": 1,
+    "explanation": "XML Sitemaps explicitly declare canonical URLs, change frequencies, and last modification dates to guide search engine discovery.",
+    "topic": "XML Sitemaps",
+    "slide_ref": "3. Crawls and Feeds.pptx",
+    "answer": 1
+  },
+  {
+    "id": "q_ch03_12",
+    "chapter": 3,
+    "question": "Which hashing algorithm is widely used in search engine preprocessing to detect 'Near-Duplicate' web documents?",
+    "options": [
+      "MD5 exclusively",
+      "SimHash or MinHash (Locality-Sensitive Hashing)",
+      "SHA-256",
+      "CRC32"
+    ],
+    "correct": 1,
+    "explanation": "SimHash and MinHash are Locality-Sensitive Hashing (LSH) algorithms where similar documents produce hashes with small Hamming distances, ideal for near-duplicate detection.",
+    "topic": "Near-Duplicate Detection",
+    "slide_ref": "3. Crawls and Feeds.pptx",
+    "answer": 1
+  },
+  {
+    "id": "q_ch03_13",
+    "chapter": 3,
+    "question": "In web crawling, what is a 'Seed URL'?",
+    "options": [
+      "An initial starting URL given to the crawler from which it begins traversing hyperlinks",
+      "A broken URL that generates 404 errors",
+      "A URL that points to a seed agricultural company",
+      "A URL stored on a USB flash drive"
+    ],
+    "correct": 0,
+    "explanation": "Seed URLs are the starting points loaded into the URL frontier to initiate a broad or focused crawl.",
+    "topic": "Seed URLs",
+    "slide_ref": "3. Crawls and Feeds.pptx",
+    "answer": 0
+  },
+  {
+    "id": "q_ch03_14",
+    "chapter": 3,
+    "question": "Why do crawlers need a 'Fingerprint' or 'Seen URL' filter (e.g., using a Bloom Filter)?",
+    "options": [
+      "To avoid fetching the same URL repeatedly and getting trapped in redundant network cycles",
+      "To increase the size of web pages",
+      "To change user passwords automatically",
+      "To encrypt web pages with SSL"
+    ],
+    "correct": 0,
+    "explanation": "A seen URL filter checks whether a URL has already been visited or queued, preventing infinite loops and redundant crawls.",
+    "topic": "Seen URL Filtering",
+    "slide_ref": "3. Crawls and Feeds.pptx",
+    "answer": 0
+  },
+  {
+    "id": "q_ch03_15",
+    "chapter": 3,
+    "question": "What is the primary advantage of a Bloom Filter in URL deduplication?",
+    "options": [
+      "It provides 100% deterministic accuracy with zero false positives",
+      "It is extremely space-efficient in memory, with a small tunable false-positive rate and zero false-negatives",
+      "It can store full HTML web pages",
+      "It runs inside the GPU"
+    ],
+    "correct": 1,
+    "explanation": "Bloom filters store millions of URL hashes in a compact bit array with zero false negatives and configurable low false-positive rates.",
+    "topic": "Bloom Filter",
+    "slide_ref": "3. Crawls and Feeds.pptx",
+    "answer": 1
+  },
+  {
+    "id": "q_ch03_16",
+    "chapter": 3,
+    "question": "What does an HTTP 429 status code signify when received by a web crawler?",
+    "options": [
+      "200 Success",
+      "Too Many Requests (Rate limit exceeded; the crawler must slow down)",
+      "Page Not Found",
+      "Internal Server Error"
+    ],
+    "correct": 1,
+    "explanation": "HTTP 429 Too Many Requests indicates the server is rate-limiting the crawler, requiring the crawler to back off.",
+    "topic": "HTTP Rate Limiting",
+    "slide_ref": "3. Crawls and Feeds.pptx",
+    "answer": 1
+  },
+  {
+    "id": "q_ch03_17",
+    "chapter": 3,
+    "question": "What is 'Focused Crawling' (or Topical Crawling)?",
+    "options": [
+      "Crawling only during business hours",
+      "A crawling strategy that selectively fetches only pages relevant to a pre-defined specific topic or domain",
+      "Crawling without using a URL frontier",
+      "A crawler that only downloads images"
+    ],
+    "correct": 1,
+    "explanation": "Focused crawlers predict the topic relevance of unvisited links and prioritize URLs most likely to lead to on-topic content.",
+    "topic": "Focused Crawling",
+    "slide_ref": "3. Crawls and Feeds.pptx",
+    "answer": 1
+  },
+  {
+    "id": "q_ch03_18",
+    "chapter": 3,
+    "question": "What is 'Boilerplate Removal' in document preprocessing?",
+    "options": [
+      "Cleaning the physical server hardware fans",
+      "Stripping repetitive, non-content page elements such as navigation bars, headers, footers, sidebars, and ads",
+      "Deleting the HTML <!DOCTYPE> tag",
+      "Compressing files using Zip format"
+    ],
+    "correct": 1,
+    "explanation": "Boilerplate removal isolates the primary informational article body from site navigation, legal disclaimers, and banner ads.",
+    "topic": "Boilerplate Removal",
+    "slide_ref": "3. Crawls and Feeds.pptx",
+    "answer": 1
+  },
+  {
+    "id": "q_ch03_19",
+    "chapter": 3,
+    "question": "How does a crawler handle character encoding detection for raw downloaded web pages?",
+    "options": [
+      "It always assumes all web pages are written in ASCII",
+      "It inspects the HTTP 'Content-Type' header, HTML <meta charset> tags, and applies statistical byte heuristics if headers are missing or incorrect",
+      "It converts all text to binary 0s and 1s",
+      "It asks the user to manually select the encoding"
+    ],
+    "correct": 1,
+    "explanation": "Crawlers inspect headers and meta tags and fallback to statistical encoding detectors (like chardet or ICU) to convert pages to clean UTF-8.",
+    "topic": "Character Encoding",
+    "slide_ref": "3. Crawls and Feeds.pptx",
+    "answer": 1
+  },
+  {
+    "id": "q_ch03_20",
+    "chapter": 3,
+    "question": "What does the 'Crawl-delay' directive in a robots.txt file specify?",
+    "options": [
+      "The number of days before the webmaster replies to emails",
+      "The minimum number of seconds the crawler must wait between consecutive requests to that host",
+      "The speed of the crawler's internet connection",
+      "The duration of the search engine's ad campaigns"
+    ],
+    "correct": 1,
+    "explanation": "Crawl-delay specifies the pause interval in seconds between successive HTTP requests to avoid overloading the server.",
+    "topic": "Crawl-delay",
+    "slide_ref": "3. Crawls and Feeds.pptx",
+    "answer": 1
+  },
+  {
+    "id": "q_ch03_21",
+    "chapter": 3,
+    "question": "In web crawling, what is 'Breadth-First Search' (BFS) link traversal?",
+    "options": [
+      "Traversing deep into one site's link chain before exploring other sites",
+      "Exploring all immediate neighbor links of the current page before moving to pages at the next distance tier",
+      "Randomly guessing URL characters",
+      "Crawling URLs in reverse alphabetical order"
+    ],
+    "correct": 1,
+    "explanation": "BFS explores pages tier-by-tier by link depth, which naturally discovers high-authority, well-linked homepage links first.",
+    "topic": "BFS Crawling",
+    "slide_ref": "3. Crawls and Feeds.pptx",
+    "answer": 1
+  },
+  {
+    "id": "q_ch03_22",
+    "chapter": 3,
+    "question": "Why is pure Depth-First Search (DFS) rarely used for broad web crawling?",
+    "options": [
+      "DFS can easily get stuck in deep paths or infinite spider traps, failing to discover broad high-quality content across the web",
+      "DFS requires too much bandwidth",
+      "DFS is illegal under international law",
+      "DFS cannot parse HTML tags"
+    ],
+    "correct": 0,
+    "explanation": "DFS dives deeply down single paths, making it vulnerable to infinite dynamic paths and missing broad web coverage.",
+    "topic": "DFS Weakness",
+    "slide_ref": "3. Crawls and Feeds.pptx",
+    "answer": 0
+  },
+  {
+    "id": "q_ch03_23",
+    "chapter": 3,
+    "question": "What is an 'RSS' or 'Atom' feed in content acquisition?",
+    "options": [
+      "A syndicated XML format used by publishers to distribute frequently updated content and article summaries",
+      "A computer virus that attacks crawlers",
+      "A networking cable connector",
+      "A database indexing algorithm"
+    ],
+    "correct": 0,
+    "explanation": "RSS/Atom feeds provide structured XML notifications of newly published articles, allowing search engines to ingest content instantly without re-crawling.",
+    "topic": "Web Feeds",
+    "slide_ref": "3. Crawls and Feeds.pptx",
+    "answer": 0
+  },
+  {
+    "id": "q_ch03_24",
+    "chapter": 3,
+    "question": "What is 'Robots META tag' in HTML (e.g., <meta name='robots' content='noindex, nofollow'>)?",
+    "options": [
+      "A page-level directive telling crawlers whether to index that specific page and whether to follow its outgoing links",
+      "A tag that displays a robot icon in the browser tab",
+      "A security tag that locks the browser window",
+      "A tag that improves GPU rendering"
+    ],
+    "correct": 0,
+    "explanation": "Page-level robots meta tags allow fine-grained indexing control (noindex, nofollow, noarchive) per HTML document.",
+    "topic": "Robots Meta Tags",
+    "slide_ref": "3. Crawls and Feeds.pptx",
+    "answer": 0
+  },
+  {
+    "id": "q_ch03_25",
+    "chapter": 3,
+    "question": "What does the 'nofollow' attribute on an HTML link (<a href='...' rel='nofollow'>) signal to search crawlers?",
+    "options": [
+      "The link must be downloaded at maximum speed",
+      "Search crawlers should not endorse or transfer link authority (PageRank) across this link, and may choose not to crawl it",
+      "The target page is written in English",
+      "The link opens a new browser popup"
+    ],
+    "correct": 1,
+    "explanation": "Introduced in 2005, rel='nofollow' tells search engines that the link is untrusted, paid, or user-generated, preventing link spam endorsement.",
+    "topic": "rel=nofollow",
+    "slide_ref": "3. Crawls and Feeds.pptx",
+    "answer": 1
+  },
+  {
+    "id": "q_ch03_26",
+    "chapter": 3,
+    "question": "What is 'Canonicalization' (or URL Normalization) in crawling?",
+    "options": [
+      "Converting all URLs into lowercase and eliminating syntactic variations (e.g., removing trailing slashes, default ports, sorting query parameters) to prevent duplicate crawling",
+      "Encrypting URLs using HTTPS",
+      "Translating domain names into French",
+      "Deleting URLs with more than 10 characters"
+    ],
+    "correct": 0,
+    "explanation": "Canonicalization transforms varied URL representations (http://site.com:80/index.html vs https://site.com/) into a unique standard form.",
+    "topic": "URL Canonicalization",
+    "slide_ref": "3. Crawls and Feeds.pptx",
+    "answer": 0
+  },
+  {
+    "id": "q_ch03_27",
+    "chapter": 3,
+    "question": "What does the HTML tag <link rel='canonical' href='https://example.com/page'> tell a search engine?",
+    "options": [
+      "This page is a mirror and specifies the preferred master URL that should be credited and indexed in search results",
+      "This page is forbidden from being displayed",
+      "This page contains adult content",
+      "This page was created by an AI"
+    ],
+    "correct": 0,
+    "explanation": "The canonical link tag declares the authoritative version among duplicate or syndicated pages, consolidating ranking signals to one URL.",
+    "topic": "Canonical Tags",
+    "slide_ref": "3. Crawls and Feeds.pptx",
+    "answer": 0
+  },
+  {
+    "id": "q_ch03_28",
+    "chapter": 3,
+    "question": "In web crawling, what is the 'Politeness Queue' design in the Mercator architecture?",
+    "options": [
+      "A set of per-host FIFO queues, where a selector picks the next URL from a host only after a mandatory politeness time interval has elapsed",
+      "A queue that prints polite messages in terminal logs",
+      "A queue that gives priority to .gov websites only",
+      "A queue that deletes slow URLs"
+    ],
+    "correct": 0,
+    "explanation": "Mercator maintains separate FIFO queues for each host and enforces a delay between accesses to the same host using a priority heap of timestamps.",
+    "topic": "Mercator Politeness Queues",
+    "slide_ref": "3. Crawls and Feeds.pptx",
+    "answer": 0
+  },
+  {
+    "id": "q_ch03_29",
+    "chapter": 3,
+    "question": "What is 'Dynamic Web Content' in the context of crawling challenges?",
+    "options": [
+      "Web pages that change their CSS styling on hover",
+      "Pages rendered client-side via JavaScript frameworks (React, Angular) or generated on-the-fly from database queries, which may require headless browser rendering",
+      "Pages that contain moving video files",
+      "Pages hosted on cloud servers"
+    ],
+    "correct": 1,
+    "explanation": "Single-Page Apps (SPAs) require headless browsers (e.g., Chromium, Puppeteer) to execute JavaScript before content can be extracted.",
+    "topic": "JavaScript Crawling",
+    "slide_ref": "3. Crawls and Feeds.pptx",
+    "answer": 1
+  },
+  {
+    "id": "q_ch03_30",
+    "chapter": 3,
+    "question": "What is a 'Headless Browser' in modern web crawling?",
+    "options": [
+      "A browser running on a computer without a keyboard",
+      "A browser execution environment (like Puppeteer/Playwright) without a graphical UI, capable of rendering JavaScript DOM for crawler parsing",
+      "A broken browser that cannot display text",
+      "A browser reserved for blind users"
+    ],
+    "correct": 1,
+    "explanation": "Headless browsers run browser engines programmatically to render client-side JavaScript, execute DOM events, and extract dynamically injected text.",
+    "topic": "Headless Browsers",
+    "slide_ref": "3. Crawls and Feeds.pptx",
+    "answer": 1
+  },
+  {
+    "id": "q_ch03_31",
+    "chapter": 3,
+    "question": "What is 'Crawl Budget' in commercial search engine operations?",
+    "options": [
+      "The amount of money paid to Google for search ads",
+      "The number of pages a search engine bot can and wants to crawl on a given website within a specific timeframe, dictated by server speed and site authority",
+      "The total cost of electricity for the server racks",
+      "The monthly hosting fee of a website"
+    ],
+    "correct": 1,
+    "explanation": "Crawl budget is the combination of crawl rate limit (host capacity) and crawl demand (page popularity/importance).",
+    "topic": "Crawl Budget",
+    "slide_ref": "3. Crawls and Feeds.pptx",
+    "answer": 1
+  },
+  {
+    "id": "q_ch03_32",
+    "chapter": 3,
+    "question": "Which HTTP header allows a server to inform crawlers when the document was last modified?",
+    "options": [
+      "Last-Modified / If-Modified-Since",
+      "Content-Security-Policy",
+      "X-Frame-Options",
+      "Set-Cookie"
+    ],
+    "correct": 0,
+    "explanation": "The Last-Modified header, paired with the crawler's conditional GET (If-Modified-Since), allows servers to return 304 Not Modified to save bandwidth.",
+    "topic": "HTTP Conditional GET",
+    "slide_ref": "3. Crawls and Feeds.pptx",
+    "answer": 0
+  },
+  {
+    "id": "q_ch03_33",
+    "chapter": 3,
+    "question": "What HTTP status code does a server return when a crawler submits a conditional GET and the page has not changed since the last crawl?",
+    "options": [
+      "200 OK",
+      "304 Not Modified",
+      "404 Not Found",
+      "500 Internal Server Error"
+    ],
+    "correct": 1,
+    "explanation": "HTTP 304 Not Modified indicates the cached copy is still fresh, transmitting zero response body and saving massive network transfer.",
+    "topic": "HTTP 304 Not Modified",
+    "slide_ref": "3. Crawls and Feeds.pptx",
+    "answer": 1
+  },
+  {
+    "id": "q_ch03_34",
+    "chapter": 3,
+    "question": "How does a 'Distributed Web Crawler' scale across multiple independent machines?",
+    "options": [
+      "By partitioning the URL frontier across nodes using consistent hashing on the domain or hostname",
+      "By having every machine crawl the exact same URLs simultaneously",
+      "By disabling network switches",
+      "By converting all URLs to IPv6"
+    ],
+    "correct": 0,
+    "explanation": "Distributed crawlers hash the domain name to route URLs to designated crawler workers, ensuring politeness is maintained per domain.",
+    "topic": "Distributed Crawling",
+    "slide_ref": "3. Crawls and Feeds.pptx",
+    "answer": 0
+  },
+  {
+    "id": "q_ch03_35",
+    "chapter": 3,
+    "question": "What is 'ETag' in HTTP caching and web crawling?",
+    "options": [
+      "An electronic dog tag for crawler developers",
+      "An HTTP response header providing an entity tag hash representing the specific version of a resource for cache validation",
+      "An email signature tag",
+      "An encryption key for SSL"
+    ],
+    "correct": 1,
+    "explanation": "ETags provide validation tokens; crawlers use 'If-None-Match' with the ETag to check if content has changed without downloading the full body.",
+    "topic": "HTTP ETag",
+    "slide_ref": "3. Crawls and Feeds.pptx",
+    "answer": 1
+  },
+  {
+    "id": "q_ch03_36",
+    "chapter": 3,
+    "question": "Why is 'Duplicate Content' harmful to a search engine's crawling efficiency?",
+    "options": [
+      "It wastes crawler bandwidth, storage, and CPU cycles processing identical pages multiple times",
+      "It causes computer monitors to flicker",
+      "It increases user typing speed",
+      "It changes the font family of Google"
+    ],
+    "correct": 0,
+    "explanation": "Crawling duplicate mirrors wastes significant crawler capacity that could otherwise discover fresh, unique content.",
+    "topic": "Duplicate Content Impact",
+    "slide_ref": "3. Crawls and Feeds.pptx",
+    "answer": 0
+  },
+  {
+    "id": "q_ch03_37",
+    "chapter": 3,
+    "question": "In SimHash near-duplicate detection, how is the similarity between two 64-bit document fingerprints evaluated?",
+    "options": [
+      "By adding the two 64-bit numbers together",
+      "By calculating the Hamming distance (the number of differing bit positions) between the two fingerprints",
+      "By converting both hashes to ASCII text",
+      "By dividing hash A by hash B"
+    ],
+    "correct": 1,
+    "explanation": "In SimHash, documents that differ in only a few words produce fingerprints with a very small Hamming distance (typically <= 3 bits).",
+    "topic": "SimHash Hamming Distance",
+    "slide_ref": "3. Crawls and Feeds.pptx",
+    "answer": 1
+  },
+  {
+    "id": "q_ch03_38",
+    "chapter": 3,
+    "question": "What is 'Shingling' (or w-shingling) in document deduplication?",
+    "options": [
+      "Installing roof tiles on a server data center",
+      "Representing a document as a set of contiguous sub-sequences of w words (n-grams) to compute Jaccard similarity via MinHash",
+      "Encrypting document paragraphs with RSA",
+      "Formatting documents into Markdown tables"
+    ],
+    "correct": 1,
+    "explanation": "W-shingling decomposes text into overlapping word sequences (e.g., 5-grams), turning near-duplicate detection into a set intersection problem.",
+    "topic": "Shingling",
+    "slide_ref": "3. Crawls and Feeds.pptx",
+    "answer": 1
+  },
+  {
+    "id": "q_ch03_39",
+    "chapter": 3,
+    "question": "What does the Jaccard similarity coefficient measure between two document shingle sets A and B?",
+    "options": [
+      "|A ∩ B| / |A ∪ B| (Size of intersection divided by size of union)",
+      "|A| + |B|",
+      "|A| * |B|",
+      "log(|A| / |B|)"
+    ],
+    "correct": 0,
+    "explanation": "Jaccard similarity is the ratio of the intersection of two sets over their union, ranging from 0.0 (disjoint) to 1.0 (identical).",
+    "topic": "Jaccard Similarity",
+    "slide_ref": "3. Crawls and Feeds.pptx",
+    "answer": 0
+  },
+  {
+    "id": "q_ch03_40",
+    "chapter": 3,
+    "question": "What is 'MinHash' primarily used for in web search engines?",
+    "options": [
+      "To quickly estimate the Jaccard similarity between two sets of document shingles without computing expensive full set intersections",
+      "To find the minimum word in an English dictionary",
+      "To reduce the file size of images",
+      "To calculate the fastest network ping"
+    ],
+    "correct": 0,
+    "explanation": "MinHash produces compact sketch signatures where the probability of two hashes matching equals the Jaccard similarity of the original sets.",
+    "topic": "MinHash Concept",
+    "slide_ref": "3. Crawls and Feeds.pptx",
+    "answer": 0
+  },
+  {
+    "id": "q_ch03_41",
+    "chapter": 3,
+    "question": "What is a 'Honeypot' or crawler trap deployed by web administrators?",
+    "options": [
+      "A page with invisible links meant to catch and ban malicious scrapers that ignore robots.txt and follow non-user visible links",
+      "A jar of honey placed near server racks",
+      "A login screen with free gifts",
+      "A wireless router configuration"
+    ],
+    "correct": 0,
+    "explanation": "Honeypots use hidden links (e.g., display:none) that real users never click; any bot following them is identified as an aggressive scraper and blocked.",
+    "topic": "Honeypot Traps",
+    "slide_ref": "3. Crawls and Feeds.pptx",
+    "answer": 0
+  },
+  {
+    "id": "q_ch03_42",
+    "chapter": 3,
+    "question": "Why should a crawler normalize URLs before adding them to the URL Frontier?",
+    "options": [
+      "To ensure URLs like 'HTTP://Example.COM:80/index.html' and 'http://example.com/' are recognized as the same resource and not fetched twice",
+      "To translate foreign domain names to English",
+      "To shorten URLs for Twitter",
+      "To delete the URL from DNS records"
+    ],
+    "correct": 0,
+    "explanation": "URL normalization eliminates superficial syntactic differences, preventing duplicate downloads and wasted crawler bandwidth.",
+    "topic": "URL Normalization",
+    "slide_ref": "3. Crawls and Feeds.pptx",
+    "answer": 0
+  },
+  {
+    "id": "q_ch03_43",
+    "chapter": 3,
+    "question": "What is the 'FIFO' scheduling policy in simple crawler frontiers?",
+    "options": [
+      "First In, First Out: URLs are crawled strictly in the chronological order they were discovered",
+      "Fastest Internet Fastest Output",
+      "File In File Out",
+      "Final Index Final Output"
+    ],
+    "correct": 0,
+    "explanation": "A basic FIFO queue fetches URLs in order of discovery, but lacks priority differentiation and per-host politeness guarantees.",
+    "topic": "FIFO Frontier",
+    "slide_ref": "3. Crawls and Feeds.pptx",
+    "answer": 0
+  },
+  {
+    "id": "q_ch03_44",
+    "chapter": 3,
+    "question": "How does a search engine decide which web pages to crawl more frequently than others?",
+    "options": [
+      "Based on estimated change frequency, historical update rates, and page importance (e.g., high PageRank news homepages are crawled hourly; static archives monthly)",
+      "By choosing domains at random",
+      "By crawling smaller file sizes first",
+      "By crawling alphabetically by webmaster name"
+    ],
+    "correct": 0,
+    "explanation": "Re-crawl schedulers model page dynamics (often using Poisson processes) and page importance so valuable, fast-changing pages stay fresh.",
+    "topic": "Re-crawl Scheduling",
+    "slide_ref": "3. Crawls and Feeds.pptx",
+    "answer": 0
+  },
+  {
+    "id": "q_ch03_45",
+    "chapter": 3,
+    "question": "What is 'Client-Side Redirection' in web pages?",
+    "options": [
+      "A redirect executed via HTTP 301 headers from the web server",
+      "A redirect triggered in the user's browser using JavaScript (window.location) or HTML (<meta http-equiv='refresh'>)",
+      "A user clicking a bookmark in their browser",
+      "A physical network cable relocation"
+    ],
+    "correct": 1,
+    "explanation": "Client-side redirects occur inside the rendered page via JavaScript or meta refresh, requiring parsers or browser engines to detect them.",
+    "topic": "Client-Side Redirects",
+    "slide_ref": "3. Crawls and Feeds.pptx",
+    "answer": 1
+  },
+  {
+    "id": "q_ch03_46",
+    "chapter": 3,
+    "question": "What is a 'Web Archive' (such as the Internet Archive Wayback Machine)?",
+    "options": [
+      "A museum of old computer cases",
+      "A systematic digital repository that continuously crawls and preserves historical snapshots of web pages over time",
+      "A zip file stored on Google Drive",
+      "A list of expired domain names"
+    ],
+    "correct": 1,
+    "explanation": "Web archives capture and preserve temporal snapshots of the World Wide Web for historical research and digital preservation.",
+    "topic": "Web Archives",
+    "slide_ref": "3. Crawls and Feeds.pptx",
+    "answer": 1
+  },
+  {
+    "id": "q_ch03_47",
+    "chapter": 3,
+    "question": "Why must web crawlers handle HTTP compression (e.g., Content-Encoding: gzip, br)?",
+    "options": [
+      "Because servers only send text as audio files",
+      "Because requesting compressed responses saves massive network bandwidth and accelerates download speeds significantly",
+      "Because uncompressed HTML is illegal",
+      "Because compression improves monitor contrast"
+    ],
+    "correct": 1,
+    "explanation": "Sending Accept-Encoding: gzip, deflate, br enables HTTP compression, cutting data transfer volume by 70-80%.",
+    "topic": "HTTP Compression",
+    "slide_ref": "3. Crawls and Feeds.pptx",
+    "answer": 1
+  },
+  {
+    "id": "q_ch03_48",
+    "chapter": 3,
+    "question": "What is 'Crawl Delay Estimation' when a website does not specify a Crawl-delay in robots.txt?",
+    "options": [
+      "The crawler defaults to a conservative polite delay (e.g., 1 to 5 seconds per domain) or dynamically throttles if server response times increase",
+      "The crawler downloads all pages simultaneously",
+      "The crawler shuts down completely",
+      "The crawler emails the web host"
+    ],
+    "correct": 0,
+    "explanation": "Polite crawlers enforce default backoff delays and monitor server latency, slowing down automatically if the server shows signs of strain.",
+    "topic": "Adaptive Politeness",
+    "slide_ref": "3. Crawls and Feeds.pptx",
+    "answer": 0
+  },
+  {
+    "id": "q_ch03_49",
+    "chapter": 3,
+    "question": "Which of the following URL components should generally be stripped during canonicalization unless known to change page content?",
+    "options": [
+      "The domain name",
+      "Session tracking IDs and UTM analytics parameters (e.g., ?utm_source=twitter&session_id=123)",
+      "The path /articles/",
+      "The HTTPS protocol scheme"
+    ],
+    "correct": 1,
+    "explanation": "Analytics tracking tags (UTM tags, click IDs) create infinite duplicate URLs for the same underlying document and should be stripped.",
+    "topic": "Query Parameter Stripping",
+    "slide_ref": "3. Crawls and Feeds.pptx",
+    "answer": 1
+  },
+  {
+    "id": "q_ch03_50",
+    "chapter": 3,
+    "question": "What is 'Link Extraction' during the crawling process?",
+    "options": [
+      "Physically removing ethernet cables",
+      "Parsing the HTML DOM of a fetched page to find all anchor tags (<a href='...'>), resolving relative URLs to absolute URLs, and adding new links to the frontier",
+      "Deleting external links from the document",
+      "Converting hyperlinks into bold text"
+    ],
+    "correct": 1,
+    "explanation": "Link extraction discovers outgoing edges on crawled pages, converts relative paths to absolute URLs, and feeds new targets into the crawler frontier.",
+    "topic": "Link Extraction",
+    "slide_ref": "3. Crawls and Feeds.pptx",
+    "answer": 1
+  }
+]

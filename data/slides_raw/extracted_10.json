@@ -1,0 +1,123 @@
+{
+  "chapter_id": 10,
+  "filename": "10. Classification and Clustering.pptx",
+  "title": "Classification and Clustering",
+  "total_slides": 23,
+  "slides": [
+    {
+      "slide_num": 1,
+      "file_path": "ppt/slides/slide1.xml",
+      "text": "Chapter 10 Classification and Clustering SEG301m"
+    },
+    {
+      "slide_num": 2,
+      "file_path": "ppt/slides/slide2.xml",
+      "text": "Objectives Techniques used to support search process. How to cluster/classify information"
+    },
+    {
+      "slide_num": 3,
+      "file_path": "ppt/slides/slide3.xml",
+      "text": "Contents 10.1 Classification 10.2 Clustering"
+    },
+    {
+      "slide_num": 4,
+      "file_path": "ppt/slides/slide4.xml",
+      "text": "10.1 Classification: Naïve Bayes A framework for a probabilistic retrieval model: Bayes’ Rule where C and D are random variables"
+    },
+    {
+      "slide_num": 5,
+      "file_path": "ppt/slides/slide5.xml",
+      "text": "10.1 Classification: Support Vector Machines Based on geometric principles Two cases: The data set on the left is linearly separable, whereas the one on the right is not."
+    },
+    {
+      "slide_num": 6,
+      "file_path": "ppt/slides/slide6.xml",
+      "text": "10.1 Classification: Support Vector Machines Linearly separable data Find the hyperplane w"
+    },
+    {
+      "slide_num": 7,
+      "file_path": "ppt/slides/slide7.xml",
+      "text": "10.1 Classification: Support Vector Machines Non-linearly separable data adding a penalty factor to the problem that accounts for training instances that do not satisfy the constraints of the linearly separable formulation. Hinge loss function Find the hyperplane w"
+    },
+    {
+      "slide_num": 8,
+      "file_path": "ppt/slides/slide8.xml",
+      "text": "10.1 Classification: Evaluation The most commonly used are accuracy and the F measure Two major differences between evaluating classification tasks and other retrieval tasks The notion of “relevant” is replaced with “is classified correctly.” Microaveraging which is not commonly used to evaluate retrieval tasks is widely used in classification evaluations"
+    },
+    {
+      "slide_num": 9,
+      "file_path": "ppt/slides/slide9.xml",
+      "text": "10.1 Classification: Classifier and Feature Selection The Naïve Bayes classifier is an example of a wider class of probabilistic models called generative models Generative process used by the Naïve Bayes model. First, a class is chosen according to P ( c ), and then a document is chosen according to P ( d|c )."
+    },
+    {
+      "slide_num": 10,
+      "file_path": "ppt/slides/slide10.xml",
+      "text": "10.1 Classification: Classifier and Feature Selection As the number of training examples grows? The power of the generative model can be limited by simplifying distributional assumptions, such as the independence assumption in the Naïve Bayes classifier → discriminative models Discriminative models: model the class assignment problem given a document as input → they discriminate between class label Support vector machines are an example of a discriminative model"
+    },
+    {
+      "slide_num": 11,
+      "file_path": "ppt/slides/slide11.xml",
+      "text": "10.1 Classification: Classifier and Feature Selection Non-parametric classifiers: used when there is a large number of training examples. Let the data “speak for itself ” by eliminating all distributional assumptions Nearest neighbor classifier is an example of non-parametric classifiers"
+    },
+    {
+      "slide_num": 12,
+      "file_path": "ppt/slides/slide12.xml",
+      "text": "10.1 Classification: Feature selection How large is dimensional feature space? Necessarites techniques for pruning the feature space: feature selection techniques Information gain"
+    },
+    {
+      "slide_num": 13,
+      "file_path": "ppt/slides/slide13.xml",
+      "text": "10.1 Classification: Spam, Sentiment, and Online Advertising The two top-level categories of the taxonomy are link spam and term spam"
+    },
+    {
+      "slide_num": 14,
+      "file_path": "ppt/slides/slide14.xml",
+      "text": "10.1 Classification: Spam, Sentiment, and Online Advertising Using machine learning techniques for sentiment classification The features used in the classifiers were unigrams, bigrams, part-of speech tags, adjectives, and the position of a term within a piece of text"
+    },
+    {
+      "slide_num": 15,
+      "file_path": "ppt/slides/slide15.xml",
+      "text": "10.1 Classification: Spam, Sentiment, and Online Advertising Sponsored search and content match are two different advertising models widely used by commercial search engines One could learn a Naïve Bayes model or use SVMs: problem is very slow to classify an item into one of several thousand classes Using cosine similarity with tf.idf weighting to match queries (or web pages) to semantic classes."
+    },
+    {
+      "slide_num": 16,
+      "file_path": "ppt/slides/slide16.xml",
+      "text": "10.2 Clustering: Hierarchical Clustering Hierarchical clustering is a clustering methodology that builds clusters in a hierarchical fashion Divisive clustering : top-down Agglomerative clustering : bottom-up"
+    },
+    {
+      "slide_num": 17,
+      "file_path": "ppt/slides/slide17.xml",
+      "text": "10.2 Clustering: K-Means Clustering The goal of the K -means algorithm is to find the cluster assignments, represented by the assignment vector A [1] , . . . , A [ N ], that minimize the following cost function:"
+    },
+    {
+      "slide_num": 18,
+      "file_path": "ppt/slides/slide18.xml",
+      "text": "10.2 Clustering: K Nearest Neighbor Clustering Using nearest neighbor clustering with K = 5"
+    },
+    {
+      "slide_num": 19,
+      "file_path": "ppt/slides/slide19.xml",
+      "text": "10.2 Clustering: Evaluation This measure is ofen microaveraged across Instances, which results in the following measure of precision: where | MaxClass ( Ci )| is the total number of instances in cluster Ci with the label MaxClass ( Ci )"
+    },
+    {
+      "slide_num": 20,
+      "file_path": "ppt/slides/slide20.xml",
+      "text": "10.2 Clustering: How to Choose K The problem of choosing K is one of the most challenging issues involved with clustering, since there is really no good solution. No magical formula exists that will predict the optimal number of clusters to use in every possible situation. Instead, the best choice of K largely depends on the task and data set being considered. Therefore, K is most often chosen experimentally."
+    },
+    {
+      "slide_num": 21,
+      "file_path": "ppt/slides/slide21.xml",
+      "text": "10.2 Clustering: Clustering and Search Clustering has been used in a number of search engines for organizing the results Clustering is also able to discover structure in the result set for arbitrary queries that would not be possible with a classifcation algorithm"
+    },
+    {
+      "slide_num": 22,
+      "file_path": "ppt/slides/slide22.xml",
+      "text": "Exercise Use the k-means algorithm and the Euclidean distance to cluster the following 10 bidimensional items into 3 clusters: A = (2,10), B = (4,5), C = (3,2), D = ( 9,4), E = (3,7), F = (5,5), G = (6,4), H = (1,9), I = ( 1,2), J = ( 4,9 ) Calculate the centroid, diameter, and radius of the three clusters"
+    },
+    {
+      "slide_num": 23,
+      "file_path": "ppt/slides/slide23.xml",
+      "text": "Summary Classification : Navie bayes, Support vector machines, Evaluation, Classfier and feature selection, spam, sentiment and online advertising Clustering: Hierachical and K-meas clustering, K-nearest neighbor clustering, evaluation, how to choose K, clustering and Seach"
+    }
+  ]
+}

@@ -1,0 +1,78 @@
+{
+  "chapter_id": 12,
+  "filename": "12. Beyond bag of words.pptx",
+  "title": "Beyond bag of words",
+  "total_slides": 14,
+  "slides": [
+    {
+      "slide_num": 1,
+      "file_path": "ppt/slides/slide1.xml",
+      "text": "Chapter 12 Beyond Bag of Words"
+    },
+    {
+      "slide_num": 2,
+      "file_path": "ppt/slides/slide2.xml",
+      "text": "Objectives Idea of Feature-Based Retrieval Models What are Term Dependence Models? Search for Words, Pictures, and Music"
+    },
+    {
+      "slide_num": 3,
+      "file_path": "ppt/slides/slide3.xml",
+      "text": "Contents 12.1 Feature-Based Retrieval Models 12.2 Term Dependence Models 12.3 Structure Revisited 12.4 Longer Questions, Better Answers 12.5 Words, Pictures, and Music 12.6 One Search Fits All?"
+    },
+    {
+      "slide_num": 4,
+      "file_path": "ppt/slides/slide4.xml",
+      "text": "12.1 Feature-Based Retrieval Models For a set of documents D and a set of queries Q , we can defne a scoring or ranking function                  parameterized by Λ , which is a vector of parameters. Given a query      , the scoring function              is computed for each D ∈ where is a feature function that maps query/document pairs to real values, and Z is a constant that does not depend on D (but may depend on Λ or Q )"
+    },
+    {
+      "slide_num": 5,
+      "file_path": "ppt/slides/slide5.xml",
+      "text": "12.1 Feature-Based Retrieval Models The goal of a linear feature-based retrieval model is to fnd a parameter setting Λ that maximizes the evaluation metric E for the training data where       are the rankings produced by the linear scoring function"
+    },
+    {
+      "slide_num": 6,
+      "file_path": "ppt/slides/slide6.xml",
+      "text": "12.1 Feature-Based Retrieval Models Arelatively small number of features have been used as the basis of the retrieval models Term occurrence Term frequency Inverse document frequency Document length Term proximity"
+    },
+    {
+      "slide_num": 7,
+      "file_path": "ppt/slides/slide7.xml",
+      "text": "12.2 Term Dependence Models Retrieval models that make use of term relationships are ofen called term dependence models They do not assume that words occur independently of each other Markov Random Field Full independence Sequential dependence Full dependence General dependence"
+    },
+    {
+      "slide_num": 8,
+      "file_path": "ppt/slides/slide8.xml",
+      "text": "12.3 Structure Revisited Exploiting document structure is a critical part of web search, and combining different sources of evidence effectively is an important part of many database applications"
+    },
+    {
+      "slide_num": 9,
+      "file_path": "ppt/slides/slide9.xml",
+      "text": "12.3 Structure Revisited: XML Retrieval XML is an important standard for both exchanging data between applications and encoding documents Content-and-structure (CAS) query: contain a description of a topic and explicit references to the XML structure //article[.// fm / yr < 2000]//sec[about(.,”search engines”)] - find articles published before 2000 ( fm is the front matter of the article) that contain sections discussing the topic “search engines”. //article[.// fm / yr < 2000]//sec[about(.,”search engines”)] - find articles published before 2000 ( fm is the front matter of the article) that contain sections discussing the topic “search engines”. Structure is an important part of defining features for effective ranking"
+    },
+    {
+      "slide_num": 10,
+      "file_path": "ppt/slides/slide10.xml",
+      "text": "12.3 Structure Revisited: Entity Search Information extraction techniques that can be used to identify entities in text such as people, organizations, and locations Entity search uses this structure to provide a ranked list of entities in response to a query instead of a list of documents The simplest approach to building these representations is to create “pseudo-documents” by accumulating all words that occur within a specified text window (e.g., 20 words) for each occurrence of an entity"
+    },
+    {
+      "slide_num": 11,
+      "file_path": "ppt/slides/slide11.xml",
+      "text": "The task of question answering involves providing a specific answer to a user’s query Information derived from question analysis and classification is used by the answer selection component to identify answers in candidate text passages, which are usually sentences. 12.4 Longer Questions, Better Answers"
+    },
+    {
+      "slide_num": 12,
+      "file_path": "ppt/slides/slide12.xml",
+      "text": "12.5 Words, Pictures, and Music Information retrieval has traditionally focused on text. But only text? Others: images, videos, or audio Search for images, videos, or audio: text-based services, relying on titles, captions, user-supplied “tags,” and other related text to create representations of non-text media for searching Text may not capture important aspects of the object being represented Optical character recognition (OCR), Speech recognition technology"
+    },
+    {
+      "slide_num": 13,
+      "file_path": "ppt/slides/slide13.xml",
+      "text": "12.6 One Search Fits All? There are a variety of different search services, rather than a single search engine with more and more capability Researchers from information retrieval and related fields, such as machine learning and natural language processing, have developed similar approaches to representing text and modeling the process of retrieval"
+    },
+    {
+      "slide_num": 14,
+      "file_path": "ppt/slides/slide14.xml",
+      "text": "Summary Feature-Based Retrieval Models Term Dependence Models Structure Revisited: XML Retrieval, Entity Search Search for Words , Pictures, and Music"
+    }
+  ]
+}

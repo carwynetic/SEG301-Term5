@@ -1,0 +1,223 @@
+{
+  "chapter_id": 5,
+  "filename": "5. Ranking with Indexes.pptx",
+  "title": "Ranking with Indexes",
+  "total_slides": 43,
+  "slides": [
+    {
+      "slide_num": 1,
+      "file_path": "ppt/slides/slide1.xml",
+      "text": "Chapter 5 Ranking with Indexes SEG301m"
+    },
+    {
+      "slide_num": 2,
+      "file_path": "ppt/slides/slide2.xml",
+      "text": "Objectives How to rank a web, document How to index a web, document"
+    },
+    {
+      "slide_num": 3,
+      "file_path": "ppt/slides/slide3.xml",
+      "text": "Contents 5.1 Abstract model of raking 5.2 Inverted Indexes 5.3 Compression 5.4 Axuiliary structures 5.5 Index construction 5.6 Query processing"
+    },
+    {
+      "slide_num": 4,
+      "file_path": "ppt/slides/slide4.xml",
+      "text": "5.1 Abstract model of raking The components of the abstract model of ranking: documents, features, queries, the retrieval function, and document scores"
+    },
+    {
+      "slide_num": 5,
+      "file_path": "ppt/slides/slide5.xml",
+      "text": "5.1 Abstract model of raking Ranking function can be expressed as where     is feature function extracting a number from the document, while     is feature function extracting a value from the query"
+    },
+    {
+      "slide_num": 6,
+      "file_path": "ppt/slides/slide6.xml",
+      "text": "5.2 Inverted Indexes Example: look for “adaptive filtering” → Go to “Index” and find the word starts with “a” → See “adaptive filtering” → See the pages that contain that words style.visibility style.visibility style.visibility"
+    },
+    {
+      "slide_num": 7,
+      "file_path": "ppt/slides/slide7.xml",
+      "text": "5.2 Inverted Indexes We think of words being a part of documents → inverted → documents are associated with words Each index term has its own inverted list that holds the relevant data for that term In an index for a book, the relevant data is a list of page numbers In a search engine, the data might be a list of documents or a list of word occurrences style.visibility"
+    },
+    {
+      "slide_num": 8,
+      "file_path": "ppt/slides/slide8.xml",
+      "text": "5.2 Inverted Indexes: Documents Each one of these boxes is a posting “fish” appears in all four sentences, because the numbers 1, 2, 3, and 4 appear by it"
+    },
+    {
+      "slide_num": 9,
+      "file_path": "ppt/slides/slide9.xml",
+      "text": "5.2 Inverted Indexes: counts Each word in the index corresponds to a document feature"
+    },
+    {
+      "slide_num": 10,
+      "file_path": "ppt/slides/slide10.xml",
+      "text": "5.2 Inverted Indexes: positions An inverted index, with word positions"
+    },
+    {
+      "slide_num": 11,
+      "file_path": "ppt/slides/slide11.xml",
+      "text": "5.2 Inverted Indexes: positions Aligning posting lists for “tropical” and “fish” to find the phrase “tropical fish”"
+    },
+    {
+      "slide_num": 12,
+      "file_path": "ppt/slides/slide12.xml",
+      "text": "5.2 Inverted Indexes: fields and extents Example: every email contains sender information and a subject line. All of these are instances of what we will call document fields , which are sections of documents that carry some kind of semantic meaning. An extent is a contiguous region of a document if the title of a book started on the fifth word and ended just before the ninth word we could encode that as (5,9)"
+    },
+    {
+      "slide_num": 13,
+      "file_path": "ppt/slides/slide13.xml",
+      "text": "5.2 Inverted Indexes: Scores Whether should system store the value of the feature function? It should store feature function values because it is too computationally intensive to compute during the query processing phase Store the final value right in the inverted list “fish” that has postings like [(1:3.6), (3:2.2)]: total feature value for “fish” in document 1 is 3.6, and in document 3 it is 2.2 How about the system’s flexibility? Both increase and decrease"
+    },
+    {
+      "slide_num": 14,
+      "file_path": "ppt/slides/slide14.xml",
+      "text": "5.2 Inverted Indexes: Ordering Why does a system need an ordering score? the query processing engine can focus only on the top part of each inverted list style.visibility"
+    },
+    {
+      "slide_num": 15,
+      "file_path": "ppt/slides/slide15.xml",
+      "text": "5.3 Compression Memory hierarchy? The inverted lists for a large collection are themselves very large Compression allows the same inverted list data to be stored in less space Any disadvantage of compression? processor can process p inverted list postings per second, a memory system that can supply the processor with m postings each second The number of postings processed each second is then min( m, p ) What happens if p > m or p < m?"
+    },
+    {
+      "slide_num": 16,
+      "file_path": "ppt/slides/slide16.xml",
+      "text": "5.3 Compression Introduce compression ratio r (processor read mr postings each second), decompress factor d (processor process dp postings each second) Process min( mr , dp ) postings each second"
+    },
+    {
+      "slide_num": 17,
+      "file_path": "ppt/slides/slide17.xml",
+      "text": "5.3 Compression: Entropy and  Ambiguity Consider the sequence: 0 , 1 , 0 , 3 , 0 , 2 , 0 Encoded by binary digits: 00 01 00 10 00 11 00 Encoding 0 using just a single 0 bit: 0 01 0 10 0 11 0 What’s wrong?"
+    },
+    {
+      "slide_num": 18,
+      "file_path": "ppt/slides/slide18.xml",
+      "text": "5.3 Compression: Entropy and  Ambiguity Use prefix codes and prefix-fee codes to avoid ambiguity The result: 0 101 0 111 0 110 0 (13 bits) Entropy measures the predictability of the input"
+    },
+    {
+      "slide_num": 19,
+      "file_path": "ppt/slides/slide19.xml",
+      "text": "5.3 Compression: Delta Encoding Consider the sequence: 1 , 5 , 9 , 18 , 23 , 24 , 30 , 44 , 45 , 48 The encoding sequence: 1 , 4 , 4 , 9 , 5 , 1 , 6 , 14 , 1 , 3"
+    },
+    {
+      "slide_num": 20,
+      "file_path": "ppt/slides/slide20.xml",
+      "text": "5.3 Compression: Bit-Aligned Codes Uses a single symbol to encode numbers"
+    },
+    {
+      "slide_num": 21,
+      "file_path": "ppt/slides/slide21.xml",
+      "text": "5.3 Compression: Byte-Aligned Codes Sample encodings for v-byte (variable byte length) Space requirements for numbers encoded in v-byte"
+    },
+    {
+      "slide_num": 22,
+      "file_path": "ppt/slides/slide22.xml",
+      "text": "5.3 Compression: In practice New compression schemes are developed every year. Why are these new schemes necessary? Compression algorithm is tightly coupled with the state of modern CPUs and memory systems Now: are lower compression ratios attractive?"
+    },
+    {
+      "slide_num": 23,
+      "file_path": "ppt/slides/slide23.xml",
+      "text": "5.3 Compression: Skipping and Skip Pointers Consider the Boolean query “ galago AND animal ”. Let be the first document number in the inverted list for “ galago .” and “animal.” respectively While there are still documents in the lists for “ galago ” and “animal,” loop: If , set to the next document number in the “ galago ” list If , set to the next document number in the “animal” list. If , the document contains both “ galago ” and “animal”. Move    both      and to the next documents in the inverted lists for “ galago ” and “animal,” respectively Skip ahead k documents to a new document     . Repeat until              → narrow down to k documents"
+    },
+    {
+      "slide_num": 24,
+      "file_path": "ppt/slides/slide24.xml",
+      "text": "5.4 Auxiliary Structures Vocabulary and statistics Documents, snippets, and external systems"
+    },
+    {
+      "slide_num": 25,
+      "file_path": "ppt/slides/slide25.xml",
+      "text": "5.6 Index construction: simple construction Pseudocode for a simple indexer"
+    },
+    {
+      "slide_num": 26,
+      "file_path": "ppt/slides/slide26.xml",
+      "text": "5.6 Index construction: merging An example of index merging. The first and second indexes are merged together to produce the combined index"
+    },
+    {
+      "slide_num": 27,
+      "file_path": "ppt/slides/slide27.xml",
+      "text": "5.6 Index construction: parallelism and distribution Use many inexpensive servers together and use distributed processing software to coordinate the activities of search engine the amount of data to index in the largest systems is exploding simple economics RPC, CORBA, Java RMI, and SOAP have been developed to allow function calls across machine boundaries"
+    },
+    {
+      "slide_num": 28,
+      "file_path": "ppt/slides/slide28.xml",
+      "text": "5.6 Index construction: parallelism and distribution Data placement: decides whether data processing is efficient Example: Suppose you have a text file that contains data about credit card transactions. Each line of the file contains a credit card number and an amount of money. How might you determine the number of unique credit card numbers in the file? Many files in one computer? Many files in many computers? Easiest way?"
+    },
+    {
+      "slide_num": 29,
+      "file_path": "ppt/slides/slide29.xml",
+      "text": "5.6 Index construction: parallelism and distribution The MapReduce library automatically launches many Mapper and Reducer tasks on a cluster of machines"
+    },
+    {
+      "slide_num": 30,
+      "file_path": "ppt/slides/slide30.xml",
+      "text": "5.6 Index construction: parallelism and distribution Mapper and Reducer tasks"
+    },
+    {
+      "slide_num": 31,
+      "file_path": "ppt/slides/slide31.xml",
+      "text": "5.6 Index construction: update Most interesting document collections are constantly changing Collections tend to get bigger over time The contents of documents can change over time Two techniques to solve the problem of update Index merging Result merging"
+    },
+    {
+      "slide_num": 32,
+      "file_path": "ppt/slides/slide32.xml",
+      "text": "5.7 Query Processing: Document-at-a-time evaluation The simplest way, at least conceptually, to perform retrieval with an inverted file. Document-at-a-time query evaluation. The numbers ( x : y ) represent a document number ( x ) and a word count ( y )"
+    },
+    {
+      "slide_num": 33,
+      "file_path": "ppt/slides/slide33.xml",
+      "text": "5.7 Query Processing: Document-at-a-time evaluation A simple document-at-a-time retrieval algorithm"
+    },
+    {
+      "slide_num": 34,
+      "file_path": "ppt/slides/slide34.xml",
+      "text": "5.7 Query Processing: Term-at-a-time evaluation Term-at-a-time evaluation"
+    },
+    {
+      "slide_num": 35,
+      "file_path": "ppt/slides/slide35.xml",
+      "text": "5.7 Query Processing: Term-at-a-time evaluation A simple term-at-a-time retrieval algorithm"
+    },
+    {
+      "slide_num": 36,
+      "file_path": "ppt/slides/slide36.xml",
+      "text": "5.7 Query Processing: Optimization techniques List skipping Skip pointers in an inverted list. The gray boxes show skip pointers, which point into the white boxes, which are inverted list postings"
+    },
+    {
+      "slide_num": 37,
+      "file_path": "ppt/slides/slide37.xml",
+      "text": "5.7 Query Processing: Optimization techniques Conjunctive processing Conjunctive processing works best when one of the query terms is rare Conjunctive processing can be employed with both term-at-a-time and document-at-a-time systems"
+    },
+    {
+      "slide_num": 38,
+      "file_path": "ppt/slides/slide38.xml",
+      "text": "5.7 Query Processing: Optimization techniques Threshold methods k is the number of results requested by the user: usually from 10 to 20"
+    },
+    {
+      "slide_num": 39,
+      "file_path": "ppt/slides/slide39.xml",
+      "text": "5.7 Query Processing: Structured queries Evaluation tree for the structured query #combine(#od:1(tropical fish) #od:1(aquarium fish) fish)"
+    },
+    {
+      "slide_num": 40,
+      "file_path": "ppt/slides/slide40.xml",
+      "text": "5.7 Query Processing: Distributed evaluation Document distribution Each index server acts as a search engine for a small fraction of the total document collection Term distribution A single index is built for the whole cluster of machines. Each inverted list in that index is then assigned to one index server."
+    },
+    {
+      "slide_num": 41,
+      "file_path": "ppt/slides/slide41.xml",
+      "text": "5.7 Query Processing: caching Broadly speaking, caching means storing something you might want to use later Broadly speaking, caching means storing something you might want to use later Processing a query against a large corpus can be very computationally intensive → keep it around."
+    },
+    {
+      "slide_num": 42,
+      "file_path": "ppt/slides/slide42.xml",
+      "text": "Exercise Given two documents: Document 1: Football is a family of team sports that involve, to varying degrees, kicking a ball to score a goal . Document 2: A football team is a group of players selected to play together in the various team sports known as football . Implement the algorithm generating the inverted index, write an algorithm that locates all “sports” term."
+    },
+    {
+      "slide_num": 43,
+      "file_path": "ppt/slides/slide43.xml",
+      "text": "Summary Abstract model of raking Inverted indexed, compression Query processing techniques and evaluation"
+    }
+  ]
+}

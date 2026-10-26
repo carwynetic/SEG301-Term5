@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<html lang="vi" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SEG301 - Hệ Thống Ôn Thi Search Engines Toàn Diện (17 Chương)</title>
+  <meta name="description" content="Cổng thông tin ôn tập & thi thử toàn diện môn Search Engines (SEG301), gồm 17 chương kiến thức có dẫn nguồn slide chi tiết, 952 câu hỏi trắc nghiệm tiếng Anh và chế độ thi thử 50 phút.">
+  
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- KaTeX for formulas -->
+  <link rel="stylesheet" href="lib/katex/katex.min.css">
+
+  <!-- FontAwesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  
+  <!-- Main Stylesheet -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- App Header -->
+  <header class="app-header">
+    <div class="brand" id="brand-logo" title="Về trang chủ lý thuyết">
+      <div class="brand-icon">🔍</div>
+      <div class="brand-text">
+        <h1>SEG301 · Search Engines</h1>
+        <span>Exam Prep Portal · 17 Chapters</span>
+      </div>
+    </div>
+
+    <!-- Main Navigation Tabs -->
+    <nav class="main-nav" aria-label="Main Navigation">
+      <button class="nav-tab active" data-tab="knowledge" id="nav-knowledge">
+        <span>📖</span>
+        <span>Lý thuyết</span>
+        <span class="badge">17 Ch</span>
+      </button>
+      <button class="nav-tab" data-tab="practice" id="nav-practice">
+        <span>✍️</span>
+        <span>Luyện tập</span>
+        <span class="badge">50 Q/Ch</span>
+      </button>
+      <button class="nav-tab" data-tab="exam" id="nav-exam">
+        <span>⏱️</span>
+        <span>Thi thử 50p</span>
+        <span class="badge" style="background: rgba(239, 68, 68, 0.25); color: #f87171;">50 Câu</span>
+      </button>
+      <button class="nav-tab" data-tab="bank" id="nav-bank">
+        <span>🗂️</span>
+        <span>Ngân hàng câu hỏi</span>
+        <span class="badge">952 Q</span>
+      </button>
+      <button class="nav-tab" data-tab="glossary" id="nav-glossary">
+        <span>📚</span>
+        <span>Thuật ngữ</span>
+        <span class="badge">83</span>
+      </button>
+    </nav>
+
+    <!-- Header Right Actions -->
+    <div class="header-actions">
+      <button class="search-trigger-btn" id="open-search-modal" title="Tìm kiếm nhanh">
+        <span>🔍 Tìm kiếm...</span>
+        <kbd>Ctrl+K</kbd>
+      </button>
+      <button class="theme-toggle-btn" id="theme-toggle" title="Đổi giao diện Sáng / Tối">
+        <span id="theme-icon">🌙</span>
+      </button>
+    </div>
+  </header>
+
+  <!-- App Main Content Container -->
+  <main class="app-container">
+
+    <!-- ==========================================
+         TAB 1: KNOWLEDGE BASE (17 CHAPTERS)
+         ========================================== -->
+    <section class="tab-pane active" id="tab-knowledge">
+      <div class="knowledge-layout">
+        <!-- Chapters Sidebar -->
+        <aside class="knowledge-sidebar">
+          <div class="sidebar-header">
+            <div class="sidebar-search-box">
+              <input type="text" id="chapter-search-input" placeholder="Lọc 17 chương học..." autocomplete="off">
+            </div>
+          </div>
+          <ul class="chapter-nav-list" id="chapter-list-nav">
+            <!-- Rendered dynamically by JS -->
+          </ul>
+        </aside>
+
+        <!-- Chapter Reader Main Content -->
+        <article class="knowledge-content-wrapper" id="chapter-content-area">
+          <!-- Dynamically populated by JS: Hero, TOC, Content, References -->
+        </article>
+      </div>
+    </section>
+
+    <!-- ==========================================
+         TAB 2: CHAPTER PRACTICE (50 Qs / Chapter)
+         ========================================== -->
+    <section class="tab-pane" id="tab-practice">
+      <div class="practice-header-bar">
+        <div>
+          <label for="practice-ch-select" style="font-size: 0.85rem; color: var(--text-muted); display: block; margin-bottom: 0.35rem; font-weight: 600;">CHỌN CHƯƠNG ÔN TẬP:</label>
+          <select id="practice-ch-select" class="practice-chapter-select">
+            <!-- Options rendered by JS -->
+          </select>
+        </div>
+
+        <div class="practice-stats-strip">
+          <div class="stat-pill">
+            <span style="color: var(--text-muted);">Tiến độ:</span>
+            <strong id="practice-progress-text">1 / 50</strong>
+          </div>
+          <div class="stat-pill correct">
+            <span>✓ Đúng:</span>
+            <strong id="practice-correct-count">0</strong>
+          </div>
+          <div class="stat-pill incorrect">
+            <span>✗ Sai:</span>
+            <strong id="practice-incorrect-count">0</strong>
+          </div>
+          <div class="stat-pill">
+            <span>Độ chính xác:</span>
+            <strong id="practice-accuracy" style="color: var(--accent-blue);">0%</strong>
+          </div>
+        </div>
+      </div>
+
+      <!-- Question Card -->
+      <div class="question-card" id="practice-question-card">
+        <div class="q-meta-row">
+          <span class="q-num-badge" id="practice-q-badge">CÂU HỎI 1 / 50</span>
+          <span class="badge-tag" id="practice-q-chapter-tag">Chương 1</span>
+        </div>
+
+        <div class="q-text" id="practice-q-text">
+          <!-- Question text -->
+        </div>
+
+        <div class="options-list" id="practice-options-list">
+          <!-- 4-5 options buttons -->
+        </div>
+
+        <div class="explanation-box" id="practice-explanation-box">
+          <div class="explanation-title">
+            <span>💡</span> Giải thích học thuật (Academic Explanation)
+          </div>
+          <div class="explanation-text" id="practice-explanation-text">
+            <!-- Explanation content -->
+          </div>
+        </div>
+
+        <div class="q-nav-actions">
+          <button class="btn-secondary" id="practice-prev-btn">← Câu trước</button>
+          <button class="btn-primary" id="practice-next-btn">Câu tiếp theo →</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================
+         TAB 3: TIMED EXAM ENGINE (50 Qs / 50 Mins)
+         ========================================== -->
+    <section class="tab-pane" id="tab-exam">
+      
+      <!-- Screen 1: Exam Intro & Start -->
+      <div class="exam-intro-card" id="exam-intro-screen">
+        <div class="exam-intro-icon">🎯</div>
+        <h2>Kỳ Thi Thử Môn Search Engines (SEG301)</h2>
+        <p>Hệ thống tự động bốc ngẫu nhiên <strong>50 câu hỏi</strong> trắc nghiệm chuyên ngành tiếng Anh từ ngân hàng <strong>952 câu hỏi</strong> (phủ toàn diện 17 chương học và kiến thức tổng hợp chuyên sâu). Kết quả thi sẽ chấm điểm và phân tích chi tiết mức độ thành thạo của bạn theo từng chương.</p>
+
+        <div class="exam-rules-grid">
+          <div class="rule-box">
+            <div class="rule-val">50</div>
+            <div class="rule-lbl">Câu hỏi trắc nghiệm (English)</div>
+          </div>
+          <div class="rule-box">
+            <div class="rule-val">50:00</div>
+            <div class="rule-lbl">Phút đếm ngược tự động</div>
+          </div>
+          <div class="rule-box">
+            <div class="rule-val">80%</div>
+            <div class="rule-lbl">Điểm chuẩn Đạt Xuất Sắc</div>
+          </div>
+        </div>
+
+        <button class="btn-primary" id="start-exam-btn" style="font-size: 1.1rem; padding: 0.85rem 2.5rem;">
+          🚀 Bắt đầu làm bài thi (50 phút)
+        </button>
+      </div>
+
+      <!-- Screen 2: Active Exam Interface -->
+      <div class="exam-active-layout" id="exam-active-screen" style="display: none;">
+        <!-- Top Sticky Bar -->
+        <div class="exam-top-bar">
+          <div style="display: flex; align-items: center; gap: 1rem;">
+            <span style="font-weight: 700; font-size: 1.1rem; color: var(--text-primary);" id="exam-q-counter">Câu 1 / 50</span>
+            <span class="badge-tag" id="exam-current-ch-badge">Chương 1</span>
+          </div>
+
+          <div class="exam-timer-display" id="exam-timer-box">
+            <span>⏱️</span>
+            <span id="exam-timer-val">50:00</span>
+          </div>
+
+          <div style="display: flex; align-items: center; gap: 0.75rem;">
+            <button class="btn-secondary" id="exam-flag-btn" title="Cắm cờ để xem lại sau">
+              <span id="exam-flag-icon">🔖</span>
+              <span id="exam-flag-text">Cắm cờ</span>
+            </button>
+            <button class="btn-primary" id="exam-submit-early-btn" style="background: var(--accent-rose); border-color: var(--accent-rose);">
+              Nộp bài thi
+            </button>
+          </div>
+        </div>
+
+        <!-- Main Exam Area (Split View) -->
+        <div class="exam-main-split">
+          <!-- Left: Current Question Card -->
+          <div class="question-card" style="margin-bottom: 0;">
+            <div class="q-text" id="exam-q-text">
+              <!-- Question text -->
+            </div>
+
+            <div class="options-list" id="exam-options-list">
+              <!-- Exam Options -->
+            </div>
+
+            <div class="q-nav-actions">
+              <button class="btn-secondary" id="exam-prev-btn">← Câu trước</button>
+              <button class="btn-primary" id="exam-next-btn">Câu tiếp theo →</button>
+            </div>
+          </div>
+
+          <!-- Right: Question Palette Matrix -->
+          <div class="exam-palette-card">
+            <div class="palette-title">BẢNG TRẢ LỜI (50 CÂU)</div>
+            <div class="palette-grid" id="exam-palette-grid">
+              <!-- 50 buttons generated by JS -->
+            </div>
+
+            <div class="palette-legend">
+              <div class="legend-item">
+                <div class="legend-dot" style="background: var(--primary);"></div>
+                <span>Đã trả lời</span>
+              </div>
+              <div class="legend-item">
+                <div class="legend-dot" style="background: var(--bg-secondary); border: 1px solid var(--border-medium);"></div>
+                <span>Chưa làm</span>
+              </div>
+              <div class="legend-item">
+                <div class="legend-dot" style="background: var(--accent-amber);"></div>
+                <span>Đã cắm cờ 🔖</span>
+              </div>
+              <div class="legend-item">
+                <div class="legend-dot" style="border: 2px solid var(--accent-blue);"></div>
+                <span>Đang xem</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Screen 3: Exam Results & Review -->
+      <div class="exam-results-screen" id="exam-results-screen" style="display: none;">
+        <!-- Results Banner -->
+        <div class="results-banner">
+          <div class="results-score-big" id="result-score-display">0 / 50</div>
+          <div class="results-status-badge" id="result-status-badge">KẾT QUẢ</div>
+
+          <div class="results-summary-grid">
+            <div class="summary-metric">
+              <div class="metric-num" id="res-metric-accuracy" style="color: var(--accent-blue);">0%</div>
+              <div class="metric-lbl">Tỷ lệ chính xác</div>
+            </div>
+            <div class="summary-metric">
+              <div class="metric-num" id="res-metric-correct" style="color: var(--accent-emerald);">0</div>
+              <div class="metric-lbl">Câu đúng</div>
+            </div>
+            <div class="summary-metric">
+              <div class="metric-num" id="res-metric-incorrect" style="color: var(--accent-rose);">0</div>
+              <div class="metric-lbl">Câu sai</div>
+            </div>
+            <div class="summary-metric">
+              <div class="metric-num" id="res-metric-time" style="color: var(--accent-cyan);">00:00</div>
+              <div class="metric-lbl">Thời gian làm</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Chapter Mastery Breakdown -->
+        <div class="mastery-card">
+          <h3>📊 Đánh Giá Năng Lực Theo Từng Chương (Chapter Mastery)</h3>
+          <div class="mastery-grid" id="exam-mastery-list">
+            <!-- Dynamic chapter rows -->
+          </div>
+        </div>
+
+        <!-- Study Recommendations -->
+        <div class="mastery-card" id="study-recommendations-card" style="border-left: 4px solid var(--accent-amber);">
+          <h3 style="color: var(--accent-amber);">🎯 Khuyến Nghị Học Tập Dựa Trên Kết Quả</h3>
+          <div id="study-recommendations-content" style="color: var(--text-secondary); line-height: 1.6;">
+            <!-- Dynamic suggestions -->
+          </div>
+        </div>
+
+        <!-- Review Question List Controls -->
+        <div class="review-controls">
+          <h3 style="font-size: 1.25rem;">📝 Chi Tiết Đáp Án & Giải Thích Từng Câu</h3>
+          <div class="review-filter-btns">
+            <button class="filter-chip active" data-review-filter="all">Tất cả (50)</button>
+            <button class="filter-chip" data-review-filter="wrong">Câu sai</button>
+            <button class="filter-chip" data-review-filter="correct">Câu đúng</button>
+            <button class="filter-chip" data-review-filter="flagged">Đã cắm cờ</button>
+          </div>
+        </div>
+
+        <!-- Review List Container -->
+        <div id="exam-review-questions-list" style="display: flex; flex-direction: column; gap: 1.25rem;">
+          <!-- Populated by JS -->
+        </div>
+
+        <!-- Bottom Action -->
+        <div style="text-align: center; margin: 3rem 0;">
+          <button class="btn-primary" id="retake-exam-btn" style="font-size: 1.1rem; padding: 0.85rem 2rem;">
+            🔄 Thi Đề Mới (Bốc 50 câu random mới)
+          </button>
+        </div>
+      </div>
+
+    </section>
+
+    <!-- ==========================================
+         TAB 4: QUESTION BANK EXPLORER (952 Qs)
+         ========================================== -->
+    <section class="tab-pane" id="tab-bank">
+      <div class="bank-filter-bar">
+        <input type="text" id="bank-search-input" class="bank-search-input" placeholder="Tìm kiếm trong 952 câu hỏi (từ khóa, mã câu, nội dung)...">
+        
+        <select id="bank-chapter-filter" class="practice-chapter-select" style="min-width: 200px;">
+          <option value="all">Tất cả các chương (952 câu)</option>
+          <!-- Dynamic options -->
+        </select>
+
+        <button class="btn-secondary" id="bank-toggle-answers-btn">
+          👁️ Hiện/Ẩn tất cả đáp án
+        </button>
+      </div>
+
+      <div style="margin-bottom: 1rem; color: var(--text-muted); font-size: 0.85rem;" id="bank-count-info">
+        Hiển thị 952 câu hỏi
+      </div>
+
+      <div id="bank-questions-container" style="display: flex; flex-direction: column; gap: 1.25rem;">
+        <!-- Rendered by JS -->
+      </div>
+    </section>
+
+    <!-- ==========================================
+         TAB 5: GLOSSARY (83 TERMS)
+         ========================================== -->
+    <section class="tab-pane" id="tab-glossary">
+      <div class="bank-filter-bar">
+        <input type="text" id="glossary-search-input" class="bank-search-input" placeholder="Tra cứu 83 thuật ngữ chuyên ngành Search Engines...">
+        <div style="color: var(--text-muted); font-size: 0.85rem;" id="glossary-count-info">
+          83 thuật ngữ
+        </div>
+      </div>
+
+      <div class="glossary-grid" id="glossary-items-grid">
+        <!-- Rendered by JS -->
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ==========================================
+       GLOBAL MODALS
+       ========================================== -->
+
+  <!-- 1. Search Modal (Ctrl + K) -->
+  <div class="modal-overlay" id="search-modal">
+    <div class="modal-card">
+      <div class="search-modal-input-wrap">
+        <input type="text" id="global-search-input" class="search-modal-input" placeholder="Tìm chương, thuật ngữ, câu hỏi..." autofocus autocomplete="off">
+      </div>
+      <div class="search-modal-results" id="search-modal-results">
+        <!-- Search results list -->
+      </div>
+    </div>
+  </div>
+
+  <!-- 2. Submit Early Confirmation Modal -->
+  <div class="modal-overlay" id="submit-confirm-modal">
+    <div class="modal-card" style="max-width: 460px;">
+      <div class="modal-header">
+        <h3>Xác Nhận Nộp Bài Thi</h3>
+        <button id="close-confirm-modal" style="background: none; border: none; color: var(--text-muted); font-size: 1.2rem; cursor: pointer;">✕</button>
+      </div>
+      <div class="modal-body">
+        <p id="confirm-modal-warning" style="color: var(--text-secondary); line-height: 1.6; margin-bottom: 1rem;">
+          Bạn có chắc chắn muốn nộp bài thi ngay bây giờ?
+        </p>
+        <div id="confirm-unanswered-alert" style="background: rgba(245, 158, 11, 0.15); border: 1px solid var(--accent-amber); padding: 0.75rem; border-radius: var(--radius-sm); font-size: 0.85rem; color: #fbbf24; display: none;">
+          ⚠️ Bạn vẫn còn <strong id="confirm-unanswered-count">0</strong> câu hỏi chưa trả lời!
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button class="btn-secondary" id="confirm-cancel-btn">Làm tiếp</button>
+        <button class="btn-primary" id="confirm-submit-btn" style="background: var(--accent-rose); border-color: var(--accent-rose);">Nộp bài luôn</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- ==========================================
+       SCRIPTS (ORDER IS ESSENTIAL FOR OFFLINE DATA)
+       ========================================== -->
+  <!-- 1. Bundled Local Offline Data Scripts -->
+  <script src="data/chapters.js"></script>
+  <script src="data/knowledge.js"></script>
+  <script src="data/glossary.js"></script>
+  <script src="data/questions.js"></script>
+
+  <!-- 2. KaTeX Math Renderer -->
+  <script src="lib/katex/katex.min.js"></script>
+  <script src="lib/katex/contrib/auto-render.min.js"></script>
+
+  <!-- 3. Mermaid Diagram Engine (Offline Local Bundle + CDN Fallback) -->
+  <script src="lib/mermaid/mermaid.min.js"></script>
+  <script>
+    if (typeof mermaid === 'undefined') {
+      document.write('<script src="https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.min.js"><\\/script>');
+    }
+  </script>
+
+  <!-- 4. Main Application Logic -->
+  <script src="js/app.js"></script>
+</body>
+</html>

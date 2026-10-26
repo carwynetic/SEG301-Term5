@@ -1,0 +1,153 @@
+{
+  "chapter_id": 4,
+  "filename": "4. Processing Text.pptx",
+  "title": "Processing Text",
+  "total_slides": 29,
+  "slides": [
+    {
+      "slide_num": 1,
+      "file_path": "ppt/slides/slide1.xml",
+      "text": "Chapter 4 Text Processing SEG301m"
+    },
+    {
+      "slide_num": 2,
+      "file_path": "ppt/slides/slide2.xml",
+      "text": "Objectives The techniques used in text processing How to analyze the links? How to extract information?"
+    },
+    {
+      "slide_num": 3,
+      "file_path": "ppt/slides/slide3.xml",
+      "text": "Contents 4.1 From Words to Terms 4.2 Text statistics 4.3 Document parsing: Tokenizing, stopping, stemming, phrases and N -grams 4.4 Document structure and markup 4.5 Link analysis: anchor text, page rank, link quality 4.6 Information Extraction: Hidden Markov models for extraction"
+    },
+    {
+      "slide_num": 4,
+      "file_path": "ppt/slides/slide4.xml",
+      "text": "4.1 From Words to Terms Textual preprocessing phase typically performed by an IR engine, taking as input a document and yielding its index terms Generic terms Conjunctions and prepositions Low discriminative power High term frequency Specific terms Higher discriminative power Low document frequency"
+    },
+    {
+      "slide_num": 5,
+      "file_path": "ppt/slides/slide5.xml",
+      "text": "4.2 Text statistics Zipf ’s law : the frequency of the r th most common word is inversely proportional to r or, alternatively, the rank of a word times its frequency ( f ) is approximately a constant ( k ) The probability of occurrence for the r th ranked word is decided by where c is a constant (For English,              )"
+    },
+    {
+      "slide_num": 6,
+      "file_path": "ppt/slides/slide6.xml",
+      "text": "4.2 Text statistics Most frequent 50 words from AP89 collection Low frequency words"
+    },
+    {
+      "slide_num": 7,
+      "file_path": "ppt/slides/slide7.xml",
+      "text": "4.2 Text statistics: Vocabulary Growth Heap’s Law . The above findings relate the frequency and relevance of words in a corpus The vocabulary size V can be computed as where N is the size (in words) of the document collection, K is a constant (10-100) and                      typically between 0.4 and 0.6"
+    },
+    {
+      "slide_num": 8,
+      "file_path": "ppt/slides/slide8.xml",
+      "text": "4.3 Document parsing: Tokenizing Tokenizing is the process of forming words from the sequence of characters in a document"
+    },
+    {
+      "slide_num": 9,
+      "file_path": "ppt/slides/slide9.xml",
+      "text": "4.3 Document parsing: Tokenizing Issues? Small words (one or two characters) Both hyphenated and non-hyphenated forms of many words are common Special characters …"
+    },
+    {
+      "slide_num": 10,
+      "file_path": "ppt/slides/slide10.xml",
+      "text": "4.3 Document parsing: stopping Determiners : “the,” “a,” “an,” “that,” and “those” Prepositions: “over,” “under,” “above,” and “below,” Stopwords : text processing stops when one is seen, and they are thrown out Removing too many words: decrease  retrieval effectiveness Not removing stopwords : cause some problems in ranking"
+    },
+    {
+      "slide_num": 11,
+      "file_path": "ppt/slides/slide11.xml",
+      "text": "4.3 Document parsing: Stemming A component of text processing that captures the relationships between different variations of a word Two basic types of stemmers: algorithmic and dictionary-based Algorithmic stemmer cakes → cake, dogs → dog “century” and “centuries”? : false negative “I” and “is? : false positive style.visibility style.visibility"
+    },
+    {
+      "slide_num": 12,
+      "file_path": "ppt/slides/slide12.xml",
+      "text": "4.3 Document parsing: Stemming Replace sses by ss (e.g., stresses → stress) Delete s if the preceding word part contains a vowel not immediately before the s (e.g., gaps → gap but gas → gas) Replace ied or ies by i if preceded by more than one letter, otherwise by ie (e.g., ties → tie, cries → cri) If suffix is us or ss do nothing (e.g., stress → stress) Replace eed , eedly by ee if it is in the part of the word after the first non-vowel following a vowel (e.g., agreed → agree, feed → feed) Delete ed , edly , ing , ingly if the preceding word part contains a vowel then if the word ends in at , bl , or iz add e (e.g., fished → fish, pirating → pirate)"
+    },
+    {
+      "slide_num": 13,
+      "file_path": "ppt/slides/slide13.xml",
+      "text": "4.3 Document parsing: Stemming Dictionary-based stemmer: store lists of related words in a large dictionary The dictionary cannot be infinitely long, so it cannot react automatically to new words Combine an algorithmic stemmer with a dictionary-based stemmer: Krovetz stemmer"
+    },
+    {
+      "slide_num": 14,
+      "file_path": "ppt/slides/slide14.xml",
+      "text": "4.3 Document parsing: Phrases and N -grams Noun phrase : sequences of nouns, or adjectives followed by nouns Defined by part-of-speech (POS) tagger : NN (singular noun), NNS (plural noun), VB (verb), VBD (verb, past tense), VBN (verb, past participle), IN (preposition), JJ (adjective), CC (conjunction, e.g., “and”, “or”), PRP (pronoun), and MD (modal auxiliary, e.g., “can”, will”)"
+    },
+    {
+      "slide_num": 15,
+      "file_path": "ppt/slides/slide15.xml",
+      "text": "4.3 Document parsing: Phrases and N -grams High-frequency simple noun phrases from a TREC corpus"
+    },
+    {
+      "slide_num": 16,
+      "file_path": "ppt/slides/slide16.xml",
+      "text": "4.3 Document parsing: Phrases and N -grams Much simpler definition of a phrase: any sequence of n words, known as an n-gram “to be or not to be” could certainly make use of n-grams Use n-gram indexing: a fast method of incorporating phrase features in the ranking"
+    },
+    {
+      "slide_num": 17,
+      "file_path": "ppt/slides/slide17.xml",
+      "text": "4.4 Document structure and markup Fields or attributes of database records are a critical part of searching Main heading for the page, “tropical fish”, indicates that this phrase is particularly important. Other words and phrases are used as the anchor text"
+    },
+    {
+      "slide_num": 18,
+      "file_path": "ppt/slides/slide18.xml",
+      "text": "4.5 Link analysis The words “the somewhere page” will be displayed differently than regular text, usually underlined or in a different color"
+    },
+    {
+      "slide_num": 19,
+      "file_path": "ppt/slides/slide19.xml",
+      "text": "4.5 Link analysis: anchor text Two properties that make it particularly useful for ranking web pages Very short, perhaps two or three words Describe a destination page from a different perspective Simple algorithm for ranking pages: Search through all links in the collection, looking for anchor text that is an exact match for the user’s query. Each time there is a match, add 1 to the score of the destination page Pages would then be ranked in decreasing order of this score www.ebay.com → “eBay” style.visibility"
+    },
+    {
+      "slide_num": 20,
+      "file_path": "ppt/slides/slide20.xml",
+      "text": "4.5 Link analysis: PageRank How can you type “ tiki ” into a search engine and it selects  the most popular one? inlinks (links pointing to a page): susceptible to spam PageRank PageRank: based on the idea of a random surfer"
+    },
+    {
+      "slide_num": 21,
+      "file_path": "ppt/slides/slide21.xml",
+      "text": "4.5 Link analysis: PageRank The Web consists of just three pages, A , B , and C . We will suppose that page A links to pages B and C , page B links to page C , and page C links to page A More generally, the PageRank for any page u is the set of pages that point to u , and is the number of outgoing links from page v"
+    },
+    {
+      "slide_num": 22,
+      "file_path": "ppt/slides/slide22.xml",
+      "text": "4.5 Link analysis: PageRank Pseudocode for the iterative PageRank algorithm"
+    },
+    {
+      "slide_num": 23,
+      "file_path": "ppt/slides/slide23.xml",
+      "text": "4.5 Link analysis: Link quality Post b is inﬂuential, because author A has decided to write about it. PageRank perspective, a and b have links to each other, and therefore neither is more inﬂuential than the other Comments section of a blog can also be a source of link spam"
+    },
+    {
+      "slide_num": 24,
+      "file_path": "ppt/slides/slide24.xml",
+      "text": "4.5 Link analysis: Link quality Solution: The link still appears on the blog, but search engines are designed to ignore all links marked rel = nofollow"
+    },
+    {
+      "slide_num": 25,
+      "file_path": "ppt/slides/slide25.xml",
+      "text": "4.6 Information Extraction Definition: a language technology that focuses on extracting structure from text Text tagged by information extraction: a sentence and the corresponding XML markup after using information extraction"
+    },
+    {
+      "slide_num": 26,
+      "file_path": "ppt/slides/slide26.xml",
+      "text": "4.6 Information Extraction Two main approaches for recognizing entity: Rule-based approach Statistical approach Rule-based approach: uses one or more lexicons (lists of words and phrases) that categorize names Statistical approach: use probabilistic model of the words and around an entity → Hidden Markov Model (HMM)"
+    },
+    {
+      "slide_num": 27,
+      "file_path": "ppt/slides/slide27.xml",
+      "text": "4.6 Information Extraction: Hidden Markov Model (HMM) Problem: words can have many different meanings “Marathon”: race or location? Need context → next word in the sequence depends on only a small number of the previous words: HMM Sentence model for statistical entity extractor"
+    },
+    {
+      "slide_num": 28,
+      "file_path": "ppt/slides/slide28.xml",
+      "text": "Exercise Download several pages from Wikipedia. Then tokenize the collection you created. For this exercise, keep only the tokens consisting entirely of characters from the English alphabet. Ignore tags and tokens containing non-ASCII characters ."
+    },
+    {
+      "slide_num": 29,
+      "file_path": "ppt/slides/slide29.xml",
+      "text": "Summary Document parsing: Tokenizing, stopping, stemming, phrases and N -grams Link analysis: anchor text, page rank, link quality Information Extraction: Hidden Markov models for extraction"
+    }
+  ]
+}

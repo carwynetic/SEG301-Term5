@@ -1,0 +1,1602 @@
+[
+  {
+    "id": "q_ch09_01",
+    "chapter": 9,
+    "question": "What are the three fundamental components of an Information Retrieval test collection under the Cranfield evaluation paradigm?",
+    "options": [
+      "A web crawler, a database, and an API gateway",
+      "A document collection (Corpus), a set of test queries (Information Needs), and ground-truth Relevance Judgments (Qrels)",
+      "A GPU server, a monitor, and a keyboard",
+      "An HTML parser, a CSS sheet, and a JavaScript bundle"
+    ],
+    "correct": 1,
+    "explanation": "The Cranfield evaluation paradigm requires 3 standardized pillars: 1. A benchmark document collection, 2. A set of test queries/topics, and 3. Ground-truth relevance assessments (qrels).",
+    "topic": "Cranfield Paradigm",
+    "slide_ref": "9. Evaluating Search Engines.pptx",
+    "answer": 1
+  },
+  {
+    "id": "q_ch09_02",
+    "chapter": 9,
+    "question": "What does 'TREC' stand for in IR evaluation history?",
+    "options": [
+      "Text REtrieval Conference (co-sponsored by NIST and DARPA since 1992)",
+      "Total Relevance Evaluation Center",
+      "Terminal Routing Execution Controller",
+      "Technical Research Engineering Committee"
+    ],
+    "correct": 0,
+    "explanation": "TREC (Text REtrieval Conference) is the preeminent annual benchmark workshop providing standardized corpora, tasks, and ground truth for IR evaluation.",
+    "topic": "TREC Conference",
+    "slide_ref": "9. Evaluating Search Engines.pptx",
+    "answer": 0
+  },
+  {
+    "id": "q_ch09_03",
+    "chapter": 9,
+    "question": "What is the formula for Precision in an unranked retrieval evaluation?",
+    "options": [
+      "|Relevant ∩ Retrieved| / |Retrieved|",
+      "|Relevant ∩ Retrieved| / |Relevant|",
+      "|Retrieved| / |Total Collection|",
+      "|Relevant| / |Retrieved|"
+    ],
+    "correct": 0,
+    "explanation": "Precision is the proportion of retrieved documents that are actually relevant: Precision = (Relevant Retrieved) / (Total Retrieved).",
+    "topic": "Precision Formula",
+    "slide_ref": "9. Evaluating Search Engines.pptx",
+    "answer": 0
+  },
+  {
+    "id": "q_ch09_04",
+    "chapter": 9,
+    "question": "What is the formula for Recall in an unranked retrieval evaluation?",
+    "options": [
+      "|Relevant ∩ Retrieved| / |Relevant|",
+      "|Relevant ∩ Retrieved| / |Retrieved|",
+      "|Retrieved| / |Total Collection|",
+      "|Relevant| / |Non-Relevant|"
+    ],
+    "correct": 0,
+    "explanation": "Recall is the proportion of all relevant documents in the collection that were successfully retrieved: Recall = (Relevant Retrieved) / (Total Relevant).",
+    "topic": "Recall Formula",
+    "slide_ref": "9. Evaluating Search Engines.pptx",
+    "answer": 0
+  },
+  {
+    "id": "q_ch09_05",
+    "chapter": 9,
+    "question": "If a search system retrieves 20 documents, of which 15 are relevant, and there are 30 total relevant documents in the entire collection, what are the Precision and Recall?",
+    "options": [
+      "Precision = 15/20 = 75%; Recall = 15/30 = 50%",
+      "Precision = 15/30 = 50%; Recall = 15/20 = 75%",
+      "Precision = 20/30 = 66.7%; Recall = 15/20 = 75%",
+      "Precision = 100%; Recall = 100%"
+    ],
+    "correct": 0,
+    "explanation": "Precision = 15/20 = 0.75 (75%). Recall = 15/30 = 0.50 (50%).",
+    "topic": "Precision Recall Calculation",
+    "slide_ref": "9. Evaluating Search Engines.pptx",
+    "answer": 0
+  },
+  {
+    "id": "q_ch09_06",
+    "chapter": 9,
+    "question": "What is the F-measure (F1 score) in IR evaluation?",
+    "options": [
+      "The arithmetic mean of Precision and Recall",
+      "The harmonic mean of Precision and Recall: F1 = 2 * (Precision * Recall) / (Precision + Recall)",
+      "The geometric difference between Precision and Recall",
+      "Precision minus Recall"
+    ],
+    "correct": 1,
+    "explanation": "F1 is the harmonic mean of Precision and Recall, which penalizes extreme imbalances (if either is 0, F1 is 0).",
+    "topic": "F1 Score Formula",
+    "slide_ref": "9. Evaluating Search Engines.pptx",
+    "answer": 1
+  },
+  {
+    "id": "q_ch09_07",
+    "chapter": 9,
+    "question": "Why is the harmonic mean used for F1 rather than the standard arithmetic mean?",
+    "options": [
+      "The harmonic mean is dominated by the smaller value; if a system retrieves all documents in the corpus achieving 100% Recall but 0.1% Precision, the harmonic mean will be near zero rather than 50%",
+      "The arithmetic mean cannot be calculated for fractions",
+      "The harmonic mean runs faster on CPUs",
+      "The harmonic mean only works with binary numbers"
+    ],
+    "correct": 0,
+    "explanation": "The arithmetic mean of 100% recall and 0% precision is 50%, which is misleadingly high; the harmonic mean correctly drops to near 0%.",
+    "topic": "Harmonic Mean Rationale",
+    "slide_ref": "9. Evaluating Search Engines.pptx",
+    "answer": 0
+  },
+  {
+    "id": "q_ch09_08",
+    "chapter": 9,
+    "question": "In the general $F_\\beta$ formula, what does setting $\\beta = 2.0$ indicate about the evaluation preference?",
+    "options": [
+      "Precision is weighted twice as heavily as Recall",
+      "Recall is weighted twice as heavily as Precision",
+      "Both are weighted identically",
+      "All documents are judged non-relevant"
+    ],
+    "correct": 1,
+    "explanation": "F_beta weights recall beta times as much as precision. Beta = 2 weights recall more; beta = 0.5 weights precision more.",
+    "topic": "F-beta Weighting",
+    "slide_ref": "9. Evaluating Search Engines.pptx",
+    "answer": 1
+  },
+  {
+    "id": "q_ch09_09",
+    "chapter": 9,
+    "question": "What does 'Precision at k' (P@k) measure in ranked retrieval?",
+    "options": [
+      "The proportion of relevant documents among the top-k ranked results returned by the search engine (e.g., P@10 evaluates the top 10 results)",
+      "The precision after k hours of server runtime",
+      "The number of characters in the k-th document",
+      "The precision of the k-th CPU thread"
+    ],
+    "correct": 0,
+    "explanation": "P@k (e.g., P@5, P@10) evaluates user experience on the first page of results, counting how many of the top-k results are relevant.",
+    "topic": "Precision at k",
+    "slide_ref": "9. Evaluating Search Engines.pptx",
+    "answer": 0
+  },
+  {
+    "id": "q_ch09_10",
+    "chapter": 9,
+    "question": "What is 'Mean Average Precision' (MAP) in Information Retrieval?",
+    "options": [
+      "The average of the Average Precision (AP) scores across a set of test queries, evaluating ranking quality across all relevant documents",
+      "The average page load speed of web servers",
+      "The maximum precision achieved on the easiest query",
+      "The arithmetic mean of server RAM usage"
+    ],
+    "correct": 0,
+    "explanation": "MAP calculates the Average Precision for each query (averaging P@k at each rank k where a relevant document appears) and takes the mean across all queries.",
+    "topic": "MAP Definition",
+    "slide_ref": "9. Evaluating Search Engines.pptx",
+    "answer": 0
+  },
+  {
+    "id": "q_ch09_11",
+    "chapter": 9,
+    "question": "Suppose for a query, relevant documents appear at ranks 1, 3, and 5. What is the Average Precision (AP) for this query?",
+    "options": [
+      "P@1 = 1/1 = 1.0; P@3 = 2/3 ≈ 0.667; P@5 = 3/5 = 0.60. AP = (1.0 + 0.667 + 0.60) / 3 ≈ 0.756",
+      "AP = (1 + 3 + 5) / 3 = 3.0",
+      "AP = 3 / 5 = 0.60",
+      "AP = 1.0"
+    ],
+    "correct": 0,
+    "explanation": "AP averages P@k at each relevant position: at rank 1: 1/1=1.0; rank 3: 2/3=0.667; rank 5: 3/5=0.60. Mean = (1.0 + 0.667 + 0.60)/3 = 0.756.",
+    "topic": "Average Precision Calculation",
+    "slide_ref": "9. Evaluating Search Engines.pptx",
+    "answer": 0
+  },
+  {
+    "id": "q_ch09_12",
+    "chapter": 9,
+    "question": "What is 'Mean Reciprocal Rank' (MRR) primarily designed to evaluate?",
+    "options": [
+      "Tasks where there is typically only ONE single target relevant document or where user cares only about the FIRST relevant item (e.g., Navigational search, Factoid QA)",
+      "Large-scale text clustering",
+      "Document summarization",
+      "Image compression"
+    ],
+    "correct": 0,
+    "explanation": "MRR = (1/|Q|) * sum(1 / rank_i), where rank_i is the position of the first relevant document, ideal for navigational queries and QA.",
+    "topic": "MRR Evaluation",
+    "slide_ref": "9. Evaluating Search Engines.pptx",
+    "answer": 0
+  },
+  {
+    "id": "q_ch09_13",
+    "chapter": 9,
+    "question": "If a search engine returns the first relevant document at rank 2 for query 1, and at rank 4 for query 2, what is the Mean Reciprocal Rank (MRR)?",
+    "options": [
+      "MRR = (1/2 + 1/4) / 2 = (0.5 + 0.25) / 2 = 0.375",
+      "MRR = (2 + 4) / 2 = 3.0",
+      "MRR = 1 / (2 + 4) = 0.167",
+      "MRR = 0.75"
+    ],
+    "correct": 0,
+    "explanation": "Reciprocal ranks are 1/2 = 0.5 and 1/4 = 0.25. The mean across the 2 queries is (0.5 + 0.25)/2 = 0.375.",
+    "topic": "MRR Calculation",
+    "slide_ref": "9. Evaluating Search Engines.pptx",
+    "answer": 0
+  },
+  {
+    "id": "q_ch09_14",
+    "chapter": 9,
+    "question": "Why was Normalized Discounted Cumulative Gain (NDCG) developed to replace binary precision metrics?",
+    "options": [
+      "NDCG supports graded relevance judgments (e.g., Highly Relevant=3, Relevant=2, Marginally Relevant=1, Irrelevant=0) and applies a logarithmic discount penalty for relevant items appearing lower in the ranking",
+      "NDCG was created because computers stopped supporting binary numbers",
+      "NDCG requires zero human relevance judgments",
+      "NDCG only works on French text"
+    ],
+    "correct": 0,
+    "explanation": "NDCG handles non-binary relevance levels and heavily penalizes placing highly relevant documents down at ranks 8 or 9 instead of rank 1.",
+    "topic": "NDCG Rationale",
+    "slide_ref": "9. Evaluating Search Engines.pptx",
+    "answer": 0
+  },
+  {
+    "id": "q_ch09_15",
+    "chapter": 9,
+    "question": "In Discounted Cumulative Gain (DCG), what is the standard formula for calculating DCG at rank position p?",
+    "options": [
+      "DCG_p = rel_1 + sum_{i=2}^p [ rel_i / log2(i) ]",
+      "DCG_p = sum_{i=1}^p rel_i",
+      "DCG_p = rel_p * p",
+      "DCG_p = log2(sum(rel_i))"
+    ],
+    "correct": 0,
+    "explanation": "DCG accumulates relevance discounted logarithmically by rank position: rel_1 + sum_{i=2}^p (rel_i / log2(i)).",
+    "topic": "DCG Formula",
+    "slide_ref": "9. Evaluating Search Engines.pptx",
+    "answer": 0
+  },
+  {
+    "id": "q_ch09_16",
+    "chapter": 9,
+    "question": "What is 'Ideal DCG' (IDCG) used for in NDCG calculation?",
+    "options": [
+      "The DCG score achieved by an ideal, perfect ranking where all candidate documents are sorted in descending order of their true relevance grades",
+      "The theoretical maximum speed of a hard drive",
+      "The DCG score when all documents have score zero",
+      "The DCG score of a random ranking"
+    ],
+    "correct": 0,
+    "explanation": "IDCG is the maximum possible DCG for that query; dividing actual DCG by IDCG normalizes the score into the range [0.0, 1.0].",
+    "topic": "IDCG Concept",
+    "slide_ref": "9. Evaluating Search Engines.pptx",
+    "answer": 0
+  },
+  {
+    "id": "q_ch09_17",
+    "chapter": 9,
+    "question": "If the actual DCG@3 for a query is 4.5 and the Ideal DCG@3 (IDCG@3) is 6.0, what is the NDCG@3 score?",
+    "options": [
+      "4.5 / 6.0 = 0.75",
+      "6.0 / 4.5 = 1.33",
+      "4.5 * 6.0 = 27.0",
+      "6.0 - 4.5 = 1.5"
+    ],
+    "correct": 0,
+    "explanation": "NDCG@p = DCG_p / IDCG_p = 4.5 / 6.0 = 0.75.",
+    "topic": "NDCG Calculation",
+    "slide_ref": "9. Evaluating Search Engines.pptx",
+    "answer": 0
+  },
+  {
+    "id": "q_ch09_18",
+    "chapter": 9,
+    "question": "What is 'Pooling' in the construction of large benchmark evaluation corpora (like TREC)?",
+    "options": [
+      "Putting all hard drives in a swimming pool",
+      "Collecting the top-k results (e.g., top 100) from many diverse, competing retrieval systems and merging them into a unified pool for human assessors to judge, avoiding evaluating millions of un-retrieved documents",
+      "Deleting non-English documents",
+      "A technique used in neural convolutional networks exclusively"
+    ],
+    "correct": 1,
+    "explanation": "Assessing all documents in millions of web pages is impossible; pooling gathers the union of top-k outputs from many diverse systems for assessment.",
+    "topic": "Pooling Methodology",
+    "slide_ref": "9. Evaluating Search Engines.pptx",
+    "answer": 1
+  },
+  {
+    "id": "q_ch09_19",
+    "chapter": 9,
+    "question": "What is 'A/B Testing' in search engine online evaluation?",
+    "options": [
+      "Splitting live production users into Control (A) and Treatment (B) groups to compare the effect of a new ranking algorithm on real user metrics (e.g., CTR, dwell time, query reformulation)",
+      "Testing whether users prefer the letter A or B",
+      "A test written in assembly code",
+      "A hardware test for server power supplies"
+    ],
+    "correct": 0,
+    "explanation": "A/B testing exposes a small slice of live traffic to an experimental algorithm to evaluate real user behavioral telemetry against the status quo.",
+    "topic": "A/B Testing",
+    "slide_ref": "9. Evaluating Search Engines.pptx",
+    "answer": 0
+  },
+  {
+    "id": "q_ch09_20",
+    "chapter": 9,
+    "question": "What is 'Interleaving' (e.g., Team Draft Interleaving) in search engine online comparison?",
+    "options": [
+      "Combining the ranked results of Algorithm A and Algorithm B into a single interleaved SERP presented to the user to measure which algorithm's links receive more clicks with higher statistical sensitivity than A/B testing",
+      "Running two queries at the same time on different computers",
+      "Printing search results on alternating paper sheets",
+      "Encrypting search queries with interleaved ciphers"
+    ],
+    "correct": 0,
+    "explanation": "Team Draft Interleaving merges candidate lists side-by-side into one SERP, detecting user preference with 100x less traffic than standard A/B testing.",
+    "topic": "Interleaving",
+    "slide_ref": "9. Evaluating Search Engines.pptx",
+    "answer": 0
+  },
+  {
+    "id": "q_ch09_21",
+    "chapter": 9,
+    "question": "What is the purpose of conducting 'Statistical Significance Tests' (e.g., paired t-test, Wilcoxon signed-rank test) when comparing two retrieval models?",
+    "options": [
+      "To confirm whether the observed difference in MAP or NDCG is statistically genuine rather than a random artifact of the particular sample of queries tested",
+      "To test if the server CPU is running at peak clock speed",
+      "To prove that all users have identical search habits",
+      "To calculate the total cost of electricity"
+    ],
+    "correct": 0,
+    "explanation": "Significance tests verify that improvements (e.g., p < 0.05) are robust and repeatable across query populations.",
+    "topic": "Significance Testing",
+    "slide_ref": "9. Evaluating Search Engines.pptx",
+    "answer": 0
+  },
+  {
+    "id": "q_ch09_22",
+    "chapter": 9,
+    "question": "Why is a 'Paired' statistical test used when comparing two search algorithms A and B across 50 queries?",
+    "options": [
+      "Because both algorithms are evaluated on the EXACT SAME set of 50 queries, pairing each query's score from A with its score from B to eliminate query difficulty variance",
+      "Because algorithms must run on two computers simultaneously",
+      "Because queries always contain pairs of words",
+      "Because search engines have two owners"
+    ],
+    "correct": 0,
+    "explanation": "Query difficulty varies wildly (some queries are inherently easy, others hard); pairing removes between-query variance.",
+    "topic": "Paired Testing",
+    "slide_ref": "9. Evaluating Search Engines.pptx",
+    "answer": 0
+  },
+  {
+    "id": "q_ch09_23",
+    "chapter": 9,
+    "question": "What is 'Click Position Bias' in search log telemetry?",
+    "options": [
+      "Users are naturally biased to click higher-ranked positions on the SERP regardless of actual content quality, skewing raw click counts as a proxy for relevance",
+      "A user leaning to the left while clicking",
+      "A mouse that only clicks on the top half of the screen",
+      "A user searching only from their home office"
+    ],
+    "correct": 0,
+    "explanation": "Because users trust search engine ordering and scan top-down, rank 1 receives ~30% clicks even if rank 3 is superior.",
+    "topic": "Position Bias in Telemetry",
+    "slide_ref": "9. Evaluating Search Engines.pptx",
+    "answer": 0
+  },
+  {
+    "id": "q_ch09_24",
+    "chapter": 9,
+    "question": "How do search engineers 'Debias' click logs when training Machine Learning ranking models?",
+    "options": [
+      "By applying Inverse Propensity Scoring (IPS) to weight clicks inversely to the examination probability of the rank position",
+      "By deleting all clicks on rank 1",
+      "By multiplying all click counts by 10",
+      "By forcing users to click every link"
+    ],
+    "correct": 0,
+    "explanation": "Inverse Propensity Scoring (Joachims et al., 2017) divides each click by the position's display probability to compute unbiased relevance estimates.",
+    "topic": "Inverse Propensity Scoring",
+    "slide_ref": "9. Evaluating Search Engines.pptx",
+    "answer": 0
+  },
+  {
+    "id": "q_ch09_25",
+    "chapter": 9,
+    "question": "What does 'Fallout' (False Positive Rate) measure in retrieval evaluation?",
+    "options": [
+      "The proportion of non-relevant documents in the collection that were mistakenly retrieved: (Non-relevant Retrieved) / (Total Non-relevant)",
+      "The radioactive decay of nuclear servers",
+      "The number of dropped network packets",
+      "The percentage of queries with spelling errors"
+    ],
+    "correct": 0,
+    "explanation": "Fallout = FP / (FP + TN), measuring the rate at which irrelevant clutter leaks into search results.",
+    "topic": "Fallout Metric",
+    "slide_ref": "9. Evaluating Search Engines.pptx",
+    "answer": 0
+  },
+  {
+    "id": "q_ch09_26",
+    "chapter": 9,
+    "question": "What is a 'Precision-Recall Curve' in IR evaluation?",
+    "options": [
+      "A plot showing interpolated precision values across standard recall levels (0.0, 0.1, 0.2, ..., 1.0), illustrating the trade-off between precision and recall",
+      "A curved line drawn on server chassis",
+      "A graph showing computer CPU usage over time",
+      "A curve tracking internet bandwidth"
+    ],
+    "correct": 0,
+    "explanation": "Precision-Recall curves demonstrate that increasing recall (retrieving more documents) almost inevitably causes precision to decline.",
+    "topic": "Precision-Recall Curve",
+    "slide_ref": "9. Evaluating Search Engines.pptx",
+    "answer": 0
+  },
+  {
+    "id": "q_ch09_27",
+    "chapter": 9,
+    "question": "What is 'Interpolated Precision' at recall level r ($P_{interp}(r)$)?",
+    "options": [
+      "The maximum precision achieved at any recall level r' >= r: max_{r' >= r} P(r')",
+      "The average of all precisions",
+      "Precision divided by r",
+      "Precision multiplied by 100"
+    ],
+    "correct": 0,
+    "explanation": "Interpolation smooths the 'jaggies' in empirical precision-recall curves by taking the highest precision observed at or to the right of recall level r.",
+    "topic": "Interpolated Precision",
+    "slide_ref": "9. Evaluating Search Engines.pptx",
+    "answer": 0
+  },
+  {
+    "id": "q_ch09_28",
+    "chapter": 9,
+    "question": "What is 'R-Precision' in Information Retrieval?",
+    "options": [
+      "The precision at rank position R, where R is the total number of known relevant documents for that query in the collection",
+      "The precision of the letter R",
+      "The ratio of precision to recall",
+      "The precision achieved on Reddit searches"
+    ],
+    "correct": 0,
+    "explanation": "R-Precision evaluates at rank R: if a query has 15 relevant documents, R-Precision is P@15. At this rank, Precision mathematically equals Recall.",
+    "topic": "R-Precision",
+    "slide_ref": "9. Evaluating Search Engines.pptx",
+    "answer": 0
+  },
+  {
+    "id": "q_ch09_29",
+    "chapter": 9,
+    "question": "Why is 'R-Precision' mathematically interesting?",
+    "options": [
+      "At rank R (where R is the total number of relevant documents), Precision@R is exactly equal to Recall@R",
+      "It always equals 1.0",
+      "It cannot be calculated on computers",
+      "It eliminates the need for test collections"
+    ],
+    "correct": 0,
+    "explanation": "If r relevant documents are found in top R, Precision = r/R and Recall = r/R; both metrics coincide.",
+    "topic": "R-Precision Property",
+    "slide_ref": "9. Evaluating Search Engines.pptx",
+    "answer": 0
+  },
+  {
+    "id": "q_ch09_30",
+    "chapter": 9,
+    "question": "What does 'Bpref' (Binary Preference) metric measure, and why is it robust to incomplete relevance judgments?",
+    "options": [
+      "It evaluates how often known relevant documents are ranked above known non-relevant documents, completely ignoring unjudged documents",
+      "It evaluates user browser preferences",
+      "It measures the speed of binary file transfers",
+      "It evaluates Boolean retrieval queries only"
+    ],
+    "correct": 0,
+    "explanation": "Bpref (Buckley & Voorhees, 2004) computes relative preference among judged documents, preventing unjudged documents from artificially penalizing systems.",
+    "topic": "Bpref Metric",
+    "slide_ref": "9. Evaluating Search Engines.pptx",
+    "answer": 0
+  },
+  {
+    "id": "q_ch09_31",
+    "chapter": 9,
+    "question": "What is an 'Ablation Study' in search engine engineering?",
+    "options": [
+      "A study where individual features or components (e.g., removing PageRank, removing proximity scoring) are systematically removed one by one to isolate and quantify their specific contribution to overall ranking effectiveness",
+      "Melting down server hard drives",
+      "Deleting all user search logs",
+      "Testing the search engine in extreme cold temperatures"
+    ],
+    "correct": 0,
+    "explanation": "Ablation tests confirm which components truly drive performance gains versus which add unnecessary complexity.",
+    "topic": "Ablation Studies",
+    "slide_ref": "9. Evaluating Search Engines.pptx",
+    "answer": 0
+  },
+  {
+    "id": "q_ch09_32",
+    "chapter": 9,
+    "question": "What does 'Dwell Time' thresholding (e.g., Dwell Time > 30 seconds) indicate in search log evaluation?",
+    "options": [
+      "A 'Satisfied Click' (SAT click), suggesting the user found substantive content and engaged with the destination page",
+      "A broken computer screen",
+      "The user forgot to close their laptop",
+      "An automated bot request"
+    ],
+    "correct": 0,
+    "explanation": "Clicks with dwell times over 30-60 seconds are designated SAT clicks in industrial search telemetry, indicating successful relevance.",
+    "topic": "SAT Clicks",
+    "slide_ref": "9. Evaluating Search Engines.pptx",
+    "answer": 0
+  },
+  {
+    "id": "q_ch09_33",
+    "chapter": 9,
+    "question": "What is 'Query Reformulation Rate' and why is a high reformulation rate often a negative search engine signal?",
+    "options": [
+      "It means users did not find what they needed on the first attempt and had to repeatedly rephrase their search query",
+      "It means users love typing queries",
+      "It means the search engine is running faster",
+      "It means the website has high PageRank"
+    ],
+    "correct": 0,
+    "explanation": "Frequent immediate reformulations signal that the engine failed to comprehend the user's intent or returned low-quality results.",
+    "topic": "Reformulation Rate",
+    "slide_ref": "9. Evaluating Search Engines.pptx",
+    "answer": 0
+  },
+  {
+    "id": "q_ch09_34",
+    "chapter": 9,
+    "question": "What is the 'Cranfield Paradigm's core simplifying assumption regarding relevance?",
+    "options": [
+      "Relevance can be treated as an objective, static property between a document and a query topic, independent of the individual searcher or temporal context",
+      "All documents are equally relevant to all queries",
+      "Relevance can only be determined by neural networks",
+      "Relevance is random"
+    ],
+    "correct": 0,
+    "explanation": "Cranfield treats relevance as static and query-centric, which allows reproducible offline benchmarks despite real-world user subjectivity.",
+    "topic": "Cranfield Assumptions",
+    "slide_ref": "9. Evaluating Search Engines.pptx",
+    "answer": 0
+  },
+  {
+    "id": "q_ch09_35",
+    "chapter": 9,
+    "question": "What is 'Side-by-Side' (SBS) human evaluation in search engine quality assessment?",
+    "options": [
+      "Human evaluators (Search Quality Raters) compare two blinded SERPs side-by-side (Engine A vs Engine B) for the same query and choose which is superior",
+      "Placing two computer monitors side by side",
+      "Comparing two employees' typing speed",
+      "Reading text horizontally and vertically"
+    ],
+    "correct": 0,
+    "explanation": "SBS evaluation collects blinded human judgments on overall SERP quality to validate ranking updates before deployment.",
+    "topic": "Side-by-Side Evaluation",
+    "slide_ref": "9. Evaluating Search Engines.pptx",
+    "answer": 0
+  },
+  {
+    "id": "q_ch09_36",
+    "chapter": 9,
+    "question": "In evaluating mobile search engines, why is 'Screen Real Estate' and P@1 / P@3 far more critical than on desktop?",
+    "options": [
+      "Mobile viewports only display 1 or 2 results before scrolling; users rarely scroll past the top 2 results on smartphones",
+      "Mobile screens cannot display text",
+      "Mobile phones do not have internet browsers",
+      "Desktop computers do not have monitors"
+    ],
+    "correct": 0,
+    "explanation": "Mobile searchers exhibit extreme top-rank bias; satisfying intent at rank 1 or via featured snippets is essential.",
+    "topic": "Mobile Evaluation Priority",
+    "slide_ref": "9. Evaluating Search Engines.pptx",
+    "answer": 0
+  },
+  {
+    "id": "q_ch09_37",
+    "chapter": 9,
+    "question": "What is 'Fairness and Diversity' in modern search evaluation?",
+    "options": [
+      "Ensuring search results represent diverse perspectives or demographic categories and avoid systemic algorithmic bias",
+      "Giving all websites equal traffic",
+      "Rotating results alphabetically every hour",
+      "Allowing all users to edit search code"
+    ],
+    "correct": 0,
+    "explanation": "Evaluation frameworks increasingly track diversity (e.g., alpha-NDCG) to ensure multi-intent queries satisfy different sub-populations.",
+    "topic": "Diversity & Fairness",
+    "slide_ref": "9. Evaluating Search Engines.pptx",
+    "answer": 0
+  },
+  {
+    "id": "q_ch09_38",
+    "chapter": 9,
+    "question": "What is 'alpha-NDCG' ($\\alpha$-NDCG)?",
+    "options": [
+      "An extension of NDCG that explicitly rewards diversity by penalizing redundancy, discounting documents that cover subtopics already addressed by higher-ranked results",
+      "The NDCG score of the Greek alphabet",
+      "An NDCG score multiplied by alpha = 0.05",
+      "A hardware testing metric for CPUs"
+    ],
+    "correct": 0,
+    "explanation": "Alpha-NDCG models intent diversity: once a subtopic is satisfied by a top result, subsequent documents covering the same subtopic receive diminished credit.",
+    "topic": "alpha-NDCG",
+    "slide_ref": "9. Evaluating Search Engines.pptx",
+    "answer": 0
+  },
+  {
+    "id": "q_ch09_39",
+    "chapter": 9,
+    "question": "What is a 'Cold Start Query' in search engine evaluation?",
+    "options": [
+      "A query that has never been observed in historical search logs before, having zero historical click telemetry",
+      "A query submitted during winter",
+      "A query typed with cold fingers",
+      "A query that crashes the operating system"
+    ],
+    "correct": 0,
+    "explanation": "Roughly 15% of daily web queries are entirely novel, requiring retrieval models to generalize without relying on past click histories.",
+    "topic": "Cold Start Queries",
+    "slide_ref": "9. Evaluating Search Engines.pptx",
+    "answer": 0
+  },
+  {
+    "id": "q_ch09_40",
+    "chapter": 9,
+    "question": "In statistical evaluation, what is a 'Type I Error' (False Positive)?",
+    "options": [
+      "Concluding that Algorithm B is significantly better than Algorithm A when in reality there is no true difference",
+      "A network cable disconnect",
+      "Failing to detect a real improvement",
+      "A spelling error in the query"
+    ],
+    "correct": 0,
+    "explanation": "A Type I error is rejecting the null hypothesis when it is true (claiming a bogus improvement).",
+    "topic": "Type I Error",
+    "slide_ref": "9. Evaluating Search Engines.pptx",
+    "answer": 0
+  },
+  {
+    "id": "q_ch09_41",
+    "chapter": 9,
+    "question": "In statistical evaluation, what is a 'Type II Error' (False Negative)?",
+    "options": [
+      "Failing to detect a genuine, real improvement in search algorithm quality when one actually exists",
+      "A power outage in the server room",
+      "Incorrectly claiming an algorithm is better",
+      "A computer virus infection"
+    ],
+    "correct": 0,
+    "explanation": "A Type II error is accepting the null hypothesis when an actual difference exists (missing a real improvement).",
+    "topic": "Type II Error",
+    "slide_ref": "9. Evaluating Search Engines.pptx",
+    "answer": 0
+  },
+  {
+    "id": "q_ch09_42",
+    "chapter": 9,
+    "question": "What is 'Qrels' file format in TREC benchmarks?",
+    "options": [
+      "A text file containing: query_id, iteration, document_id, relevance_grade (e.g., '101 0 DOC_402 1')",
+      "A binary image file",
+      "An SQL database dump",
+      "A Python executable script"
+    ],
+    "correct": 0,
+    "explanation": "The qrels file specifies the gold-standard ground truth: query ID, document ID, and relevance score assigned by human assessors.",
+    "topic": "Qrels Format",
+    "slide_ref": "9. Evaluating Search Engines.pptx",
+    "answer": 0
+  },
+  {
+    "id": "q_ch09_43",
+    "chapter": 9,
+    "question": "What does 'Unjudged Document' mean in a pooled evaluation benchmark?",
+    "options": [
+      "A document in the corpus that was never reviewed by human assessors because it did not appear in the top-k results of any pooled system",
+      "A document that has no author",
+      "A document that contains secret code",
+      "A document that cannot be opened"
+    ],
+    "correct": 0,
+    "explanation": "Assessors only grade pooled documents; in standard TREC scoring, unjudged documents are conservatively assumed to be non-relevant.",
+    "topic": "Unjudged Documents",
+    "slide_ref": "9. Evaluating Search Engines.pptx",
+    "answer": 0
+  },
+  {
+    "id": "q_ch09_44",
+    "chapter": 9,
+    "question": "Why can standard MAP penalize innovative new retrieval algorithms evaluated against older fixed benchmark pools?",
+    "options": [
+      "If an innovative algorithm retrieves a brilliant, relevant document that was NOT in the original pool, the metric treats it as non-relevant because it lacks a judgment",
+      "Because older benchmarks run on older CPUs",
+      "Because MAP cannot calculate fractions",
+      "Because TREC bans new algorithms"
+    ],
+    "correct": 0,
+    "explanation": "New retrieval techniques find relevant documents outside old pools; treating unjudged docs as non-relevant artificially depresses their evaluation scores.",
+    "topic": "Pooling Bias",
+    "slide_ref": "9. Evaluating Search Engines.pptx",
+    "answer": 0
+  },
+  {
+    "id": "q_ch09_45",
+    "chapter": 9,
+    "question": "What is 'Session Success' metric in web search logging?",
+    "options": [
+      "Whether the user successfully satisfied their information need during the search session without abandoning the task or switching to a competitor",
+      "Whether the computer remained powered on",
+      "Whether the search engine showed an ad",
+      "Whether the user clicked on 100 links"
+    ],
+    "correct": 0,
+    "explanation": "Session success measures overall task completion rather than single-query clicks.",
+    "topic": "Session Success",
+    "slide_ref": "9. Evaluating Search Engines.pptx",
+    "answer": 0
+  },
+  {
+    "id": "q_ch09_46",
+    "chapter": 9,
+    "question": "What is 'Average Precision' (AP) fundamentally calculating geometrically?",
+    "options": [
+      "The area under the non-interpolated Precision-Recall curve for a single query",
+      "The perimeter of the monitor screen",
+      "The angle of the vector space",
+      "The volume of the hard drive"
+    ],
+    "correct": 0,
+    "explanation": "Average Precision approximates the area under the Precision-Recall curve for an individual query.",
+    "topic": "AP Geometric Meaning",
+    "slide_ref": "9. Evaluating Search Engines.pptx",
+    "answer": 0
+  },
+  {
+    "id": "q_ch09_47",
+    "chapter": 9,
+    "question": "What is 'Abandonment Rate' in search log metrics?",
+    "options": [
+      "The percentage of search queries where the user performed zero clicks on any returned organic or sponsored result and left the page",
+      "The rate at which employees quit the company",
+      "The rate of hard drive failures",
+      "The percentage of deleted documents"
+    ],
+    "correct": 0,
+    "explanation": "Abandonment occurs when users leave without clicking, indicating either complete failure (terrible results) or immediate success (featured snippet direct answer).",
+    "topic": "Abandonment Rate",
+    "slide_ref": "9. Evaluating Search Engines.pptx",
+    "answer": 0
+  },
+  {
+    "id": "q_ch09_48",
+    "chapter": 9,
+    "question": "Why must search evaluators distinguish between 'Good Abandonment' and 'Bad Abandonment'?",
+    "options": [
+      "Good abandonment occurs when a featured snippet or calculator directly answers the user's need on the SERP; Bad abandonment occurs when the results are so poor the user gives up",
+      "Good abandonment is done by polite users",
+      "Bad abandonment involves swearing in queries",
+      "There is no difference between them"
+    ],
+    "correct": 0,
+    "explanation": "Featured snippets and direct knowledge panels fulfill informational needs without requiring a click (good abandonment).",
+    "topic": "Good vs Bad Abandonment",
+    "slide_ref": "9. Evaluating Search Engines.pptx",
+    "answer": 0
+  },
+  {
+    "id": "q_ch09_49",
+    "chapter": 9,
+    "question": "What does 'Throughput' under load testing evaluate in a search engine benchmark?",
+    "options": [
+      "The maximum query arrival rate (QPS) the cluster can sustain before latency violates the maximum SLA threshold (e.g., p99 latency spikes)",
+      "The download speed of competitor websites",
+      "The physical weight of the cluster",
+      "The temperature of the cooling water"
+    ],
+    "correct": 0,
+    "explanation": "Throughput benchmarks measure how many concurrent queries the engine can serve without degrading response times.",
+    "topic": "Throughput Benchmarking",
+    "slide_ref": "9. Evaluating Search Engines.pptx",
+    "answer": 0
+  },
+  {
+    "id": "q_ch09_50",
+    "chapter": 9,
+    "question": "What is 'Reproducibility' in Information Retrieval research?",
+    "options": [
+      "The ability of independent researchers to obtain identical experimental results using the exact same code, corpus, and evaluation metrics",
+      "Copying and pasting someone else's paper",
+      "Backing up files to Google Drive",
+      "Translating a paper into Spanish"
+    ],
+    "correct": 0,
+    "explanation": "Reproducibility ensures scientific integrity, facilitated by standardized open-source benchmarks like Anserini, Pyserini, and Terrier.",
+    "topic": "IR Reproducibility",
+    "slide_ref": "9. Evaluating Search Engines.pptx",
+    "answer": 0
+  },
+  {
+    "id": "q_ch10_01",
+    "chapter": 10,
+    "question": "What is the fundamental difference between Text Classification and Text Clustering?",
+    "options": [
+      "Classification is supervised (documents assigned to predefined target classes using training data); Clustering is unsupervised (discovering natural groupings without predefined labels)",
+      "Classification is only for images; Clustering is only for text",
+      "Classification requires quantum computers; Clustering runs on laptops",
+      "Classification is unsupervised; Clustering is supervised"
+    ],
+    "correct": 0,
+    "explanation": "Classification learns from labeled examples to categorize new inputs; clustering groups unlabelled documents based on pairwise similarity.",
+    "topic": "Supervised vs Unsupervised",
+    "slide_ref": "10. Classification and Clustering.pptx",
+    "answer": 0
+  },
+  {
+    "id": "q_ch10_02",
+    "chapter": 10,
+    "question": "Why is the Naive Bayes classifier called 'Naive'?",
+    "options": [
+      "It makes the simplistic, conditionally independent assumption that the occurrence of each word is independent of all other words given the document class: P(w1, w2 | C) = P(w1|C) * P(w2|C)",
+      "It was invented by a child",
+      "It only works on simple sentences",
+      "It has a low IQ"
+    ],
+    "correct": 0,
+    "explanation": "The 'naive' assumption posits that attributes (word tokens) are statistically independent given the class, ignoring real-world word co-occurrence.",
+    "topic": "Naive Bayes Assumption",
+    "slide_ref": "10. Classification and Clustering.pptx",
+    "answer": 0
+  },
+  {
+    "id": "q_ch10_03",
+    "chapter": 10,
+    "question": "In text classification with Multinomial Naive Bayes, why is 'Laplace Smoothing' (Add-1 smoothing) applied to word probabilities?",
+    "options": [
+      "To prevent zero probabilities: if a word never appeared in class C during training, P(w|C) = 0, which would zero-out the entire posterior probability for any document containing w",
+      "To convert probabilities into integers",
+      "To make the classifier run twice as fast",
+      "To translate words into French"
+    ],
+    "correct": 0,
+    "explanation": "Laplace smoothing adds pseudo-counts (usually 1) to each word frequency to avoid multiplying by zero on unseen terms.",
+    "topic": "Laplace Smoothing Naive Bayes",
+    "slide_ref": "10. Classification and Clustering.pptx",
+    "answer": 0
+  },
+  {
+    "id": "q_ch10_04",
+    "chapter": 10,
+    "question": "What is the formula for estimated word probability with Laplace (Add-1) smoothing in Multinomial Naive Bayes?",
+    "options": [
+      "P(w | c) = (count(w, c) + 1) / (sum_{w'}(count(w', c)) + |V|), where |V| is vocabulary size",
+      "P(w | c) = count(w, c) / |V|",
+      "P(w | c) = count(w, c) + 1",
+      "P(w | c) = 1 / |V|"
+    ],
+    "correct": 0,
+    "explanation": "Adding 1 to the numerator requires adding |V| to the denominator to ensure the distribution sums to 1.0.",
+    "topic": "Laplace Smoothing Formula",
+    "slide_ref": "10. Classification and Clustering.pptx",
+    "answer": 0
+  },
+  {
+    "id": "q_ch10_05",
+    "chapter": 10,
+    "question": "How does Multinomial Naive Bayes differ from Multivariate Bernoulli Naive Bayes?",
+    "options": [
+      "Multinomial models term frequencies (word counts); Bernoulli models binary term presence/absence (0 or 1)",
+      "Multinomial is unsupervised; Bernoulli is supervised",
+      "Multinomial only works on numbers; Bernoulli only works on text",
+      "Multinomial is for image classification exclusively"
+    ],
+    "correct": 0,
+    "explanation": "Multinomial NB accounts for how many times a word appears; Bernoulli NB only tracks whether the word appears or not.",
+    "topic": "Multinomial vs Bernoulli NB",
+    "slide_ref": "10. Classification and Clustering.pptx",
+    "answer": 0
+  },
+  {
+    "id": "q_ch10_06",
+    "chapter": 10,
+    "question": "What is the primary optimization objective of a Linear Support Vector Machine (SVM)?",
+    "options": [
+      "To find the separating hyperplane that maximizes the margin (the geometric distance between the hyperplane and the closest training points of any class)",
+      "To minimize the number of words in the vocabulary",
+      "To maximize the number of clusters",
+      "To sort documents alphabetically"
+    ],
+    "correct": 0,
+    "explanation": "SVM is a maximum-margin classifier: maximizing the margin provides the best theoretical generalization guarantee against overfitting.",
+    "topic": "SVM Maximum Margin",
+    "slide_ref": "10. Classification and Clustering.pptx",
+    "answer": 0
+  },
+  {
+    "id": "q_ch10_07",
+    "chapter": 10,
+    "question": "What are the 'Support Vectors' in a Support Vector Machine?",
+    "options": [
+      "The critical training data points that lie closest to the decision boundary and directly define the orientation and position of the separating hyperplane",
+      "Vectors that hold up server hardware racks",
+      "All data points in the training set",
+      "Vectors with negative components"
+    ],
+    "correct": 0,
+    "explanation": "Only the points lying on the margin boundary (support vectors) influence the final hyperplane; removing other points changes nothing.",
+    "topic": "Support Vectors Definition",
+    "slide_ref": "10. Classification and Clustering.pptx",
+    "answer": 0
+  },
+  {
+    "id": "q_ch10_08",
+    "chapter": 10,
+    "question": "What is the 'Kernel Trick' in Support Vector Machines?",
+    "options": [
+      "A method to implicitly map input vectors into a higher-dimensional space where non-linearly separable data becomes linearly separable, using a kernel function without computing explicit coordinates",
+      "A software bug that crashes the Linux kernel",
+      "A popcorn cooking algorithm",
+      "A trick to delete training data"
+    ],
+    "correct": 0,
+    "explanation": "The kernel trick computes inner products in high-dimensional Hilbert spaces directly (e.g., RBF kernel), enabling complex non-linear classification.",
+    "topic": "SVM Kernel Trick",
+    "slide_ref": "10. Classification and Clustering.pptx",
+    "answer": 0
+  },
+  {
+    "id": "q_ch10_09",
+    "chapter": 10,
+    "question": "Why do Linear SVMs typically perform exceptionally well on text classification tasks without needing non-linear kernels?",
+    "options": [
+      "Text data represented as bag-of-words or TF-IDF has very high dimensionality (tens of thousands of features), making text problems naturally linearly separable",
+      "Because text cannot be processed by non-linear mathematics",
+      "Because linear SVMs use zero memory",
+      "Because all text documents are straight lines"
+    ],
+    "correct": 0,
+    "explanation": "Joachims (1998) showed that high dimensionality in text classification makes linear hyperplanes powerful and less prone to overfitting.",
+    "topic": "Linear SVM for Text",
+    "slide_ref": "10. Classification and Clustering.pptx",
+    "answer": 0
+  },
+  {
+    "id": "q_ch10_10",
+    "chapter": 10,
+    "question": "How does the K-Nearest Neighbors (KNN) algorithm classify a new document?",
+    "options": [
+      "It finds the K closest training documents in vector space (using e.g. Cosine distance) and assigns the majority class label among those K neighbors",
+      "It trains a deep neural network for 50 epochs",
+      "It computes the center of mass of the entire universe",
+      "It deletes the K farthest documents"
+    ],
+    "correct": 0,
+    "explanation": "KNN is an instance-based lazy learner: it stores all training data and assigns the modal class of the K nearest neighbors at query time.",
+    "topic": "KNN Classification",
+    "slide_ref": "10. Classification and Clustering.pptx",
+    "answer": 0
+  },
+  {
+    "id": "q_ch10_11",
+    "chapter": 10,
+    "question": "Why is KNN called a 'Lazy Learner' (Instance-Based Learning)?",
+    "options": [
+      "Because it does not construct an explicit, generalized model during training; all computation (computing pairwise distances) is deferred until inference time",
+      "Because the algorithm runs very slowly on Mondays",
+      "Because it refuses to work on large datasets",
+      "Because it was written by lazy engineers"
+    ],
+    "correct": 0,
+    "explanation": "KNN has zero training phase (it just stores training vectors); the downside is slow O(N * D) inference cost per test query.",
+    "topic": "Lazy Learning",
+    "slide_ref": "10. Classification and Clustering.pptx",
+    "answer": 0
+  },
+  {
+    "id": "q_ch10_12",
+    "chapter": 10,
+    "question": "In K-Means clustering, what does 'K' represent?",
+    "options": [
+      "The predefined number of clusters to partition the dataset into",
+      "The number of characters in each word",
+      "The learning rate of gradient descent",
+      "The temperature of the CPU in Kelvin"
+    ],
+    "correct": 0,
+    "explanation": "In K-Means, K is the user-specified hyperparameter defining how many cluster centroids are initialized.",
+    "topic": "K-Means K Parameter",
+    "slide_ref": "10. Classification and Clustering.pptx",
+    "answer": 0
+  },
+  {
+    "id": "q_ch10_13",
+    "chapter": 10,
+    "question": "What are the two alternating steps executed iteratively in the K-Means algorithm?",
+    "options": [
+      "Assignment Step (assign each document to its nearest centroid) and Update Step (recalculate each centroid as the mean of its assigned documents)",
+      "Forward Step and Backward Step",
+      "Tokenize Step and Stem Step",
+      "Compress Step and Decompress Step"
+    ],
+    "correct": 0,
+    "explanation": "K-Means alternates between: 1. Assignment (Voronoi partitioning), and 2. Update (computing mean vectors of clusters) until convergence.",
+    "topic": "K-Means Iteration Steps",
+    "slide_ref": "10. Classification and Clustering.pptx",
+    "answer": 0
+  },
+  {
+    "id": "q_ch10_14",
+    "chapter": 10,
+    "question": "What objective function does standard K-Means attempt to minimize?",
+    "options": [
+      "Sum of Squared Errors (SSE) / Within-Cluster Sum of Squares (WCSS)",
+      "The total number of documents in the corpus",
+      "The execution time of the CPU",
+      "The number of vowels in the text"
+    ],
+    "correct": 0,
+    "explanation": "K-Means minimizes the sum of squared Euclidean distances between each data point and its assigned cluster centroid.",
+    "topic": "SSE Objective",
+    "slide_ref": "10. Classification and Clustering.pptx",
+    "answer": 0
+  },
+  {
+    "id": "q_ch10_15",
+    "chapter": 10,
+    "question": "Why is standard K-Means clustering sensitive to the initial placement of centroids (K-Means Initialization)?",
+    "options": [
+      "Poor random initial centroid locations can trap the algorithm in sub-optimal local minima, yielding poor clustering quality",
+      "The computer will catch fire if initialized poorly",
+      "Bad initialization causes infinite loops that never terminate",
+      "Centroids will turn into negative numbers"
+    ],
+    "correct": 0,
+    "explanation": "K-Means is a greedy hill-climbing algorithm; initialization methods like K-Means++ spread initial centroids to achieve near-optimal convergence.",
+    "topic": "K-Means++ Initialization",
+    "slide_ref": "10. Classification and Clustering.pptx",
+    "answer": 0
+  },
+  {
+    "id": "q_ch10_16",
+    "chapter": 10,
+    "question": "How does Hierarchical Agglomerative Clustering (HAC) work?",
+    "options": [
+      "Bottom-up approach: starts with each document as an individual singleton cluster and greedily merges the two closest clusters at each step until one master cluster remains",
+      "Top-down approach: starts with one big cluster and cuts it into pieces",
+      "Randomly assigns documents to folders",
+      "Sorts documents by file size"
+    ],
+    "correct": 0,
+    "explanation": "HAC is an agglomerative (bottom-up) hierarchical strategy, building a binary cluster tree called a Dendrogram.",
+    "topic": "HAC Agglomerative",
+    "slide_ref": "10. Classification and Clustering.pptx",
+    "answer": 0
+  },
+  {
+    "id": "q_ch10_17",
+    "chapter": 10,
+    "question": "In HAC, what is 'Single-Link' (Nearest Neighbor) clustering distance definition?",
+    "options": [
+      "The distance between two clusters is defined as the minimum distance between any single point in cluster A and any single point in cluster B",
+      "The maximum distance between points",
+      "The average distance between all pairs",
+      "The distance between cluster centroids"
+    ],
+    "correct": 0,
+    "explanation": "Single-link defines cluster distance as min_{x in A, y in B} dist(x, y), which can lead to elongated, chaining effects.",
+    "topic": "Single-Link HAC",
+    "slide_ref": "10. Classification and Clustering.pptx",
+    "answer": 0
+  },
+  {
+    "id": "q_ch10_18",
+    "chapter": 10,
+    "question": "What is the notorious problem associated with 'Single-Link' clustering in HAC?",
+    "options": [
+      "'Chaining effect': long, straggly, chain-like clusters formed by bridging points, grouping dissimilar documents together",
+      "It requires infinite memory",
+      "It creates only spherical clusters",
+      "It cannot run on numbers"
+    ],
+    "correct": 0,
+    "explanation": "Single-link merges clusters if just one pair of points is close, creating strung-out chains rather than compact clusters.",
+    "topic": "Chaining Effect",
+    "slide_ref": "10. Classification and Clustering.pptx",
+    "answer": 0
+  },
+  {
+    "id": "q_ch10_19",
+    "chapter": 10,
+    "question": "In HAC, what is 'Complete-Link' (Furthest Neighbor) clustering distance definition?",
+    "options": [
+      "The distance between two clusters is defined as the maximum distance between any point in cluster A and any point in cluster B",
+      "The minimum distance between points",
+      "The distance between medoids",
+      "The average word count"
+    ],
+    "correct": 0,
+    "explanation": "Complete-link defines distance as max_{x in A, y in B} dist(x, y), which produces compact, spherical clusters.",
+    "topic": "Complete-Link HAC",
+    "slide_ref": "10. Classification and Clustering.pptx",
+    "answer": 0
+  },
+  {
+    "id": "q_ch10_20",
+    "chapter": 10,
+    "question": "What is a 'Dendrogram' in hierarchical clustering?",
+    "options": [
+      "A tree diagram illustrating the sequential hierarchy of nested cluster merges and the distance levels at which merges occurred",
+      "A medical scan of brain waves",
+      "A grammar diagram of English sentences",
+      "A network cable map"
+    ],
+    "correct": 0,
+    "explanation": "A dendrogram visually represents the hierarchical merges; cutting the tree at a specific height produces a flat clustering partition.",
+    "topic": "Dendrogram Definition",
+    "slide_ref": "10. Classification and Clustering.pptx",
+    "answer": 0
+  },
+  {
+    "id": "q_ch10_21",
+    "chapter": 10,
+    "question": "In multi-class text classification evaluation, what is the difference between 'Macro-averaged F1' and 'Micro-averaged F1'?",
+    "options": [
+      "Macro-average computes F1 independently per class and averages them equally (giving equal weight to small classes); Micro-average pools all true/false decisions globally (dominated by large classes)",
+      "Macro-average is for big computers; Micro-average is for microchips",
+      "Macro-average ignores precision; Micro-average ignores recall",
+      "Macro-average is unsupervised; Micro-average is supervised"
+    ],
+    "correct": 0,
+    "explanation": "Macro-averaging weights every class equally regardless of size; micro-averaging aggregates counts globally, heavily favoring dominant classes.",
+    "topic": "Macro vs Micro F1",
+    "slide_ref": "10. Classification and Clustering.pptx",
+    "answer": 0
+  },
+  {
+    "id": "q_ch10_22",
+    "chapter": 10,
+    "question": "What is a 'Confusion Matrix' in classification evaluation?",
+    "options": [
+      "A table layout that visualizes the performance of an algorithm: rows represent actual true classes, and columns represent predicted classes (showing TP, FP, FN, TN)",
+      "A matrix containing confusing numbers",
+      "A matrix of random numbers",
+      "A table that corrupts computer memory"
+    ],
+    "correct": 0,
+    "explanation": "Confusion matrices reveal specific classification errors, showing which classes are commonly confused with one another.",
+    "topic": "Confusion Matrix",
+    "slide_ref": "10. Classification and Clustering.pptx",
+    "answer": 0
+  },
+  {
+    "id": "q_ch10_23",
+    "chapter": 10,
+    "question": "What is 'Topic Modeling' (e.g., Latent Dirichlet Allocation - LDA) in text clustering?",
+    "options": [
+      "A probabilistic generative model that discovers latent semantic topics in a collection, modeling documents as mixtures of topics and topics as distributions over words",
+      "A dictionary that sorts words by topic",
+      "A web crawler that only downloads news",
+      "A spelling correction tool"
+    ],
+    "correct": 0,
+    "explanation": "LDA assumes documents are generated from mixtures of latent topics, enabling unsupervised thematic discovery across large corpora.",
+    "topic": "Topic Modeling LDA",
+    "slide_ref": "10. Classification and Clustering.pptx",
+    "answer": 0
+  },
+  {
+    "id": "q_ch10_24",
+    "chapter": 10,
+    "question": "In text classification, what does 'Feature Selection' (e.g., using Chi-Square or Information Gain) achieve?",
+    "options": [
+      "Reduces vocabulary dimensionality by eliminating noisy, uninformative, or redundant words, speeding up training and reducing overfitting",
+      "Selects which monitor to display results on",
+      "Increases the vocabulary size to 10 million words",
+      "Translates text into German"
+    ],
+    "correct": 0,
+    "explanation": "Feature selection keeps the top discriminative features (e.g., top 5,000 terms), improving classification accuracy and speed.",
+    "topic": "Feature Selection",
+    "slide_ref": "10. Classification and Clustering.pptx",
+    "answer": 0
+  },
+  {
+    "id": "q_ch10_25",
+    "chapter": 10,
+    "question": "What is the time complexity of naive standard K-Means per iteration, where N is documents, K is clusters, and D is dimensions?",
+    "options": [
+      "O(N * K * D)",
+      "O(N^3)",
+      "O(log(N))",
+      "O(D^2)"
+    ],
+    "correct": 0,
+    "explanation": "Every iteration computes the distance from each of N documents to each of K centroids of dimensionality D: O(N * K * D).",
+    "topic": "K-Means Complexity",
+    "slide_ref": "10. Classification and Clustering.pptx",
+    "answer": 0
+  },
+  {
+    "id": "q_ch10_26",
+    "chapter": 10,
+    "question": "What is the time complexity of standard Hierarchical Agglomerative Clustering (HAC)?",
+    "options": [
+      "O(N^2 * log(N)) or O(N^3) using naive pairwise distance matrix updates",
+      "O(N)",
+      "O(log(N))",
+      "O(1)"
+    ],
+    "correct": 0,
+    "explanation": "HAC requires computing and maintaining pairwise distances between all N documents, making it O(N^2) space and O(N^2 log N) to O(N^3) time, impractical for millions of documents.",
+    "topic": "HAC Complexity",
+    "slide_ref": "10. Classification and Clustering.pptx",
+    "answer": 0
+  },
+  {
+    "id": "q_ch10_27",
+    "chapter": 10,
+    "question": "What is 'Soft Clustering' vs 'Hard Clustering'?",
+    "options": [
+      "Hard clustering assigns each document strictly to one cluster; Soft clustering (like Gaussian Mixtures or Fuzzy C-Means) assigns membership probabilities across multiple clusters",
+      "Hard clustering runs on hard drives; Soft clustering runs in software",
+      "Hard clustering is difficult; Soft clustering is easy",
+      "Hard clustering is for images; Soft clustering is for text"
+    ],
+    "correct": 0,
+    "explanation": "In hard clustering, document d belongs solely to cluster k; in soft clustering, d has fractional memberships sum(p_k) = 1 across clusters.",
+    "topic": "Hard vs Soft Clustering",
+    "slide_ref": "10. Classification and Clustering.pptx",
+    "answer": 0
+  },
+  {
+    "id": "q_ch10_28",
+    "chapter": 10,
+    "question": "What is 'Purity' as an external evaluation metric for text clustering?",
+    "options": [
+      "The percentage of documents that belong to the majority ground-truth class within their assigned cluster",
+      "The clarity of the computer screen",
+      "The percentage of stop words in a cluster",
+      "The speed of the clustering algorithm"
+    ],
+    "correct": 0,
+    "explanation": "Purity measures whether each cluster contains predominantly documents from a single gold-standard class.",
+    "topic": "Cluster Purity",
+    "slide_ref": "10. Classification and Clustering.pptx",
+    "answer": 0
+  },
+  {
+    "id": "q_ch10_29",
+    "chapter": 10,
+    "question": "What is 'Rand Index' in cluster evaluation?",
+    "options": [
+      "A measure of the percentage of decisions that are correct (pairs of documents that belong to the same class being clustered together, and pairs of different classes placed in different clusters)",
+      "A random number between 0 and 100",
+      "The index of the author's name",
+      "The execution speed of the algorithm"
+    ],
+    "correct": 0,
+    "explanation": "Rand Index evaluates pairwise clustering decisions: RI = (TP + TN) / (TP + FP + FN + TN).",
+    "topic": "Rand Index",
+    "slide_ref": "10. Classification and Clustering.pptx",
+    "answer": 0
+  },
+  {
+    "id": "q_ch10_30",
+    "chapter": 10,
+    "question": "What is 'Adjusted Rand Index' (ARI)?",
+    "options": [
+      "A version of the Rand Index adjusted for the chance grouping of elements, yielding 0.0 for random cluster assignments",
+      "The Rand Index multiplied by 2",
+      "A metric used exclusively for images",
+      "A metric for sorting algorithms"
+    ],
+    "correct": 0,
+    "explanation": "ARI corrects the standard Rand Index for chance agreement, ensuring random labelings receive an expected score of 0.0.",
+    "topic": "Adjusted Rand Index",
+    "slide_ref": "9. Evaluating Search Engines.pptx",
+    "answer": 0
+  },
+  {
+    "id": "q_ch10_31",
+    "chapter": 10,
+    "question": "In search engines, how is Text Classification commonly applied to incoming queries?",
+    "options": [
+      "Query Intent Classification: determining whether a query is Informational, Navigational, Commercial, or Adult, to trigger specialized vertical layouts",
+      "To delete inappropriate queries from the user's brain",
+      "To change the browser theme color",
+      "To translate queries into binary code"
+    ],
+    "correct": 0,
+    "explanation": "Classifying queries guides backend routing: an e-commerce query triggers product carousels; a medical query triggers health information cards.",
+    "topic": "Query Classification Role",
+    "slide_ref": "10. Classification and Clustering.pptx",
+    "answer": 0
+  },
+  {
+    "id": "q_ch10_32",
+    "chapter": 10,
+    "question": "What is 'Scatter-Gather' browsing in search user interfaces?",
+    "options": [
+      "An interactive document browsing interface that clusters search results into groups (Scatter), allows the user to select interesting clusters (Gather), and re-clusters the selected subset",
+      "Throwing computer mice across the room",
+      "A distributed database query protocol",
+      "A method of scattering seeds"
+    ],
+    "correct": 0,
+    "explanation": "Scatter-Gather (Cutting et al., 1992) uses fast clustering to let users explore unfamiliar document collections interactively.",
+    "topic": "Scatter-Gather Browsing",
+    "slide_ref": "10. Classification and Clustering.pptx",
+    "answer": 0
+  },
+  {
+    "id": "q_ch10_33",
+    "chapter": 10,
+    "question": "What is 'Spam Classification' in web search indexing?",
+    "options": [
+      "Using supervised learning (e.g., Logistic Regression, GBDT, SVM) on text features and link statistics to classify web pages as Spam vs Non-Spam",
+      "Sorting canned meat products",
+      "Sending marketing emails to users",
+      "Deleting unread emails"
+    ],
+    "correct": 0,
+    "explanation": "Spam classifiers evaluate page quality and filter out keyword stuffing, doorway pages, and scraped content before indexing.",
+    "topic": "Spam Classification Application",
+    "slide_ref": "10. Classification and Clustering.pptx",
+    "answer": 0
+  },
+  {
+    "id": "q_ch10_34",
+    "chapter": 10,
+    "question": "What is the 'Curse of Dimensionality' in text clustering?",
+    "options": [
+      "In extremely high-dimensional spaces (thousands of terms), Euclidean distances between all pairs of points tend to become almost identical, making distance metrics less discriminating",
+      "A computer virus that corrupts dimensions",
+      "The inability to store 3D images",
+      "A bug in Python 3.10"
+    ],
+    "correct": 0,
+    "explanation": "As dimensionality increases, data points become sparse and equidistant, degrading distance-based clustering algorithms like Euclidean K-Means.",
+    "topic": "Curse of Dimensionality",
+    "slide_ref": "10. Classification and Clustering.pptx",
+    "answer": 0
+  },
+  {
+    "id": "q_ch10_35",
+    "chapter": 10,
+    "question": "Why is 'Cosine Distance' (or Cosine Similarity) typically preferred over Euclidean Distance for clustering text documents?",
+    "options": [
+      "Cosine similarity focuses purely on the angle between document vectors, making it invariant to document length differences",
+      "Cosine distance runs 1,000 times faster",
+      "Euclidean distance cannot be calculated on text",
+      "Cosine distance only requires integers"
+    ],
+    "correct": 0,
+    "explanation": "Euclidean distance penalizes documents of different lengths even if their topic distribution is identical; Cosine similarity normalizes length away.",
+    "topic": "Cosine vs Euclidean in Clustering",
+    "slide_ref": "10. Classification and Clustering.pptx",
+    "answer": 0
+  },
+  {
+    "id": "q_ch10_36",
+    "chapter": 10,
+    "question": "What is 'K-Medoids' (PAM - Partitioning Around Medoids) and how does it differ from K-Means?",
+    "options": [
+      "K-Medoids uses actual representative data points (medoids) as cluster centers instead of calculated arithmetic means, making it far more robust to outliers",
+      "K-Medoids only clusters medical documents",
+      "K-Medoids is an unsupervised deep learning model",
+      "K-Medoids requires K=2"
+    ],
+    "correct": 0,
+    "explanation": "Medoids are real existing documents rather than artificial mean vectors, preventing extreme outliers from distorting cluster centroids.",
+    "topic": "K-Medoids PAM",
+    "slide_ref": "10. Classification and Clustering.pptx",
+    "answer": 0
+  },
+  {
+    "id": "q_ch10_37",
+    "chapter": 10,
+    "question": "What is 'Bisecting K-Means'?",
+    "options": [
+      "A hybrid clustering approach that starts with one giant cluster and repeatedly applies 2-means (bisection) to split the cluster with highest SSE until K clusters are reached",
+      "K-Means with 2 CPU threads",
+      "K-Means that cuts documents in half physically",
+      "K-Means that runs twice a day"
+    ],
+    "correct": 0,
+    "explanation": "Bisecting K-Means combines the speed of K-Means with the hierarchical structure of divisive HAC, often producing better clusters than standard K-Means.",
+    "topic": "Bisecting K-Means",
+    "slide_ref": "10. Classification and Clustering.pptx",
+    "answer": 0
+  },
+  {
+    "id": "q_ch10_38",
+    "chapter": 10,
+    "question": "What is 'Average-Link' HAC (UPGMA)?",
+    "options": [
+      "The distance between two clusters is defined as the average distance between all pairs of points (one from cluster A and one from cluster B)",
+      "The distance between the shortest words",
+      "The average word count of the documents",
+      "The distance measured in meters"
+    ],
+    "correct": 0,
+    "explanation": "Average-link balances single-link and complete-link by considering all pairwise distances, resisting chaining while avoiding extreme diameter constraints.",
+    "topic": "Average-Link HAC",
+    "slide_ref": "10. Classification and Clustering.pptx",
+    "answer": 0
+  },
+  {
+    "id": "q_ch10_39",
+    "chapter": 10,
+    "question": "In Naive Bayes text classification, what does the 'Prior Probability' P(C) represent?",
+    "options": [
+      "The baseline probability of observing class C in the training set before examining any document text: P(C) = (Docs in class C) / (Total training docs)",
+      "The probability of the computer crashing",
+      "The time taken to train the model",
+      "The accuracy of the classifier"
+    ],
+    "correct": 0,
+    "explanation": "The prior reflects class imbalance in the training data: rare classes have smaller prior probabilities.",
+    "topic": "Prior Probability NB",
+    "slide_ref": "10. Classification and Clustering.pptx",
+    "answer": 0
+  },
+  {
+    "id": "q_ch10_40",
+    "chapter": 10,
+    "question": "In Naive Bayes text classification, what does the 'Likelihood' P(d | C) represent?",
+    "options": [
+      "The conditional probability of observing document d's word vector given that the document belongs to class C",
+      "How much the user likes the document",
+      "The reading speed of the document",
+      "The font style of the text"
+    ],
+    "correct": 0,
+    "explanation": "Under the naive conditional independence assumption, P(d|C) is the product of individual word likelihoods: prod_i P(w_i | C).",
+    "topic": "Likelihood NB",
+    "slide_ref": "10. Classification and Clustering.pptx",
+    "answer": 0
+  },
+  {
+    "id": "q_ch10_41",
+    "chapter": 10,
+    "question": "Why do implementations of Naive Bayes compute probabilities in 'Log Space' (summing log probabilities)?",
+    "options": [
+      "Multiplying hundreds of tiny fractional probabilities (e.g., 0.0001 * 0.00005 ...) causes floating-point underflow in computer hardware; summing logs prevents underflow",
+      "Log space runs on GPUs only",
+      "Logarithms make numbers larger than 1",
+      "Log space converts text into images"
+    ],
+    "correct": 0,
+    "explanation": "Summing log-probabilities: log P(C) + sum(log P(w|C)) avoids floating-point underflow while preserving the exact argmax ranking.",
+    "topic": "Log Space Computation",
+    "slide_ref": "10. Classification and Clustering.pptx",
+    "answer": 0
+  },
+  {
+    "id": "q_ch10_42",
+    "chapter": 10,
+    "question": "What is 'Active Learning' in the context of text classification?",
+    "options": [
+      "A machine learning setup where the algorithm actively selects and queries a human annotator to label the most uncertain or informative unlabelled documents",
+      "Learning while exercising on a treadmill",
+      "A classifier that runs in the background",
+      "A deep neural network with 100 layers"
+    ],
+    "correct": 0,
+    "explanation": "Active learning dramatically reduces annotation costs by asking humans to label only the ambiguous edge-case documents near the decision boundary.",
+    "topic": "Active Learning",
+    "slide_ref": "10. Classification and Clustering.pptx",
+    "answer": 0
+  },
+  {
+    "id": "q_ch10_43",
+    "chapter": 10,
+    "question": "What is 'Zero-Shot Text Classification' using modern Large Language Models or NLI models?",
+    "options": [
+      "Classifying text into arbitrary user-defined classes without having seen any labeled training examples for those specific classes, using natural language prompts",
+      "Classifying text in zero seconds",
+      "A classifier that uses zero memory",
+      "A classifier with zero percent accuracy"
+    ],
+    "correct": 0,
+    "explanation": "Zero-shot classification leverages pre-trained semantic representations (e.g., DeBERTa NLI) to evaluate entailment between text and candidate class hypotheses.",
+    "topic": "Zero-Shot Classification",
+    "slide_ref": "10. Classification and Clustering.pptx",
+    "answer": 0
+  },
+  {
+    "id": "q_ch10_44",
+    "chapter": 10,
+    "question": "What is 'Hierarchical Text Classification'?",
+    "options": [
+      "Classifying documents into a multi-level structured taxonomy or ontology (e.g., Science > Physics > Quantum Mechanics)",
+      "Classifying documents by author seniority",
+      "Sorting files into alphabetical folders",
+      "Classifying documents by font size"
+    ],
+    "correct": 0,
+    "explanation": "Hierarchical classification navigates tree-structured category graphs, routing documents through parent to child category nodes.",
+    "topic": "Hierarchical Classification",
+    "slide_ref": "10. Classification and Clustering.pptx",
+    "answer": 0
+  },
+  {
+    "id": "q_ch10_45",
+    "chapter": 10,
+    "question": "What is the 'Silhouette Coefficient' in cluster evaluation?",
+    "options": [
+      "An intrinsic metric measuring how similar a document is to its own cluster compared to other clusters, ranging from -1 (poor) to +1 (dense, well-separated)",
+      "The shadow cast by server racks",
+      "The contrast ratio of text",
+      "The number of images in a cluster"
+    ],
+    "correct": 0,
+    "explanation": "The silhouette score measures cluster cohesion vs separation: s = (b - a) / max(a, b), where a is intra-cluster distance and b is nearest-cluster distance.",
+    "topic": "Silhouette Coefficient",
+    "slide_ref": "10. Classification and Clustering.pptx",
+    "answer": 0
+  },
+  {
+    "id": "q_ch10_46",
+    "chapter": 10,
+    "question": "What is 'Davies-Bouldin Index' in cluster validation?",
+    "options": [
+      "An internal evaluation metric where lower values indicate better clustering (clusters that are compact internally and well-separated from one another)",
+      "A movie database index",
+      "A metric measuring server latency",
+      "An index of authors named Davies and Bouldin"
+    ],
+    "correct": 0,
+    "explanation": "The Davies-Bouldin index evaluates the ratio of within-cluster scatter to between-cluster separation; lower values indicate superior clustering.",
+    "topic": "Davies-Bouldin Index",
+    "slide_ref": "10. Classification and Clustering.pptx",
+    "answer": 0
+  },
+  {
+    "id": "q_ch10_47",
+    "chapter": 10,
+    "question": "In text classification, what is 'Overfitting'?",
+    "options": [
+      "When a model learns the idiosyncratic noise and specific training examples too closely, performing poorly on unseen real-world test data",
+      "When text is too long for a single screen",
+      "When a computer case is too small for its hardware",
+      "When training takes longer than 1 hour"
+    ],
+    "correct": 0,
+    "explanation": "Overfitting occurs when high-capacity models memorize training noise, failing to generalize to new, unseen test documents.",
+    "topic": "Overfitting",
+    "slide_ref": "10. Classification and Clustering.pptx",
+    "answer": 0
+  },
+  {
+    "id": "q_ch10_48",
+    "chapter": 10,
+    "question": "What is 'L2 Regularization' (Ridge penalty) in Logistic Regression or Linear SVM text classification?",
+    "options": [
+      "Adding a penalty proportional to the square of weight coefficients (lambda * sum(w_i^2)) to the loss function to prevent weights from growing excessively large and overfitting",
+      "Deleting every second weight in the matrix",
+      "Rounding all numbers to 2 decimal places",
+      "A hardware cooling technique"
+    ],
+    "correct": 0,
+    "explanation": "L2 regularization penalizes extreme feature weights, smoothing the decision boundary and improving generalization on sparse text features.",
+    "topic": "L2 Regularization",
+    "slide_ref": "10. Classification and Clustering.pptx",
+    "answer": 0
+  },
+  {
+    "id": "q_ch10_49",
+    "chapter": 10,
+    "question": "What is 'L1 Regularization' (Lasso penalty) known for achieving in text classification models?",
+    "options": [
+      "Producing 'Sparse Models' by driving many non-informative feature weights strictly to zero, effectively performing automatic feature selection",
+      "Making models 10 times larger",
+      "Converting all weights to negative numbers",
+      "Ensuring all weights are equal to 1.0"
+    ],
+    "correct": 0,
+    "explanation": "L1 regularization drives irrelevant word weights to zero, creating compact, interpretable models with built-in feature selection.",
+    "topic": "L1 Regularization",
+    "slide_ref": "10. Classification and Clustering.pptx",
+    "answer": 0
+  },
+  {
+    "id": "q_ch10_50",
+    "chapter": 10,
+    "question": "What is the primary role of 'Stopword Removal' specifically in Text Clustering?",
+    "options": [
+      "Preventing high-frequency functional words (like 'the', 'is', 'at') from dominating distance calculations and causing documents to cluster by grammar rather than topical content",
+      "Making clusters look prettier on the screen",
+      "Reducing server electricity consumption",
+      "Preventing computer virus infections"
+    ],
+    "correct": 0,
+    "explanation": "If stopwords are not filtered or heavily down-weighted, documents will cluster based on shared grammar and syntax rather than real topical meaning.",
+    "topic": "Stopwords in Clustering",
+    "slide_ref": "10. Classification and Clustering.pptx",
+    "answer": 0
+  }
+]

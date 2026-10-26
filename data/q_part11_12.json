@@ -1,0 +1,1602 @@
+[
+  {
+    "id": "q_ch11_01",
+    "chapter": 11,
+    "question": "What is 'Social Search' fundamentally defined as in Information Retrieval?",
+    "options": [
+      "An information retrieval process that leverages human social networks, collaborative tagging, user ratings, social connections, and community interactions to find and filter content",
+      "Searching for social party invitations",
+      "A search engine designed for dating",
+      "A government surveillance program"
+    ],
+    "correct": 0,
+    "explanation": "Social search incorporates social metadata (tags, reviews, shared bookmarks, friend connections) to personalize and refine information discovery.",
+    "topic": "Social Search Definition",
+    "slide_ref": "11. Social search.pptx",
+    "answer": 0
+  },
+  {
+    "id": "q_ch11_02",
+    "chapter": 11,
+    "question": "What is a 'Folksonomy' (collaborative tagging)?",
+    "options": [
+      "A user-generated, open system of classifying and categorizing web content through freely chosen keywords (tags) without a strict top-down taxonomy",
+      "A dictionary written by folk singers",
+      "A tax collection agency for musicians",
+      "A proprietary database index format"
+    ],
+    "correct": 0,
+    "explanation": "Folksonomy (coined by Thomas Vander Wal, 2004) blends 'folk' and 'taxonomy', representing bottom-up user tagging (e.g., Delicious, Flickr).",
+    "topic": "Folksonomy",
+    "slide_ref": "11. Social search.pptx",
+    "answer": 0
+  },
+  {
+    "id": "q_ch11_03",
+    "chapter": 11,
+    "question": "How does a Folksonomy differ fundamentally from a traditional formal Taxonomy?",
+    "options": [
+      "Taxonomies are top-down, hierarchical, controlled vocabularies created by professional catalogers; Folksonomies are bottom-up, flat, organic tags created freely by end-users",
+      "Taxonomies only use English; Folksonomies only use numbers",
+      "Taxonomies are unsupervised; Folksonomies are supervised",
+      "Taxonomies are illegal on the web"
+    ],
+    "correct": 0,
+    "explanation": "Formal taxonomies (like Dewey Decimal) impose rigid hierarchical rules; folksonomies allow free, dynamic, crowd-sourced tag vocabulary.",
+    "topic": "Taxonomy vs Folksonomy",
+    "slide_ref": "11. Social search.pptx",
+    "answer": 0
+  },
+  {
+    "id": "q_ch11_04",
+    "chapter": 11,
+    "question": "According to the 5 Tag Categories taxonomy proposed by Zhichen Xu et al. (2006), which category includes tags identifying the actual topic or subject of the item (e.g., 'machine learning', 'python')?",
+    "options": [
+      "Content-Based Tags",
+      "Context-Based Tags",
+      "Subjective/Qualitative Tags",
+      "Organizational/Self-Reference Tags"
+    ],
+    "correct": 0,
+    "explanation": "Content-based tags directly describe the factual subject matter or entity represented by the resource.",
+    "topic": "Content-Based Tags",
+    "slide_ref": "11. Social search.pptx",
+    "answer": 0
+  },
+  {
+    "id": "q_ch11_05",
+    "chapter": 11,
+    "question": "In Xu et al.'s 5 Tag Categories, what is an example of an 'Organizational / Self-Reference Tag'?",
+    "options": [
+      "'toread', 'mycomments', 'todo', 'favourite'",
+      "'algorithm', 'computer science'",
+      "'funny', 'cool', 'awesome'",
+      "'barcelona', 'conference'"
+    ],
+    "correct": 0,
+    "explanation": "Organizational tags serve personal workflow management for the specific user (e.g., 'toread', 'jobsearch') and lack broad semantic value for others.",
+    "topic": "Organizational Tags",
+    "slide_ref": "11. Social search.pptx",
+    "answer": 0
+  },
+  {
+    "id": "q_ch11_06",
+    "chapter": 11,
+    "question": "In Xu et al.'s 5 Tag Categories, what is an example of a 'Subjective / Qualitative Tag'?",
+    "options": [
+      "'inspiring', 'overrated', 'boring', 'genius'",
+      "'python', 'programming'",
+      "'paris', '2023'",
+      "'mybookmarks'"
+    ],
+    "correct": 0,
+    "explanation": "Subjective tags express individual emotional reactions, value judgments, or opinions rather than objective facts.",
+    "topic": "Subjective Tags",
+    "slide_ref": "11. Social search.pptx",
+    "answer": 0
+  },
+  {
+    "id": "q_ch11_07",
+    "chapter": 11,
+    "question": "In Xu et al.'s 5 Tag Categories, what does a 'Context-Based Tag' describe?",
+    "options": [
+      "The spatial, temporal, or situational context of the item (e.g., 'Paris', 'Summer 2024', 'NeurIPS conference')",
+      "The source code of the webpage",
+      "The database schema of the website",
+      "The color of the author's shirt"
+    ],
+    "correct": 0,
+    "explanation": "Context-based tags locate the resource in space, time, or specific events (e.g., wedding, vacation2024, Tokyo).",
+    "topic": "Context-Based Tags",
+    "slide_ref": "11. Social search.pptx",
+    "answer": 0
+  },
+  {
+    "id": "q_ch11_08",
+    "chapter": 11,
+    "question": "What is a 'Tag Cloud' (Word Cloud) in social search user interfaces?",
+    "options": [
+      "A visual representation of user tags where the font size and visual weight of each tag corresponds to its popularity or frequency of occurrence",
+      "A weather forecasting tool",
+      "A cloud computing storage service",
+      "A network diagram of servers"
+    ],
+    "correct": 0,
+    "explanation": "Tag clouds provide an interactive visual summary of prevalent themes, allowing users to browse popular tags by clicking weighted text.",
+    "topic": "Tag Cloud",
+    "slide_ref": "11. Social search.pptx",
+    "answer": 0
+  },
+  {
+    "id": "q_ch11_09",
+    "chapter": 11,
+    "question": "What is the 'Cold Start Problem' in social tagging and collaborative filtering systems?",
+    "options": [
+      "When new users or newly created items enter the system with zero historical tags, ratings, or interactions, making it difficult to generate recommendations or search matches",
+      "When servers freeze in cold weather",
+      "When a search engine boots up without internet",
+      "When users search for winter sports"
+    ],
+    "correct": 0,
+    "explanation": "Without historical tags or interaction data, collaborative and social search systems cannot reliably score or recommend new content.",
+    "topic": "Social Cold Start",
+    "slide_ref": "11. Social search.pptx",
+    "answer": 0
+  },
+  {
+    "id": "q_ch11_10",
+    "chapter": 11,
+    "question": "What is 'Collaborative Filtering' (CF) in recommendation and social search systems?",
+    "options": [
+      "A technique that predicts items a user will like based on the preferences, ratings, or behaviors collected from many other users with similar historical tastes",
+      "A spam filtering technique for emails",
+      "A distributed file compression algorithm",
+      "A firewall rule for networks"
+    ],
+    "correct": 0,
+    "explanation": "Collaborative filtering leverages crowd wisdom: if User A and User B agree on many past items, User A is likely to enjoy an unrated item liked by User B.",
+    "topic": "Collaborative Filtering",
+    "slide_ref": "11. Social search.pptx",
+    "answer": 0
+  },
+  {
+    "id": "q_ch11_11",
+    "chapter": 11,
+    "question": "What is the difference between 'User-Based' Collaborative Filtering and 'Item-Based' Collaborative Filtering?",
+    "options": [
+      "User-based finds similar users (peers) and recommends their liked items; Item-based computes similarities between items based on user rating patterns and recommends items similar to what the user liked",
+      "User-based is for desktop; Item-based is for mobile",
+      "User-based requires deep learning; Item-based requires quantum computing",
+      "User-based is supervised; Item-based is unsupervised"
+    ],
+    "correct": 0,
+    "explanation": "User-based compares user vectors; Item-based compares item rating vectors (Sarwar et al., 2001), which is more stable when item counts change slower than user counts.",
+    "topic": "User vs Item CF",
+    "slide_ref": "11. Social search.pptx",
+    "answer": 0
+  },
+  {
+    "id": "q_ch11_12",
+    "chapter": 11,
+    "question": "Which mathematical metric is most commonly used to compute similarity between two user rating vectors in Collaborative Filtering?",
+    "options": [
+      "Pearson Correlation Coefficient or Cosine Similarity",
+      "Hamming Distance",
+      "Levenshtein Distance",
+      "PageRank"
+    ],
+    "correct": 0,
+    "explanation": "Pearson correlation accounts for differences in individual rating biases (e.g., harsh raters vs generous raters) across shared rated items.",
+    "topic": "Pearson Correlation CF",
+    "slide_ref": "11. Social search.pptx",
+    "answer": 0
+  },
+  {
+    "id": "q_ch11_13",
+    "chapter": 11,
+    "question": "What is 'Community Question Answering' (CQA) in modern Information Retrieval?",
+    "options": [
+      "Platforms (like StackOverflow, Quora, Zhihu) where users ask questions, community members provide answers, and votes/reputation identify the best answer",
+      "An automated bot answering phone calls",
+      "A database of trivia questions",
+      "A government quiz website"
+    ],
+    "correct": 0,
+    "explanation": "CQA combines human expertise, social voting, and IR to curate high-quality solutions for long-tail complex questions.",
+    "topic": "CQA Platforms",
+    "slide_ref": "11. Social search.pptx",
+    "answer": 0
+  },
+  {
+    "id": "q_ch11_14",
+    "chapter": 11,
+    "question": "In CQA systems like StackOverflow, what is the role of 'Reputation Systems' (User Karma)?",
+    "options": [
+      "To quantify user trustworthiness, expertise, and contribution quality through peer upvotes, helping rank answers from verified authorities higher",
+      "To pay money to users",
+      "To lock user accounts after 30 days",
+      "To track user GPS locations"
+    ],
+    "correct": 0,
+    "explanation": "Reputation metrics incentivize quality participation and provide strong algorithmic ranking signals for answer quality.",
+    "topic": "CQA Reputation",
+    "slide_ref": "11. Social search.pptx",
+    "answer": 0
+  },
+  {
+    "id": "q_ch11_15",
+    "chapter": 11,
+    "question": "What is 'Expert Finding' (Expertise Retrieval) in enterprise social search?",
+    "options": [
+      "The task of identifying and ranking knowledgeable persons or subject-matter experts within an organization based on their authored documents, emails, and code commits",
+      "Hiring new employees on LinkedIn",
+      "Searching for doctors in a phonebook",
+      "An online detective agency"
+    ],
+    "correct": 0,
+    "explanation": "Expertise retrieval matches a topic query against corporate knowledge graphs to pinpoint human authorities within the company.",
+    "topic": "Expert Finding",
+    "slide_ref": "11. Social search.pptx",
+    "answer": 0
+  },
+  {
+    "id": "q_ch11_16",
+    "chapter": 11,
+    "question": "What is a major linguistic challenge of unconstrained User Tagging (Folksonomy noise)?",
+    "options": [
+      "Tags suffer from severe synonymy (e.g., 'nyc', 'newyork', 'newyorkcity'), polysemy (e.g., 'apple' fruit vs tech), spelling errors, and lack of hierarchical relationships",
+      "Tags cannot be written in English",
+      "Tags are limited to 3 characters",
+      "Tags cannot be stored in databases"
+    ],
+    "correct": 0,
+    "explanation": "Because users tag without guidelines, vocabulary divergence, typos, and ambiguity create noisy, fragmented metadata.",
+    "topic": "Tag Ambiguity",
+    "slide_ref": "11. Social search.pptx",
+    "answer": 0
+  },
+  {
+    "id": "q_ch11_17",
+    "chapter": 11,
+    "question": "What is 'Tag Spamming' (Spam in Social Search)?",
+    "options": [
+      "Users deliberately assigning misleading, popular, or trending tags (e.g., tagging a random product with 'free', 'porn', 'bitcoin') to artificially boost visibility",
+      "Sending spam emails with tags",
+      "Posting recipe comments",
+      "Creating fake user profiles"
+    ],
+    "correct": 0,
+    "explanation": "Spammers hijack popular tags to siphon traffic to affiliate or scam sites, requiring automated tag spam classification.",
+    "topic": "Tag Spam",
+    "slide_ref": "11. Social search.pptx",
+    "answer": 0
+  },
+  {
+    "id": "q_ch11_18",
+    "chapter": 11,
+    "question": "In social networks, what does 'Degree of Separation' (the Small-World Phenomenon) refer to?",
+    "options": [
+      "The empirical finding (Milgram, 1967) that any two people in a social graph are connected by a short chain of social acquaintances (typically ~6 hops)",
+      "The temperature difference between servers",
+      "The physical distance between two routers",
+      "The number of characters in a user's name"
+    ],
+    "correct": 0,
+    "explanation": "Small-world networks have short average path lengths between arbitrary nodes, enabling rapid information diffusion across social search graphs.",
+    "topic": "Small World Phenomenon",
+    "slide_ref": "11. Social search.pptx",
+    "answer": 0
+  },
+  {
+    "id": "q_ch11_19",
+    "chapter": 11,
+    "question": "What is 'Personalized Social Search'?",
+    "options": [
+      "Re-ranking search results based on the searcher's own social graph (e.g., boosting documents bookmarked, shared, or liked by the user's direct friends)",
+      "A search engine that only allows 1 user",
+      "Searching with a personal password",
+      "Displaying the user's name on the homepage"
+    ],
+    "correct": 0,
+    "explanation": "Personalized social search injects social affinity signals: recommendations from friends and trusted connections are ranked higher.",
+    "topic": "Social Personalization",
+    "slide_ref": "11. Social search.pptx",
+    "answer": 0
+  },
+  {
+    "id": "q_ch11_20",
+    "chapter": 11,
+    "question": "What is 'Implicit Social Tagging'?",
+    "options": [
+      "Deriving tags automatically from user anchor text, pinboards, tweets, and shared link descriptions without requiring an explicit 'tag' input field",
+      "Secretly recording user conversations",
+      "Tagging images with invisible ink",
+      "Tagging users by their IP address"
+    ],
+    "correct": 0,
+    "explanation": "Social tweets, social bookmarks, and pinboards act as de facto crowd-sourced descriptive tags for linked URLs.",
+    "topic": "Implicit Tagging",
+    "slide_ref": "11. Social search.pptx",
+    "answer": 0
+  },
+  {
+    "id": "q_ch11_21",
+    "chapter": 11,
+    "question": "In collaborative filtering, what is 'Matrix Factorization' (e.g., SVD - Singular Value Decomposition)?",
+    "options": [
+      "Decomposing the sparse User-Item rating matrix into lower-dimensional dense latent factor matrices representing user preferences and item characteristics",
+      "Multiplying all ratings by 10",
+      "A hardware chip manufacturing process",
+      "A tool for solving linear equations in high school"
+    ],
+    "correct": 0,
+    "explanation": "Matrix factorization (made famous by the Netflix Prize) maps users and items to a shared latent factor space (e.g., 50 dimensions) to predict missing ratings.",
+    "topic": "Matrix Factorization CF",
+    "slide_ref": "11. Social search.pptx",
+    "answer": 0
+  },
+  {
+    "id": "q_ch11_22",
+    "chapter": 11,
+    "question": "What is the 'Sparsity Problem' in real-world Collaborative Filtering systems?",
+    "options": [
+      "In typical platforms (e.g., Amazon, Netflix), users rate only a tiny fraction (often < 1%) of the millions of available items, making the user-item matrix over 99% empty",
+      "The server room has very few computers",
+      "Documents contain very few vowels",
+      "Search queries are too short"
+    ],
+    "correct": 0,
+    "explanation": "Extreme sparsity makes finding overlapping ratings between users difficult, necessitating latent factor models or content-collaborative hybrids.",
+    "topic": "CF Sparsity",
+    "slide_ref": "11. Social search.pptx",
+    "answer": 0
+  },
+  {
+    "id": "q_ch11_23",
+    "chapter": 11,
+    "question": "What is 'Content-Based Recommendation' and how does it complement Collaborative Filtering in hybrid social systems?",
+    "options": [
+      "It recommends items with similar textual features or metadata to what the user liked in the past, solving the cold-start problem for new items with zero ratings",
+      "It only recommends text files",
+      "It reads documents out loud to users",
+      "It deletes old content"
+    ],
+    "correct": 0,
+    "explanation": "Content-based filtering analyzes document text (TF-IDF, embeddings), so newly published articles can be recommended immediately without waiting for user ratings.",
+    "topic": "Hybrid Recommendation",
+    "slide_ref": "11. Social search.pptx",
+    "answer": 0
+  },
+  {
+    "id": "q_ch11_24",
+    "chapter": 11,
+    "question": "What is the 'Rich-Get-Richer' (Matthew Effect) phenomenon in social tag systems?",
+    "options": [
+      "Early tags suggested to subsequent users are adopted disproportionately, causing a few popular tags to dominate while niche descriptive tags are suppressed",
+      "Rich users pay less for search",
+      "Wealthy search engines buy all servers",
+      "Search results for millionaires"
+    ],
+    "correct": 0,
+    "explanation": "Displaying existing tags creates social feedback loops that reinforce top tags, homogenizing the folksonomy vocabulary.",
+    "topic": "Matthew Effect Tagging",
+    "slide_ref": "11. Social search.pptx",
+    "answer": 0
+  },
+  {
+    "id": "q_ch11_25",
+    "chapter": 11,
+    "question": "In Social Graph Search, what is an 'Ego Network'?",
+    "options": [
+      "A network centered on a single focal individual (the 'ego') and all the other nodes ('alters') directly connected to them, along with ties between alters",
+      "A network of boastful users",
+      "A server with high processing power",
+      "A private intranet"
+    ],
+    "correct": 0,
+    "explanation": "Ego networks analyze local neighborhood subgraphs around a user to personalize social search results.",
+    "topic": "Ego Network",
+    "slide_ref": "11. Social search.pptx",
+    "answer": 0
+  },
+  {
+    "id": "q_ch11_26",
+    "chapter": 11,
+    "question": "What is 'Triadic Closure' in social network theory?",
+    "options": [
+      "The principle that if person A has strong social ties to person B and person C, there is a high probability that B and C will form a connection",
+      "Closing three browser tabs at once",
+      "A triangle drawn on a computer screen",
+      "A network with only 3 computers"
+    ],
+    "correct": 0,
+    "explanation": "Triadic closure models link formation in social graphs, used to suggest friends and predict shared interests.",
+    "topic": "Triadic Closure",
+    "slide_ref": "11. Social search.pptx",
+    "answer": 0
+  },
+  {
+    "id": "q_ch11_27",
+    "chapter": 11,
+    "question": "What is 'Homophily' ('birds of a feather flock together') in social search?",
+    "options": [
+      "The tendency of individuals to connect with others who share similar interests, beliefs, demographics, and tastes",
+      "A fear of computers",
+      "A search engine that only operates in libraries",
+      "A database of bird species"
+    ],
+    "correct": 0,
+    "explanation": "Homophily explains why friends in social graphs exhibit correlated information needs, validating social personalization algorithms.",
+    "topic": "Homophily",
+    "slide_ref": "11. Social search.pptx",
+    "answer": 0
+  },
+  {
+    "id": "q_ch11_28",
+    "chapter": 11,
+    "question": "In CQA systems, how is 'Best Answer Prediction' typically formulated as a machine learning problem?",
+    "options": [
+      "As a supervised binary classification or learning-to-rank task combining answer length, author reputation, code snippet presence, and readability metrics",
+      "As an unsupervised clustering of user names",
+      "As an encryption algorithm",
+      "As a random coin flip"
+    ],
+    "correct": 0,
+    "explanation": "Classifiers predict whether an answer will be accepted based on content features (length, code, formatting) and social features (author badge level).",
+    "topic": "Best Answer Prediction",
+    "slide_ref": "11. Social search.pptx",
+    "answer": 0
+  },
+  {
+    "id": "q_ch11_29",
+    "chapter": 11,
+    "question": "What is 'Social Bookmarking' (e.g., Delicious, Diigo, Pinboard)?",
+    "options": [
+      "A web service where users save, organize, tag, and publicly share hyperlinks to web pages for personal curation and community discovery",
+      "Placing physical bookmarks in library books",
+      "Adding a link to browser favorites offline",
+      "A social club for book readers"
+    ],
+    "correct": 0,
+    "explanation": "Social bookmarking platforms generate crowdsourced metadata and high-quality link directories for information retrieval.",
+    "topic": "Social Bookmarking",
+    "slide_ref": "11. Social search.pptx",
+    "answer": 0
+  },
+  {
+    "id": "q_ch11_30",
+    "chapter": 11,
+    "question": "What does 'Tag Disambiguation' mean?",
+    "options": [
+      "Resolving the specific semantic meaning of an ambiguous tag (e.g., determining whether tag 'jaguar' on a photo means animal, car, or Mac OS) using co-occurring tags",
+      "Deleting ambiguous tags",
+      "Translating tags to Latin",
+      "Banning users who type short tags"
+    ],
+    "correct": 0,
+    "explanation": "Co-occurring tags (e.g., 'jaguar' + 'savannah' vs 'jaguar' + 'v8 engine') provide context to disambiguate meaning.",
+    "topic": "Tag Disambiguation",
+    "slide_ref": "11. Social search.pptx",
+    "answer": 0
+  },
+  {
+    "id": "q_ch11_31",
+    "chapter": 11,
+    "question": "What is a 'Co-Tagging Graph' (Bimodal / Bipartite Graph)?",
+    "options": [
+      "A graph connecting resources and tags, or users and tags, where edges represent tagging actions",
+      "A graph with 2 nodes only",
+      "A graph that runs twice as fast",
+      "A graph drawn with two colors"
+    ],
+    "correct": 0,
+    "explanation": "Social tagging forms a 3-way tripartite hypergraph (Users, Resources, Tags), often projected into bipartite graphs for network analysis.",
+    "topic": "Bipartite Tag Graph",
+    "slide_ref": "11. Social search.pptx",
+    "answer": 0
+  },
+  {
+    "id": "q_ch11_32",
+    "chapter": 11,
+    "question": "What is 'HITS' algorithm extension to Social Tagging (FolkRank)?",
+    "options": [
+      "An adaptation of PageRank/HITS that propagates importance across the tripartite graph of Users, Resources, and Tags to compute topic-specific social authority",
+      "A tool to hit servers with stress tests",
+      "A music ranking chart",
+      "A game played on social networks"
+    ],
+    "correct": 0,
+    "explanation": "FolkRank (Hotho et al., 2006) adapts PageRank to tripartite folksonomies, finding prominent tags and resources simultaneously.",
+    "topic": "FolkRank Algorithm",
+    "slide_ref": "11. Social search.pptx",
+    "answer": 0
+  },
+  {
+    "id": "q_ch11_33",
+    "chapter": 11,
+    "question": "What is the 'Long Tail' in social tagging distribution?",
+    "options": [
+      "A small number of tags are used millions of times, while an immense tail of unique, niche, and highly specific tags are used only once or twice",
+      "A tag containing 100 characters",
+      "A network cable that is 50 meters long",
+      "A user who has been active for 10 years"
+    ],
+    "correct": 0,
+    "explanation": "Like Zipf's law, tag distributions exhibit power-law behavior: head tags are broad ('music', 'tech'), tail tags are granular ('django-rest-framework').",
+    "topic": "Long Tail Tags",
+    "slide_ref": "11. Social search.pptx",
+    "answer": 0
+  },
+  {
+    "id": "q_ch11_34",
+    "chapter": 11,
+    "question": "Why is 'Collaborative Filtering' susceptible to 'Shilling Attacks' (Profile Injection)?",
+    "options": [
+      "Malicious actors can create thousands of fake user profiles and submit strategic high ratings to artificially inflate the visibility of a targeted product",
+      "Servers crash when ratings exceed 5 stars",
+      "Users can change the code of the website",
+      "The algorithm only works on Mondays"
+    ],
+    "correct": 0,
+    "explanation": "Because CF relies on unverified user ratings, bot armies can inject biased rating profiles to manipulate recommendation outputs.",
+    "topic": "Shilling Attacks",
+    "slide_ref": "11. Social search.pptx",
+    "answer": 0
+  },
+  {
+    "id": "q_ch11_35",
+    "chapter": 11,
+    "question": "What is 'Trust-Aware Recommendation' in social networks?",
+    "options": [
+      "Incorporating explicit social trust ratings (e.g., 'User A trusts User B's movie taste') into the collaborative filtering model to filter out untrusted ratings",
+      "Asking users for their banking credentials",
+      "Recommending government websites only",
+      "A legal contract signed by searchers"
+    ],
+    "correct": 0,
+    "explanation": "Trust networks replace raw statistical correlations with explicit interpersonal trust weights, increasing resilience against spam.",
+    "topic": "Trust-Aware Recommendation",
+    "slide_ref": "11. Social search.pptx",
+    "answer": 0
+  },
+  {
+    "id": "q_ch11_36",
+    "chapter": 11,
+    "question": "In social search, what is 'Expertise Modeling' via Document Profiling?",
+    "options": [
+      "Analyzing the vocabulary and topics of documents authored, reviewed, or committed by an employee to construct a vector profile of their domain expertise",
+      "Testing employees with written exams",
+      "Checking employee diplomas",
+      "Tracking employee keystrokes"
+    ],
+    "correct": 0,
+    "explanation": "Profile-centric models aggregate text from publications, patents, and internal wiki edits to estimate an employee's competence in target topics.",
+    "topic": "Expertise Modeling",
+    "slide_ref": "11. Social search.pptx",
+    "answer": 0
+  },
+  {
+    "id": "q_ch11_37",
+    "chapter": 11,
+    "question": "What is 'Wisdom of the Crowds' premise in social search?",
+    "options": [
+      "Under the right conditions, the aggregated judgment and tagging decisions of a diverse, independent group of users is often superior to that of any single expert",
+      "Crowds of people shouting at servers",
+      "Only listening to celebrities",
+      "Forcing all users to agree on one answer"
+    ],
+    "correct": 0,
+    "explanation": "James Surowiecki's principle shows that aggregating collective independent judgments cancels out individual biases, producing robust metadata.",
+    "topic": "Wisdom of Crowds",
+    "slide_ref": "11. Social search.pptx",
+    "answer": 0
+  },
+  {
+    "id": "q_ch11_38",
+    "chapter": 11,
+    "question": "What is 'Social Signal' in Search Engine Optimization (SEO)?",
+    "options": [
+      "Mentions, shares, likes, and backlinks originating from social media platforms (Twitter, LinkedIn, Facebook) as indicators of content virality and brand authority",
+      "Flashing lights in the server room",
+      "A siren sound when a user logs in",
+      "A badge displayed on the user's monitor"
+    ],
+    "correct": 0,
+    "explanation": "While not direct algorithmic ranking factors like PageRank, social signals correlate with increased visibility, secondary backlinks, and organic brand queries.",
+    "topic": "Social Signals SEO",
+    "slide_ref": "11. Social search.pptx",
+    "answer": 0
+  },
+  {
+    "id": "q_ch11_39",
+    "chapter": 11,
+    "question": "What does 'Microblogging Search' (e.g., real-time search on X/Twitter) prioritize over traditional web search?",
+    "options": [
+      "Extreme temporal recency (freshness within seconds) and velocity of retweets/mentions rather than static PageRank or deep textual analysis",
+      "Long 5,000-word articles",
+      "PDF formatting",
+      "Images only"
+    ],
+    "correct": 0,
+    "explanation": "Microblog search prioritizes real-time breaking events, tracking trending hashtags and streaming sentiment as events unfold.",
+    "topic": "Real-Time Microblog Search",
+    "slide_ref": "11. Social search.pptx",
+    "answer": 0
+  },
+  {
+    "id": "q_ch11_40",
+    "chapter": 11,
+    "question": "What is 'Sentiment Analysis' in social search?",
+    "options": [
+      "Using NLP and text classification to determine whether social posts or reviews express positive, negative, or neutral sentiment toward a topic or entity",
+      "Measuring the emotional heart rate of the user",
+      "A software program that plays sad music",
+      "Deleting angry comments"
+    ],
+    "correct": 0,
+    "explanation": "Sentiment analysis extracts subjective polarity from user reviews and tweets to summarize community opinions.",
+    "topic": "Sentiment Analysis",
+    "slide_ref": "11. Social search.pptx",
+    "answer": 0
+  },
+  {
+    "id": "q_ch11_41",
+    "chapter": 11,
+    "question": "What is a 'Social Knowledge Graph'?",
+    "options": [
+      "A structured graph combining social entity relationships (people, companies, friendships) with factual knowledge triples (e.g., 'Person A works at Company B')",
+      "A chart of social media stock prices",
+      "A diagram of a school playground",
+      "A list of user phone numbers"
+    ],
+    "correct": 0,
+    "explanation": "Social knowledge graphs connect people, organizations, concepts, and relationships to support entity-based social search.",
+    "topic": "Social Knowledge Graph",
+    "slide_ref": "11. Social search.pptx",
+    "answer": 0
+  },
+  {
+    "id": "q_ch11_42",
+    "chapter": 11,
+    "question": "What is the 'Cold Start Problem' for a Brand-New User in Collaborative Filtering?",
+    "options": [
+      "The system has zero rating history for the user, requiring fallback to popular trending items or asking the user to select initial preference tags during onboarding",
+      "The user's computer is frozen",
+      "The user does not speak English",
+      "The user has no internet connection"
+    ],
+    "correct": 0,
+    "explanation": "New users lack interaction history, so engines display onboarding interest surveys or show universally popular items until behavior is observed.",
+    "topic": "User Cold Start",
+    "slide_ref": "11. Social search.pptx",
+    "answer": 0
+  },
+  {
+    "id": "q_ch11_43",
+    "chapter": 11,
+    "question": "What is 'K-Core Decomposition' in social network analysis?",
+    "options": [
+      "Pruning a graph iteratively to find the maximal subgraph where every remaining node is connected to at least k other nodes, identifying dense social cores",
+      "Splitting a computer core into k pieces",
+      "A nuclear physics calculation",
+      "A method of sorting numbers"
+    ],
+    "correct": 0,
+    "explanation": "K-core decomposition extracts cohesive, highly connected community backbones from massive sparse social graphs.",
+    "topic": "K-Core Social Graphs",
+    "slide_ref": "11. Social search.pptx",
+    "answer": 0
+  },
+  {
+    "id": "q_ch11_44",
+    "chapter": 11,
+    "question": "What is 'PageRank' applied to Social Follower Graphs (UserRank)?",
+    "options": [
+      "Ranking users by social influence: an influential user is followed by other influential users, modeling social authority via random walks",
+      "Ranking web pages on personal computers",
+      "Counting the number of letters in a username",
+      "Measuring user typing speed"
+    ],
+    "correct": 0,
+    "explanation": "Twitter's UserRank applies PageRank to the follower graph, identifying high-authority influencers whose retweets carry high weight.",
+    "topic": "UserRank",
+    "slide_ref": "11. Social search.pptx",
+    "answer": 0
+  },
+  {
+    "id": "q_ch11_45",
+    "chapter": 11,
+    "question": "What is 'Community Detection' (e.g., Louvain Algorithm) in social graphs?",
+    "options": [
+      "Partitioning social graph nodes into dense clusters or modules with high internal edge density and sparse connections to other modules, discovering real-world interest groups",
+      "Police surveillance software",
+      "Detecting which city a server is located in",
+      "Finding broken web links"
+    ],
+    "correct": 0,
+    "explanation": "Modularity-based community detection identifies organic interest cliques (e.g., sports fans, crypto traders) within massive social graphs.",
+    "topic": "Community Detection",
+    "slide_ref": "11. Social search.pptx",
+    "answer": 0
+  },
+  {
+    "id": "q_ch11_46",
+    "chapter": 11,
+    "question": "In CQA systems, why is 'Question Routing' (Question Recommendation) critical?",
+    "options": [
+      "Matching newly submitted unanswered questions to the specific community experts most qualified to answer them quickly before the askers abandon the platform",
+      "Routing network cables to questions",
+      "Deleting questions that are too difficult",
+      "Answering all questions with automated bots"
+    ],
+    "correct": 0,
+    "explanation": "Effective question routing directs incoming queries to active domain experts, reducing time-to-first-answer and boosting platform health.",
+    "topic": "Question Routing",
+    "slide_ref": "11. Social search.pptx",
+    "answer": 0
+  },
+  {
+    "id": "q_ch11_47",
+    "chapter": 11,
+    "question": "What is 'Implicit Friend Recommendation' based on Shared Tagging Behavior?",
+    "options": [
+      "Suggesting social connections between two users who have tagged the same niche resources with identical tags, even if they have never interacted before",
+      "Adding random people to user contact lists",
+      "Sending automated friend requests",
+      "A feature reserved for paying users"
+    ],
+    "correct": 0,
+    "explanation": "Users with high overlap in their folksonomy bookmark collections share specialized interests, making them prime candidates for social following.",
+    "topic": "Folksonomy Friend Recommendation",
+    "slide_ref": "11. Social search.pptx",
+    "answer": 0
+  },
+  {
+    "id": "q_ch11_48",
+    "chapter": 11,
+    "question": "What is 'Geo-Social Search'?",
+    "options": [
+      "Searching for localized social content (e.g., restaurant check-ins, local event tweets, nearby friends) combining geographic GPS coordinates with social graphs",
+      "Searching for geographical maps",
+      "A geological database of rocks",
+      "A search engine for satellites"
+    ],
+    "correct": 0,
+    "explanation": "Geo-social search filters social media streams and reviews based on spatial proximity to the user's current physical location.",
+    "topic": "Geo-Social Search",
+    "slide_ref": "11. Social search.pptx",
+    "answer": 0
+  },
+  {
+    "id": "q_ch11_49",
+    "chapter": 11,
+    "question": "Why do social search systems face higher 'Freshness' demands than standard web search?",
+    "options": [
+      "Social interactions (breaking news tweets, viral videos, live event commentary) lose relevance within hours or minutes, requiring near-instantaneous indexing pipelines",
+      "Because social media companies have smaller servers",
+      "Because social posts are written in perishable ink",
+      "Because older posts are deleted automatically after 24 hours"
+    ],
+    "correct": 0,
+    "explanation": "The half-life of a tweet or social post is measured in hours; search engines must ingest and index social feeds with sub-minute latency.",
+    "topic": "Social Freshness Demands",
+    "slide_ref": "11. Social search.pptx",
+    "answer": 0
+  },
+  {
+    "id": "q_ch11_50",
+    "chapter": 11,
+    "question": "What is the primary privacy concern in Social Search engines?",
+    "options": [
+      "Inadvertently leaking private, friend-only, or restricted personal updates and photos into public search result pages accessible to employers or strangers",
+      "Users spending too much time searching",
+      "The search engine logo being copied",
+      "Servers running out of storage space"
+    ],
+    "correct": 0,
+    "explanation": "Social search must strictly enforce complex dynamic privacy settings so private posts are never surfaced outside designated friend circles.",
+    "topic": "Social Privacy",
+    "slide_ref": "11. Social search.pptx",
+    "answer": 0
+  },
+  {
+    "id": "q_ch12_01",
+    "chapter": 12,
+    "question": "What is the core limitation of the traditional Bag of Words (BoW) assumption in Information Retrieval?",
+    "options": [
+      "It completely ignores word order, syntactic structure, grammatical relationships, and term dependencies, treating documents as unordered multisets of terms",
+      "It requires excessive disk space",
+      "It cannot handle words longer than 5 letters",
+      "It only works on English dictionaries"
+    ],
+    "correct": 0,
+    "explanation": "BoW assumes words are conditionally independent, unable to distinguish phrase context or distinguish 'cats eat fish' from 'fish eat cats'.",
+    "topic": "BoW Limitations",
+    "slide_ref": "12. Beyond bag of words.pptx",
+    "answer": 0
+  },
+  {
+    "id": "q_ch12_02",
+    "chapter": 12,
+    "question": "What does a 'Term Dependence Model' (such as MRF-SDM) aim to incorporate into retrieval scoring?",
+    "options": [
+      "The spatial co-occurrence, adjacency, and ordered relationships between query terms in documents (phrases and proximity windows)",
+      "The physical weight of server cables",
+      "The salary of the software developer",
+      "The file extension of the document"
+    ],
+    "correct": 0,
+    "explanation": "Term dependence models reward documents where multiple query terms appear as exact phrases or within close proximity windows.",
+    "topic": "Term Dependence Models",
+    "slide_ref": "12. Beyond bag of words.pptx",
+    "answer": 0
+  },
+  {
+    "id": "q_ch12_03",
+    "chapter": 12,
+    "question": "In the Sequential Dependence Model (SDM) by Metzler and Croft, what are the three feature types linearly combined?",
+    "options": [
+      "Independent terms ($f_T$), Exact ordered phrases ($f_O$), and Unordered proximity windows ($f_U$)",
+      "Nouns, Verbs, and Adjectives",
+      "Title terms, URL terms, and Anchor terms",
+      "Text, Images, and Audio"
+    ],
+    "correct": 0,
+    "explanation": "SDM score = lambda_T * sum(f_T) + lambda_O * sum(f_O) + lambda_U * sum(f_U), blending term, phrase, and proximity signals.",
+    "topic": "SDM Formula",
+    "slide_ref": "12. Beyond bag of words.pptx",
+    "answer": 0
+  },
+  {
+    "id": "q_ch12_04",
+    "chapter": 12,
+    "question": "In SDM, what is an 'Ordered Window' feature ($f_O$)?",
+    "options": [
+      "Matches where query terms appear in the document in the exact same sequential order with zero intervening words (an exact phrase match)",
+      "Matches where words appear in reverse order",
+      "Matches on the first page of the document",
+      "Matches inside an operating system window"
+    ],
+    "correct": 0,
+    "explanation": "Ordered window features capture exact contiguous bigrams (e.g., query 'new york' matching document 'new york' at positions p and p+1).",
+    "topic": "Ordered Window Feature",
+    "slide_ref": "12. Beyond bag of words.pptx",
+    "answer": 0
+  },
+  {
+    "id": "q_ch12_05",
+    "chapter": 12,
+    "question": "In SDM, what is an 'Unordered Window' feature ($f_U$)?",
+    "options": [
+      "Matches where query terms appear near each other within a small sliding window (typically width <= 8 words) in any order",
+      "Matches on different websites",
+      "Matches in different calendar months",
+      "Words that do not appear anywhere in the document"
+    ],
+    "correct": 0,
+    "explanation": "Unordered window features capture looser proximity: terms appearing within e.g. 8 words of each other even if inverted or separated.",
+    "topic": "Unordered Window Feature",
+    "slide_ref": "12. Beyond bag of words.pptx",
+    "answer": 0
+  },
+  {
+    "id": "q_ch12_06",
+    "chapter": 12,
+    "question": "What is 'Feature-Based Retrieval'?",
+    "options": [
+      "Retrieval models where document ranking is determined by evaluating an arbitrary vector of heterogeneous features (BM25, PageRank, Proximity, Freshness) through a unified mathematical function",
+      "Retrieval that only searches for face features in photos",
+      "Retrieval without using an inverted index",
+      "A database query using SQL"
+    ],
+    "correct": 0,
+    "explanation": "Feature-based models generalize ranking beyond raw word matching to combine hundreds of content, link, and quality signals.",
+    "topic": "Feature-Based Retrieval",
+    "slide_ref": "12. Beyond bag of words.pptx",
+    "answer": 0
+  },
+  {
+    "id": "q_ch12_07",
+    "chapter": 12,
+    "question": "What is 'XML Retrieval' (Structured Document Retrieval)?",
+    "options": [
+      "Searching hierarchical XML documents to retrieve the specific granular XML element (e.g., a specific section, paragraph, or figure) that answers the query, rather than the entire document",
+      "Translating XML files into HTML",
+      "Deleting XML tags from text",
+      "A search engine written in XML"
+    ],
+    "correct": 0,
+    "explanation": "XML retrieval addresses Content-and-Structure (CAS) queries, returning the most specific, focused XML sub-element that satisfies the need.",
+    "topic": "XML Retrieval",
+    "slide_ref": "12. Beyond bag of words.pptx",
+    "answer": 0
+  },
+  {
+    "id": "q_ch12_08",
+    "chapter": 12,
+    "question": "What was the 'INEX' (Initiative for the Evaluation of XML Retrieval) benchmark?",
+    "options": [
+      "An international evaluation campaign (similar to TREC) dedicated to evaluating structured XML retrieval systems and element-level precision",
+      "An internet exchange point in Europe",
+      "An XML parsing library for Python",
+      "An image compression standard"
+    ],
+    "correct": 0,
+    "explanation": "INEX established standard XML test collections, topics, and evaluation metrics for component-level and structured retrieval.",
+    "topic": "INEX Benchmark",
+    "slide_ref": "12. Beyond bag of words.pptx",
+    "answer": 0
+  },
+  {
+    "id": "q_ch12_09",
+    "chapter": 12,
+    "question": "What is an 'Entity-Centric Search' system?",
+    "options": [
+      "A search engine that resolves queries to recognized real-world entities (people, places, movies, companies) in a Knowledge Graph and synthesizes structured entity attributes",
+      "A search engine that only operates in business entities",
+      "A search engine for legal contracts",
+      "A search engine that only searches user names"
+    ],
+    "correct": 0,
+    "explanation": "Entity search moves from 'strings to things': understanding that the query refers to a distinct entity node with known attributes in a Knowledge Base.",
+    "topic": "Entity-Centric Search",
+    "slide_ref": "12. Beyond bag of words.pptx",
+    "answer": 0
+  },
+  {
+    "id": "q_ch12_10",
+    "chapter": 12,
+    "question": "What is a 'Knowledge Graph' (e.g., Google Knowledge Graph, Wikidata)?",
+    "options": [
+      "A massive multi-relational graph storing real-world entities as nodes and their semantic relationships as directed edges (e.g., [Marie Curie] -> [fieldOfWork] -> [Physics])",
+      "A chart showing how much knowledge a student has",
+      "A database of user passwords",
+      "A graph drawn on paper in a classroom"
+    ],
+    "correct": 0,
+    "explanation": "Knowledge Graphs structure factual world knowledge as RDF-style subject-predicate-object triples, enabling direct entity exploration.",
+    "topic": "Knowledge Graph Definition",
+    "slide_ref": "12. Beyond bag of words.pptx",
+    "answer": 0
+  },
+  {
+    "id": "q_ch12_11",
+    "chapter": 12,
+    "question": "What is 'Multimedia Information Retrieval' (MMIR)?",
+    "options": [
+      "The science of indexing, searching, and retrieving non-textual media formats such as images, audio, video, and 3D models based on their multimodal content",
+      "A website that plays background music",
+      "A computer with multiple monitors",
+      "A search engine for video game consoles"
+    ],
+    "correct": 0,
+    "explanation": "MMIR retrieves unstructured visual and acoustic media using low-level features (color, timbre) and high-level semantic embeddings.",
+    "topic": "Multimedia IR",
+    "slide_ref": "12. Beyond bag of words.pptx",
+    "answer": 0
+  },
+  {
+    "id": "q_ch12_12",
+    "chapter": 12,
+    "question": "What is 'Content-Based Image Retrieval' (CBIR)?",
+    "options": [
+      "Retrieving images by analyzing the visual contents of the images themselves (colors, textures, shapes, visual embeddings) rather than relying solely on surrounding text or file names",
+      "Searching for images by their file size",
+      "Searching for images by photographer name",
+      "Searching for images in a physical photo album"
+    ],
+    "correct": 0,
+    "explanation": "CBIR analyzes pixel arrays directly, using visual descriptors and deep convolutional embeddings to find visually similar images.",
+    "topic": "CBIR",
+    "slide_ref": "12. Beyond bag of words.pptx",
+    "answer": 0
+  },
+  {
+    "id": "q_ch12_13",
+    "chapter": 12,
+    "question": "What is an 'Image Color Histogram' in classical CBIR?",
+    "options": [
+      "A representation of the distribution of colors in an image, counting the number of pixels that fall into each discrete color bin in a color space (e.g., RGB or HSV)",
+      "A history of painting techniques",
+      "A software program that colors black-and-white photos",
+      "A chart tracking monitor color calibration"
+    ],
+    "correct": 0,
+    "explanation": "Color histograms quantify global color distribution, providing an invariant descriptor for color-based image matching.",
+    "topic": "Color Histogram",
+    "slide_ref": "12. Beyond bag of words.pptx",
+    "answer": 0
+  },
+  {
+    "id": "q_ch12_14",
+    "chapter": 12,
+    "question": "What is 'Query-by-Example' (QBE) in image search (such as Google Lens)?",
+    "options": [
+      "The user submits an image as the search query, and the system retrieves visually or semantically similar images from the index",
+      "The user types an example sentence into the search box",
+      "A teacher showing an example in class",
+      "Searching for example code on GitHub"
+    ],
+    "correct": 0,
+    "explanation": "QBE allows users to upload a photo to find identical products, identify landmarks, or discover visually matching artwork.",
+    "topic": "Query-by-Example",
+    "slide_ref": "12. Beyond bag of words.pptx",
+    "answer": 0
+  },
+  {
+    "id": "q_ch12_15",
+    "chapter": 12,
+    "question": "What is 'Acoustic Fingerprinting' in audio retrieval (e.g., Shazam algorithm)?",
+    "options": [
+      "A condensed digital summary of an audio signal based on spectrogram peak constellations, robust to ambient noise and distortion, used for rapid audio identification",
+      "A fingerprint left on a microphone",
+      "An audio file recording animal sounds",
+      "A musical instrument tuner"
+    ],
+    "correct": 0,
+    "explanation": "Shazam (Wang, 2003) creates combinatorial hash pairs of peak frequencies in spectrogram time-frequency graphs for sub-second song identification.",
+    "topic": "Acoustic Fingerprinting",
+    "slide_ref": "12. Beyond bag of words.pptx",
+    "answer": 0
+  },
+  {
+    "id": "q_ch12_16",
+    "chapter": 12,
+    "question": "What is 'Cross-Modal Retrieval' in modern Information Retrieval?",
+    "options": [
+      "The ability to search across different media modalities interchangeably (e.g., submitting a text query to retrieve relevant video segments, or submitting audio to find images)",
+      "Switching between two computer monitors",
+      "Translating English to Spanish",
+      "A computer that runs both Windows and Linux"
+    ],
+    "correct": 0,
+    "explanation": "Cross-modal retrieval projects text, audio, and visual representations into a unified multimodal embedding space (e.g., OpenAI CLIP).",
+    "topic": "Cross-Modal Retrieval",
+    "slide_ref": "12. Beyond bag of words.pptx",
+    "answer": 0
+  },
+  {
+    "id": "q_ch12_17",
+    "chapter": 12,
+    "question": "What is the 'Semantic Gap' in multimedia information retrieval?",
+    "options": [
+      "The disconnect between low-level sensory data extracted by computers (pixels, audio wave amplitudes) and the high-level semantic concepts perceived by human users (e.g., 'a joyful birthday party')",
+      "A gap between two server racks",
+      "A missing word in a dictionary",
+      "A typo in an HTML document"
+    ],
+    "correct": 0,
+    "explanation": "Bridging the semantic gap (mapping raw pixels/waveforms to abstract human concepts) is the central challenge of multimedia AI.",
+    "topic": "Semantic Gap",
+    "slide_ref": "12. Beyond bag of words.pptx",
+    "answer": 0
+  },
+  {
+    "id": "q_ch12_18",
+    "chapter": 12,
+    "question": "What is 'CLIP' (Contrastive Language-Image Pre-training by OpenAI) and why is it transformative for image search?",
+    "options": [
+      "A neural model trained on 400 million (image, text) pairs using contrastive loss, projecting images and natural language text into the same joint embedding space",
+      "A physical paperclip tool",
+      "An image cropping utility",
+      "A video editing software"
+    ],
+    "correct": 0,
+    "explanation": "CLIP aligns text and image vectors, allowing arbitrary text queries to match image content directly via cosine similarity without manual tags.",
+    "topic": "CLIP Model",
+    "slide_ref": "12. Beyond bag of words.pptx",
+    "answer": 0
+  },
+  {
+    "id": "q_ch12_19",
+    "chapter": 12,
+    "question": "In video retrieval, what is 'Shot Boundary Detection'?",
+    "options": [
+      "Detecting the transitions (hard cuts, dissolves, fades) between consecutive camera shots to segment continuous video into elementary visual units",
+      "Detecting camera angles in movies",
+      "Detecting gunshots in audio files",
+      "Measuring video file sizes on disk"
+    ],
+    "correct": 0,
+    "explanation": "Shot boundary detection breaks long video streams into distinct shots, allowing keyframe extraction for indexing.",
+    "topic": "Shot Boundary Detection",
+    "slide_ref": "12. Beyond bag of words.pptx",
+    "answer": 0
+  },
+  {
+    "id": "q_ch12_20",
+    "chapter": 12,
+    "question": "What is a 'Keyframe' in video indexing?",
+    "options": [
+      "A representative still image extracted from a video shot that captures its primary visual content for thumbnailing and visual feature extraction",
+      "A physical key to the server room",
+      "The longest video file in a collection",
+      "A keyboard shortcut to pause video"
+    ],
+    "correct": 0,
+    "explanation": "Keyframes serve as static image proxies for video shots, allowing standard CBIR and visual embeddings to index video content efficiently.",
+    "topic": "Keyframe Extraction",
+    "slide_ref": "12. Beyond bag of words.pptx",
+    "answer": 0
+  },
+  {
+    "id": "q_ch12_21",
+    "chapter": 12,
+    "question": "In Markov Random Fields for IR, what does the 'Full Independence' (FI) model correspond to?",
+    "options": [
+      "The standard unigram Bag of Words model where every query term is assumed to occur completely independently of all other query terms",
+      "A model where documents do not depend on servers",
+      "A political theory of sovereign states",
+      "A model with zero parameters"
+    ],
+    "correct": 0,
+    "explanation": "The FI variant of MRF reduces to standard unigram language modeling, assuming zero term interaction.",
+    "topic": "Full Independence MRF",
+    "slide_ref": "12. Beyond bag of words.pptx",
+    "answer": 0
+  },
+  {
+    "id": "q_ch12_22",
+    "chapter": 12,
+    "question": "In Markov Random Fields for IR, what does the 'Full Dependence' (FD) model assume?",
+    "options": [
+      "All query terms are mutually dependent on every other query term in the query, scoring all subsets and combinations of terms",
+      "The search engine depends on external power",
+      "All documents are identical",
+      "All queries have the same length"
+    ],
+    "correct": 0,
+    "explanation": "FD connects all query terms into a fully connected clique, considering all possible term pairings and higher-order combinations.",
+    "topic": "Full Dependence MRF",
+    "slide_ref": "12. Beyond bag of words.pptx",
+    "answer": 0
+  },
+  {
+    "id": "q_ch12_23",
+    "chapter": 12,
+    "question": "Why is the 'Sequential Dependence Model' (SDM) preferred over the 'Full Dependence' (FD) model in practice?",
+    "options": [
+      "SDM only considers dependencies between adjacent terms in the query (which captures natural phrases), dramatically reducing computation while achieving nearly identical effectiveness to FD",
+      "SDM runs on older computer hardware",
+      "FD is mathematically impossible to implement",
+      "SDM only works for single-word queries"
+    ],
+    "correct": 0,
+    "explanation": "Natural language phrases reside primarily in adjacent word pairs; restricting dependence to adjacent tokens O(N) avoids the exponential clique explosion of FD.",
+    "topic": "SDM vs FD Trade-off",
+    "slide_ref": "12. Beyond bag of words.pptx",
+    "answer": 0
+  },
+  {
+    "id": "q_ch12_24",
+    "chapter": 12,
+    "question": "In XML Retrieval, what is an 'Overlap' problem?",
+    "options": [
+      "When an XML retrieval system returns both a parent element (e.g., <section>) and its child sub-element (e.g., <paragraph>), creating redundant results on the SERP",
+      "When two computer monitors overlap",
+      "When two network cables cross",
+      "When two users search simultaneously"
+    ],
+    "correct": 0,
+    "explanation": "Because XML is hierarchical, both a book chapter and a paragraph within it might match; returning both clutters results with nested duplicates.",
+    "topic": "XML Overlap Problem",
+    "slide_ref": "12. Beyond bag of words.pptx",
+    "answer": 0
+  },
+  {
+    "id": "q_ch12_25",
+    "chapter": 12,
+    "question": "How do XML retrieval systems solve the Overlap problem?",
+    "options": [
+      "By applying Structural Disambiguation or Non-overlapping Result Filtering to remove ancestor/descendant duplicates and select the single most focused granular component",
+      "By deleting all child elements",
+      "By converting XML to plain text",
+      "By showing results only once per year"
+    ],
+    "correct": 0,
+    "explanation": "Filtering algorithms inspect tree paths to ensure that only the most focused element in an ancestor-descendant chain is returned.",
+    "topic": "Overlap Resolution",
+    "slide_ref": "12. Beyond bag of words.pptx",
+    "answer": 0
+  },
+  {
+    "id": "q_ch12_26",
+    "chapter": 12,
+    "question": "What is 'XPath' in the context of structured and XML information retrieval?",
+    "options": [
+      "A standardized query language for selecting nodes and navigating through hierarchical elements and attributes in an XML document",
+      "The physical path of an optical mouse",
+      "A programming language for graphics cards",
+      "A network router protocol"
+    ],
+    "correct": 0,
+    "explanation": "XPath enables Content-and-Structure queries (e.g., //article[//author='Smith']//section[contains(., 'quantum')]).",
+    "topic": "XPath in IR",
+    "slide_ref": "12. Beyond bag of words.pptx",
+    "answer": 0
+  },
+  {
+    "id": "q_ch12_27",
+    "chapter": 12,
+    "question": "What is an 'Entity Disambiguation' step in Knowledge-Graph-powered search engines?",
+    "options": [
+      "Mapping ambiguous string mentions in text (e.g., 'Michael Jordan') to the correct distinct node in the knowledge graph (the basketball player vs the computer science professor)",
+      "Deleting ambiguous names from Wikipedia",
+      "Changing user passwords",
+      "Translating names into French"
+    ],
+    "correct": 0,
+    "explanation": "Entity disambiguation resolves polysemy by evaluating surrounding context against entity graph properties.",
+    "topic": "Entity Disambiguation KG",
+    "slide_ref": "12. Beyond bag of words.pptx",
+    "answer": 0
+  },
+  {
+    "id": "q_ch12_28",
+    "chapter": 12,
+    "question": "What is 'Entity Card' (Infobox) on Google SERP populated by?",
+    "options": [
+      "Structured factual triples extracted from Knowledge Graphs (Wikidata, Wikipedia, Freebase, schema.org markup)",
+      "A human librarian typing answers manually",
+      "A random blog comment",
+      "An automated phone directory"
+    ],
+    "correct": 0,
+    "explanation": "Knowledge panels ingest curated, verified entity-attribute-value triples from knowledge graphs to answer who/what/where questions directly.",
+    "topic": "Entity Card Source",
+    "slide_ref": "12. Beyond bag of words.pptx",
+    "answer": 0
+  },
+  {
+    "id": "q_ch12_29",
+    "chapter": 12,
+    "question": "In Content-Based Image Retrieval, what is 'SIFT' (Scale-Invariant Feature Transform by David Lowe)?",
+    "options": [
+      "A landmark computer vision feature detection algorithm that identifies local interest point descriptors that are invariant to image scaling, rotation, and illumination changes",
+      "A tool to sift flour in baking",
+      "An image compression format",
+      "A video editing software"
+    ],
+    "correct": 0,
+    "explanation": "SIFT (1999) revolutionized CBIR by identifying invariant local keypoint gradients, allowing robust visual matching despite angle or scale changes.",
+    "topic": "SIFT Algorithm",
+    "slide_ref": "12. Beyond bag of words.pptx",
+    "answer": 0
+  },
+  {
+    "id": "q_ch12_30",
+    "chapter": 12,
+    "question": "In deep-learning-based image retrieval, what has largely replaced traditional hand-crafted descriptors like SIFT and Color Histograms?",
+    "options": [
+      "Dense feature vectors extracted from deep Convolutional Neural Networks (CNNs like ResNet) or Vision Transformers (ViT)",
+      "ASCII text descriptions written by humans",
+      "Raw uncompressed bitmap files",
+      "HTML5 canvas tags"
+    ],
+    "correct": 0,
+    "explanation": "Deep CNN and ViT embeddings capture hierarchical, semantic visual representations that dramatically outperform hand-crafted SIFT features.",
+    "topic": "Deep Visual Embeddings",
+    "slide_ref": "12. Beyond bag of words.pptx",
+    "answer": 0
+  },
+  {
+    "id": "q_ch12_31",
+    "chapter": 12,
+    "question": "In audio retrieval, what is a 'Spectrogram'?",
+    "options": [
+      "A 2D visual representation of the spectrum of frequencies of an audio signal as it varies with time, often plotted as a heatmap (time on x-axis, frequency on y-axis)",
+      "A medical test for hearing loss",
+      "An audio file format",
+      "A musical instrument"
+    ],
+    "correct": 0,
+    "explanation": "Spectrograms convert raw 1D time-domain audio waveforms into 2D time-frequency images, enabling visual peak detection algorithms like Shazam.",
+    "topic": "Spectrogram",
+    "slide_ref": "12. Beyond bag of words.pptx",
+    "answer": 0
+  },
+  {
+    "id": "q_ch12_32",
+    "chapter": 12,
+    "question": "How does the Shazam audio search algorithm achieve sub-second matching against millions of songs?",
+    "options": [
+      "It identifies prominent constellation peak pairs in spectrograms, hashes their frequency coordinates and time delta into a 32-bit integer, and performs fast hash-table lookups on time-difference histograms",
+      "It plays the entire song to a human operator",
+      "It compares songs by their file size",
+      "It converts audio into English text"
+    ],
+    "correct": 0,
+    "explanation": "Combinatorial hashing of anchor peak pairs produces distinctive hashes; matching hashes that maintain consistent time offsets identify the track instantly.",
+    "topic": "Shazam Constellation Hash",
+    "slide_ref": "12. Beyond bag of words.pptx",
+    "answer": 0
+  },
+  {
+    "id": "q_ch12_33",
+    "chapter": 12,
+    "question": "What is 'Music Information Retrieval' (MIR)?",
+    "options": [
+      "An interdisciplinary science of retrieving, analyzing, and organizing musical content (audio, MIDI, sheet music, lyrics, genre classification, chord recognition)",
+      "A streaming radio station",
+      "An online music store",
+      "A guitar tuning application"
+    ],
+    "correct": 0,
+    "explanation": "MIR tackles query-by-humming, genre tagging, tempo detection, and chord recognition across audio and symbolic music formats.",
+    "topic": "Music IR Definition",
+    "slide_ref": "12. Beyond bag of words.pptx",
+    "answer": 0
+  },
+  {
+    "id": "q_ch12_34",
+    "chapter": 12,
+    "question": "What is 'Query by Humming' (QBH)?",
+    "options": [
+      "An MIR system where a user hums or sings a melody into a microphone, and the system matches the pitch contour against a database of musical themes",
+      "Humming while typing on a keyboard",
+      "A search engine for bees",
+      "A voice recognition tool for speech dictation"
+    ],
+    "correct": 0,
+    "explanation": "QBH converts acoustic singing into a pitch contour (Parsons code or MIDI notes) and matches it against thematic musical databases.",
+    "topic": "Query by Humming",
+    "slide_ref": "12. Beyond bag of words.pptx",
+    "answer": 0
+  },
+  {
+    "id": "q_ch12_35",
+    "chapter": 12,
+    "question": "What is 'Multimodal Embedding Space'?",
+    "options": [
+      "A mathematical vector space where inputs from different modalities (images, text, audio) are mapped to vectors such that semantically related concepts lie close to each other",
+      "A server room with multiple computers",
+      "A website that has text and pictures",
+      "An audio file containing spoken words"
+    ],
+    "correct": 0,
+    "explanation": "Joint multimodal embedding spaces (like CLIP) allow computing cosine similarity directly between a text vector and an image vector.",
+    "topic": "Multimodal Embedding Space",
+    "slide_ref": "12. Beyond bag of words.pptx",
+    "answer": 0
+  },
+  {
+    "id": "q_ch12_36",
+    "chapter": 12,
+    "question": "What is 'Video OCR' (Text Recognition in Video)?",
+    "options": [
+      "Extracting visible on-screen text (captions, subtitles, road signs, presentation slides) embedded inside video frames to index them for text search",
+      "Reading video subtitles out loud",
+      "Deleting text from videos",
+      "Compressing video files"
+    ],
+    "correct": 0,
+    "explanation": "Video OCR extracts burned-in text (e.g., lecture slide titles, chyron news headers), providing high-value textual metadata for video search.",
+    "topic": "Video OCR",
+    "slide_ref": "12. Beyond bag of words.pptx",
+    "answer": 0
+  },
+  {
+    "id": "q_ch12_37",
+    "chapter": 12,
+    "question": "What is 'Speech-to-Text' (ASR - Automatic Speech Recognition) transcription in video search?",
+    "options": [
+      "Transcribing the spoken spoken audio track of a video into timestamped text transcripts, enabling users to search for spoken words and jump to exact video moments",
+      "Converting text into computer audio",
+      "Deleting audio from video files",
+      "Translating video to French"
+    ],
+    "correct": 0,
+    "explanation": "ASR creates synchronized textual transcripts, allowing search engines to index spoken dialogue and deep-link users directly to matching timestamps.",
+    "topic": "ASR Video Search",
+    "slide_ref": "12. Beyond bag of words.pptx",
+    "answer": 0
+  },
+  {
+    "id": "q_ch12_38",
+    "chapter": 12,
+    "question": "What is a 'Knowledge Graph Triple'?",
+    "options": [
+      "A basic factual unit consisting of Subject, Predicate, and Object (e.g., [Hanoi] -> [capitalOf] -> [Vietnam])",
+      "A triple monitor setup",
+      "A query containing 3 words",
+      "A computer with 3 processors"
+    ],
+    "correct": 0,
+    "explanation": "RDF triples represent factual knowledge as directed labeled edges: Subject (Node) -> Predicate (Edge) -> Object (Node/Literal).",
+    "topic": "KG Triple",
+    "slide_ref": "12. Beyond bag of words.pptx",
+    "answer": 0
+  },
+  {
+    "id": "q_ch12_39",
+    "chapter": 12,
+    "question": "What is 'Property Graph' model used in graph databases (like Neo4j) for entity search?",
+    "options": [
+      "A graph model where both nodes (entities) and edges (relationships) can contain arbitrary key-value properties and attributes",
+      "A graph showing real estate property values",
+      "A 3D architectural blueprint",
+      "A chart of company ownership"
+    ],
+    "correct": 0,
+    "explanation": "Property graphs enrich nodes and edges with structured metadata (e.g., edge 'acted_in' having property 'role: Luke Skywalker', 'year: 1977').",
+    "topic": "Property Graph Model",
+    "slide_ref": "12. Beyond bag of words.pptx",
+    "answer": 0
+  },
+  {
+    "id": "q_ch12_40",
+    "chapter": 12,
+    "question": "In Term Dependence Models, why does the 'Ordered Phrase' feature typically carry a higher weight than the 'Unordered Window' feature?",
+    "options": [
+      "Because matching an exact contiguous phrase (e.g., 'climate change') is a much stronger indicator of specific topical intent than matching words scattered 8 positions apart",
+      "Because ordered phrases are written in uppercase",
+      "Because ordered phrases use less memory",
+      "Because unordered windows are illegal in retrieval models"
+    ],
+    "correct": 0,
+    "explanation": "Contiguous word sequences convey precise semantic idioms; unordered matches indicate loose co-occurrence with higher ambiguity.",
+    "topic": "Phrase vs Proximity Weight",
+    "slide_ref": "12. Beyond bag of words.pptx",
+    "answer": 0
+  },
+  {
+    "id": "q_ch12_41",
+    "chapter": 12,
+    "question": "What is 'Passage Retrieval' (or Chunking) in long document search?",
+    "options": [
+      "Dividing long documents into smaller coherent paragraphs or passages (e.g., 200-500 words) and ranking passages individually to answer specific localized queries",
+      "Reading documents while walking in a hallway",
+      "Translating long documents into French",
+      "Compressing documents using Gzip"
+    ],
+    "correct": 0,
+    "explanation": "Passage retrieval isolates specific answers within multi-page documents, serving as the foundational first stage of modern RAG pipelines.",
+    "topic": "Passage Retrieval",
+    "slide_ref": "12. Beyond bag of words.pptx",
+    "answer": 0
+  },
+  {
+    "id": "q_ch12_42",
+    "chapter": 12,
+    "question": "How does Passage Retrieval improve search relevance over full-document retrieval for long texts?",
+    "options": [
+      "A long 100-page book on history might contain one brilliant paragraph answering 'how did Archimedes die?'; full-document retrieval dilutes this paragraph, whereas passage retrieval pinpoints it",
+      "It makes the book download faster",
+      "It deletes all other paragraphs",
+      "It converts the book into an audio file"
+    ],
+    "correct": 0,
+    "explanation": "Document-level TF-IDF dilutes localized relevance; passage scoring ensures short, dense clusters of query terms are not penalized by document length.",
+    "topic": "Passage Scoring Advantage",
+    "slide_ref": "12. Beyond bag of words.pptx",
+    "answer": 0
+  },
+  {
+    "id": "q_ch12_43",
+    "chapter": 12,
+    "question": "What is 'Text-to-Image Generation' in modern generative search (e.g., DALL-E, Midjourney)?",
+    "options": [
+      "Generating new synthetic images from natural language text prompts using diffusion models",
+      "Scanning physical photos into a computer",
+      "Printing text onto photo paper",
+      "A tool that deletes text from images"
+    ],
+    "correct": 0,
+    "explanation": "Diffusion models synthesize novel visual content directly from descriptive textual prompts.",
+    "topic": "Text-to-Image Generation",
+    "slide_ref": "12. Beyond bag of words.pptx",
+    "answer": 0
+  },
+  {
+    "id": "q_ch12_44",
+    "chapter": 12,
+    "question": "In entity search, what is an 'Entity Catalog'?",
+    "options": [
+      "A master registry of known canonical entities, each associated with unique IDs, aliases, alternate spellings, and ontological classifications",
+      "A printed catalog of clothing products",
+      "A database of user passwords",
+      "A list of computer hardware specifications"
+    ],
+    "correct": 0,
+    "explanation": "Entity catalogs maintain canonical identifier authorities (e.g., Q42 for Douglas Adams) to resolve aliases and abbreviations.",
+    "topic": "Entity Catalog",
+    "slide_ref": "12. Beyond bag of words.pptx",
+    "answer": 0
+  },
+  {
+    "id": "q_ch12_45",
+    "chapter": 12,
+    "question": "What is 'Reverse Image Search'?",
+    "options": [
+      "Submitting an image to find other websites where that exact image appears, locate higher-resolution versions, or identify its origin and subject matter",
+      "Mirroring an image horizontally",
+      "Inverting the colors of a photo",
+      "Turning an image upside down"
+    ],
+    "correct": 0,
+    "explanation": "Reverse image search matches image hashes and deep embeddings across index graphs to trace provenance, mirrors, and entity topics.",
+    "topic": "Reverse Image Search",
+    "slide_ref": "12. Beyond bag of words.pptx",
+    "answer": 0
+  },
+  {
+    "id": "q_ch12_46",
+    "chapter": 12,
+    "question": "What is 'Multimodal Fusion' in search ranking?",
+    "options": [
+      "Combining relevance signals extracted from different media channels (e.g., text BM25 score + image CLIP score + audio transcript score) into a final composite rank score",
+      "Melting two computer chips together",
+      "Mixing audio and video cables",
+      "Displaying text and images on the same page"
+    ],
+    "correct": 0,
+    "explanation": "Fusion combines heterogeneous modality scores (early fusion at feature level or late fusion at score level) to rank multimedia documents.",
+    "topic": "Multimodal Fusion",
+    "slide_ref": "12. Beyond bag of words.pptx",
+    "answer": 0
+  },
+  {
+    "id": "q_ch12_47",
+    "chapter": 12,
+    "question": "What does the 'Bag of Visual Words' (BoVW) model do in classic computer vision for image retrieval?",
+    "options": [
+      "Quantizes local image descriptors (like SIFT) into discrete 'visual words' using K-Means clustering, allowing images to be indexed in standard inverted indexes like text documents",
+      "Stores picture books in bags",
+      "Translates text words into icons",
+      "Deletes colors from images"
+    ],
+    "correct": 0,
+    "explanation": "BoVW treats clustered visual keypoint centroids as 'visual words', enabling standard text inverted index machinery to index image features.",
+    "topic": "Bag of Visual Words",
+    "slide_ref": "12. Beyond bag of words.pptx",
+    "answer": 0
+  },
+  {
+    "id": "q_ch12_48",
+    "chapter": 12,
+    "question": "In video search, what is 'Temporal Action Localization'?",
+    "options": [
+      "Identifying the exact start time and end time of a specific action or event (e.g., 'goal scored at 12:45 to 12:55') within an untrimmed video stream",
+      "Measuring how long a video takes to download",
+      "Finding the physical location of the video camera",
+      "Setting the clock on the video player"
+    ],
+    "correct": 0,
+    "explanation": "Temporal localization pinpoints the precise sub-clip timeframe answering a user's action query within hours of footage.",
+    "topic": "Temporal Video Localization",
+    "slide_ref": "12. Beyond bag of words.pptx",
+    "answer": 0
+  },
+  {
+    "id": "q_ch12_49",
+    "chapter": 12,
+    "question": "What is 'Structured Search' (such as searching IMDb for movies directed by X released after Y starring Z)?",
+    "options": [
+      "Executing queries over structured relational or graph attributes rather than pure free-text keyword matching",
+      "Searching for buildings and architecture",
+      "Searching with structured HTML tables",
+      "Searching without using a keyboard"
+    ],
+    "correct": 0,
+    "explanation": "Structured search evaluates explicit ontological constraints (actor, release year, director) against structured database attributes.",
+    "topic": "Structured Search",
+    "slide_ref": "12. Beyond bag of words.pptx",
+    "answer": 0
+  },
+  {
+    "id": "q_ch12_50",
+    "chapter": 12,
+    "question": "How do modern search engines combine 'Keywords', 'Entities', and 'Media' in a unified architecture?",
+    "options": [
+      "Through multi-stage hybrid ranking pipelines that parse keyword intent, link recognized entities to knowledge graphs, retrieve relevant passages, and blend rich multimedia carousels on the SERP",
+      "By maintaining separate search engines that never communicate",
+      "By converting all media into text files",
+      "By disabling keyword search completely"
+    ],
+    "correct": 0,
+    "explanation": "Modern search architectures unify sparse inverted indexes, dense vector spaces, knowledge graphs, and media classifiers into holistic, intent-driven result pages.",
+    "topic": "Unified Modern Search",
+    "slide_ref": "12. Beyond bag of words.pptx",
+    "answer": 0
+  }
+]

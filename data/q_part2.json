@@ -1,0 +1,802 @@
+[
+  {
+    "id": "q_ch02_01",
+    "chapter": 2,
+    "question": "What are the two foundational decoupled macro-processes in modern search engine architecture?",
+    "options": [
+      "The Crawling Process and the Deletion Process",
+      "The Indexing Process and the Query Process",
+      "The Hardware Assembly Process and the Network Routing Process",
+      "The CSS Rendering Process and the JavaScript Execution Process"
+    ],
+    "correct": 1,
+    "explanation": "A search engine architecture fundamentally splits into the offline Indexing Process (building data structures) and the online Query Process (serving real-time queries).",
+    "topic": "Search Architecture",
+    "slide_ref": "2. Architecture of A Search Engine.pptx",
+    "answer": 1
+  },
+  {
+    "id": "q_ch02_02",
+    "chapter": 2,
+    "question": "Which component in the Indexing Process is directly responsible for converting diverse proprietary document formats (e.g., PDF, DOCX, PPTX) into a uniform text format?",
+    "options": [
+      "The Tokenizer",
+      "The Document Parser and Conversion Filter",
+      "The Inverted List Compactor",
+      "The Query Dispatcher"
+    ],
+    "correct": 1,
+    "explanation": "Document parsers and conversion filters translate various binary/proprietary file formats into normalized character streams (typically UTF-8).",
+    "topic": "Text Acquisition",
+    "slide_ref": "2. Architecture of A Search Engine.pptx",
+    "answer": 1
+  },
+  {
+    "id": "q_ch02_03",
+    "chapter": 2,
+    "question": "What are the three main sub-processes within the Indexing Process in search engine architecture?",
+    "options": [
+      "Text Acquisition, Text Transformation, and Index Creation",
+      "Query Parsing, Query Transformation, and Document Ranking",
+      "DNS Resolution, Socket Binding, and Packet Routing",
+      "User Logging, Session Tracking, and Ad Bidding"
+    ],
+    "correct": 0,
+    "explanation": "The 3 core sub-processes of Indexing are: 1. Text Acquisition (gathering documents), 2. Text Transformation (parsing & normalizing text), and 3. Index Creation (building inverted indexes).",
+    "topic": "Indexing Sub-processes",
+    "slide_ref": "2. Architecture of A Search Engine.pptx",
+    "answer": 0
+  },
+  {
+    "id": "q_ch02_04",
+    "chapter": 2,
+    "question": "In Text Transformation, what is the role of a 'Tokenizer'?",
+    "options": [
+      "To generate cryptographic access tokens for API requests",
+      "To split a stream of text characters into discrete syntactic units called tokens",
+      "To compress document posting lists into variable byte streams",
+      "To score document relevance using BM25"
+    ],
+    "correct": 1,
+    "explanation": "The tokenizer consumes normalized character streams and outputs individual tokens (words, numbers, symbols) based on delimiter boundaries.",
+    "topic": "Tokenization",
+    "slide_ref": "2. Architecture of A Search Engine.pptx",
+    "answer": 1
+  },
+  {
+    "id": "q_ch02_05",
+    "chapter": 2,
+    "question": "Which module in Text Transformation reduces inflectional word forms to their common base or stem?",
+    "options": [
+      "The Stopword Filter",
+      "The Stemmer / Lemmatizer",
+      "The Link Extractor",
+      "The Inverted List Sorter"
+    ],
+    "correct": 1,
+    "explanation": "A stemmer or lemmatizer normalizes grammatical variations (e.g., 'running', 'runs', 'ran') to their root term.",
+    "topic": "Stemming",
+    "slide_ref": "2. Architecture of A Search Engine.pptx",
+    "answer": 1
+  },
+  {
+    "id": "q_ch02_06",
+    "chapter": 2,
+    "question": "What are the three primary sub-processes of the online Query Process in a search engine?",
+    "options": [
+      "Text Acquisition, Feed Ingestion, and Crawler Politeness",
+      "User Interaction, Document Ranking, and Evaluation/Logging",
+      "Database Sharding, Replication, and Garbage Collection",
+      "TCP Handshake, SSL Termination, and HTTP Keep-Alive"
+    ],
+    "correct": 1,
+    "explanation": "The Query Process consists of User Interaction (accepting input, snippet display), Ranking (scoring candidates), and Evaluation (logging clicks and metrics).",
+    "topic": "Query Sub-processes",
+    "slide_ref": "2. Architecture of A Search Engine.pptx",
+    "answer": 1
+  },
+  {
+    "id": "q_ch02_07",
+    "chapter": 2,
+    "question": "Which component in the Query Process calculates numerical relevance scores between query terms and candidate documents?",
+    "options": [
+      "The Web Crawler",
+      "The Ranking Algorithm / Scorer",
+      "The Document Converter",
+      "The Robots Parser"
+    ],
+    "correct": 1,
+    "explanation": "The Scorer evaluates documents retrieved from the inverted index using ranking models (BM25, Language Models, LTR) to compute relevance scores.",
+    "topic": "Ranking Component",
+    "slide_ref": "2. Architecture of A Search Engine.pptx",
+    "answer": 1
+  },
+  {
+    "id": "q_ch02_08",
+    "chapter": 2,
+    "question": "What is the primary technical trade-off between Search Engine 'Efficiency' and 'Effectiveness'?",
+    "options": [
+      "Efficiency is about relevance quality; Effectiveness is about query execution speed",
+      "Efficiency focuses on computational speed, throughput, and resource utilization; Effectiveness focuses on the relevance and satisfaction of results for users",
+      "There is no trade-off; higher effectiveness always guarantees higher efficiency",
+      "Efficiency only applies to desktop search; Effectiveness only applies to web search"
+    ],
+    "correct": 1,
+    "explanation": "Efficiency measures execution cost (latency, QPS, memory); Effectiveness measures result quality (Precision, MAP, NDCG). Complex ranking models improve effectiveness at the cost of efficiency.",
+    "topic": "Efficiency vs Effectiveness",
+    "slide_ref": "2. Architecture of A Search Engine.pptx",
+    "answer": 1
+  },
+  {
+    "id": "q_ch02_09",
+    "chapter": 2,
+    "question": "What is 'Throughput' in search engine performance benchmarks?",
+    "options": [
+      "The physical weight of the server rack",
+      "The number of queries the system can process and answer per second (QPS)",
+      "The total number of hyperlinks on the homepage",
+      "The percentage of spelling errors corrected"
+    ],
+    "correct": 1,
+    "explanation": "Throughput is measured in Queries Per Second (QPS), representing the capacity of the search system under load.",
+    "topic": "System Throughput",
+    "slide_ref": "2. Architecture of A Search Engine.pptx",
+    "answer": 1
+  },
+  {
+    "id": "q_ch02_10",
+    "chapter": 2,
+    "question": "What does 'Latency SLA' specify in search engine production operations?",
+    "options": [
+      "The maximum acceptable elapsed time (e.g., 99th percentile < 200ms) between receiving a query and returning the SERP",
+      "The number of days an index partition can remain uncompressed",
+      "The maximum battery drain of mobile client browsers",
+      "The frequency of software git commits"
+    ],
+    "correct": 0,
+    "explanation": "A Service Level Agreement (SLA) for latency sets strict guarantees on the maximum time taken to serve a user query.",
+    "topic": "Latency SLA",
+    "slide_ref": "2. Architecture of A Search Engine.pptx",
+    "answer": 0
+  },
+  {
+    "id": "q_ch02_11",
+    "chapter": 2,
+    "question": "In search engine architecture, why is the Inverted Index organized into a 'Dictionary' and 'Postings Lists'?",
+    "options": [
+      "The dictionary stores terms in memory for rapid lookup; postings lists store document occurrences and payloads on fast storage",
+      "The dictionary stores images; postings lists store text",
+      "The dictionary is only used for spellchecking; postings lists are only used for user logging",
+      "The dictionary is compiled into C++ code; postings lists are written in SQL"
+    ],
+    "correct": 0,
+    "explanation": "The dictionary (lexicon) maps each unique term to the memory offset of its corresponding postings list (docIDs, frequencies, positions).",
+    "topic": "Inverted Index Anatomy",
+    "slide_ref": "2. Architecture of A Search Engine.pptx",
+    "answer": 0
+  },
+  {
+    "id": "q_ch02_12",
+    "chapter": 2,
+    "question": "Why are search engine index updates often handled via an 'Accumulator' / Delta index rather than rewriting the master index in-place?",
+    "options": [
+      "Rewriting multi-terabyte inverted indexes for every new document is computationally prohibitive; delta updates are merged periodically",
+      "Search engines do not support writing to hard drives",
+      "In-place updates cause network routers to drop packets",
+      "Delta indexes eliminate the need for tokenization"
+    ],
+    "correct": 0,
+    "explanation": "Large inverted indexes are immutable for read performance; new documents are accumulated in a small dynamic memory index and batch-merged into master segments.",
+    "topic": "Index Updates",
+    "slide_ref": "2. Architecture of A Search Engine.pptx",
+    "answer": 0
+  },
+  {
+    "id": "q_ch02_13",
+    "chapter": 2,
+    "question": "What is the function of the 'Query Transformer' in the query pipeline?",
+    "options": [
+      "To convert query strings into SQL SELECT statements",
+      "To apply query-time processing such as tokenization, spelling correction, query expansion, and stopword handling",
+      "To translate user queries into binary machine assembly",
+      "To block queries that contain capital letters"
+    ],
+    "correct": 1,
+    "explanation": "Query transformation refines the raw query string into normalized terms, corrected tokens, or expanded synonyms before index lookup.",
+    "topic": "Query Transformation",
+    "slide_ref": "2. Architecture of A Search Engine.pptx",
+    "answer": 1
+  },
+  {
+    "id": "q_ch02_14",
+    "chapter": 2,
+    "question": "In search engine architecture, what is the role of the 'Result Cache'?",
+    "options": [
+      "To store copies of all crawled HTML pages on client browsers",
+      "To store precomputed top-ranked search results for frequent queries, bypassing the ranking engine entirely",
+      "To cache crawler passwords",
+      "To store user passwords in plaintext"
+    ],
+    "correct": 1,
+    "explanation": "The result cache stores pre-assembled SERP results for popular queries, delivering instant responses (< 5ms) and saving massive server compute.",
+    "topic": "Caching",
+    "slide_ref": "2. Architecture of A Search Engine.pptx",
+    "answer": 1
+  },
+  {
+    "id": "q_ch02_15",
+    "chapter": 2,
+    "question": "What is the primary danger of an aggressive, unconstrained crawler in search architecture?",
+    "options": [
+      "It can accidentally shut down the search engine's own database",
+      "It can overwhelm target web servers with excessive requests, causing Denial of Service (DoS) and IP blacklisting",
+      "It will increase the screen brightness of end users",
+      "It converts all text files into image files"
+    ],
+    "correct": 1,
+    "explanation": "An impolite crawler can flood target web servers with thousands of requests per second, taking them offline and triggering legal or network bans.",
+    "topic": "Crawler Politeness",
+    "slide_ref": "2. Architecture of A Search Engine.pptx",
+    "answer": 1
+  },
+  {
+    "id": "q_ch02_16",
+    "chapter": 2,
+    "question": "What does 'Fault Tolerance' ensure in a distributed search engine cluster?",
+    "options": [
+      "The search engine never returns irrelevant documents",
+      "The system continues to serve queries without interruption even when individual servers or hard drives fail",
+      "The crawler never encounters 404 Not Found pages",
+      "All search queries are automatically translated to English"
+    ],
+    "correct": 1,
+    "explanation": "Fault tolerance utilizes redundant replicas of shards and brokers so hardware failures do not bring down search services.",
+    "topic": "Fault Tolerance",
+    "slide_ref": "2. Architecture of A Search Engine.pptx",
+    "answer": 1
+  },
+  {
+    "id": "q_ch02_17",
+    "chapter": 2,
+    "question": "In modern search systems, why is Ranking often architected in multiple stages (Multi-stage Ranking)?",
+    "options": [
+      "Because computers cannot run more than one algorithm per day",
+      "A lightweight model (e.g., BM25) first filters millions of candidates down to top-1000, followed by a heavy Machine Learning model that re-ranks the top candidates accurately",
+      "To ensure that ad results are always displayed in bright green",
+      "To slow down the query process intentionally for advertising revenue"
+    ],
+    "correct": 1,
+    "explanation": "Evaluating complex deep neural ranking models on millions of documents is too slow; multi-stage ranking uses fast filtering followed by precise re-ranking.",
+    "topic": "Multi-stage Ranking",
+    "slide_ref": "2. Architecture of A Search Engine.pptx",
+    "answer": 1
+  },
+  {
+    "id": "q_ch02_18",
+    "chapter": 2,
+    "question": "Which component in Text Acquisition monitors incoming content feeds (such as RSS or Atom) to index newly published articles?",
+    "options": [
+      "Feed Filter / Feed Ingestion Manager",
+      "The Inverted List Compactor",
+      "The Document Decompressor",
+      "The PageRank Solver"
+    ],
+    "correct": 0,
+    "explanation": "Feed ingestion modules subscribe to structured syndicate feeds to discover real-time news updates without waiting for full web crawls.",
+    "topic": "Feed Ingestion",
+    "slide_ref": "2. Architecture of A Search Engine.pptx",
+    "answer": 0
+  },
+  {
+    "id": "q_ch02_19",
+    "chapter": 2,
+    "question": "What is the role of the 'Evaluation and Logging' subsystem in the search architecture?",
+    "options": [
+      "To track system latency, user click behavior, and relevance feedback to evaluate and train ranking models",
+      "To send daily spam marketing emails to search users",
+      "To verify that all web pages contain valid CSS3 styling",
+      "To compress log files using JPEG format"
+    ],
+    "correct": 0,
+    "explanation": "Logging captures telemetry (queries, clicks, dwell times, latency) essential for A/B testing and training Learning-to-Rank models.",
+    "topic": "Logging Subsystem",
+    "slide_ref": "2. Architecture of A Search Engine.pptx",
+    "answer": 0
+  },
+  {
+    "id": "q_ch02_20",
+    "chapter": 2,
+    "question": "Why are 'Stopwords' sometimes retained in modern search indexes instead of being completely discarded?",
+    "options": [
+      "Because storage space is unlimited and cheap",
+      "Discarding stopwords breaks exact phrase queries (e.g., 'To be or not to be') and entity names (e.g., 'The Who')",
+      "Stopwords have the highest IDF weights",
+      "Modern web crawlers refuse to crawl pages without stopwords"
+    ],
+    "correct": 1,
+    "explanation": "Removing words like 'to', 'be', or 'the' renders famous quotes, song titles, and idioms unsearchable.",
+    "topic": "Stopword Trade-offs",
+    "slide_ref": "2. Architecture of A Search Engine.pptx",
+    "answer": 1
+  },
+  {
+    "id": "q_ch02_21",
+    "chapter": 2,
+    "question": "Suppose a search engine cluster receives 10,000 queries per second with an average response time of 50 milliseconds. What is the minimum number of concurrent query threads required under Little's Law ($L = \\lambda \\cdot W$)?",
+    "options": [
+      "100 concurrent threads",
+      "500 concurrent threads",
+      "5,000 concurrent threads",
+      "10,000 concurrent threads"
+    ],
+    "correct": 1,
+    "explanation": "By Little's Law, L = lambda * W = 10,000 queries/sec * 0.050 sec = 500 concurrent active requests.",
+    "topic": "Little's Law Capacity",
+    "slide_ref": "2. Architecture of A Search Engine.pptx",
+    "answer": 1
+  },
+  {
+    "id": "q_ch02_22",
+    "chapter": 2,
+    "question": "In search engine index construction, what is 'BSBI' an acronym for?",
+    "options": [
+      "Binary Search Binary Indexing",
+      "Blocked Sort-Based Indexing",
+      "Byte Stream Boolean Inversion",
+      "Batch Synchronous Base Indexer"
+    ],
+    "correct": 1,
+    "explanation": "BSBI (Blocked Sort-Based Indexing) parses documents into blocks, sorts postings in memory, writes them to disk, and merges sorted runs.",
+    "topic": "BSBI Indexing",
+    "slide_ref": "2. Architecture of A Search Engine.pptx",
+    "answer": 1
+  },
+  {
+    "id": "q_ch02_23",
+    "chapter": 2,
+    "question": "What is the primary advantage of Single-Pass In-Memory Indexing (SPIMI) over BSBI?",
+    "options": [
+      "SPIMI generates dynamic dictionary term IDs in memory on the fly and writes postings directly, avoiding global term sorting bottlenecks",
+      "SPIMI does not require any RAM",
+      "SPIMI only works on relational databases",
+      "SPIMI completely replaces the need for web crawlers"
+    ],
+    "correct": 0,
+    "explanation": "SPIMI allocates posting lists dynamically per block without pre-assigning global term IDs, writing a sorted block index when memory fills.",
+    "topic": "SPIMI Indexing",
+    "slide_ref": "2. Architecture of A Search Engine.pptx",
+    "answer": 0
+  },
+  {
+    "id": "q_ch02_24",
+    "chapter": 2,
+    "question": "What does the 'Broker' (or Query Coordinator) do in a distributed search engine cluster?",
+    "options": [
+      "It physically crawls the web using fiber optic cables",
+      "It receives the user query, broadcasts it to all index shard servers, gathers candidate results, merges them, and formats the final SERP",
+      "It acts as a legal broker for domain name sales",
+      "It compiles C++ source code on worker nodes"
+    ],
+    "correct": 1,
+    "explanation": "The Broker / Aggregator is the front-facing coordinator that distributes queries to shard leaf nodes and aggregates top results.",
+    "topic": "Distributed Broker",
+    "slide_ref": "2. Architecture of A Search Engine.pptx",
+    "answer": 1
+  },
+  {
+    "id": "q_ch02_25",
+    "chapter": 2,
+    "question": "In inverted index storage, what information is typically stored in the 'payload' of each posting entry?",
+    "options": [
+      "The entire text of the document",
+      "Term frequency ($tf$), document ID ($docID$), and term position offsets",
+      "The user's credit card information",
+      "The server's BIOS firmware"
+    ],
+    "correct": 1,
+    "explanation": "Postings contain the document identifier, frequency of the term in the document, and positional offsets for phrase and proximity ranking.",
+    "topic": "Posting Payload",
+    "slide_ref": "2. Architecture of A Search Engine.pptx",
+    "answer": 1
+  },
+  {
+    "id": "q_ch02_26",
+    "chapter": 2,
+    "question": "What is a 'Positional Index'?",
+    "options": [
+      "An index that records the exact word positions of each term occurrence within documents",
+      "An index that only tracks the geographic GPS position of users",
+      "An index that sorts documents by their page count",
+      "An index stored in the first sector of a hard drive"
+    ],
+    "correct": 0,
+    "explanation": "A positional index stores the exact token offset of each word occurrence in the document, enabling phrase queries and proximity scoring.",
+    "topic": "Positional Index",
+    "slide_ref": "2. Architecture of A Search Engine.pptx",
+    "answer": 0
+  },
+  {
+    "id": "q_ch02_27",
+    "chapter": 2,
+    "question": "What is the main drawback of storing positional information in an inverted index?",
+    "options": [
+      "It makes phrase queries impossible",
+      "It increases the index storage size by roughly 2 to 4 times compared to a non-positional index",
+      "It prevents the use of PageRank",
+      "It causes search engines to return 500 Internal Server Errors"
+    ],
+    "correct": 1,
+    "explanation": "Positional indexes store an integer offset for every single word token occurrence, expanding index size substantially.",
+    "topic": "Positional Overhead",
+    "slide_ref": "2. Architecture of A Search Engine.pptx",
+    "answer": 1
+  },
+  {
+    "id": "q_ch02_28",
+    "chapter": 2,
+    "question": "How does a search engine handle 'Phrase Queries' (e.g., \"artificial intelligence\") using a positional index?",
+    "options": [
+      "By checking whether 'artificial' and 'intelligence' occur at position $p$ and $p+1$ in the same document",
+      "By concatenating all words in the dictionary into a single string",
+      "By guessing the user's intent using a random number generator",
+      "By deleting all documents that contain only one of the words"
+    ],
+    "correct": 0,
+    "explanation": "The engine merges the posting lists of both terms and checks if the positional offsets satisfy $pos(intelligence) = pos(artificial) + 1$.",
+    "topic": "Phrase Query Evaluation",
+    "slide_ref": "2. Architecture of A Search Engine.pptx",
+    "answer": 0
+  },
+  {
+    "id": "q_ch02_29",
+    "chapter": 2,
+    "question": "What is 'Early Termination' in query processing?",
+    "options": [
+      "Shutting down the search cluster when the power bill is high",
+      "Halting the scoring process early once the top-k highest-scoring documents are guaranteed or heuristically determined, avoiding scoring millions of low-quality candidates",
+      "Disconnecting slow mobile users automatically",
+      "Terminating web crawlers after 5 minutes of crawling"
+    ],
+    "correct": 1,
+    "explanation": "Early termination algorithms (like WAND or MaxScore) dynamically prune candidate documents that cannot beat the current top-k score threshold.",
+    "topic": "Early Termination",
+    "slide_ref": "2. Architecture of A Search Engine.pptx",
+    "answer": 1
+  },
+  {
+    "id": "q_ch02_30",
+    "chapter": 2,
+    "question": "Which component in the search engine architecture converts unstructured HTML documents into a clean text stream by removing markup tags?",
+    "options": [
+      "HTML Stripper / Parser",
+      "The URL Frontier",
+      "The DNS Cache",
+      "The Load Balancer"
+    ],
+    "correct": 0,
+    "explanation": "The HTML parser strips tags, parses DOM structure, extracts metadata (title, meta tags), and separates text content.",
+    "topic": "HTML Stripping",
+    "slide_ref": "2. Architecture of A Search Engine.pptx",
+    "answer": 0
+  },
+  {
+    "id": "q_ch02_31",
+    "chapter": 2,
+    "question": "What is the difference between Term-At-A-Time (TAAT) and Document-At-A-Time (DAAT) query processing?",
+    "options": [
+      "TAAT evaluates one query term across all documents using memory accumulators; DAAT evaluates all query terms concurrently for one document at a time",
+      "TAAT only works on desktop search; DAAT only works on web search",
+      "TAAT requires zero RAM; DAAT requires exabytes of RAM",
+      "TAAT does not use inverted indexes; DAAT uses B-Trees"
+    ],
+    "correct": 0,
+    "explanation": "TAAT iterates term by term, accumulating partial scores in memory; DAAT advances synchronized cursors across postings lists, scoring each document fully.",
+    "topic": "TAAT vs DAAT",
+    "slide_ref": "2. Architecture of A Search Engine.pptx",
+    "answer": 0
+  },
+  {
+    "id": "q_ch02_32",
+    "chapter": 2,
+    "question": "Why does DAAT generally require less working memory (RAM) than TAAT during query processing?",
+    "options": [
+      "DAAT only needs to maintain a small priority queue (min-heap) of the top-k documents, whereas TAAT must maintain accumulators for every document containing any query term",
+      "DAAT stores all documents in CPU registers",
+      "DAAT does not compute relevance scores",
+      "DAAT processes queries sequentially without multi-threading"
+    ],
+    "correct": 0,
+    "explanation": "In DAAT, once a document is scored, its memory can be discarded if it does not qualify for the top-k heap, avoiding millions of open accumulators.",
+    "topic": "DAAT Memory Advantage",
+    "slide_ref": "2. Architecture of A Search Engine.pptx",
+    "answer": 0
+  },
+  {
+    "id": "q_ch02_33",
+    "chapter": 2,
+    "question": "What is the purpose of 'Impact Ordering' in inverted index postings lists?",
+    "options": [
+      "Sorting postings by descending term frequency or partial score rather than ascending docID, allowing early termination on the highest-impact documents",
+      "Sorting documents by file creation date",
+      "Sorting postings by author surname",
+      "Encrypting posting lists with AES-256"
+    ],
+    "correct": 0,
+    "explanation": "Impact-ordered indexes sort documents by their contribution to the score (e.g., $tf$), so the engine can scan from the beginning and stop early.",
+    "topic": "Impact Ordering",
+    "slide_ref": "2. Architecture of A Search Engine.pptx",
+    "answer": 0
+  },
+  {
+    "id": "q_ch02_34",
+    "chapter": 2,
+    "question": "Which search engine architecture tier is responsible for handling network failover, SSL termination, and round-robin traffic distribution?",
+    "options": [
+      "The Edge Load Balancer / Reverse Proxy (e.g., Nginx, Envoy)",
+      "The Stemming module",
+      "The Inverted index merge worker",
+      "The Anchor text parser"
+    ],
+    "correct": 0,
+    "explanation": "Load balancers and reverse proxies distribute incoming user HTTP/HTTPS requests across stateless front-end query brokers.",
+    "topic": "Load Balancing",
+    "slide_ref": "2. Architecture of A Search Engine.pptx",
+    "answer": 0
+  },
+  {
+    "id": "q_ch02_35",
+    "chapter": 2,
+    "question": "What is a 'Cold Start' problem in search engine caching?",
+    "options": [
+      "When a newly booted server has an empty cache, causing initial queries to experience high latency as all data must be loaded from disk or index shards",
+      "When the data center air conditioning fails",
+      "When a user searches for winter clothing",
+      "When the crawler encounters a frozen web server"
+    ],
+    "correct": 0,
+    "explanation": "An empty cache requires cache warming; otherwise, a sudden flood of un-cached queries can overwhelm backend index shards.",
+    "topic": "Cache Cold Start",
+    "slide_ref": "2. Architecture of A Search Engine.pptx",
+    "answer": 0
+  },
+  {
+    "id": "q_ch02_36",
+    "chapter": 2,
+    "question": "Why are web search results often partitioned into 'Shards' across multiple machines?",
+    "options": [
+      "Because a single machine does not have enough RAM, disk capacity, or CPU bandwidth to host and query tens of billions of web documents",
+      "Because search engines must assign each country to a different server",
+      "Because inverted indexes cannot exceed 64 kilobytes",
+      "To make the search engine slower for testing"
+    ],
+    "correct": 0,
+    "explanation": "Sharding distributes the massive document collection across a cluster, enabling parallel query execution and scalable storage.",
+    "topic": "Sharding Rationale",
+    "slide_ref": "2. Architecture of A Search Engine.pptx",
+    "answer": 0
+  },
+  {
+    "id": "q_ch02_37",
+    "chapter": 2,
+    "question": "In search engine user interfaces, what does 'Pagination' accomplish?",
+    "options": [
+      "It splits search results into pages of 10-20 results, minimizing network payload and rendering time",
+      "It encrypts the search query",
+      "It converts all text to capital letters",
+      "It prints out physical paper copies of web pages"
+    ],
+    "correct": 0,
+    "explanation": "Pagination retrieves and displays only the top results initially, fetching subsequent pages only on demand.",
+    "topic": "Pagination",
+    "slide_ref": "2. Architecture of A Search Engine.pptx",
+    "answer": 0
+  },
+  {
+    "id": "q_ch02_38",
+    "chapter": 2,
+    "question": "What is the primary role of 'Spell Correction' in the Query Process?",
+    "options": [
+      "To shame users for grammatical mistakes",
+      "To identify likely intended terms for misspelled queries (e.g., 'Did you mean: ...') and retrieve relevant results despite user input errors",
+      "To automatically report typos to webmasters",
+      "To delete misspelled documents from the index"
+    ],
+    "correct": 1,
+    "explanation": "Spell correction intercepts mistyped queries and suggests or automatically rewrites terms to match actual indexed content.",
+    "topic": "Spell Correction Role",
+    "slide_ref": "2. Architecture of A Search Engine.pptx",
+    "answer": 1
+  },
+  {
+    "id": "q_ch02_39",
+    "chapter": 2,
+    "question": "Which data structure is most commonly used by search engines to maintain the current Top-K highest-scoring documents during query execution?",
+    "options": [
+      "A Min-Heap (Priority Queue) of size K",
+      "A Doubly-Linked List of size 1,000,000",
+      "A First-In-First-Out (FIFO) queue",
+      "A relational SQL table"
+    ],
+    "correct": 0,
+    "explanation": "A min-heap of size K keeps the K highest scores. Any new document score is compared against the minimum root; if greater, the root is replaced and heapified in O(log K).",
+    "topic": "Top-K Min-Heap",
+    "slide_ref": "2. Architecture of A Search Engine.pptx",
+    "answer": 0
+  },
+  {
+    "id": "q_ch02_40",
+    "chapter": 2,
+    "question": "What is a 'Document Vector' in the context of the Vector Space Model within search architecture?",
+    "options": [
+      "A high-speed network cable connecting document servers",
+      "An algebraic vector where each dimension corresponds to a unique vocabulary term, with weights reflecting term importance in that document",
+      "A directional arrow drawn on the web page interface",
+      "A list of URLs pointing to the document"
+    ],
+    "correct": 1,
+    "explanation": "In the Vector Space Model, documents and queries are represented as multidimensional vectors of term weights.",
+    "topic": "Document Vector Concept",
+    "slide_ref": "2. Architecture of A Search Engine.pptx",
+    "answer": 1
+  },
+  {
+    "id": "q_ch02_41",
+    "chapter": 2,
+    "question": "Why do search engines store pre-rendered document titles and URLs in a 'Forward Index' or Document Store?",
+    "options": [
+      "To quickly fetch display metadata for the top-ranked docIDs without re-parsing the original web pages",
+      "To avoid using an inverted index",
+      "To prevent users from clicking on links",
+      "To calculate PageRank scores offline"
+    ],
+    "correct": 0,
+    "explanation": "The inverted index only maps term -> docIDs. Once top docIDs are determined, a forward store (DocID -> URL, Title, Snippet text) hydrates the SERP.",
+    "topic": "Forward Store / DocStore",
+    "slide_ref": "2. Architecture of A Search Engine.pptx",
+    "answer": 0
+  },
+  {
+    "id": "q_ch02_42",
+    "chapter": 2,
+    "question": "What is 'Index Compression' primarily intended to optimize in search architecture?",
+    "options": [
+      "Disk space and memory footprint, and significantly increasing query throughput by reducing memory/disk bus I/O bottleneck",
+      "The aesthetic look of the search engine logo",
+      "The accuracy of machine learning predictions exclusively",
+      "The color saturation of displayed images"
+    ],
+    "correct": 0,
+    "explanation": "Compressed inverted lists fit better in fast RAM and transfer much faster across system buses, speeding up query execution despite decompression overhead.",
+    "topic": "Index Compression Benefits",
+    "slide_ref": "2. Architecture of A Search Engine.pptx",
+    "answer": 0
+  },
+  {
+    "id": "q_ch02_43",
+    "chapter": 2,
+    "question": "In modern search engines, how is 'Freshness' typically balanced against 'Stability' in ranking?",
+    "options": [
+      "By completely re-crawling the entire internet every 5 minutes",
+      "By maintaining a fast real-time index tier for breaking news and combining it with a slower, highly optimized batch index for evergreen content",
+      "By only showing results that are at least 10 years old",
+      "By disabling ranking functions for new web pages"
+    ],
+    "correct": 1,
+    "explanation": "Tiered architectures use an append-only in-memory real-time tier for breaking news, merged periodically into the main stable index.",
+    "topic": "Tiered Indexing",
+    "slide_ref": "2. Architecture of A Search Engine.pptx",
+    "answer": 1
+  },
+  {
+    "id": "q_ch02_44",
+    "chapter": 2,
+    "question": "Which metric measures the percentage of all relevant documents in the collection that were successfully retrieved by the search engine?",
+    "options": [
+      "Precision",
+      "Recall",
+      "Throughput",
+      "Fallout"
+    ],
+    "correct": 1,
+    "explanation": "Recall = (Relevant Retrieved) / (Total Relevant in Collection), measuring the completeness of retrieval.",
+    "topic": "Recall Metric",
+    "slide_ref": "2. Architecture of A Search Engine.pptx",
+    "answer": 1
+  },
+  {
+    "id": "q_ch02_45",
+    "chapter": 2,
+    "question": "Which metric measures the proportion of retrieved documents that are actually relevant to the query?",
+    "options": [
+      "Precision",
+      "Latency",
+      "Recall",
+      "Throughput"
+    ],
+    "correct": 0,
+    "explanation": "Precision = (Relevant Retrieved) / (Total Retrieved), measuring the purity or quality of the returned results.",
+    "topic": "Precision Metric",
+    "slide_ref": "2. Architecture of A Search Engine.pptx",
+    "answer": 0
+  },
+  {
+    "id": "q_ch02_46",
+    "chapter": 2,
+    "question": "What is the primary cause of 'Index Fragmentation' in search engines over time?",
+    "options": [
+      "Repeated incremental insertions, updates, and document deletions creating non-contiguous disk allocations and obsolete postings entries",
+      "The CPU running at high clock frequencies",
+      "Users typing queries with emojis",
+      "Compressing files with Gzip"
+    ],
+    "correct": 0,
+    "explanation": "Dynamic additions and deletions leave tombstoned entries and fragmented posting segments, requiring periodic index compaction and segment merging.",
+    "topic": "Index Fragmentation",
+    "slide_ref": "2. Architecture of A Search Engine.pptx",
+    "answer": 0
+  },
+  {
+    "id": "q_ch02_47",
+    "chapter": 2,
+    "question": "What does 'Segment Merging' accomplish in search engines like Apache Lucene and Elasticsearch?",
+    "options": [
+      "It combines multiple smaller immutable index segments into a single larger optimized segment and purges deleted documents",
+      "It merges the search engine with a social media platform",
+      "It translates English documents into French",
+      "It re-downloads all crawled web pages from scratch"
+    ],
+    "correct": 0,
+    "explanation": "Segment merging combines multiple small segments, performs a merge-sort on postings, reclaims space from deleted docs, and writes an optimized segment.",
+    "topic": "Segment Merging",
+    "slide_ref": "2. Architecture of A Search Engine.pptx",
+    "answer": 0
+  },
+  {
+    "id": "q_ch02_48",
+    "chapter": 2,
+    "question": "Why do enterprise search engines often implement 'Federated Search'?",
+    "options": [
+      "To crawl the entire public web simultaneously",
+      "To query multiple distinct internal data repositories (e.g., SharePoint, Salesforce, Jira, Google Drive) simultaneously and aggregate the results into a single interface",
+      "To replace all human employees with automated algorithms",
+      "To run queries without network connectivity"
+    ],
+    "correct": 1,
+    "explanation": "Federated search distributes a single user query across heterogeneous, siloed internal databases and unifies the returned results.",
+    "topic": "Federated Search",
+    "slide_ref": "2. Architecture of A Search Engine.pptx",
+    "answer": 1
+  },
+  {
+    "id": "q_ch02_49",
+    "chapter": 2,
+    "question": "In a search engine architecture, what is a 'Reverse Proxy' typically used for?",
+    "options": [
+      "To convert text to speech for visually impaired users",
+      "To act as the public entry point that routes client requests, terminates SSL, mitigates DDoS attacks, and balances load across backend query servers",
+      "To crawl deep web databases",
+      "To calculate BM25 weights for documents"
+    ],
+    "correct": 1,
+    "explanation": "Reverse proxies (e.g., Cloudflare, Nginx) sit in front of the application cluster for security, caching, SSL, and load routing.",
+    "topic": "Reverse Proxy",
+    "slide_ref": "2. Architecture of A Search Engine.pptx",
+    "answer": 1
+  },
+  {
+    "id": "q_ch02_50",
+    "chapter": 2,
+    "question": "What does the term 'Cold Posting List' refer to in tier-based index architectures?",
+    "options": [
+      "A posting list of a term that has been physically cooled with liquid nitrogen",
+      "A posting list of a rare term that is queried very infrequently, which can be stored on cheaper slow storage (e.g., NVMe/HDD) rather than expensive RAM",
+      "A posting list that contains only stop words",
+      "A posting list that has become corrupted"
+    ],
+    "correct": 1,
+    "explanation": "Tiered storage keeps hot posting lists (frequent query terms) in RAM and cold posting lists (rare terms) on SSDs/disks to reduce hardware costs.",
+    "topic": "Tiered Storage",
+    "slide_ref": "2. Architecture of A Search Engine.pptx",
+    "answer": 1
+  }
+]

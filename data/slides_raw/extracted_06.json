@@ -1,0 +1,103 @@
+{
+  "chapter_id": 6,
+  "filename": "6. Queries and Interfaces.pptx",
+  "title": "Queries and Interfaces",
+  "total_slides": 19,
+  "slides": [
+    {
+      "slide_num": 1,
+      "file_path": "ppt/slides/slide1.xml",
+      "text": "Chapter 6 Queries and Interfaces SEG301m"
+    },
+    {
+      "slide_num": 2,
+      "file_path": "ppt/slides/slide2.xml",
+      "text": "Objectives What are information needs and queries? What is query transformation? How to show the results?"
+    },
+    {
+      "slide_num": 3,
+      "file_path": "ppt/slides/slide3.xml",
+      "text": "Contents 6.1 Information needs and queries 6.2 Query Transformation and refinement: stopping and stemming revisited, spell checking and suggestions, query expansion, relevance feedback, context and personalization 6.3 Showing the results: result pages and snippets, advertising and search, clustering the results 6.4 Cross-language search"
+    },
+    {
+      "slide_num": 4,
+      "file_path": "ppt/slides/slide4.xml",
+      "text": "6.1 Information needs and queries The number of relevant documents being sought The tasks that led to the requirement for information Queries can represent very different information needs and may require different search techniques and ranking algorithms to produce the best rankings. A query can be a poor representation of the information need."
+    },
+    {
+      "slide_num": 5,
+      "file_path": "ppt/slides/slide5.xml",
+      "text": "6.2 Query transformation and refinement: Stopping and Stemming revisited Stopword removal can be done at query time instead of during document indexing. Stopwords can be treated as: Normal words Removed, or removed except under certain conditions Query-based stemming is another technique for increasing the ﬂexibility of the search engine Bad case: The query “fish village” will produce very different results from the query “fishing village”, but many stemming algorithms would reduce “fishing ” to “fish” → using the appropriate word variants, instead of word to a word stem"
+    },
+    {
+      "slide_num": 6,
+      "file_path": "ppt/slides/slide6.xml",
+      "text": "6.2 Query transformation and refinement: Stopping and Stemming revisited Term association measure : Dice’s coefficient is the number of windows (or documents) containing word a ,      is the number of windows containing word b , is the number of windows containing both words a and b , and N is the number of text windows in the collection, then Dice’s coefficient is"
+    },
+    {
+      "slide_num": 7,
+      "file_path": "ppt/slides/slide7.xml",
+      "text": "6.2 Query transformation and refinement: Spell Checking and Suggestions Spell checking is an extremely important part of query processing? Basic approach used in many spelling checkers: spelling dictionary “Word” Not found? → similarity measure: edit distance extenssions → extensions (insertion error): edit distance 2 poiner → pointer (deletion error) marshmellow → marshmallow (substitution error) brimingham → birmingham (transposition error)"
+    },
+    {
+      "slide_num": 8,
+      "file_path": "ppt/slides/slide8.xml",
+      "text": "6.2 Query transformation and refinement: Spell Checking and Suggestions Noisy channel model : a person chooses a word w , probability distribution P ( w ). noisy channel causes the person to write the word e instead with probability P ( e | w ). Probabilities P ( w ), called the language model. rank the corrections → P ( e | w ) P ( w ) Context? where                 the probability of a word w following the previous word      ,     is a parameter that specifies the relative importance of the two probabilities"
+    },
+    {
+      "slide_num": 9,
+      "file_path": "ppt/slides/slide9.xml",
+      "text": "6.2 Query transformation and refinement: Query expansion Term association measures"
+    },
+    {
+      "slide_num": 10,
+      "file_path": "ppt/slides/slide10.xml",
+      "text": "6.2 Query transformation and refinement: Context and Personalization The results of a query will be the same regardless of Who submitted the query, Why the query was submitted, Where the query was submitted, What other queries were submitted in the same session Context: affects the relevance of retrieved documents and could potentially have a signifcant impact on the ranking algorithm Difficult to capture and represent → learning user models → personalized: problems?"
+    },
+    {
+      "slide_num": 11,
+      "file_path": "ppt/slides/slide11.xml",
+      "text": "6.2 Query transformation and refinement: Context and Personalization The most useful contextual information for improving search quality is based on past interactions with the search engine Local search based on geographic context can also produce substantial improvements, including 3 main steps: Identify the geographic region associated with web pages, using location metadata that has been manually added to the document, or by automatically identifying locations, such as place names, city names, or country names, in the document text. Identify the geographic region associated with the query using automatic techniques. Rank web pages using a comparison of the query and document location information in addition to the usual text- and link-based features"
+    },
+    {
+      "slide_num": 12,
+      "file_path": "ppt/slides/slide12.xml",
+      "text": "6.3 Showing the results: Result page and Snippets Successful interactions with a search engine depend on the user understanding the results. Visualization techniques Document summaries : title, URL, links to live, cached versions of the page, a short text summary (snippet) Need: text summarization techniques ! style.visibility"
+    },
+    {
+      "slide_num": 13,
+      "file_path": "ppt/slides/slide13.xml",
+      "text": "6.3 Showing the results: Result page and Snippets Luhn’s algorithm?"
+    },
+    {
+      "slide_num": 14,
+      "file_path": "ppt/slides/slide14.xml",
+      "text": "6.3 Showing the results: Advertising and Search Advertising is a key component of web search engines? That is how companies generate revenue Goal? Find advertisements that are appropriate for the query context Advertisers bid for keywords that describe topics associated with their product The key issues: Techniques for matching short pieces of text (the query and the advertisement) Selecting keywords to represent the content of web pages style.visibility style.visibility style.visibility style.visibility style.visibility style.visibility style.visibility style.visibility"
+    },
+    {
+      "slide_num": 15,
+      "file_path": "ppt/slides/slide15.xml",
+      "text": "6.3 Showing the results: Advertising and Search The list of advertisements generated by a search engine for the query “fish tanks” Two of the advertisements are obvious matches, in that “fish tanks” occurs in the titles Two of the others have no words in common with the query, although they are clearly relevant Third advertisement is similar and matches one of the query words"
+    },
+    {
+      "slide_num": 16,
+      "file_path": "ppt/slides/slide16.xml",
+      "text": "6.3 Showing the results: Clustering the results Clustering groups documents? Similar in content and labels → quickly scanned for relevance. Clusters formed by a search engine from top-ranked documents for the query “tropical fish”. Numbers in brackets are the number of documents in the cluster. style.visibility style.visibility style.visibility"
+    },
+    {
+      "slide_num": 17,
+      "file_path": "ppt/slides/slide17.xml",
+      "text": "6.4 Cross-Language Search Translating queries for one or more monolingual search engines covering different languages Use a large bilingual dictionary Statistical machine translation models"
+    },
+    {
+      "slide_num": 18,
+      "file_path": "ppt/slides/slide18.xml",
+      "text": "Exercise Using the Wikipedia collection Index the collection without stemming . Identify the frst 1,000 words (in alphabetical order) in the index Create stem classes by stemming these 1,000 words and recording which words become the same stem Compute association measures (Dice’s coefficient) between all pairs of stems in each stem class"
+    },
+    {
+      "slide_num": 19,
+      "file_path": "ppt/slides/slide19.xml",
+      "text": "Summary Information needs and queries Query Transformation and refinement Show the results Cross-language search"
+    }
+  ]
+}

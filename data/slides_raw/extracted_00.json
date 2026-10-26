@@ -1,0 +1,48 @@
+{
+  "chapter_id": 0,
+  "filename": "0. Course Introduction.pptx",
+  "title": "Course Introduction",
+  "total_slides": 8,
+  "slides": [
+    {
+      "slide_num": 1,
+      "file_path": "ppt/slides/slide1.xml",
+      "text": "Search Engine SEG301m"
+    },
+    {
+      "slide_num": 2,
+      "file_path": "ppt/slides/slide2.xml",
+      "text": "Prerequisites CSD203 AIL303m"
+    },
+    {
+      "slide_num": 3,
+      "file_path": "ppt/slides/slide3.xml",
+      "text": "Course Objectives Understanding how search engines work: Students should be able to explain the underlying technology behind search engines, including the algorithms used to crawl, index and rank web pages. Search engine optimization: Students should be able to apply best practices for optimizing web pages to improve their visibility in search engine results pages (SERPs)."
+    },
+    {
+      "slide_num": 4,
+      "file_path": "ppt/slides/slide4.xml",
+      "text": "Course Objectives Keyword research: Students should be able to conduct keyword research to identify the most relevant and profitable keywords by using popular retrieval models. Analytics and tracking: Students should be able to use analytics tools to track website traffic, user behavior, and campaign performance. Solving problems: Students should be able to apply search engine techniques to solve the real-life problems"
+    },
+    {
+      "slide_num": 5,
+      "file_path": "ppt/slides/slide5.xml",
+      "text": "Learning Environments Github Jupyter Notebooks Google Colab"
+    },
+    {
+      "slide_num": 6,
+      "file_path": "ppt/slides/slide6.xml",
+      "text": "Course Rules How to conduct Prepare contents of the next session/ topic at home Following lessons in classrooms Completing chapter assessments in time and Quizzes Communication Class/Forum Discussing actively in your teams and in classrooms"
+    },
+    {
+      "slide_num": 7,
+      "file_path": "ppt/slides/slide7.xml",
+      "text": "Academic policy Cheating, plagiarism and breach of copyright are serious offenses under this Policy. Cheating Cheating during a test or exam is construed as talking, peeking at another student’s paper or any other clandestine method of transmitting information. Cheating during in making lab and assignment as copy source code, copy style, same meaning in progress, …"
+    },
+    {
+      "slide_num": 8,
+      "file_path": "ppt/slides/slide8.xml",
+      "text": "Academic policy Cheating, plagiarism and breach of copyright are serious offenses under this Policy. Plagiarism Plagiarism is using the work of others without citing it; that is, holding the work of others out as your own work. Breach of Copyright If you photocopy a textbook without the copyright holder's permission, you violate copyright law."
+    }
+  ]
+}

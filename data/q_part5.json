@@ -1,0 +1,802 @@
+[
+  {
+    "id": "q_ch05_01",
+    "chapter": 5,
+    "question": "What are the two core structural components of an Inverted Index?",
+    "options": [
+      "A B-Tree and an R-Tree",
+      "A Dictionary (Lexicon / Vocabulary) and Postings Lists",
+      "A Hash Table and a Linked List of images",
+      "A FIFO Queue and a Priority Heap"
+    ],
+    "correct": 1,
+    "explanation": "An Inverted Index consists of a Dictionary (storing unique terms and pointers) and Postings Lists (storing docIDs, frequencies, and positions).",
+    "topic": "Inverted Index Anatomy",
+    "slide_ref": "5. Ranking with Indexes.pptx",
+    "answer": 1
+  },
+  {
+    "id": "q_ch05_02",
+    "chapter": 5,
+    "question": "What does 'd-gaps' (document gaps / delta encoding) refer to in inverted index compression?",
+    "options": [
+      "Leaving empty gaps on hard disk sectors",
+      "Storing the differences between successive document IDs (e.g., d_{i} - d_{i-1}) rather than the absolute document IDs",
+      "Deleting every second document in the collection",
+      "Spacing query terms across the screen"
+    ],
+    "correct": 1,
+    "explanation": "Because docIDs in a posting list are strictly monotonically increasing, storing differences (gaps) results in much smaller integers that require far fewer bits to encode.",
+    "topic": "d-gaps Compression",
+    "slide_ref": "5. Ranking with Indexes.pptx",
+    "answer": 1
+  },
+  {
+    "id": "q_ch05_03",
+    "chapter": 5,
+    "question": "Given the sorted posting list of docIDs: [14, 19, 21, 35], what is the corresponding sequence of d-gaps?",
+    "options": [
+      "[14, 5, 2, 14]",
+      "[14, 19, 21, 35]",
+      "[5, 2, 14, 0]",
+      "[1, 2, 3, 4]"
+    ],
+    "correct": 0,
+    "explanation": "The first gap is 14; subsequent gaps are 19 - 14 = 5, 21 - 19 = 2, and 35 - 21 = 14. Thus: [14, 5, 2, 14].",
+    "topic": "d-gaps Calculation",
+    "slide_ref": "5. Ranking with Indexes.pptx",
+    "answer": 0
+  },
+  {
+    "id": "q_ch05_04",
+    "chapter": 5,
+    "question": "In Variable Byte (V-Byte) integer compression, how many bits in each byte are allocated for actual data payload?",
+    "options": [
+      "8 bits",
+      "7 bits (with 1 bit reserved as the continuation/termination flag)",
+      "4 bits",
+      "16 bits"
+    ],
+    "correct": 1,
+    "explanation": "V-Byte uses 7 bits per byte to store the binary integer and the 8th most significant bit (MSB) as a continuation bit indicating whether more bytes follow.",
+    "topic": "V-Byte Encoding",
+    "slide_ref": "5. Ranking with Indexes.pptx",
+    "answer": 1
+  },
+  {
+    "id": "q_ch05_05",
+    "chapter": 5,
+    "question": "How is the number 130 represented in 7-bit chunks for Variable Byte encoding?",
+    "options": [
+      "Chunk 1: 130 (fits in one byte)",
+      "Chunk 1: 1 (higher bits), Chunk 2: 2 (lower bits) because 130 = 1 * 128 + 2",
+      "Chunk 1: 0, Chunk 2: 0",
+      "Cannot be encoded"
+    ],
+    "correct": 1,
+    "explanation": "130 in base 128 is 1 * 128 + 2. The lower 7 bits are 2 (0000010) and higher 7 bits are 1 (0000001), requiring 2 bytes.",
+    "topic": "V-Byte Calculation",
+    "slide_ref": "5. Ranking with Indexes.pptx",
+    "answer": 1
+  },
+  {
+    "id": "q_ch05_06",
+    "chapter": 5,
+    "question": "What is 'Single-Pass In-Memory Indexing' (SPIMI)?",
+    "options": [
+      "An indexing algorithm that processes blocks of documents dynamically in RAM without pre-assigning global term IDs, writing a sorted block to disk when memory fills",
+      "An algorithm that indexes the entire web in a single CPU cycle",
+      "An indexer that only works on single-core processors",
+      "An indexing method that does not write anything to disk"
+    ],
+    "correct": 0,
+    "explanation": "SPIMI dynamically adds terms to a local block dictionary in RAM; when RAM is exhausted, postings are sorted by term and written as a run to disk.",
+    "topic": "SPIMI Algorithm",
+    "slide_ref": "5. Ranking with Indexes.pptx",
+    "answer": 0
+  },
+  {
+    "id": "q_ch05_07",
+    "chapter": 5,
+    "question": "How does Blocked Sort-Based Indexing (BSBI) differ fundamentally from SPIMI?",
+    "options": [
+      "BSBI requires mapping all terms to globally unique integer termIDs before sorting and partitioning; SPIMI dynamically collects terms per block",
+      "BSBI only works on image files",
+      "BSBI does not use external sorting",
+      "BSBI cannot handle more than 100 documents"
+    ],
+    "correct": 0,
+    "explanation": "BSBI maps terms to termIDs first and accumulates (termID, docID) pairs, requiring a two-pass mapping dictionary, unlike SPIMI.",
+    "topic": "BSBI vs SPIMI",
+    "slide_ref": "5. Ranking with Indexes.pptx",
+    "answer": 0
+  },
+  {
+    "id": "q_ch05_08",
+    "chapter": 5,
+    "question": "What is the final phase of external-memory indexing algorithms like BSBI and SPIMI?",
+    "options": [
+      "Deleting the raw documents",
+      "Multi-way Merge Sort of the sorted run files from disk into a unified master inverted index",
+      "Converting all text to JSON format",
+      "Encrypting the hard drive"
+    ],
+    "correct": 1,
+    "explanation": "Once all blocks are written to disk, a multi-way merge simultaneously streams from all block files to produce the final continuous postings lists.",
+    "topic": "Multi-way Merge",
+    "slide_ref": "5. Ranking with Indexes.pptx",
+    "answer": 1
+  },
+  {
+    "id": "q_ch05_09",
+    "chapter": 5,
+    "question": "In query processing, what is Document-At-A-Time (DAAT)?",
+    "options": [
+      "Scoring one document completely across all query term posting lists concurrently before moving to the next document",
+      "Scoring one term across all documents sequentially",
+      "Indexing only one document per day",
+      "Showing only one document on the SERP"
+    ],
+    "correct": 0,
+    "explanation": "DAAT advances pointers across all query postings lists in lockstep, computing the complete score for one document at a time.",
+    "topic": "DAAT Processing",
+    "slide_ref": "5. Ranking with Indexes.pptx",
+    "answer": 0
+  },
+  {
+    "id": "q_ch05_10",
+    "chapter": 5,
+    "question": "In query processing, what is Term-At-A-Time (TAAT)?",
+    "options": [
+      "Iterating through the posting list of one query term completely, accumulating partial scores in memory, before proceeding to the next query term",
+      "Calculating term frequency using Google Translate",
+      "Executing queries one term per hour",
+      "Deleting terms from the query"
+    ],
+    "correct": 0,
+    "explanation": "TAAT processes each term's posting list sequentially, updating an accumulator table in memory for every document encountered.",
+    "topic": "TAAT Processing",
+    "slide_ref": "5. Ranking with Indexes.pptx",
+    "answer": 0
+  },
+  {
+    "id": "q_ch05_11",
+    "chapter": 5,
+    "question": "What is the primary advantage of the WAND (Weak AND) algorithm in query processing?",
+    "options": [
+      "It eliminates the need for inverted indexes",
+      "It dynamically skips scoring documents that cannot mathematically exceed the current threshold of the Top-K heap, achieving dramatic speedups without losing precision",
+      "It makes all search results 100% relevant",
+      "It compresses image files by 90%"
+    ],
+    "correct": 1,
+    "explanation": "WAND maintains upper-bound scores per term; if the sum of maximum possible scores for a document cannot beat the K-th score in the heap, it skips evaluation.",
+    "topic": "WAND Dynamic Pruning",
+    "slide_ref": "5. Ranking with Indexes.pptx",
+    "answer": 1
+  },
+  {
+    "id": "q_ch05_12",
+    "chapter": 5,
+    "question": "What are 'Skip Pointers' (or Skip Lists) in inverted index postings lists?",
+    "options": [
+      "Pointers that skip over corrupted hard drive sectors",
+      "Auxiliary forward pointers placed at regular intervals in postings lists that allow query processors to bypass large blocks of non-matching docIDs during intersection",
+      "Links that skip Google ads",
+      "Pointers that skip stop words"
+    ],
+    "correct": 1,
+    "explanation": "Skip pointers let the intersection algorithm leap forward by multiple postings (e.g., skip 50 items) if the current target docID is much higher.",
+    "topic": "Skip Pointers",
+    "slide_ref": "5. Ranking with Indexes.pptx",
+    "answer": 1
+  },
+  {
+    "id": "q_ch05_13",
+    "chapter": 5,
+    "question": "If a posting list has length L, what is the standard theoretical heuristic for the optimal skip interval distance?",
+    "options": [
+      "sqrt(L)",
+      "L / 2",
+      "log2(L)",
+      "L^2"
+    ],
+    "correct": 0,
+    "explanation": "Setting the skip frequency to roughly sqrt(L) evenly spaced intervals balances the number of skips with the cost of scanning within a skip block.",
+    "topic": "Skip Heuristic",
+    "slide_ref": "5. Ranking with Indexes.pptx",
+    "answer": 0
+  },
+  {
+    "id": "q_ch05_14",
+    "chapter": 5,
+    "question": "What is Elias Gamma encoding primarily used for in index compression?",
+    "options": [
+      "Encoding positive integers into variable-length bit strings, where integer x is represented by floor(log2(x)) zeros followed by a 1 and the binary value",
+      "Encrypting military communications",
+      "Compressing JPEG images",
+      "Formatting HTML tables"
+    ],
+    "correct": 0,
+    "explanation": "Elias Gamma code is a bit-level universal code optimal for small integers (like small d-gaps and term frequencies).",
+    "topic": "Elias Gamma",
+    "slide_ref": "5. Ranking with Indexes.pptx",
+    "answer": 0
+  },
+  {
+    "id": "q_ch05_15",
+    "chapter": 5,
+    "question": "How is the number 1 encoded in Elias Gamma code?",
+    "options": [
+      "0",
+      "1",
+      "01",
+      "001"
+    ],
+    "correct": 1,
+    "explanation": "For x = 1, length of unary prefix is floor(log2(1)) = 0 zeros, followed by a 1 and empty remainder: simply '1'.",
+    "topic": "Elias Gamma 1",
+    "slide_ref": "5. Ranking with Indexes.pptx",
+    "answer": 1
+  },
+  {
+    "id": "q_ch05_16",
+    "chapter": 5,
+    "question": "What is the Elias Gamma representation of the number 4?",
+    "options": [
+      "100",
+      "00100",
+      "0100",
+      "1111"
+    ],
+    "correct": 1,
+    "explanation": "For 4, floor(log2(4)) = 2 zeros ('00'), followed by '1', and the remaining 2 binary bits of 4 ('00'): '00100'.",
+    "topic": "Elias Gamma 4",
+    "slide_ref": "5. Ranking with Indexes.pptx",
+    "answer": 1
+  },
+  {
+    "id": "q_ch05_17",
+    "chapter": 5,
+    "question": "What is 'Positional Intersect' used for in inverted indexes?",
+    "options": [
+      "Finding documents where two terms appear within a specified word distance k of each other (e.g., /3 proximity or exact phrases)",
+      "Determining the GPS coordinates of the server",
+      "Rotating the screen 90 degrees",
+      "Sorting terms by length"
+    ],
+    "correct": 0,
+    "explanation": "Positional intersect traverses the position lists within postings to verify phrase adjacency or proximity constraints (e.g., termA WITHIN 3 terms OF termB).",
+    "topic": "Positional Intersect",
+    "slide_ref": "5. Ranking with Indexes.pptx",
+    "answer": 0
+  },
+  {
+    "id": "q_ch05_18",
+    "chapter": 5,
+    "question": "What is an 'Impact-Ordered' posting list?",
+    "options": [
+      "A posting list sorted by decreasing term frequency or partial impact score rather than increasing docID",
+      "A posting list that damages hard drives on impact",
+      "A posting list sorted by file size",
+      "A posting list containing only punctuation"
+    ],
+    "correct": 0,
+    "explanation": "Impact ordering places high-frequency or high-weight documents at the front of the posting list to facilitate early-termination ranking.",
+    "topic": "Impact Ordering",
+    "slide_ref": "5. Ranking with Indexes.pptx",
+    "answer": 0
+  },
+  {
+    "id": "q_ch05_19",
+    "chapter": 5,
+    "question": "Why is Boolean 'AND' query processing faster than Boolean 'OR' query processing?",
+    "options": [
+      "AND operations can stop as soon as the shortest posting list is exhausted and can skip large non-overlapping spans; OR operations must process the union of all lists",
+      "AND operations require fewer CPU transistors",
+      "OR operations are forbidden in search engines",
+      "AND operations are processed by GPUs"
+    ],
+    "correct": 0,
+    "explanation": "AND queries intersect lists (bounded by the shortest list and skippable); OR queries require scanning the union of all candidate lists.",
+    "topic": "AND vs OR Speed",
+    "slide_ref": "5. Ranking with Indexes.pptx",
+    "answer": 0
+  },
+  {
+    "id": "q_ch05_20",
+    "chapter": 5,
+    "question": "When intersecting two posting lists of lengths 1,000 and 1,000,000 for a Boolean AND query, what is the optimal processing order?",
+    "options": [
+      "Iterate through the short list of 1,000 and use binary search / skip pointers to probe into the long list of 1,000,000",
+      "Scan the 1,000,000 list sequentially first",
+      "Concatenate both lists together",
+      "Reverse the long list"
+    ],
+    "correct": 0,
+    "explanation": "Probing from the shorter list into the longer list with skips requires at most 1,000 * log(1,000,000) operations, dramatically faster than a linear scan.",
+    "topic": "Intersection Optimization",
+    "slide_ref": "5. Ranking with Indexes.pptx",
+    "answer": 0
+  },
+  {
+    "id": "q_ch05_21",
+    "chapter": 5,
+    "question": "In search engine index terminology, what is a 'Lexicon'?",
+    "options": [
+      "A vocabulary table containing all distinct terms in the index, their collection frequencies, document frequencies, and pointers to their posting lists",
+      "A dictionary of foreign languages",
+      "A database of user passwords",
+      "A hardware controller chip"
+    ],
+    "correct": 0,
+    "explanation": "The Lexicon is the vocabulary directory residing in RAM or fast storage that maps terms to their posting list offsets.",
+    "topic": "Lexicon Definition",
+    "slide_ref": "5. Ranking with Indexes.pptx",
+    "answer": 0
+  },
+  {
+    "id": "q_ch05_22",
+    "chapter": 5,
+    "question": "What is an 'Accumulator' in Term-At-A-Time (TAAT) query processing?",
+    "options": [
+      "A memory location or hash table entry storing the running partial relevance score for a candidate document as successive term lists are processed",
+      "A battery backup in the server room",
+      "A counter tracking total website visitors",
+      "A tool that deletes obsolete indexes"
+    ],
+    "correct": 0,
+    "explanation": "In TAAT, accumulators track intermediate scores for all documents containing any evaluated query term.",
+    "topic": "TAAT Accumulator",
+    "slide_ref": "5. Ranking with Indexes.pptx",
+    "answer": 0
+  },
+  {
+    "id": "q_ch05_23",
+    "chapter": 5,
+    "question": "What is the primary drawback of using Accumulators in TAAT for large web corpora?",
+    "options": [
+      "Accumulator memory overhead explodes: queries containing common terms allocate millions of accumulators, straining RAM",
+      "Accumulators prevent documents from being ranked",
+      "Accumulators crash network routers",
+      "Accumulators convert scores to negative numbers"
+    ],
+    "correct": 0,
+    "explanation": "TAAT can require millions of accumulators in RAM for broad multi-term queries, leading to memory exhaustion unless pruned heuristically.",
+    "topic": "TAAT Drawback",
+    "slide_ref": "5. Ranking with Indexes.pptx",
+    "answer": 0
+  },
+  {
+    "id": "q_ch05_24",
+    "chapter": 5,
+    "question": "What does 'Dynamic Pruning' (e.g., MaxScore, WAND) do during query execution?",
+    "options": [
+      "It trims hedges in the server courtyard",
+      "It skips evaluating documents whose upper-bound score cannot possibly exceed the minimum score currently in the Top-K results heap",
+      "It deletes low-ranking documents permanently from the index",
+      "It turns off unused server CPU cores"
+    ],
+    "correct": 1,
+    "explanation": "Dynamic pruning uses mathematical upper bounds to safely bypass documents that cannot make the top-K cutoff, saving massive CPU cycles.",
+    "topic": "Dynamic Pruning",
+    "slide_ref": "5. Ranking with Indexes.pptx",
+    "answer": 1
+  },
+  {
+    "id": "q_ch05_25",
+    "chapter": 5,
+    "question": "What is a 'Tiered Index' (or Champion Lists)?",
+    "options": [
+      "An index partitioned into tiers, where Tier 1 contains postings for documents with high term weights or PageRank, and lower tiers are only searched if Tier 1 yields fewer than K results",
+      "An index for sports champions only",
+      "An index with three backup copies",
+      "An index stored in the cloud"
+    ],
+    "correct": 0,
+    "explanation": "Tiered indexes evaluate high-relevance 'champion' documents first; lower tiers are consulted only if insufficient relevant documents are found.",
+    "topic": "Tiered Indexing",
+    "slide_ref": "5. Ranking with Indexes.pptx",
+    "answer": 0
+  },
+  {
+    "id": "q_ch05_26",
+    "chapter": 5,
+    "question": "What is the 'Vocabulary Problem' in Information Retrieval?",
+    "options": [
+      "Searchers frequently use different words to describe the same concept than the authors used in the documents (Synonymy)",
+      "Computers cannot store more than 1,000 words",
+      "English has too many vowels",
+      "All dictionaries contain spelling errors"
+    ],
+    "correct": 0,
+    "explanation": "The vocabulary problem (Furnas et al., 1987) shows that two people choose the same word for a concept only 10-20% of the time.",
+    "topic": "Vocabulary Problem",
+    "slide_ref": "5. Ranking with Indexes.pptx",
+    "answer": 0
+  },
+  {
+    "id": "q_ch05_27",
+    "chapter": 5,
+    "question": "In Elias Delta coding, how does it improve upon Elias Gamma coding for very large integers?",
+    "options": [
+      "It encodes the length of the binary representation using Gamma code, resulting in shorter bit lengths for large integers",
+      "It uses 64 bits for all integers",
+      "It completely eliminates the use of binary",
+      "It encrypts integers with AES"
+    ],
+    "correct": 0,
+    "explanation": "Elias Delta codes the length of the binary string with Elias Gamma, making it more compact than Gamma for large integers.",
+    "topic": "Elias Delta",
+    "slide_ref": "5. Ranking with Indexes.pptx",
+    "answer": 0
+  },
+  {
+    "id": "q_ch05_28",
+    "chapter": 5,
+    "question": "What is a 'Stopword List' in inverted index construction?",
+    "options": [
+      "A list of terms that are excluded from the inverted index to save storage and processing time",
+      "A list of blocked IP addresses",
+      "A list of websites that refuse crawlers",
+      "A list of syntax errors in Python"
+    ],
+    "correct": 0,
+    "explanation": "Stopwords are common functional words traditionally omitted from the index to reduce postings storage.",
+    "topic": "Stopword Indexing",
+    "slide_ref": "5. Ranking with Indexes.pptx",
+    "answer": 0
+  },
+  {
+    "id": "q_ch05_29",
+    "chapter": 5,
+    "question": "Why do modern web search engines index virtually all stopwords despite the storage cost?",
+    "options": [
+      "Because users frequently search for exact phrases, titles ('The Who', 'To be or not to be'), and programming idioms where stopwords carry critical semantic meaning",
+      "Because storage is free",
+      "Because stopwords have the highest PageRank",
+      "Because search engines are required by law to index every character"
+    ],
+    "correct": 0,
+    "explanation": "Excluding stopwords breaks phrase queries, book titles, and technical identifiers; modern compression mitigates the storage cost.",
+    "topic": "Modern Stopword Retention",
+    "slide_ref": "5. Ranking with Indexes.pptx",
+    "answer": 0
+  },
+  {
+    "id": "q_ch05_30",
+    "chapter": 5,
+    "question": "What is 'Positional Postings Index' payload format typically structured as?",
+    "options": [
+      "docID, frequency, [pos1, pos2, ..., pos_f]",
+      "docID, URL, HTML text",
+      "docID, PageRank, author name",
+      "docID, IP address, timestamp"
+    ],
+    "correct": 0,
+    "explanation": "Each posting contains the docID, term frequency, followed by the array of word offset positions within that document.",
+    "topic": "Positional Payload Format",
+    "slide_ref": "5. Ranking with Indexes.pptx",
+    "answer": 0
+  },
+  {
+    "id": "q_ch05_31",
+    "chapter": 5,
+    "question": "What is an 'Auxiliary Index' (or Dynamic Memory Index)?",
+    "options": [
+      "A small in-memory inverted index used to store newly crawled or updated documents before they are merged into the main disk-based index",
+      "An index stored on an auxiliary backup tape",
+      "An index that only tracks images",
+      "A secondary dictionary of slang terms"
+    ],
+    "correct": 0,
+    "explanation": "An auxiliary index absorbs real-time document additions in RAM; queries search both master and auxiliary indexes until a background merge occurs.",
+    "topic": "Auxiliary Index",
+    "slide_ref": "5. Ranking with Indexes.pptx",
+    "answer": 0
+  },
+  {
+    "id": "q_ch05_32",
+    "chapter": 5,
+    "question": "What is 'Logarithmic Merge' strategy for dynamic index maintenance?",
+    "options": [
+      "Maintaining an array of indexes of exponentially increasing sizes (I_0, I_1, I_2, ...) where index I_k is merged into I_{k+1} when full",
+      "Merging indexes using mathematical logarithms on paper",
+      "Deleting index files once per month",
+      "Merging indexes at exactly midnight"
+    ],
+    "correct": 0,
+    "explanation": "Logarithmic merge bounds the merge cost: each posting is merged at most O(log(N/M)) times, amortizing update overhead efficiently.",
+    "topic": "Logarithmic Merge",
+    "slide_ref": "5. Ranking with Indexes.pptx",
+    "answer": 0
+  },
+  {
+    "id": "q_ch05_33",
+    "chapter": 5,
+    "question": "What is a 'Security Trimming' step in enterprise search query execution?",
+    "options": [
+      "Filtering out candidate documents from the search results that the querying user lacks permissions to view based on Access Control Lists (ACLs)",
+      "Cutting physical network cables for security",
+      "Deleting all administrative accounts",
+      "Removing SSL certificates"
+    ],
+    "correct": 0,
+    "explanation": "Security trimming checks user identity against document ACLs (either early during posting list traversal or late during ranking) to ensure data confidentiality.",
+    "topic": "Security Trimming",
+    "slide_ref": "5. Ranking with Indexes.pptx",
+    "answer": 0
+  },
+  {
+    "id": "q_ch05_34",
+    "chapter": 5,
+    "question": "What is a 'Forward Index'?",
+    "options": [
+      "A data structure mapping docID -> list of terms contained in that document (the inverse of an inverted index)",
+      "An index that only looks forward into the future",
+      "An index that predicts tomorrow's news",
+      "An index sorted alphabetically by URL"
+    ],
+    "correct": 0,
+    "explanation": "The forward index maps documents to their terms/metadata, used for snippet generation, document summarization, and clustering.",
+    "topic": "Forward Index",
+    "slide_ref": "5. Ranking with Indexes.pptx",
+    "answer": 0
+  },
+  {
+    "id": "q_ch05_35",
+    "chapter": 5,
+    "question": "How does 'MaxScore' algorithm prune non-competitive documents during query processing?",
+    "options": [
+      "It sorts query terms by maximum potential score contribution and only evaluates candidate documents that contain at least one essential high-impact term",
+      "It deletes documents with scores below 0",
+      "It limits the maximum query length to 3 words",
+      "It caps the user's internet speed"
+    ],
+    "correct": 0,
+    "explanation": "MaxScore partitions terms into essential and non-essential based on the current K-th score threshold, skipping documents that only match non-essential terms.",
+    "topic": "MaxScore Algorithm",
+    "slide_ref": "5. Ranking with Indexes.pptx",
+    "answer": 0
+  },
+  {
+    "id": "q_ch05_36",
+    "chapter": 5,
+    "question": "What is 'Bit-aligned' vs 'Byte-aligned' index compression?",
+    "options": [
+      "Byte-aligned (like V-Byte) compresses in multiples of 8 bits for extremely fast byte-level CPU processing; Bit-aligned (like Elias Gamma) achieves tighter compression but requires slow bit-shifting operations",
+      "Bit-aligned is always 100 times faster than Byte-aligned",
+      "Byte-aligned can only store text; Bit-aligned only stores numbers",
+      "There is no difference between them"
+    ],
+    "correct": 0,
+    "explanation": "Byte-aligned formats trade slightly lower compression ratios for significantly faster decoding speeds on modern CPU architectures.",
+    "topic": "Bit vs Byte Alignment",
+    "slide_ref": "5. Ranking with Indexes.pptx",
+    "answer": 0
+  },
+  {
+    "id": "q_ch05_37",
+    "chapter": 5,
+    "question": "In inverted index compression, what is 'Golomb Coding' (or Rice Coding)?",
+    "options": [
+      "A parameterized compression code optimal for geometrically distributed integers, commonly used for compressing d-gaps",
+      "A video compression standard for YouTube",
+      "A cryptographic hash function",
+      "An audio encoding algorithm"
+    ],
+    "correct": 0,
+    "explanation": "Golomb/Rice coding is mathematically optimal for geometrically distributed data, widely used in inverted index delta compression.",
+    "topic": "Golomb Coding",
+    "slide_ref": "5. Ranking with Indexes.pptx",
+    "answer": 0
+  },
+  {
+    "id": "q_ch05_38",
+    "chapter": 5,
+    "question": "Why is sorting posting lists strictly by 'docID' beneficial for query processing?",
+    "options": [
+      "It allows linear-time merge intersections (similar to merge-sort) across multiple posting lists in O(L1 + L2) time",
+      "It makes the documents load faster in the browser",
+      "It increases the PageRank of the documents",
+      "It prevents spelling errors in documents"
+    ],
+    "correct": 0,
+    "explanation": "Sorted docIDs enable simultaneous linear scans through two or more posting lists using two-pointer algorithms.",
+    "topic": "DocID Sorting Benefit",
+    "slide_ref": "5. Ranking with Indexes.pptx",
+    "answer": 0
+  },
+  {
+    "id": "q_ch05_39",
+    "chapter": 5,
+    "question": "What is a 'Phrase Index' (or Biword Index)?",
+    "options": [
+      "An index where every consecutive pair of terms (e.g., 'white house', 'machine learning') is indexed as a distinct vocabulary term",
+      "An index containing only famous quotations",
+      "An index of musical lyrics",
+      "An index containing only verbs"
+    ],
+    "correct": 0,
+    "explanation": "A biword index indexes consecutive word pairs directly, speeding up common two-word phrase queries without requiring positional lookups.",
+    "topic": "Biword Index",
+    "slide_ref": "5. Ranking with Indexes.pptx",
+    "answer": 0
+  },
+  {
+    "id": "q_ch05_40",
+    "chapter": 5,
+    "question": "What is the primary trade-off of maintaining a Biword Index alongside a standard Inverted Index?",
+    "options": [
+      "Faster phrase queries at the cost of significantly expanding the dictionary vocabulary and overall index storage size",
+      "It slows down single-word queries",
+      "It corrupts the document text",
+      "It requires disabling the web crawler"
+    ],
+    "correct": 0,
+    "explanation": "Biword indexes double or triple the index size because the number of distinct word pairs is far greater than single words.",
+    "topic": "Biword Trade-off",
+    "slide_ref": "5. Ranking with Indexes.pptx",
+    "answer": 0
+  },
+  {
+    "id": "q_ch05_41",
+    "chapter": 5,
+    "question": "What is the time complexity of intersecting two sorted posting lists of lengths M and N using standard two-pointer comparison?",
+    "options": [
+      "O(M + N)",
+      "O(M * N)",
+      "O(log(M + N))",
+      "O(M^2)"
+    ],
+    "correct": 0,
+    "explanation": "Two-pointer linear merge advances one pointer at each comparison step, taking at most M + N steps.",
+    "topic": "Intersection Complexity",
+    "slide_ref": "5. Ranking with Indexes.pptx",
+    "answer": 0
+  },
+  {
+    "id": "q_ch05_42",
+    "chapter": 5,
+    "question": "In search systems, what does 'Garbage Collection' / Tombstone reclamation do in index maintenance?",
+    "options": [
+      "Physically removing deleted or updated document entries from disk segments during periodic segment merges",
+      "Cleaning dust from server racks",
+      "Deleting user search queries after 30 days",
+      "Re-crawling broken links"
+    ],
+    "correct": 0,
+    "explanation": "Deleted documents are marked with tombstone bitsets; background segment merging filters them out and reclaims disk space.",
+    "topic": "Index Tombstones",
+    "slide_ref": "5. Ranking with Indexes.pptx",
+    "answer": 0
+  },
+  {
+    "id": "q_ch05_43",
+    "chapter": 5,
+    "question": "What is 'Early Stopping' in Term-At-A-Time (TAAT) with accumulator limits?",
+    "options": [
+      "Stopping the query after 100 milliseconds regardless of results",
+      "Restricting the maximum number of open accumulators (e.g., at most 10,000 documents); once full, no new documents are considered unless existing ones are pruned",
+      "Shutting down the server if an error occurs",
+      "Deleting low-frequency terms from the query"
+    ],
+    "correct": 1,
+    "explanation": "Accumulator capping bounds memory usage in TAAT by discarding or refusing to create accumulators for documents matching only weak terms.",
+    "topic": "Accumulator Capping",
+    "slide_ref": "5. Ranking with Indexes.pptx",
+    "answer": 1
+  },
+  {
+    "id": "q_ch05_44",
+    "chapter": 5,
+    "question": "What is a 'Positional Posting List's size typically relative to a Non-positional list for the same collection?",
+    "options": [
+      "Roughly 2x to 4x larger due to storing word position offsets for every term occurrence",
+      "Exactly the same size",
+      "100x smaller",
+      "1,000x larger"
+    ],
+    "correct": 0,
+    "explanation": "Empirically, adding positional offsets expands index volume by a factor of 2 to 4, which is why compression is essential.",
+    "topic": "Positional Index Size",
+    "slide_ref": "5. Ranking with Indexes.pptx",
+    "answer": 0
+  },
+  {
+    "id": "q_ch05_45",
+    "chapter": 5,
+    "question": "What does 'Impact' mean in Impact-Ordered indexing?",
+    "options": [
+      "The physical vibration of server hard drives",
+      "The precomputed contribution of a term to a document's relevance score (e.g., quantized $tf$ or $tf \\cdot idf$)",
+      "The number of visitors to a website",
+      "The page load speed"
+    ],
+    "correct": 1,
+    "explanation": "Impact reflects the score contribution of that term to that document; sorting postings by impact allows evaluating the most promising documents first.",
+    "topic": "Impact Definition",
+    "slide_ref": "5. Ranking with Indexes.pptx",
+    "answer": 1
+  },
+  {
+    "id": "q_ch05_46",
+    "chapter": 5,
+    "question": "Which of the following is true about Variable Byte (V-Byte) decoding speed compared to bit-level Elias coding?",
+    "options": [
+      "V-Byte is significantly faster to decode because modern CPU architectures operate natively on byte boundaries and word alignments",
+      "V-Byte is 10 times slower than Elias coding",
+      "Bit-level Elias coding requires zero CPU cycles",
+      "V-Byte cannot be executed on 64-bit processors"
+    ],
+    "correct": 0,
+    "explanation": "Byte-aligned codes avoid complex bit-shifting and bitmasking, yielding 2x to 5x faster decompression rates on modern CPUs.",
+    "topic": "V-Byte Decoding Speed",
+    "slide_ref": "5. Ranking with Indexes.pptx",
+    "answer": 0
+  },
+  {
+    "id": "q_ch05_47",
+    "chapter": 5,
+    "question": "What is a 'Dictionary-as-a-String' data structure in memory-efficient lexicon design?",
+    "options": [
+      "Concatenating all vocabulary words into one continuous character array, with term pointers stored as integer offsets, saving pointer overhead",
+      "Storing words inside an SQL database string column",
+      "A dictionary that only accepts strings under 5 letters",
+      "An encrypted string of passwords"
+    ],
+    "correct": 0,
+    "explanation": "Packing terms into a continuous character buffer eliminates memory fragmentation and pointer overhead in large vocabularies.",
+    "topic": "Dictionary-as-a-String",
+    "slide_ref": "5. Ranking with Indexes.pptx",
+    "answer": 0
+  },
+  {
+    "id": "q_ch05_48",
+    "chapter": 5,
+    "question": "What does the 'Front-Coding' compression technique do on a sorted dictionary?",
+    "options": [
+      "Compresses common prefixes among consecutive alphabetical terms (e.g., 'automate', 'automatic', 'automation' -> common prefix 'automat')",
+      "Compresses the first page of every document",
+      "Reverses the characters of every word",
+      "Puts the highest-scoring words in front"
+    ],
+    "correct": 0,
+    "explanation": "Because dictionary terms are sorted alphabetically, consecutive terms share prefixes; storing prefix lengths compresses dictionary size by ~50%.",
+    "topic": "Front-Coding",
+    "slide_ref": "5. Ranking with Indexes.pptx",
+    "answer": 0
+  },
+  {
+    "id": "q_ch05_49",
+    "chapter": 5,
+    "question": "Why is 'Index Caching' in RAM essential for high-throughput search engines?",
+    "options": [
+      "Disk and NVMe I/O latency is orders of magnitude slower than RAM; caching frequent posting lists keeps query latency under strict sub-second SLAs",
+      "RAM never loses power",
+      "Disk storage is no longer manufactured",
+      "CPUs cannot read from SSDs directly"
+    ],
+    "correct": 0,
+    "explanation": "Reading posting lists from RAM takes nanoseconds vs microseconds/milliseconds from SSDs, making memory caching critical for high QPS.",
+    "topic": "Index RAM Caching",
+    "slide_ref": "5. Ranking with Indexes.pptx",
+    "answer": 0
+  },
+  {
+    "id": "q_ch05_50",
+    "chapter": 5,
+    "question": "In inverted index construction, what is the 'Run' file produced by BSBI or SPIMI?",
+    "options": [
+      "An executable .exe program",
+      "A temporary, sorted on-disk partition of the inverted index generated from a single batch of processed documents",
+      "A log file tracking server runtime",
+      "A Python script that runs the crawler"
+    ],
+    "correct": 1,
+    "explanation": "A run is a sorted intermediate block written to disk when memory fills; all runs are subsequently merged into the master index.",
+    "topic": "Run Files",
+    "slide_ref": "5. Ranking with Indexes.pptx",
+    "answer": 1
+  }
+]

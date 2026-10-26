@@ -1,0 +1,1302 @@
+[
+  {
+    "id": "q15_01",
+    "chapter": 15,
+    "question": "What is the primary motivation for distributing search engine indexing and query processing across a cluster of commodity machines?",
+    "options": [
+      "To eliminate the need for inverted index compression",
+      "To handle datasets exceeding single-node memory/storage and maintain sub-second latency under high query throughput",
+      "To allow web crawlers to bypass robots.txt restrictions",
+      "To avoid computing TF-IDF calculations"
+    ],
+    "answer": 1,
+    "explanation": "Modern web scale entails billions of documents and thousands of QPS; distributing indexes across clusters provides horizontal scalability, storage capacity, and concurrent processing required to meet strict latency SLAs."
+  },
+  {
+    "id": "q15_02",
+    "chapter": 15,
+    "question": "In Distributed Indexing, how does Document Partitioning (Doc-partitioned / Horizontal sharding) organize the index?",
+    "options": [
+      "Each node holds the complete postings lists for a disjoint subset of terms in the vocabulary",
+      "Each node holds a self-contained inverted index for a disjoint subset of documents in the collection",
+      "All documents are replicated entirely on every machine without partitioning",
+      "Documents are sliced by sentence and routed randomly"
+    ],
+    "answer": 1,
+    "explanation": "Document partitioning divides the collection of documents into subsets (shards). Each shard indexes all vocabulary terms occurring within its subset of documents."
+  },
+  {
+    "id": "q15_03",
+    "chapter": 15,
+    "question": "In Term Partitioning (Term-partitioned / Vertical sharding), how is the index divided across nodes?",
+    "options": [
+      "Each node contains all postings lists for all terms",
+      "Each node stores the entire collection of documents in raw HTML format",
+      "Each node is responsible for the entire inverted list of a specific subset of vocabulary terms across all documents",
+      "Terms are hashed and assigned to document IDs"
+    ],
+    "answer": 2,
+    "explanation": "Term partitioning assigns complete posting lists of disjoint subsets of terms to different nodes. When a query arrives, only the nodes holding the query's terms are consulted."
+  },
+  {
+    "id": "q15_04",
+    "chapter": 15,
+    "question": "Why do commercial web search engines almost universally prefer Document Partitioning over Term Partitioning?",
+    "options": [
+      "Document partitioning requires less disk space than term partitioning",
+      "Term partitioning suffers from severe load bottlenecks on popular terms ('the', 'news') and high multi-term communication overhead",
+      "Document partitioning eliminates the need for broker nodes",
+      "Term partitioning cannot support boolean queries"
+    ],
+    "answer": 1,
+    "explanation": "In term partitioning, frequent query terms overwhelm specific servers (hotspots), and multi-term queries require massive network transfer to intersect postings lists across nodes. Document partitioning avoids this by querying all shards in parallel."
+  },
+  {
+    "id": "q15_05",
+    "chapter": 15,
+    "question": "What is the role of the 'Broker' (or Aggregator/Query Coordinator) node in a document-partitioned distributed search system?",
+    "options": [
+      "It runs the web crawler and fetches web pages",
+      "It broadcasts queries to leaf shards, collects top-k candidate results from each, merges them, and requests full snippets for the final top-k",
+      "It parses robots.txt files and extracts metadata",
+      "It serves as a DNS server for client requests"
+    ],
+    "answer": 1,
+    "explanation": "The query broker broadcasts the parsed query to index shards (leaf nodes), merges their local top-k score lists into a global top-k list, and then initiates phase 2 to fetch snippets/metadata."
+  },
+  {
+    "id": "q15_06",
+    "chapter": 15,
+    "question": "What is the 'two-phase query execution' pattern typically used in distributed search engines?",
+    "options": [
+      "Phase 1 scans all text; Phase 2 builds the inverted index",
+      "Phase 1 retrieves document IDs and scores (top-k); Phase 2 fetches document content/summaries only for the final winners",
+      "Phase 1 parses queries; Phase 2 crawls external links",
+      "Phase 1 checks user authentication; Phase 2 evaluates machine learning models"
+    ],
+    "answer": 1,
+    "explanation": "Sending full document snippets or text across the network from all shards is prohibitive. In Phase 1, shards return only (DocID, score). The broker merges them, determines the top-10 winners, and in Phase 2 requests snippets only for those 10 documents."
+  },
+  {
+    "id": "q15_07",
+    "chapter": 15,
+    "question": "In the MapReduce framework applied to inverted index construction, what is the output of the Map phase?",
+    "options": [
+      "Key: Document ID, Value: Word count",
+      "Key: Term (token), Value: Tuple (DocID, Position/Frequency)",
+      "Key: PageRank score, Value: Anchor text",
+      "Key: IP Address, Value: HTTP status"
+    ],
+    "answer": 1,
+    "explanation": "Mappers parse documents and emit key-value pairs where the key is the Term and value is (DocID, position/count). The shuffle phase groups all values by Term for the Reducers."
+  },
+  {
+    "id": "q15_08",
+    "chapter": 15,
+    "question": "In MapReduce inverted indexing, what does the Reduce phase do?",
+    "options": [
+      "Compresses raw HTML documents into ZIP archives",
+      "Receives all (DocID, Position) pairs for a given term, sorts them by DocID, and writes the consolidated postings list",
+      "Executes user queries concurrently",
+      "Assigns PageRank weights to web graphs"
+    ],
+    "answer": 1,
+    "explanation": "The Reducer receives (Term, [DocID1, DocID2, ...]), sorts doc IDs, applies compression (e.g. Elias/VByte), and outputs the final inverted index segment for that term."
+  },
+  {
+    "id": "q15_09",
+    "chapter": 15,
+    "question": "What is 'Index Replication' and why is it essential alongside sharding?",
+    "options": [
+      "Storing multiple identical copies of each shard to provide high availability (fault tolerance) and increase query throughput",
+      "Copying the crawler code to multiple directories",
+      "Duplicating terms in the vocabulary to prevent hash collisions",
+      "Backing up user search history onto external tapes"
+    ],
+    "answer": 0,
+    "explanation": "Replicating shards ensures that if a hardware node fails, a replica can immediately serve traffic without downtime, while also distributing concurrent read queries across replicas to boost throughput."
+  },
+  {
+    "id": "q15_10",
+    "chapter": 15,
+    "question": "What is 'Tail Latency' (e.g., 99th percentile or p99 latency) and why does it worsen in scatter-gather search architectures?",
+    "options": [
+      "The time taken to crawl pages at the tail end of the web graph",
+      "The latency of the slowest responding shard in a scatter-gather query, which bounds overall query completion time",
+      "The time taken to compress posting lists",
+      "The network propagation delay between user and edge DNS"
+    ],
+    "answer": 1,
+    "explanation": "Because a scatter-gather query must wait for all shards to reply before producing the final top-k, the overall latency is dictated by the slowest shard (straggler), severely impacting p95 and p99 metrics as the shard count grows."
+  },
+  {
+    "id": "q15_11",
+    "chapter": 15,
+    "question": "How can a distributed search broker mitigate straggler nodes and preserve p99 SLA?",
+    "options": [
+      "Drop the entire query and return an HTTP 500 error",
+      "Use speculative execution (backup requests) to replicas and early termination with timeout thresholds",
+      "Disable document ranking and return random docs",
+      "Force all shards to reboot simultaneously"
+    ],
+    "answer": 1,
+    "explanation": "Techniques include hedged requests (querying an alternate replica if a response exceeds p95) and early termination (returning results from 99% of shards if the remaining 1% times out)."
+  },
+  {
+    "id": "q15_12",
+    "chapter": 15,
+    "question": "What are the three main tiers of caching in a distributed search engine architecture?",
+    "options": [
+      "DNS cache, Cookie cache, Session cache",
+      "Result cache (Query -> Top Docs), Postings list cache (Term -> Inverted List), and Doc/Snippet cache",
+      "Crawler cache, Parser cache, Logger cache",
+      "L1 cache, L2 cache, L3 CPU cache exclusively"
+    ],
+    "answer": 1,
+    "explanation": "Search engines employ Result caching (exact query to final SERP), Intermediate/Posting list caching (frequent terms' compressed posting lists in RAM), and Document/Snippet caching."
+  },
+  {
+    "id": "q15_13",
+    "chapter": 15,
+    "question": "What cache eviction strategy is most standard for search engine result and postings caches?",
+    "options": [
+      "First In First Out (FIFO)",
+      "Least Recently Used (LRU) or Segmented LRU (SLRU)",
+      "Random Drop",
+      "Alphabetical Drop"
+    ],
+    "answer": 1,
+    "explanation": "LRU and SLRU prioritize keeping frequently and recently searched terms and query results in cache, fitting power-law query distributions (Zipf's law)."
+  },
+  {
+    "id": "q15_14",
+    "chapter": 15,
+    "question": "What is 'Tiering' in index storage (Tiered Indexing)?",
+    "options": [
+      "Dividing index shards into tiers based on document quality/authority (Tier 1: high PageRank/fresh; Tier 2: deep archive)",
+      "Classifying users by subscription levels",
+      "Storing odd document IDs on SSDs and even document IDs on HDDs",
+      "Running MapReduce on 3 different cloud providers"
+    ],
+    "answer": 0,
+    "explanation": "Tiered indexing organizes documents by static quality (e.g. PageRank, authority). Queries first search Tier 1; if sufficient high-scoring matches are found, Tier 2 (lower authority archive) is never touched, saving computational cost."
+  },
+  {
+    "id": "q15_15",
+    "chapter": 15,
+    "question": "In Elasticsearch and Apache Lucene, what is a 'Segment'?",
+    "options": [
+      "An individual network cable connecting servers",
+      "An immutable mini-inverted index file written to disk; new documents create new segments which are merged in the background",
+      "A single paragraph within a PDF document",
+      "A user search session"
+    ],
+    "answer": 1,
+    "explanation": "Lucene indices are made of immutable segments. Writes are appended to new in-memory buffers and flushed as new segments. A background merge process combines smaller segments into larger ones."
+  },
+  {
+    "id": "q15_16",
+    "chapter": 15,
+    "question": "Why are Lucene segments made immutable rather than allowing in-place updates?",
+    "options": [
+      "Immutability eliminates concurrent lock contention, simplifies caching, and allows sequential file writes",
+      "Immutability makes deleting documents impossible",
+      "Operating systems cannot modify binary files",
+      "Because Java strings are immutable"
+    ],
+    "answer": 0,
+    "explanation": "Immutability allows lock-free concurrent reads, efficient OS page cache utilization, and predictable compression without handling scattered fragmentations or read-write locks."
+  },
+  {
+    "id": "q15_17",
+    "chapter": 15,
+    "question": "How are document deletions handled in an immutable segment architecture like Lucene/Elasticsearch?",
+    "options": [
+      "The entire hard drive is formatted and rebuilt",
+      "A bitset (tombstone / deletion bitmap) marks the doc ID as deleted; actual removal occurs during background segment merging",
+      "The segment file is immediately deleted",
+      "The search engine returns an error whenever deleted doc IDs are accessed"
+    ],
+    "answer": 1,
+    "explanation": "Deletions write a tombstone bit in a `.del` bitmap. During query execution, matches with their bit set are filtered out. The deleted documents are permanently discarded when segments are merged."
+  },
+  {
+    "id": "q15_18",
+    "chapter": 15,
+    "question": "What is the function of the 'Commit Log' or 'Write-Ahead Log' (WAL / Translog) in distributed real-time indexing?",
+    "options": [
+      "To log user search queries for ad targeting",
+      "To guarantee durability by recording indexing operations to append-only disk storage before in-memory segments are fsynced",
+      "To monitor CPU temperatures in the server rack",
+      "To track Git commits of the search engine codebase"
+    ],
+    "answer": 1,
+    "explanation": "A write-ahead log ensures data durability. If a node crashes before in-memory index buffers are flushed to Lucene segments on disk, the translog is replayed on reboot to recover uncommitted documents."
+  },
+  {
+    "id": "q15_19",
+    "chapter": 15,
+    "question": "What is 'Routing' in distributed document indexing?",
+    "options": [
+      "Directing network packets via BGP routers",
+      "The formula or key used to determine which specific shard a document ID belongs to (e.g., hash(DocID) % num_shards)",
+      "Routing crawler spiders to specific domains",
+      "Choosing between HTTP/1.1 and HTTP/2"
+    ],
+    "answer": 1,
+    "explanation": "Routing maps a document identifier or custom routing value to a target shard index using a consistent hash function modulo total primary shards."
+  },
+  {
+    "id": "q15_20",
+    "chapter": 15,
+    "question": "What is the 'Split-Brain' problem in distributed cluster management, and how is it prevented?",
+    "options": [
+      "When CPU cores overheat and fail; prevented by liquid cooling",
+      "When network partitions cause two sets of nodes to each elect their own master, leading to inconsistent state; prevented by quorum (majority: N/2 + 1)",
+      "When a crawler parses both XML and JSON simultaneously",
+      "When a query contains contradictory boolean operators"
+    ],
+    "answer": 1,
+    "explanation": "Split-brain happens if disconnected cluster partitions elect separate leaders. Enforcing quorum consensus (requiring strictly > 50% majority votes, e.g. via Raft or Paxos) guarantees only one valid master can exist."
+  },
+  {
+    "id": "q15_21",
+    "chapter": 15,
+    "question": "In a distributed search cluster, what is the role of Consensus algorithms (e.g., Raft, Paxos, ZooKeeper)?",
+    "options": [
+      "To calculate cosine similarity between documents",
+      "To maintain consistent cluster state, shard metadata, leader elections, and node health mappings",
+      "To rank search results using PageRank",
+      "To compress inverted postings lists"
+    ],
+    "answer": 1,
+    "explanation": "Distributed coordination mechanisms maintain cluster topology, elect master/coordinator nodes, track shard allocations, and ensure all nodes agree on authoritative metadata."
+  },
+  {
+    "id": "q15_22",
+    "chapter": 15,
+    "question": "What is 'Dynamic Pruning' (such as WAND or Block-Max WAND) in index shard scoring?",
+    "options": [
+      "Pruning dead web links during crawling",
+      "Skipping document postings that mathematically cannot score higher than the current k-th best candidate during traversal",
+      "Deleting old index files automatically when storage exceeds 90%",
+      "Dropping slow network packets at the NIC buffer"
+    ],
+    "answer": 1,
+    "explanation": "WAND (Weak AND) and Block-Max WAND calculate upper-bound scores for postings blocks. If an entire block's upper bound cannot exceed the k-th highest score seen so far, the entire block is skipped without full score computation."
+  },
+  {
+    "id": "q15_23",
+    "chapter": 15,
+    "question": "What is the primary trade-off when increasing the number of shards for an index?",
+    "options": [
+      "Smaller shard size and parallel search speedup vs higher coordination overhead, broker fan-out latency, and resource footprint",
+      "Decreased fault tolerance vs increased RAM compression",
+      "Improved PageRank vs decreased TF-IDF precision",
+      "Higher disk space vs lower indexing throughput"
+    ],
+    "answer": 0,
+    "explanation": "More shards allow data to scale across more hardware, but high shard counts burden the broker node with scatter-gather network overhead, segment merges, and heap overhead."
+  },
+  {
+    "id": "q15_24",
+    "chapter": 15,
+    "question": "In distributed search, what is 'Query Broadness' or 'Scatter-Gather Fan-out'?",
+    "options": [
+      "Broadcasting the search request to all leaf shards simultaneously and gathering their intermediate top-k lists",
+      "Distributing ad impressions across social media",
+      "Splitting words into character n-grams",
+      "Executing queries across multiple search engines like Bing and Google"
+    ],
+    "answer": 0,
+    "explanation": "Scatter-gather broadcasts the query across all shards hosting parts of the collection (scatter) and collects the partial rankings to produce the combined result (gather)."
+  },
+  {
+    "id": "q15_25",
+    "chapter": 15,
+    "question": "What happens if a broker asks each of 100 shards for top-100 results?",
+    "options": [
+      "The broker receives 10,000 candidate records, sorts them in memory, and selects the true top-100 global results",
+      "The cluster crashes due to mathematical impossibility",
+      "Only the first shard responds; the other 99 are ignored",
+      "All 10,000 results are displayed to the user on page 1"
+    ],
+    "answer": 0,
+    "explanation": "Gathering top-k from each shard yields N*k candidate items. The broker merges them (via min-heap / priority queue) to determine the definitive top-k results globally."
+  },
+  {
+    "id": "q15_26",
+    "chapter": 15,
+    "question": "Why is deep pagination (e.g. requesting page 10,000 = offset 100,000) extremely expensive in distributed search engines?",
+    "options": [
+      "Because web crawlers must re-crawl page 10,000",
+      "Because each shard must compute and return top (offset + k) documents to the broker, which then sorts millions of items",
+      "Because pagination is unsupported in inverted indexes",
+      "Because user session cookies expire"
+    ],
+    "answer": 1,
+    "explanation": "To return items from offset 100,000 to 100,010 across 50 shards, each shard must collect its local top 100,010 documents. The broker then merges 5,000,500 documents in memory, causing heavy CPU and memory spikes."
+  },
+  {
+    "id": "q15_27",
+    "chapter": 15,
+    "question": "What technique solves the deep pagination bottleneck in modern distributed search engines (e.g. Elasticsearch `search_after`)?",
+    "options": [
+      "Disabling pagination entirely",
+      "Cursor-based pagination using sort key values of the last tie-breaker document instead of integer offsets",
+      "Converting the index to a single-node MySQL table",
+      "Pre-rendering all pages into static HTML files"
+    ],
+    "answer": 1,
+    "explanation": "`search_after` / keyset pagination uses the sort values (e.g. score + doc_id) of the last result on the current page to filter subsequent queries, avoiding large offset allocations across shards."
+  },
+  {
+    "id": "q15_28",
+    "chapter": 15,
+    "question": "In MapReduce, what is the role of the 'Combiner' in indexing pipelines?",
+    "options": [
+      "To combine hard drives in RAID arrays",
+      "To perform localized pre-aggregation/sorting of term frequencies on the mapper node before emitting data across the network to reducers",
+      "To combine search queries from different users",
+      "To translate English queries into Vietnamese"
+    ],
+    "answer": 1,
+    "explanation": "A combiner acts as a mini-reducer on the mapper node, collapsing multiple identical term counts for local docs to drastically reduce intermediate network bandwidth during the shuffle phase."
+  },
+  {
+    "id": "q15_29",
+    "chapter": 15,
+    "question": "What is 'Primary-Replica' synchronization in distributed index updates?",
+    "options": [
+      "Index write requests are sent to the primary shard, validated and written, then forwarded concurrently to active replica shards",
+      "All replicas write first and then inform the primary",
+      "Replicas synchronize only once every 24 hours at midnight",
+      "Only primary shards can serve search queries"
+    ],
+    "answer": 0,
+    "explanation": "The primary shard coordinates indexing: it assigns sequential operation numbers, writes locally, and replicates the changes in parallel to its replica shards before acknowledging success."
+  },
+  {
+    "id": "q15_30",
+    "chapter": 15,
+    "question": "What is the CAP Theorem trade-off commonly adopted by web search engine query serving systems?",
+    "options": [
+      "Strict Consistency over Availability (CP)",
+      "High Availability and Partition Tolerance over Immediate Consistency (AP / Eventual Consistency)",
+      "Complete sacrifice of Partition Tolerance",
+      "Search engines don't adhere to CAP theorem"
+    ],
+    "answer": 1,
+    "explanation": "Search engines prioritize availability and low latency. If a replica index shard is a few milliseconds behind or temporarily disconnected, it still serves slightly stale results rather than failing the user query."
+  },
+  {
+    "id": "q15_31",
+    "chapter": 15,
+    "question": "What is 'Warm-up / Pre-warming' of search engine caches?",
+    "options": [
+      "Running CPU stress tests to heat up server hardware",
+      "Executing frequent queries against newly opened index segments or shards before directing live production user traffic to them",
+      "Warming up the office server room",
+      "Pre-allocating temporary swap files on disk"
+    ],
+    "answer": 1,
+    "explanation": "Pre-warming executes common queries and loads hot postings/filters into memory so the first real user requests don't suffer severe cold-start latency spikes."
+  },
+  {
+    "id": "q15_32",
+    "chapter": 15,
+    "question": "What is the 'Early Termination' optimization in distributed retrieval?",
+    "options": [
+      "Shutting down the search engine after 8 hours of work",
+      "Terminating query evaluation once a shard has accumulated enough high-confidence candidates to satisfy top-k ranking",
+      "Terminating the user's internet connection if they query too fast",
+      "Cancelling crawl jobs that take more than 5 minutes"
+    ],
+    "answer": 1,
+    "explanation": "Early termination halts postings traversal early (e.g. after examining the top quality-sorted documents), guaranteeing latency limits while losing negligible relevance."
+  },
+  {
+    "id": "q15_33",
+    "chapter": 15,
+    "question": "How does 'Impact-Ordered Postings' assist early termination?",
+    "options": [
+      "Postings lists are sorted by decreasing term weight / TF-IDF score rather than ascending DocID, allowing immediate evaluation of top contributors",
+      "Postings are sorted by domain authority alphabetically",
+      "Postings are ordered by file size",
+      "Postings are scrambled randomly to balance disk I/O"
+    ],
+    "answer": 0,
+    "explanation": "Sorting postings by term impact (tf or tf*idf) ensures the highest scoring documents are processed first. Evaluation can safely stop once scores fall below a dynamic threshold."
+  },
+  {
+    "id": "q15_34",
+    "chapter": 15,
+    "question": "What is the difference between Batch Indexing and Real-Time / Incremental Indexing?",
+    "options": [
+      "Batch rebuilding re-indexes the entire corpus periodically (e.g., via MapReduce); real-time streams document updates directly into memory buffers for near-instant retrieval",
+      "Batch indexing only works for text; real-time only works for images",
+      "Real-time indexing deletes the index after each query",
+      "Batch indexing requires no storage space"
+    ],
+    "answer": 0,
+    "explanation": "Batch indexing rebuilds entire index partitions periodically, while real-time/near-real-time (NRT) architectures append to memory buffers and micro-segments to make new docs searchable within seconds."
+  },
+  {
+    "id": "q15_35",
+    "chapter": 15,
+    "question": "What is 'Near-Real-Time' (NRT) search in Lucene?",
+    "options": [
+      "Search results are updated once every calendar year",
+      "Making newly indexed documents searchable by opening new readers on uncommitted in-memory index segments without waiting for a costly disk fsync",
+      "Searching with voice recognition in real time",
+      "Syncing documents via satellite internet"
+    ],
+    "answer": 1,
+    "explanation": "NRT refreshes the IndexReader over in-memory segment buffers every few seconds (e.g. 1s), allowing immediate visibility before the full durable disk commit."
+  },
+  {
+    "id": "q15_36",
+    "chapter": 15,
+    "question": "What is 'Consistent Hashing' used for in distributed storage and caching?",
+    "options": [
+      "Hashing passwords consistently",
+      "Minimizing data reorganization and cache misses when nodes are added or removed from the cluster",
+      "Encrypting document contents with SHA-256",
+      "Generating identical checksums for duplicate web pages"
+    ],
+    "answer": 1,
+    "explanation": "Consistent hashing maps nodes and keys to a virtual ring. When a node joins or leaves, only K/N keys need to be remapped on average, avoiding full-cluster reshuffling."
+  },
+  {
+    "id": "q15_37",
+    "chapter": 15,
+    "question": "In distributed search clusters, what is the 'Master Node' / 'Cluster Coordinator' responsible for?",
+    "options": [
+      "Executing tokenization on all incoming documents",
+      "Managing cluster state, node discovery, shard rebalancing, and index creation/deletion",
+      "Serving all end-user search queries directly",
+      "Powering server cooling systems"
+    ],
+    "answer": 1,
+    "explanation": "The dedicated master node oversees cluster topology, creates/allocates shards, monitors heartbeat pings from data nodes, and rebalances shards when nodes fail."
+  },
+  {
+    "id": "q15_38",
+    "chapter": 15,
+    "question": "Why should dedicated master nodes in a production Elasticsearch cluster not serve search queries or index data?",
+    "options": [
+      "Because master nodes do not have CPUs",
+      "To prevent heavy CPU/memory garbage collection pauses caused by queries from interrupting cluster management heartbeats and triggering false failovers",
+      "Master nodes cannot read index files",
+      "To prevent hackers from reading search logs"
+    ],
+    "answer": 1,
+    "explanation": "Isolating master nodes from query scoring and indexing protects them from memory pressure and JVM GC stalls, ensuring reliable cluster coordination."
+  },
+  {
+    "id": "q15_39",
+    "chapter": 15,
+    "question": "What is 'Index Slicing / Sliced Scroll' used for in distributed search engines?",
+    "options": [
+      "Slicing documents into smaller sentences",
+      "Partitioning a deep export/scroll operation across multiple shards and threads to extract massive datasets in parallel",
+      "Deleting index slices that are older than 30 days",
+      "Splitting search queries into individual characters"
+    ],
+    "answer": 1,
+    "explanation": "Sliced scrolling splits a scrolling cursor across multiple worker threads or shards, greatly accelerating bulk data extraction and analytics."
+  },
+  {
+    "id": "q15_40",
+    "chapter": 15,
+    "question": "What is 'Circuit Breaker' in distributed search systems like Elasticsearch?",
+    "options": [
+      "A hardware surge protector for server racks",
+      "A software protection mechanism that tracks memory usage and aborts operations if they would cause an OutOfMemoryError (OOM)",
+      "A firewall blocking malicious IP addresses",
+      "A tool that breaks long words into syllables"
+    ],
+    "answer": 1,
+    "explanation": "Circuit breakers estimate the memory required for fielddata, inflight requests, or parent allocations, rejecting queries gracefully with an exception before the JVM crashes from OOM."
+  },
+  {
+    "id": "q15_41",
+    "chapter": 15,
+    "question": "In inverted index construction via MapReduce, what is the 'Shuffle' phase?",
+    "options": [
+      "Randomly shuffling documents to prevent bias",
+      "Transferring intermediate key-value pairs across the network so all values for the same key (term) land on the same reducer",
+      "Shuffling user queries to load balance traffic",
+      "Compressing disk blocks"
+    ],
+    "answer": 1,
+    "explanation": "Shuffle and sort routes intermediate mapper outputs across the network, grouping all postings associated with a specific term onto a designated reducer node."
+  },
+  {
+    "id": "q15_42",
+    "chapter": 15,
+    "question": "What is the purpose of 'Replica Routing / Adaptive Replica Selection (ARS)' in modern distributed search?",
+    "options": [
+      "Routing queries strictly in round-robin fashion regardless of load",
+      "Directing queries to the replica shard with the lowest queue depth, shortest response time, and least node resource usage",
+      "Routing requests only to replicas hosted in North America",
+      "Selecting replicas based on the alphabetical order of hostnames"
+    ],
+    "answer": 1,
+    "explanation": "ARS evaluates node response time, thread pool queue backlog, and service times to route search queries dynamically to the fastest, least burdened replica."
+  },
+  {
+    "id": "q15_43",
+    "chapter": 15,
+    "question": "What is 'Index Lifecycle Management' (ILM) / 'Hot-Warm-Cold Architecture'?",
+    "options": [
+      "Keeping servers warm in winter and cool in summer",
+      "Migrating indices from high-performance NVMe nodes (Hot) to high-capacity HDDs (Warm/Cold) and finally deleting them as data ages",
+      "Shutting down cold shards during the night",
+      "Deleting all indices after 24 hours"
+    ],
+    "answer": 1,
+    "explanation": "Hot-warm-cold architectures optimize cost and performance: active ingestion happens on fast NVMe SSDs; older, less-frequently queried indices move to cheaper, high-density storage."
+  },
+  {
+    "id": "q15_44",
+    "chapter": 15,
+    "question": "What is 'Distributed Inverted Index Merging' (Segment Merging)?",
+    "options": [
+      "Merging two different companies' search engines",
+      "A background process that reads multiple smaller sorted posting segments and writes a single consolidated, sorted, and purged segment to optimize read performance",
+      "Merging the query log with the crawl queue",
+      "Intersecting two search terms at query time"
+    ],
+    "answer": 1,
+    "explanation": "Segment merging prevents shard performance from degrading over time by consolidating small segments, purging deleted documents, and rewriting sequential posting lists."
+  },
+  {
+    "id": "q15_45",
+    "chapter": 15,
+    "question": "Why is 'DocValues' (columnar storage) maintained alongside inverted indexes in modern search engines?",
+    "options": [
+      "To replace inverted indexes entirely",
+      "To enable fast sorting, aggregations, and script evaluations by storing doc-to-value mappings on disk",
+      "To store full uncompressed HTML pages",
+      "To speed up exact term lookups"
+    ],
+    "answer": 1,
+    "explanation": "Inverted indexes map terms to documents (fast for search). DocValues map documents to field values column-wise, which is vastly faster and memory-friendly for sorting, faceting, and aggregations."
+  },
+  {
+    "id": "q15_46",
+    "chapter": 15,
+    "question": "What is 'Fielddata' and why can it cause severe memory issues if misconfigured?",
+    "options": [
+      "Data harvested from agricultural fields",
+      "In-memory un-inverted index loaded on heap for text aggregations, which can consume massive RAM and trigger OOM crashes",
+      "A database table storing user profile fields",
+      "A type of CSS stylesheet"
+    ],
+    "answer": 1,
+    "explanation": "Fielddata un-inverts analyzed text fields on the JVM heap for aggregations. Because analyzing millions of text tokens demands enormous heap space, DocValues (disk-based) is preferred for keyword fields."
+  },
+  {
+    "id": "q15_47",
+    "chapter": 15,
+    "question": "How does a distributed search engine calculate Global Term Frequencies (IDF) accurately across sharded indexes?",
+    "options": [
+      "Shards guess the global term frequency randomly",
+      "Using Distributed Frequency Search (DFS), where an initial phase broadcasts term queries to gather global doc frequencies before scoring",
+      "By setting IDF to 1 for all terms",
+      "By merging all documents into a single shard before querying"
+    ],
+    "answer": 1,
+    "explanation": "Normally each shard calculates score based on local shard stats. To ensure exact global IDF consistency across shards, `dfs_query_then_fetch` conducts a pre-pass to collect exact global term frequencies."
+  },
+  {
+    "id": "q15_48",
+    "chapter": 15,
+    "question": "What is the danger of running with a high number of very small shards in a distributed search cluster?",
+    "options": [
+      "Postings lists cannot be compressed",
+      "Overwhelming cluster state metadata, excessive thread context switching, and wasted heap memory per Lucene index reader",
+      "The search engine cannot run on 64-bit operating systems",
+      "Data will be duplicated across the internet"
+    ],
+    "answer": 1,
+    "explanation": "Each shard is a full Lucene index requiring file handles, memory buffers, and thread pool resources. Having thousands of tiny shards wastes heap space and overwhelms master node state sync."
+  },
+  {
+    "id": "q15_49",
+    "chapter": 15,
+    "question": "What is 'Cross-Cluster Search' (CCS)?",
+    "options": [
+      "Searching across multiple independent clusters located in different data centers or cloud regions from a single query endpoint",
+      "Searching for words written in different font clusters",
+      "Cross-referencing search results with Wikipedia articles",
+      "Running queries on both Windows and Linux simultaneously"
+    ],
+    "answer": 0,
+    "explanation": "Cross-Cluster Search enables federated querying across multiple distinct Elasticsearch or search clusters without combining their data or master topologies."
+  },
+  {
+    "id": "q15_50",
+    "chapter": 15,
+    "question": "What is a 'Canary Query' or 'Synthetic Heartbeat Query' in search cluster operations?",
+    "options": [
+      "A query searching for rare birds",
+      "Automated queries sent continuously by monitoring systems to verify end-to-end search latency, index availability, and result accuracy",
+      "A query sent by web crawlers to test internet speed",
+      "A query that automatically repairs broken hard disks"
+    ],
+    "answer": 1,
+    "explanation": "Synthetic probes/canary queries continuously exercise the full search engine pipeline to detect latent failures, disk stalls, or latency degradations before end users are impacted."
+  },
+  {
+    "id": "q16_01",
+    "chapter": 16,
+    "question": "What is 'Learning to Rank' (LTR) in modern Information Retrieval?",
+    "options": [
+      "Teaching users how to rank search results manually",
+      "Applying supervised machine learning to construct ranking models from feature vectors and relevance annotations",
+      "Ranking machine learning papers on arXiv",
+      "A sorting algorithm similar to Quicksort"
+    ],
+    "answer": 1,
+    "explanation": "Learning to Rank applies machine learning algorithms to automatically optimize document ranking using hundreds of multi-modal features and labeled training queries."
+  },
+  {
+    "id": "q16_02",
+    "chapter": 16,
+    "question": "What are the three fundamental algorithmic approaches to Learning to Rank?",
+    "options": [
+      "Linear, Quadratic, Exponential",
+      "Pointwise, Pairwise, and Listwise approaches",
+      "Supervised, Unsupervised, Semi-supervised",
+      "Forward, Backward, Bidirectional"
+    ],
+    "answer": 1,
+    "explanation": "LTR methods are categorized by their input representation and loss function: Pointwise (individual docs), Pairwise (pairs of docs), and Listwise (full ranked lists)."
+  },
+  {
+    "id": "q16_03",
+    "chapter": 16,
+    "question": "How does the 'Pointwise' Learning to Rank approach formulate the ranking problem?",
+    "options": [
+      "As standard regression or classification where each (query, document) pair is scored independently without considering other documents",
+      "By comparing pairs of documents and predicting which is more relevant",
+      "By directly optimizing list-level metrics like NDCG or MAP",
+      "By clustering documents into k clusters"
+    ],
+    "answer": 0,
+    "explanation": "Pointwise treats ranking as individual regression (predicting absolute relevance rating, e.g. 0 to 4) or ordinal classification on single query-doc feature vectors."
+  },
+  {
+    "id": "q16_04",
+    "chapter": 16,
+    "question": "What is the primary drawback of the Pointwise LTR approach?",
+    "options": [
+      "It cannot use machine learning models",
+      "It ignores the relative order and competition between documents within the same query result list",
+      "It is computationally too slow compared to Listwise",
+      "It only works with binary relevance"
+    ],
+    "answer": 1,
+    "explanation": "Ranking is fundamentally about relative ordering, not absolute score predictions. A document rated 3.8 vs 3.2 only matters if they compete in the same query's top results."
+  },
+  {
+    "id": "q16_05",
+    "chapter": 16,
+    "question": "How does the 'Pairwise' LTR approach formulate ranking?",
+    "options": [
+      "By classifying pairs of documents (DocA, DocB) for a given query to predict whether DocA should rank higher than DocB",
+      "By pairing queries with user demographic profiles",
+      "By training two separate neural networks in parallel",
+      "By computing cosine similarity between pairs of terms"
+    ],
+    "answer": 0,
+    "explanation": "Pairwise models take pairs of documents for the same query with different relevance levels and optimize binary classification: does Doc_i outrank Doc_j?"
+  },
+  {
+    "id": "q16_06",
+    "chapter": 16,
+    "question": "Which of the following is a classic example of a Pairwise LTR algorithm?",
+    "options": [
+      "RankNet",
+      "K-Means",
+      "PageRank",
+      "BM25"
+    ],
+    "answer": 0,
+    "explanation": "RankNet (Burges et al.) uses neural networks with cross-entropy loss over pairs of documents to model pairwise preferences."
+  },
+  {
+    "id": "q16_07",
+    "chapter": 16,
+    "question": "What is 'LambdaRank' and what key breakthrough did it introduce over RankNet?",
+    "options": [
+      "It replaced neural networks with decision trees exclusively",
+      "It directly scaled pairwise gradients (lambdas) by the change in target metric (|ΔNDCG|) resulting from swapping the two documents",
+      "It eliminated the need for feature engineering",
+      "It evaluated documents in O(1) time"
+    ],
+    "answer": 1,
+    "explanation": "LambdaRank bypassed non-smooth IR evaluation metrics (NDCG/MAP have zero gradients) by scaling pairwise gradients by the exact delta in NDCG gained by swapping the document pair."
+  },
+  {
+    "id": "q16_08",
+    "chapter": 16,
+    "question": "What is 'LambdaMART'?",
+    "options": [
+      "An online shopping portal for search engines",
+      "The combination of LambdaRank's gradient formulation (|ΔNDCG|) with Multiple Additive Regression Trees (MART / Gradient Boosted Decision Trees)",
+      "A clustering algorithm for text documents",
+      "A deep convolutional network for image search"
+    ],
+    "answer": 1,
+    "explanation": "LambdaMART combines gradient boosted decision trees (GBDT) with LambdaRank gradients. It won the Yahoo! Learning to Rank Challenge and became the industry gold standard."
+  },
+  {
+    "id": "q16_09",
+    "chapter": 16,
+    "question": "How does the 'Listwise' LTR approach differ fundamentally from Pointwise and Pairwise approaches?",
+    "options": [
+      "It processes only single-word queries",
+      "It treats the entire ranked list of documents for a query as a single instance and optimizes a list-level loss function directly",
+      "It sorts documents alphabetically",
+      "It ignores query text and only ranks by PageRank"
+    ],
+    "answer": 1,
+    "explanation": "Listwise methods (such as ListNet, ListMLE) define probability distributions or loss functions over full permutation lists, directly reflecting ranking objectives like NDCG."
+  },
+  {
+    "id": "q16_10",
+    "chapter": 16,
+    "question": "In LTR feature engineering, what is the difference between Query-Independent (Static) and Query-Dependent (Dynamic) features?",
+    "options": [
+      "Static features depend only on the document (e.g. PageRank, spam score, freshness); dynamic features evaluate the match between query and document (e.g. BM25, exact term match in title)",
+      "Static features change every second; dynamic features never change",
+      "Static features are computed at query time; dynamic features are precomputed during crawling",
+      "Static features are text; dynamic features are images"
+    ],
+    "answer": 0,
+    "explanation": "Query-independent (static) features reflect intrinsic document quality (PageRank, URL depth, inbound links). Query-dependent (dynamic) features measure relevance to the specific search query (BM25, proximity, exact matches)."
+  },
+  {
+    "id": "q16_11",
+    "chapter": 16,
+    "question": "What are 'Query-Level Features' in LTR models?",
+    "options": [
+      "Features of the query itself, such as query length, language, entropy, historical frequency, and intent classification",
+      "The CSS styling of the query box",
+      "The document IDs returned by the crawler",
+      "The IP address of the data center"
+    ],
+    "answer": 0,
+    "explanation": "Query-level features describe the query context, helping models adapt scoring behavior for long tail queries vs head navigational queries."
+  },
+  {
+    "id": "q16_12",
+    "chapter": 16,
+    "question": "Why is multi-stage ranking (Multi-Stage Retrieval Architecture) standard in web search engines?",
+    "options": [
+      "Because deep learning models and GBDTs are too computationally expensive to score millions of candidate documents in milliseconds",
+      "Because single-stage ranking produces duplicate results",
+      "Because web browsers cannot render more than 10 documents at once",
+      "Because inverted indexes cannot store numbers"
+    ],
+    "answer": 0,
+    "explanation": "First-stage retrieval (BM25 / vector retrieval) filters billions of documents down to top ~1,000 candidates in 10-20ms. Second-stage (GBDT / LTR) reranks top-1,000. Third-stage (heavy Cross-Encoder) reranks top-50."
+  },
+  {
+    "id": "q16_13",
+    "chapter": 16,
+    "question": "What is 'Position Bias' in implicit feedback (click logs) used for LTR training?",
+    "options": [
+      "Users tend to click documents near the bottom of the page",
+      "Users are far more likely to examine and click top-ranked items regardless of their actual relevance",
+      "The bias of server physical location in data centers",
+      "The tendency of search engines to prefer left-aligned text"
+    ],
+    "answer": 1,
+    "explanation": "Position bias is the tendency of users to examine items at rank 1 much more frequently than rank 5. A click at rank 1 does not imply higher relevance than an unexamined item at rank 10."
+  },
+  {
+    "id": "q16_14",
+    "chapter": 16,
+    "question": "What is the 'Examination Hypothesis' in click models?",
+    "options": [
+      "Students must take an exam before using search engines",
+      "A document is clicked if and only if it is examined by the user AND it is perceived as relevant: P(Click) = P(Examined) * P(Relevant)",
+      "Search engines examine code quality every hour",
+      "Users click every link they see"
+    ],
+    "answer": 1,
+    "explanation": "The examination hypothesis decomposes click probability into the product of examination probability (dependent mostly on position) and relevance probability."
+  },
+  {
+    "id": "q16_15",
+    "chapter": 16,
+    "question": "What is 'Inverse Propensity Weighting' (IPW) in unbiased Learning to Rank?",
+    "options": [
+      "Weighting training clicks inversely by their examination probability (1 / P(Examined | rank)) to debias position effects",
+      "Inverting document text to train backwards",
+      "Decreasing weights of highly relevant documents",
+      "Sorting documents in reverse alphabetical order"
+    ],
+    "answer": 0,
+    "explanation": "IPW corrects for selection/position bias by giving clicks on lower ranks much higher training weights (since examining them was rare) and downweighting top-rank clicks."
+  },
+  {
+    "id": "q16_16",
+    "chapter": 16,
+    "question": "What is 'Cascade Model' in user click modeling?",
+    "options": [
+      "A model where users view results cascading down in random order",
+      "A sequential model where users browse results top-to-bottom; they examine each item, click if relevant, and may stop searching",
+      "A model simulating water flowing through server racks",
+      "A model where multiple queries are issued in rapid succession"
+    ],
+    "answer": 1,
+    "explanation": "The Cascade Model assumes users scan linearly from rank 1 downward. When they find an acceptable document, they click and either abandon or continue."
+  },
+  {
+    "id": "q16_17",
+    "chapter": 16,
+    "question": "In Deep Relevance Matching, what is the 'DSSM' (Deep Structured Semantic Models) architecture?",
+    "options": [
+      "A Siamese-style dual-encoder that projects queries and documents into a shared low-dimensional semantic embedding space using word hashing and deep feedforward networks",
+      "A decision tree model for tabular data",
+      "A crawler architecture for dark web indexing",
+      "An image compression algorithm"
+    ],
+    "answer": 0,
+    "explanation": "DSSM (Huang et al., 2013) uses character n-gram word hashing and deep neural layers to embed queries and documents into a shared 128-d vector space, scoring relevance via cosine similarity."
+  },
+  {
+    "id": "q16_18",
+    "chapter": 16,
+    "question": "Why did DSSM introduce 'Word Hashing' using character trigrams (e.g. '#cat#' -> '#ca', 'cat', 'at#')?",
+    "options": [
+      "To encrypt documents for military security",
+      "To drastically reduce vocabulary dimensionality (e.g. from 500,000 words to 30,000 trigrams) and handle Out-Of-Vocabulary (OOV) misspellings gracefully",
+      "To speed up inverted index compression",
+      "To translate queries into foreign languages"
+    ],
+    "answer": 1,
+    "explanation": "Character n-gram hashing reduces the large vocabulary to a fixed, compact vector while naturally handling unseen words, typos, and morphological variants."
+  },
+  {
+    "id": "q16_19",
+    "chapter": 16,
+    "question": "What is the key architectural difference between Representation-Focused (Dual-Encoder) and Interaction-Focused neural IR models?",
+    "options": [
+      "Representation models encode query and document independently into vectors before comparison; Interaction models build word-level interaction matrices first and extract patterns via CNN/MLP",
+      "Representation models use GPUs while Interaction models use CPUs",
+      "Interaction models cannot use neural networks",
+      "Representation models only work on images"
+    ],
+    "answer": 0,
+    "explanation": "Dual-Encoders (DSSM, ColBERT) build separate embeddings for query and document. Interaction-focused models (DRMM, K-NRM) compute exact term-term match matrices, preserving vital word matching and proximity signals."
+  },
+  {
+    "id": "q16_20",
+    "chapter": 16,
+    "question": "What is 'DRMM' (Deep Relevance Matching Model)?",
+    "options": [
+      "An interaction-focused neural model that maps each query term to document terms via cosine similarities, builds matching histograms, and scores with feedforward layers",
+      "A distributed crawler database",
+      "A ranking algorithm based purely on document word counts",
+      "A digital rights management module"
+    ],
+    "answer": 0,
+    "explanation": "DRMM (Guo et al., 2016) builds matching histograms for each query word against all doc words, retaining exact matches and semantic similarity distributions while remaining query-term focused."
+  },
+  {
+    "id": "q16_21",
+    "chapter": 16,
+    "question": "What is 'K-NRM' (Kernel Neural Ranking Model)?",
+    "options": [
+      "A neural ranking model that uses Gaussian RBF kernels to extract soft-match pooling features from a word-level query-document translation matrix",
+      "A kernel regression model for predicting weather",
+      "A clustering model for search logs",
+      "An operating system kernel module for search"
+    ],
+    "answer": 0,
+    "explanation": "K-NRM uses Gaussian kernels with varying centers and widths to pool term interaction scores into multi-level similarity signals, differentiating exact matches from weak semantic relatedness."
+  },
+  {
+    "id": "q16_22",
+    "chapter": 16,
+    "question": "What is 'ColBERT' and what retrieval paradigm does it represent?",
+    "options": [
+      "A TV show transcript search tool",
+      "Late Interaction over contextualized token embeddings: computes MaxSim (maximum cosine similarity) between every query token and document token",
+      "A simple single-vector bi-encoder model",
+      "A rule-based regular expression parser"
+    ],
+    "answer": 1,
+    "explanation": "ColBERT (Khattab & Zaharia) uses token-level contextual representations with Late Interaction: doc tokens are pre-embedded and indexed, and query evaluation computes efficient MaxSim operations across tokens."
+  },
+  {
+    "id": "q16_23",
+    "chapter": 16,
+    "question": "Why is ColBERT's 'Late Interaction' significantly faster than a full BERT Cross-Encoder during retrieval?",
+    "options": [
+      "Because it does not use BERT",
+      "Because document token vectors can be precomputed and indexed offline; only fast vector dot-products are performed at query time rather than full cross-attention",
+      "Because it converts all words to ASCII",
+      "Because it runs only on quantum computers"
+    ],
+    "answer": 1,
+    "explanation": "Cross-encoders must re-run deep Transformer layers over (query + document) concatenation for every candidate at query time. ColBERT precomputes document representations offline, leaving only lightweight vector operations at runtime."
+  },
+  {
+    "id": "q16_24",
+    "chapter": 16,
+    "question": "What is 'Cross-Entropy with Softmax' over a candidate list in neural ranking?",
+    "options": [
+      "Treating ranking as predicting which single document in a sampled pool of candidates is the target positive, normalized via Softmax",
+      "Computing entropy of dictionary words",
+      "A loss function used only for unsupervised clustering",
+      "A method to encrypt search queries"
+    ],
+    "answer": 0,
+    "explanation": "Listwise neural ranking commonly models relevance probabilities over candidates via Softmax and minimizes cross-entropy with ground-truth relevant document indicators."
+  },
+  {
+    "id": "q16_25",
+    "chapter": 16,
+    "question": "What is 'Hard Negative Mining' in training neural IR models?",
+    "options": [
+      "Deleting bad reviews from Google Maps",
+      "Selecting non-relevant documents that have high lexical or vector similarity to the query (e.g. top BM25 negatives) to challenge and refine the neural model",
+      "Mining cryptocurrency using search servers",
+      "Extracting negative integers from database columns"
+    ],
+    "answer": 1,
+    "explanation": "Random negatives are too easy for models to distinguish. Hard negatives (documents that share many words or high BM25 rank but are not relevant) force the model to learn nuanced semantic discriminators."
+  },
+  {
+    "id": "q16_26",
+    "chapter": 16,
+    "question": "What is 'Feature Normalization' (e.g., Z-score, Min-Max, or Rank Transformation) and why is it crucial for LTR models?",
+    "options": [
+      "To translate features into French",
+      "To prevent features with large numeric scales (like raw document length or PageRank) from dominating gradient updates over bounded features (like BM25 or CTR)",
+      "To compress the database onto disk",
+      "To remove punctuation from documents"
+    ],
+    "answer": 1,
+    "explanation": "Features come in drastically different scales (PageRank 0-10 vs Page length 1-50,000). Normalizing per query or globally ensures stable gradient descent and balanced tree splits."
+  },
+  {
+    "id": "q16_27",
+    "chapter": 16,
+    "question": "In Gradient Boosted Decision Trees (GBDT) for ranking, what is the role of the learning rate (shrinkage parameter)?",
+    "options": [
+      "To shrink the size of web pages",
+      "To scale the contribution of each newly added tree, preventing overfitting and smoothing convergence",
+      "To speed up the internet connection",
+      "To limit the number of users on the search engine"
+    ],
+    "answer": 1,
+    "explanation": "Shrinkage scales each tree's update by a factor η (typically 0.01 - 0.1), preventing any single decision tree from dominating predictions and boosting generalization on unseen queries."
+  },
+  {
+    "id": "q16_28",
+    "chapter": 16,
+    "question": "What is 'Feature Importance' in tree-based LTR (e.g. LightGBM / XGBoost)?",
+    "options": [
+      "Counting how many times a feature is used to split nodes across all trees and the total gain/loss reduction it provides",
+      "A subjective rating assigned by software engineers",
+      "The size of the feature name in bytes",
+      "The alphabetical rank of the feature"
+    ],
+    "answer": 0,
+    "explanation": "Tree-based models quantify feature importance via Split Count (frequency) and Total Gain (sum of variance/gradient reduction across all splits using that feature)."
+  },
+  {
+    "id": "q16_29",
+    "chapter": 16,
+    "question": "What is 'Data Leakage' in LTR model evaluation, and how is it prevented?",
+    "options": [
+      "When server memory leaks into disk swap",
+      "When documents or queries from the same search session or query string appear in both training and test sets; prevented by grouping splits strictly by Query ID",
+      "When user passwords appear in search queries",
+      "When test data is accidentally deleted"
+    ],
+    "answer": 1,
+    "explanation": "Splitting datasets randomly by document causes identical queries to appear in both train and test sets, artificially inflating accuracy. Evaluation splits must be strictly partitioned by Query ID."
+  },
+  {
+    "id": "q16_30",
+    "chapter": 16,
+    "question": "What is 'Cold Start' problem in Learning to Rank?",
+    "options": [
+      "Starting servers in freezing weather conditions",
+      "The inability of LTR models to effectively rank new documents or rare queries that lack historical click, engagement, and behavioral features",
+      "The time taken to compile Python code",
+      "When an inverted index file is corrupted on boot"
+    ],
+    "answer": 1,
+    "explanation": "New documents have zero historical clicks, dwell time, or link graph data. Models must rely strictly on content-based and lexical matching until sufficient behavioral signals accumulate."
+  },
+  {
+    "id": "q16_31",
+    "chapter": 16,
+    "question": "What is 'Dwell Time' and why is it used as an implicit satisfaction signal in LTR?",
+    "options": [
+      "The time a user spends sleeping between queries",
+      "The time elapsed between a user clicking a search result and returning back to the SERP (or navigating away); short dwell times indicate unsatisfactory results (bounce)",
+      "The time taken by the server to compute BM25 scores",
+      "The duration of an HTTP TCP handshake"
+    ],
+    "answer": 1,
+    "explanation": "Long dwell time (e.g. > 30-60 seconds) signals that the user found relevant content on the landing page, whereas a fast bounce back to the search page signals poor relevance."
+  },
+  {
+    "id": "q16_32",
+    "chapter": 16,
+    "question": "What is 'Query Reformulation' rate and how does it relate to search engine quality?",
+    "options": [
+      "The percentage of queries translated into another language",
+      "The frequency with which users issue a modified search immediately after receiving results, signaling that the initial results failed to satisfy their information need",
+      "The rate of syntax errors in boolean queries",
+      "The speed of typing keywords in the search bar"
+    ],
+    "answer": 1,
+    "explanation": "High reformulation rates within short sessions indicate user dissatisfaction with initial rankings, prompting them to rephrase keywords."
+  },
+  {
+    "id": "q16_33",
+    "chapter": 16,
+    "question": "What is 'Trust Bias' in web search click behavior?",
+    "options": [
+      "Users trusting that search engines are legally certified",
+      "The tendency of users to trust search engine rankings so much that they assume the top link is correct even when the snippet clearly shows it is irrelevant",
+      "The tendency of web crawlers to trust SSL certificates",
+      "A bias towards searching on governmental (.gov) websites"
+    ],
+    "answer": 1,
+    "explanation": "Eye-tracking studies demonstrate trust bias: users click higher ranked results simply because they believe the search engine has vetted them as the best answer."
+  },
+  {
+    "id": "q16_34",
+    "chapter": 16,
+    "question": "What is 'Exploration vs Exploitation' in online Learning to Rank (Bandit Algorithms)?",
+    "options": [
+      "Balancing showing historically top-performing documents (exploitation) with temporarily placing new/untested documents in high ranks (exploration) to gather click feedback",
+      "Exploring new data center locations vs exploiting existing ones",
+      "Mining bitcoin vs paying electricity bills",
+      "Crawling new websites vs indexing old websites"
+    ],
+    "answer": 0,
+    "explanation": "Multi-armed bandits balance exploiting current knowledge (showing known high-CTR documents) with exploring under-represented candidates to discover new relevant content."
+  },
+  {
+    "id": "q16_35",
+    "chapter": 16,
+    "question": "What is 'RankLib'?",
+    "options": [
+      "A popular open-source Java library of Learning to Rank algorithms (part of the Lemur Project) implementing algorithms like RankNet, LambdaMART, and ListNet",
+      "A library of military ranks",
+      "A C++ graphics library for rendering ranking charts",
+      "A Python wrapper for Wikipedia ranking"
+    ],
+    "answer": 0,
+    "explanation": "RankLib is a foundational open-source IR library that provides standard implementations for multiple LTR algorithms with standard LETOR dataset formats."
+  },
+  {
+    "id": "q16_36",
+    "chapter": 16,
+    "question": "In LETOR benchmark datasets (e.g. MSLR-WEB30K, Yahoo! LTR), what is the standard format of each training row?",
+    "options": [
+      "`<relevance_label> qid:<query_id> 1:<feat1_val> 2:<feat2_val> ... #docid = <id>`",
+      "`<docid>, <query>, <text>, <rating>`",
+      "`SELECT * FROM rankings WHERE qid = 1`",
+      "`JSON: { query: 'string', results: [...] }`"
+    ],
+    "answer": 0,
+    "explanation": "The standard SVMRank / LETOR format starts with the target relevance label, followed by `qid:<id>`, sparse feature index:value pairs, and optional comments (`#docid`)."
+  },
+  {
+    "id": "q16_37",
+    "chapter": 16,
+    "question": "What is 'Tree Complexity' (max_depth / num_leaves) regulation in LambdaMART?",
+    "options": [
+      "Pruning botanical trees in the server garden",
+      "Limiting tree depth (e.g. max 6-8 levels or 31-63 leaves) to capture feature interactions without overfitting to noisy click training samples",
+      "Restricting the number of folders on the file system",
+      "Reducing the number of HTML tags in a document"
+    ],
+    "answer": 1,
+    "explanation": "Constraining tree depth and leaf count prevents decision trees from memorizing specific training queries, enforcing smooth generalized decision boundaries."
+  },
+  {
+    "id": "q16_38",
+    "chapter": 16,
+    "question": "What is 'Distillation' (Knowledge Distillation) in neural search ranking?",
+    "options": [
+      "Purifying server cooling water",
+      "Training a compact, fast model (Student, e.g. ColBERT or Bi-Encoder) to mimic the ranking scores and output distribution of an expensive, heavy model (Teacher, e.g. Cross-Encoder)",
+      "Extracting keywords from long documents",
+      "Compressing image thumbnails into WebP format"
+    ],
+    "answer": 1,
+    "explanation": "Distillation trains a fast first-stage retriever or bi-encoder to emulate the ranking preferences of a computationally heavy cross-encoder, capturing high accuracy at low latency."
+  },
+  {
+    "id": "q16_39",
+    "chapter": 16,
+    "question": "What is 'Exact Match Feature' and why does it remain essential even in deep neural LTR models?",
+    "options": [
+      "Neural models excel at semantic matching but often fail at exact keyword lookups (SKUs, serial numbers, code identifiers, rare names)",
+      "Exact match features reduce disk storage to zero",
+      "Exact matches are required by copyright law",
+      "Neural models cannot read numbers"
+    ],
+    "answer": 0,
+    "explanation": "Neural embedding models often conflate terms that appear in similar contexts (e.g. error codes, phone numbers, exact brand names). Combining lexical exact-match features prevents semantic drift."
+  },
+  {
+    "id": "q16_40",
+    "chapter": 16,
+    "question": "What is 'Query Intent Feature' in LTR?",
+    "options": [
+      "Features indicating whether the query is Navigational, Informational, or Transactional, allowing the ranking model to adjust the weight of authority vs text match",
+      "The mood of the user when typing",
+      "The grammar correctness of the query",
+      "The internet speed of the client"
+    ],
+    "answer": 0,
+    "explanation": "Intent classification informs the ranking model: a navigational query heavily favors homepage domain matches, while an informational query prioritizes in-depth text content."
+  },
+  {
+    "id": "q16_41",
+    "chapter": 16,
+    "question": "What is 'Interleaving' in online A/B testing of search rankers?",
+    "options": [
+      "Weaving fiber-optic network cables together",
+      "Merging the ranked lists of two candidate rankers into a single combined SERP to measure user preference with orders of magnitude less traffic than standard A/B tests",
+      "Alternating between dark mode and light mode",
+      "Displaying results from two different search engines on opposite sides of the screen"
+    ],
+    "answer": 1,
+    "explanation": "Team Draft Interleaving merges results from Ranker A and Ranker B into one list. User clicks on items attributed to A vs B provide high-statistical-power comparisons using very few queries."
+  },
+  {
+    "id": "q16_42",
+    "chapter": 16,
+    "question": "Why is Interleaving vastly more statistically sensitive than traditional A/B testing in search engines?",
+    "options": [
+      "Because it tests both ranking algorithms on the exact same user queries, eliminating between-user and between-query variance",
+      "Because interleaving runs only on weekends",
+      "Because users are notified that they are taking a test",
+      "Because it does not require user clicks"
+    ],
+    "answer": 0,
+    "explanation": "Traditional A/B testing splits users, introducing noise from user variations. Interleaving evaluates both rankers on the identical query within the same session, dramatically shrinking required sample size."
+  },
+  {
+    "id": "q16_43",
+    "chapter": 16,
+    "question": "What is 'Proximity Feature' in LTR systems?",
+    "options": [
+      "The distance between the user's laptop and the Wi-Fi router",
+      "Features measuring the physical distance or span between query terms inside the document text (e.g., MinSpan, term pairs within 5 words)",
+      "The physical distance between search engine data centers",
+      "The time difference between consecutive searches"
+    ],
+    "answer": 1,
+    "explanation": "Documents where query terms occur close together (small phrase span) are significantly more likely to be relevant than documents where terms are scattered across distant paragraphs."
+  },
+  {
+    "id": "q16_44",
+    "chapter": 16,
+    "question": "What is 'Cross-Encoder' architecture in neural re-ranking?",
+    "options": [
+      "A model where query and candidate document are concatenated into a single sequence `[CLS] Query [SEP] Document` and processed together through all self-attention layers",
+      "A model that encodes text into Morse code",
+      "A model that translates between English and Chinese",
+      "A model with two separate encoders that never interact"
+    ],
+    "answer": 0,
+    "explanation": "A Cross-Encoder performs full all-to-all cross-attention between every query token and document token across all layers, providing maximum relevance accuracy at the cost of high inference latency."
+  },
+  {
+    "id": "q16_45",
+    "chapter": 16,
+    "question": "What is 'Bi-Encoder' architecture in neural retrieval?",
+    "options": [
+      "A model that encodes Query and Document independently into single dense vectors, measuring relevance via vector dot product or cosine similarity",
+      "A model that uses two identical keyboards",
+      "A model trained on bilingual dictionaries",
+      "A model with two output classification heads"
+    ],
+    "answer": 0,
+    "explanation": "Bi-encoders encode queries and documents into independent vector embeddings, enabling millisecond retrieval over billions of documents using Approximate Nearest Neighbor (ANN) indexes."
+  },
+  {
+    "id": "q16_46",
+    "chapter": 16,
+    "question": "What is the 'Vocabulary Mismatch' problem that neural IR models effectively overcome?",
+    "options": [
+      "When users speak different spoken languages than the crawler",
+      "When queries and relevant documents use different words to express the identical concept (e.g. 'automobile repair' vs 'car fixing')",
+      "When words are misspelled in the dictionary",
+      "When a document contains more than 10,000 words"
+    ],
+    "answer": 1,
+    "explanation": "BM25 fails when queries and documents use synonyms or paraphrases without exact lexical overlap. Neural embedding models map both into dense semantic space, bridging vocabulary mismatch."
+  },
+  {
+    "id": "q16_47",
+    "chapter": 16,
+    "question": "What is 'Soft Match' in Neural IR models like DRMM and K-NRM?",
+    "options": [
+      "A match between terms that are semantically related (high cosine similarity of embeddings) even if their text characters are different",
+      "A match that is case-insensitive",
+      "A match with low certainty that is discarded",
+      "A match between words that sound similar phonetically"
+    ],
+    "answer": 0,
+    "explanation": "Soft matching uses dense pre-trained word or token embeddings to capture degree of semantic relatedness (e.g., similarity(laptop, computer) = 0.85) beyond binary exact matching."
+  },
+  {
+    "id": "q16_48",
+    "chapter": 16,
+    "question": "In production LTR systems, how are feature vectors computed without creating unacceptable latency?",
+    "options": [
+      "Features are calculated on client mobile devices",
+      "Static features are precomputed and stored in forward indexes/DocValues; lightweight dynamic features are evaluated in parallel during first-stage scoring",
+      "Features are guessed using random numbers",
+      "Feature computation is outsourced to third-party APIs"
+    ],
+    "answer": 1,
+    "explanation": "Document-only features (PageRank, quality, freshness, spam score) are precomputed at indexing time. Only query-dependent match features are evaluated at runtime over the filtered top-k candidate set."
+  },
+  {
+    "id": "q16_49",
+    "chapter": 16,
+    "question": "What is the purpose of 'Model Pruning / QuickScorer' in deploying tree-based LTR models?",
+    "options": [
+      "Transforming decision tree evaluations into bitwise operations and vector lookups to evaluate thousands of trees in microseconds",
+      "Deleting random trees from the forest to save disk space",
+      "Translating Python models into JavaScript",
+      "Replacing decision trees with linear regression"
+    ],
+    "answer": 0,
+    "explanation": "QuickScorer and Block-based traversal algorithms convert tree decisions into bitmask operations, allowing CPU SIMD vectorization to evaluate GBDT ensembles over candidate documents in microseconds."
+  },
+  {
+    "id": "q16_50",
+    "chapter": 16,
+    "question": "Why is 'Relevance Diversity' (Diversification) applied after the core LTR scoring phase?",
+    "options": [
+      "To comply with legal employment quotas",
+      "To avoid showing 10 near-identical documents for ambiguous queries (e.g. 'jaguar' -> car, animal, OS) by balancing high relevance with topic novelty (e.g., MMR)",
+      "To ensure results come from 10 different countries",
+      "To mix advertisements evenly into organic search results"
+    ],
+    "answer": 1,
+    "explanation": "Ambiguous or multi-intent queries risk user dissatisfaction if all top results cover only one interpretation. Diversification algorithms (e.g. Maximal Marginal Relevance - MMR) balance individual relevance with coverage of diverse subtopics."
+  }
+]

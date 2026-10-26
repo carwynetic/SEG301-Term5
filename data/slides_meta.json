@@ -1,0 +1,80 @@
+{
+  "0": {
+    "chapter_id": 0,
+    "filename": "0. Course Introduction.pptx",
+    "title": "Course Introduction",
+    "total_slides": 8
+  },
+  "1": {
+    "chapter_id": 1,
+    "filename": "1. Information Retieval and Search Engines.pptx",
+    "title": "Information Retrieval and Search Engines",
+    "total_slides": 24
+  },
+  "2": {
+    "chapter_id": 2,
+    "filename": "2. Architecture of A Search Engine.pptx",
+    "title": "Architecture of A Search Engine",
+    "total_slides": 34
+  },
+  "3": {
+    "chapter_id": 3,
+    "filename": "3. Crawls and Feeds.pptx",
+    "title": "Crawls and Feeds",
+    "total_slides": 33
+  },
+  "4": {
+    "chapter_id": 4,
+    "filename": "4. Processing Text.pptx",
+    "title": "Processing Text",
+    "total_slides": 29
+  },
+  "5": {
+    "chapter_id": 5,
+    "filename": "5. Ranking with Indexes.pptx",
+    "title": "Ranking with Indexes",
+    "total_slides": 43
+  },
+  "6": {
+    "chapter_id": 6,
+    "filename": "6. Queries and Interfaces.pptx",
+    "title": "Queries and Interfaces",
+    "total_slides": 19
+  },
+  "7": {
+    "chapter_id": 7,
+    "filename": "7. Retrieval Models.pptx",
+    "title": "Retrieval Models",
+    "total_slides": 25
+  },
+  "8": {
+    "chapter_id": 8,
+    "filename": "8 Search Engine Optimization (SEO).pptx",
+    "title": "Search Engine Optimization (SEO)",
+    "total_slides": 26
+  },
+  "9": {
+    "chapter_id": 9,
+    "filename": "9. Evaluating Search Engines.pptx",
+    "title": "Evaluating Search Engines",
+    "total_slides": 23
+  },
+  "10": {
+    "chapter_id": 10,
+    "filename": "10. Classification and Clustering.pptx",
+    "title": "Classification and Clustering",
+    "total_slides": 23
+  },
+  "11": {
+    "chapter_id": 11,
+    "filename": "11. Social search.pptx",
+    "title": "Social search",
+    "total_slides": 27
+  },
+  "12": {
+    "chapter_id": 12,
+    "filename": "12. Beyond bag of words.pptx",
+    "title": "Beyond bag of words",
+    "total_slides": 14
+  }
+}

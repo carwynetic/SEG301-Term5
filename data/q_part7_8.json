@@ -1,0 +1,1602 @@
+[
+  {
+    "id": "q_ch07_01",
+    "chapter": 7,
+    "question": "What is the fundamental scoring principle of the Vector Space Model (VSM)?",
+    "options": [
+      "Documents and queries are represented as vectors in term space, and relevance is measured by vector similarity (typically Cosine similarity)",
+      "Documents are scored by their file size in megabytes",
+      "Documents are scored by the alphabetical order of their titles",
+      "Documents are scored by how many times the letter 'e' appears"
+    ],
+    "correct": 0,
+    "explanation": "The Vector Space Model represents documents and queries as multidimensional vectors of term weights and ranks documents by cosine similarity.",
+    "topic": "VSM Principle",
+    "slide_ref": "7. Retrieval Models.pptx",
+    "answer": 0
+  },
+  {
+    "id": "q_ch07_02",
+    "chapter": 7,
+    "question": "What is the formula for the Cosine Similarity between a query vector q and document vector d?",
+    "options": [
+      "(q · d) / (|q| * |d|)",
+      "q · d",
+      "|q| + |d|",
+      "|q - d|"
+    ],
+    "correct": 0,
+    "explanation": "Cosine similarity is the dot product of the two vectors divided by the product of their Euclidean lengths (L2 norms), measuring the cosine of the angle between them.",
+    "topic": "Cosine Similarity Formula",
+    "slide_ref": "7. Retrieval Models.pptx",
+    "answer": 0
+  },
+  {
+    "id": "q_ch07_03",
+    "chapter": 7,
+    "question": "Why is Euclidean length normalization (|d| = sqrt(sum(w_i^2))) applied to document vectors in VSM?",
+    "options": [
+      "To penalize long documents so they do not receive unfairly high scores simply because they contain more total words",
+      "To convert negative scores into positive scores",
+      "To compress vectors into 8-bit integers",
+      "To ensure documents with images are ranked higher"
+    ],
+    "correct": 0,
+    "explanation": "Long documents naturally have higher term counts; cosine normalization divides by document length to prevent long documents from dominating short, concise documents.",
+    "topic": "Length Normalization",
+    "slide_ref": "7. Retrieval Models.pptx",
+    "answer": 0
+  },
+  {
+    "id": "q_ch07_04",
+    "chapter": 7,
+    "question": "What does TF-IDF stand for in text weighting?",
+    "options": [
+      "Term Frequency - Inverse Document Frequency",
+      "Total Frequency - Integrated Data Format",
+      "Top File - Indexed Document File",
+      "Terminal Flow - Internal Delivery Frequency"
+    ],
+    "correct": 0,
+    "explanation": "TF-IDF combines Term Frequency (how often term t appears in doc d) with Inverse Document Frequency (how rare term t is across the entire collection).",
+    "topic": "TF-IDF Acronym",
+    "slide_ref": "7. Retrieval Models.pptx",
+    "answer": 0
+  },
+  {
+    "id": "q_ch07_05",
+    "chapter": 7,
+    "question": "In standard TF-IDF weighting, how is the Inverse Document Frequency (IDF) of a term t typically calculated?",
+    "options": [
+      "IDF(t) = log(N / DF(t)), where N is total documents and DF(t) is number of documents containing term t",
+      "IDF(t) = N * DF(t)",
+      "IDF(t) = DF(t) / N",
+      "IDF(t) = N + DF(t)"
+    ],
+    "correct": 0,
+    "explanation": "IDF measures term rarity across the collection: as document frequency DF(t) decreases, IDF increases logarithmically.",
+    "topic": "IDF Formula",
+    "slide_ref": "7. Retrieval Models.pptx",
+    "answer": 0
+  },
+  {
+    "id": "q_ch07_06",
+    "chapter": 7,
+    "question": "If a collection has N = 1,000,000 documents and term 'quantum' appears in 100 documents, what is its unscaled base-10 IDF?",
+    "options": [
+      "log10(1,000,000 / 100) = log10(10,000) = 4",
+      "100 / 1,000,000 = 0.0001",
+      "1,000,000 * 100 = 100,000,000",
+      "0"
+    ],
+    "correct": 0,
+    "explanation": "IDF = log10(1,000,000 / 100) = log10(10^4) = 4.",
+    "topic": "IDF Calculation",
+    "slide_ref": "7. Retrieval Models.pptx",
+    "answer": 0
+  },
+  {
+    "id": "q_ch07_07",
+    "chapter": 7,
+    "question": "Why is logarithmic term frequency weighting (e.g., w_tf = 1 + log(tf) for tf > 0) used instead of raw term frequency (tf)?",
+    "options": [
+      "Because twenty occurrences of a word in a document do not convey twenty times more relevance than a single occurrence; relevance exhibits diminishing marginal returns",
+      "Because logarithms run faster on computer processors",
+      "Because raw term frequency cannot be stored in an inverted index",
+      "Because logarithms convert text into images"
+    ],
+    "correct": 0,
+    "explanation": "Sublinear TF scaling (e.g., 1 + log(tf)) models the diminishing marginal utility of additional occurrences of a term.",
+    "topic": "Sublinear TF Scaling",
+    "slide_ref": "7. Retrieval Models.pptx",
+    "answer": 0
+  },
+  {
+    "id": "q_ch07_08",
+    "chapter": 7,
+    "question": "What is Okapi BM25?",
+    "options": [
+      "A state-of-the-art non-linear probabilistic retrieval function derived from the 2-Poisson indexing model, widely used as the benchmark scoring function in search engines",
+      "A database indexing algorithm for MySQL",
+      "An image compression codec",
+      "A network encryption protocol"
+    ],
+    "correct": 0,
+    "explanation": "Okapi BM25 (Best Matching 25) is the preeminent classical probabilistic ranking model balancing term frequency saturation and document length normalization.",
+    "topic": "BM25 Overview",
+    "slide_ref": "7. Retrieval Models.pptx",
+    "answer": 0
+  },
+  {
+    "id": "q_ch07_09",
+    "chapter": 7,
+    "question": "In the Okapi BM25 term frequency saturation component $\\frac{tf}{k_1 + tf}$, what role does the parameter $k_1$ play?",
+    "options": [
+      "It calibrates the rate of term frequency saturation: as tf increases, the term score asymptotically approaches an upper limit bounded by k1",
+      "It specifies the maximum number of documents to return",
+      "It sets the font size of the search results",
+      "It determines the server IP address"
+    ],
+    "correct": 0,
+    "explanation": "Parameter k1 (typically between 1.2 and 2.0) controls the curvature of saturation: small k1 leads to rapid saturation where extra term occurrences yield little additional score.",
+    "topic": "BM25 k1 Parameter",
+    "slide_ref": "7. Retrieval Models.pptx",
+    "answer": 0
+  },
+  {
+    "id": "q_ch07_10",
+    "chapter": 7,
+    "question": "In the Okapi BM25 document length normalization component $B = (1 - b) + b \\cdot \\frac{|d|}{\\text{avgdl}}$, what role does the parameter $b$ play?",
+    "options": [
+      "It scales the penalty for document length: b = 1 applies full length normalization; b = 0 applies zero length normalization",
+      "It sets the background color of the SERP",
+      "It controls the number of spelling errors allowed",
+      "It multiplies all scores by 10"
+    ],
+    "correct": 0,
+    "explanation": "Parameter b (typically b ≈ 0.75) controls the degree of document length normalization relative to average document length (avgdl).",
+    "topic": "BM25 b Parameter",
+    "slide_ref": "7. Retrieval Models.pptx",
+    "answer": 0
+  },
+  {
+    "id": "q_ch07_11",
+    "chapter": 7,
+    "question": "What happens in Okapi BM25 when $b = 0$?",
+    "options": [
+      "Document length normalization is completely disabled; document length has zero effect on the score",
+      "All document scores become 0",
+      "Only the shortest documents are retrieved",
+      "The search engine throws a division-by-zero exception"
+    ],
+    "correct": 0,
+    "explanation": "When b = 0, B = 1 regardless of document length, completely removing length penalties.",
+    "topic": "BM25 b=0 Behavior",
+    "slide_ref": "7. Retrieval Models.pptx",
+    "answer": 0
+  },
+  {
+    "id": "q_ch07_12",
+    "chapter": 7,
+    "question": "What is the 'Query Likelihood Model' in Language Modeling for IR?",
+    "options": [
+      "A model that ranks documents by the probability of the document's language model generating the query terms: P(Q|D)",
+      "A model that predicts what queries the user will search next week",
+      "A model that checks if the query has valid grammar",
+      "A model that counts query clicks"
+    ],
+    "correct": 0,
+    "explanation": "The Query Likelihood model posits that a user has a relevant document in mind and generates query terms from its language model; documents are ranked by P(Q|D).",
+    "topic": "Query Likelihood Model",
+    "slide_ref": "7. Retrieval Models.pptx",
+    "answer": 0
+  },
+  {
+    "id": "q_ch07_13",
+    "chapter": 7,
+    "question": "Why is 'Smoothing' mandatory in Language Modeling for Information Retrieval?",
+    "options": [
+      "To round numbers to the nearest integer",
+      "To solve the Zero-Frequency Problem: if a single query term does not appear in document D, the unigram probability P(t|D) = 0, causing the overall query product P(Q|D) = 0",
+      "To remove swear words from search results",
+      "To blur copyrighted images"
+    ],
+    "correct": 1,
+    "explanation": "Without smoothing, maximum likelihood estimates assign zero probability to unseen words, which zero-out the entire product across query terms.",
+    "topic": "Zero-Frequency Problem",
+    "slide_ref": "7. Retrieval Models.pptx",
+    "answer": 1
+  },
+  {
+    "id": "q_ch07_14",
+    "chapter": 7,
+    "question": "What is 'Jelinek-Mercer Smoothing' (Linear Interpolation Smoothing)?",
+    "options": [
+      "A smoothing method that linearly combines the document maximum likelihood estimate with the collection language model: P_smooth(t|D) = lambda * P_MLE(t|D) + (1 - lambda) * P_MLE(t|C)",
+      "A method that sets all probabilities to 0.5",
+      "A smoothing method that only uses document length",
+      "A technique that deletes rare words"
+    ],
+    "correct": 0,
+    "explanation": "Jelinek-Mercer smoothing interpolates the document model with the collection background model using a constant weight lambda.",
+    "topic": "Jelinek-Mercer Smoothing",
+    "slide_ref": "7. Retrieval Models.pptx",
+    "answer": 0
+  },
+  {
+    "id": "q_ch07_15",
+    "chapter": 7,
+    "question": "What is 'Dirichlet Prior Smoothing' (Bayesian Smoothing) in Language Modeling for IR?",
+    "options": [
+      "A Bayesian smoothing technique where pseudo-counts parameterized by mu are added to the term count, making the degree of background smoothing depend on document length |d|",
+      "A technique named after a French restaurant",
+      "A method that only works on French text",
+      "A technique that sets all word counts to 1"
+    ],
+    "correct": 0,
+    "explanation": "Dirichlet smoothing: P(t|D) = (c(t, D) + mu * P(t|C)) / (|d| + mu), which naturally provides less background smoothing for long documents and more for short documents.",
+    "topic": "Dirichlet Smoothing",
+    "slide_ref": "7. Retrieval Models.pptx",
+    "answer": 0
+  },
+  {
+    "id": "q_ch07_16",
+    "chapter": 7,
+    "question": "What is the 'Probability Ranking Principle' (PRP) formulated by Robertson (1977)?",
+    "options": [
+      "If a search engine ranks documents in order of decreasing probability of relevance to the user's information need, system effectiveness will be maximized",
+      "All documents in a collection have equal probability of being relevant",
+      "Search engines should rank documents randomly to avoid bias",
+      "Users always click the first link on the page"
+    ],
+    "correct": 0,
+    "explanation": "The PRP is the foundational theorem of IR stating that sorting documents by P(Relevant | Query, Doc) yields optimal retrieval performance.",
+    "topic": "Probability Ranking Principle",
+    "slide_ref": "7. Retrieval Models.pptx",
+    "answer": 0
+  },
+  {
+    "id": "q_ch07_17",
+    "chapter": 7,
+    "question": "What is the 'Binary Independence Model' (BIM)?",
+    "options": [
+      "A probabilistic retrieval model that assumes documents and queries are binary term incidence vectors and terms occur independently across relevant and non-relevant document sets",
+      "A model for binary computer chips",
+      "A model that only supports yes/no questions",
+      "A model that indexes only 2 documents"
+    ],
+    "correct": 0,
+    "explanation": "BIM (Robertson & Spärck Jones, 1976) models documents as binary indicator vectors and applies Bayes' rule under conditional term independence.",
+    "topic": "Binary Independence Model",
+    "slide_ref": "7. Retrieval Models.pptx",
+    "answer": 0
+  },
+  {
+    "id": "q_ch07_18",
+    "chapter": 7,
+    "question": "In Boolean Retrieval, why is the 'Boolean Model' considered an exact-match model?",
+    "options": [
+      "It evaluates formal logic expressions (AND, OR, NOT) where a document either strictly satisfies the Boolean condition or it does not, with no notion of partial matching or ranked relevance",
+      "It only works on binary files",
+      "It guarantees 100% correct answers",
+      "It requires a quantum computer"
+    ],
+    "correct": 0,
+    "explanation": "Boolean models do not produce continuous scores; results are unranked sets of matching documents.",
+    "topic": "Boolean Retrieval Limitations",
+    "slide_ref": "7. Retrieval Models.pptx",
+    "answer": 0
+  },
+  {
+    "id": "q_ch07_19",
+    "chapter": 7,
+    "question": "What is the 'Term Independence Assumption' in classic IR models (VSM, BM25, Naive Bayes)?",
+    "options": [
+      "The mathematical simplification that the occurrence of one word is statistically independent of the occurrence of any other word in the document",
+      "The assumption that words can only be typed with one hand",
+      "The rule that documents cannot share words",
+      "The theory that all languages developed independently"
+    ],
+    "correct": 0,
+    "explanation": "Term independence ignores word co-occurrence and syntax, treating words like 'white' and 'house' as completely independent variables.",
+    "topic": "Term Independence",
+    "slide_ref": "7. Retrieval Models.pptx",
+    "answer": 0
+  },
+  {
+    "id": "q_ch07_20",
+    "chapter": 7,
+    "question": "In the Vector Space Model, what is the Cosine Similarity between two orthogonal vectors (angle theta = 90 degrees)?",
+    "options": [
+      "0.0 (no shared terms / completely dissimilar)",
+      "1.0 (identical)",
+      "-1.0",
+      "0.5"
+    ],
+    "correct": 0,
+    "explanation": "Orthogonal vectors have a dot product of 0, meaning cos(90°) = 0.0, indicating zero shared vocabulary terms.",
+    "topic": "Orthogonal Vectors",
+    "slide_ref": "7. Retrieval Models.pptx",
+    "answer": 0
+  },
+  {
+    "id": "q_ch07_21",
+    "chapter": 7,
+    "question": "In Vector Space Model, what is the Cosine Similarity of a document vector with itself?",
+    "options": [
+      "1.0",
+      "0.0",
+      "0.5",
+      "Infinity"
+    ],
+    "correct": 0,
+    "explanation": "The angle between a vector and itself is 0 degrees; cos(0°) = 1.0, indicating perfect similarity.",
+    "topic": "Self-Similarity Cosine",
+    "slide_ref": "7. Retrieval Models.pptx",
+    "answer": 0
+  },
+  {
+    "id": "q_ch07_22",
+    "chapter": 7,
+    "question": "How does Okapi BM25 prevent the 'term frequency saturation' flaw present in linear TF models?",
+    "options": [
+      "The term frequency component asymptotically approaches a plateau: as tf approaches infinity, tf / (k1 + tf) approaches 1.0, preventing a single word repeated 1,000 times from dominating",
+      "By deleting documents with high tf",
+      "By setting all tf values to 1",
+      "By taking the square of tf"
+    ],
+    "correct": 0,
+    "explanation": "In BM25, the TF component saturates gracefully toward (k1 + 1), ensuring repeated terms cannot infinitely inflate document scores.",
+    "topic": "TF Saturation Curve",
+    "slide_ref": "7. Retrieval Models.pptx",
+    "answer": 0
+  },
+  {
+    "id": "q_ch07_23",
+    "chapter": 7,
+    "question": "In BM25, if document length |d| is exactly equal to the average document length avgdl, what does the length normalization factor B equal?",
+    "options": [
+      "1.0",
+      "0.0",
+      "0.75",
+      "b"
+    ],
+    "correct": 0,
+    "explanation": "B = (1 - b) + b * (|d| / avgdl). When |d| = avgdl, B = (1 - b) + b * 1 = 1.0.",
+    "topic": "BM25 Length Factor Calculation",
+    "slide_ref": "7. Retrieval Models.pptx",
+    "answer": 0
+  },
+  {
+    "id": "q_ch07_24",
+    "chapter": 7,
+    "question": "In Dirichlet smoothing P(t|D) = (c(t, D) + mu * P(t|C)) / (|d| + mu), how does the parameter mu act?",
+    "options": [
+      "As a pseudo-document length: adding mu 'virtual words' distributed according to the background collection language model P(t|C)",
+      "As a learning rate multiplier",
+      "As the number of CPU threads",
+      "As the total number of stopwords"
+    ],
+    "correct": 0,
+    "explanation": "Dirichlet smoothing treats mu as pseudo-counts from a Dirichlet prior, blending the document with mu background collection tokens.",
+    "topic": "Dirichlet Prior Intuition",
+    "slide_ref": "7. Retrieval Models.pptx",
+    "answer": 0
+  },
+  {
+    "id": "q_ch07_25",
+    "chapter": 7,
+    "question": "What is the 'Unigram Language Model' assumption?",
+    "options": [
+      "Words are generated independently from a multinomial distribution, ignoring all preceding and succeeding words: P(w1, w2, ..., wn) = prod(P(wi))",
+      "Only words starting with the letter 'U' are allowed",
+      "Sentences are limited to one word",
+      "All words have length 1"
+    ],
+    "correct": 0,
+    "explanation": "The unigram model treats each token generation as an independent draw from a single categorical probability distribution over the vocabulary.",
+    "topic": "Unigram Model",
+    "slide_ref": "7. Retrieval Models.pptx",
+    "answer": 0
+  },
+  {
+    "id": "q_ch07_26",
+    "chapter": 7,
+    "question": "What does 'Kullback-Leibler (KL) Divergence' measure in Language Modeling for IR?",
+    "options": [
+      "The relative entropy or distance between the query language model and the document language model: D_KL(M_Q || M_D)",
+      "The physical distance between two users",
+      "The latency of hard drive seeks",
+      "The number of grammar errors"
+    ],
+    "correct": 0,
+    "explanation": "Ranking documents by negative KL-divergence from the query model provides a theoretically sound framework that subsumes query likelihood.",
+    "topic": "KL Divergence IR",
+    "slide_ref": "7. Retrieval Models.pptx",
+    "answer": 0
+  },
+  {
+    "id": "q_ch07_27",
+    "chapter": 7,
+    "question": "In BM25, what happens to the score of a document if a query term has a negative IDF?",
+    "options": [
+      "The document score is reduced when that term is present, which is undesirable; modern BM25 implementations clamp IDF to 0 or use a floor function",
+      "The computer crashes",
+      "The document is deleted",
+      "The score is multiplied by -100"
+    ],
+    "correct": 0,
+    "explanation": "Terms appearing in more than half the collection have negative IDF in the standard formula; modern Lucene/BM25 implementations clamp IDF = log(1 + (N - df + 0.5)/(df + 0.5)) >= 0.",
+    "topic": "Negative IDF Fix",
+    "slide_ref": "7. Retrieval Models.pptx",
+    "answer": 0
+  },
+  {
+    "id": "q_ch07_28",
+    "chapter": 7,
+    "question": "What is 'SMART' notation in Vector Space Model weighting schemes (e.g., 'ltc.lnc')?",
+    "options": [
+      "A standardized 3-letter notation representing (Term Frequency, Document Frequency, Normalization) for document and query vectors",
+      "A smart home device protocol",
+      "A machine learning framework for Python",
+      "An automated search bot"
+    ],
+    "correct": 0,
+    "explanation": "SMART notation (Salton & Buckley, 1988) uses 3 letters for doc weighting and 3 for query weighting (e.g., 'ltc' = log tf, idf, cosine norm).",
+    "topic": "SMART Notation",
+    "slide_ref": "7. Retrieval Models.pptx",
+    "answer": 0
+  },
+  {
+    "id": "q_ch07_29",
+    "chapter": 7,
+    "question": "In SMART notation, what does 'n' signify when used as the normalization component (e.g., 'nnn')?",
+    "options": [
+      "No normalization (length = 1, raw weights)",
+      "Normalized to 0",
+      "Negative normalization",
+      "Number normalization"
+    ],
+    "correct": 0,
+    "explanation": "'n' denotes no normalization, meaning the raw weighted vector is used directly without dividing by Euclidean length.",
+    "topic": "SMART 'n' Normalization",
+    "slide_ref": "7. Retrieval Models.pptx",
+    "answer": 0
+  },
+  {
+    "id": "q_ch07_30",
+    "chapter": 7,
+    "question": "In SMART notation, what does 'c' signify when used as the normalization component (e.g., 'ltc')?",
+    "options": [
+      "Cosine normalization (dividing weights by Euclidean L2 length)",
+      "Character normalization",
+      "Count normalization",
+      "Cubic root normalization"
+    ],
+    "correct": 0,
+    "explanation": "'c' denotes cosine normalization, dividing each term weight by sqrt(sum(w_i^2)).",
+    "topic": "SMART 'c' Normalization",
+    "slide_ref": "7. Retrieval Models.pptx",
+    "answer": 0
+  },
+  {
+    "id": "q_ch07_31",
+    "chapter": 7,
+    "question": "What is 'Proximity Ranking' in retrieval models?",
+    "options": [
+      "Scoring documents higher when query terms appear physically close to each other in the document text, reflecting tighter phrase coherence",
+      "Ranking documents based on the user's GPS proximity to the server",
+      "Ranking documents based on network ping latency",
+      "Sorting documents by publication date"
+    ],
+    "correct": 0,
+    "explanation": "Proximity ranking rewards documents where multiple query terms appear within a narrow word window (e.g., within 5 words).",
+    "topic": "Proximity Ranking",
+    "slide_ref": "7. Retrieval Models.pptx",
+    "answer": 0
+  },
+  {
+    "id": "q_ch07_32",
+    "chapter": 7,
+    "question": "Why does the Boolean Retrieval Model struggle with large web collections?",
+    "options": [
+      "It suffers from the 'Feast or Famine' problem: queries return either too few results (0 matches for specific queries) or too many unranked results (thousands of matches with no quality ordering)",
+      "It cannot run on Linux servers",
+      "It requires human operators to verify each match",
+      "It can only index 100 documents"
+    ],
+    "correct": 0,
+    "explanation": "Boolean exact match does not rank results; users are overwhelmed by huge unranked sets or frustrated by empty results if one term misses.",
+    "topic": "Feast or Famine",
+    "slide_ref": "7. Retrieval Models.pptx",
+    "answer": 0
+  },
+  {
+    "id": "q_ch07_33",
+    "chapter": 7,
+    "question": "What is the 'Markov Random Field' (MRF) model for Information Retrieval?",
+    "options": [
+      "A graph-based retrieval model that explicitly models dependencies between query terms (single terms, ordered phrases, unordered windows)",
+      "A random number generator for passwords",
+      "A magnetic field simulation in physics",
+      "A deep learning library for GPUs"
+    ],
+    "correct": 0,
+    "explanation": "Metzler and Croft's MRF model captures term dependencies by scoring cliques of ordered and unordered query term combinations.",
+    "topic": "Markov Random Field IR",
+    "slide_ref": "7. Retrieval Models.pptx",
+    "answer": 0
+  },
+  {
+    "id": "q_ch07_34",
+    "chapter": 7,
+    "question": "In the Sequential Dependence Model (SDM), what are the three components combined in the scoring function?",
+    "options": [
+      "Single term features ($f_T$), Exact ordered phrase features ($f_O$), and Unordered proximity window features ($f_U$)",
+      "Noun features, Verb features, Adjective features",
+      "Title features, URL features, Body features",
+      "Image features, Audio features, Text features"
+    ],
+    "correct": 0,
+    "explanation": "SDM linearly weights independent term scores (f_T), ordered bigram phrases (f_O), and unordered co-occurrence within window size 8 (f_U).",
+    "topic": "SDM Components",
+    "slide_ref": "7. Retrieval Models.pptx",
+    "answer": 0
+  },
+  {
+    "id": "q_ch07_35",
+    "chapter": 7,
+    "question": "What is 'IDF Dampening' in BM25?",
+    "options": [
+      "The logarithmic transformation that bounds the influence of extremely rare words, preventing one rare word from completely overwhelming all other query matches",
+      "Pouring water on hard disk drives",
+      "Setting IDF to zero for all terms",
+      "Multiplying IDF by document length"
+    ],
+    "correct": 0,
+    "explanation": "Logarithmic dampening ensures that while rare terms have high weights, their impact does not grow unboundedly.",
+    "topic": "IDF Dampening",
+    "slide_ref": "7. Retrieval Models.pptx",
+    "answer": 0
+  },
+  {
+    "id": "q_ch07_36",
+    "chapter": 7,
+    "question": "What is the 'Zero-Frequency Problem' in Maximum Likelihood Estimation for language models?",
+    "options": [
+      "If a word does not occur in a document, its Maximum Likelihood probability is zero, which multiplies the entire document query score to zero",
+      "The server clock reads 00:00:00",
+      "The network bandwidth drops to zero",
+      "The query contains zero characters"
+    ],
+    "correct": 0,
+    "explanation": "Under pure MLE, any word missing from a document has P(w|D) = 0, causing the entire unigram product P(Q|D) = 0.",
+    "topic": "MLE Zero Frequency",
+    "slide_ref": "7. Retrieval Models.pptx",
+    "answer": 0
+  },
+  {
+    "id": "q_ch07_37",
+    "chapter": 7,
+    "question": "How does Jelinek-Mercer smoothing behave as the parameter $\\lambda$ approaches 1.0?",
+    "options": [
+      "The smoothed model relies almost exclusively on the document's own term distribution $P_{MLE}(t|D)$, reducing the background collection influence to zero",
+      "The model becomes equal to the background collection model",
+      "All probabilities become zero",
+      "The score is multiplied by infinity"
+    ],
+    "correct": 0,
+    "explanation": "P(t|D) = lambda * P_MLE(t|D) + (1 - lambda) * P_MLE(t|C). As lambda -> 1, background smoothing vanishes.",
+    "topic": "JM Lambda Behavior",
+    "slide_ref": "7. Retrieval Models.pptx",
+    "answer": 0
+  },
+  {
+    "id": "q_ch07_38",
+    "chapter": 7,
+    "question": "How does Jelinek-Mercer smoothing behave as the parameter $\\lambda$ approaches 0.0?",
+    "options": [
+      "The model relies completely on the collection background model $P_{MLE}(t|C)$, making all documents score identically for a given query",
+      "The model relies exclusively on document term counts",
+      "The search engine runs 10 times faster",
+      "Scores become negative numbers"
+    ],
+    "correct": 0,
+    "explanation": "When lambda = 0, document text is ignored and every document receives the exact same score based solely on collection frequency.",
+    "topic": "JM Lambda 0",
+    "slide_ref": "7. Retrieval Models.pptx",
+    "answer": 0
+  },
+  {
+    "id": "q_ch07_39",
+    "chapter": 7,
+    "question": "Why is Dirichlet Prior smoothing generally preferred over Jelinek-Mercer smoothing for short, keyword-based queries?",
+    "options": [
+      "Dirichlet smoothing naturally applies stronger smoothing to short documents and weaker smoothing to long documents, effectively incorporating document length normalization",
+      "Dirichlet smoothing was invented by Google",
+      "Dirichlet smoothing does not require a background collection",
+      "Dirichlet smoothing runs without arithmetic operations"
+    ],
+    "correct": 0,
+    "explanation": "Dirichlet smoothing automatically accounts for document length variation, which is critical for ranking ad-hoc short queries.",
+    "topic": "Dirichlet vs JM",
+    "slide_ref": "7. Retrieval Models.pptx",
+    "answer": 0
+  },
+  {
+    "id": "q_ch07_40",
+    "chapter": 7,
+    "question": "What is 'Collection Frequency' (cf) vs 'Document Frequency' (df) of a term?",
+    "options": [
+      "cf is the total number of times the term occurs across the entire collection; df is the number of distinct documents containing the term",
+      "cf is the document count; df is the total word count",
+      "cf is measured in bytes; df is measured in words",
+      "cf is only used in databases; df is only used in search engines"
+    ],
+    "correct": 0,
+    "explanation": "Collection frequency sums all occurrences; document frequency counts distinct documents (e.g., term occurs 10 times in 1 doc: cf=10, df=1).",
+    "topic": "cf vs df",
+    "slide_ref": "7. Retrieval Models.pptx",
+    "answer": 0
+  },
+  {
+    "id": "q_ch07_41",
+    "chapter": 7,
+    "question": "What is 'IDF Saturation' in vector space models?",
+    "options": [
+      "The phenomenon where terms with very high IDF dominate the ranking, which is controlled by log scaling",
+      "When the hard drive runs out of space",
+      "When all documents contain the term",
+      "When the dictionary is full"
+    ],
+    "correct": 0,
+    "explanation": "Log scaling prevents words with huge rarity from eclipsing multiple moderate term matches.",
+    "topic": "IDF Saturation",
+    "slide_ref": "7. Retrieval Models.pptx",
+    "answer": 0
+  },
+  {
+    "id": "q_ch07_42",
+    "chapter": 7,
+    "question": "In probabilistic IR, what is the 'Odds of Relevance'?",
+    "options": [
+      "O(R | D, Q) = P(R=1 | D, Q) / P(R=0 | D, Q), the ratio of the probability that document D is relevant over the probability that it is non-relevant",
+      "The betting odds in horse racing",
+      "The percentage of queries that fail",
+      "The ratio of vowels to consonants"
+    ],
+    "correct": 0,
+    "explanation": "The odds ratio compares the likelihood of relevance to non-relevance, serving as the basis for the Binary Independence Model and BM25.",
+    "topic": "Odds of Relevance",
+    "slide_ref": "7. Retrieval Models.pptx",
+    "answer": 0
+  },
+  {
+    "id": "q_ch07_43",
+    "chapter": 7,
+    "question": "What is 'Okapi BM25's typical performance compared to standard TF-IDF Cosine on benchmark datasets?",
+    "options": [
+      "BM25 consistently outperforms standard linear TF-IDF VSM because of its mathematically rigorous term saturation and length normalization",
+      "BM25 performs 10 times worse than TF-IDF",
+      "BM25 has exactly the same performance as Boolean retrieval",
+      "BM25 is only effective on queries longer than 50 words"
+    ],
+    "correct": 0,
+    "explanation": "Empirically on TREC benchmarks, BM25 consistently achieves higher MAP and NDCG than standard Vector Space Models.",
+    "topic": "BM25 Benchmark Superiority",
+    "slide_ref": "7. Retrieval Models.pptx",
+    "answer": 0
+  },
+  {
+    "id": "q_ch07_44",
+    "chapter": 7,
+    "question": "In the BM25 formula, what happens if the query term does NOT appear in the document ($tf = 0$)?",
+    "options": [
+      "The term's contribution to the document score is exactly 0",
+      "The entire document score becomes 0",
+      "The document is deleted from the index",
+      "The score becomes negative infinity"
+    ],
+    "correct": 0,
+    "explanation": "In BM25, the TF component tf / (k1 * B + tf) equals 0 / (k1 * B + 0) = 0, contributing 0 to the sum.",
+    "topic": "BM25 tf=0 Contribution",
+    "slide_ref": "7. Retrieval Models.pptx",
+    "answer": 0
+  },
+  {
+    "id": "q_ch07_45",
+    "chapter": 7,
+    "question": "What is 'Query Length Normalization' in retrieval models?",
+    "options": [
+      "Dividing scores by query length so that long multi-word queries do not produce artificially high raw score magnitudes across systems",
+      "Limiting queries to 5 words maximum",
+      "Adding random words to short queries",
+      "Converting queries to uppercase"
+    ],
+    "correct": 0,
+    "explanation": "Query length normalization ensures that scores across different queries are on comparable scales.",
+    "topic": "Query Length Normalization",
+    "slide_ref": "7. Retrieval Models.pptx",
+    "answer": 0
+  },
+  {
+    "id": "q_ch07_46",
+    "chapter": 7,
+    "question": "What is the '2-Poisson Model' upon which BM25 is theoretically based?",
+    "options": [
+      "A mixture model assuming term occurrences in relevant documents follow one Poisson distribution, while in non-relevant documents they follow a second Poisson distribution",
+      "A model for fish populations in France",
+      "A model with 2 servers",
+      "A model that runs twice a day"
+    ],
+    "correct": 0,
+    "explanation": "The 2-Poisson model (Bookstein & Swanson; Harter) posits that words appear with two Poisson rates depending on whether the document is 'about' the topic.",
+    "topic": "2-Poisson Model",
+    "slide_ref": "7. Retrieval Models.pptx",
+    "answer": 0
+  },
+  {
+    "id": "q_ch07_47",
+    "chapter": 7,
+    "question": "Why does the BM25 score increase monotonically with term frequency $tf$, but with diminishing returns?",
+    "options": [
+      "Because the derivative d/dtf [ tf / (k1 + tf) ] = k1 / (k1 + tf)^2 is strictly positive, but strictly decreasing as tf increases",
+      "Because computer processors slow down as numbers grow",
+      "Because BM25 divides by 0",
+      "Because logarithms are negative"
+    ],
+    "correct": 0,
+    "explanation": "The first derivative is positive (monotonic increase) and second derivative is negative (concave diminishing returns).",
+    "topic": "BM25 Mathematical Properties",
+    "slide_ref": "7. Retrieval Models.pptx",
+    "answer": 0
+  },
+  {
+    "id": "q_ch07_48",
+    "chapter": 7,
+    "question": "What is 'Term Weighting' in Information Retrieval?",
+    "options": [
+      "The assignment of numerical values to terms reflecting their importance in discriminating relevant documents from non-relevant documents",
+      "Weighing paper printouts on a physical scale",
+      "Counting the number of characters in a word",
+      "Sorting terms alphabetically"
+    ],
+    "correct": 0,
+    "explanation": "Term weighting quantifies the semantic salience and discriminative power of terms in documents and queries.",
+    "topic": "Term Weighting",
+    "slide_ref": "7. Retrieval Models.pptx",
+    "answer": 0
+  },
+  {
+    "id": "q_ch07_49",
+    "chapter": 7,
+    "question": "What is 'Vector Normalization' in the Vector Space Model?",
+    "options": [
+      "Dividing each vector element by the vector's Euclidean norm, converting it into a unit vector of length 1.0",
+      "Converting all vector elements to integers",
+      "Setting all negative numbers to zero",
+      "Multiplying vector elements by 100"
+    ],
+    "correct": 0,
+    "explanation": "Unit vector normalization projects all document vectors onto the unit hypersphere, making dot products equal to cosine similarities.",
+    "topic": "Vector Normalization",
+    "slide_ref": "7. Retrieval Models.pptx",
+    "answer": 0
+  },
+  {
+    "id": "q_ch07_50",
+    "chapter": 7,
+    "question": "What is a 'Language Model' in NLP and Information Retrieval?",
+    "options": [
+      "A probability distribution over sequences of words, capturing statistical fluency and word occurrence likelihoods in natural language",
+      "A dictionary that translates English to Spanish",
+      "A software program that teaches grammar",
+      "A font file installed on Windows"
+    ],
+    "correct": 0,
+    "explanation": "A language model assigns probabilities P(w1, w2, ..., wn) to word strings, modeling how likely that text is to be generated.",
+    "topic": "Language Model Definition",
+    "slide_ref": "7. Retrieval Models.pptx",
+    "answer": 0
+  },
+  {
+    "id": "q_ch08_01",
+    "chapter": 8,
+    "question": "What is the primary objective of Search Engine Optimization (SEO)?",
+    "options": [
+      "To pay search engines to place sponsored banner ads on the homepage",
+      "To optimize a website's technical structure, content, and external signals to improve its organic (non-paid) visibility and rankings on SERPs",
+      "To hack competitor servers and delete their databases",
+      "To buy thousands of fake Twitter followers"
+    ],
+    "correct": 1,
+    "explanation": "SEO focuses on enhancing organic search visibility and driving quality traffic through technical, content, and authority optimization without paying for ad placement.",
+    "topic": "SEO Objectives",
+    "slide_ref": "8 Search Engine Optimization (SEO).pptx",
+    "answer": 1
+  },
+  {
+    "id": "q_ch08_02",
+    "chapter": 8,
+    "question": "What are the three primary pillars of modern Search Engine Optimization?",
+    "options": [
+      "On-Page SEO, Off-Page SEO, and Technical SEO",
+      "AdWords, AdSense, and DoubleClick",
+      "HTML, CSS, and JavaScript",
+      "Hardware, Networking, and Operating Systems"
+    ],
+    "correct": 0,
+    "explanation": "The 3 core pillars are: On-Page SEO (content & tags), Off-Page SEO (backlinks & external authority), and Technical SEO (crawlability, speed, indexability).",
+    "topic": "Pillars of SEO",
+    "slide_ref": "8 Search Engine Optimization (SEO).pptx",
+    "answer": 0
+  },
+  {
+    "id": "q_ch08_03",
+    "chapter": 8,
+    "question": "What was the primary focus of Google's famous 'Panda' algorithm update (2011)?",
+    "options": [
+      "Penalizing thin, low-quality content, content farms, and aggressive ad-to-content ratios, while rewarding deep, comprehensive editorial content",
+      "Banning black-and-white websites",
+      "Optimizing mobile page load speed",
+      "Introducing voice search in cars"
+    ],
+    "correct": 0,
+    "explanation": "Google Panda targeted scraper sites, duplicate content, thin affiliate pages, and low-quality content farms.",
+    "topic": "Google Panda Update",
+    "slide_ref": "8 Search Engine Optimization (SEO).pptx",
+    "answer": 0
+  },
+  {
+    "id": "q_ch08_04",
+    "chapter": 8,
+    "question": "What was the primary focus of Google's 'Penguin' algorithm update (2012)?",
+    "options": [
+      "Penalizing manipulative link schemes, link farms, paid backlinks, and aggressive keyword-stuffed anchor texts",
+      "Promoting animal welfare websites",
+      "Rewriting title tags automatically",
+      "Enforcing HTTPS on all websites"
+    ],
+    "correct": 0,
+    "explanation": "Google Penguin targeted web spam: artificial link networks, link exchanges, paid links, and unnatural exact-match anchor text profiles.",
+    "topic": "Google Penguin Update",
+    "slide_ref": "8 Search Engine Optimization (SEO).pptx",
+    "answer": 0
+  },
+  {
+    "id": "q_ch08_05",
+    "chapter": 8,
+    "question": "What did Google's 'Hummingbird' algorithm update (2013) represent in search evolution?",
+    "options": [
+      "A complete overhaul of Google's core matching engine toward semantic search and conversational intent understanding rather than isolated keyword matching",
+      "An update that doubled the battery life of Android phones",
+      "An algorithm that deletes slow crawlers",
+      "A compression tool for inverted indexes"
+    ],
+    "correct": 0,
+    "explanation": "Hummingbird introduced semantic search understanding: parsing the full contextual intent behind complex, natural language questions.",
+    "topic": "Google Hummingbird",
+    "slide_ref": "8 Search Engine Optimization (SEO).pptx",
+    "answer": 0
+  },
+  {
+    "id": "q_ch08_06",
+    "chapter": 8,
+    "question": "What is 'RankBrain' (introduced in 2015) in Google's ranking infrastructure?",
+    "options": [
+      "A machine learning deep neural network system that helps process and interpret previously unseen search queries to determine relevance",
+      "A supercomputer in the Pentagon",
+      "An automated spam generation tool",
+      "A brain-computer interface implant"
+    ],
+    "correct": 0,
+    "explanation": "RankBrain is Google's ML-based query interpretation and ranking engine, converting words into semantic vectors to match unfamiliar queries.",
+    "topic": "Google RankBrain",
+    "slide_ref": "8 Search Engine Optimization (SEO).pptx",
+    "answer": 0
+  },
+  {
+    "id": "q_ch08_07",
+    "chapter": 8,
+    "question": "In On-Page SEO, what is the recommended optimal length for an HTML <title> tag to prevent truncation on desktop and mobile SERPs?",
+    "options": [
+      "Roughly 50 to 60 characters (or under ~600 pixels width)",
+      "Exactly 500 words",
+      "1 to 5 characters",
+      "Title tags have no character limits and never truncate"
+    ],
+    "correct": 0,
+    "explanation": "Search engines allocate roughly 600px width for titles; keeping titles within 50-60 characters ensures they display cleanly without truncation ellipses.",
+    "topic": "Title Tag Best Practice",
+    "slide_ref": "8 Search Engine Optimization (SEO).pptx",
+    "answer": 0
+  },
+  {
+    "id": "q_ch08_08",
+    "chapter": 8,
+    "question": "Why is the <meta name='description' content='...'> tag important for SEO even though Google states it is not a direct ranking factor?",
+    "options": [
+      "It serves as the default snippet text displayed under the title on the SERP, directly influencing user Click-Through Rate (CTR)",
+      "It makes the website load 10 times faster",
+      "It guarantees a #1 ranking on Google",
+      "It is required by the HTTP 1.1 protocol standard"
+    ],
+    "correct": 0,
+    "explanation": "Compelling, informative meta descriptions improve organic CTR, signaling relevance and driving higher traffic.",
+    "topic": "Meta Description Role",
+    "slide_ref": "8 Search Engine Optimization (SEO).pptx",
+    "answer": 0
+  },
+  {
+    "id": "q_ch08_09",
+    "chapter": 8,
+    "question": "What is 'Keyword Cannibalization' in website SEO?",
+    "options": [
+      "Eating paper printouts of keywords",
+      "When multiple pages on the same website target and compete for the exact same primary keyword, splitting domain authority and hurting rankings for both",
+      "Deleting keywords from the homepage",
+      "Translating keywords into French"
+    ],
+    "correct": 1,
+    "explanation": "Keyword cannibalization occurs when a site's own pages compete against each other for the same query, confusing search engines on which URL to rank.",
+    "topic": "Keyword Cannibalization",
+    "slide_ref": "8 Search Engine Optimization (SEO).pptx",
+    "answer": 1
+  },
+  {
+    "id": "q_ch08_10",
+    "chapter": 8,
+    "question": "What is a 'Canonical Tag' (<link rel='canonical' href='https://example.com/target'>)?",
+    "options": [
+      "An HTML element that specifies the preferred master URL when identical or near-duplicate content exists across multiple URLs, consolidating ranking signals",
+      "A tag that prevents users from copying text",
+      "A tag that translates the page into Latin",
+      "A tag that locks the browser tab"
+    ],
+    "correct": 0,
+    "explanation": "The rel='canonical' tag directs search bots to attribute all ranking equity and indexing preference to a single primary URL.",
+    "topic": "Canonical Tag Role",
+    "slide_ref": "8 Search Engine Optimization (SEO).pptx",
+    "answer": 0
+  },
+  {
+    "id": "q_ch08_11",
+    "chapter": 8,
+    "question": "What are the three Core Web Vitals metrics introduced by Google to evaluate page experience?",
+    "options": [
+      "LCP (Largest Contentful Paint), INP (Interaction to Next Paint), and CLS (Cumulative Layout Shift)",
+      "CPU, RAM, and Disk space",
+      "HTML, CSS, and JavaScript",
+      "Ping, Download, and Upload speed"
+    ],
+    "correct": 0,
+    "explanation": "Core Web Vitals measure real-world user experience: loading performance (LCP), interactivity/responsiveness (INP), and visual stability (CLS).",
+    "topic": "Core Web Vitals",
+    "slide_ref": "8 Search Engine Optimization (SEO).pptx",
+    "answer": 0
+  },
+  {
+    "id": "q_ch08_12",
+    "chapter": 8,
+    "question": "What does 'Largest Contentful Paint' (LCP) measure in Core Web Vitals?",
+    "options": [
+      "The render time of the largest image or text block visible within the viewport, measuring perceived loading speed (optimal: <= 2.5 seconds)",
+      "The physical weight of the monitor",
+      "The total download time of the entire website",
+      "The duration of the crawler's TCP handshake"
+    ],
+    "correct": 0,
+    "explanation": "LCP marks when the main content of a page has likely loaded; good user experience requires an LCP of 2.5 seconds or faster.",
+    "topic": "LCP Metric",
+    "slide_ref": "8 Search Engine Optimization (SEO).pptx",
+    "answer": 0
+  },
+  {
+    "id": "q_ch08_13",
+    "chapter": 8,
+    "question": "What does 'Cumulative Layout Shift' (CLS) measure in Core Web Vitals?",
+    "options": [
+      "Visual stability: the sum total of all unexpected layout shifts occurring during the entire lifespan of the page (optimal: <= 0.1)",
+      "The number of times the user scrolls up and down",
+      "The speed of CSS animations",
+      "The width of the browser window"
+    ],
+    "correct": 0,
+    "explanation": "CLS quantifies jarring visual movement (e.g., buttons moving suddenly while reading or tapping due to late-loading ads), ensuring visual stability.",
+    "topic": "CLS Metric",
+    "slide_ref": "8 Search Engine Optimization (SEO).pptx",
+    "answer": 0
+  },
+  {
+    "id": "q_ch08_14",
+    "chapter": 8,
+    "question": "What does 'Interaction to Next Paint' (INP) measure in Core Web Vitals (replacing FID in 2024)?",
+    "options": [
+      "Overall page responsiveness: measuring the latency of all user interactions (clicks, taps, key presses) throughout the entire page lifecycle (optimal: <= 200ms)",
+      "The time taken to paint physical artist canvases",
+      "The time taken to render 3D WebGL games",
+      "The time taken to reboot the web server"
+    ],
+    "correct": 0,
+    "explanation": "INP assesses page responsiveness by logging the latency of all user clicks, taps, and keypresses, requiring < 200ms for a 'good' rating.",
+    "topic": "INP Metric",
+    "slide_ref": "8 Search Engine Optimization (SEO).pptx",
+    "answer": 0
+  },
+  {
+    "id": "q_ch08_15",
+    "chapter": 8,
+    "question": "In Off-Page SEO, what is 'Backlink Equity' (or 'Link Juice')?",
+    "options": [
+      "A refreshing beverage for webmasters",
+      "The ranking power, reputation, and authority passed from one web page to another via hyperlinks",
+      "The monetary value of an Ethernet cable",
+      "The number of characters in a URL"
+    ],
+    "correct": 1,
+    "explanation": "Link equity refers to the authority and trustworthiness transferred through a hyperlink from a high-quality referring domain to the target URL.",
+    "topic": "Link Equity",
+    "slide_ref": "8 Search Engine Optimization (SEO).pptx",
+    "answer": 1
+  },
+  {
+    "id": "q_ch08_16",
+    "chapter": 8,
+    "question": "Why is a backlink from a high-authority domain like 'harvard.edu' generally more valuable than a link from a brand-new blog?",
+    "options": [
+      "Because university (.edu) domains have high historical trust, editorial oversight, and strong inbound link profiles that pass substantial authority",
+      "Because Google employees attended Harvard",
+      "Because .edu domains cost more money to register",
+      "Because Harvard servers use quantum computers"
+    ],
+    "correct": 0,
+    "explanation": "Search engines assign high trust to accredited educational and government domains due to their stringent editorial standards and strong backlink graphs.",
+    "topic": "Domain Authority Differences",
+    "slide_ref": "8 Search Engine Optimization (SEO).pptx",
+    "answer": 0
+  },
+  {
+    "id": "q_ch08_17",
+    "chapter": 8,
+    "question": "What is 'Anchor Text Diversity' in a healthy backlink profile?",
+    "options": [
+      "A natural distribution of branded, generic ('click here', 'source'), exact-match, and partial-match anchor texts, avoiding unnatural over-optimization",
+      "Using every font in Microsoft Word for links",
+      "Writing anchor texts in 20 different languages",
+      "Anchor text with rainbow colored text"
+    ],
+    "correct": 0,
+    "explanation": "A natural link profile exhibits diverse anchor text; having 100% exact commercial keywords (e.g., 'buy cheap shoes') triggers Penguin penalties.",
+    "topic": "Anchor Text Diversity",
+    "slide_ref": "8 Search Engine Optimization (SEO).pptx",
+    "answer": 0
+  },
+  {
+    "id": "q_ch08_18",
+    "chapter": 8,
+    "question": "What does the HTTP 301 redirect do to Link Equity (PageRank) compared to an HTTP 302 redirect?",
+    "options": [
+      "HTTP 301 is permanent and passes full link equity to the destination URL; HTTP 302 is temporary and typically retains link equity at the original URL",
+      "HTTP 301 deletes the website; HTTP 302 keeps it",
+      "HTTP 301 causes Google penalties; HTTP 302 improves rankings",
+      "There is zero difference between them"
+    ],
+    "correct": 0,
+    "explanation": "301 Permanent Redirect tells search bots to transfer historical link equity and canonical status to the new URL.",
+    "topic": "301 vs 302 SEO",
+    "slide_ref": "8 Search Engine Optimization (SEO).pptx",
+    "answer": 0
+  },
+  {
+    "id": "q_ch08_19",
+    "chapter": 8,
+    "question": "What is 'Crawl Budget' and how can large websites optimize it?",
+    "options": [
+      "By eliminating redirect chains, blocking low-value URLs in robots.txt, fixing 404 errors, and maintaining an up-to-date XML Sitemap",
+      "By paying Google $100 per day",
+      "By disabling HTTPS",
+      "By removing all images from the site"
+    ],
+    "correct": 0,
+    "explanation": "Crawl budget is conserved by preventing bots from wasting requests on infinite loops, broken links, faceted filters, and duplicate URLs.",
+    "topic": "Crawl Budget Optimization",
+    "slide_ref": "8 Search Engine Optimization (SEO).pptx",
+    "answer": 0
+  },
+  {
+    "id": "q_ch08_20",
+    "chapter": 8,
+    "question": "What does 'Mobile-First Indexing' mean for Google Search?",
+    "options": [
+      "Google predominantly uses the mobile version of a website's content, structure, and metadata for indexing and ranking across all search results",
+      "Websites can only be viewed on mobile phones",
+      "Desktop computers are banned from accessing Google",
+      "Websites must display mobile phone advertisements"
+    ],
+    "correct": 0,
+    "explanation": "Google crawls and indexes the web using a mobile smartphone Googlebot; desktop-only content that is hidden on mobile will not be indexed.",
+    "topic": "Mobile-First Indexing",
+    "slide_ref": "8 Search Engine Optimization (SEO).pptx",
+    "answer": 0
+  },
+  {
+    "id": "q_ch08_21",
+    "chapter": 8,
+    "question": "What is 'Structured Data' (Schema.org / JSON-LD) in SEO?",
+    "options": [
+      "Standardized code markup added to HTML to provide explicit semantic clues about page content (e.g., Recipe, Event, Product, FAQ, Review) to enable Rich Snippets",
+      "A database schema for MySQL",
+      "A CSS styling framework",
+      "An encryption algorithm"
+    ],
+    "correct": 0,
+    "explanation": "Schema.org structured data (embedded via JSON-LD) allows search engines to understand entities and display rich visual snippets (star ratings, event dates, pricing).",
+    "topic": "Structured Data JSON-LD",
+    "slide_ref": "8 Search Engine Optimization (SEO).pptx",
+    "answer": 0
+  },
+  {
+    "id": "q_ch08_22",
+    "chapter": 8,
+    "question": "What is a 'Rich Snippet' on a search engine results page?",
+    "options": [
+      "An enhanced search result that displays supplementary visual information (e.g., star ratings, review counts, product pricing, cooking times) extracted from structured data",
+      "A search result displayed on gold background",
+      "An advertisement that costs $1,000",
+      "A snippet that plays background music"
+    ],
+    "correct": 0,
+    "explanation": "Rich snippets display visual enhancements (ratings, images, recipes) directly in the SERP, drastically improving organic click-through rates.",
+    "topic": "Rich Snippets",
+    "slide_ref": "8 Search Engine Optimization (SEO).pptx",
+    "answer": 0
+  },
+  {
+    "id": "q_ch08_23",
+    "chapter": 8,
+    "question": "What is 'Keyword Stuffing' and how do modern search engines handle it?",
+    "options": [
+      "Excessively repeating target keywords in content, meta tags, or hidden text; search engines detect this via statistical text anomalies and demote or penalize the page",
+      "Stuffing keywords into a physical envelope",
+      "A recommended best practice to rank #1",
+      "A technique that increases page load speed"
+    ],
+    "correct": 0,
+    "explanation": "Keyword stuffing is an obsolete spam technique that violates quality guidelines, detected easily by modern language models and spam filters.",
+    "topic": "Keyword Stuffing Penalty",
+    "slide_ref": "8 Search Engine Optimization (SEO).pptx",
+    "answer": 0
+  },
+  {
+    "id": "q_ch08_24",
+    "chapter": 8,
+    "question": "What is 'Search Intent' (or User Intent) in modern SEO content strategy?",
+    "options": [
+      "The underlying goal or purpose behind a user's search query (Informational, Navigational, Commercial, or Transactional)",
+      "The user's credit score",
+      "The physical speed at which the user types",
+      "The operating system installed on the user's laptop"
+    ],
+    "correct": 0,
+    "explanation": "Matching search intent is the single most critical ranking factor: delivering the precise format and depth of content that satisfies the user's implicit goal.",
+    "topic": "Search Intent",
+    "slide_ref": "8 Search Engine Optimization (SEO).pptx",
+    "answer": 0
+  },
+  {
+    "id": "q_ch08_25",
+    "chapter": 8,
+    "question": "What does 'E-E-A-T' stand for in Google's Search Quality Rater Guidelines?",
+    "options": [
+      "Experience, Expertise, Authoritativeness, and Trustworthiness",
+      "Efficiency, Effectiveness, Accuracy, and Throughput",
+      "Electronic, Enterprise, Architecture, and Technology",
+      "Engine, Encoding, Algorithms, and Telemetry"
+    ],
+    "correct": 0,
+    "explanation": "E-E-A-T represents the core criteria human quality raters and algorithms evaluate, especially for YMYL (Your Money or Your Life) topics.",
+    "topic": "E-E-A-T Guidelines",
+    "slide_ref": "8 Search Engine Optimization (SEO).pptx",
+    "answer": 0
+  },
+  {
+    "id": "q_ch08_26",
+    "chapter": 8,
+    "question": "What does 'YMYL' stand for in Google's content quality evaluation?",
+    "options": [
+      "Your Money or Your Life: topics that could directly impact a person's future happiness, health, financial stability, or safety (e.g., medical advice, investing, legal)",
+      "Yesterday Morning You Laughed",
+      "Yearly Maintenance Yield Log",
+      "Young Men's Youth League"
+    ],
+    "correct": 0,
+    "explanation": "YMYL pages are held to the highest E-E-A-T standards because inaccurate or low-quality advice could harm a user's health, safety, or financial well-being.",
+    "topic": "YMYL Content",
+    "slide_ref": "8 Search Engine Optimization (SEO).pptx",
+    "answer": 0
+  },
+  {
+    "id": "q_ch08_27",
+    "chapter": 8,
+    "question": "What is an 'Internal Link' and why is it important for SEO site architecture?",
+    "options": [
+      "A hyperlink that points from one page on a domain to another page on the same domain, distributing PageRank and establishing site information hierarchy",
+      "A network cable connecting office computers",
+      "A link to an external competitor website",
+      "A link that is forbidden from being clicked"
+    ],
+    "correct": 0,
+    "explanation": "Strategic internal linking passes link equity to important deep pages and helps crawlers discover and index the entire site architecture efficiently.",
+    "topic": "Internal Linking",
+    "slide_ref": "8 Search Engine Optimization (SEO).pptx",
+    "answer": 0
+  },
+  {
+    "id": "q_ch08_28",
+    "chapter": 8,
+    "question": "What is 'Orphan Page' in website SEO?",
+    "options": [
+      "A page that has zero internal links pointing to it from any other page on the website, making it difficult for crawlers and users to discover",
+      "A page whose author has retired",
+      "A page that contains no images",
+      "A page hosted on an orphan server"
+    ],
+    "correct": 0,
+    "explanation": "Orphan pages are isolated from the site hierarchy; unless listed in an XML sitemap, crawlers rarely discover or re-crawl them.",
+    "topic": "Orphan Pages",
+    "slide_ref": "8 Search Engine Optimization (SEO).pptx",
+    "answer": 0
+  },
+  {
+    "id": "q_ch08_29",
+    "chapter": 8,
+    "question": "What is a '404 Not Found' HTTP error and how does it impact SEO if widespread across a site?",
+    "options": [
+      "The requested page does not exist; excessive broken internal links waste crawl budget and create negative user experience",
+      "The server has run out of disk space",
+      "The page is ranking in the top 4 positions",
+      "The domain name has expired"
+    ],
+    "correct": 0,
+    "explanation": "A 404 indicates a missing resource; widespread internal 404s degrade user satisfaction and waste crawler resources.",
+    "topic": "HTTP 404 SEO",
+    "slide_ref": "8 Search Engine Optimization (SEO).pptx",
+    "answer": 0
+  },
+  {
+    "id": "q_ch08_30",
+    "chapter": 8,
+    "question": "What is a 'Soft 404' error in search engine indexing?",
+    "options": [
+      "When a web server returns an HTTP 200 OK status code, but the page content displayed to the user is actually an empty page or 'page not found' message",
+      "A 404 error that occurs on soft screens",
+      "A temporary error that fixes itself in 5 minutes",
+      "A 404 error accompanied by a polite apology"
+    ],
+    "correct": 0,
+    "explanation": "Soft 404s confuse search bots because the server claims success (HTTP 200) while presenting blank or missing content, wasting crawl budget.",
+    "topic": "Soft 404",
+    "slide_ref": "8 Search Engine Optimization (SEO).pptx",
+    "answer": 0
+  },
+  {
+    "id": "q_ch08_31",
+    "chapter": 8,
+    "question": "What is the primary role of the HTML Heading tags (H1, H2, H3, ...) in SEO?",
+    "options": [
+      "They structure content into a logical, hierarchical semantic outline that helps both users and search engine parsers understand topic organization",
+      "They change the background color of paragraphs",
+      "They increase page load speed by 50%",
+      "They are required by the CSS3 specification"
+    ],
+    "correct": 0,
+    "explanation": "Proper heading hierarchies (a single main H1 followed by nested H2s and H3s) communicate topical structure to search engines and screen readers.",
+    "topic": "Heading Hierarchy",
+    "slide_ref": "8 Search Engine Optimization (SEO).pptx",
+    "answer": 0
+  },
+  {
+    "id": "q_ch08_32",
+    "chapter": 8,
+    "question": "Why is having multiple distinct H1 tags on a single standard blog post generally discouraged in SEO best practice?",
+    "options": [
+      "A single H1 clearly identifies the primary overarching topic of the document; multiple H1s can dilute topical focus and confuse document parsers",
+      "HTML5 forbids multiple H1 tags",
+      "Browsers crash when encountering two H1 tags",
+      "Multiple H1 tags cause HTTP 500 errors"
+    ],
+    "correct": 0,
+    "explanation": "While HTML5 permits multiple H1s in section tags, standard SEO convention recommends a single clear H1 reflecting the primary document focus.",
+    "topic": "H1 Best Practice",
+    "slide_ref": "8 Search Engine Optimization (SEO).pptx",
+    "answer": 0
+  },
+  {
+    "id": "q_ch08_33",
+    "chapter": 8,
+    "question": "What is the 'Alt Attribute' on an image tag (<img src='...' alt='...'>) and why is it essential for SEO?",
+    "options": [
+      "It provides alternative descriptive text for visually impaired screen readers and tells search engine crawlers what the image depicts for image search",
+      "It makes the image download in 4K resolution",
+      "It adds an animated border around the image",
+      "It is an optional copyright notice"
+    ],
+    "correct": 0,
+    "explanation": "Alt text provides accessibility for screen readers and critical textual signals for image search indexing.",
+    "topic": "Image Alt Attribute",
+    "slide_ref": "8 Search Engine Optimization (SEO).pptx",
+    "answer": 0
+  },
+  {
+    "id": "q_ch08_34",
+    "chapter": 8,
+    "question": "What is 'HTTPS' and why is it a confirmed ranking signal for Google?",
+    "options": [
+      "Hypertext Transfer Protocol Secure encrypts traffic with SSL/TLS, protecting user data and security (confirmed lightweight Google ranking factor since 2014)",
+      "It is an advertising tracking network",
+      "It makes websites free to host",
+      "It is a programming language for web design"
+    ],
+    "correct": 0,
+    "explanation": "HTTPS encrypts communications between client and server, protecting privacy and serving as a baseline trust signal in Google's page experience ranking.",
+    "topic": "HTTPS Ranking Factor",
+    "slide_ref": "8 Search Engine Optimization (SEO).pptx",
+    "answer": 0
+  },
+  {
+    "id": "q_ch08_35",
+    "chapter": 8,
+    "question": "What is a 'Disavow Tool' used for in Google Search Console?",
+    "options": [
+      "Asking Google to ignore specific low-quality, toxic, or spam backlinks pointing to your website to protect against Penguin manual penalties",
+      "Deleting your website from Google search",
+      "Disowning copyrighted content",
+      "Blocking foreign visitors"
+    ],
+    "correct": 0,
+    "explanation": "The Disavow Tool allows site owners to formally disassociate their site from manipulative or toxic links they cannot manually remove.",
+    "topic": "Disavow Tool",
+    "slide_ref": "8 Search Engine Optimization (SEO).pptx",
+    "answer": 0
+  },
+  {
+    "id": "q_ch08_36",
+    "chapter": 8,
+    "question": "What is 'Content Decay' in SEO maintenance?",
+    "options": [
+      "When older blog posts and articles gradually lose search rankings and organic traffic over time because their information becomes outdated or competitors publish fresher content",
+      "When digital files physically decompose on hard drives",
+      "When website text fades in color",
+      "When the server loses internet connection"
+    ],
+    "correct": 0,
+    "explanation": "Content decay is the gradual decline in organic traffic as search intent evolves or competitors publish more comprehensive, updated guides.",
+    "topic": "Content Decay",
+    "slide_ref": "8 Search Engine Optimization (SEO).pptx",
+    "answer": 0
+  },
+  {
+    "id": "q_ch08_37",
+    "chapter": 8,
+    "question": "What is 'Featured Snippet' (Position Zero) optimization?",
+    "options": [
+      "Structuring clear, concise 40-60 word definitions, bulleted lists, or comparison tables directly beneath target questions to be selected as Google's direct answer",
+      "Paying Google $50 to be placed above organic results",
+      "Hiding text using CSS",
+      "Submitting an XML sitemap every hour"
+    ],
+    "correct": 0,
+    "explanation": "Direct, objective answers formatted concisely in paragraphs or HTML tables are primed for extraction into Featured Snippets.",
+    "topic": "Featured Snippet Optimization",
+    "slide_ref": "8 Search Engine Optimization (SEO).pptx",
+    "answer": 0
+  },
+  {
+    "id": "q_ch08_38",
+    "chapter": 8,
+    "question": "What is the role of an 'XML Sitemap Index' file?",
+    "options": [
+      "A master sitemap that references multiple smaller XML sitemap files, used when a site exceeds the 50,000 URL or 50MB per-sitemap limit",
+      "An index of books in XML format",
+      "A database of user passwords",
+      "A sitemap for images only"
+    ],
+    "correct": 0,
+    "explanation": "Sitemap index files organize large websites with millions of URLs into manageable chunks under 50,000 URLs per individual sitemap.",
+    "topic": "Sitemap Index File",
+    "slide_ref": "8 Search Engine Optimization (SEO).pptx",
+    "answer": 0
+  },
+  {
+    "id": "q_ch08_39",
+    "chapter": 8,
+    "question": "What does 'Noindex' in a robots meta tag (<meta name='robots' content='noindex'>) instruct search engines to do?",
+    "options": [
+      "Do not include this page in the search engine index or SERP, although crawlers may still follow its links unless 'nofollow' is added",
+      "Do not crawl this page",
+      "Delete the page from the web server",
+      "Rank the page at number 1"
+    ],
+    "correct": 0,
+    "explanation": "Noindex prevents the document from appearing in search results, ideal for thank-you pages, internal search results, and admin logins.",
+    "topic": "Noindex Directive",
+    "slide_ref": "8 Search Engine Optimization (SEO).pptx",
+    "answer": 0
+  },
+  {
+    "id": "q_ch08_40",
+    "chapter": 8,
+    "question": "What is 'Crawl Depth' in website architecture?",
+    "options": [
+      "The physical depth of the ocean fiber optic cable",
+      "The number of clicks required for a user or crawler to navigate from the homepage to a given internal page (shallow crawl depth <= 3 clicks is optimal)",
+      "The number of lines of code in HTML",
+      "The font size of footer links"
+    ],
+    "correct": 1,
+    "explanation": "Shallow crawl architectures ensure all important content is accessible within 3-4 clicks from the homepage, maximizing link equity distribution.",
+    "topic": "Crawl Depth",
+    "slide_ref": "8 Search Engine Optimization (SEO).pptx",
+    "answer": 1
+  },
+  {
+    "id": "q_ch08_41",
+    "chapter": 8,
+    "question": "What is 'Keyword Density' and why is obsessing over a strict percentage (e.g., 'must be exactly 5.5%') an outdated SEO myth?",
+    "options": [
+      "Modern search engines use semantic embeddings and neural models (RankBrain, BERT) that evaluate topical depth and natural language rather than rigid keyword counting",
+      "Keyword density is illegal under copyright law",
+      "Keywords can only appear once in a document",
+      "Keyword density only applies to print newspapers"
+    ],
+    "correct": 0,
+    "explanation": "Rigid keyword density formulas are relics of 1990s retrieval; modern search engines analyze semantic completeness and natural phrasing.",
+    "topic": "Keyword Density Myth",
+    "slide_ref": "8 Search Engine Optimization (SEO).pptx",
+    "answer": 0
+  },
+  {
+    "id": "q_ch08_42",
+    "chapter": 8,
+    "question": "What is 'Black Hat SEO'?",
+    "options": [
+      "Practicing SEO while wearing a black hat",
+      "Aggressive, manipulative tactics that violate search engine quality guidelines (e.g., cloaking, private blog networks, hidden text, link buying) seeking quick rankings",
+      "SEO for dark mode websites",
+      "SEO exclusively for cybersecurity companies"
+    ],
+    "correct": 1,
+    "explanation": "Black Hat SEO exploits algorithmic loopholes to manipulate rankings, risking permanent algorithmic penalties or complete domain de-indexing.",
+    "topic": "Black Hat SEO",
+    "slide_ref": "8 Search Engine Optimization (SEO).pptx",
+    "answer": 1
+  },
+  {
+    "id": "q_ch08_43",
+    "chapter": 8,
+    "question": "What is 'White Hat SEO'?",
+    "options": [
+      "Ethical optimization adhering strictly to search engine webmaster guidelines, focusing on user experience, high-quality content, and natural link acquisition",
+      "SEO for medical websites wearing white coats",
+      "SEO that only uses white backgrounds",
+      "A government certification for webmasters"
+    ],
+    "correct": 0,
+    "explanation": "White Hat SEO focuses on long-term sustainability, creating exceptional user-centric content and clean technical architectures.",
+    "topic": "White Hat SEO",
+    "slide_ref": "8 Search Engine Optimization (SEO).pptx",
+    "answer": 0
+  },
+  {
+    "id": "q_ch08_44",
+    "chapter": 8,
+    "question": "What is a 'Private Blog Network' (PBN) in black hat link building?",
+    "options": [
+      "A network of expired domains purchased and revived solely to place artificial backlinks pointing to a target commercial website",
+      "A private company intranet blog",
+      "A personal diary website",
+      "A password-protected WordPress blog"
+    ],
+    "correct": 0,
+    "explanation": "PBNs fabricate artificial authority networks; Google actively detects PBN footprint patterns and de-indexes entire network topologies.",
+    "topic": "PBN Link Schemes",
+    "slide_ref": "8 Search Engine Optimization (SEO).pptx",
+    "answer": 0
+  },
+  {
+    "id": "q_ch08_45",
+    "chapter": 8,
+    "question": "What does 'Above the Fold' mean in website layout and SEO?",
+    "options": [
+      "The portion of a web page that is immediately visible to the user without scrolling down upon initial page load",
+      "A folded newspaper",
+      "A website that has been archived",
+      "The bottom footer of the website"
+    ],
+    "correct": 0,
+    "explanation": "Placing primary content and clear value above the fold engages users immediately and avoids ad-heavy layout penalties.",
+    "topic": "Above the Fold",
+    "slide_ref": "8 Search Engine Optimization (SEO).pptx",
+    "answer": 0
+  },
+  {
+    "id": "q_ch08_46",
+    "chapter": 8,
+    "question": "What is 'Hreflang' attribute (<link rel='alternate' hreflang='es' href='...'>) used for in international SEO?",
+    "options": [
+      "It tells search engines which language and regional version of a page to serve to users based on their geographic location and browser language settings",
+      "It translates HTML tags to Spanish",
+      "It blocks foreign visitors from accessing the site",
+      "It encrypts foreign currencies"
+    ],
+    "correct": 0,
+    "explanation": "Hreflang annotations prevent duplicate content penalties across regional variations (e.g., en-US vs en-GB) and direct users to their localized version.",
+    "topic": "Hreflang Tags",
+    "slide_ref": "8 Search Engine Optimization (SEO).pptx",
+    "answer": 0
+  },
+  {
+    "id": "q_ch08_47",
+    "chapter": 8,
+    "question": "What is 'Organic Traffic' in web analytics?",
+    "options": [
+      "Traffic generated from biological farming websites",
+      "Non-paid visitors who arrive at a website by clicking on natural, unpaid listings on a search engine results page",
+      "Visitors who click on Google AdWords pay-per-click banners",
+      "Visitors who type the URL directly into the address bar"
+    ],
+    "correct": 1,
+    "explanation": "Organic traffic represents free visitors arriving via standard unpaid search engine rankings, the primary performance metric of SEO campaigns.",
+    "topic": "Organic Traffic",
+    "slide_ref": "8 Search Engine Optimization (SEO).pptx",
+    "answer": 1
+  },
+  {
+    "id": "q_ch08_48",
+    "chapter": 8,
+    "question": "What is 'Bounce Rate' and why is a high bounce rate on an informational guide sometimes benign?",
+    "options": [
+      "A user may land on the page, find the exact answer to their question immediately (e.g., 'what is the capital of Peru?'), and close the tab satisfied without clicking further",
+      "Bounce rate is the physical vibration of the computer",
+      "A high bounce rate always means the server crashed",
+      "Bounce rate measures how fast the user types"
+    ],
+    "correct": 0,
+    "explanation": "While high bounce on an e-commerce checkout is bad, on a quick-answer informational page it often signifies rapid user satisfaction.",
+    "topic": "Bounce Rate Nuance",
+    "slide_ref": "8 Search Engine Optimization (SEO).pptx",
+    "answer": 0
+  },
+  {
+    "id": "q_ch08_49",
+    "chapter": 8,
+    "question": "What is 'Schema Markup' validation tool provided by Google?",
+    "options": [
+      "Rich Results Test / Schema Markup Validator",
+      "Google Translate",
+      "Google Chrome Task Manager",
+      "Google Maps Route Planner"
+    ],
+    "correct": 0,
+    "explanation": "Google's Rich Results Test verifies JSON-LD and Microdata syntax and previews eligibility for rich visual SERP features.",
+    "topic": "Schema Validation",
+    "slide_ref": "8 Search Engine Optimization (SEO).pptx",
+    "answer": 0
+  },
+  {
+    "id": "q_ch08_50",
+    "chapter": 8,
+    "question": "Why is 'Mobile-Friendliness' (responsive design, legible text without zooming, tap targets spaced adequately) a confirmed ranking factor?",
+    "options": [
+      "Over 60% of global web searches originate from mobile devices, making mobile user experience paramount for search satisfaction",
+      "Because desktop computers were banned by ISO standards",
+      "Because mobile phones cost more than desktop computers",
+      "Because mobile screens only display 10 words at a time"
+    ],
+    "correct": 0,
+    "explanation": "With the majority of searches occurring on smartphones, search engines prioritize websites that render seamlessly across all screen viewports.",
+    "topic": "Mobile Friendliness",
+    "slide_ref": "8 Search Engine Optimization (SEO).pptx",
+    "answer": 0
+  }
+]

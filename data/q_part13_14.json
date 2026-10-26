@@ -1,0 +1,1602 @@
+[
+  {
+    "id": "q_ch13_01",
+    "chapter": 13,
+    "question": "What is 'Adversarial Information Retrieval' fundamentally concerned with?",
+    "options": [
+      "The design of search algorithms that remain effective and robust in an environment where content creators actively and deceptively attempt to manipulate rankings for commercial gain",
+      "Military drone guidance algorithms",
+      "Fighting between two computer viruses",
+      "A search engine that insults its users"
+    ],
+    "correct": 0,
+    "explanation": "Adversarial IR studies the ongoing arms race between search engines and spammers who intentionally manipulate text and link signals.",
+    "topic": "Adversarial IR Concept",
+    "slide_ref": "13. Web Spam Detection and Adversarial IR.pptx",
+    "answer": 0
+  },
+  {
+    "id": "q_ch13_02",
+    "chapter": 13,
+    "question": "What is 'Web Spam' (Search Engine Spam / Spamdexing)?",
+    "options": [
+      "Any deliberate manipulation of web page content, HTML structure, or link topology designed to mislead search engine ranking algorithms into assigning artificially high rankings",
+      "Unsolicited junk emails in a personal inbox",
+      "A computer hardware failure",
+      "A broken hyperlink that returns 404"
+    ],
+    "correct": 0,
+    "explanation": "Spamdexing (Spam Indexing) manipulates search indexes with low-quality or deceptive pages to capture high-value organic traffic.",
+    "topic": "Web Spam Definition",
+    "slide_ref": "13. Web Spam Detection and Adversarial IR.pptx",
+    "answer": 0
+  },
+  {
+    "id": "q_ch13_03",
+    "chapter": 13,
+    "question": "What is the primary economic driver behind commercial Web Spam?",
+    "options": [
+      "High ranking positions on SERPs directly translate into substantial monetary revenue via advertising impressions, affiliate sales, lead generation, or malware distribution",
+      "Spammers want to test internet bandwidth limits",
+      "Spammers do it solely as an artistic hobby",
+      "Spammers want to improve search engine algorithms"
+    ],
+    "correct": 0,
+    "explanation": "Traffic from top Google rankings has enormous monetary value, creating massive financial incentives for black-hat operators to manipulate rankings.",
+    "topic": "Spam Economics",
+    "slide_ref": "13. Web Spam Detection and Adversarial IR.pptx",
+    "answer": 0
+  },
+  {
+    "id": "q_ch13_04",
+    "chapter": 13,
+    "question": "What is 'Keyword Stuffing' in content-based web spam?",
+    "options": [
+      "Repeatedly packing target keywords into text, meta tags, or comments with unnatural frequencies solely to artificially inflate Term Frequency (TF)",
+      "Typing keywords on a typewriter",
+      "Deleting keywords from web pages",
+      "Translating keywords into French"
+    ],
+    "correct": 0,
+    "explanation": "Keyword stuffing inflates TF to trick lexical scoring models; modern engines penalize this via statistical entropy and language model checks.",
+    "topic": "Keyword Stuffing",
+    "slide_ref": "13. Web Spam Detection and Adversarial IR.pptx",
+    "answer": 0
+  },
+  {
+    "id": "q_ch13_05",
+    "chapter": 13,
+    "question": "How do spammers implement 'Hidden Text' (Invisible Text)?",
+    "options": [
+      "Using CSS (e.g., color: white; background-color: white; font-size: 0px; display: none; text-indent: -9999px) so text is parsed by search bots but invisible to human readers",
+      "Writing text in invisible chemical ink on monitors",
+      "Encrypting text with AES-256",
+      "Deleting the text from HTML"
+    ],
+    "correct": 0,
+    "explanation": "Hidden text embeds thousands of commercial keywords for crawlers while presenting a clean interface to human visitors, a severe guideline violation.",
+    "topic": "Hidden Text Techniques",
+    "slide_ref": "13. Web Spam Detection and Adversarial IR.pptx",
+    "answer": 0
+  },
+  {
+    "id": "q_ch13_06",
+    "chapter": 13,
+    "question": "What is 'Cloaking' in web spam techniques?",
+    "options": [
+      "A web server inspecting incoming requests (User-Agent or IP address) and returning completely different content to search engine crawlers (e.g., rich keyword text) than to human browsers (e.g., adult ads or scam storefronts)",
+      "Hiding a computer under a physical blanket",
+      "Using HTTPS encryption",
+      "Wearing a disguise while programming"
+    ],
+    "correct": 0,
+    "explanation": "Cloaking serves optimized fake pages to bots like Googlebot while redirecting or serving commercial spam to real human visitors.",
+    "topic": "Cloaking",
+    "slide_ref": "13. Web Spam Detection and Adversarial IR.pptx",
+    "answer": 0
+  },
+  {
+    "id": "q_ch13_07",
+    "chapter": 13,
+    "question": "How does a web server technically detect a search engine crawler to execute Cloaking?",
+    "options": [
+      "By inspecting the 'User-Agent' string in the HTTP request header and cross-referencing the client's IP address against known search engine IP subnets and reverse-DNS lookups",
+      "By asking the user for their name",
+      "By checking the computer's screen resolution",
+      "By measuring internet speed"
+    ],
+    "correct": 0,
+    "explanation": "Servers identify bots via User-Agent strings (e.g., 'Googlebot') and verify IP blocks owned by search companies (e.g., 66.249.x.x).",
+    "topic": "Cloaking Detection Mechanism",
+    "slide_ref": "13. Web Spam Detection and Adversarial IR.pptx",
+    "answer": 0
+  },
+  {
+    "id": "q_ch13_08",
+    "chapter": 13,
+    "question": "What is a 'Doorway Page' (Bridge Page / Gateway Page)?",
+    "options": [
+      "A web page specifically created and heavily optimized to rank high for a specific niche query, but whose sole purpose is to immediately redirect or funnel visitors to a different target commercial website",
+      "A physical door into the server room",
+      "The login screen of a website",
+      "A 404 error page"
+    ],
+    "correct": 0,
+    "explanation": "Doorway pages are intermediate spam landing pages designed to capture search traffic and redirect users to a centralized commercial portal.",
+    "topic": "Doorway Pages",
+    "slide_ref": "13. Web Spam Detection and Adversarial IR.pptx",
+    "answer": 0
+  },
+  {
+    "id": "q_ch13_09",
+    "chapter": 13,
+    "question": "What is 'Scraped Content' in web spam?",
+    "options": [
+      "Content automatically copied, harvested, or synthesized from high-authority third-party websites without adding any original editorial value",
+      "Cleaning dust off computer cases",
+      "Deleting old files from a hard drive",
+      "Taking screenshots of websites"
+    ],
+    "correct": 0,
+    "explanation": "Scraper sites replicate RSS feeds, Wikipedia articles, or Q&A forums verbatim to generate thousands of ad-monetized pages cheaply.",
+    "topic": "Scraped Content",
+    "slide_ref": "13. Web Spam Detection and Adversarial IR.pptx",
+    "answer": 0
+  },
+  {
+    "id": "q_ch13_10",
+    "chapter": 13,
+    "question": "What is a 'Link Farm' in link-based web spam?",
+    "options": [
+      "A tightly coupled network of websites that all link to each other or to a designated target site with the sole intention of artificially inflating PageRank and in-degree counts",
+      "A farm where agricultural computers are grown",
+      "A collection of fiber optic network cables",
+      "A database of broken hyperlinks"
+    ],
+    "correct": 0,
+    "explanation": "Link farms are artificial graph topologies created to fabricate inbound link endorsements and manipulate eigenvector link algorithms.",
+    "topic": "Link Farms",
+    "slide_ref": "13. Web Spam Detection and Adversarial IR.pptx",
+    "answer": 0
+  },
+  {
+    "id": "q_ch13_11",
+    "chapter": 13,
+    "question": "What is a 'Spam Blog' (Splog)?",
+    "options": [
+      "An automated, low-quality blog generated purely to host links pointing to commercial websites and siphon search traffic",
+      "A personal travel diary blog",
+      "A blog discussing gourmet food recipes",
+      "A technology news website"
+    ],
+    "correct": 0,
+    "explanation": "Splogs are mass-generated fake blogs filled with spun or scraped text created solely to generate inbound backlinks for client sites.",
+    "topic": "Splogs",
+    "slide_ref": "13. Web Spam Detection and Adversarial IR.pptx",
+    "answer": 0
+  },
+  {
+    "id": "q_ch13_12",
+    "chapter": 13,
+    "question": "Why did search engines introduce the 'rel=nofollow' attribute in 2005?",
+    "options": [
+      "To stop comment spam and forum spam by telling search engine ranking algorithms not to transfer link authority (PageRank) across unmoderated user-submitted links",
+      "To prevent users from clicking on links",
+      "To make links load 50% faster",
+      "To encrypt external web addresses"
+    ],
+    "correct": 0,
+    "explanation": "Blog comment spam was rampant; rel='nofollow' devalued commercial links in comments, removing the financial incentive for link spammers.",
+    "topic": "rel=nofollow Origin",
+    "slide_ref": "13. Web Spam Detection and Adversarial IR.pptx",
+    "answer": 0
+  },
+  {
+    "id": "q_ch13_13",
+    "chapter": 13,
+    "question": "What is 'TrustRank' (Gyöngyi, Garcia-Molina, and Pedersen, 2004)?",
+    "options": [
+      "A semi-supervised link analysis algorithm that propagates trust scores from a human-curated set of trusted seed pages (e.g., .edu, .gov, major directories) across the web graph to identify spam",
+      "A banking credit score algorithm",
+      "A tool to verify SSL certificates",
+      "A password manager for search engines"
+    ],
+    "correct": 0,
+    "explanation": "TrustRank is based on the principle that reputable seeds rarely link to spam; trust attenuates with link distance, while spam pages remain far from seeds.",
+    "topic": "TrustRank Algorithm",
+    "slide_ref": "13. Web Spam Detection and Adversarial IR.pptx",
+    "answer": 0
+  },
+  {
+    "id": "q_ch13_14",
+    "chapter": 13,
+    "question": "What is the fundamental premise underlying the TrustRank algorithm?",
+    "options": [
+      "Good, highly reputable web pages rarely link to spam pages, whereas spam pages are forced to link to each other and cannot obtain backlinks from reputable seeds",
+      "All web pages have equal trustworthiness",
+      "Spam pages have more text than good pages",
+      "Search engines should trust all websites equally"
+    ],
+    "correct": 0,
+    "explanation": "The isolation of spam: spammers can easily link TO reputable sites, but cannot force reputable seeds to link BACK to them.",
+    "topic": "TrustRank Premise",
+    "slide_ref": "13. Web Spam Detection and Adversarial IR.pptx",
+    "answer": 0
+  },
+  {
+    "id": "q_ch13_15",
+    "chapter": 13,
+    "question": "What is 'Spam Mass' in link-based spam detection?",
+    "options": [
+      "A metric estimating the proportion of a page's PageRank that is artificially contributed by links originating from untrusted spam pages: SpamMass = (PageRank - TrustRank) / PageRank",
+      "The physical weight of spam printed on paper",
+      "The total megabytes of spam in a database",
+      "The number of spam emails received per day"
+    ],
+    "correct": 0,
+    "explanation": "Spam Mass measures the discrepancy between raw link popularity (PageRank) and seed-endorsed credibility (TrustRank); high Spam Mass indicates link manipulation.",
+    "topic": "Spam Mass Formula",
+    "slide_ref": "13. Web Spam Detection and Adversarial IR.pptx",
+    "answer": 0
+  },
+  {
+    "id": "q_ch13_16",
+    "chapter": 13,
+    "question": "What is 'BadRank' (or Anti-TrustRank)?",
+    "options": [
+      "A dual algorithm to TrustRank that starts from known spam blacklist seeds and propagates penalty scores backwards across inbound links",
+      "A bad review on Yelp",
+      "A computer virus ranking system",
+      "A ranking function for video games"
+    ],
+    "correct": 0,
+    "explanation": "BadRank propagates 'distrust' backward: if a page links to known spam, it is penalized for endorsing bad neighborhoods.",
+    "topic": "BadRank",
+    "slide_ref": "13. Web Spam Detection and Adversarial IR.pptx",
+    "answer": 0
+  },
+  {
+    "id": "q_ch13_17",
+    "chapter": 13,
+    "question": "How can 'Language Model Perplexity' be used to detect automatically generated spam text?",
+    "options": [
+      "Spam generated by Markov chains or random word concatenations has unnaturally high perplexity (entropy) when evaluated against a trained natural language model like Wikipedia",
+      "Spam has zero characters",
+      "Perplexity measures the download speed of the page",
+      "Language models refuse to read spam"
+    ],
+    "correct": 0,
+    "explanation": "Text with bizarre n-gram distributions or abnormal perplexity diverges from grammatical human text, flagging synthetic gibberish.",
+    "topic": "Perplexity Spam Detection",
+    "slide_ref": "13. Web Spam Detection and Adversarial IR.pptx",
+    "answer": 0
+  },
+  {
+    "id": "q_ch13_18",
+    "chapter": 13,
+    "question": "How does 'Gzip Compressibility' help detect content spam?",
+    "options": [
+      "Unnaturally stuffed or repetitive keyword spam has an abnormally high compression ratio compared to natural human writing with diverse vocabulary",
+      "Gzip deletes spam automatically",
+      "Compressed files cannot be opened by search engines",
+      "Spam files cannot be compressed"
+    ],
+    "correct": 0,
+    "explanation": "Extreme keyword repetition results in very low Shannon entropy and abnormally high compression ratios, serving as a fast heuristic filter.",
+    "topic": "Compression Spam Filter",
+    "slide_ref": "13. Web Spam Detection and Adversarial IR.pptx",
+    "answer": 0
+  },
+  {
+    "id": "q_ch13_19",
+    "chapter": 13,
+    "question": "What is a 'Sybil Attack' on a link graph?",
+    "options": [
+      "An adversary creating a massive number of pseudonymous, coordinated fake entities (nodes and links) to disproportionately bias graph consensus or ranking metrics",
+      "A physical attack on server hardware",
+      "An attack using acoustic sound waves",
+      "A distributed denial of service attack on DNS"
+    ],
+    "correct": 0,
+    "explanation": "Sybil attacks flood the graph with fake nodes (link farms, bot profiles) to inflate eigenvector-based centrality scores.",
+    "topic": "Sybil Attacks Link Graph",
+    "slide_ref": "13. Web Spam Detection and Adversarial IR.pptx",
+    "answer": 0
+  },
+  {
+    "id": "q_ch13_20",
+    "chapter": 13,
+    "question": "How do Graph Neural Networks (GNNs, such as GCN or GraphSAGE) detect Web Spam?",
+    "options": [
+      "By combining textual node features (TF-IDF, content stats) with structural link topology through neighborhood message-passing layers to classify nodes as spam or non-spam",
+      "By drawing 3D graphics on the screen",
+      "By replacing all web servers with neural chips",
+      "By calculating BM25 scores exclusively"
+    ],
+    "correct": 0,
+    "explanation": "GNNs perform relational reasoning: combining page text with neighbor link patterns to detect dense, coordinated spam subgraphs.",
+    "topic": "GNN Spam Detection",
+    "slide_ref": "13. Web Spam Detection and Adversarial IR.pptx",
+    "answer": 0
+  },
+  {
+    "id": "q_ch13_21",
+    "chapter": 13,
+    "question": "What is 'Sneaky Redirection' in web spam?",
+    "options": [
+      "A technique where a user clicks a search result and is unexpectedly redirected to an entirely different URL (e.g., an affiliate scam or phishing page) via JavaScript or Meta Refresh",
+      "A user sneaking onto someone else's computer",
+      "A crawler redirecting network traffic",
+      "A browser changing its window position"
+    ],
+    "correct": 0,
+    "explanation": "Sneaky redirects deceive search bots by displaying relevant content on the indexed page, but bouncing real users to a monetization trap.",
+    "topic": "Sneaky Redirects",
+    "slide_ref": "13. Web Spam Detection and Adversarial IR.pptx",
+    "answer": 0
+  },
+  {
+    "id": "q_ch13_22",
+    "chapter": 13,
+    "question": "How can search engines detect Cloaking automatically?",
+    "options": [
+      "By periodically fetching the same URL using two distinct crawlers: one masquerading as standard Googlebot and another mimicking a regular desktop/mobile consumer browser from an unannounced IP address, then comparing the HTML diff",
+      "By calling the website owner on the phone",
+      "By checking if the website has a copyright notice",
+      "By measuring server temperature"
+    ],
+    "correct": 0,
+    "explanation": "Dual-fetch 'honeypot' crawlers compare the content returned to Googlebot against that returned to an anonymous consumer IP; large discrepancies indicate cloaking.",
+    "topic": "Cloaking Detection Method",
+    "slide_ref": "13. Web Spam Detection and Adversarial IR.pptx",
+    "answer": 0
+  },
+  {
+    "id": "q_ch13_23",
+    "chapter": 13,
+    "question": "What is 'Content Spinning' (Article Spinning)?",
+    "options": [
+      "Using software to automatically replace words in an existing article with synonyms (e.g., using a thesaurus) to generate multiple superficially 'unique' variations to evade duplicate content filters",
+      "Spinning a hard drive disk faster",
+      "Rotating text 180 degrees on screen",
+      "Writing articles while on a carousel"
+    ],
+    "correct": 0,
+    "explanation": "Spinning creates thousands of pseudo-unique articles; modern NLP models detect the underlying syntactic template and penalize the resulting awkward phrasing.",
+    "topic": "Article Spinning",
+    "slide_ref": "13. Web Spam Detection and Adversarial IR.pptx",
+    "answer": 0
+  },
+  {
+    "id": "q_ch13_24",
+    "chapter": 13,
+    "question": "What is a 'Cookie Stuffing' (or Cookie Dropping) scheme?",
+    "options": [
+      "An affiliate marketing fraud where spam scripts silently drop tracking affiliate cookies onto a user's machine without the user actually clicking on an affiliate link",
+      "Eating cookies while browsing the web",
+      "Deleting browser cookies every 10 seconds",
+      "Storing cookies inside HTML files"
+    ],
+    "correct": 0,
+    "explanation": "Cookie stuffing steals attribution credit: if the user later buys from a merchant, the spammer unlawfully receives commission.",
+    "topic": "Cookie Stuffing",
+    "slide_ref": "13. Web Spam Detection and Adversarial IR.pptx",
+    "answer": 0
+  },
+  {
+    "id": "q_ch13_25",
+    "chapter": 13,
+    "question": "What is 'Comment Spam' and how was it historically automated?",
+    "options": [
+      "Using automated bots (like XRumer) to submit millions of comments containing hyperlinks on public blogs, wikis, and guestbooks across the web to build link equity",
+      "Writing polite comments on friends' photos",
+      "Deleting comments on social media",
+      "A bug in the web browser"
+    ],
+    "correct": 0,
+    "explanation": "Automated comment spammers flooded open discussion sections with commercial links, leading to CAPTCHAs, moderation, and nofollow tags.",
+    "topic": "Comment Spam",
+    "slide_ref": "13. Web Spam Detection and Adversarial IR.pptx",
+    "answer": 0
+  },
+  {
+    "id": "q_ch13_26",
+    "chapter": 13,
+    "question": "What is 'Google Sandbox' effect?",
+    "options": [
+      "A widely observed phenomenon where newly registered domains are temporarily held back from ranking high for competitive commercial queries until they demonstrate sustained credibility and organic age",
+      "A literal sandbox in Google's headquarters",
+      "A security isolation environment for Java applets",
+      "A software program for testing web browsers"
+    ],
+    "correct": 0,
+    "explanation": "The Sandbox acts as a cooling-off period to prevent spammers from buying fresh domains to burn-and-churn rankings for quick profit.",
+    "topic": "Google Sandbox Effect",
+    "slide_ref": "13. Web Spam Detection and Adversarial IR.pptx",
+    "answer": 0
+  },
+  {
+    "id": "q_ch13_27",
+    "chapter": 13,
+    "question": "What is a 'Manual Action' (or Manual Penalty) issued by Google?",
+    "options": [
+      "A human search quality reviewer at Google manually reviewing a site, determining it violates webmaster guidelines (e.g., unnatural links, thin content), and manually demoting or removing it from the index",
+      "A manual written on paper for search engines",
+      "A user manually typing a query",
+      "A physical hardware reset of a server"
+    ],
+    "correct": 0,
+    "explanation": "When algorithms flag extreme violations, human reviewers can issue manual penalties (visible in Google Search Console) requiring a reconsideration request.",
+    "topic": "Manual Actions",
+    "slide_ref": "13. Web Spam Detection and Adversarial IR.pptx",
+    "answer": 0
+  },
+  {
+    "id": "q_ch13_28",
+    "chapter": 13,
+    "question": "What is a 'Reconsideration Request' in search engine operations?",
+    "options": [
+      "A formal appeal submitted by a webmaster via Google Search Console asking for a manual penalty to be lifted after proving all guideline violations (e.g., toxic links, spam content) have been completely cleaned up",
+      "A request to change a search query",
+      "An appeal against an internet bill",
+      "A request to reboot the server"
+    ],
+    "correct": 0,
+    "explanation": "Site owners must document their cleanup efforts (disavowing links, removing thin content) to convince reviewers to remove manual penalties.",
+    "topic": "Reconsideration Request",
+    "slide_ref": "13. Web Spam Detection and Adversarial IR.pptx",
+    "answer": 0
+  },
+  {
+    "id": "q_ch13_29",
+    "chapter": 13,
+    "question": "What is 'Co-Citation' and 'Co-Occurrence' analysis in link spam detection?",
+    "options": [
+      "Evaluating whether a site is naturally mentioned and linked alongside legitimate, industry-standard authorities in the same topical vertical, exposing artificial link clusters",
+      "Citing two authors in an academic paper",
+      "Two servers sharing the same network cable",
+      "Two words having the same number of vowels"
+    ],
+    "correct": 0,
+    "explanation": "Natural authority sites are co-cited with major industry peers; isolated link rings lack organic co-citations across broader web neighborhoods.",
+    "topic": "Co-Citation Analysis",
+    "slide_ref": "13. Web Spam Detection and Adversarial IR.pptx",
+    "answer": 0
+  },
+  {
+    "id": "q_ch13_30",
+    "chapter": 13,
+    "question": "What is 'Anchor Text Over-Optimization'?",
+    "options": [
+      "When an unnatural proportion (e.g., 90%) of inbound backlinks to a website use the exact same commercial target keyword (e.g., 'best payday loan') rather than natural branded or URL anchor text",
+      "Using very large font for anchor text",
+      "Having too many links on a page",
+      "Writing anchor text in bold"
+    ],
+    "correct": 0,
+    "explanation": "Real-world organic links have diverse anchors (brand name, URL, 'click here'); having 90% exact commercial keywords is a dead giveaway of link manipulation.",
+    "topic": "Anchor Over-Optimization",
+    "slide_ref": "13. Web Spam Detection and Adversarial IR.pptx",
+    "answer": 0
+  },
+  {
+    "id": "q_ch13_31",
+    "chapter": 13,
+    "question": "What is 'Expired Domain Sniping' in black-hat link building?",
+    "options": [
+      "Purchasing previously authoritative, expired domain names that have existing high PageRank backlink profiles and rebuilding them as spam sites or 301-redirecting them to pass authority",
+      "Shooting at computer screens with lasers",
+      "Deleting domain names from the Internet",
+      "Registering domain names for free"
+    ],
+    "correct": 0,
+    "explanation": "Sniping exploits legacy trust: spammers inherit the acquired backlinks of defunct businesses to boost new commercial ventures.",
+    "topic": "Expired Domain Sniping",
+    "slide_ref": "13. Web Spam Detection and Adversarial IR.pptx",
+    "answer": 0
+  },
+  {
+    "id": "q_ch13_32",
+    "chapter": 13,
+    "question": "How do modern search engines counteract 'Expired Domain 301 Redirect' schemes?",
+    "options": [
+      "By resetting link equity and historical PageRank when a domain undergoes a change of ownership, topic shift, or prolonged dormancy",
+      "By banning all expired domain names permanently",
+      "By taking legal action against domain registrars",
+      "By blocking all 301 redirects across the internet"
+    ],
+    "correct": 0,
+    "explanation": "Search algorithms detect topic discontinuities (e.g., a local bakery domain suddenly redirecting to an online casino) and neutralize the transferred link equity.",
+    "topic": "Expired Domain Reset",
+    "slide_ref": "13. Web Spam Detection and Adversarial IR.pptx",
+    "answer": 0
+  },
+  {
+    "id": "q_ch13_33",
+    "chapter": 13,
+    "question": "What is 'Keyword Stuffing in Image Alt Tags'?",
+    "options": [
+      "Cramming long lists of unrelated keywords into the alt='' attribute of HTML <img> tags to manipulate image and web search rankings",
+      "Drawing keywords inside an image",
+      "Using images with file size over 10MB",
+      "Deleting images from HTML"
+    ],
+    "correct": 0,
+    "explanation": "Spammers exploit alt attributes under the assumption that bots read them without humans seeing them, which is easily flagged by spam filters.",
+    "topic": "Alt Tag Stuffing",
+    "slide_ref": "13. Web Spam Detection and Adversarial IR.pptx",
+    "answer": 0
+  },
+  {
+    "id": "q_ch13_34",
+    "chapter": 13,
+    "question": "What is 'Parasite SEO' (Host Crowding / Subdomain Hijacking)?",
+    "options": [
+      "Placing commercial affiliate content or parasite pages on high-authority third-party domains (e.g., university subdomains, reputable news outlets) without the host's direct oversight to rank on borrowed domain authority",
+      "A biological parasite that infects programmers",
+      "A virus that destroys computer hardware",
+      "A tool to optimize websites for biology"
+    ],
+    "correct": 0,
+    "explanation": "Parasite SEO exploits the high domain authority of trusted platforms (e.g., publishing commercial loan reviews on an educational wiki) to rank easily.",
+    "topic": "Parasite SEO",
+    "slide_ref": "13. Web Spam Detection and Adversarial IR.pptx",
+    "answer": 0
+  },
+  {
+    "id": "q_ch13_35",
+    "chapter": 13,
+    "question": "How did Google address 'Parasite SEO' in its 2024 Site Reputation Abuse policy?",
+    "options": [
+      "Classifying third-party content published on a host site with little or no host involvement/supervision as a violation, leading to manual penalties and de-indexing of offending sections",
+      "Banning all universities from having websites",
+      "Deleting all subdomains across the internet",
+      "Requiring all websites to pay a monthly license fee"
+    ],
+    "correct": 0,
+    "explanation": "Google updated guidelines to penalize 'Site Reputation Abuse' where high-authority domains lease subdirectories to third-party commercial spam operations.",
+    "topic": "Site Reputation Abuse",
+    "slide_ref": "13. Web Spam Detection and Adversarial IR.pptx",
+    "answer": 0
+  },
+  {
+    "id": "q_ch13_36",
+    "chapter": 13,
+    "question": "What is 'CSS Text-Indent Trick' in hidden text spam?",
+    "options": [
+      "Using 'text-indent: -9999px' or 'position: absolute; left: -9999px' to render text thousands of pixels off the visible browser viewport so only bots read it",
+      "Indenting the first line of a paragraph",
+      "Formatting CSS code with 4 spaces",
+      "A tool to align bullet points"
+    ],
+    "correct": 0,
+    "explanation": "Off-screen positioning hides keyword-dense paragraphs from sighted human visitors while leaving them in the DOM for search parsers.",
+    "topic": "CSS Off-Screen Spam",
+    "slide_ref": "13. Web Spam Detection and Adversarial IR.pptx",
+    "answer": 0
+  },
+  {
+    "id": "q_ch13_37",
+    "chapter": 13,
+    "question": "What is 'Negative SEO'?",
+    "options": [
+      "Malicious tactics used by an adversary against a competitor (e.g., pointing thousands of toxic casino backlinks or scraping content to trigger a Penguin penalty against the competitor)",
+      "SEO that decreases your own traffic",
+      "SEO performed at night",
+      "SEO for dark mode websites"
+    ],
+    "correct": 0,
+    "explanation": "Negative SEO is sabotage: bad actors blast competitors with spammy links hoping search algorithms will penalize the innocent victim.",
+    "topic": "Negative SEO",
+    "slide_ref": "13. Web Spam Detection and Adversarial IR.pptx",
+    "answer": 0
+  },
+  {
+    "id": "q_ch13_38",
+    "chapter": 13,
+    "question": "How do modern search engines protect websites against Negative SEO attacks?",
+    "options": [
+      "Algorithms like Google Penguin 4.0 (2016) ignore and devalue spam links automatically rather than demoting the targeted site, rendering link blasts harmless",
+      "By prosecuting all spammers in federal court",
+      "By shutting down the competitor's website",
+      "By removing backlinks from the internet entirely"
+    ],
+    "correct": 0,
+    "explanation": "Modern link evaluation algorithms neutralize low-quality links by assigning them zero weight rather than actively applying penalties.",
+    "topic": "Penguin Real-time Neutralization",
+    "slide_ref": "13. Web Spam Detection and Adversarial IR.pptx",
+    "answer": 0
+  },
+  {
+    "id": "q_ch13_39",
+    "chapter": 13,
+    "question": "What is 'Typosquatting' (URL Hijacking)?",
+    "options": [
+      "Registering domain names that are common misspellings of popular brands (e.g., 'goolge.com', 'amazn.com') to siphon confused users to advertising or phishing traps",
+      "Typing too fast on a keyboard",
+      "Writing spelling correction algorithms",
+      "Squatting while using a laptop"
+    ],
+    "correct": 0,
+    "explanation": "Typosquatters profit from user typing mistakes to harvest ad impressions or distribute malware.",
+    "topic": "Typosquatting",
+    "slide_ref": "13. Web Spam Detection and Adversarial IR.pptx",
+    "answer": 0
+  },
+  {
+    "id": "q_ch13_40",
+    "chapter": 13,
+    "question": "What is 'Click Fraud' in search engine advertising?",
+    "options": [
+      "Using automated bots or human click farms to repeatedly click on competitor pay-per-click (PPC) ads to exhaust their advertising budget without generating real customers",
+      "Clicking on a broken link",
+      "Clicking twice on a button",
+      "A computer mouse malfunction"
+    ],
+    "correct": 0,
+    "explanation": "Click fraud drains competitor ad budgets; search ad networks deploy sophisticated ML fraud detection to identify and refund invalid clicks.",
+    "topic": "Click Fraud",
+    "slide_ref": "13. Web Spam Detection and Adversarial IR.pptx",
+    "answer": 0
+  },
+  {
+    "id": "q_ch13_41",
+    "chapter": 13,
+    "question": "What does 'Spam Crawling' (Ghost Referrer Spam) do in Google Analytics?",
+    "options": [
+      "Spam bots hit the Google Analytics Measurement Protocol directly with fake pageviews and referral URLs to lure webmasters into visiting the spammer's site out of curiosity",
+      "A ghost visiting a server room",
+      "An automated test script",
+      "A crawler that runs at midnight"
+    ],
+    "correct": 0,
+    "explanation": "Referrer spam pollutes webmaster analytics logs with fake visits from commercial domains to generate curiosity clicks from site owners.",
+    "topic": "Referrer Spam",
+    "slide_ref": "13. Web Spam Detection and Adversarial IR.pptx",
+    "answer": 0
+  },
+  {
+    "id": "q_ch13_42",
+    "chapter": 13,
+    "question": "What is 'Search Engine Poisoning' (SEO Poisoning)?",
+    "options": [
+      "Manipulating search algorithms to rank malicious pages distributing malware, trojans, or phishing kits at the top of results for trending news topics",
+      "Pouring toxic chemicals on computer cables",
+      "Deleting search engine databases",
+      "A virus that attacks Google employees"
+    ],
+    "correct": 0,
+    "explanation": "SEO poisoning capitalizes on breaking events or trending celebrity queries to infect unsuspecting users seeking timely information.",
+    "topic": "SEO Poisoning",
+    "slide_ref": "13. Web Spam Detection and Adversarial IR.pptx",
+    "answer": 0
+  },
+  {
+    "id": "q_ch13_43",
+    "chapter": 13,
+    "question": "What is 'Hacked Site Spam' (Compromised Website Injection)?",
+    "options": [
+      "Attackers exploit security vulnerabilities (like outdated WordPress plugins) to inject hidden pharmaceutical or casino links and doorway pages into legitimate websites",
+      "A computer crash during a thunderstorm",
+      "A student hacking their school website to change grades",
+      "A search engine losing user passwords"
+    ],
+    "correct": 0,
+    "explanation": "Injected spam hijacks the legitimate authority of hacked government, educational, or commercial sites to pass link equity to illicit targets.",
+    "topic": "Hacked Site Spam",
+    "slide_ref": "13. Web Spam Detection and Adversarial IR.pptx",
+    "answer": 0
+  },
+  {
+    "id": "q_ch13_44",
+    "chapter": 13,
+    "question": "How does Google alert users and webmasters when a site is compromised with spam?",
+    "options": [
+      "By displaying warning badges on the SERP (e.g., 'This site may be hacked') and sending an alert via Google Search Console",
+      "By calling the webmaster on the telephone",
+      "By disconnecting the webmaster's home internet",
+      "By deleting the website from DNS servers"
+    ],
+    "correct": 0,
+    "explanation": "Search engines protect users by displaying clear warning interstitials and flagging compromised domains in search results.",
+    "topic": "Compromised Site Warnings",
+    "slide_ref": "13. Web Spam Detection and Adversarial IR.pptx",
+    "answer": 0
+  },
+  {
+    "id": "q_ch13_45",
+    "chapter": 13,
+    "question": "What is 'Web Spam Arms Race'?",
+    "options": [
+      "The perpetual competitive cycle where spammers invent novel manipulation techniques, search engines engineer new countermeasures to defeat them, and spammers adapt again",
+      "A military contest between nuclear submarines",
+      "A race to see who can build the fastest web crawler",
+      "A typing competition between programmers"
+    ],
+    "correct": 0,
+    "explanation": "Adversarial IR is a dynamic cat-and-mouse game: defensive updates prompt new evasive tactics, requiring continuous algorithmic innovation.",
+    "topic": "Spam Arms Race",
+    "slide_ref": "13. Web Spam Detection and Adversarial IR.pptx",
+    "answer": 0
+  },
+  {
+    "id": "q_ch13_46",
+    "chapter": 13,
+    "question": "Why is 'Near-Duplicate Clustering' effective against Scraper Spam?",
+    "options": [
+      "Because scrapers generate thousands of pages that differ only in tiny boilerplate details; clustering them via MinHash or SimHash allows penalizing the entire cluster as synthetic duplicates",
+      "Because scrapers only operate in pairs",
+      "Because scrapers use the same IP address",
+      "Because scrapers cannot run on Linux"
+    ],
+    "correct": 0,
+    "explanation": "LSH hashing groups millions of near-identical scraped pages into single clusters, enabling bulk demotion and conserving crawl resources.",
+    "topic": "Scraper Clustering",
+    "slide_ref": "13. Web Spam Detection and Adversarial IR.pptx",
+    "answer": 0
+  },
+  {
+    "id": "q_ch13_47",
+    "chapter": 13,
+    "question": "What is 'Link Velocity' and why do sudden unnatural spikes trigger spam alerts?",
+    "options": [
+      "The rate at which a domain acquires new inbound backlinks; a sudden artificial surge of 50,000 links in two days to an obscure site strongly indicates a paid link blast or automated link farm",
+      "The physical speed of data moving through fiber cables",
+      "The typing speed of the webmaster",
+      "The download speed of images"
+    ],
+    "correct": 0,
+    "explanation": "Natural authority grows progressively; anomalous spikes in link velocity alert anti-spam classifiers to investigate link authenticity.",
+    "topic": "Link Velocity",
+    "slide_ref": "13. Web Spam Detection and Adversarial IR.pptx",
+    "answer": 0
+  },
+  {
+    "id": "q_ch13_48",
+    "chapter": 13,
+    "question": "What is 'Bait-and-Switch' SEO?",
+    "options": [
+      "Ranking a page for a high-volume innocuous query (e.g., 'free educational math games'), and once ranked, completely replacing the content with commercial or predatory advertising",
+      "Fishing while browsing the web",
+      "Switching between two computer monitors",
+      "Selling bait on an e-commerce website"
+    ],
+    "correct": 0,
+    "explanation": "Bait-and-switch exploits algorithmic index staleness by swapping content after achieving high rankings.",
+    "topic": "Bait-and-Switch",
+    "slide_ref": "13. Web Spam Detection and Adversarial IR.pptx",
+    "answer": 0
+  },
+  {
+    "id": "q_ch13_49",
+    "chapter": 13,
+    "question": "What is the role of 'Human Quality Raters' at search engine companies regarding web spam?",
+    "options": [
+      "They evaluate thousands of search result sets using strict public guidelines (e.g., evaluating E-E-A-T and identifying spam) to provide ground-truth benchmark data for training ranking algorithms",
+      "They manually rank every single webpage on the internet one by one",
+      "They answer user queries via live chat",
+      "They repair broken computer keyboards"
+    ],
+    "correct": 0,
+    "explanation": "Human raters do not manually adjust individual page rankings; their graded evaluations serve as gold-standard benchmark datasets to train and validate ML models.",
+    "topic": "Search Quality Raters",
+    "slide_ref": "13. Web Spam Detection and Adversarial IR.pptx",
+    "answer": 0
+  },
+  {
+    "id": "q_ch13_50",
+    "chapter": 13,
+    "question": "What is 'Zero-Click Spam' in modern search engines?",
+    "options": [
+      "Manipulating structured data markup (Schema.org) with fabricated review stars, fake FAQ blocks, or exaggerated answers to dominate SERP Position Zero features",
+      "A search engine that displays zero results",
+      "A user who never clicks on links",
+      "A computer without a mouse"
+    ],
+    "correct": 0,
+    "explanation": "Spammers inject fabricated schema markup to capture rich featured snippets and answer boxes without providing real substance.",
+    "topic": "Zero-Click Spam",
+    "slide_ref": "13. Web Spam Detection and Adversarial IR.pptx",
+    "answer": 0
+  },
+  {
+    "id": "q_ch14_01",
+    "chapter": 14,
+    "question": "In the Web Graph model, how are web pages and hyperlinks represented?",
+    "options": [
+      "Web pages are directed Nodes (Vertices) and Hyperlinks are Directed Edges pointing from source to target",
+      "Web pages are edges and hyperlinks are nodes",
+      "Web pages are horizontal lines and hyperlinks are vertical lines",
+      "Web pages are numbers and hyperlinks are letters"
+    ],
+    "correct": 0,
+    "explanation": "The World Wide Web is formally modeled as a directed graph G = (V, E), where vertices V are web pages and directed edges E are hyperlinks.",
+    "topic": "Web Graph Model",
+    "slide_ref": "14. Link Analysis and Web Graph Algorithms.pptx",
+    "answer": 0
+  },
+  {
+    "id": "q_ch14_02",
+    "chapter": 14,
+    "question": "In web graph analysis, what is an 'In-link' (Backlink)?",
+    "options": [
+      "A directed hyperlink pointing from another external web page INTO the current target web page",
+      "A link connecting a computer to the internet",
+      "A link from a page to itself",
+      "A link pointing outwards to another domain"
+    ],
+    "correct": 0,
+    "explanation": "In-links point into a node, acting as peer endorsements or recommendations from the linking page.",
+    "topic": "In-link Definition",
+    "slide_ref": "14. Link Analysis and Web Graph Algorithms.pptx",
+    "answer": 0
+  },
+  {
+    "id": "q_ch14_03",
+    "chapter": 14,
+    "question": "What does the 'Bow-tie Structure' of the Web (Broder et al., 2000) reveal about web connectivity?",
+    "options": [
+      "The web is not uniformly connected: it has a large Strongly Connected Component (SCC) core, flanked by IN and OUT components, connected by Tubes and Tendrils",
+      "The web looks like a butterfly in color photos",
+      "The web is a single continuous circle",
+      "All web pages have exactly 4 links"
+    ],
+    "correct": 0,
+    "explanation": "Broder's macroscopic study showed the web has an SCC core (~28%), an IN component linking into SCC, an OUT component reachable from SCC, and disconnected tendrils.",
+    "topic": "Bow-tie Structure",
+    "slide_ref": "14. Link Analysis and Web Graph Algorithms.pptx",
+    "answer": 0
+  },
+  {
+    "id": "q_ch14_04",
+    "chapter": 14,
+    "question": "In the Bow-tie model of the Web, what characterizes the 'SCC' (Strongly Connected Component)?",
+    "options": [
+      "A central core where any web page can reach any other web page in the component by following a directed path of hyperlinks",
+      "A component where all servers use the same operating system",
+      "A component containing only broken links",
+      "A component disconnected from the internet"
+    ],
+    "correct": 0,
+    "explanation": "In graph theory, an SCC is a maximal subgraph where every pair of vertices is mutually reachable along directed paths.",
+    "topic": "SCC Component",
+    "slide_ref": "14. Link Analysis and Web Graph Algorithms.pptx",
+    "answer": 0
+  },
+  {
+    "id": "q_ch14_05",
+    "chapter": 14,
+    "question": "What does the 'Random Surfer Model' in the PageRank algorithm simulate?",
+    "options": [
+      "A user navigating the web by randomly clicking links on the current page with probability d, and jumping to a completely random web page with probability (1 - d)",
+      "A computer hacker surfing the internet illegally",
+      "A user searching for beach vacations",
+      "A randomized sorting algorithm for hard drives"
+    ],
+    "correct": 0,
+    "explanation": "The Random Surfer represents idealized web browsing: following links with damping factor d (0.85) and teleporting to an arbitrary page with probability (1 - d).",
+    "topic": "Random Surfer Model",
+    "slide_ref": "14. Link Analysis and Web Graph Algorithms.pptx",
+    "answer": 0
+  },
+  {
+    "id": "q_ch14_06",
+    "chapter": 14,
+    "question": "In PageRank, what is the 'Stationary Distribution' of the Markov Chain?",
+    "options": [
+      "The equilibrium probability vector r where r = M * r, representing the steady-state probability that the random surfer is visiting each page",
+      "The physical location of the server",
+      "The number of pages indexed per day",
+      "A list of stationary office supplies"
+    ],
+    "correct": 0,
+    "explanation": "PageRank is the principal eigenvector corresponding to eigenvalue 1 of the stochastic transition probability matrix M.",
+    "topic": "Stationary Distribution",
+    "slide_ref": "14. Link Analysis and Web Graph Algorithms.pptx",
+    "answer": 0
+  },
+  {
+    "id": "q_ch14_07",
+    "chapter": 14,
+    "question": "What is the standard value of the Damping Factor 'd' chosen in the classic PageRank algorithm (Brin & Page, 1998)?",
+    "options": [
+      "d = 0.85",
+      "d = 0.0",
+      "d = 1.0",
+      "d = 0.50"
+    ],
+    "correct": 0,
+    "explanation": "Page and Brin set d = 0.85, meaning the random surfer follows links on the page 85% of the time and teleports 15% of the time.",
+    "topic": "Damping Factor Standard",
+    "slide_ref": "14. Link Analysis and Web Graph Algorithms.pptx",
+    "answer": 0
+  },
+  {
+    "id": "q_ch14_08",
+    "chapter": 14,
+    "question": "Why is the Damping Factor (Teleportation) essential for the convergence of PageRank?",
+    "options": [
+      "It guarantees the transition matrix is irreducible and aperiodic (primitive), ensuring a unique positive stationary distribution exists under the Perron-Frobenius theorem",
+      "It prevents the computer from overheating",
+      "It rounds floating-point numbers to integers",
+      "It deletes dead links from the web"
+    ],
+    "correct": 0,
+    "explanation": "Teleportation eliminates disconnected components and periodic cycles, converting the web graph into an ergodic Markov chain with a guaranteed unique stationary vector.",
+    "topic": "Perron-Frobenius Theorem",
+    "slide_ref": "14. Link Analysis and Web Graph Algorithms.pptx",
+    "answer": 0
+  },
+  {
+    "id": "q_ch14_09",
+    "chapter": 14,
+    "question": "What is a 'Dead End' (Dangling Node) in the PageRank web graph?",
+    "options": [
+      "A web page that has in-links but ZERO outgoing links (out-degree = 0), causing PageRank score to leak out of the system during iteration",
+      "A broken ethernet cable",
+      "A computer that has shut down",
+      "A domain whose registration has expired"
+    ],
+    "correct": 0,
+    "explanation": "Dangling nodes have no outgoing edges; without handling, probability mass drains into them and is lost.",
+    "topic": "Dead Ends in PageRank",
+    "slide_ref": "14. Link Analysis and Web Graph Algorithms.pptx",
+    "answer": 0
+  },
+  {
+    "id": "q_ch14_10",
+    "chapter": 14,
+    "question": "How does PageRank mathematically resolve 'Dead Ends' (Dangling Nodes)?",
+    "options": [
+      "By replacing the zero-outdegree row with a uniform transition vector that distributes probability mass equally to all N pages in the collection (virtual links to all pages)",
+      "By deleting the page from the index entirely",
+      "By setting its PageRank to 0",
+      "By multiplying all PageRanks by 2"
+    ],
+    "correct": 0,
+    "explanation": "A dead end is treated as linking to every page in the universe with probability 1/N, preserving total probability mass conservation sum(PR) = 1.0.",
+    "topic": "Dangling Node Resolution",
+    "slide_ref": "14. Link Analysis and Web Graph Algorithms.pptx",
+    "answer": 0
+  },
+  {
+    "id": "q_ch14_11",
+    "chapter": 14,
+    "question": "What is a 'Spider Trap' in the PageRank web graph?",
+    "options": [
+      "A group of pages that only link to each other in a closed cycle with no links pointing outside, absorbing and trapping all PageRank mass over repeated iterations",
+      "A physical trap for spiders in data centers",
+      "A software bug that crashes the crawler",
+      "A website that requires a login"
+    ],
+    "correct": 0,
+    "explanation": "Spider traps absorb all probability in pure random walks; the damping factor (1 - d) provides the escape teleportation mechanism.",
+    "topic": "Spider Traps in PageRank",
+    "slide_ref": "14. Link Analysis and Web Graph Algorithms.pptx",
+    "answer": 0
+  },
+  {
+    "id": "q_ch14_12",
+    "chapter": 14,
+    "question": "What is the 'Power Iteration' method for computing PageRank?",
+    "options": [
+      "An iterative numerical method that repeatedly multiplies the current probability vector by the transition matrix: r_{k+1} = M * r_k, until ||r_{k+1} - r_k|| < epsilon",
+      "Running server CPUs at maximum power",
+      "A brute-force search over all web pages",
+      "A method that uses quantum computing"
+    ],
+    "correct": 0,
+    "explanation": "Power iteration starts with uniform vector [1/N, ..., 1/N]^T and multiplies by transition matrix M repeatedly until convergence (typically 50-100 iterations).",
+    "topic": "Power Iteration",
+    "slide_ref": "14. Link Analysis and Web Graph Algorithms.pptx",
+    "answer": 0
+  },
+  {
+    "id": "q_ch14_13",
+    "chapter": 14,
+    "question": "What is 'Topic-Sensitive PageRank' (Taher Haveliwala, 2002)?",
+    "options": [
+      "A personalized extension where the teleportation vector is biased toward a specific topic category (e.g., Sports, Tech) instead of a uniform 1/N distribution across all web pages",
+      "A PageRank algorithm that only ranks emotional topics",
+      "A method of filtering sensitive adult content",
+      "A search engine that only indexes news topics"
+    ],
+    "correct": 0,
+    "explanation": "Topic-Sensitive PageRank computes topic-specific rank vectors by restricting random teleportation to curated category seed pages.",
+    "topic": "Topic-Sensitive PageRank",
+    "slide_ref": "14. Link Analysis and Web Graph Algorithms.pptx",
+    "answer": 0
+  },
+  {
+    "id": "q_ch14_14",
+    "chapter": 14,
+    "question": "What is 'Personalized PageRank' (PPR)?",
+    "options": [
+      "A PageRank calculation where the random teleportation jump vector is focused entirely on a specific user's bookmarked or preferred web pages",
+      "A search engine with the user's name on it",
+      "A tool to customize the browser CSS",
+      "A private ranking algorithm stored on a laptop"
+    ],
+    "correct": 0,
+    "explanation": "PPR biases the teleportation distribution to a personalized set of nodes, modeling individual user navigation preferences.",
+    "topic": "Personalized PageRank",
+    "slide_ref": "14. Link Analysis and Web Graph Algorithms.pptx",
+    "answer": 0
+  },
+  {
+    "id": "q_ch14_15",
+    "chapter": 14,
+    "question": "In the HITS algorithm (Jon Kleinberg, 1999), what is an 'Authority'?",
+    "options": [
+      "A high-quality web page containing authoritative, comprehensive content about the query topic, pointed to by many good Hub pages",
+      "A government regulatory agency",
+      "The administrator of the server",
+      "A page that has an SSL certificate"
+    ],
+    "correct": 0,
+    "explanation": "Authorities are destination pages with prominent information about a topic, recognized by having many incoming links from quality hubs.",
+    "topic": "HITS Authority",
+    "slide_ref": "14. Link Analysis and Web Graph Algorithms.pptx",
+    "answer": 0
+  },
+  {
+    "id": "q_ch14_16",
+    "chapter": 14,
+    "question": "In the HITS algorithm, what is a 'Hub'?",
+    "options": [
+      "A web page that acts as a curated directory or compilation of links, pointing to many authoritative web pages on a given topic",
+      "A physical network switch with 24 ports",
+      "A central server in a data center",
+      "The homepage of a search engine"
+    ],
+    "correct": 0,
+    "explanation": "Hubs are link aggregators (e.g., resource guides, bibliographies) that point users to authoritative resources.",
+    "topic": "HITS Hub",
+    "slide_ref": "14. Link Analysis and Web Graph Algorithms.pptx",
+    "answer": 0
+  },
+  {
+    "id": "q_ch14_17",
+    "chapter": 14,
+    "question": "What is the principle of 'Mutual Reinforcement' in the HITS algorithm?",
+    "options": [
+      "A good Authority is pointed to by many good Hubs; A good Hub points to many good Authorities",
+      "All web pages reinforce each other equally",
+      "Users and servers reinforce each other",
+      "Hardware and software run together"
+    ],
+    "correct": 0,
+    "explanation": "HITS mutually reinforces two distinct scores: authority score a(p) = sum(h(q)) for q->p, and hub score h(p) = sum(a(q)) for p->q.",
+    "topic": "HITS Mutual Reinforcement",
+    "slide_ref": "14. Link Analysis and Web Graph Algorithms.pptx",
+    "answer": 0
+  },
+  {
+    "id": "q_ch14_18",
+    "chapter": 14,
+    "question": "In the HITS algorithm, how is the 'Base Set' constructed from the 'Root Set'?",
+    "options": [
+      "Start with Root Set (top-k results from a text query), then add all pages that Root Set pages link to, and all pages that link to Root Set pages",
+      "By adding all web pages in the world",
+      "By deleting half of the Root Set",
+      "By sorting the Root Set alphabetically"
+    ],
+    "correct": 0,
+    "explanation": "The Base Set expands the Root Set by one hop in both directions (in-links and out-links), forming a focused neighborhood subgraph of 1,000-5,000 nodes.",
+    "topic": "HITS Base Set Construction",
+    "slide_ref": "14. Link Analysis and Web Graph Algorithms.pptx",
+    "answer": 0
+  },
+  {
+    "id": "q_ch14_19",
+    "chapter": 14,
+    "question": "Why does HITS remove links between pages that belong to the SAME domain during graph construction?",
+    "options": [
+      "Intra-domain links reflect site navigation rather than genuine external editorial endorsement, preventing a single webmaster from artificially inflating hub/authority scores",
+      "Because links on the same domain are broken",
+      "Because browsers cannot click internal links",
+      "To save computer memory"
+    ],
+    "correct": 0,
+    "explanation": "Internal navigation links would dominate the matrix and skew scores toward sites with massive internal menus; only cross-domain links convey true endorsement.",
+    "topic": "Intra-Domain Link Removal",
+    "slide_ref": "14. Link Analysis and Web Graph Algorithms.pptx",
+    "answer": 0
+  },
+  {
+    "id": "q_ch14_20",
+    "chapter": 14,
+    "question": "What is the primary difference in execution timing between PageRank and HITS?",
+    "options": [
+      "PageRank is Query-Independent and precomputed offline across the entire global web; HITS is Query-Dependent and computed online at query time on a small sub-graph",
+      "PageRank runs at query time; HITS runs offline",
+      "PageRank runs in the browser; HITS runs on DNS servers",
+      "There is no difference in timing"
+    ],
+    "correct": 0,
+    "explanation": "PageRank is computed offline globally; HITS builds a query-specific Base Set dynamically, making real-time Web-scale HITS computationally expensive.",
+    "topic": "PageRank vs HITS Timing",
+    "slide_ref": "14. Link Analysis and Web Graph Algorithms.pptx",
+    "answer": 0
+  },
+  {
+    "id": "q_ch14_21",
+    "chapter": 14,
+    "question": "Suppose page A links to pages B and C. Page A has PageRank = 0.8. How much PageRank does page A transmit to page B (assuming no damping)?",
+    "options": [
+      "0.8 / 2 = 0.4",
+      "0.8",
+      "1.6",
+      "0.0"
+    ],
+    "correct": 0,
+    "explanation": "A page distributes its PageRank equally across all its outgoing links: PR(A) / OutDegree(A) = 0.8 / 2 = 0.4.",
+    "topic": "PageRank Distribution Calculation",
+    "slide_ref": "14. Link Analysis and Web Graph Algorithms.pptx",
+    "answer": 0
+  },
+  {
+    "id": "q_ch14_22",
+    "chapter": 14,
+    "question": "In PageRank, if a page has 10 outgoing links, what fraction of its PageRank score is passed through each individual outgoing link?",
+    "options": [
+      "1/10 (10%)",
+      "1/2 (50%)",
+      "100%",
+      "Zero"
+    ],
+    "correct": 0,
+    "explanation": "PageRank divides score equally among out-links: 1 / L(p) = 1/10 per link.",
+    "topic": "PageRank Out-link Share",
+    "slide_ref": "14. Link Analysis and Web Graph Algorithms.pptx",
+    "answer": 0
+  },
+  {
+    "id": "q_ch14_23",
+    "chapter": 14,
+    "question": "What is the 'Indegree' of a web page in graph theory?",
+    "options": [
+      "The number of directed hyperlinks pointing into that page from other pages",
+      "The temperature of the server in degrees",
+      "The number of outbound links leaving the page",
+      "The depth of the page in the directory tree"
+    ],
+    "correct": 0,
+    "explanation": "In-degree is the count of incoming directed edges pointing to the vertex.",
+    "topic": "In-degree Definition",
+    "slide_ref": "14. Link Analysis and Web Graph Algorithms.pptx",
+    "answer": 0
+  },
+  {
+    "id": "q_ch14_24",
+    "chapter": 14,
+    "question": "What is the 'Power-Law' distribution of web in-degrees?",
+    "options": [
+      "The probability P(k) that a web page has k in-links is proportional to k^(-gamma), where gamma ≈ 2.1 (a few pages have millions of links; most have very few)",
+      "All web pages have the same number of links",
+      "Link counts follow a normal bell curve",
+      "Web pages lose links over time"
+    ],
+    "correct": 0,
+    "explanation": "The web graph is scale-free: in-degree distribution follows a power law, characterized by extreme inequality and massive hubs.",
+    "topic": "Power Law In-degree",
+    "slide_ref": "14. Link Analysis and Web Graph Algorithms.pptx",
+    "answer": 0
+  },
+  {
+    "id": "q_ch14_25",
+    "chapter": 14,
+    "question": "What is 'Topic Drift' in the HITS algorithm?",
+    "options": [
+      "When the expanded Base Set is dominated by popular off-topic hubs that link to massive generic sites (like Yahoo or Netscape), drowning out the original niche query topic",
+      "When a boat drifts away from a server",
+      "When a query takes longer than 2 seconds",
+      "When the user types a new query"
+    ],
+    "correct": 0,
+    "explanation": "Topic drift occurs when expanding by in-links pulls in dense, unrelated subgraphs (e.g., general portals) that overwhelm query-specific authorities.",
+    "topic": "HITS Topic Drift",
+    "slide_ref": "14. Link Analysis and Web Graph Algorithms.pptx",
+    "answer": 0
+  },
+  {
+    "id": "q_ch14_26",
+    "chapter": 14,
+    "question": "What is 'SALSA' (Stochastic Approach for Link-Structure Analysis by Lempel & Moran, 2000)?",
+    "options": [
+      "A link analysis algorithm combining the dual Hub/Authority concept of HITS with the stochastic random-walk formulation of PageRank, making it far less vulnerable to topic drift",
+      "A Mexican dipping sauce",
+      "A Latin dance software program",
+      "A video player application"
+    ],
+    "correct": 0,
+    "explanation": "SALSA models bipartite random walks on hubs and authorities, avoiding the extreme dominance of outlier hubs that plague standard HITS.",
+    "topic": "SALSA Algorithm",
+    "slide_ref": "14. Link Analysis and Web Graph Algorithms.pptx",
+    "answer": 0
+  },
+  {
+    "id": "q_ch14_27",
+    "chapter": 14,
+    "question": "In HITS, how are Authority scores and Hub scores normalized at the end of each iteration?",
+    "options": [
+      "Vectors are divided by their Euclidean norm (L2 length) so that sum(a_i^2) = 1 and sum(h_i^2) = 1",
+      "All scores are multiplied by 10",
+      "All scores are converted to integers",
+      "Scores are set to random values"
+    ],
+    "correct": 0,
+    "explanation": "Normalization prevents scores from growing unboundedly toward infinity during repeated matrix multiplication iterations.",
+    "topic": "HITS Normalization Step",
+    "slide_ref": "14. Link Analysis and Web Graph Algorithms.pptx",
+    "answer": 0
+  },
+  {
+    "id": "q_ch14_28",
+    "chapter": 14,
+    "question": "What is 'Kleinberg's Theorem' on the convergence of HITS?",
+    "options": [
+      "Authority vector converges to the principal eigenvector of A^T * A, and Hub vector converges to the principal eigenvector of A * A^T, where A is the adjacency matrix",
+      "HITS never converges",
+      "HITS converges in exactly 2 iterations",
+      "HITS requires quantum computing to converge"
+    ],
+    "correct": 0,
+    "explanation": "The mutual updates equate to power iteration on A^T A and A A^T, guaranteeing convergence to principal eigenvectors under mild conditions.",
+    "topic": "HITS Convergence Theorem",
+    "slide_ref": "14. Link Analysis and Web Graph Algorithms.pptx",
+    "answer": 0
+  },
+  {
+    "id": "q_ch14_29",
+    "chapter": 14,
+    "question": "Why can PageRank be computed via simple Matrix-Vector multiplication?",
+    "options": [
+      "Because the PageRank equation can be written as r = G * r, where G is the Google transition matrix G = d * M + (1 - d)/N * E",
+      "Because PageRank does not use computers",
+      "Because matrices are only used for graphics",
+      "Because web pages are stored as spreadsheets"
+    ],
+    "correct": 0,
+    "explanation": "The Google matrix G is a row-stochastic, primitive matrix, allowing power iteration via r_{t+1} = G * r_t.",
+    "topic": "Google Matrix Formulation",
+    "slide_ref": "14. Link Analysis and Web Graph Algorithms.pptx",
+    "answer": 0
+  },
+  {
+    "id": "q_ch14_30",
+    "chapter": 14,
+    "question": "In a collection of N = 4 pages (A, B, C, D), if there is no damping (d = 1.0) and each page links to the next in a circle (A->B->C->D->A), what is the PageRank of each page at equilibrium?",
+    "options": [
+      "Each page has PageRank = 1/4 = 0.25",
+      "Page A = 1.0, others = 0.0",
+      "All pages have PageRank = 0",
+      "Page D = 1.0"
+    ],
+    "correct": 0,
+    "explanation": "Due to perfect symmetry in a circular loop, every page receives and passes the exact same probability mass: 1/N = 0.25.",
+    "topic": "PageRank Symmetry Calculation",
+    "slide_ref": "14. Link Analysis and Web Graph Algorithms.pptx",
+    "answer": 0
+  },
+  {
+    "id": "q_ch14_31",
+    "chapter": 14,
+    "question": "In PageRank, why does a link from a page with FEW outgoing links pass MORE score than a link from a page with THOUSANDS of outgoing links?",
+    "options": [
+      "Because PageRank divides the page's score by its out-degree: a page with 2 links gives 50% of its score to each; a directory with 1,000 links gives only 0.1% to each",
+      "Because search engines penalize directories",
+      "Because browsers cannot open 1,000 links",
+      "Because pages with many links are illegal"
+    ],
+    "correct": 0,
+    "explanation": "Dilution of link equity: PR(v) / L(v) ensures that a focused recommendation transmits far more score than an undifferentiated massive link list.",
+    "topic": "Link Equity Dilution",
+    "slide_ref": "14. Link Analysis and Web Graph Algorithms.pptx",
+    "answer": 0
+  },
+  {
+    "id": "q_ch14_32",
+    "chapter": 14,
+    "question": "What is 'Link Spamming' aimed at exploiting in PageRank?",
+    "options": [
+      "Creating dense artificial link networks (link farms, blog rings) to manipulate the eigenvector calculation and artificially inflate target PageRank scores",
+      "Sending junk emails to webmasters",
+      "Deleting hyperlinks from HTML",
+      "Writing broken JavaScript code"
+    ],
+    "correct": 0,
+    "explanation": "Spammers structure interlocking satellite nodes to trap and funnel random walk probability toward a central target commercial site.",
+    "topic": "Link Spamming Mechanism",
+    "slide_ref": "14. Link Analysis and Web Graph Algorithms.pptx",
+    "answer": 0
+  },
+  {
+    "id": "q_ch14_33",
+    "chapter": 14,
+    "question": "What is 'Host-Level PageRank' (Block-level PageRank)?",
+    "options": [
+      "Aggregating pages by domain/host and computing PageRank on the macro host graph, reducing graph size from billions of pages to millions of hosts",
+      "PageRank for hosting companies only",
+      "PageRank that runs on a single host machine",
+      "PageRank stored on hard drives"
+    ],
+    "correct": 0,
+    "explanation": "Host-level PageRank models inter-domain authority, avoiding computational bottlenecks and filtering intra-host link inflation.",
+    "topic": "Host-Level PageRank",
+    "slide_ref": "14. Link Analysis and Web Graph Algorithms.pptx",
+    "answer": 0
+  },
+  {
+    "id": "q_ch14_34",
+    "chapter": 14,
+    "question": "What does 'Scale-Free Network' mean in the context of the Web Graph?",
+    "options": [
+      "A network whose degree distribution follows a power-law, meaning there is no 'typical' or average node degree (a few super-nodes have massive degree)",
+      "A network that costs zero dollars to build",
+      "A network with no physical weight",
+      "A network that does not use scales"
+    ],
+    "correct": 0,
+    "explanation": "In scale-free networks (Barabási & Albert), degree variance is unbounded; massive hubs (Wikipedia, YouTube) coexist with millions of leaf pages.",
+    "topic": "Scale-Free Network",
+    "slide_ref": "14. Link Analysis and Web Graph Algorithms.pptx",
+    "answer": 0
+  },
+  {
+    "id": "q_ch14_35",
+    "chapter": 14,
+    "question": "What is 'Preferential Attachment' ('the rich get richer') in web graph growth?",
+    "options": [
+      "The probability of a newly created web page linking to an existing page is proportional to the existing page's current popularity and in-degree",
+      "Rich users pay more for search engines",
+      "Web pages are attached with physical paperclips",
+      "Computers prefer connecting to fast servers"
+    ],
+    "correct": 0,
+    "explanation": "New authors discover already-famous sites and link to them, naturally generating a power-law link distribution over time.",
+    "topic": "Preferential Attachment",
+    "slide_ref": "14. Link Analysis and Web Graph Algorithms.pptx",
+    "answer": 0
+  },
+  {
+    "id": "q_ch14_36",
+    "chapter": 14,
+    "question": "What is the 'Adjacency Matrix' of a web graph?",
+    "options": [
+      "An N x N binary matrix A where A[i][j] = 1 if there is a directed link from page i to page j, and 0 otherwise",
+      "A matrix containing the text of all pages",
+      "A database of user IP addresses",
+      "A table of server operating systems"
+    ],
+    "correct": 0,
+    "explanation": "The adjacency matrix encodes the structural topology of hyperlinks between all pairs of nodes in the graph.",
+    "topic": "Adjacency Matrix",
+    "slide_ref": "14. Link Analysis and Web Graph Algorithms.pptx",
+    "answer": 0
+  },
+  {
+    "id": "q_ch14_37",
+    "chapter": 14,
+    "question": "Why is the raw Adjacency Matrix of the Web Graph extremely sparse?",
+    "options": [
+      "Because the web has billions of pages, but the average web page only has 10 to 50 outgoing links; over 99.999% of entries in the N x N matrix are zeros",
+      "Because the matrix is stored on SSDs",
+      "Because web pages do not have links",
+      "Because the internet is empty"
+    ],
+    "correct": 0,
+    "explanation": "Sparse matrix representation (compressed sparse row / CSR) is mandatory because storing an explicit N x N matrix for N=10^10 would require exabytes.",
+    "topic": "Matrix Sparsity",
+    "slide_ref": "14. Link Analysis and Web Graph Algorithms.pptx",
+    "answer": 0
+  },
+  {
+    "id": "q_ch14_38",
+    "chapter": 14,
+    "question": "In PageRank calculation, what is the 'Teleportation Vector' E?",
+    "options": [
+      "A probability distribution vector determining which pages the random surfer jumps to when they decide not to follow a link on the current page",
+      "A vector in a video game",
+      "A physical teleporter in science fiction",
+      "A vector containing user passwords"
+    ],
+    "correct": 0,
+    "explanation": "In standard PageRank, E is uniform [1/N, ..., 1/N]^T; in Personalized PageRank, E concentrates probability on user-preferred seeds.",
+    "topic": "Teleportation Vector E",
+    "slide_ref": "14. Link Analysis and Web Graph Algorithms.pptx",
+    "answer": 0
+  },
+  {
+    "id": "q_ch14_39",
+    "chapter": 14,
+    "question": "What is 'Stochastic Matrix' in the mathematical formulation of PageRank?",
+    "options": [
+      "A square matrix where the entries in each row are non-negative real numbers that sum to exactly 1.0, representing transition probabilities",
+      "A matrix of random numbers",
+      "A matrix that changes every second",
+      "A matrix containing stock prices"
+    ],
+    "correct": 0,
+    "explanation": "A row-stochastic matrix represents valid Markov transition probabilities where leaving a node has a total probability of 1.0.",
+    "topic": "Stochastic Matrix",
+    "slide_ref": "14. Link Analysis and Web Graph Algorithms.pptx",
+    "answer": 0
+  },
+  {
+    "id": "q_ch14_40",
+    "chapter": 14,
+    "question": "What does the 'Perron-Frobenius Theorem' guarantee for the Google Matrix G?",
+    "options": [
+      "That G has a unique maximal eigenvalue equal to 1.0, and its corresponding principal eigenvector has strictly positive real entries that sum to 1.0",
+      "That search results will load in under 1 second",
+      "That the matrix cannot be corrupted by viruses",
+      "That all web pages have equal PageRank"
+    ],
+    "correct": 0,
+    "explanation": "The theorem guarantees that power iteration on a primitive stochastic matrix always converges to a unique, strictly positive stationary probability vector.",
+    "topic": "Perron-Frobenius Guarantee",
+    "slide_ref": "14. Link Analysis and Web Graph Algorithms.pptx",
+    "answer": 0
+  },
+  {
+    "id": "q_ch14_41",
+    "chapter": 14,
+    "question": "What is 'CheiRank' in web link analysis?",
+    "options": [
+      "The dual of PageRank computed on the inverted link graph (following outgoing links in reverse), measuring a page's communicative outgoing activity",
+      "A ranking of Chinese websites",
+      "A ranking of cheese brands",
+      "A metric for video streaming"
+    ],
+    "correct": 0,
+    "explanation": "CheiRank measures communicative centrality by running random walks on transposed links, complementing PageRank's measure of popularity.",
+    "topic": "CheiRank",
+    "slide_ref": "14. Link Analysis and Web Graph Algorithms.pptx",
+    "answer": 0
+  },
+  {
+    "id": "q_ch14_42",
+    "chapter": 14,
+    "question": "Why does PageRank NOT guarantee that a page is relevant to a specific user search query?",
+    "options": [
+      "Because PageRank is completely query-independent: it measures global authority and prestige, not whether the page actually contains or discusses the query terms",
+      "Because PageRank only works on numbers",
+      "Because PageRank is an outdated algorithm",
+      "Because PageRank was replaced by CSS"
+    ],
+    "correct": 0,
+    "explanation": "PageRank is a static quality prior: high PageRank (e.g., Apple.com) does not make it relevant to a query like 'recipe for apple pie'.",
+    "topic": "PageRank Query Independence",
+    "slide_ref": "14. Link Analysis and Web Graph Algorithms.pptx",
+    "answer": 0
+  },
+  {
+    "id": "q_ch14_43",
+    "chapter": 14,
+    "question": "How do modern commercial search engines combine PageRank with textual relevance (like BM25)?",
+    "options": [
+      "As a feature in a multi-stage machine learning ranking function (Learning to Rank): Score(q, d) = f(BM25(q,d), PageRank(d), Freshness(d), ...)",
+      "By adding PageRank to the number of words in the document",
+      "By using PageRank only when BM25 returns zero results",
+      "By replacing BM25 entirely with PageRank"
+    ],
+    "correct": 0,
+    "explanation": "Modern search engines treat PageRank as a query-independent document quality feature alongside dozens of lexical and semantic signals.",
+    "topic": "PageRank in Multi-Stage Ranking",
+    "slide_ref": "14. Link Analysis and Web Graph Algorithms.pptx",
+    "answer": 0
+  },
+  {
+    "id": "q_ch14_44",
+    "chapter": 14,
+    "question": "What is 'Trust Attenuation' in TrustRank propagation?",
+    "options": [
+      "The mathematical decay of trust score as a random walk travels further away from the trusted seed pages: pages at distance 3 have much lower trust than pages at distance 1",
+      "When users lose trust in the search engine",
+      "When a server loses internet connection",
+      "When an SSL certificate expires"
+    ],
+    "correct": 0,
+    "explanation": "Trust decays exponentially with graph distance: reputable sites link to other good sites, but by 3-4 hops away, link contamination increases.",
+    "topic": "Trust Attenuation",
+    "slide_ref": "14. Link Analysis and Web Graph Algorithms.pptx",
+    "answer": 0
+  },
+  {
+    "id": "q_ch14_45",
+    "chapter": 14,
+    "question": "What is 'Reverse PageRank' (Inverse PageRank)?",
+    "options": [
+      "Running the PageRank random walk backwards along incoming links rather than outgoing links, used in algorithms like BadRank to trace spam sources",
+      "Dividing 1 by the PageRank score",
+      "Sorting PageRank in reverse alphabetical order",
+      "A PageRank score that is negative"
+    ],
+    "correct": 0,
+    "explanation": "Reverse PageRank traces who links to whom from the target's perspective, useful for anti-trust and spam seed analysis.",
+    "topic": "Reverse PageRank",
+    "slide_ref": "14. Link Analysis and Web Graph Algorithms.pptx",
+    "answer": 0
+  },
+  {
+    "id": "q_ch14_46",
+    "chapter": 14,
+    "question": "What does 'Tubes' mean in Broder's Bow-tie structure of the Web?",
+    "options": [
+      "Paths of directed links that connect the IN component directly to the OUT component without passing through the central SCC core",
+      "Physical fiber optic tubes under the street",
+      "Video streaming websites like YouTube",
+      "Empty HTML tags"
+    ],
+    "correct": 0,
+    "explanation": "Tubes bypass the central SCC, providing direct conduits from the peripheral IN component to the OUT component.",
+    "topic": "Tubes in Bow-tie",
+    "slide_ref": "14. Link Analysis and Web Graph Algorithms.pptx",
+    "answer": 0
+  },
+  {
+    "id": "q_ch14_47",
+    "chapter": 14,
+    "question": "What does 'Tendrils' mean in Broder's Bow-tie structure of the Web?",
+    "options": [
+      "Dead-end paths that lead off the IN component without reaching SCC, or paths that lead into the OUT component without originating in SCC",
+      "Vines growing on data center walls",
+      "Long computer cables",
+      "Spelling errors in HTML code"
+    ],
+    "correct": 0,
+    "explanation": "Tendrils are hanging branches attached to IN or OUT that do not connect to the broader strongly connected core.",
+    "topic": "Tendrils in Bow-tie",
+    "slide_ref": "14. Link Analysis and Web Graph Algorithms.pptx",
+    "answer": 0
+  },
+  {
+    "id": "q_ch14_48",
+    "chapter": 14,
+    "question": "In HITS, why is the 'Base Set' restricted to 1,000 to 5,000 pages rather than expanding across the entire web?",
+    "options": [
+      "To keep the online graph matrix small enough to compute principal eigenvectors in sub-second response times during live query processing",
+      "Because the web only contains 5,000 pages",
+      "Because larger graphs crash the internet",
+      "Because HITS only works in small towns"
+    ],
+    "correct": 0,
+    "explanation": "HITS runs online at query time; bounding the Base Set to a few thousand nodes keeps matrix operations computationally feasible for user queries.",
+    "topic": "HITS Base Set Size",
+    "slide_ref": "14. Link Analysis and Web Graph Algorithms.pptx",
+    "answer": 0
+  },
+  {
+    "id": "q_ch14_49",
+    "chapter": 14,
+    "question": "What is an 'Authority Score' of 0 in HITS?",
+    "options": [
+      "The page has zero incoming links from any of the Hub pages in the Base Set",
+      "The page is completely banned by Google",
+      "The page has no text",
+      "The page is hosted on a broken server"
+    ],
+    "correct": 0,
+    "explanation": "If no Hub in the Base Set links to page p, its authority sum a(p) = sum_{q->p} h(q) equals 0.",
+    "topic": "HITS Zero Authority",
+    "slide_ref": "14. Link Analysis and Web Graph Algorithms.pptx",
+    "answer": 0
+  },
+  {
+    "id": "q_ch14_50",
+    "chapter": 14,
+    "question": "Why did Google's founders choose the name 'PageRank'?",
+    "options": [
+      "Both because it ranks web 'pages' and as a pun on the surname of its co-creator, Larry Page",
+      "Because it ranks pages on paper",
+      "Because it only ranks the first page of a website",
+      "Because it was sponsored by a company named Page"
+    ],
+    "correct": 0,
+    "explanation": "PageRank is named both for web pages and for Google co-founder Larry Page who patented the algorithm at Stanford University.",
+    "topic": "PageRank Name Origin",
+    "slide_ref": "14. Link Analysis and Web Graph Algorithms.pptx",
+    "answer": 0
+  }
+]

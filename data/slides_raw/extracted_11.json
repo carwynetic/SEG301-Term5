@@ -1,0 +1,143 @@
+{
+  "chapter_id": 11,
+  "filename": "11. Social search.pptx",
+  "title": "Social search",
+  "total_slides": 27,
+  "slides": [
+    {
+      "slide_num": 1,
+      "file_path": "ppt/slides/slide1.xml",
+      "text": "Chapter 11 Social Search"
+    },
+    {
+      "slide_num": 2,
+      "file_path": "ppt/slides/slide2.xml",
+      "text": "Objectives What is social search? Why are user tags and manual indexing used? Search in communities"
+    },
+    {
+      "slide_num": 3,
+      "file_path": "ppt/slides/slide3.xml",
+      "text": "Contents 11.1 What is Social search? 11.2 User Tags and Manual Indexing 11.3 Searching with Communities 11.4 Filtering and Recommending 11.5 Peer-to-Peer and Metasearch"
+    },
+    {
+      "slide_num": 4,
+      "file_path": "ppt/slides/slide4.xml",
+      "text": "11.1 What is Social search? Social search deals with search within a social environment Environment where a community of users actively participate in the search process Twitter (status messages), Flickr (pictures), YouTube (videos), Del.icio.us (bookmarks), and CiteULike (research papers) Email, instant messenger, massively multiplayer online games (MMOGs), forums, and blogs Provide new and unique data resources for search systems to exploit, as well as a myriad of privacy issues"
+    },
+    {
+      "slide_num": 5,
+      "file_path": "ppt/slides/slide5.xml",
+      "text": "11.2 User Tags and Manual Indexing Between manually indexing every item (library catalogs) and automatically indexing every item (search engines), social media sites provide users with the opportunity to manually tag items Each tag is typically a single word that describes the item “tiger”, “zoo”, “big”, and “cat” make every item searchable every item is automatically indexed Manual indexing is a process that a person had to ex tract information manually Given a book, a person had to extract the author, title, and subject headings of the book so that the various catalogs could be built."
+    },
+    {
+      "slide_num": 6,
+      "file_path": "ppt/slides/slide6.xml",
+      "text": "11.2 User Tags and Manual Indexing Z. Xu et al. (2006) proposed a simplified set of five tag categories: 1. Content-based tags. Tags describing the content of an item. Examples: “car”, “woman”, and “sky”. 2. Context-based tags. Tags that describe the context of an item. Examples: “New York City” or “Empire State Building”. 3. Attribute tags. Tags that describe implicit attributes of the item. Examples: “Nikon” (type of camera), “black and white” (type of movie), or “homepage” (type of web page). 4. Subjective tags. Tags that subjectively describe an item. Examples: “pretty”, “amazing”, and “awesome”. 5. Organizational tags. Tags that help organize items. Examples: “ todo ”, “my pictures”, and “readme”"
+    },
+    {
+      "slide_num": 7,
+      "file_path": "ppt/slides/slide7.xml",
+      "text": "11.2 User Tags and Manual Indexing: Searching Tags Search results used to enrich a tag representation. In this example, the tag being expanded is “tropical fish”. The query “tropical fish” is run against a search engine, and the snippets returned are then used to  generate a distribution over related terms."
+    },
+    {
+      "slide_num": 8,
+      "file_path": "ppt/slides/slide8.xml",
+      "text": "11.2 User Tags and Manual Indexing: Inferring Missing Tags Items that have no tags pose a challenge to a search system? Automatically infer a set of tags for items that have no manual tags Simple approach would involve computing some weight for every term that occurs in the text and then choosing the K terms with the highest weight as the inferred tags where is the number of times term w occurs in item D , N is the total number of items, and is the number of items that term w occurs in"
+    },
+    {
+      "slide_num": 9,
+      "file_path": "ppt/slides/slide9.xml",
+      "text": "11.2 User Tags and Manual Indexing: Browsing and Tag Clouds A tag cloud in the form of a weighted list. The tags are in alphabetical order and weighted according to some criteria, such as popularity"
+    },
+    {
+      "slide_num": 10,
+      "file_path": "ppt/slides/slide10.xml",
+      "text": "11.3 Searching with Communities: What Is a Community? Groups of entities that interact in an online environment and that share common goals, traits, or interests are an online community Football fan: post to blogs, newsgroups, and other forums, send instant messages and emails, buy and sell football–related items online through sites Useful for search engines and other online sites to automatically determine the communities associated with a given user. A set of web pages that are all on the same topic form an online community that is often called a web community"
+    },
+    {
+      "slide_num": 11,
+      "file_path": "ppt/slides/slide11.xml",
+      "text": "11.3 Searching with Communities: Finding Communities Input: a set of entities, such as users or web pages, information about each entity, and details about how the entities interact or are related to each other HITS algorithm: similar to PageRank but query-dependent"
+    },
+    {
+      "slide_num": 12,
+      "file_path": "ppt/slides/slide12.xml",
+      "text": "11.3 Searching with Communities: Finding Communities Illustration of the HITS algorithm. Each row corresponds to a single iteration of the algorithm and each column corresponds to a specific step of the algorithm."
+    },
+    {
+      "slide_num": 13,
+      "file_path": "ppt/slides/slide13.xml",
+      "text": "11.3 Searching with Communities: Community-Based Question Answering A person submits a question to a community, each of whom can opt to answer the question, is called community-based question answering Advantages: Users being able to get answers to complex or obscure information needs; The chance to see multiple, possibly differing opinions about a topic; And the chance to interact with other users who may share common interests, problems, and goals Disadvantages: Possibility of receiving no answer at all to a question, Having to wait (possibly days) for an answer, Receiving answers that are incorrect, misleading, offensive, or spam"
+    },
+    {
+      "slide_num": 14,
+      "file_path": "ppt/slides/slide14.xml",
+      "text": "11.3 Searching with Communities: Community-Based Question Answering First model: finding related questions and answers in an archive where Q is the query, A is a related question in the archive, V is the vocabulary, P ( w | t ) are the translation probabilities, and P ( t | D ) is the smoothed probability of generating t given document D"
+    },
+    {
+      "slide_num": 15,
+      "file_path": "ppt/slides/slide15.xml",
+      "text": "11.3 Searching with Communities: Community-Based Question Answering The second model: allowing matches of the original query terms to be given more weight than matches of translated terms. where β is a parameter between 0 and 1 that controls the inﬂuence of the translation probabilities, and µ is the Dirichlet smoothing parameter"
+    },
+    {
+      "slide_num": 16,
+      "file_path": "ppt/slides/slide16.xml",
+      "text": "11.3 Searching with Communities: Collaborative Searching Collaborative searching involves a group of users with a common goal searching together in a collaborative setting. Consider a group of students working together on a world history report: must do background research on the report topic Two common types of collaborative search scenarios Co-located collaborative search, occurs when all of the search participants are in the same location Remote collaborative searching, occurs when the search participants are physically located in different locations"
+    },
+    {
+      "slide_num": 17,
+      "file_path": "ppt/slides/slide17.xml",
+      "text": "11.4 Filtering and Recommending: Document Filtering The user’s information need stays the same, but the document collection itself is dynamic, with new documents arriving periodically Goal of filtering is to identify the relevant new documents and send them to the user Filtering systems typically use more specialized techniques than general classification techniques in order to overcome the lack of training data Document fltering systems have two key components Profile Decision mechanism"
+    },
+    {
+      "slide_num": 18,
+      "file_path": "ppt/slides/slide18.xml",
+      "text": "11.4 Filtering and Recommending: Collaborative Filtering Filtering that considers the relationship between profiles and uses this information to improve how incoming items are matched to profiles Collaborative fltering is ofen used as a component of recommender systems Amazon, Lazada, …"
+    },
+    {
+      "slide_num": 19,
+      "file_path": "ppt/slides/slide19.xml",
+      "text": "11.4 Filtering and Recommending: Collaborative Filtering Users and their ratings for an item are given. Users with question marks above their heads have not yet rated the item. It is the goal of the recommender system to fill in these question marks."
+    },
+    {
+      "slide_num": 20,
+      "file_path": "ppt/slides/slide20.xml",
+      "text": "11.4 Filtering and Recommending: Collaborative Filtering Rating with user clusters"
+    },
+    {
+      "slide_num": 21,
+      "file_path": "ppt/slides/slide21.xml",
+      "text": "11.4 Filtering and Recommending: Collaborative Filtering Rating with nearest neighbors An alternative strategy to using clusters is to use nearest neighbors for predicting user ratings. This approach makes use of the K nearest neighbors clustering technique"
+    },
+    {
+      "slide_num": 22,
+      "file_path": "ppt/slides/slide22.xml",
+      "text": "11.4 Filtering and Recommending: Collaborative Filtering Evaluation Absolute error where the sums are over the set of user/item pairs for which predictions have been made. Mean squared error Mean squared error penalizes incorrect predictions more heavily"
+    },
+    {
+      "slide_num": 23,
+      "file_path": "ppt/slides/slide23.xml",
+      "text": "11.5 Peer-to-Peer and Metasearch: Distributed Search Distributed search environment is a metasearch engine , where each node is a complete web search engine and the results from a relatively small number of different search engines are combined with the aim of improving the effectiveness of the ranking A peer-to-peer (P2P) search application, on the other hand, typically has a large number of nodes, each with a relatively small amount of information and only limited knowledge about other nodes Distributed search6 applications must carry out three additional, important functions: Resource representation , Resource selection , Result merging"
+    },
+    {
+      "slide_num": 24,
+      "file_path": "ppt/slides/slide24.xml",
+      "text": "11.5 Peer-to-Peer and Metasearch: Distributed Search Metasearch engine architecture: The query is broadcast to multiple web search engines and result lists are merged."
+    },
+    {
+      "slide_num": 25,
+      "file_path": "ppt/slides/slide25.xml",
+      "text": "11.5 Peer-to-Peer and Metasearch: P2P Networks Network architectures for distributed search: (a) central hub; (b) pure P2P; and (c) hierarchical P2P. Dark circles are hub or superpeer nodes, gray circles are provider nodes, and white circles are consumer nodes."
+    },
+    {
+      "slide_num": 26,
+      "file_path": "ppt/slides/slide26.xml",
+      "text": "Exercise Implement the nearest neighbor–based collaborative filtering algorithm. Using a publicly available collaborative filtering data set, compare the effectiveness, in terms of mean squared error, of the Euclidean distance and correlation similarity."
+    },
+    {
+      "slide_num": 27,
+      "file_path": "ppt/slides/slide27.xml",
+      "text": "Summary What is Social search? User Tags and Manual Indexing: Searching Tags, Inferring Missing Tags,Browsing and Tag Clouds Searching with Communities: What Is a Community?, Finding Communities, Community-Based Question Answering, Collaborative Searching Filtering and Recommending: Document Filtering, Collaborative Filtering Peer-to-Peer and Metasearch: Distributed Search, P2P Networks"
+    }
+  ]
+}

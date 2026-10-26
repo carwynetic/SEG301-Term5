@@ -1,0 +1,173 @@
+{
+  "chapter_id": 3,
+  "filename": "3. Crawls and Feeds.pptx",
+  "title": "Crawls and Feeds",
+  "total_slides": 33,
+  "slides": [
+    {
+      "slide_num": 1,
+      "file_path": "ppt/slides/slide1.xml",
+      "text": "Chapter 3 Crawls and Feeds SEG301m"
+    },
+    {
+      "slide_num": 2,
+      "file_path": "ppt/slides/slide2.xml",
+      "text": "Objectives How to crawl webs or documents? Techniques to preprocess documents: encoding, remove noise, delete duplicates"
+    },
+    {
+      "slide_num": 3,
+      "file_path": "ppt/slides/slide3.xml",
+      "text": "Contents 3.1 What to search? 3.2 Crawling the Web 3.3 Crawling documents and emails 3.4 Documents feeds 3.5 Conversion problem: character encodings 3.6 Storing documents 3.7 Delete duplicates 3.8 Remove noise"
+    },
+    {
+      "slide_num": 4,
+      "file_path": "ppt/slides/slide4.xml",
+      "text": "3.1 What to search? Everything you possibly can! Every document answers at least one question The best documents answer many more Is “Search engine adds another document” good or not? the number of questions it can answer increases not easy to find the best documents to show to the user style.visibility style.visibility style.visibility style.visibility style.visibility"
+    },
+    {
+      "slide_num": 5,
+      "file_path": "ppt/slides/slide5.xml",
+      "text": "3.2 Crawling the Web Build a search engine that searches web pages → need the content of web pages → copy web pages Finding and downloading web pages: crawling, the program downloads pages: web crawler Challenges in copying pages? the sheer scale of the Web: at least tens of billions of pages on the Internet and constantly created web pages are usually not under the control of the people building the search engine database style.visibility style.visibility style.visibility style.visibility style.visibility style.visibility"
+    },
+    {
+      "slide_num": 6,
+      "file_path": "ppt/slides/slide6.xml",
+      "text": "3.2 Crawling the Web: retrieving Web pages Each web page has unique uniform resource locator (URL) Scheme’s resource retrieved using http Name of the computer running web server Specific page in the computer"
+    },
+    {
+      "slide_num": 7,
+      "file_path": "ppt/slides/slide7.xml",
+      "text": "3.2 Crawling the Web: retrieving Web pages The most common HTTP request type is GET request: → asks server to send the page called / csinfo /people.html Other request is POST request: similar to GET request but sending additional information to the server → click a button to buy something or to edit a web page"
+    },
+    {
+      "slide_num": 8,
+      "file_path": "ppt/slides/slide8.xml",
+      "text": "3.2 Crawling the Web: the Web Crawler The web crawler connects to web servers to find pages. Pages may link to other pages on the same server or on different servers"
+    },
+    {
+      "slide_num": 9,
+      "file_path": "ppt/slides/slide9.xml",
+      "text": "3.2 Crawling the Web: the Web Crawler Frontier: request queue that is used to store new URL that the crawler has not seen it before. Why should a crawler use multiple threads? waits for the DNS server response waits for the connection to the web server to be acknowledged waits for the web page data to be sent from the serve style.visibility style.visibility style.visibility style.visibility style.visibility style.visibility style.visibility"
+    },
+    {
+      "slide_num": 10,
+      "file_path": "ppt/slides/slide10.xml",
+      "text": "3.2 Crawling the Web: the Web Crawler Problem: When a web page is fetched, it is parsed and all of the links on that page are added to the request queue politeness policies: Reasonable web crawlers do not fetch more than one page at a time from a particular web server Web crawlers wait at least a few seconds, and sometimes minutes, between requests to the same web server Request queue is logically split into a single queue per web server style.visibility style.visibility style.visibility style.visibility"
+    },
+    {
+      "slide_num": 11,
+      "file_path": "ppt/slides/slide11.xml",
+      "text": "3.2 Crawling the Web: the Web Crawler A simple crawling thread implementation"
+    },
+    {
+      "slide_num": 12,
+      "file_path": "ppt/slides/slide12.xml",
+      "text": "3.2 Crawling the Web: Freshness Why does web crawler need to revisit pages it has already crawled? Web pages are constantly being added, deleted, and modified To see if they have changed in order to maintain the freshness of the document collection style.visibility style.visibility"
+    },
+    {
+      "slide_num": 13,
+      "file_path": "ppt/slides/slide13.xml",
+      "text": "3.2 Crawling the Web: Freshness Check for page changes: using HTTP protocol because it has a special request type called HEAD the last time the page content was changed style.visibility style.visibility style.visibility style.visibility"
+    },
+    {
+      "slide_num": 14,
+      "file_path": "ppt/slides/slide14.xml",
+      "text": "Exercise Use a special request type called HEAD to check the last time the page content was change."
+    },
+    {
+      "slide_num": 15,
+      "file_path": "ppt/slides/slide15.xml",
+      "text": "3.2 Crawling the Web: Freshness Metric to be used to optimize crawlers: Age"
+    },
+    {
+      "slide_num": 16,
+      "file_path": "ppt/slides/slide16.xml",
+      "text": "3.2 Crawling the Web: Focused Crawling Focus on a specific topic of information Movie -> search engine can lead to more information about movies Accuracy(vertical search) > Accuracy(general search): because lack of extraneous information in the  document collection Method 1: crawl a full copy of the Web and then throw out all unrelated pages Disadvantage: huge amount of disk space and bandwidth Most of the web pages will be discarded at the end Method 2: focused crawling -> requires some automatic means for determining whether a page is about a particular topic style.visibility style.visibility style.visibility"
+    },
+    {
+      "slide_num": 17,
+      "file_path": "ppt/slides/slide17.xml",
+      "text": "3.2 Crawling the Web: Deep Web Deep Web (hidden Web): difficult to find Private sites Form results Scripted pages style.visibility"
+    },
+    {
+      "slide_num": 18,
+      "file_path": "ppt/slides/slide18.xml",
+      "text": "3.2 Crawling the Web: Sitemaps Problem: site owners cannot adequately tell crawlers about their sites URL Modification time Modification frequency style.visibility style.visibility style.visibility style.visibility style.visibility"
+    },
+    {
+      "slide_num": 19,
+      "file_path": "ppt/slides/slide19.xml",
+      "text": "3.3 Crawling documents and emails Where to store email, word processing documents, presentation or spreadsheets? -> Desktop/Laptop computer Is it challenged as crawling desktop data? Update speed Disk space Requirement of a focus on data privacy"
+    },
+    {
+      "slide_num": 20,
+      "file_path": "ppt/slides/slide20.xml",
+      "text": "3.4 Documents feeds Definition: a document sequence in which published documents afrom a single source can be ordered Two kinds of document feeds: push and pull Push: alerts the subscribers to new documents RSS: Really Simple Syndication, RDF Site Summary, or Rich Site Summary Pull: requires subscribers to check periodically for new documents"
+    },
+    {
+      "slide_num": 21,
+      "file_path": "ppt/slides/slide21.xml",
+      "text": "3.5 Conversion problem: character encodings Text on pages is a series of little pictures called letters or glyphs Character encoding is a mapping between bits and glyphs ASCII: 1-byte standard CJK (Chinese-Japanese-Korean): 2-byte standard"
+    },
+    {
+      "slide_num": 22,
+      "file_path": "ppt/slides/slide22.xml",
+      "text": "3.6 Storing documents Documents converted to some common format: need to be stored in preparation for indexing Simplest document storage is no document storage Basic requirements Random access Compression Updating Benefits of using a database system or a customized storage system"
+    },
+    {
+      "slide_num": 23,
+      "file_path": "ppt/slides/slide23.xml",
+      "text": "3.6 Storing documents: using a Database System A database takes care of the difficult details of storing small pieces of data Most databases also run as a network server, so that the documents are easily available on the network Databases also tend to come with useful import and analysis tools"
+    },
+    {
+      "slide_num": 24,
+      "file_path": "ppt/slides/slide24.xml",
+      "text": "3.6 Storing documents: Random Access To retrieve documents quickly in order to compute a snippet for a search result: random access Data store such that we can request the content of a document based on its URL Easiest way to handle this kind of lookup is with hashing"
+    },
+    {
+      "slide_num": 25,
+      "file_path": "ppt/slides/slide25.xml",
+      "text": "3.6 Storing documents: BigTable Very largest document collections demand custom document storage systems The table is split into small pieces, called tablets, which are served by thousands of machines No query language: no complex queries -> row-level transactions"
+    },
+    {
+      "slide_num": 26,
+      "file_path": "ppt/slides/slide26.xml",
+      "text": "3.7 Delete duplicates: duplicate The use of multiple URLs to point to the same web page and mirror sites can cause a crawler to generate large numbers of duplicate pages Detecting exact duplicates is a relatively simple task that can be done using checksumming techniques. Based on the content of the document Any document file containing the same text would have the same checksum!"
+    },
+    {
+      "slide_num": 27,
+      "file_path": "ppt/slides/slide27.xml",
+      "text": "3.7 Delete duplicates: nearly duplicate Near-duplicate documents: more difficult to detect Web: same content but differ in the advertisements, dates or formatting Use threshold to define a near-duplicate document 90% of the words in the documents are the same Two scenarios for near-duplicate detection Search scenario: Discovery scenario"
+    },
+    {
+      "slide_num": 28,
+      "file_path": "ppt/slides/slide28.xml",
+      "text": "3.7 Delete duplicates: fingerprints The basic process of generating fingerprints: The document is parsed into words. Non-word content, such as punctuation, HTML tags, and additional whitespace, is removed (see section 4.3). The words are grouped into contiguous n-grams for some n. These are usually overlapping sequences of words (see section 4.3.5), although some techniques use non-overlapping sequences. Some of the n-grams are selected to represent the document. The selected n-grams are hashed to improve retrieval efficiency and further reduce the size of the representation. The hash values are stored, typically in an inverted index"
+    },
+    {
+      "slide_num": 29,
+      "file_path": "ppt/slides/slide29.xml",
+      "text": "3.7 Delete duplicates: fingerprints Example:"
+    },
+    {
+      "slide_num": 30,
+      "file_path": "ppt/slides/slide30.xml",
+      "text": "3.8 Remove noise Content block takes up less than 20% of the display area of the page Banners Advertisements Images General navigation links services Noise"
+    },
+    {
+      "slide_num": 31,
+      "file_path": "ppt/slides/slide31.xml",
+      "text": "3.8 Remove noise One way to detect the largest ﬂat area of the distribution is to represent a web page as a sequence of bits indicates that the n th token is a tag, and otherwise F ind values of i and j to maximize both the number of tags below i and above j and the number of non-tag tokens between i and j where N is the number of tokens in the pages."
+    },
+    {
+      "slide_num": 32,
+      "file_path": "ppt/slides/slide32.xml",
+      "text": "Exercise Implement the above algorithm (crawlerThread) to crawl any website."
+    },
+    {
+      "slide_num": 33,
+      "file_path": "ppt/slides/slide33.xml",
+      "text": "Summary Crawl webs, documents and emails Character encoding Preprocess: delete duplicates and remove noise"
+    }
+  ]
+}

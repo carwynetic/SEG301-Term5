@@ -1,0 +1,128 @@
+{
+  "chapter_id": 1,
+  "filename": "1. Information Retieval and Search Engines.pptx",
+  "title": "Information Retrieval and Search Engines",
+  "total_slides": 24,
+  "slides": [
+    {
+      "slide_num": 1,
+      "file_path": "ppt/slides/slide1.xml",
+      "text": "Chapter 1 I nformation Retrieval and Search Engines SEG301m"
+    },
+    {
+      "slide_num": 2,
+      "file_path": "ppt/slides/slide2.xml",
+      "text": "Objectives What is information retrieval? The concept of search engine The majority of search engineers The applications of search engine and information retrieval"
+    },
+    {
+      "slide_num": 3,
+      "file_path": "ppt/slides/slide3.xml",
+      "text": "Contents 1.1 Information retrieval 1.2 Search engines 1.3 Search engineers 1.4 Web Search 1.5 Other Search Applications 1.6 Other Information Retrieval Applications"
+    },
+    {
+      "slide_num": 4,
+      "file_path": "ppt/slides/slide4.xml",
+      "text": "1.1 Information retrieval How often do you search for information on the Web? a daily activity → hourly activity computer scientists, sofware engineers, information scientists, search engine optimizers improve search by coming up with easier and faster ways to find the right information Who? style.visibility style.visibility style.visibility style.visibility style.visibility style.visibility"
+    },
+    {
+      "slide_num": 5,
+      "file_path": "ppt/slides/slide5.xml",
+      "text": "1.1 Information retrieval How often do you search for information on the Web? a daily activity → hourly activity improve search by coming up with easier and faster ways to find the right information Information retrieval necessary! concerned"
+    },
+    {
+      "slide_num": 6,
+      "file_path": "ppt/slides/slide6.xml",
+      "text": "1.1 Information retrieval Definition (Salton, 1968): Information retrieval organization structure storage searching retrieval"
+    },
+    {
+      "slide_num": 7,
+      "file_path": "ppt/slides/slide7.xml",
+      "text": "1.1 Information retrieval critical piece of information in bank? Bank of information Design an algorithm to compare “piece of information” and information in bank! Not easy! Core task: understanding and modeling how people compare texts, and designing computer algorithms to accurately perform this comparison ! retrieval queries answer style.visibility style.visibility style.visibility style.visibility style.visibility style.visibility style.visibility style.visibility style.visibility style.visibility style.visibility"
+    },
+    {
+      "slide_num": 8,
+      "file_path": "ppt/slides/slide8.xml",
+      "text": "1.2 Search engines Definition: the practical application of information retrieval techniques to large-scale text collections Examples: web search engine, desktop search engine, enterprise search engine"
+    },
+    {
+      "slide_num": 9,
+      "file_path": "ppt/slides/slide9.xml",
+      "text": "1.2 Search engines An example of web search engine: Google - crawl, many terabytes of data, and then provide sub-second response times to millions of queries submitted every day from around the world Websites queries retrieval answer Source: google.com"
+    },
+    {
+      "slide_num": 10,
+      "file_path": "ppt/slides/slide10.xml",
+      "text": "1.2 Search engines"
+    },
+    {
+      "slide_num": 11,
+      "file_path": "ppt/slides/slide11.xml",
+      "text": "1.3 Search engineers primarily people trained in computer science, mostly with a systems or database background few of them have training in information retrieval"
+    },
+    {
+      "slide_num": 12,
+      "file_path": "ppt/slides/slide12.xml",
+      "text": "1.3 Search engineers The majority of search engineers Extend search engines Maintain search engines Tune existing search engines Modify search engines Design and implement new search engines Optimize content for search engines/deal with spam style.visibility style.visibility style.visibility style.visibility"
+    },
+    {
+      "slide_num": 13,
+      "file_path": "ppt/slides/slide13.xml",
+      "text": "1.4 Web Search Websites queries retrieval answer Source: google.com Identity a set of web pages containing the terms in queries Compute score for each page Eliminate duplicate and redundant Generate summaries of remaining pages style.visibility style.visibility style.visibility style.visibility style.visibility style.visibility style.visibility style.visibility style.visibility"
+    },
+    {
+      "slide_num": 14,
+      "file_path": "ppt/slides/slide14.xml",
+      "text": "1.5 Other Search Applications Desktop search engine: Provides search and browsing facilities for files stored on a local hard disk and possibly on disks connected over a local network Requires greater awareness of file formats and creation times Enterprise search engine: Provides document management and search services across businesses and other organizations Helps satisfy regulatory requirements regarding the retention of e-mail and other business communications"
+    },
+    {
+      "slide_num": 15,
+      "file_path": "ppt/slides/slide15.xml",
+      "text": "1.6 Other Information Retrieval Applications Document routing, filtering, and selective dissemination Text clustering and categorization Summarization systems Information extraction systems Topic detection and tracking systems Expert search systems Question answering systems Multimedia information retrieval systems"
+    },
+    {
+      "slide_num": 16,
+      "file_path": "ppt/slides/slide16.xml",
+      "text": "1.6 Other Information Retrieval Applications Document routing, filtering, and selective dissemination Việt Nam - Hàn Quốc: Dấu mốc lịch sử, đột phá tầm cao mới business politics lifestyle Subscribers style.visibility style.visibility style.visibility style.visibility style.visibility"
+    },
+    {
+      "slide_num": 17,
+      "file_path": "ppt/slides/slide17.xml",
+      "text": "1.6 Other Information Retrieval Applications Text clustering and categorization Việt Nam - Hàn Quốc: Dấu mốc lịch sử, đột phá tầm cao mới Clustering/categorization system Politics: sample1, sample2, … Business: sample1, sample2, … Lifestyle: sample1, sample2, … politics style.visibility style.visibility style.visibility style.visibility style.visibility style.visibility"
+    },
+    {
+      "slide_num": 18,
+      "file_path": "ppt/slides/slide18.xml",
+      "text": "1.6 Other Information Retrieval Applications Summarization systems: reduce documents to a few key paragraphs, sentences, or phrases describing their content Source: english.thesaigontimes.vn summarization system Encourage creativity to create opportunities for young people style.visibility style.visibility"
+    },
+    {
+      "slide_num": 19,
+      "file_path": "ppt/slides/slide19.xml",
+      "text": "1.6 Other Information Retrieval Applications Information extraction systems: identify named entities, such as places and dates, and combine this information into structured records that describe relationships between these entities"
+    },
+    {
+      "slide_num": 20,
+      "file_path": "ppt/slides/slide20.xml",
+      "text": "1.6 Other Information Retrieval Applications Topic detection and tracking systems: identify events in streams of news articles and similar information sources, tracking these events as they evolve"
+    },
+    {
+      "slide_num": 21,
+      "file_path": "ppt/slides/slide21.xml",
+      "text": "1.6 Other Information Retrieval Applications Expert search systems: identify members of organizations who are experts in a specified area"
+    },
+    {
+      "slide_num": 22,
+      "file_path": "ppt/slides/slide22.xml",
+      "text": "1.6 Other Information Retrieval Applications Question answering systems integrate information from multiple sources to provide concise answers to specific questions"
+    },
+    {
+      "slide_num": 23,
+      "file_path": "ppt/slides/slide23.xml",
+      "text": "Exercise Use the Web to find as many examples as you can of open source search engines, information retrieval systems, or related technology. Give a brief description of each search engine and summarize the similarities and differences between them."
+    },
+    {
+      "slide_num": 24,
+      "file_path": "ppt/slides/slide24.xml",
+      "text": "Summary Search engine is the practical application of information retrieval techniques to large-scale text collections Text clustering and categorization techniques Summarization systems: reduce documents to a few key paragraphs, sentences, or phrases describing their content Topic detection and tracking systems: identify events in streams of news articles and similar information sources, tracking these events as they evolve"
+    }
+  ]
+}

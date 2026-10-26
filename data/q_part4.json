@@ -1,0 +1,802 @@
+[
+  {
+    "id": "q_ch04_01",
+    "chapter": 4,
+    "question": "What empirical phenomenon does Zipf's Law describe in natural language text?",
+    "options": [
+      "Word lengths are normally distributed around 5 characters",
+      "The frequency of any word is inversely proportional to its frequency rank: f(r) ~ 1/r",
+      "Vocabulary size grows linearly with the total number of words in the corpus",
+      "All languages have exactly the same number of vowels"
+    ],
+    "correct": 1,
+    "explanation": "Zipf's Law states that the r-th most frequent word has frequency approximately proportional to 1/r, meaning a few words occur extremely frequently while most occur rarely.",
+    "topic": "Zipf's Law",
+    "slide_ref": "4. Processing Text.pptx",
+    "answer": 1
+  },
+  {
+    "id": "q_ch04_02",
+    "chapter": 4,
+    "question": "If the most frequent word in a corpus occurs 100,000 times, approximately how many times does the 10th most frequent word occur according to Zipf's Law?",
+    "options": [
+      "10,000 times",
+      "50,000 times",
+      "1,000 times",
+      "100 times"
+    ],
+    "correct": 0,
+    "explanation": "By Zipf's Law, f(r) = f(1) / r. For r = 10, f(10) ≈ 100,000 / 10 = 10,000.",
+    "topic": "Zipf Calculation",
+    "slide_ref": "4. Processing Text.pptx",
+    "answer": 0
+  },
+  {
+    "id": "q_ch04_03",
+    "chapter": 4,
+    "question": "What does Heaps' Law model in text corpora?",
+    "options": [
+      "The number of punctuation marks per sentence",
+      "The vocabulary growth V as a function of the total number of words N in the text collection: V = k * N^beta",
+      "The execution speed of the Porter Stemmer",
+      "The physical weight of server hard drives"
+    ],
+    "correct": 1,
+    "explanation": "Heaps' Law models vocabulary growth: V = k * N^beta (where typical beta is between 0.4 and 0.6), showing vocabulary continues to grow sublinearly and never completely saturates.",
+    "topic": "Heaps' Law",
+    "slide_ref": "4. Processing Text.pptx",
+    "answer": 1
+  },
+  {
+    "id": "q_ch04_04",
+    "chapter": 4,
+    "question": "In Heaps' Law formula V = k * N^beta, what is the typical empirical range of the parameter beta for natural language collections?",
+    "options": [
+      "Between 0.0 and 0.1",
+      "Between 0.4 and 0.6",
+      "Between 1.0 and 1.5",
+      "Strictly equal to 2.0"
+    ],
+    "correct": 1,
+    "explanation": "Empirically, beta is typically around 0.4 to 0.6, reflecting the power-law sublinear growth of unique words as corpus size N expands.",
+    "topic": "Heaps' Law Parameters",
+    "slide_ref": "4. Processing Text.pptx",
+    "answer": 1
+  },
+  {
+    "id": "q_ch04_05",
+    "chapter": 4,
+    "question": "What is the fundamental difference between 'Stemming' and 'Lemmatization'?",
+    "options": [
+      "Stemming uses dictionary morphological analysis; Lemmatization uses rule-based heuristic suffix chopping",
+      "Stemming applies heuristic rule-based suffix stripping without a dictionary (may produce non-words); Lemmatization uses morphological vocabularies and POS context to produce valid dictionary base forms (lemmas)",
+      "Stemming is only for numbers; Lemmatization is only for verbs",
+      "Stemming increases vocabulary size; Lemmatization decreases it"
+    ],
+    "correct": 1,
+    "explanation": "Stemming (e.g., Porter) strips suffixes algorithmically (producing e.g. 'comput' from 'computation'); Lemmatization reduces words to valid dictionary headwords (e.g., 'better' -> 'good').",
+    "topic": "Stemming vs Lemmatization",
+    "slide_ref": "4. Processing Text.pptx",
+    "answer": 1
+  },
+  {
+    "id": "q_ch04_06",
+    "chapter": 4,
+    "question": "Which of the following is the most widely adopted rule-based stemming algorithm for the English language?",
+    "options": [
+      "The Viterbi Stemmer",
+      "The Porter Stemmer (Martin Porter, 1980)",
+      "The Dijkstra Stemmer",
+      "The Levenshtein Stemmer"
+    ],
+    "correct": 1,
+    "explanation": "The Porter Stemmer is the standard algorithmic 5-phase suffix-stripping algorithm for English text retrieval.",
+    "topic": "Porter Stemmer",
+    "slide_ref": "4. Processing Text.pptx",
+    "answer": 1
+  },
+  {
+    "id": "q_ch04_07",
+    "chapter": 4,
+    "question": "What base stem would the classic Porter Stemmer typically produce for the words 'connection', 'connections', 'connective', and 'connected'?",
+    "options": [
+      "connect",
+      "connectionist",
+      "con",
+      "ct"
+    ],
+    "correct": 0,
+    "explanation": "The Porter Stemmer strips common suffixes like '-ion', '-ive', and '-ed' to map related forms to the common root 'connect'.",
+    "topic": "Porter Stemming Example",
+    "slide_ref": "4. Processing Text.pptx",
+    "answer": 0
+  },
+  {
+    "id": "q_ch04_08",
+    "chapter": 4,
+    "question": "What is 'Case Folding' in text normalization?",
+    "options": [
+      "Folding paper printouts of text",
+      "Converting all text characters to a uniform casing (typically lowercase) to ensure case-insensitive matching",
+      "Capitalizing the first letter of every word",
+      "Encrypting text using lowercase ciphers"
+    ],
+    "correct": 1,
+    "explanation": "Case folding maps all uppercase letters to lowercase so that 'Search', 'SEARCH', and 'search' all match the same term.",
+    "topic": "Case Folding",
+    "slide_ref": "4. Processing Text.pptx",
+    "answer": 1
+  },
+  {
+    "id": "q_ch04_09",
+    "chapter": 4,
+    "question": "What is a potential negative side-effect of aggressive Case Folding?",
+    "options": [
+      "It distinguishes proper nouns like 'Apple' (company) from common nouns like 'apple' (fruit)",
+      "It collapses distinct entities into the same term, conflating 'Bush' (person) with 'bush' (plant) or 'US' (country) with 'us' (pronoun)",
+      "It crashes the server memory",
+      "It deletes all vowels from the index"
+    ],
+    "correct": 1,
+    "explanation": "Aggressive lowercasing loses capitalization signals useful for Named Entity Recognition and disambiguation (e.g., 'CAT' scan vs 'cat' animal).",
+    "topic": "Case Folding Trade-offs",
+    "slide_ref": "4. Processing Text.pptx",
+    "answer": 1
+  },
+  {
+    "id": "q_ch04_10",
+    "chapter": 4,
+    "question": "What challenge arises when tokenizing hyphenated words like 'state-of-the-art' or 'co-worker'?",
+    "options": [
+      "Deciding whether to treat them as a single token, multiple separate tokens, or index both variants to satisfy different query intents",
+      "Hyphens cause hard drive sector errors",
+      "Hyphens cannot be stored in UTF-8 format",
+      "Hyphenated words have negative IDF values"
+    ],
+    "correct": 0,
+    "explanation": "Tokenizers must balance treating 'state-of-the-art' as a single phrase vs allowing users who search for 'art' or 'state' to match individual components.",
+    "topic": "Tokenization Challenges",
+    "slide_ref": "4. Processing Text.pptx",
+    "answer": 0
+  },
+  {
+    "id": "q_ch04_11",
+    "chapter": 4,
+    "question": "What is an 'N-Gram' in text processing?",
+    "options": [
+      "A metric weight of paper",
+      "A contiguous sequence of n tokens (or characters) extracted from a given text sample",
+      "An encryption key of n bits",
+      "A network router model"
+    ],
+    "correct": 1,
+    "explanation": "An n-gram is a contiguous sequence of n items (unigrams n=1, bigrams n=2, trigrams n=3) from a text sequence.",
+    "topic": "N-Grams",
+    "slide_ref": "4. Processing Text.pptx",
+    "answer": 1
+  },
+  {
+    "id": "q_ch04_12",
+    "chapter": 4,
+    "question": "In character-level language modeling and spelling correction, what are character n-grams useful for?",
+    "options": [
+      "Handling out-of-vocabulary (OOV) words, misspellings, and morphological variations by decomposing words into subword pieces",
+      "Increasing image compression ratios",
+      "Calculating PageRank scores",
+      "Formatting HTML tables"
+    ],
+    "correct": 0,
+    "explanation": "Subword character n-grams (e.g., 'appl', 'pple') match partial strings even if typos exist, enabling robust fuzzy matching.",
+    "topic": "Character N-Grams",
+    "slide_ref": "4. Processing Text.pptx",
+    "answer": 0
+  },
+  {
+    "id": "q_ch04_13",
+    "chapter": 4,
+    "question": "What is 'Named Entity Recognition' (NER) in document parsing?",
+    "options": [
+      "Identifying the legal name of the search engine company",
+      "Locating and classifying named entities in unstructured text into predefined categories (e.g., Person, Organization, Location, Date, Monetary Value)",
+      "Encrypting user passwords",
+      "Finding duplicate IP addresses in crawler logs"
+    ],
+    "correct": 1,
+    "explanation": "NER identifies and tags real-world entities (e.g., 'Google' -> ORG, 'Paris' -> LOC, '2024' -> DATE) to enable entity search and knowledge graph linking.",
+    "topic": "Named Entity Recognition",
+    "slide_ref": "4. Processing Text.pptx",
+    "answer": 1
+  },
+  {
+    "id": "q_ch04_14",
+    "chapter": 4,
+    "question": "What is 'Part-of-Speech' (POS) Tagging?",
+    "options": [
+      "Labeling which post office delivers letters",
+      "The process of marking each word in a text with its corresponding grammatical part of speech (noun, verb, adjective, adverb) based on context",
+      "Removing punctuation from documents",
+      "Sorting words alphabetically"
+    ],
+    "correct": 1,
+    "explanation": "POS taggers assign grammatical categories (NN for noun, VB for verb, JJ for adjective) to help disambiguate word senses (e.g., 'run' as a verb vs noun).",
+    "topic": "POS Tagging",
+    "slide_ref": "4. Processing Text.pptx",
+    "answer": 1
+  },
+  {
+    "id": "q_ch04_15",
+    "chapter": 4,
+    "question": "Why is 'Anchor Text' from incoming links often treated as high-weight document content during text indexing?",
+    "options": [
+      "Because anchor text is written by third parties and frequently provides concise, objective descriptions of the destination page's topic",
+      "Because anchor text is always written in HTML bold tags",
+      "Because anchor text contains no stop words",
+      "Because anchor text is required by HTTP standards"
+    ],
+    "correct": 0,
+    "explanation": "Anchor text provides external editorial summaries of the target page (e.g., thousands of links saying 'IBM' pointing to ibm.com).",
+    "topic": "Anchor Text Weighting",
+    "slide_ref": "4. Processing Text.pptx",
+    "answer": 0
+  },
+  {
+    "id": "q_ch04_16",
+    "chapter": 4,
+    "question": "What is the 'Krovetz Stemmer' and how does it differ from the Porter Stemmer?",
+    "options": [
+      "Krovetz is an inflectional stemmer that checks words against a dictionary to produce true morphological words, being less aggressive than Porter",
+      "Krovetz only stems French words",
+      "Krovetz stemmer is written in assembly code",
+      "Krovetz stems words by deleting all vowels"
+    ],
+    "correct": 0,
+    "explanation": "The Krovetz stemmer is a dictionary-checked inflectional stemmer that only removes grammatical plurals and past tenses, producing real words.",
+    "topic": "Krovetz Stemmer",
+    "slide_ref": "4. Processing Text.pptx",
+    "answer": 0
+  },
+  {
+    "id": "q_ch04_17",
+    "chapter": 4,
+    "question": "What is 'Over-stemming' in stemming algorithms?",
+    "options": [
+      "When the stemmer fails to remove a suffix",
+      "When two semantically distinct words are mistakenly conflated to the same root stem (e.g., 'organization' and 'organ' both stemmed to 'organ')",
+      "When the stemmer uses more than 100MB of RAM",
+      "When a document contains more than 10,000 words"
+    ],
+    "correct": 1,
+    "explanation": "Over-stemming occurs when words with different meanings are aggressively chopped to the same root, harming precision.",
+    "topic": "Over-stemming",
+    "slide_ref": "4. Processing Text.pptx",
+    "answer": 1
+  },
+  {
+    "id": "q_ch04_18",
+    "chapter": 4,
+    "question": "What is 'Under-stemming' in stemming algorithms?",
+    "options": [
+      "When two inflectional forms of the same semantic concept fail to be reduced to the same root stem (e.g., 'adhere' and 'adhesion')",
+      "When the stemmer runs slower than 1 word per second",
+      "When a word is converted to lowercase",
+      "When a word contains numbers"
+    ],
+    "correct": 0,
+    "explanation": "Under-stemming occurs when related words are not grouped together, harming recall.",
+    "topic": "Under-stemming",
+    "slide_ref": "4. Processing Text.pptx",
+    "answer": 0
+  },
+  {
+    "id": "q_ch04_19",
+    "chapter": 4,
+    "question": "Which language presents a major tokenization challenge because sentences are written as continuous character strings without whitespace word separators?",
+    "options": [
+      "English",
+      "Chinese (Mandarin)",
+      "Spanish",
+      "Russian"
+    ],
+    "correct": 1,
+    "explanation": "Chinese, Japanese, and Thai do not use spaces between words, requiring statistical word segmentation (e.g., Jieba, Hidden Markov Models).",
+    "topic": "Word Segmentation",
+    "slide_ref": "4. Processing Text.pptx",
+    "answer": 1
+  },
+  {
+    "id": "q_ch04_20",
+    "chapter": 4,
+    "question": "What is 'Unicode Normalization' (e.g., NFC, NFD, NFKC, NFKD) and why is it essential in text processing?",
+    "options": [
+      "It formats computer hard drives with Unicode partitions",
+      "It resolves visual character equivalence (e.g., ensuring composed 'é' (U+00E9) and decomposed 'e' + combining accent (U+0065 U+0301) map to identical binary representations)",
+      "It translates English text into Japanese",
+      "It deletes all non-Latin characters"
+    ],
+    "correct": 1,
+    "explanation": "Unicode allows multiple binary encodings for identical visual glyphs; normalization ensures consistent binary term representations.",
+    "topic": "Unicode Normalization",
+    "slide_ref": "4. Processing Text.pptx",
+    "answer": 1
+  },
+  {
+    "id": "q_ch04_21",
+    "chapter": 4,
+    "question": "In text statistics, what is a 'Type-Token Ratio' (TTR)?",
+    "options": [
+      "The ratio of the physical weight of a keyboard to a monitor",
+      "The ratio of the number of unique words (types) to the total number of running words (tokens) in a text, measuring lexical diversity",
+      "The ratio of vowels to consonants",
+      "The ratio of uppercase to lowercase letters"
+    ],
+    "correct": 1,
+    "explanation": "TTR = V / N measures the vocabulary richness or diversity of a text collection.",
+    "topic": "Type-Token Ratio",
+    "slide_ref": "4. Processing Text.pptx",
+    "answer": 1
+  },
+  {
+    "id": "q_ch04_22",
+    "chapter": 4,
+    "question": "What does 'Hapax Legomenon' mean in text corpus linguistics?",
+    "options": [
+      "A word that occurs exactly once within an entire document collection",
+      "A word that occurs in every document",
+      "A word imported from ancient Greek",
+      "A word containing only numbers"
+    ],
+    "correct": 0,
+    "explanation": "Hapax legomena are words that appear only once in a corpus; under Zipf's law, roughly 40-50% of unique vocabulary terms in large corpora are hapax legomena.",
+    "topic": "Hapax Legomenon",
+    "slide_ref": "4. Processing Text.pptx",
+    "answer": 0
+  },
+  {
+    "id": "q_ch04_23",
+    "chapter": 4,
+    "question": "What is the typical impact on an inverted index if all numbers, dates, and punctuation are completely stripped?",
+    "options": [
+      "Index size decreases significantly, but queries for technical model numbers (e.g., 'Boeing 747', 'iPhone 15 Pro') or dates will fail completely",
+      "The index becomes 10 times larger",
+      "Search results become 100% accurate for all queries",
+      "The crawler stops fetching HTML pages"
+    ],
+    "correct": 0,
+    "explanation": "Stripping all alphanumeric tokens saves storage but destroys search capability for product IDs, formulas, dates, and versions.",
+    "topic": "Token Filtering Trade-offs",
+    "slide_ref": "4. Processing Text.pptx",
+    "answer": 0
+  },
+  {
+    "id": "q_ch04_24",
+    "chapter": 4,
+    "question": "What is 'Collocation' in text analysis?",
+    "options": [
+      "Placing two servers in the same physical rack",
+      "A sequence of words that co-occur together more frequently than would be expected by random chance (e.g., 'crystal clear', 'machine learning')",
+      "Sorting words alphabetically",
+      "Deleting misspelled words from the corpus"
+    ],
+    "correct": 1,
+    "explanation": "Collocations are statistically significant recurring word pairs or phrases identified via Mutual Information or Chi-square tests.",
+    "topic": "Collocation Extraction",
+    "slide_ref": "4. Processing Text.pptx",
+    "answer": 1
+  },
+  {
+    "id": "q_ch04_25",
+    "chapter": 4,
+    "question": "Which metric is commonly used to measure the statistical association between two co-occurring words w1 and w2?",
+    "options": [
+      "Pointwise Mutual Information (PMI)",
+      "Hamming Distance",
+      "PageRank",
+      "CPU Temperature"
+    ],
+    "correct": 0,
+    "explanation": "Pointwise Mutual Information (PMI = log( P(w1, w2) / (P(w1) * P(w2)) )) quantifies how much more often two terms co-occur than expected by independent chance.",
+    "topic": "Mutual Information",
+    "slide_ref": "4. Processing Text.pptx",
+    "answer": 0
+  },
+  {
+    "id": "q_ch04_26",
+    "chapter": 4,
+    "question": "What is an 'Inverted Document Frequency' (IDF) weighting motivated by in text processing?",
+    "options": [
+      "Terms that occur in almost all documents (like 'the', 'is') have low discriminating power; rare terms provide high information value for relevance ranking",
+      "All words in a dictionary are equally important",
+      "Longer documents should always be ranked first",
+      "Frequent words are always the most important"
+    ],
+    "correct": 0,
+    "explanation": "IDF discounts common words and boosts discriminative rare words that pinpoint specific topics.",
+    "topic": "IDF Motivation",
+    "slide_ref": "4. Processing Text.pptx",
+    "answer": 0
+  },
+  {
+    "id": "q_ch04_27",
+    "chapter": 4,
+    "question": "What is 'Lemmatization' dependent on that simple rule-based Stemmers typically ignore?",
+    "options": [
+      "The Part-of-Speech (POS) and syntactic context of the word in the sentence",
+      "The font color of the text",
+      "The operating system version",
+      "The network latency of the web crawler"
+    ],
+    "correct": 0,
+    "explanation": "Lemmatization requires knowing whether a word like 'saw' is a noun (the cutting tool -> lemma 'saw') or past verb of 'see' (lemma 'see').",
+    "topic": "Lemmatization Context",
+    "slide_ref": "4. Processing Text.pptx",
+    "answer": 0
+  },
+  {
+    "id": "q_ch04_28",
+    "chapter": 4,
+    "question": "Which Python library is famously used for classic educational NLP, providing implementations of the Porter Stemmer, WordNet Lemmatizer, and stopword corpora?",
+    "options": [
+      "NLTK (Natural Language Toolkit)",
+      "NumPy",
+      "Matplotlib",
+      "Pandas"
+    ],
+    "correct": 0,
+    "explanation": "NLTK is the classic Python toolkit containing standard tokenizers, stemmers, POS taggers, and linguistic lexicons.",
+    "topic": "NLTK Library",
+    "slide_ref": "4. Processing Text.pptx",
+    "answer": 0
+  },
+  {
+    "id": "q_ch04_29",
+    "chapter": 4,
+    "question": "What does the 'Subword' tokenization technique (like Byte-Pair Encoding / BPE or WordPiece) accomplish in modern NLP and neural IR?",
+    "options": [
+      "It compresses audio files into text",
+      "It splits rare or unknown words into frequent subword units, completely eliminating out-of-vocabulary (OOV) tokens while keeping vocabulary compact",
+      "It deletes all words shorter than 3 characters",
+      "It forces all words into 8-bit ASCII"
+    ],
+    "correct": 1,
+    "explanation": "BPE and WordPiece break unfamiliar words (e.g., 'unhappiness') into known subwords ('un', 'happi', 'ness'), handling OOV words seamlessly.",
+    "topic": "Subword Tokenization",
+    "slide_ref": "4. Processing Text.pptx",
+    "answer": 1
+  },
+  {
+    "id": "q_ch04_30",
+    "chapter": 4,
+    "question": "In tokenization, what is 'Compound Splitting' particularly important for?",
+    "options": [
+      "Languages like German, Dutch, and Swedish where compound nouns are written as single unbroken words (e.g., 'Donaudampfschifffahrt')",
+      "English slang exclusively",
+      "HTML CSS stylesheets",
+      "Python source code"
+    ],
+    "correct": 0,
+    "explanation": "Germanic languages create long compound nouns that must be split into components so queries for individual parts can match.",
+    "topic": "Compound Splitting",
+    "slide_ref": "4. Processing Text.pptx",
+    "answer": 0
+  },
+  {
+    "id": "q_ch04_31",
+    "chapter": 4,
+    "question": "What is a 'Stopword List' typically composed of?",
+    "options": [
+      "Only profanity and illegal keywords",
+      "High-frequency grammatical function words such as prepositions, conjunctions, pronouns, and auxiliary verbs",
+      "Only proper nouns and company names",
+      "Foreign words translated into English"
+    ],
+    "correct": 1,
+    "explanation": "Stopword lists contain closed-class function words ('the', 'and', 'to', 'of', 'in', 'is') that carry structural rather than topical meaning.",
+    "topic": "Stopword Definition",
+    "slide_ref": "4. Processing Text.pptx",
+    "answer": 1
+  },
+  {
+    "id": "q_ch04_32",
+    "chapter": 4,
+    "question": "What is the primary trade-off of maintaining a very large Stopword List (e.g., 500+ words)?",
+    "options": [
+      "Smaller index size and faster queries, but high risk of dropping meaningful terms in queries like 'to be or not to be' or 'vitamin A'",
+      "Inverted indexes become corrupted",
+      "Web crawlers download pages twice as fast",
+      "The search engine cannot run on Linux"
+    ],
+    "correct": 0,
+    "explanation": "Large stoplists save index space but can cause false negatives when users search for short phrases or acronyms.",
+    "topic": "Stoplist Trade-off",
+    "slide_ref": "4. Processing Text.pptx",
+    "answer": 0
+  },
+  {
+    "id": "q_ch04_33",
+    "chapter": 4,
+    "question": "How does Zipf's Law explain why Stopword Removal saves so much index space?",
+    "options": [
+      "Because the top 50-100 most frequent words account for roughly 30% to 50% of all word occurrences in any natural text corpus",
+      "Because stop words are physically longer in character count",
+      "Because stop words cannot be compressed",
+      "Because stop words are written in invisible ink"
+    ],
+    "correct": 0,
+    "explanation": "Due to Zipf's power-law distribution, a tiny fraction of top rank words make up a massive percentage of total token volume.",
+    "topic": "Zipf Space Savings",
+    "slide_ref": "4. Processing Text.pptx",
+    "answer": 0
+  },
+  {
+    "id": "q_ch04_34",
+    "chapter": 4,
+    "question": "What is the effect of applying Stemming on Search Engine 'Recall' and 'Precision'?",
+    "options": [
+      "Stemming generally increases Recall (retrieving more relevant variations) but can slightly decrease Precision (due to over-stemming false matches)",
+      "Stemming decreases Recall and increases Precision",
+      "Stemming has zero effect on any evaluation metric",
+      "Stemming reduces Recall to zero"
+    ],
+    "correct": 0,
+    "explanation": "Stemming broadens candidate matching (boosting Recall) but can conflate unrelated words like 'policy' and 'police' (lowering Precision).",
+    "topic": "Stemming Impact",
+    "slide_ref": "4. Processing Text.pptx",
+    "answer": 0
+  },
+  {
+    "id": "q_ch04_35",
+    "chapter": 4,
+    "question": "What is 'Text Extraction' from a PDF file particularly complicated by?",
+    "options": [
+      "PDFs store characters as visual glyph drawing commands and coordinates on a canvas, often lacking explicit word spaces, line breaks, or reading orders",
+      "PDFs are always encrypted with government passwords",
+      "PDFs do not contain letters",
+      "PDF files are limited to 1 kilobyte in size"
+    ],
+    "correct": 0,
+    "explanation": "PDF is a visual layout format; multi-column text, ligatures, and fragmented font vectors make reconstructing clean linear text challenging.",
+    "topic": "PDF Text Extraction",
+    "slide_ref": "4. Processing Text.pptx",
+    "answer": 0
+  },
+  {
+    "id": "q_ch04_36",
+    "chapter": 4,
+    "question": "In document parsing, what does 'Character Encoding Normalization' ensure when processing diverse web pages?",
+    "options": [
+      "All text is converted to a consistent internal encoding standard (typically UTF-8) before tokenization and indexing",
+      "All text is converted to Morse code",
+      "All numbers are multiplied by 2",
+      "All fonts are set to Times New Roman"
+    ],
+    "correct": 0,
+    "explanation": "Ensuring uniform UTF-8 prevents mojibake (garbled characters) across European, Asian, and Arabic scripts.",
+    "topic": "Encoding Normalization",
+    "slide_ref": "4. Processing Text.pptx",
+    "answer": 0
+  },
+  {
+    "id": "q_ch04_37",
+    "chapter": 4,
+    "question": "What is a 'Skip-gram' in n-gram feature generation?",
+    "options": [
+      "An n-gram where non-adjacent words are allowed to be combined by skipping over up to k intervening tokens",
+      "An n-gram that is skipped during indexing",
+      "An n-gram containing only consonants",
+      "An n-gram that is deleted by the crawler"
+    ],
+    "correct": 0,
+    "explanation": "Skip-grams capture non-contiguous word pairs (e.g., 'audio ... player') within a sliding window, modeling looser phrase associations.",
+    "topic": "Skip-grams",
+    "slide_ref": "4. Processing Text.pptx",
+    "answer": 0
+  },
+  {
+    "id": "q_ch04_38",
+    "chapter": 4,
+    "question": "What is 'Named Entity Disambiguation' (or Entity Linking)?",
+    "options": [
+      "Deleting all names from the database",
+      "Resolving which specific real-world entity a mention refers to (e.g., determining whether 'Washington' in a sentence refers to the US President, the US State, or the City of DC)",
+      "Checking spelling of names",
+      "Translating names into Latin"
+    ],
+    "correct": 1,
+    "explanation": "Entity linking maps ambiguous textual mentions to unambiguous nodes in a Knowledge Base (e.g., Wikidata or Google Knowledge Graph).",
+    "topic": "Entity Linking",
+    "slide_ref": "4. Processing Text.pptx",
+    "answer": 1
+  },
+  {
+    "id": "q_ch04_39",
+    "chapter": 4,
+    "question": "What does Zipf's Law predict about the tail of the word frequency distribution?",
+    "options": [
+      "The tail consists of a vast number of unique words that occur with extremely low frequencies (the Long Tail)",
+      "The tail drops to zero immediately after 100 words",
+      "The tail is completely flat and uniform",
+      "There is no tail; all words occur equally"
+    ],
+    "correct": 0,
+    "explanation": "The long tail of Zipf's law comprises thousands of rare technical terms, misspellings, and names that occur only once or twice.",
+    "topic": "Long Tail Words",
+    "slide_ref": "4. Processing Text.pptx",
+    "answer": 0
+  },
+  {
+    "id": "q_ch04_40",
+    "chapter": 4,
+    "question": "In text preprocessing, what is 'Boilerplate' detection based on?",
+    "options": [
+      "Text-to-tag ratios, link density, DOM tree depth, and repeated structural templates across the domain",
+      "The color of the website logo",
+      "The geographic location of the web host",
+      "The length of the domain name"
+    ],
+    "correct": 0,
+    "explanation": "Boilerplate filters analyze HTML tag density; navigation bars have high link density, whereas article bodies have high text-to-tag ratios.",
+    "topic": "Boilerplate Detection",
+    "slide_ref": "4. Processing Text.pptx",
+    "answer": 0
+  },
+  {
+    "id": "q_ch04_41",
+    "chapter": 4,
+    "question": "What is the 'Bag of Words' (BoW) assumption in classic Information Retrieval?",
+    "options": [
+      "The exact spatial layout of text on paper is preserved",
+      "The document is represented as an unordered multiset of terms, completely ignoring word order and grammatical structure while preserving term frequencies",
+      "Words must be stored inside physical bags",
+      "Sentences can only contain nouns"
+    ],
+    "correct": 1,
+    "explanation": "The BoW model simplifies documents to a collection of word counts, disregarding syntax and word order for computational efficiency.",
+    "topic": "Bag of Words",
+    "slide_ref": "4. Processing Text.pptx",
+    "answer": 1
+  },
+  {
+    "id": "q_ch04_42",
+    "chapter": 4,
+    "question": "What is a major limitation of the Bag of Words assumption?",
+    "options": [
+      "It cannot distinguish between sentences with identical words in different orders, such as 'man bites dog' and 'dog bites man'",
+      "It requires excessive disk space",
+      "It cannot handle documents written in English",
+      "It makes BM25 calculations impossible"
+    ],
+    "correct": 0,
+    "explanation": "BoW discards word order, failing to capture semantic role reversals and phrase structure.",
+    "topic": "BoW Limitations",
+    "slide_ref": "4. Processing Text.pptx",
+    "answer": 0
+  },
+  {
+    "id": "q_ch04_43",
+    "chapter": 4,
+    "question": "What is 'Sentence Boundary Disambiguation' in text parsing?",
+    "options": [
+      "Drawing black lines between sentences on the screen",
+      "Determining whether a period (.) indicates the end of a sentence or an abbreviation (e.g., 'Dr.', 'U.S.A.', '3.14')",
+      "Deleting all punctuation marks",
+      "Counting the number of letters in a sentence"
+    ],
+    "correct": 1,
+    "explanation": "Periods serve double duty as sentence terminators, decimals, and abbreviation markers, requiring heuristic or ML classifiers to segment sentences.",
+    "topic": "Sentence Segmentation",
+    "slide_ref": "4. Processing Text.pptx",
+    "answer": 1
+  },
+  {
+    "id": "q_ch04_44",
+    "chapter": 4,
+    "question": "What is 'Spelling Variant Normalization' (e.g., American vs British English)?",
+    "options": [
+      "Mapping alternative spellings like 'colour' / 'color' or 'realize' / 'realise' to a common canonical form",
+      "Forcing all users to speak British English",
+      "Deleting British web pages from the index",
+      "Adding spelling mistakes to user queries"
+    ],
+    "correct": 0,
+    "explanation": "Spelling normalization bridges regional spelling divergences so users searching for one variant retrieve documents written in the other.",
+    "topic": "Spelling Normalization",
+    "slide_ref": "4. Processing Text.pptx",
+    "answer": 0
+  },
+  {
+    "id": "q_ch04_45",
+    "chapter": 4,
+    "question": "Why is 'Anchor Text Propagation' effective for ranking homepages?",
+    "options": [
+      "Because homepages often contain little descriptive text (mostly logos and images), but millions of external links use the company name as anchor text",
+      "Because anchor text increases page load speed",
+      "Because anchor text encrypts the HTML source",
+      "Because anchor text deletes duplicate pages"
+    ],
+    "correct": 0,
+    "explanation": "Homepages are often graphically heavy; external anchor text provides the textual keywords that describe what the website actually is.",
+    "topic": "Anchor Propagation",
+    "slide_ref": "4. Processing Text.pptx",
+    "answer": 0
+  },
+  {
+    "id": "q_ch04_46",
+    "chapter": 4,
+    "question": "In text processing, what does 'Word Sense Disambiguation' (WSD) attempt to solve?",
+    "options": [
+      "Determining which specific semantic sense of a polysemous word is used in a given sentence (e.g., 'bank' as river bank vs financial institution)",
+      "Finding misspelled words in a document",
+      "Translating audio to text",
+      "Measuring the word count of a file"
+    ],
+    "correct": 1,
+    "explanation": "WSD determines the correct meaning of words with multiple senses based on surrounding context words.",
+    "topic": "Word Sense Disambiguation",
+    "slide_ref": "4. Processing Text.pptx",
+    "answer": 1
+  },
+  {
+    "id": "q_ch04_47",
+    "chapter": 4,
+    "question": "What does 'Stemming Collapse' mean?",
+    "options": [
+      "When a stemmer causes a computer crash",
+      "When multiple words are mapped to the exact same stem string",
+      "When a document loses its formatting",
+      "When the index runs out of memory"
+    ],
+    "correct": 1,
+    "explanation": "Stemming collapse is the intended reduction of distinct morphological forms (e.g., 'connect', 'connection', 'connecting') into a single index term.",
+    "topic": "Stemming Collapse",
+    "slide_ref": "4. Processing Text.pptx",
+    "answer": 1
+  },
+  {
+    "id": "q_ch04_48",
+    "chapter": 4,
+    "question": "Which of the following is true regarding Zipf's Law in multilingual corpora?",
+    "options": [
+      "Zipf's Law applies universally across virtually all natural human languages, not just English",
+      "Zipf's Law only holds for English",
+      "Zipf's Law only applies to computer programming languages",
+      "Zipf's Law was disproven in 2020"
+    ],
+    "correct": 0,
+    "explanation": "Zipf's power-law distribution of word frequencies is a universal mathematical property of human natural languages.",
+    "topic": "Universal Zipf",
+    "slide_ref": "4. Processing Text.pptx",
+    "answer": 0
+  },
+  {
+    "id": "q_ch04_49",
+    "chapter": 4,
+    "question": "What is the primary role of a 'Lexicon' (or Vocabulary) in search engine text processing?",
+    "options": [
+      "A dictionary table containing the set of all unique terms that appear across the document collection along with collection-level statistics",
+      "A database of user passwords",
+      "A hardware chip inside network routers",
+      "A software program that deletes old files"
+    ],
+    "correct": 0,
+    "explanation": "The lexicon maintains the unique indexed terms, their document frequencies (df), and pointers to their posting lists.",
+    "topic": "Lexicon Definition",
+    "slide_ref": "4. Processing Text.pptx",
+    "answer": 0
+  },
+  {
+    "id": "q_ch04_50",
+    "chapter": 4,
+    "question": "How does Heaps' Law influence the storage architecture of a search engine?",
+    "options": [
+      "It proves that dictionary size will eventually stop growing after 10,000 documents",
+      "It demonstrates that new terms will continually be discovered as more documents are crawled, meaning dictionary data structures must support dynamic vocabulary expansion",
+      "It proves that inverted indexes are unnecessary",
+      "It states that all documents should be stored in RAM"
+    ],
+    "correct": 1,
+    "explanation": "Because vocabulary size grows with N^beta without an upper asymptote, search engines must design dynamic, expandable dictionary structures.",
+    "topic": "Heaps' Law Implication",
+    "slide_ref": "4. Processing Text.pptx",
+    "answer": 1
+  }
+]

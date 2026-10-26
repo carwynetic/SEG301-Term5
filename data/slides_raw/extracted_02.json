@@ -1,0 +1,178 @@
+{
+  "chapter_id": 2,
+  "filename": "2. Architecture of A Search Engine.pptx",
+  "title": "Architecture of A Search Engine",
+  "total_slides": 34,
+  "slides": [
+    {
+      "slide_num": 1,
+      "file_path": "ppt/slides/slide1.xml",
+      "text": "C hapter 2 Architecture of a Search Engine SEG301m"
+    },
+    {
+      "slide_num": 2,
+      "file_path": "ppt/slides/slide2.xml",
+      "text": "Objectives Basic IR System Architecture Basic blocks inside search engine How to rank a website and evaluate search engine"
+    },
+    {
+      "slide_num": 3,
+      "file_path": "ppt/slides/slide3.xml",
+      "text": "C ontents 2.1 Basic IR System Architecture 2.2 Building blocks: Text acquisition Text transformation Index Creation User Interaction Ranking Evaluation"
+    },
+    {
+      "slide_num": 4,
+      "file_path": "ppt/slides/slide4.xml",
+      "text": "2.1 Basic IR System Architecture Components in information retrieval system A user has an information need, which underlies and drives the search process User constructs and issues a query to the IR system Search engine is to maintain and manipulate an inverted index for a document collection Index provides a mapping between terms and the locations in the collection in which they occur"
+    },
+    {
+      "slide_num": 5,
+      "file_path": "ppt/slides/slide5.xml",
+      "text": "2.1 Basic IR System Architecture Search engine has played an important role in IR system. Its primary goals include: Effectiveness (quality): retrieve the most relevant set of documents possible for a query Efficiency (speed): process queries from users as quickly as possible style.visibility style.visibility"
+    },
+    {
+      "slide_num": 6,
+      "file_path": "ppt/slides/slide6.xml",
+      "text": "2.1 Basic IR System Architecture Search engine has two major components Indexing process Query process"
+    },
+    {
+      "slide_num": 7,
+      "file_path": "ppt/slides/slide7.xml",
+      "text": "2.1 Basic IR System Architecture Search engine: Indexing process"
+    },
+    {
+      "slide_num": 8,
+      "file_path": "ppt/slides/slide8.xml",
+      "text": "2.1 Basic IR System Architecture Search engine: Query process"
+    },
+    {
+      "slide_num": 9,
+      "file_path": "ppt/slides/slide9.xml",
+      "text": "2.2 Building blocks Text acquisition Text transformation Index Creation User Interaction Ranking Evaluation"
+    },
+    {
+      "slide_num": 10,
+      "file_path": "ppt/slides/slide10.xml",
+      "text": "2.2 Building blocks: Text acquisition Task: identify and make available the documents that will be searched Crawler Feeds Conversion Document data store"
+    },
+    {
+      "slide_num": 11,
+      "file_path": "ppt/slides/slide11.xml",
+      "text": "2.2 Building blocks: Text acquisition General web crawler Follow the links on web pages to discover and download new pages Efficiently find huge numbers of web pages (coverage) and keep them up-to-date (freshness) Single site crawlers for site search Topical or focused crawlers for vertical search Document crawlers for enterprise and desktop search Follow links and scan directories"
+    },
+    {
+      "slide_num": 12,
+      "file_path": "ppt/slides/slide12.xml",
+      "text": "2.2 Building blocks: Text acquisition Feeds Mechanism for accessing a real-time stream of documents News feed is a constant stream of news stories and updates A search engine acquires new documents from a feed simply by monitoring it RSS is a common standard used for web feeds for content such as news, blogs, or video Conversion Convert documents into a consistent text plus metadata format HTML, XML, PDF, Word, … → XML Convert text encoding for different languages 8-bit ASCII code represents 256 characters, Chinese have many more than 256 characters → cannot by represented 8-bit ASCII Unicode (16-bit words) represent most of the world’s languages"
+    },
+    {
+      "slide_num": 13,
+      "file_path": "ppt/slides/slide13.xml",
+      "text": "2.2 Building blocks: Text acquisition Document data store Database used to manage large numbers of documents and the structured data that is associated with them Stores text, metadata and other related content (links or anchor text) for documents Provides very fast access to document contents for search engine components Can use a relational database system to store documents and metadata Use a simpler, more efficient storage system is used because of huge numbers of documents"
+    },
+    {
+      "slide_num": 14,
+      "file_path": "ppt/slides/slide14.xml",
+      "text": "2.2 Building blocks Text acquisition Text transformation Index Creation User Interaction Ranking Evaluation"
+    },
+    {
+      "slide_num": 15,
+      "file_path": "ppt/slides/slide15.xml",
+      "text": "2.2 Building blocks: Text transformation Parser Processing the sequence of text tokens in the document to recognize structural elements e.g., titles, links, headings, etc. Tokenizer recognizes “words” in the text Must consider issues like capitalization, hyphens, apostrophes, non-alpha characters, separators Markup languages such as HTML, XML often used to specify structure Tags used to specify document elements: E.g. <h/2> Overview <h/2> Document parser uses syntax of markup language (or other formatting) to identify structure"
+    },
+    {
+      "slide_num": 16,
+      "file_path": "ppt/slides/slide16.xml",
+      "text": "2.2 Building blocks: Text transformation Stopping Remove common words e.g., “and”, “or”, “the”, “in” Some impact on efficiency and effectiveness Can be a problem for some queries Stemming Group words derived from a common stem e.g., “computer”, “computers”, “computing”, “compute” Usually effective, but not for all queries Benefits vary for different languages"
+    },
+    {
+      "slide_num": 17,
+      "file_path": "ppt/slides/slide17.xml",
+      "text": "2.2 Building blocks: Text transformation Link extraction and analysis Makes use of links and anchor text in web pages Link analysis identifies popularity and community information e.g., PageRank, Hubs & Authorities Anchor text can significantly enhance the representation of pages pointed to by links Significant impact on web search Less importance in other applications"
+    },
+    {
+      "slide_num": 18,
+      "file_path": "ppt/slides/slide18.xml",
+      "text": "2.2 Building blocks: Text transformation Information Extraction Identify classes of index terms that are important for some applications e.g., named entity recognizers identify classes such as people, locations, companies, dates, etc. Classifier Identifies class-related metadata for documents i.e., assigns labels to documents (identifying documents as spam, and identifying the non-content parts of documents, such as advertising) e.g., topics (“sports”, “politics”, or “business”), reading levels, sentiment, genre Use depends on application"
+    },
+    {
+      "slide_num": 19,
+      "file_path": "ppt/slides/slide19.xml",
+      "text": "2.2 Building blocks Text acquisition Text transformation Index Creation User Interaction Ranking Evaluation"
+    },
+    {
+      "slide_num": 20,
+      "file_path": "ppt/slides/slide20.xml",
+      "text": "2.2 Building blocks: Index Creation Document Statistics Gathers counts and positions of words and other features Ranking algorithm uses to compute doc scores Weighting Computes weights for index terms Used in ranking algorithm e.g., tf.idf weight Combination of term frequency in document and inverse document frequency in the collection"
+    },
+    {
+      "slide_num": 21,
+      "file_path": "ppt/slides/slide21.xml",
+      "text": "2.2 Building blocks: Index Creation Inversion Core of indexing process Converts document-term information to term-document for indexing Difficult for very large numbers of documents Format of inverted file is designed for fast query processing Must also handle updates Compression used for efficiency"
+    },
+    {
+      "slide_num": 22,
+      "file_path": "ppt/slides/slide22.xml",
+      "text": "2.2 Building blocks: Index Creation Index Distribution Distributes indexes across multiple computers and/or multiple sites on a network Essential for fast query processing with large numbers of documents Many variations Document distribution, term distribution, replication P2P and distributed IR involve search across multiple sites"
+    },
+    {
+      "slide_num": 23,
+      "file_path": "ppt/slides/slide23.xml",
+      "text": "2.2 Building blocks Text acquisition Text transformation Index Creation User Interaction Ranking Evaluation"
+    },
+    {
+      "slide_num": 24,
+      "file_path": "ppt/slides/slide24.xml",
+      "text": "2.2 Building blocks: User Interaction Query input Provides interface and parser for query language Most web queries are very simple (few operators), other applications may use forms Query language used to describe more complex queries and results of query transformation e.g., Boolean queries, Indri and Galago query languages Similar to SQL language used in database applications IR query languages also allow content and structure specifications, but focus on content"
+    },
+    {
+      "slide_num": 25,
+      "file_path": "ppt/slides/slide25.xml",
+      "text": "2.2 Building blocks: User Interaction Query transformation Improves initial query, both before and after initial search Includes text transformation techniques used for documents (e.g. tokenization, stopping) Spell checking and query suggestion provide alternatives to original query Query expansion and relevance feedback modify the original query with additional terms"
+    },
+    {
+      "slide_num": 26,
+      "file_path": "ppt/slides/slide26.xml",
+      "text": "2.2 Building blocks: User Interaction Results output Constructs the display of ranked documents for a query Generates snippets to show how queries match documents Highlights important words and passages Retrieves appropriate advertising in many applications May provide clustering and other visualization tools"
+    },
+    {
+      "slide_num": 27,
+      "file_path": "ppt/slides/slide27.xml",
+      "text": "2.2 Building blocks Text acquisition Text transformation Index Creation User Interaction Ranking Evaluation"
+    },
+    {
+      "slide_num": 28,
+      "file_path": "ppt/slides/slide28.xml",
+      "text": "2.2 Building blocks: Ranking Scoring Calculates scores for documents using a ranking algorithm Core component of search engine Basic form of score is                                  are query and document term weights for term i Many variations of ranking algorithms and retrieval models"
+    },
+    {
+      "slide_num": 29,
+      "file_path": "ppt/slides/slide29.xml",
+      "text": "2.2 Building blocks: Ranking Performance optimization Designing ranking algorithms for efficient processing Term-at-a time vs. document-at-a-time processing Safe vs. unsafe optimizations Distribution Processing queries in a distributed environment Query broker distributes queries and assembles results Caching is a form of distributed searching"
+    },
+    {
+      "slide_num": 30,
+      "file_path": "ppt/slides/slide30.xml",
+      "text": "2.2 Building blocks Text acquisition Text transformation Index Creation User Interaction Ranking Evaluation"
+    },
+    {
+      "slide_num": 31,
+      "file_path": "ppt/slides/slide31.xml",
+      "text": "2.2 Building blocks : Evaluation Logging Logging user queries and interaction is crucial for improving search effectiveness and efficiency Query logs and click-through data or dwell time used for query suggestion, spell checking, query caching, ranking, advertising search, and other components Ranking analysis Measuring and tuning ranking effectiveness Performance analysis Measuring and tuning system efficiency"
+    },
+    {
+      "slide_num": 32,
+      "file_path": "ppt/slides/slide32.xml",
+      "text": "Exercise Find some examples of the search engine components described in this chapter in the Galago code."
+    },
+    {
+      "slide_num": 33,
+      "file_path": "ppt/slides/slide33.xml",
+      "text": "Exercise Obtain and install an open-source IR system. Create a small document collection from your e-mail, or from another source . A few dozen documents should be enough. Index your collection. Try a few queries."
+    },
+    {
+      "slide_num": 34,
+      "file_path": "ppt/slides/slide34.xml",
+      "text": "Summary Components in information retrieval system: information need, user, IR system, Search engine, Index Primary goals as designing search engines: effectiveness and efficiency Building blocks: Text acquisition, Text transformation, Index Creation, User Interaction, Ranking, Evaluation"
+    }
+  ]
+}
