@@ -579,5 +579,40 @@
     "chapter": 17,
     "category": "Conversational IR",
     "definition": "Kiến trúc kết hợp công cụ tìm kiếm với mô hình ngôn ngữ lớn (LLM) để tổng hợp câu trả lời chính xác, cập nhật và có trích dẫn nguồn gốc tin cậy."
+  },
+  {
+    "term": "Query Broker",
+    "term_vn": "Bộ điều phối truy vấn",
+    "chapter": 2,
+    "category": "Architecture",
+    "definition": "Thành phần phân tán tiếp nhận câu truy vấn từ người dùng, phát tán tới các Index Shards, tổng hợp kết quả từng phần và điều phối tầng xếp hạng."
+  },
+  {
+    "term": "Result Cache",
+    "term_vn": "Bộ đệm kết quả",
+    "chapter": 2,
+    "category": "Architecture",
+    "definition": "Bộ đệm tầng cao nhất lưu trang kết quả SERP hoàn chỉnh cho các câu truy vấn phổ biến, phản hồi siêu nhanh dưới 1ms."
+  },
+  {
+    "term": "Single-Pass In-Memory Indexing (SPIMI)",
+    "term_vn": "Lập chỉ mục một lượt trong RAM",
+    "chapter": 2,
+    "category": "Architecture",
+    "definition": "Thuật toán lập chỉ mục quy mô lớn tự sinh từ điển cục bộ động trực tiếp trong RAM cho từng khối tài liệu, ghi thẳng postings ra đĩa khi đầy RAM mà không cần từ điển toàn cục."
+  },
+  {
+    "term": "Positional Index",
+    "term_vn": "Chỉ mục vị trí",
+    "chapter": 2,
+    "category": "Architecture",
+    "definition": "Cấu trúc Inverted Index lưu trữ số thứ tự vị trí xuất hiện của mỗi từ trong tài liệu, cho phép giải quyết các truy vấn cụm từ chính xác (Phrase Queries) và khoảng cách (Proximity)."
+  },
+  {
+    "term": "Little's Law",
+    "term_vn": "Định luật Little",
+    "chapter": 2,
+    "category": "Architecture",
+    "definition": "Định luật tính toán hàng đợi trong hệ thống: L = lambda * W, số lượng truy vấn đang được xử lý đồng thời bằng thông lượng nhân với độ trễ phản hồi trung bình."
   }
 ]

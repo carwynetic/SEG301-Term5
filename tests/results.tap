@@ -1,0 +1,175 @@
+TAP version 13
+1..173
+ok 1 - T1_F1_1 - [Tier 1] [F1] Buttons define :hover state with elevation or glow
+ok 2 - T1_F1_2 - [Tier 1] [F1] Buttons define :active tactile press compression (scale or translateY)
+ok 3 - T1_F1_3 - [Tier 1] [F1] Buttons define WCAG-compliant :focus-visible indicator ring
+ok 4 - T1_F1_4 - [Tier 1] [F1] Timing and easing tokens (--ease-smooth, --transition-fast) declared at :root
+ok 5 - T1_F1_5 - [Tier 1] [F1] Runtime .btn-primary has cursor:pointer and active transition
+ok 6 - T1_F2_1 - [Tier 1] [F2] Explicit :disabled selector rules defined in stylesheet
+ok 7 - T1_F2_2 - [Tier 1] [F2] Disabled button styling enforces reduced opacity (<= 0.5)
+ok 8 - T1_F2_3 - [Tier 1] [F2] Disabled buttons enforce cursor: not-allowed
+ok 9 - T1_F2_4 - [Tier 1] [F2] Disabled buttons suppress hover & active transforms (transform: none)
+ok 10 - T1_F2_5 - [Tier 1] [F2] Runtime #practice-prev-btn is disabled on Q1 with cursor: not-allowed
+ok 11 - T1_F3_1 - [Tier 1] [F3] Navigation tabs define smooth hover transition state (.nav-tab:hover)
+ok 12 - T1_F3_2 - [Tier 1] [F3] Navigation tabs define tactile press feedback (.nav-tab:active)
+ok 13 - T1_F3_3 - [Tier 1] [F3] Navigation tabs define :focus-visible keyboard indicator
+ok 14 - T1_F3_4 - [Tier 1] [F3] Runtime tab click toggles .active class and activates target tab pane
+ok 15 - T1_F3_5 - [Tier 1] [F3] All 5 primary navigation tabs exist in DOM with valid data-tab attributes
+ok 16 - T1_F4_1 - [Tier 1] [F4] Option cards define hover directional slide (.option-btn:hover translateX)
+ok 17 - T1_F4_2 - [Tier 1] [F4] Option cards define active tactile compression (.option-btn:active)
+ok 18 - T1_F4_3 - [Tier 1] [F4] Option card defines active selection state (.option-btn.selected)
+ok 19 - T1_F4_4 - [Tier 1] [F4] Correct answer feedback defines spring pop animation / keyframe
+ok 20 - T1_F4_5 - [Tier 1] [F4] Incorrect answer feedback defines shake animation / keyframe
+ok 21 - T1_F5_1 - [Tier 1] [F5] Palette matrix buttons define hover zoom (.palette-btn:hover)
+ok 22 - T1_F5_2 - [Tier 1] [F5] Palette matrix buttons define tactile click (.palette-btn:active)
+ok 23 - T1_F5_3 - [Tier 1] [F5] Active question matrix cell defines .current indicator glow/border
+ok 24 - T1_F5_4 - [Tier 1] [F5] Answered matrix cells define .answered status styling
+ok 25 - T1_F5_5 - [Tier 1] [F5] Flagged question matrix cell defines breathing pulse animation
+ok 26 - T1_F6_1 - [Tier 1] [F6] Glossary cards define smooth hover lift (.glossary-card:hover translateY)
+ok 27 - T1_F6_2 - [Tier 1] [F6] Reference cards define hover elevation (.ref-card:hover)
+ok 28 - T1_F6_3 - [Tier 1] [F6] Exam rule boxes define hover elevation/glow (.rule-box:hover)
+ok 29 - T1_F6_4 - [Tier 1] [F6] KaTeX math blocks define non-disruptive hover border/glow (.math-block:hover)
+ok 30 - T1_F6_5 - [Tier 1] [F6] Mermaid flowchart container defines hover border/shadow (.mermaid-diagram-wrap:hover)
+ok 31 - T1_F7_1 - [Tier 1] [F7] Sidebar chapter search input defines accessible :focus-visible ring
+ok 32 - T1_F7_2 - [Tier 1] [F7] Question Bank search input defines accessible :focus-visible ring
+ok 33 - T1_F7_3 - [Tier 1] [F7] Glossary search input defines accessible :focus-visible ring
+ok 34 - T1_F7_4 - [Tier 1] [F7] Practice chapter selector dropdown defines accessible :focus-visible indicator
+ok 35 - T1_F7_5 - [Tier 1] [F7] Quick Search modal input defines accessible :focus-visible indicator
+ok 36 - T1_F8_1 - [Tier 1] [F8] Academic explanation box initially hidden/collapsed (.explanation-box)
+ok 37 - T1_F8_2 - [Tier 1] [F8] Academic explanation box defines smooth expand / fade-slide when .show
+ok 38 - T1_F8_3 - [Tier 1] [F8] Runtime answering practice question reveals explanation box (.show)
+ok 39 - T1_F8_4 - [Tier 1] [F8] Revealed academic explanation contains complete reference text (>20 chars)
+ok 40 - T1_F8_5 - [Tier 1] [F8] Exam review cards retain structured academic explanation styling
+ok 41 - T1_F9_1 - [Tier 1] [F9] Document root receives .js-reveal-active upon observer initialization
+ok 42 - T1_F9_2 - [Tier 1] [F9] Central scroll reveal controller instantiates native IntersectionObserver
+ok 43 - T1_F9_3 - [Tier 1] [F9] CSS defines .is-revealed class with opacity: 1 and transform: none/translateY(0)
+ok 44 - T1_F9_4 - [Tier 1] [F9] Observer unobserves revealed elements to prevent memory leaks (.unobserve())
+ok 45 - T1_F9_5 - [Tier 1] [F9] Global interface contract window.SEG_ANIMATIONS.observeScrollReveals() exposed
+ok 46 - T1_F10_1 - [Tier 1] [F10] CSS defines .reveal-on-scroll base class with translateY and opacity
+ok 47 - T1_F10_2 - [Tier 1] [F10] Chapter hero section defines entrance animation or scroll reveal
+ok 48 - T1_F10_3 - [Tier 1] [F10] Chapter section headings define entrance animation rules
+ok 49 - T1_F10_4 - [Tier 1] [F10] Academic tables and formula blocks support scroll entrance animations
+ok 50 - T1_F10_5 - [Tier 1] [F10] Slide reference cards support scroll-reveal entrance
+ok 51 - T1_F11_1 - [Tier 1] [F11] Active tab pane (.tab-pane.active) defines entrance cross-fade animation
+ok 52 - T1_F11_2 - [Tier 1] [F11] Inactive tab panes are cleanly unrendered (display: none)
+ok 53 - T1_F11_3 - [Tier 1] [F11] Runtime tab switching executes cleanly across views
+ok 54 - T1_F11_4 - [Tier 1] [F11] Quick Search modal dialog defines entrance keyframe/transition
+ok 55 - T1_F11_5 - [Tier 1] [F11] Exam submission confirmation modal defines backdrop and card styling
+ok 56 - T1_F12_1 - [Tier 1] [F12] Question card defines subtle entrance animation on navigation
+ok 57 - T1_F12_2 - [Tier 1] [F12] Exam question container updates with smooth transition
+ok 58 - T1_F12_3 - [Tier 1] [F12] Sidebar chapter switch dynamically updates knowledge view without page reload
+ok 59 - T1_F12_4 - [Tier 1] [F12] Practice chapter select change immediately resets and re-renders question card
+ok 60 - T1_F12_5 - [Tier 1] [F12] Practice options render dynamically with 4-5 interactive option buttons
+ok 61 - T1_F13_1 - [Tier 1] [F13] Scroll reveal animations strictly use vertical translation (translateY, no lateral spill)
+ok 62 - T1_F13_2 - [Tier 1] [F13] Document body enforces overflow-x: hidden to prevent horizontal scrollbars
+ok 63 - T1_F13_3 - [Tier 1] [F13] Viewport scrollWidth equals clientWidth (0 horizontal scroll leakage)
+ok 64 - T1_F13_4 - [Tier 1] [F13] Responsive table wrapper (.table-responsive) encapsulates wide content
+ok 65 - T1_F13_5 - [Tier 1] [F13] Modal overlays use position: fixed without causing parent reflows
+ok 66 - T1_F14_1 - [Tier 1] [F14] Scroll reveals animate strictly compositor-safe properties (transform, opacity)
+ok 67 - T1_F14_2 - [Tier 1] [F14] Stylesheet refactors away un-scoped 'transition: all' on animated components
+ok 68 - T1_F14_3 - [Tier 1] [F14] will-change property selectively declared for GPU layer promotion
+ok 69 - T1_F14_4 - [Tier 1] [F14] Revealed state (.is-revealed) resets will-change: auto to release GPU texture VRAM
+ok 70 - T1_F14_5 - [Tier 1] [F14] System transitions utilize high-performance cubic-bezier easing curves
+ok 71 - T1_F15_1 - [Tier 1] [F15] Universal @media (prefers-reduced-motion: reduce) media query declared in CSS
+ok 72 - T1_F15_2 - [Tier 1] [F15] Reduced motion overrides clamp animation & transition durations to 0.01ms !important
+ok 73 - T1_F15_3 - [Tier 1] [F15] Reduced motion overrides neutralize translational transforms (transform: none !important)
+ok 74 - T1_F15_4 - [Tier 1] [F15] Reduced motion overrides set scroll-behavior: auto !important
+ok 75 - T1_F15_5 - [Tier 1] [F15] JavaScript controller queries window.matchMedia for prefers-reduced-motion
+ok 76 - T2_F1_1 - [Tier 2] [F1] Rapid button click spam does not break click handlers or throw exceptions
+ok 77 - T2_F1_2 - [Tier 2] [F1] Tactile active press transform resets cleanly when pointer releases
+ok 78 - T2_F1_3 - [Tier 2] [F1] Button content remains within layout boundaries without text overflow
+ok 79 - T2_F1_4 - [Tier 2] [F1] Button :focus-visible includes outline-offset or ring shadow for high visibility
+ok 80 - T2_F1_5 - [Tier 2] [F1] Button active and focus states produce zero Cumulative Layout Shift on header bar
+ok 81 - T2_F2_1 - [Tier 2] [F2] Clicking disabled #practice-prev-btn on Q1 does not alter question index (remains 1/50)
+ok 82 - T2_F2_2 - [Tier 2] [F2] Navigating to final Question 50 dynamically applies disabled attribute to #practice-next-btn
+ok 83 - T2_F2_3 - [Tier 2] [F2] Disabled buttons enforce cursor: not-allowed at boundary indices
+ok 84 - T2_F2_4 - [Tier 2] [F2] Disabled button styling explicitly neutralizes hover transforms (transform: none)
+ok 85 - T2_F2_5 - [Tier 2] [F2] Option button click locks question against double submission / score inflation
+ok 86 - T2_F3_1 - [Tier 2] [F3] Rapid tab switching leaves exactly 1 tab pane active (zero orphaned active panes)
+ok 87 - T2_F3_2 - [Tier 2] [F3] Clicking already-active tab preserves state idempotently
+ok 88 - T2_F3_3 - [Tier 2] [F3] Navigation tab heights remain uniform despite variable badge text (height variance < 3px)
+ok 89 - T2_F3_4 - [Tier 2] [F3] Navigation tabs define dedicated :focus-visible ring for keyboard tab cycling
+ok 90 - T2_F3_5 - [Tier 2] [F3] Navigation tab bar maintains stable layout container without vertical overflowing
+ok 91 - T2_F4_1 - [Tier 2] [F4] Option buttons fit multi-line text without vertical scroll clipping
+ok 92 - T2_F4_2 - [Tier 2] [F4] Incorrect choice shake animation operates strictly on horizontal axis (zero vertical wobble)
+ok 93 - T2_F4_3 - [Tier 2] [F4] Correct choice pop animation maintains safe scale envelope (<= 1.05x)
+ok 94 - T2_F4_4 - [Tier 2] [F4] Option button hover slide translation is bounded within safe range (<= 6px)
+ok 95 - T2_F4_5 - [Tier 2] [F4] Exam mode options do not leak correct/incorrect visual feedback prior to submission
+ok 96 - T2_F5_1 - [Tier 2] [F5] Clicking Question 50 matrix cell correctly shifts active index to 50 / 50
+ok 97 - T2_F5_2 - [Tier 2] [F5] Rapid question flag toggling maintains synchronous Set integrity
+ok 98 - T2_F5_3 - [Tier 2] [F5] Flagged matrix indicator defines pulse keyframe animation
+ok 99 - T2_F5_4 - [Tier 2] [F5] Palette grid container contains 50 cells without horizontal overflow
+ok 100 - T2_F5_5 - [Tier 2] [F5] Exam matrix renders exactly 50 palette buttons (one per exam question)
+ok 101 - T2_F6_1 - [Tier 2] [F6] Hovering Mermaid diagram container maintains DOM SVG stability (0 re-renders)
+ok 102 - T2_F6_2 - [Tier 2] [F6] KaTeX math blocks fit within content columns with responsive overflow handling
+ok 103 - T2_F6_3 - [Tier 2] [F6] Glossary view dynamically renders all terminology cards (>= 80)
+ok 104 - T2_F6_4 - [Tier 2] [F6] Rapid cursor movement across card grid leaves zero dangling active transforms
+ok 105 - T2_F6_5 - [Tier 2] [F6] Exam intro rules grid renders exactly 3 structured metric rule boxes
+ok 106 - T2_F7_1 - [Tier 2] [F7] Empty search input preserves all 17 chapters in navigation sidebar
+ok 107 - T2_F7_2 - [Tier 2] [F7] Adversarial filter string handles safely with zero matching items and zero errors
+ok 108 - T2_F7_3 - [Tier 2] [F7] Clearing search input immediately restores all 17 chapters in DOM
+ok 109 - T2_F7_4 - [Tier 2] [F7] Keyboard shortcut Ctrl+K opens quick search modal dialog
+ok 110 - T2_F7_5 - [Tier 2] [F7] Keyboard key Escape cleanly dismisses active quick search modal
+ok 111 - T2_F8_1 - [Tier 2] [F8] Advancing question cleanly collapses explanation box (.show removed)
+ok 112 - T2_F8_2 - [Tier 2] [F8] Rapid answer selection completes without unhandled promise rejections
+ok 113 - T2_F8_3 - [Tier 2] [F8] Revealed explanation contains slide citation or detailed rationale
+ok 114 - T2_F8_4 - [Tier 2] [F8] Academic explanation box has defined transition properties for smooth expand
+ok 115 - T2_F8_5 - [Tier 2] [F8] Explanation container defines distinct background and border styling in CSS
+ok 116 - T2_F9_1 - [Tier 2] [F9] IntersectionObserver configures explicit visibility threshold (0.05 - 0.2)
+ok 117 - T2_F9_2 - [Tier 2] [F9] Off-screen reference container below fold remains unrevealed at top of page
+ok 118 - T2_F9_3 - [Tier 2] [F9] Calling observeScrollReveals(null) executes safely without unhandled exception
+ok 119 - T2_F9_4 - [Tier 2] [F9] Calling observeScrollReveals on container with 0 reveal nodes handles gracefully
+ok 120 - T2_F9_5 - [Tier 2] [F9] Scrolling down triggers IntersectionObserver execution without frame freeze
+ok 121 - T2_F10_1 - [Tier 2] [F10] Chapter 2 renders extensive curriculum with >= 5 major section headings
+ok 122 - T2_F10_2 - [Tier 2] [F10] Section headings (.chapter-h2) define entrance animation rules
+ok 123 - T2_F10_3 - [Tier 2] [F10] Staggered entrance delays on reference cards do not exceed 300ms user threshold
+ok 124 - T2_F10_4 - [Tier 2] [F10] Chapter content provides clickable in-page citation and reference anchor links
+ok 125 - T2_F10_5 - [Tier 2] [F10] Fast top-to-bottom scroll cycling completes with zero console exceptions
+ok 126 - T2_F11_1 - [Tier 2] [F11] Navigating to another tab cleanly closes active modal overlay
+ok 127 - T2_F11_2 - [Tier 2] [F11] Navigating away from active exam and returning preserves active exam session and timer
+ok 128 - T2_F11_3 - [Tier 2] [F11] Tab pane transition duration tuned for responsive SPA feel (<= 350ms)
+ok 129 - T2_F11_4 - [Tier 2] [F11] Switching tabs resets viewport scroll offset to 0 for consistent top-of-page view
+ok 130 - T2_F11_5 - [Tier 2] [F11] Question Bank tab activates and displays question cards dynamically
+ok 131 - T2_F12_1 - [Tier 2] [F12] Next question navigation increments practice index from 1 to 2 smoothly
+ok 132 - T2_F12_2 - [Tier 2] [F12] Previous question navigation decrements practice index back to 1 cleanly
+ok 133 - T2_F12_3 - [Tier 2] [F12] Switching practice chapter resets question counter strictly to 1 / 50
+ok 134 - T2_F12_4 - [Tier 2] [F12] Long multi-line question text wraps stably without horizontal overflow
+ok 135 - T2_F12_5 - [Tier 2] [F12] Question choice options are native HTML <button> elements ensuring full accessibility
+ok 136 - T2_F13_1 - [Tier 2] [F13] Document scrollWidth matches clientWidth across all tabs (zero horizontal leakage)
+ok 137 - T2_F13_2 - [Tier 2] [F13] Main container enforces overflow protection or bounds
+ok 138 - T2_F13_3 - [Tier 2] [F13] Card lift and hover transforms do not protrude outside viewport bounds
+ok 139 - T2_F13_4 - [Tier 2] [F13] Micro-interaction transforms (translateY, scale) avoid reflows (CLS <= 0.05)
+ok 140 - T2_F13_5 - [Tier 2] [F13] Keyframe transforms use integer or sub-pixel roundings avoiding blurry text
+ok 141 - T2_F14_1 - [Tier 2] [F14] Stylesheet forbids dangerous universal will-change (* { will-change: ... })
+ok 142 - T2_F14_2 - [Tier 2] [F14] Question bank list manages GPU layers efficiently without VRAM leaks
+ok 143 - T2_F14_3 - [Tier 2] [F14] Interactive transitions avoid layout reflow properties (width, height, top, left)
+ok 144 - T2_F14_4 - [Tier 2] [F14] Timer pulse keyframe animates strictly compositor properties (transform/opacity/color)
+ok 145 - T2_F14_5 - [Tier 2] [F14] Scroll reveal event handlers execute asynchronously without blocking main thread
+ok 146 - T2_F15_1 - [Tier 2] [F15] CDP emulated prefers-reduced-motion: reduce activates in window.matchMedia
+ok 147 - T2_F15_2 - [Tier 2] [F15] Reduced motion query respects operating system accessibility settings dynamically
+ok 148 - T2_F15_3 - [Tier 2] [F15] Practice option selection completes instantly without delay in reduced motion mode
+ok 149 - T2_F15_4 - [Tier 2] [F15] Reduced motion block explicitly sets scroll-behavior: auto !important
+ok 150 - T2_F15_5 - [Tier 2] [F15] Toggling reduced motion off successfully restores default motion preferences
+ok 151 - T3_CF_1 - [Tier 3] [F4+F15] Reduced motion mode correctly suppresses option pop/shake while applying answer state immediately
+ok 152 - T3_CF_2 - [Tier 3] [F9+F10+F12] Dynamic chapter switch re-populates DOM and binds scroll-reveal engine to new content nodes
+ok 153 - T3_CF_3 - [Tier 3] [F5+F14] Flagged palette button receives .flagged breathing state under GPU compositor bounds
+ok 154 - T3_CF_4 - [Tier 3] [F1+F2+F12] Question advance dynamically transitions #practice-prev-btn from disabled to enabled
+ok 155 - T3_CF_5 - [Tier 3] [F7+F11] Quick Search modal entrance transition auto-focuses input with visible outline
+ok 156 - T3_CF_6 - [Tier 3] [F6+F10] Reference cards inside scroll-revealed section preserve hover lift & shadow glow
+ok 157 - T3_CF_7 - [Tier 3] [F8+F15] Academic explanation reveal activates without delay when reduced-motion is enabled
+ok 158 - T3_CF_8 - [Tier 3] [F3+F9+F11] Switching between knowledge and glossary executes cross-fade and re-observes scroll targets
+ok 159 - T3_CF_9 - [Tier 3] [F4+F13] Option button hover translateX(4px) does not induce horizontal scrollbar overflow
+ok 160 - T3_CF_10 - [Tier 3] [F6+F9+F14] Scrolling down Glossary grid progressively reveals cards with .is-revealed
+ok 161 - T3_CF_11 - [Tier 3] [F2+F7] Keyboard focus smoothly targets active #practice-next-btn while #practice-prev-btn is disabled
+ok 162 - T3_CF_12 - [Tier 3] [F1+F11+F14] Early exam submission triggers confirmation modal entrance without halting background timer
+ok 163 - T3_CF_13 - [Tier 3] [F7+F12+F13] Practice chapter select change re-renders question and preserves zero horizontal shift
+ok 164 - T3_CF_14 - [Tier 3] [F6+F13] Formulas and tables inside Chapter 2 maintain responsive container boundaries
+ok 165 - T3_CF_15 - [Tier 3] [F7+F9+F10] Question Bank keyword search filters questions in real-time and refreshes card stream
+ok 166 - T4_SCN_1 - [Tier 4] [Scenario 1] Full Knowledge Exploration Walkthrough (Search, Load Ch3, Scroll, Citations, Layout)
+ok 167 - T4_SCN_2 - [Tier 4] [Scenario 2] 50-Question Chapter Practice Session (Select Ch1, Answer 5 Qs, Reveal Explanations, Progress)
+ok 168 - T4_SCN_3 - [Tier 4] [Scenario 3] Timed Exam Simulation (Start 50-Q Session, Answer, Flag, Early Submit, Verify Score & Mastery)
+ok 169 - T4_SCN_4 - [Tier 4] [Scenario 4] Question Bank Continuous Infinite Scroll Audit (Filter Ch2, Toggle Answers, Multi-level Scroll)
+ok 170 - T4_SCN_5 - [Tier 4] [Scenario 5] Glossary 83-Term Tra Cứu & Realtime Filter (Filter 'Inverted Index', Hover Lift, Restore 83)
+ok 171 - T4_SCN_6 - [Tier 4] [Scenario 6] Prefers-Reduced-Motion Accessibility Mode Switch (Emulate Reduce -> Navigate -> Restore)
+ok 172 - T4_SCN_7 - [Tier 4] [Scenario 7] Keyboard Only Navigation & Tab Cycling (Tab Navigation, Ctrl+K Search Modal, Escape Trap)
+ok 173 - T4_SCN_8 - [Tier 4] [Scenario 8] Rapid View Switching & Dynamic Re-render Stability (High-frequency Tab Stress, Zero Jank)

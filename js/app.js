@@ -134,8 +134,76 @@
     glossaryCountInfo: document.getElementById('glossary-count-info')
   };
 
+  // --- F9 & F15: SCROLL REVEAL ENGINE & MOTION SYNC ---
+  let scrollObserver = null;
+
+  function getScrollBehavior() {
+    const isReduced = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+    return isReduced ? 'auto' : 'smooth';
+  }
+
+  function initScrollRevealEngine() {
+    if (!('IntersectionObserver' in window)) {
+      return;
+    }
+
+    try {
+      scrollObserver = new IntersectionObserver((entries, observer) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('is-revealed');
+            observer.unobserve(entry.target);
+          }
+        });
+      }, {
+        root: null,
+        rootMargin: '0px 0px -40px 0px',
+        threshold: 0.1
+      });
+
+      document.documentElement.classList.add('js-reveal-active');
+      observeScrollReveals(document);
+    } catch (e) {
+      console.warn('Scroll reveal engine init warning:', e);
+    }
+  }
+
+  function observeScrollReveals(container) {
+    if (!scrollObserver || !container || typeof container.querySelectorAll !== 'function') {
+      return;
+    }
+
+    try {
+      if (container.classList && container.classList.contains('reveal-on-scroll') && !container.classList.contains('is-revealed')) {
+        scrollObserver.observe(container);
+      }
+      const targets = container.querySelectorAll('.reveal-on-scroll');
+      targets.forEach(el => {
+        if (!el.classList.contains('is-revealed')) {
+          scrollObserver.observe(el);
+        }
+      });
+    } catch (e) {
+      console.warn('observeScrollReveals warning:', e);
+    }
+  }
+
+  // Global Interface Contract (F9)
+  window.SEG_ANIMATIONS = {
+    observeScrollReveals: function (container) {
+      observeScrollReveals(container);
+    },
+    refresh: function () {
+      observeScrollReveals(document);
+    }
+  };
+
   // --- INITIALIZATION ---
   function init() {
+    const scoreDisplay = document.getElementById('result-score-display');
+    if (scoreDisplay && !document.getElementById('results-score-display')) {
+      scoreDisplay.id = 'results-score-display';
+    }
     initTheme();
     initMermaid();
     bindEvents();
@@ -146,6 +214,7 @@
     initGlossaryTab();
     renderMath();
     renderMermaid();
+    initScrollRevealEngine();
   }
 
   // --- THEME SYSTEM ---
@@ -184,9 +253,50 @@
       }
     });
 
-    window.scrollTo({ top: 0, behavior: 'smooth' });
+    // Close any active modals on tab change (T2_F11_1)
+    if (dom.searchModal && (dom.searchModal.classList.contains('active') || dom.searchModal.classList.contains('show'))) {
+      closeSearchModal();
+    }
+    if (dom.submitConfirmModal && (dom.submitConfirmModal.classList.contains('active') || dom.submitConfirmModal.classList.contains('show'))) {
+      dom.submitConfirmModal.classList.remove('show', 'active');
+    }
+
+    // Reset viewport scroll to top (T2_F11_4)
+    window.scrollTo(0, 0);
+    document.documentElement.scrollTop = 0;
+    document.body.scrollTop = 0;
+
+    // Preserve exam screens if switching to/from exam tab (T2_F11_2)
+    if (tabId === 'exam') {
+      if (state.exam.active) {
+        dom.examIntroScreen.style.display = 'none';
+        dom.examIntroScreen.classList.remove('active');
+        dom.examResultsScreen.style.display = 'none';
+        dom.examResultsScreen.classList.remove('active');
+        dom.examActiveScreen.style.display = 'flex';
+        dom.examActiveScreen.classList.add('active');
+      } else if (state.exam.submitted) {
+        dom.examIntroScreen.style.display = 'none';
+        dom.examIntroScreen.classList.remove('active');
+        dom.examActiveScreen.style.display = 'none';
+        dom.examActiveScreen.classList.remove('active');
+        dom.examResultsScreen.style.display = 'block';
+        dom.examResultsScreen.classList.add('active');
+      } else {
+        dom.examIntroScreen.style.display = 'block';
+        dom.examIntroScreen.classList.add('active');
+        dom.examActiveScreen.style.display = 'none';
+        dom.examActiveScreen.classList.remove('active');
+        dom.examResultsScreen.style.display = 'none';
+        dom.examResultsScreen.classList.remove('active');
+      }
+    }
+
     renderMath();
     renderMermaid();
+    if (window.SEG_ANIMATIONS) {
+      window.SEG_ANIMATIONS.refresh();
+    }
   }
 
   // --- MERMAID DIAGRAM ENGINE HELPER ---
@@ -273,6 +383,8 @@
       const li = document.createElement('li');
       li.className = `chapter-item ${ch.id === state.activeChapterId ? 'active' : ''}`;
       li.dataset.chapterId = ch.id;
+      li.dataset.ch = ch.id;
+      li.setAttribute('data-ch', ch.id);
 
       li.innerHTML = `
         <div class="chapter-item-icon">${ch.icon_emoji || '📖'}</div>
@@ -340,14 +452,14 @@
 
     dom.chapterContentArea.innerHTML = `
       <!-- Chapter Hero Banner -->
-      <section class="chapter-hero">
+      <section class="chapter-hero reveal-on-scroll">
         <div class="hero-meta">
           <span class="badge-tag">Chương ${meta.id}</span>
           <span class="badge-tag" style="color: var(--accent-cyan); border-color: rgba(6, 182, 212, 0.3);">${meta.category || 'IR Core'}</span>
           <span class="badge-tag" style="color: var(--accent-emerald); border-color: rgba(16, 185, 129, 0.3);">📄 ${sourceFile}</span>
           <span style="font-size: 0.8rem; color: var(--text-muted); margin-left: auto;">⏱️ ~25 phút đọc</span>
         </div>
-        <h2>${titleEn}</h2>
+        <h1 class="chapter-h1">${titleEn}</h1>
         <div class="vn-title">${meta.title_vn}</div>
         <div class="hero-actions">
           <button class="btn-primary" id="btn-jump-to-practice">
@@ -379,11 +491,19 @@
     // Re-render math formulas
     renderMath();
 
+    // Bind scroll reveal engine to new content nodes (F9 + F10 + F12)
+    dom.chapterContentArea.querySelectorAll('.chapter-hero, .chapter-section, .chapter-h1, .chapter-h2, .table-responsive, .content-table, .chapter-references, .ref-card, .rule-box, .math-block, .mermaid-diagram-wrap').forEach(el => {
+      el.classList.add('reveal-on-scroll');
+    });
+    if (window.SEG_ANIMATIONS) {
+      window.SEG_ANIMATIONS.observeScrollReveals(dom.chapterContentArea);
+    }
+
     // Re-render mermaid diagrams
     renderMermaid();
 
     // Scroll reader to top
-    window.scrollTo({ top: 0, behavior: 'smooth' });
+    window.scrollTo({ top: 0, behavior: getScrollBehavior() });
   }
 
   function attachCitationListeners() {
@@ -400,7 +520,7 @@
         }
 
         if (targetCard) {
-          targetCard.scrollIntoView({ behavior: 'smooth', block: 'center' });
+          targetCard.scrollIntoView({ behavior: getScrollBehavior(), block: 'center' });
           targetCard.classList.remove('highlight-citation');
           void targetCard.offsetWidth; // Force DOM reflow
           targetCard.classList.add('highlight-citation');
@@ -470,6 +590,12 @@
       dom.practiceQText.textContent = 'Không tìm thấy câu hỏi cho chương này.';
       dom.practiceOptionsList.innerHTML = '';
       return;
+    }
+
+    if (dom.practiceQuestionCard) {
+      dom.practiceQuestionCard.style.animation = 'none';
+      void dom.practiceQuestionCard.offsetHeight;
+      dom.practiceQuestionCard.style.animation = '';
     }
 
     const q = qList[state.practice.currentIndex];
@@ -602,14 +728,17 @@
     state.exam.startTime = new Date();
 
     dom.examIntroScreen.style.display = 'none';
+    dom.examIntroScreen.classList.remove('active');
     dom.examResultsScreen.style.display = 'none';
+    dom.examResultsScreen.classList.remove('active');
     dom.examActiveScreen.style.display = 'flex';
+    dom.examActiveScreen.classList.add('active');
 
     startExamTimer();
     renderExamPalette();
     renderExamQuestion();
 
-    window.scrollTo({ top: 0, behavior: 'smooth' });
+    window.scrollTo({ top: 0, behavior: getScrollBehavior() });
   }
 
   function startExamTimer() {
@@ -670,6 +799,16 @@
   }
 
   function renderExamQuestion() {
+    const qList = state.exam.questions;
+    if (!qList || qList.length === 0) return;
+
+    const examCard = dom.examActiveScreen ? dom.examActiveScreen.querySelector('.question-card') : null;
+    if (examCard) {
+      examCard.style.animation = 'none';
+      void examCard.offsetHeight;
+      examCard.style.animation = '';
+    }
+
     const q = state.exam.questions[state.exam.currentIndex];
     const total = state.exam.questions.length;
     const currentNum = state.exam.currentIndex + 1;
@@ -732,11 +871,13 @@
     state.exam.active = false;
     state.exam.endTime = new Date();
 
+    dom.examActiveScreen.classList.remove('active');
     dom.examActiveScreen.style.display = 'none';
+    dom.examResultsScreen.classList.add('active');
     dom.examResultsScreen.style.display = 'block';
 
     calculateAndRenderExamResults();
-    window.scrollTo({ top: 0, behavior: 'smooth' });
+    window.scrollTo({ top: 0, behavior: getScrollBehavior() });
   }
 
   function calculateAndRenderExamResults() {
@@ -998,7 +1139,7 @@
     for (let i = 0; i < limit; i++) {
       const q = filtered[i];
       const card = document.createElement('div');
-      card.className = 'question-card';
+      card.className = 'question-card reveal-on-scroll';
 
       let optionsHtml = '';
       q.options.forEach((optText, oIdx) => {
@@ -1039,6 +1180,9 @@
     }
 
     renderMath();
+    if (window.SEG_ANIMATIONS) {
+      window.SEG_ANIMATIONS.observeScrollReveals(dom.bankQuestionsContainer);
+    }
   }
 
   // --- TAB 5: GLOSSARY CONTROLLER (83 Terms) ---
@@ -1067,7 +1211,7 @@
 
     filtered.forEach(item => {
       const card = document.createElement('div');
-      card.className = 'glossary-card';
+      card.className = 'glossary-card reveal-on-scroll';
 
       card.innerHTML = `
         <div class="glossary-term">${item.term}</div>
@@ -1080,18 +1224,22 @@
 
       dom.glossaryItemsGrid.appendChild(card);
     });
+
+    if (window.SEG_ANIMATIONS) {
+      window.SEG_ANIMATIONS.observeScrollReveals(dom.glossaryItemsGrid);
+    }
   }
 
   // --- GLOBAL SEARCH MODAL (Ctrl + K) ---
   function openSearchModal() {
-    dom.searchModal.classList.add('show');
+    dom.searchModal.classList.add('show', 'active');
     dom.globalSearchInput.value = '';
     dom.globalSearchInput.focus();
     renderSearchResults('');
   }
 
   function closeSearchModal() {
-    dom.searchModal.classList.remove('show');
+    dom.searchModal.classList.remove('show', 'active');
   }
 
   function renderSearchResults(query) {
@@ -1245,19 +1393,19 @@
         dom.confirmUnansweredAlert.style.display = 'none';
       }
 
-      dom.submitConfirmModal.classList.add('show');
+      dom.submitConfirmModal.classList.add('show', 'active');
     });
 
     dom.closeConfirmModalBtn.addEventListener('click', () => {
-      dom.submitConfirmModal.classList.remove('show');
+      dom.submitConfirmModal.classList.remove('show', 'active');
     });
 
     dom.confirmCancelBtn.addEventListener('click', () => {
-      dom.submitConfirmModal.classList.remove('show');
+      dom.submitConfirmModal.classList.remove('show', 'active');
     });
 
     dom.confirmSubmitBtn.addEventListener('click', () => {
-      dom.submitConfirmModal.classList.remove('show');
+      dom.submitConfirmModal.classList.remove('show', 'active');
       submitExam(false);
     });
 
@@ -1281,7 +1429,7 @@
       }
       if (e.key === 'Escape') {
         closeSearchModal();
-        dom.submitConfirmModal.classList.remove('show');
+        dom.submitConfirmModal.classList.remove('show', 'active');
       }
     });
 
