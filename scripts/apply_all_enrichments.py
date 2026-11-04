@@ -517,3 +517,4 @@ with open('data/knowledge.js', 'w', encoding='utf-8') as f:
     f.write(';\n')
 
 print("All chapters successfully enriched in knowledge.json and knowledge.js!")
+

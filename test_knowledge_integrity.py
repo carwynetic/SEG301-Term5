@@ -123,8 +123,17 @@ def test_full_knowledge_base_integrity():
     assert total_diagrams >= 12, f"Expected at least 12 diagrams across curriculum, found {total_diagrams}"
     print(f"✓ Gate 9: Pedagogical examples ({total_examples} example-boxes) and visual diagrams ({total_diagrams} diagrams) verified across all 17 chapters.")
 
+    # 10. Verify No unescaped HTML tags in inline-code blocks
+    for ch_num in range(1, 18):
+        html = kdata[str(ch_num)]["content_html"]
+        code_blocks = re.findall(r'<code class="inline-code">(.*?)</code>', html)
+        for cb in code_blocks:
+            assert not re.search(r'</?[a-zA-Z][a-zA-Z0-9_-]*(?:\s+[^>]*)?>', cb), \
+                f"Chapter {ch_num} contains unescaped HTML tag in inline code: {cb}"
+    print("✓ Gate 10: Zero unescaped HTML tags inside inline code verified across all 17 chapters.")
+
     print("=" * 60)
-    print("ALL 9 VERIFICATION GATES PASSED PERFECTLY!")
+    print("ALL 10 VERIFICATION GATES PASSED PERFECTLY!")
     print("=" * 60)
 
 if __name__ == "__main__":

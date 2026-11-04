@@ -39,3 +39,4 @@ print('KaTeX errors in Ch 1:', info['errs'])
 print('Overflowing elements:', info['overflows'])
 print('Doc dimensions:', info['docScroll'], info['docClient'], info['bodyScroll'], info['bodyClient'])
 driver.stop()
+
