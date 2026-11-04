@@ -102,12 +102,12 @@ ok 99 - T2_F5_4 - [Tier 2] [F5] Palette grid container contains 50 cells without
 ok 100 - T2_F5_5 - [Tier 2] [F5] Exam matrix renders exactly 50 palette buttons (one per exam question)
 ok 101 - T2_F6_1 - [Tier 2] [F6] Hovering Mermaid diagram container maintains DOM SVG stability (0 re-renders)
 ok 102 - T2_F6_2 - [Tier 2] [F6] KaTeX math blocks fit within content columns with responsive overflow handling
-ok 103 - T2_F6_3 - [Tier 2] [F6] Glossary view dynamically renders all terminology cards (>= 80)
+ok 103 - T2_F6_3 - [Tier 2] [F6] Glossary view dynamically renders all terminology cards (>= 60)
 ok 104 - T2_F6_4 - [Tier 2] [F6] Rapid cursor movement across card grid leaves zero dangling active transforms
 ok 105 - T2_F6_5 - [Tier 2] [F6] Exam intro rules grid renders exactly 3 structured metric rule boxes
-ok 106 - T2_F7_1 - [Tier 2] [F7] Empty search input preserves all 17 chapters in navigation sidebar
+ok 106 - T2_F7_1 - [Tier 2] [F7] Empty search input preserves all 12 chapters in navigation sidebar
 ok 107 - T2_F7_2 - [Tier 2] [F7] Adversarial filter string handles safely with zero matching items and zero errors
-ok 108 - T2_F7_3 - [Tier 2] [F7] Clearing search input immediately restores all 17 chapters in DOM
+ok 108 - T2_F7_3 - [Tier 2] [F7] Clearing search input immediately restores all 12 chapters in DOM
 ok 109 - T2_F7_4 - [Tier 2] [F7] Keyboard shortcut Ctrl+K opens quick search modal dialog
 ok 110 - T2_F7_5 - [Tier 2] [F7] Keyboard key Escape cleanly dismisses active quick search modal
 ok 111 - T2_F8_1 - [Tier 2] [F8] Advancing question cleanly collapses explanation box (.show removed)
@@ -169,7 +169,7 @@ ok 166 - T4_SCN_1 - [Tier 4] [Scenario 1] Full Knowledge Exploration Walkthrough
 ok 167 - T4_SCN_2 - [Tier 4] [Scenario 2] 50-Question Chapter Practice Session (Select Ch1, Answer 5 Qs, Reveal Explanations, Progress)
 ok 168 - T4_SCN_3 - [Tier 4] [Scenario 3] Timed Exam Simulation (Start 50-Q Session, Answer, Flag, Early Submit, Verify Score & Mastery)
 ok 169 - T4_SCN_4 - [Tier 4] [Scenario 4] Question Bank Continuous Infinite Scroll Audit (Filter Ch2, Toggle Answers, Multi-level Scroll)
-ok 170 - T4_SCN_5 - [Tier 4] [Scenario 5] Glossary 83-Term Tra Cứu & Realtime Filter (Filter 'Inverted Index', Hover Lift, Restore 83)
+ok 170 - T4_SCN_5 - [Tier 4] [Scenario 5] Glossary 66-Term Tra Cứu & Realtime Filter (Filter 'Inverted Index', Hover Lift, Restore 66)
 ok 171 - T4_SCN_6 - [Tier 4] [Scenario 6] Prefers-Reduced-Motion Accessibility Mode Switch (Emulate Reduce -> Navigate -> Restore)
 ok 172 - T4_SCN_7 - [Tier 4] [Scenario 7] Keyboard Only Navigation & Tab Cycling (Tab Navigation, Ctrl+K Search Modal, Escape Trap)
 ok 173 - T4_SCN_8 - [Tier 4] [Scenario 8] Rapid View Switching & Dynamic Re-render Stability (High-frequency Tab Stress, Zero Jank)

@@ -413,172 +413,18 @@
     "definition": "Tìm kiếm và truy xuất các dạng dữ liệu phi văn bản như hình ảnh, âm thanh, video bằng các đặc trưng thị giác và âm thanh đa phương thức."
   },
   {
-    "term": "Web Spam (Spamdexing)",
-    "term_vn": "Thư rác web",
-    "chapter": 13,
-    "category": "Security",
-    "definition": "Hành vi cố ý đánh lừa thuật toán của Search Engine nhằm đưa các trang web chất lượng thấp hoặc lừa đảo lên thứ hạng cao."
-  },
-  {
-    "term": "Cloaking",
-    "term_vn": "Che giấu nội dung",
-    "chapter": 13,
-    "category": "Security",
-    "definition": "Kỹ thuật spam web trả về nội dung tối ưu cho robot của Search Engine nhưng hiển thị nội dung hoàn toàn khác cho người dùng thực."
-  },
-  {
-    "term": "Link Farm",
-    "term_vn": "Trang trại liên kết",
-    "chapter": 13,
-    "category": "Security",
-    "definition": "Mạng lưới các website nhân tạo liên kết chéo chằng chịt nhằm thao túng điểm PageRank của Search Engine."
-  },
-  {
-    "term": "TrustRank",
-    "term_vn": "Thuật toán độ tin cậy TrustRank",
-    "chapter": 13,
-    "category": "Security",
-    "definition": "Thuật toán lan truyền độ tin cậy từ tập hạt giống được kiểm duyệt thủ công nhằm phân biệt giữa website uy tín và trang web spam."
-  },
-  {
-    "term": "Spam Mass",
-    "term_vn": "Khối lượng spam liên kết",
-    "chapter": 13,
-    "category": "Security",
-    "definition": "Độ đo tỷ lệ điểm PageRank của một trang được đóng góp bất hợp pháp từ các trang web rác không đáng tin cậy."
-  },
-  {
     "term": "PageRank",
     "term_vn": "Thuật toán PageRank",
-    "chapter": 14,
+    "chapter": 4,
     "category": "Link Analysis",
     "definition": "Thuật toán phân tích liên kết của Google tính toán tầm quan trọng khách quan của trang web dựa trên cấu trúc liên kết toàn cầu của Web."
   },
   {
     "term": "Damping Factor (d)",
     "term_vn": "Hệ số suy giảm / cản",
-    "chapter": 14,
+    "chapter": 4,
     "category": "Link Analysis",
     "definition": "Xác suất người lướt web ngẫu nhiên tiếp tục nhấp vào liên kết trên trang hiện tại thay vì nhảy ngẫu nhiên sang trang khác (thường chọn d = 0.85)."
-  },
-  {
-    "term": "HITS (Hubs and Authorities)",
-    "term_vn": "Thuật toán HITS",
-    "chapter": 14,
-    "category": "Link Analysis",
-    "definition": "Thuật toán phân tích liên kết phụ thuộc truy vấn của Kleinberg phân biệt giữa trang tổng hợp liên kết (Hub) và trang chuyên gia (Authority)."
-  },
-  {
-    "term": "Bow-tie Structure",
-    "term_vn": "Cấu trúc nơ bướm của Web",
-    "chapter": 14,
-    "category": "Link Analysis",
-    "definition": "Mô hình cấu trúc vĩ mô của đồ thị Web phân chia thành: SCC (lõi trung tâm), thành phần IN, thành phần OUT, Tubes, Tendrils, và Disconnected."
-  },
-  {
-    "term": "Document Partitioning (Sharding)",
-    "term_vn": "Phân hoạch theo tài liệu",
-    "chapter": 15,
-    "category": "Distributed Systems",
-    "definition": "Kiến trúc phân tán chia nhỏ kho tài liệu ra các máy chủ Shard, mỗi Shard duy trì một Local Inverted Index hoàn chỉnh."
-  },
-  {
-    "term": "Term Partitioning",
-    "term_vn": "Phân hoạch theo thuật ngữ",
-    "chapter": 15,
-    "category": "Distributed Systems",
-    "definition": "Kiến trúc phân tán chia nhỏ từ điển thuật ngữ ra các máy chủ, mỗi máy chủ quản lý toàn bộ danh sách posting của các từ được phân công."
-  },
-  {
-    "term": "MapReduce for Indexing",
-    "term_vn": "MapReduce cho lập chỉ mục",
-    "chapter": 15,
-    "category": "Distributed Systems",
-    "definition": "Mô hình lập trình phân tán xử lý song song khổng lồ chia thành Map (tách từ và sinh cặp khóa-giá trị) và Reduce (đảo và nén postings)."
-  },
-  {
-    "term": "Multi-tier Caching",
-    "term_vn": "Bộ đệm nhiều tầng",
-    "chapter": 15,
-    "category": "Distributed Systems",
-    "definition": "Hệ thống lưu trữ đệm phân cấp kết hợp Result Cache, Postings List Cache và Document Score Cache để giảm tải I/O và giảm độ trễ truy vấn."
-  },
-  {
-    "term": "Learning to Rank (LTR)",
-    "term_vn": "Học để xếp hạng",
-    "chapter": 16,
-    "category": "Machine Learning",
-    "definition": "Ứng dụng các thuật toán Machine Learning có giám sát để tự động tối ưu hóa hàm tính điểm xếp hạng từ vector đặc trưng phong phú."
-  },
-  {
-    "term": "Pairwise Ranking",
-    "term_vn": "Xếp hạng theo cặp",
-    "chapter": 16,
-    "category": "Machine Learning",
-    "definition": "Tiếp cận LTR mô hình hóa bài toán thành phân loại nhị phân trên từng cặp tài liệu để xác định tài liệu nào có độ liên quan cao hơn."
-  },
-  {
-    "term": "LambdaMART",
-    "term_vn": "Thuật toán LambdaMART",
-    "chapter": 16,
-    "category": "Machine Learning",
-    "definition": "Thuật toán LTR đỉnh cao kết hợp cây quyết định tăng cường độ dốc (GBDT) với các gradient lambda tối ưu trực tiếp chỉ số NDCG."
-  },
-  {
-    "term": "Deep Relevance Matching Model (DRMM)",
-    "term_vn": "Mô hình khớp độ liên quan sâu",
-    "chapter": 16,
-    "category": "Deep Learning",
-    "definition": "Kiến trúc mạng nơ-ron học sâu tập trung vào tương tác trực tiếp giữa các từ trong truy vấn và tài liệu thông qua ma trận tương tác và histogram."
-  },
-  {
-    "term": "Dense Retrieval",
-    "term_vn": "Truy xuất vector mật độ cao",
-    "chapter": 17,
-    "category": "Neural IR",
-    "definition": "Phương pháp tìm kiếm biểu diễn truy vấn và văn bản dưới dạng các vector nhúng liên tục dày đặc và tìm kiếm dựa trên độ tương đồng không gian vector."
-  },
-  {
-    "term": "Bi-Encoder (Dual Encoder / DPR)",
-    "term_vn": "Mô hình hai nhánh mã hóa",
-    "chapter": 17,
-    "category": "Neural IR",
-    "definition": "Kiến trúc mã hóa độc lập truy vấn và tài liệu thành 2 vector riêng biệt, cho phép đánh chỉ mục trước offline và tìm kiếm cực nhanh."
-  },
-  {
-    "term": "Cross-Encoder Reranker",
-    "term_vn": "Mô hình tái xếp hạng chéo",
-    "chapter": 17,
-    "category": "Neural IR",
-    "definition": "Mô hình đưa đồng thời cả truy vấn và tài liệu qua toàn bộ các lớp Transformer Self-Attention để đạt độ chính xác tối đa tại tầng tái xếp hạng."
-  },
-  {
-    "term": "ColBERT (Late Interaction)",
-    "term_vn": "Tương tác muộn ColBERT",
-    "chapter": 17,
-    "category": "Neural IR",
-    "definition": "Kiến trúc nơ-ron bảo lưu vector nhúng của từng token và áp dụng toán tử MaxSim ở bước cuối cùng để vừa đạt độ chính xác cao vừa có tốc độ vượt trội."
-  },
-  {
-    "term": "Hierarchical Navigable Small World (HNSW)",
-    "term_vn": "Đồ thị thế giới nhỏ nhiều tầng HNSW",
-    "chapter": 17,
-    "category": "Vector Search",
-    "definition": "Cấu trúc dữ liệu đồ thị phân tầng dùng cho tìm kiếm vector láng giềng gần nhất xấp xỉ (ANN) nhanh nhất hiện nay trong các Vector DB."
-  },
-  {
-    "term": "Reciprocal Rank Fusion (RRF)",
-    "term_vn": "Hợp nhất nghịch đảo thứ hạng RRF",
-    "chapter": 17,
-    "category": "Hybrid Search",
-    "definition": "Thuật toán kết hợp các danh sách kết quả từ tìm kiếm từ khóa truyền thống (BM25) và tìm kiếm vector (Dense Search) mà không cần chuẩn hóa điểm."
-  },
-  {
-    "term": "Retrieval-Augmented Generation (RAG)",
-    "term_vn": "Sinh nội dung tăng cường bằng truy xuất",
-    "chapter": 17,
-    "category": "Conversational IR",
-    "definition": "Kiến trúc kết hợp công cụ tìm kiếm với mô hình ngôn ngữ lớn (LLM) để tổng hợp câu trả lời chính xác, cập nhật và có trích dẫn nguồn gốc tin cậy."
   },
   {
     "term": "Query Broker",

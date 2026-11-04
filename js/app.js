@@ -685,7 +685,7 @@
     const allQs = window.SEG_QUESTIONS || [];
     if (allQs.length <= count) return [...allQs];
 
-    // Stratified random sampling: take 2 questions per chapter (17*2 = 34), plus 16 random from remainder
+    // Stratified random sampling: take 3 questions per chapter (12*3 = 36), plus 14 random from remainder/comp
     const byChapter = {};
     allQs.forEach(q => {
       const ch = q.chapter.toString();
@@ -696,11 +696,11 @@
     const selected = [];
     const usedIds = new Set();
 
-    // 2 questions from each of 17 chapters
-    for (let c = 1; c <= 17; c++) {
+    // 3 questions from each of 12 chapters
+    for (let c = 1; c <= 12; c++) {
       const pool = byChapter[c.toString()] || [];
       const shuffled = [...pool].sort(() => Math.random() - 0.5);
-      const picks = shuffled.slice(0, 2);
+      const picks = shuffled.slice(0, 3);
       picks.forEach(p => {
         selected.push(p);
         usedIds.add(p.id);
@@ -1077,10 +1077,11 @@
     renderMath();
   }
 
-  // --- TAB 4: QUESTION BANK EXPLORER (952 Qs) ---
+  // --- TAB 4: QUESTION BANK EXPLORER (694 Qs) ---
   function initBankTab() {
     const chapters = window.SEG_CHAPTERS || [];
-    dom.bankChapterFilter.innerHTML = '<option value="all">Tất cả các chương (952 câu)</option>';
+    const totalQs = (window.SEG_QUESTIONS || []).length;
+    dom.bankChapterFilter.innerHTML = `<option value="all">Tất cả các chương (${totalQs} câu)</option>`;
 
     chapters.forEach(ch => {
       const opt = document.createElement('option');
@@ -1090,9 +1091,10 @@
       dom.bankChapterFilter.appendChild(opt);
     });
 
+    const compQs = (window.SEG_QUESTIONS || []).filter(q => q.chapter === 'comp');
     const compOpt = document.createElement('option');
     compOpt.value = 'comp';
-    compOpt.textContent = 'Tổng hợp liên chương (102 câu)';
+    compOpt.textContent = `Tổng hợp liên chương (${compQs.length} câu)`;
     dom.bankChapterFilter.appendChild(compOpt);
 
     dom.bankChapterFilter.addEventListener('change', (e) => {
@@ -1185,7 +1187,7 @@
     }
   }
 
-  // --- TAB 5: GLOSSARY CONTROLLER (83 Terms) ---
+  // --- TAB 5: GLOSSARY CONTROLLER (66 Terms) ---
   function initGlossaryTab() {
     dom.glossarySearchInput.addEventListener('input', (e) => {
       state.glossary.searchQuery = e.target.value.toLowerCase().trim();
@@ -1247,7 +1249,7 @@
     if (!query) {
       dom.searchModalResults.innerHTML = `
         <div style="padding: 1.5rem; text-align: center; color: var(--text-muted); font-size: 0.85rem;">
-          Gõ từ khóa để tìm nhanh 17 chương học, thuật ngữ hoặc câu hỏi thi...
+          Gõ từ khóa để tìm nhanh 12 chương học, thuật ngữ hoặc câu hỏi thi...
         </div>
       `;
       return;

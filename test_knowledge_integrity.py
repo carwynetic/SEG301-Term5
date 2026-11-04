@@ -15,7 +15,7 @@ def test_full_knowledge_base_integrity():
     with open(json_path, "r", encoding="utf-8") as f:
         kdata = json.load(f)
         
-    assert len(kdata) == 17, f"Expected 17 chapters, found {len(kdata)}"
+    assert len(kdata) == 12, f"Expected 12 chapters, found {len(kdata)}"
     
     # 2. Verify JS file exists and matches JSON exactly
     js_path = os.path.join("data", "knowledge.js")
@@ -29,7 +29,7 @@ def test_full_knowledge_base_integrity():
     for ch_k in kdata:
         assert kdata[ch_k]["content_html"] == js_data[ch_k]["content_html"], f"Chapter {ch_k} content mismatch between JSON and JS"
         assert kdata[ch_k]["references"] == js_data[ch_k]["references"], f"Chapter {ch_k} references mismatch between JSON and JS"
-    print("✓ JSON and JS data stores are 100% synchronized and valid across all 17 chapters.")
+    print("✓ JSON and JS data stores are 100% synchronized and valid across all 12 chapters.")
 
     # 3. Verify Table coverage across all chapters
     # Chapters that must contain tables based on source material
@@ -45,8 +45,7 @@ def test_full_knowledge_base_integrity():
         9: 2, # Contingency table, Efficiency metrics
         10: 2, # Generative vs Discriminative, K-means summary
         11: 3, # 5 Tag Categories, Metasearch vs P2P, Social Search Keywords
-        12: 1, # Beyond Bag of Words keywords
-        14: 1  # PageRank vs HITS
+        12: 1  # Beyond Bag of Words keywords
     }
     
     total_tables_found = 0
@@ -61,7 +60,7 @@ def test_full_knowledge_base_integrity():
     print(f"✓ Table verification passed: {total_tables_found} tables verified across required chapters.")
 
     # 4. Verify Hierarchical list formatting (.content-sub-li) across chapters
-    chapters_with_subbullets = [2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17]
+    chapters_with_subbullets = [2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12]
     total_sub_lis = 0
     for ch_num in chapters_with_subbullets:
         html = kdata[str(ch_num)]["content_html"]
@@ -79,7 +78,7 @@ def test_full_knowledge_base_integrity():
     print("✓ Deep hierarchical nesting (.content-sub-sub-li) verified in chapters 4 & 5.")
 
     # 6. Verify Citations & Slide References in every chapter
-    for ch_num in range(1, 18):
+    for ch_num in range(1, 13):
         ch = kdata[str(ch_num)]
         html = ch["content_html"]
         refs = ch.get("references", [])
@@ -88,7 +87,7 @@ def test_full_knowledge_base_integrity():
             ref_id = ref.get("id")
             assert f'href="#ref-{ref_id}"' in html, f"Citation tag for ref-{ref_id} not linked in Ch {ch_num} HTML"
             assert f'id="ref-{ref_id}"' in html, f"Ref card id ref-{ref_id} not found in Ch {ch_num} HTML"
-    print("✓ All citations and reference cards (85 total across 17 chapters) verified 100% intact.")
+    print("✓ All citations and reference cards (60 total across 12 chapters) verified 100% intact.")
 
     # 7. Verify Chapter 2 specific topics
     ch2_html = kdata["2"]["content_html"]
@@ -103,15 +102,15 @@ def test_full_knowledge_base_integrity():
     print("✓ Chapter 2 core keywords and architectural concepts verified.")
 
     # 8. Verify No raw markdown artifacts remaining
-    for ch_num in range(1, 18):
+    for ch_num in range(1, 13):
         html = kdata[str(ch_num)]["content_html"]
         assert not re.search(r'\|\s*:?-+:?\s*\|', html), f"Chapter {ch_num} contains raw markdown table delimiter!"
     print("✓ Clean HTML output confirmed: no raw markdown table delimiters in knowledge base.")
     
-    # 9. Verify Pedagogical Examples & Visual Diagrams across all 17 Chapters
+    # 9. Verify Pedagogical Examples & Visual Diagrams across all 12 Chapters
     total_examples = 0
     total_diagrams = 0
-    for ch_num in range(1, 18):
+    for ch_num in range(1, 13):
         html = kdata[str(ch_num)]["content_html"]
         ex_count = html.count("example-box")
         diag_count = html.count("mermaid-diagram-wrap") + html.count("figure-diagram-wrap")
@@ -119,18 +118,18 @@ def test_full_knowledge_base_integrity():
         total_examples += ex_count
         total_diagrams += diag_count
     
-    assert total_examples >= 17, f"Expected at least 17 example boxes, found {total_examples}"
-    assert total_diagrams >= 12, f"Expected at least 12 diagrams across curriculum, found {total_diagrams}"
-    print(f"✓ Gate 9: Pedagogical examples ({total_examples} example-boxes) and visual diagrams ({total_diagrams} diagrams) verified across all 17 chapters.")
+    assert total_examples >= 12, f"Expected at least 12 example boxes, found {total_examples}"
+    assert total_diagrams >= 10, f"Expected at least 10 diagrams across curriculum, found {total_diagrams}"
+    print(f"✓ Gate 9: Pedagogical examples ({total_examples} example-boxes) and visual diagrams ({total_diagrams} diagrams) verified across all 12 chapters.")
 
     # 10. Verify No unescaped HTML tags in inline-code blocks
-    for ch_num in range(1, 18):
+    for ch_num in range(1, 13):
         html = kdata[str(ch_num)]["content_html"]
         code_blocks = re.findall(r'<code class="inline-code">(.*?)</code>', html)
         for cb in code_blocks:
             assert not re.search(r'</?[a-zA-Z][a-zA-Z0-9_-]*(?:\s+[^>]*)?>', cb), \
                 f"Chapter {ch_num} contains unescaped HTML tag in inline code: {cb}"
-    print("✓ Gate 10: Zero unescaped HTML tags inside inline code verified across all 17 chapters.")
+    print("✓ Gate 10: Zero unescaped HTML tags inside inline code verified across all 12 chapters.")
 
     print("=" * 60)
     print("ALL 10 VERIFICATION GATES PASSED PERFECTLY!")

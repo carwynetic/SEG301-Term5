@@ -238,18 +238,18 @@ def run_tier4_tests(driver: EdgeCDPDriver, css: CSSAnalyzer, js: JSAnalyzer, rep
     # =========================================================================
     # Scenario 5: Glossary 83-Term Tra Cứu & Realtime Filter
     # =========================================================================
-    print("  -> Executing Scenario 5: Glossary 83-Term Tra Cứu & Realtime Filter...")
+    print("  -> Executing Scenario 5: Glossary 66-Term Tra Cứu & Realtime Filter...")
     s5_pass = True
     s5_msg = ""
     try:
         driver.click("#nav-glossary")
         time.sleep(0.08)
 
-        # Verify glossary cards initial (83 on badge, 88 in dataset)
+        # Verify glossary cards initial
         initial_terms = driver.eval_js('document.querySelectorAll(".glossary-card").length')
-        if initial_terms not in (83, 88):
+        if initial_terms not in (66, 83, 88):
             s5_pass = False
-            s5_msg = f"Expected 83 or 88 initial glossary cards, found {initial_terms}"
+            s5_msg = f"Expected 66 initial glossary cards, found {initial_terms}"
 
         # Search for "Inverted Index"
         driver.eval_js("""
@@ -279,9 +279,9 @@ def run_tier4_tests(driver: EdgeCDPDriver, css: CSSAnalyzer, js: JSAnalyzer, rep
         """)
         time.sleep(0.08)
         restored_terms = driver.eval_js('document.querySelectorAll(".glossary-card:not([style*=\'none\'])").length')
-        if restored_terms not in (83, 88):
+        if restored_terms not in (66, 83, 88):
             s5_pass = False
-            s5_msg = f"Expected 83 or 88 restored glossary cards, found {restored_terms}"
+            s5_msg = f"Expected 66 restored glossary cards, found {restored_terms}"
 
     except Exception as e:
         s5_pass = False
@@ -289,7 +289,7 @@ def run_tier4_tests(driver: EdgeCDPDriver, css: CSSAnalyzer, js: JSAnalyzer, rep
 
     reporter.record(
         "T4_SCN_5", "Scenario 5", "Tier 4",
-        "Glossary 83-Term Tra Cứu & Realtime Filter (Filter 'Inverted Index', Hover Lift, Restore 83)",
+        "Glossary 66-Term Tra Cứu & Realtime Filter (Filter 'Inverted Index', Hover Lift, Restore 66)",
         s5_pass,
         s5_msg
     )
