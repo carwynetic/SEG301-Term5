@@ -108,8 +108,23 @@ def test_full_knowledge_base_integrity():
         assert not re.search(r'\|\s*:?-+:?\s*\|', html), f"Chapter {ch_num} contains raw markdown table delimiter!"
     print("✓ Clean HTML output confirmed: no raw markdown table delimiters in knowledge base.")
     
+    # 9. Verify Pedagogical Examples & Visual Diagrams across all 17 Chapters
+    total_examples = 0
+    total_diagrams = 0
+    for ch_num in range(1, 18):
+        html = kdata[str(ch_num)]["content_html"]
+        ex_count = html.count("example-box")
+        diag_count = html.count("mermaid-diagram-wrap") + html.count("figure-diagram-wrap")
+        assert ex_count >= 1, f"Chapter {ch_num} missing pedagogical example box (.example-box)"
+        total_examples += ex_count
+        total_diagrams += diag_count
+    
+    assert total_examples >= 17, f"Expected at least 17 example boxes, found {total_examples}"
+    assert total_diagrams >= 12, f"Expected at least 12 diagrams across curriculum, found {total_diagrams}"
+    print(f"✓ Gate 9: Pedagogical examples ({total_examples} example-boxes) and visual diagrams ({total_diagrams} diagrams) verified across all 17 chapters.")
+
     print("=" * 60)
-    print("ALL 8 VERIFICATION GATES PASSED PERFECTLY!")
+    print("ALL 9 VERIFICATION GATES PASSED PERFECTLY!")
     print("=" * 60)
 
 if __name__ == "__main__":

@@ -33,7 +33,7 @@ def run_baseline_regression() -> bool:
         print("❌ BASELINE REGRESSION FAILED:")
         print(res.stderr)
         return False
-    print("✓ Gate 0: Knowledge integrity regression check PASSED (8/8 gates intact).\n")
+    print("✓ Gate 0: Knowledge integrity regression check PASSED (9/9 gates intact).\n")
     return True
 
 
