@@ -239,8 +239,16 @@ class EdgeCDPDriver:
         await self._send_cdp("DOM.enable")
         await self._send_cdp("CSS.enable")
 
-        # Wait for document ready
-        await asyncio.sleep(1.0)
+        # Wait for document ready and application initialization
+        await asyncio.sleep(0.5)
+        for _ in range(30):
+            try:
+                res = await self._send_cdp("Runtime.evaluate", {"expression": "Boolean(window.SEG_ANIMATIONS && document.readyState === 'complete')", "returnByValue": True})
+                if res.get("result", {}).get("result", {}).get("value") is True:
+                    break
+            except Exception:
+                pass
+            await asyncio.sleep(0.1)
 
     async def _send_cdp(self, method: str, params: Optional[Dict[str, Any]] = None) -> Dict[str, Any]:
         self.msg_id += 1
