@@ -24,6 +24,7 @@
     // Exam Mode State
     exam: {
       active: false,
+      source: 'fe', // 'fe' (312 Slide bank - 293 questions) | 'bank' (694 questions)
       questions: [],
       answers: {}, // { qid: selected_index }
       flagged: new Set(),
@@ -35,6 +36,7 @@
       endTime: null,
       reviewFilter: 'all' // 'all' | 'wrong' | 'correct' | 'flagged'
     },
+    examHistory: [],
 
     // Question Bank State
     bank: {
@@ -80,6 +82,30 @@
 
     // Exam
     examIntroScreen: document.getElementById('exam-intro-screen'),
+    examSourceRadios: document.querySelectorAll('input[name="exam-source-radio"]'),
+    sourceCardFe: document.getElementById('source-card-fe'),
+    sourceCardBank: document.getElementById('source-card-bank'),
+    examHistoryContainer: document.getElementById('exam-history-container'),
+    examViewImageBtn: document.getElementById('exam-view-image-btn'),
+    backToIntroBtn: document.getElementById('back-to-intro-btn'),
+
+    // Lightbox Modal
+    imageViewerModal: document.getElementById('image-viewer-modal'),
+    imageModalImg: document.getElementById('image-modal-img'),
+    imageModalTitle: document.getElementById('image-modal-title'),
+    btnCloseImageModal: document.getElementById('btn-close-image-modal'),
+    examSourceRadios: document.querySelectorAll('input[name="exam-source-radio"]'),
+    sourceCardFe: document.getElementById('source-card-fe'),
+    sourceCardBank: document.getElementById('source-card-bank'),
+    examHistoryContainer: document.getElementById('exam-history-container'),
+    examViewImageBtn: document.getElementById('exam-view-image-btn'),
+    backToIntroBtn: document.getElementById('back-to-intro-btn'),
+
+    // Lightbox Modal
+    imageViewerModal: document.getElementById('image-viewer-modal'),
+    imageModalImg: document.getElementById('image-modal-img'),
+    imageModalTitle: document.getElementById('image-modal-title'),
+    btnCloseImageModal: document.getElementById('btn-close-image-modal'),
     examActiveScreen: document.getElementById('exam-active-screen'),
     examResultsScreen: document.getElementById('exam-results-screen'),
     startExamBtn: document.getElementById('start-exam-btn'),
@@ -200,10 +226,19 @@
 
   // --- INITIALIZATION ---
   function init() {
-    const scoreDisplay = document.getElementById('result-score-display');
-    if (scoreDisplay && !document.getElementById('results-score-display')) {
-      scoreDisplay.id = 'results-score-display';
-    }
+    const scoreDisplay = document.getElementById('result-score-display') || document.getElementById('results-score-display');
+
+    // Refresh dynamic DOM bindings
+    dom.imageViewerModal = document.getElementById('image-viewer-modal');
+    dom.imageModalImg = document.getElementById('image-modal-img');
+    dom.imageModalTitle = document.getElementById('image-modal-title');
+    dom.btnCloseImageModal = document.getElementById('btn-close-image-modal');
+    dom.examViewImageBtn = document.getElementById('exam-view-image-btn');
+    dom.backToIntroBtn = document.getElementById('back-to-intro-btn');
+    dom.examHistoryContainer = document.getElementById('exam-history-container');
+    dom.sourceCardFe = document.getElementById('source-card-fe');
+    dom.sourceCardBank = document.getElementById('source-card-bank');
+    dom.examSourceRadios = document.querySelectorAll('input[name="exam-source-radio"]');
     initTheme();
     initMermaid();
     bindEvents();
@@ -212,6 +247,8 @@
     initPracticeTab();
     initBankTab();
     initGlossaryTab();
+    state.examHistory = loadExamHistory();
+    renderExamHistory();
     renderMath();
     renderMermaid();
     initScrollRevealEngine();
@@ -631,7 +668,7 @@
 
       btn.innerHTML = `
         <span class="option-letter">${letters[idx] || (idx + 1)}</span>
-        <span>${optText}</span>
+        <span>${escapeHtmlText(optText)}</span>
       `;
 
       btn.addEventListener('click', () => {
@@ -681,40 +718,312 @@
   }
 
   // --- TAB 3: TIMED EXAM ENGINE CONTROLLER (50 Qs / 50 Mins) ---
-  function sampleRandomExamQuestions(count = 50) {
-    const allQs = window.SEG_QUESTIONS || [];
-    if (allQs.length <= count) return [...allQs];
+  // Multi-choice & Single-choice Helper Utilities
+  function getUserChoices(qId, answersObj) {
+    if (!answersObj) return [];
+    const ans = answersObj[qId];
+    if (ans === undefined || ans === null) return [];
+    return Array.isArray(ans) ? ans : [ans];
+  }
 
-    // Stratified random sampling: take 3 questions per chapter (12*3 = 36), plus 14 random from remainder/comp
-    const byChapter = {};
+  function isAnswerCorrect(q, userAns) {
+    if (userAns === undefined || userAns === null) return false;
+    const correctChoices = Array.isArray(q.correct_choices)
+      ? q.correct_choices
+      : (Array.isArray(q.correct) ? q.correct : [q.correct !== undefined ? q.correct : q.answer]);
+    const userChoices = Array.isArray(userAns) ? userAns : [userAns];
+
+    if (correctChoices.length !== userChoices.length) return false;
+    const cSet = new Set(correctChoices);
+    return userChoices.every(u => cSet.has(u));
+  }
+
+
+  // Lightbox Image Viewer
+  function openImageModal(src, title) {
+    if (!dom.imageViewerModal || !dom.imageModalImg) return;
+    dom.imageModalImg.src = src;
+    if (dom.imageModalTitle) {
+      dom.imageModalTitle.innerHTML = `<i class="fas fa-image"></i> ${title || 'Chi tiết hình ảnh slide gốc'}`;
+    }
+    dom.imageViewerModal.classList.add('active');
+  }
+
+  function closeImageModal() {
+    if (dom.imageViewerModal) {
+      dom.imageViewerModal.classList.remove('active');
+    }
+  }
+
+  // Escape HTML special characters so <...> tuples (e.g. Slide 68) and < math signs render visibly
+  function escapeHtmlText(str) {
+    if (str == null) return '';
+    return String(str)
+      .replace(/&/g, '&amp;')
+      .replace(/</g, '&lt;')
+      .replace(/>/g, '&gt;');
+  }
+
+  // Question Normalization & Deduplication Helper
+  function normalizeQuestionKey(txt) {
+    if (!txt) return '';
+    return txt.toLowerCase()
+      .replace(/\(choose \d+ answers?\)/gi, '')
+      .replace(/\(?\d+\s*options?\)?/gi, '')
+      .replace(/check all correct answers\.?/gi, '')
+      .replace(/[^a-z0-9]/g, '')
+      .trim();
+  }
+
+  // Uniform Fisher-Yates shuffle
+  function shuffleArray(arr) {
+    const a = [...arr];
+    for (let i = a.length - 1; i > 0; i--) {
+      const j = Math.floor(Math.random() * (i + 1));
+      [a[i], a[j]] = [a[j], a[i]];
+    }
+    return a;
+  }
+
+  // Question Sampling Engine (100% Guaranteed ZERO Duplicate Questions per Exam)
+  function sampleRandomExamQuestions(count = 50) {
+    if (state.exam.source === 'fe') {
+      const feQs = (window.SEG_FE_QUESTIONS || []).filter(q => !q.is_info && q.question && q.options && q.options.length >= 2);
+      if (!feQs.length) {
+        console.warn('SEG_FE_QUESTIONS not loaded, falling back to SEG_QUESTIONS');
+        return sampleStratifiedBankQuestions(count);
+      }
+      
+      // Group slides by normalized question text to eliminate all duplicate questions
+      const uniqueMap = new Map();
+      feQs.forEach(q => {
+        const key = normalizeQuestionKey(q.question);
+        if (!key) return;
+        if (!uniqueMap.has(key)) {
+          uniqueMap.set(key, []);
+        }
+        uniqueMap.get(key).push(q);
+      });
+
+      // From each duplicate group, select exactly 1 slide question at random
+      const deduplicatedPool = [];
+      uniqueMap.forEach((candidates) => {
+        const picked = candidates[Math.floor(Math.random() * candidates.length)];
+        deduplicatedPool.push(picked);
+      });
+
+      // True uniform Fisher-Yates shuffle
+      const shuffled = shuffleArray(deduplicatedPool);
+      return shuffled.slice(0, Math.min(count, shuffled.length));
+    } else {
+      return sampleStratifiedBankQuestions(count);
+    }
+  }
+
+  function sampleStratifiedBankQuestions(count = 50) {
+    const allQs = (window.SEG_QUESTIONS || []).filter(q => q.question && q.options && q.options.length >= 2);
+    if (allQs.length <= count) return shuffleArray(allQs);
+
+    // Deduplicate bank questions by normalized question key
+    const uniqueMap = new Map();
     allQs.forEach(q => {
+      const key = normalizeQuestionKey(q.question);
+      if (!key) return;
+      if (!uniqueMap.has(key)) {
+        uniqueMap.set(key, q);
+      }
+    });
+    const deduplicatedBank = Array.from(uniqueMap.values());
+
+    const byChapter = {};
+    deduplicatedBank.forEach(q => {
       const ch = q.chapter.toString();
       if (!byChapter[ch]) byChapter[ch] = [];
       byChapter[ch].push(q);
     });
 
     const selected = [];
-    const usedIds = new Set();
+    const usedKeys = new Set();
 
-    // 3 questions from each of 12 chapters
+    // 3 questions from each of 12 chapters (36)
     for (let c = 1; c <= 12; c++) {
       const pool = byChapter[c.toString()] || [];
-      const shuffled = [...pool].sort(() => Math.random() - 0.5);
+      const shuffled = shuffleArray(pool);
       const picks = shuffled.slice(0, 3);
       picks.forEach(p => {
         selected.push(p);
-        usedIds.add(p.id);
+        usedKeys.add(normalizeQuestionKey(p.question));
       });
     }
 
-    // Fill remaining up to 50 from the remaining pool
-    const remainingPool = allQs.filter(q => !usedIds.has(q.id)).sort(() => Math.random() - 0.5);
+    // Fill remaining up to count (50) from the remaining pool
+    const remainingPool = shuffleArray(deduplicatedBank.filter(q => !usedKeys.has(normalizeQuestionKey(q.question))));
     while (selected.length < count && remainingPool.length > 0) {
       selected.push(remainingPool.pop());
     }
 
-    // Shuffle the final 50 selected questions
-    return selected.sort(() => Math.random() - 0.5);
+    return shuffleArray(selected);
+  }
+
+  // Exam History Management
+  function loadExamHistory() {
+    try {
+      const saved = localStorage.getItem('seg301_exam_history');
+      return saved ? JSON.parse(saved) : [];
+    } catch (e) {
+      console.error('Failed to parse exam history:', e);
+      return [];
+    }
+  }
+
+  function saveExamHistory(record) {
+    state.examHistory.unshift(record);
+    if (state.examHistory.length > 50) {
+      state.examHistory = state.examHistory.slice(0, 50);
+    }
+    try {
+      localStorage.setItem('seg301_exam_history', JSON.stringify(state.examHistory));
+    } catch (e) {
+      console.warn('LocalStorage quota exceeded or blocked:', e);
+    }
+  }
+
+  function clearExamHistory() {
+    if (confirm('Bạn có chắc chắn muốn xóa toàn bộ lịch sử các lần thi thử không? Dữ liệu đã xóa không thể khôi phục.')) {
+      state.examHistory = [];
+      localStorage.removeItem('seg301_exam_history');
+      renderExamHistory();
+    }
+  }
+
+  function renderExamHistory() {
+    if (!dom.examHistoryContainer) return;
+    const history = state.examHistory || [];
+    if (history.length === 0) {
+      dom.examHistoryContainer.innerHTML = `
+        <div class="exam-history-header">
+          <h3><i class="fas fa-history"></i> Lịch Sử Thi Thử & Đánh Giá Năng Lực</h3>
+        </div>
+        <div style="background: var(--bg-card); border: 1px dashed var(--border-color); border-radius: var(--radius-md); padding: 2rem; text-align: center; color: var(--text-secondary);">
+          <i class="fas fa-clipboard-list" style="font-size: 2rem; margin-bottom: 0.75rem; color: var(--text-muted); display: block;"></i>
+          <p style="margin: 0; font-weight: 500;">Chưa có lượt thi thử nào được ghi nhận.</p>
+          <p style="margin-top: 0.4rem; font-size: 0.85rem; color: var(--text-muted);">Hãy chọn nguồn đề thi bên trên và bấm "Bắt đầu làm bài thi" để kiểm tra kiến thức và ghi log tiến độ ôn tập tranh Cóc Vàng!</p>
+        </div>
+      `;
+      return;
+    }
+
+    const total = history.length;
+    const scores = history.map(h => h.score || 0);
+    const bestScore = Math.max(...scores);
+    const avgScore = scores.reduce((a, b) => a + b, 0) / total;
+    const goldCount = history.filter(h => (h.score || 0) >= 8.0).length;
+    const goldRate = Math.round((goldCount / total) * 100);
+
+    let rowsHtml = '';
+    history.forEach((rec, idx) => {
+      const isGold = (rec.score || 0) >= 8.0;
+      const isPass = (rec.score || 0) >= 6.5;
+      const pillClass = isGold ? 'badge-score-pass' : (isPass ? 'badge-score-pass' : 'badge-score-fail');
+      const sourceBadgeClass = rec.source === 'fe' ? 'badge-source-fe' : 'badge-source-bank';
+      const sourceText = rec.source === 'fe' ? 'FE 312 Slide' : 'Ngân hàng 12 Chương';
+
+      rowsHtml += `
+        <tr>
+          <td style="font-weight: 700; color: var(--text-secondary); text-align: center;">#${total - idx}</td>
+          <td><span style="font-family: var(--font-mono); font-size: 0.85rem;">${rec.formattedDate || rec.date?.slice(0, 16)}</span></td>
+          <td><span class="badge-source ${sourceBadgeClass}">${sourceText}</span></td>
+          <td><span class="badge-score-pill ${pillClass}">${rec.score.toFixed(1)} / 10.0</span></td>
+          <td><strong>${rec.correctCount}</strong> / ${rec.totalQuestions} (${rec.accuracy}%)</td>
+          <td><span style="font-family: var(--font-mono);">${rec.formattedTime || 'N/A'}</span></td>
+          <td>
+            <button class="btn-history-review" onclick="window.SEG_APP.viewExamRecord('${rec.id}')">
+              <i class="fas fa-eye"></i> Xem lại
+            </button>
+          </td>
+        </tr>
+      `;
+    });
+
+    dom.examHistoryContainer.innerHTML = `
+      <div class="exam-history-header">
+        <h3><i class="fas fa-history"></i> Lịch Sử Thi Thử & Đánh Giá Năng Lực (${total} lần thi)</h3>
+        <button class="btn-history-clear" onclick="window.SEG_APP.clearExamHistory()">
+          <i class="fas fa-trash-alt"></i> Xóa lịch sử
+        </button>
+      </div>
+
+      <div class="exam-history-summary">
+        <div class="history-metric">
+          <div class="history-metric-val" style="color: var(--primary);">${total}</div>
+          <div class="history-metric-lbl">Tổng Lượt Thi</div>
+        </div>
+        <div class="history-metric">
+          <div class="history-metric-val" style="color: var(--accent-emerald);">${bestScore.toFixed(1)}</div>
+          <div class="history-metric-lbl">Điểm Cao Nhất (/10)</div>
+        </div>
+        <div class="history-metric">
+          <div class="history-metric-val" style="color: var(--accent-cyan);">${avgScore.toFixed(1)}</div>
+          <div class="history-metric-lbl">Điểm Trung Bình (/10)</div>
+        </div>
+        <div class="history-metric">
+          <div class="history-metric-val" style="color: var(--accent-amber);">${goldRate}%</div>
+          <div class="history-metric-lbl">Tỷ Lệ Đạt Cóc Vàng (≥8.0)</div>
+        </div>
+      </div>
+
+      <div class="exam-history-table-wrap">
+        <table class="exam-history-table">
+          <thead>
+            <tr>
+              <th style="text-align: center; width: 50px;">#</th>
+              <th>Ngày Giờ Thi</th>
+              <th>Nguồn Đề</th>
+              <th>Điểm Số</th>
+              <th>Câu Đúng</th>
+              <th>Thời Lượng</th>
+              <th>Thao Tác</th>
+            </tr>
+          </thead>
+          <tbody>
+            ${rowsHtml}
+          </tbody>
+        </table>
+      </div>
+    `;
+  }
+
+  function viewExamRecord(recordId) {
+    const rec = (state.examHistory || []).find(r => r.id === recordId);
+    if (!rec) return;
+
+    state.exam.questions = rec.questions;
+    state.exam.answers = rec.answers || {};
+    state.exam.flagged = new Set(rec.flagged || []);
+    state.exam.source = rec.source || 'fe';
+    state.exam.timeRemaining = 3000 - (rec.timeSpent || 0);
+
+    dom.examIntroScreen.style.display = 'none';
+    dom.examIntroScreen.classList.remove('active');
+    dom.examActiveScreen.style.display = 'none';
+    dom.examActiveScreen.classList.remove('active');
+    dom.examResultsScreen.style.display = 'block';
+    dom.examResultsScreen.classList.add('active');
+
+    calculateAndRenderExamResults(false);
+    window.scrollTo({ top: 0, behavior: getScrollBehavior() });
+  }
+
+  function returnToExamIntro() {
+    dom.examResultsScreen.style.display = 'none';
+    dom.examResultsScreen.classList.remove('active');
+    dom.examActiveScreen.style.display = 'none';
+    dom.examActiveScreen.classList.remove('active');
+    dom.examIntroScreen.style.display = 'block';
+    dom.examIntroScreen.classList.add('active');
+
+    renderExamHistory();
+    window.scrollTo({ top: 0, behavior: getScrollBehavior() });
   }
 
   function startExam() {
@@ -781,7 +1090,8 @@
       if (idx === state.exam.currentIndex) {
         btn.classList.add('current');
       }
-      if (state.exam.answers.hasOwnProperty(q.id)) {
+      const uChoices = getUserChoices(q.id, state.exam.answers);
+      if (uChoices.length > 0) {
         btn.classList.add('answered');
       }
       if (state.exam.flagged.has(q.id)) {
@@ -812,9 +1122,21 @@
     const q = state.exam.questions[state.exam.currentIndex];
     const total = state.exam.questions.length;
     const currentNum = state.exam.currentIndex + 1;
+    const isMulti = !!q.is_multi;
+    const requiredChoices = q.required_choices || (isMulti ? 2 : 1);
+    const userChoices = getUserChoices(q.id, state.exam.answers);
 
     dom.examQCounter.textContent = `Câu ${currentNum} / ${total}`;
-    dom.examCurrentChBadge.textContent = q.chapter === 'comp' ? 'Tổng Hợp' : `Chương ${q.chapter}`;
+    
+    // Badge info (Chapter / Slide & Multi-choice indicator)
+    const baseBadge = q.slide ? `Slide ${q.slide}` : (q.chapter === 'comp' ? 'Tổng Hợp' : `Chương ${q.chapter}`);
+    if (isMulti) {
+      const countText = `${userChoices.length}/${requiredChoices}`;
+      const color = userChoices.length === requiredChoices ? 'var(--accent-emerald)' : '#f59e0b';
+      dom.examCurrentChBadge.innerHTML = `${baseBadge} &bull; <span style="color: ${color}; font-weight: 700;"><i class="fas fa-check-double"></i> Chọn đúng ${requiredChoices} đáp án (${countText} đã chọn)</span>`;
+    } else {
+      dom.examCurrentChBadge.textContent = baseBadge;
+    }
 
     // Flag button update
     const isFlagged = state.exam.flagged.has(q.id);
@@ -825,22 +1147,45 @@
     dom.examOptionsList.innerHTML = '';
 
     const letters = ['A', 'B', 'C', 'D', 'E'];
-    const currentAnswer = state.exam.answers[q.id];
 
     q.options.forEach((optText, idx) => {
       const btn = document.createElement('button');
       btn.className = 'option-btn';
-      if (currentAnswer === idx) {
+      const isSelected = userChoices.includes(idx);
+      if (isSelected) {
         btn.classList.add('selected');
+      }
+
+      let checkIconHtml = '';
+      if (isMulti) {
+        checkIconHtml = `<span class="option-check-icon" style="margin-right: 0.5rem; color: ${isSelected ? 'var(--primary)' : 'var(--text-muted)'}; font-size: 1.05rem;"><i class="${isSelected ? 'fas fa-check-square' : 'far fa-square'}"></i></span>`;
       }
 
       btn.innerHTML = `
         <span class="option-letter">${letters[idx] || (idx + 1)}</span>
-        <span>${optText}</span>
+        ${checkIconHtml}
+        <span>${escapeHtmlText(optText)}</span>
       `;
 
       btn.addEventListener('click', () => {
-        state.exam.answers[q.id] = idx;
+        if (isMulti) {
+          let curr = [...getUserChoices(q.id, state.exam.answers)];
+          if (curr.includes(idx)) {
+            curr = curr.filter(x => x !== idx);
+          } else {
+            if (curr.length >= requiredChoices) {
+              curr.shift(); // rotate selection
+            }
+            curr.push(idx);
+          }
+          if (curr.length === 0) {
+            delete state.exam.answers[q.id];
+          } else {
+            state.exam.answers[q.id] = curr.sort((a, b) => a - b);
+          }
+        } else {
+          state.exam.answers[q.id] = idx;
+        }
         renderExamQuestion();
         renderExamPalette();
       });
@@ -851,7 +1196,7 @@
     dom.examPrevBtn.disabled = state.exam.currentIndex === 0;
     dom.examNextBtn.disabled = state.exam.currentIndex === total - 1;
 
-    renderMath();
+    renderMath(examCard);
   }
 
   function toggleExamFlag() {
@@ -876,11 +1221,11 @@
     dom.examResultsScreen.classList.add('active');
     dom.examResultsScreen.style.display = 'block';
 
-    calculateAndRenderExamResults();
+    calculateAndRenderExamResults(true); // save to history
     window.scrollTo({ top: 0, behavior: getScrollBehavior() });
   }
 
-  function calculateAndRenderExamResults() {
+  function calculateAndRenderExamResults(saveHistory = true) {
     const questions = state.exam.questions;
     let correct = 0;
     let incorrect = 0;
@@ -889,16 +1234,18 @@
     const chapterStats = {}; // { ch: { total: 0, correct: 0 } }
 
     questions.forEach(q => {
-      const ch = q.chapter.toString();
+      const ch = (q.chapter || 'comp').toString();
       if (!chapterStats[ch]) {
         chapterStats[ch] = { total: 0, correct: 0 };
       }
       chapterStats[ch].total++;
 
       const userAns = state.exam.answers[q.id];
-      if (userAns === undefined) {
+      const isCorrect = isAnswerCorrect(q, userAns);
+
+      if (userAns === undefined || (Array.isArray(userAns) && userAns.length === 0)) {
         unanswered++;
-      } else if (userAns === q.answer) {
+      } else if (isCorrect) {
         correct++;
         chapterStats[ch].correct++;
       } else {
@@ -908,9 +1255,10 @@
 
     const total = questions.length;
     const accuracy = Math.round((correct / total) * 100);
+    const scoreOutOf10 = (correct / total) * 10;
 
     // Score Banner
-    dom.resultScoreDisplay.textContent = `${correct} / ${total}`;
+    dom.resultScoreDisplay.textContent = `${correct} / ${total} (${scoreOutOf10.toFixed(1)} / 10.0)`;
     dom.resMetricAccuracy.textContent = `${accuracy}%`;
     dom.resMetricCorrect.textContent = correct.toString();
     dom.resMetricIncorrect.textContent = (incorrect + unanswered).toString();
@@ -922,15 +1270,41 @@
     dom.resMetricTime.textContent = `${mins.toString().padStart(2, '0')}:${secs.toString().padStart(2, '0')}`;
 
     // Pass / Fail Badge
-    if (accuracy >= 80) {
+    if (scoreOutOf10 >= 8.0) {
       dom.resultStatusBadge.className = 'results-status-badge status-passed';
-      dom.resultStatusBadge.textContent = '🎉 ĐẠT XUẤT SẮC (PASS WITH DISTINCTION)';
-    } else if (accuracy >= 65) {
+      dom.resultStatusBadge.textContent = '🎉 ĐẠT XUẤT SẮC - SẴN SÀNG TRANH CÓC VÀNG (GPA ≥ 9.5)';
+    } else if (scoreOutOf10 >= 6.5) {
       dom.resultStatusBadge.className = 'results-status-badge status-passed';
       dom.resultStatusBadge.textContent = '✅ ĐẠT YÊU CẦU (PASS)';
     } else {
       dom.resultStatusBadge.className = 'results-status-badge status-failed';
-      dom.resultStatusBadge.textContent = '⚠️ CHƯA ĐẠT (NEEDS REVIEW)';
+      dom.resultStatusBadge.textContent = '⚠️ CHƯA ĐẠT (CẦN TIẾP TỤC ÔN TẬP THÊM)';
+    }
+
+    if (saveHistory) {
+      const logRecord = {
+        id: 'exam_' + Date.now(),
+        date: new Date().toISOString(),
+        formattedDate: new Date().toLocaleString('vi-VN', {
+          year: 'numeric', month: '2-digit', day: '2-digit',
+          hour: '2-digit', minute: '2-digit'
+        }),
+        source: state.exam.source,
+        sourceTitle: state.exam.source === 'fe' ? 'Đề thi FE 312 Slide (Leaked)' : 'Ngân hàng 12 Chương',
+        score: scoreOutOf10,
+        accuracy: accuracy,
+        correctCount: correct,
+        incorrectCount: incorrect,
+        unansweredCount: unanswered,
+        totalQuestions: total,
+        timeSpent: elapsedSecs,
+        formattedTime: `${mins.toString().padStart(2, '0')}:${secs.toString().padStart(2, '0')}`,
+        answers: { ...state.exam.answers },
+        flagged: Array.from(state.exam.flagged),
+        questions: state.exam.questions
+      };
+      saveExamHistory(logRecord);
+      renderExamHistory();
     }
 
     // Render Chapter Mastery
@@ -1015,7 +1389,12 @@
 
     state.exam.questions.forEach((q, idx) => {
       const userAns = state.exam.answers[q.id];
-      const isCorrect = userAns === q.answer;
+      const userChoices = getUserChoices(q.id, state.exam.answers);
+      const isMulti = !!q.is_multi;
+      const correctChoices = Array.isArray(q.correct_choices)
+        ? q.correct_choices
+        : (Array.isArray(q.correct) ? q.correct : [q.correct !== undefined ? q.correct : q.answer]);
+      const isCorrect = isAnswerCorrect(q, userAns);
       const isFlagged = state.exam.flagged.has(q.id);
 
       if (filter === 'wrong' && isCorrect) return;
@@ -1024,57 +1403,83 @@
 
       const card = document.createElement('div');
       card.className = 'question-card';
+      card.style.borderLeft = isCorrect ? '4px solid var(--accent-emerald)' : '4px solid var(--accent-rose)';
 
       let statusBadge = isCorrect
         ? `<span class="badge-tag" style="background: rgba(16, 185, 129, 0.2); color: var(--accent-emerald); border-color: var(--accent-emerald);">✓ Đúng</span>`
         : `<span class="badge-tag" style="background: rgba(239, 68, 68, 0.2); color: var(--accent-rose); border-color: var(--accent-rose);">✗ Sai</span>`;
 
-      if (userAns === undefined) {
+      if (userChoices.length === 0) {
         statusBadge = `<span class="badge-tag" style="background: rgba(245, 158, 11, 0.2); color: var(--accent-amber); border-color: var(--accent-amber);">⚪ Bỏ trống</span>`;
       }
+
+      let multiTagHtml = '';
+      if (isMulti) {
+        multiTagHtml = `<span class="badge-tag" style="background: rgba(245, 158, 11, 0.15); color: #f59e0b; border-color: rgba(245, 158, 11, 0.35); font-weight: 700;"><i class="fas fa-check-double"></i> Chọn ${q.required_choices || 2} đáp án</span>`;
+      }
+
+      let imageBtnHtml = '';
 
       let optionsHtml = '';
       q.options.forEach((optText, oIdx) => {
         let optClass = 'option-btn';
-        if (oIdx === q.answer) {
+        let suffixIcon = '';
+        const isThisCorrect = correctChoices.includes(oIdx);
+        const isThisUser = userChoices.includes(oIdx);
+
+        if (isThisCorrect && isThisUser) {
           optClass += ' correct-choice';
-        } else if (userAns === oIdx && userAns !== q.answer) {
+          suffixIcon = '<span style="margin-left: auto; color: var(--accent-emerald); font-weight: 700;"><i class="fas fa-check-circle"></i> Bạn chọn đúng</span>';
+        } else if (isThisCorrect && !isThisUser) {
+          optClass += ' correct-choice';
+          suffixIcon = '<span style="margin-left: auto; color: var(--accent-emerald); font-weight: 700;"><i class="fas fa-check"></i> Đáp án đúng</span>';
+        } else if (!isThisCorrect && isThisUser) {
           optClass += ' incorrect-choice';
+          suffixIcon = '<span style="margin-left: auto; color: var(--accent-rose); font-weight: 700;"><i class="fas fa-times-circle"></i> Bạn chọn sai</span>';
+        }
+
+        let checkIconHtml = '';
+        if (isMulti) {
+          checkIconHtml = `<span class="option-check-icon" style="margin-right: 0.5rem;"><i class="${isThisUser ? 'fas fa-check-square' : 'far fa-square'}"></i></span>`;
         }
 
         optionsHtml += `
           <div class="${optClass}" style="cursor: default;">
             <span class="option-letter">${letters[oIdx] || (oIdx + 1)}</span>
-            <span>${optText}</span>
+            ${checkIconHtml}
+            <span>${escapeHtmlText(optText)}</span>
+            ${suffixIcon}
           </div>
         `;
       });
 
       card.innerHTML = `
-        <div class="q-meta-row">
-          <div style="display: flex; align-items: center; gap: 0.5rem;">
-            <span class="q-num-badge">CÂU ${idx + 1}</span>
-            <span class="badge-tag">${q.chapter === 'comp' ? 'Tổng Hợp' : 'Chương ' + q.chapter}</span>
-            ${isFlagged ? '<span class="badge-tag" style="color: var(--accent-amber);">🔖 Đã cắm cờ</span>' : ''}
+        <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 0.85rem; flex-wrap: wrap; gap: 0.5rem;">
+          <div style="display: flex; align-items: center; gap: 0.6rem; flex-wrap: wrap;">
+            <span style="font-weight: 800; color: var(--text-primary); font-size: 1.05rem;">Câu ${idx + 1}</span>
+            <span class="badge-tag">${q.slide ? `Slide ${q.slide}` : (q.chapter === 'comp' ? 'Tổng Hợp' : `Chương ${q.chapter}`)}</span>
+            ${multiTagHtml}
+            ${statusBadge}
+            ${isFlagged ? '<span class="badge-tag" style="background: rgba(245, 158, 11, 0.2); color: var(--accent-amber);">🔖 Đã cắm cờ</span>' : ''}
           </div>
-          <div>${statusBadge}</div>
+          ${imageBtnHtml}
         </div>
 
-        <div class="q-text">${q.question}</div>
+        <div class="q-text">${escapeHtmlText(q.question)}</div>
         <div class="options-list">${optionsHtml}</div>
 
         <div class="explanation-box show">
           <div class="explanation-title">
-            <span>💡</span> Giải thích học thuật (Academic Explanation)
+            <span>💡</span> Giải thích học thuật (Academic Explanation & Croft Reference)
           </div>
-          <div class="explanation-text">${q.explanation || 'Không có giải thích chi tiết.'}</div>
+          <div class="explanation-text" style="white-space: pre-line;">${q.explanation || 'Không có giải thích chi tiết.'}</div>
         </div>
       `;
 
       dom.examReviewQuestionsList.appendChild(card);
     });
 
-    renderMath();
+    renderMath(dom.examReviewQuestionsList);
   }
 
   // --- TAB 4: QUESTION BANK EXPLORER (694 Qs) ---
@@ -1149,7 +1554,7 @@
         optionsHtml += `
           <div class="option-btn ${isCorrect ? 'correct-choice' : ''}" style="cursor: default;">
             <span class="option-letter">${letters[oIdx] || (oIdx + 1)}</span>
-            <span>${optText}</span>
+            <span>${escapeHtmlText(optText)}</span>
           </div>
         `;
       });
@@ -1159,7 +1564,7 @@
           <span class="q-num-badge">${q.id}</span>
           <span class="badge-tag">${q.chapter === 'comp' ? 'Tổng Hợp' : 'Chương ' + q.chapter}</span>
         </div>
-        <div class="q-text">${q.question}</div>
+        <div class="q-text">${escapeHtmlText(q.question)}</div>
         <div class="options-list">${optionsHtml}</div>
         ${state.bank.showAnswers ? `
           <div class="explanation-box show">
@@ -1362,6 +1767,62 @@
       renderChapterNav(e.target.value);
     });
 
+    // Exam Source Radio Selector
+    if (dom.examSourceRadios) {
+      dom.examSourceRadios.forEach(radio => {
+        radio.addEventListener('change', (e) => {
+          state.exam.source = e.target.value;
+          if (dom.sourceCardFe && dom.sourceCardBank) {
+            dom.sourceCardFe.classList.toggle('selected', state.exam.source === 'fe');
+            dom.sourceCardBank.classList.toggle('selected', state.exam.source === 'bank');
+          }
+        });
+      });
+    }
+
+    // Modal Image Viewer
+    if (dom.btnCloseImageModal) {
+      dom.btnCloseImageModal.addEventListener('click', closeImageModal);
+    }
+    if (dom.imageViewerModal) {
+      dom.imageViewerModal.addEventListener('click', (e) => {
+        if (e.target === dom.imageViewerModal) closeImageModal();
+      });
+    }
+
+    // Back to Exam Intro button
+    if (dom.backToIntroBtn) {
+      dom.backToIntroBtn.addEventListener('click', returnToExamIntro);
+    }
+
+    // Exam Source Radio Selector
+    if (dom.examSourceRadios) {
+      dom.examSourceRadios.forEach(radio => {
+        radio.addEventListener('change', (e) => {
+          state.exam.source = e.target.value;
+          if (dom.sourceCardFe && dom.sourceCardBank) {
+            dom.sourceCardFe.classList.toggle('selected', state.exam.source === 'fe');
+            dom.sourceCardBank.classList.toggle('selected', state.exam.source === 'bank');
+          }
+        });
+      });
+    }
+
+    // Modal Image Viewer
+    if (dom.btnCloseImageModal) {
+      dom.btnCloseImageModal.addEventListener('click', closeImageModal);
+    }
+    if (dom.imageViewerModal) {
+      dom.imageViewerModal.addEventListener('click', (e) => {
+        if (e.target === dom.imageViewerModal) closeImageModal();
+      });
+    }
+
+    // Back to Exam Intro button
+    if (dom.backToIntroBtn) {
+      dom.backToIntroBtn.addEventListener('click', returnToExamIntro);
+    }
+
     // Exam buttons
     dom.startExamBtn.addEventListener('click', startExam);
     dom.retakeExamBtn.addEventListener('click', startExam);
@@ -1431,6 +1892,7 @@
       }
       if (e.key === 'Escape') {
         closeSearchModal();
+        closeImageModal();
         dom.submitConfirmModal.classList.remove('show', 'active');
       }
     });
@@ -1452,7 +1914,13 @@
       const id = chKey === 'comp' ? 1 : parseInt(chKey, 10);
       selectChapter(id);
       switchTab('knowledge');
-    }
+    },
+    openImageModal,
+    closeImageModal,
+    viewExamRecord,
+    clearExamHistory,
+    state,
+    sampleRandomExamQuestions
   };
 
   // Run on DOM Ready

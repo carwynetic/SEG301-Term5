@@ -15,6 +15,7 @@
   <link rel="stylesheet" href="lib/katex/katex.min.css">
 
   <!-- FontAwesome Icons -->
+  <link rel="stylesheet" href="lib/fontawesome/all.min.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
   
   <!-- Main Stylesheet -->
@@ -189,9 +190,49 @@
           </div>
         </div>
 
-        <button class="btn-primary" id="start-exam-btn" style="font-size: 1.1rem; padding: 0.85rem 2.5rem;">
-          🚀 Bắt đầu làm bài thi (50 phút)
-        </button>
+        <!-- Nguồn đề thi -->
+        <div class="exam-source-container">
+          <label style="font-weight: 700; color: var(--text-primary); margin-bottom: 0.75rem; display: block; font-size: 1.05rem;">
+            <i class="fas fa-layer-group"></i> Chọn nguồn đề thi thử:
+          </label>
+          <div class="exam-source-selector">
+            <label class="source-card selected" id="source-card-fe">
+              <input type="radio" name="exam-source-radio" value="fe" checked>
+              <div class="source-info">
+                <div class="source-title">
+                  <i class="fas fa-fire-alt" style="color: #f59e0b;"></i> Đề Thi Thực Chiến FE Mới Nhất (312 Slide - 293 Câu Leaked)
+                </div>
+                <div class="source-desc">
+                  Trích xuất trực tiếp từ đề thi Final Exam SEG301 gần nhất (bao gồm cả các câu mới cập nhật). 100% format đề gốc, có ảnh chụp slide thực tế đối chiếu từng câu. <strong>Khuyên dùng để luyện đề tranh Cóc Vàng!</strong>
+                </div>
+              </div>
+              <div class="source-badge">Khuyên Dùng</div>
+            </label>
+
+            <label class="source-card" id="source-card-bank">
+              <input type="radio" name="exam-source-radio" value="bank">
+              <div class="source-info">
+                <div class="source-title">
+                  <i class="fas fa-book" style="color: #3b82f6;"></i> Toàn Bộ Ngân Hàng 12 Chương (694 Câu Phân Loại)
+                </div>
+                <div class="source-desc">
+                  Ngân hàng câu hỏi lý thuyết tổng hợp bao quát 12 chương giáo trình Bruce Croft, tự động bốc ngẫu nhiên phân tầng theo tỷ trọng từng chương.
+                </div>
+              </div>
+            </label>
+          </div>
+        </div>
+
+        <div style="margin: 1.5rem 0;">
+          <button class="btn-primary" id="start-exam-btn" style="font-size: 1.15rem; padding: 0.9rem 2.8rem; box-shadow: 0 4px 15px rgba(99, 102, 241, 0.4);">
+            🚀 Bắt đầu làm bài thi (50 phút / 50 câu random)
+          </button>
+        </div>
+
+        <!-- Bảng điều khiển lịch sử thi (Exam History Dashboard) -->
+        <div class="exam-history-container" id="exam-history-container">
+          <!-- Populated by renderExamHistory() in app.js -->
+        </div>
       </div>
 
       <!-- Screen 2: Active Exam Interface -->
@@ -327,6 +368,9 @@
 
         <!-- Bottom Action -->
         <div style="text-align: center; margin: 3rem 0;">
+          <button class="btn-secondary" id="back-to-intro-btn" style="font-size: 1.1rem; padding: 0.85rem 2rem; margin-right: 1rem;">
+            ← Quay lại Bảng Điều Khiển Thi
+          </button>
           <button class="btn-primary" id="retake-exam-btn" style="font-size: 1.1rem; padding: 0.85rem 2rem;">
             🔄 Thi Đề Mới (Bốc 50 câu random mới)
           </button>
@@ -425,6 +469,7 @@
   <script src="data/knowledge.js"></script>
   <script src="data/glossary.js"></script>
   <script src="data/questions.js"></script>
+  <script src="data/fe_questions.js"></script>
 
   <!-- 2. KaTeX Math Renderer -->
   <script src="lib/katex/katex.min.js"></script>
@@ -439,6 +484,22 @@
   </script>
 
   <!-- 4. Main Application Logic -->
+    <!-- Lightbox Image Viewer Modal -->
+  <div class="modal-overlay" id="image-viewer-modal" role="dialog" aria-modal="true">
+    <div class="image-modal-box">
+      <div class="image-modal-header">
+        <span id="image-modal-title"><i class="fas fa-image"></i> Chi tiết hình ảnh đề thi slide gốc</span>
+        <button class="modal-close-btn" id="btn-close-image-modal" aria-label="Đóng">&times;</button>
+      </div>
+      <div class="image-modal-body">
+        <img id="image-modal-img" src="" alt="Slide Preview">
+      </div>
+    </div>
+  </div>
+
   <script src="js/app.js"></script>
+
+
+
 </body>
 </html>

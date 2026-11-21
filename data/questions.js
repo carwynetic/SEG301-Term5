@@ -1,4 +1,3 @@
-// Auto-generated questions database for SEG301 Exam Prep Portal
 window.SEG_QUESTIONS = [
   {
     "id": "q_ch01_01",
@@ -14,7 +13,16 @@ window.SEG_QUESTIONS = [
     "explanation": "Salton (1968) defined IR as dealing with the structure, analysis, organization, storage, searching, and retrieval of information.",
     "topic": "IR Definition",
     "slide_ref": "1. Information Retieval and Search Engines.pptx",
-    "answer": 1
+    "answer": 1,
+    "is_multi": false,
+    "required_choices": 1,
+    "correct_choices": [
+      1
+    ],
+    "correct_letter": "B",
+    "correct_letters": [
+      "B"
+    ]
   },
   {
     "id": "q_ch01_02",
@@ -30,7 +38,16 @@ window.SEG_QUESTIONS = [
     "explanation": "Relational databases evaluate exact conditions against structured attributes; IR systems evaluate free-text relevance and rank results probabilistically.",
     "topic": "IR vs DBMS",
     "slide_ref": "1. Information Retieval and Search Engines.pptx",
-    "answer": 1
+    "answer": 1,
+    "is_multi": false,
+    "required_choices": 1,
+    "correct_choices": [
+      1
+    ],
+    "correct_letter": "B",
+    "correct_letters": [
+      "B"
+    ]
   },
   {
     "id": "q_ch01_03",
@@ -46,7 +63,16 @@ window.SEG_QUESTIONS = [
     "explanation": "The information need is the cognitive gap or desire for knowledge in the user's mind, which is formulated into a query.",
     "topic": "Information Need vs Query",
     "slide_ref": "1. Information Retieval and Search Engines.pptx",
-    "answer": 1
+    "answer": 1,
+    "is_multi": false,
+    "required_choices": 1,
+    "correct_choices": [
+      1
+    ],
+    "correct_letter": "B",
+    "correct_letters": [
+      "B"
+    ]
   },
   {
     "id": "q_ch01_04",
@@ -62,7 +88,16 @@ window.SEG_QUESTIONS = [
     "explanation": "The 4 core stages are Term Matching, Relevance Scoring, Deduplication, and Snippet Generation. Relational schema normalization is a database concept.",
     "topic": "Search Pipeline",
     "slide_ref": "1. Information Retieval and Search Engines.pptx",
-    "answer": 2
+    "answer": 2,
+    "is_multi": false,
+    "required_choices": 1,
+    "correct_choices": [
+      2
+    ],
+    "correct_letter": "C",
+    "correct_letters": [
+      "C"
+    ]
   },
   {
     "id": "q_ch01_05",
@@ -78,7 +113,16 @@ window.SEG_QUESTIONS = [
     "explanation": "Enterprise search operates within corporate firewalls and must enforce ACL security permissions and regulatory data retention policies.",
     "topic": "Search Engine Types",
     "slide_ref": "1. Information Retieval and Search Engines.pptx",
-    "answer": 2
+    "answer": 2,
+    "is_multi": false,
+    "required_choices": 1,
+    "correct_choices": [
+      2
+    ],
+    "correct_letter": "C",
+    "correct_letters": [
+      "C"
+    ]
   },
   {
     "id": "q_ch01_06",
@@ -94,7 +138,16 @@ window.SEG_QUESTIONS = [
     "explanation": "SDI (Document Routing) filters continuous document streams and pushes items to users whose standing profiles match the document content.",
     "topic": "IR Applications",
     "slide_ref": "1. Information Retieval and Search Engines.pptx",
-    "answer": 1
+    "answer": 1,
+    "is_multi": false,
+    "required_choices": 1,
+    "correct_choices": [
+      1
+    ],
+    "correct_letter": "B",
+    "correct_letters": [
+      "B"
+    ]
   },
   {
     "id": "q_ch01_07",
@@ -110,7 +163,16 @@ window.SEG_QUESTIONS = [
     "explanation": "Categorization is supervised learning with known classes; clustering is unsupervised grouping based on pairwise distance or similarity.",
     "topic": "Categorization vs Clustering",
     "slide_ref": "1. Information Retieval and Search Engines.pptx",
-    "answer": 1
+    "answer": 1,
+    "is_multi": false,
+    "required_choices": 1,
+    "correct_choices": [
+      1
+    ],
+    "correct_letter": "B",
+    "correct_letters": [
+      "B"
+    ]
   },
   {
     "id": "q_ch01_08",
@@ -126,7 +188,16 @@ window.SEG_QUESTIONS = [
     "explanation": "Information Extraction (IE) extracts structured facts and entities from natural language text to populate databases.",
     "topic": "Information Extraction",
     "slide_ref": "1. Information Retieval and Search Engines.pptx",
-    "answer": 0
+    "answer": 0,
+    "is_multi": false,
+    "required_choices": 1,
+    "correct_choices": [
+      0
+    ],
+    "correct_letter": "A",
+    "correct_letters": [
+      "A"
+    ]
   },
   {
     "id": "q_ch01_09",
@@ -142,7 +213,16 @@ window.SEG_QUESTIONS = [
     "explanation": "Standard search engines return a ranked list of relevant documents; QA systems extract or synthesize the exact factual answer.",
     "topic": "Question Answering",
     "slide_ref": "1. Information Retieval and Search Engines.pptx",
-    "answer": 1
+    "answer": 1,
+    "is_multi": false,
+    "required_choices": 1,
+    "correct_choices": [
+      1
+    ],
+    "correct_letter": "B",
+    "correct_letters": [
+      "B"
+    ]
   },
   {
     "id": "q_ch01_10",
@@ -158,7 +238,16 @@ window.SEG_QUESTIONS = [
     "explanation": "Search engineers generally have Computer Science backgrounds specializing in systems, distributed computing, performance optimization, and data structures.",
     "topic": "Search Engineers",
     "slide_ref": "1. Information Retieval and Search Engines.pptx",
-    "answer": 1
+    "answer": 1,
+    "is_multi": false,
+    "required_choices": 1,
+    "correct_choices": [
+      1
+    ],
+    "correct_letter": "B",
+    "correct_letters": [
+      "B"
+    ]
   },
   {
     "id": "q_ch01_11",
@@ -174,7 +263,16 @@ window.SEG_QUESTIONS = [
     "explanation": "Effectiveness measures relevance quality (Precision, Recall, MAP, NDCG). Efficiency measures speed and resource consumption (Throughput, Latency, RAM).",
     "topic": "Effectiveness vs Efficiency",
     "slide_ref": "1. Information Retieval and Search Engines.pptx",
-    "answer": 1
+    "answer": 1,
+    "is_multi": false,
+    "required_choices": 1,
+    "correct_choices": [
+      1
+    ],
+    "correct_letter": "B",
+    "correct_letters": [
+      "B"
+    ]
   },
   {
     "id": "q_ch01_12",
@@ -190,7 +288,16 @@ window.SEG_QUESTIONS = [
     "explanation": "Velocity refers to the immense speed of data arrival, dynamic web updates, and real-time query throughput requirements.",
     "topic": "Big Data IR",
     "slide_ref": "1. Information Retieval and Search Engines.pptx",
-    "answer": 1
+    "answer": 1,
+    "is_multi": false,
+    "required_choices": 1,
+    "correct_choices": [
+      1
+    ],
+    "correct_letter": "B",
+    "correct_letters": [
+      "B"
+    ]
   },
   {
     "id": "q_ch01_13",
@@ -206,7 +313,16 @@ window.SEG_QUESTIONS = [
     "explanation": "Desktop search engines index local files (PDFs, docs, source code, emails) on a local machine while respecting battery and CPU constraints.",
     "topic": "Desktop Search",
     "slide_ref": "1. Information Retieval and Search Engines.pptx",
-    "answer": 1
+    "answer": 1,
+    "is_multi": false,
+    "required_choices": 1,
+    "correct_choices": [
+      1
+    ],
+    "correct_letter": "B",
+    "correct_letters": [
+      "B"
+    ]
   },
   {
     "id": "q_ch01_14",
@@ -222,7 +338,16 @@ window.SEG_QUESTIONS = [
     "explanation": "TDT monitors streaming news feeds, identifies newly emerging topics, and tracks their developments chronologically.",
     "topic": "Topic Detection & Tracking",
     "slide_ref": "1. Information Retieval and Search Engines.pptx",
-    "answer": 0
+    "answer": 0,
+    "is_multi": false,
+    "required_choices": 1,
+    "correct_choices": [
+      0
+    ],
+    "correct_letter": "A",
+    "correct_letters": [
+      "A"
+    ]
   },
   {
     "id": "q_ch01_15",
@@ -238,7 +363,16 @@ window.SEG_QUESTIONS = [
     "explanation": "Deduplication ensures users see diverse, unique documents rather than multiple mirrors or syndicated copies of the same content.",
     "topic": "Deduplication",
     "slide_ref": "1. Information Retieval and Search Engines.pptx",
-    "answer": 1
+    "answer": 1,
+    "is_multi": false,
+    "required_choices": 1,
+    "correct_choices": [
+      1
+    ],
+    "correct_letter": "B",
+    "correct_letters": [
+      "B"
+    ]
   },
   {
     "id": "q_ch01_16",
@@ -254,7 +388,16 @@ window.SEG_QUESTIONS = [
     "explanation": "The Query Logger records queries, user clicks, dwell times, and sessions to evaluate effectiveness and train ranking models.",
     "topic": "Logging & Analytics",
     "slide_ref": "1. Information Retieval and Search Engines.pptx",
-    "answer": 1
+    "answer": 1,
+    "is_multi": false,
+    "required_choices": 1,
+    "correct_choices": [
+      1
+    ],
+    "correct_letter": "B",
+    "correct_letters": [
+      "B"
+    ]
   },
   {
     "id": "q_ch01_17",
@@ -270,7 +413,16 @@ window.SEG_QUESTIONS = [
     "explanation": "An informational query seeks knowledge or understanding about a concept, whereas the others are navigational or transactional.",
     "topic": "Query Taxonomy",
     "slide_ref": "1. Information Retieval and Search Engines.pptx",
-    "answer": 2
+    "answer": 2,
+    "is_multi": false,
+    "required_choices": 1,
+    "correct_choices": [
+      2
+    ],
+    "correct_letter": "C",
+    "correct_letters": [
+      "C"
+    ]
   },
   {
     "id": "q_ch01_18",
@@ -286,7 +438,16 @@ window.SEG_QUESTIONS = [
     "explanation": "Enterprise search must verify whether the querying user has permission to view each document, requiring dynamic ACL filtering at low latency.",
     "topic": "Enterprise Search",
     "slide_ref": "1. Information Retieval and Search Engines.pptx",
-    "answer": 1
+    "answer": 1,
+    "is_multi": false,
+    "required_choices": 1,
+    "correct_choices": [
+      1
+    ],
+    "correct_letter": "B",
+    "correct_letters": [
+      "B"
+    ]
   },
   {
     "id": "q_ch01_19",
@@ -302,7 +463,16 @@ window.SEG_QUESTIONS = [
     "explanation": "Snippets provide concise context showing where and how query terms appear in the document so users can judge relevance before clicking.",
     "topic": "Snippet Generation",
     "slide_ref": "1. Information Retieval and Search Engines.pptx",
-    "answer": 0
+    "answer": 0,
+    "is_multi": false,
+    "required_choices": 1,
+    "correct_choices": [
+      0
+    ],
+    "correct_letter": "A",
+    "correct_letters": [
+      "A"
+    ]
   },
   {
     "id": "q_ch01_20",
@@ -318,7 +488,16 @@ window.SEG_QUESTIONS = [
     "explanation": "Web search must process millions of queries over petabytes of data with sub-second response times.",
     "topic": "Web Scale IR",
     "slide_ref": "1. Information Retieval and Search Engines.pptx",
-    "answer": 1
+    "answer": 1,
+    "is_multi": false,
+    "required_choices": 1,
+    "correct_choices": [
+      1
+    ],
+    "correct_letter": "B",
+    "correct_letters": [
+      "B"
+    ]
   },
   {
     "id": "q_ch01_21",
@@ -334,7 +513,16 @@ window.SEG_QUESTIONS = [
     "explanation": "CLIR enables queries formulated in language L1 to retrieve relevant documents written in language L2.",
     "topic": "Cross-Language IR",
     "slide_ref": "1. Information Retieval and Search Engines.pptx",
-    "answer": 0
+    "answer": 0,
+    "is_multi": false,
+    "required_choices": 1,
+    "correct_choices": [
+      0
+    ],
+    "correct_letter": "A",
+    "correct_letters": [
+      "A"
+    ]
   },
   {
     "id": "q_ch01_22",
@@ -350,7 +538,16 @@ window.SEG_QUESTIONS = [
     "explanation": "Document routing matches dynamic streams of documents against static user interest profiles.",
     "topic": "Document Routing",
     "slide_ref": "1. Information Retieval and Search Engines.pptx",
-    "answer": 1
+    "answer": 1,
+    "is_multi": false,
+    "required_choices": 1,
+    "correct_choices": [
+      1
+    ],
+    "correct_letter": "B",
+    "correct_letters": [
+      "B"
+    ]
   },
   {
     "id": "q_ch01_23",
@@ -366,7 +563,16 @@ window.SEG_QUESTIONS = [
     "explanation": "Web spam is adversarial manipulation of page content or link graphs to achieve undeservedly high rankings.",
     "topic": "Web Spam Overview",
     "slide_ref": "1. Information Retieval and Search Engines.pptx",
-    "answer": 1
+    "answer": 1,
+    "is_multi": false,
+    "required_choices": 1,
+    "correct_choices": [
+      1
+    ],
+    "correct_letter": "B",
+    "correct_letters": [
+      "B"
+    ]
   },
   {
     "id": "q_ch01_24",
@@ -382,7 +588,16 @@ window.SEG_QUESTIONS = [
     "explanation": "Synonymy causes lexical mismatch (missing relevant documents), and polysemy causes irrelevant documents to match.",
     "topic": "Vocabulary Mismatch",
     "slide_ref": "1. Information Retieval and Search Engines.pptx",
-    "answer": 0
+    "answer": 0,
+    "is_multi": false,
+    "required_choices": 1,
+    "correct_choices": [
+      0
+    ],
+    "correct_letter": "A",
+    "correct_letters": [
+      "A"
+    ]
   },
   {
     "id": "q_ch01_25",
@@ -398,7 +613,16 @@ window.SEG_QUESTIONS = [
     "explanation": "A corpus (plural: corpora) is a representative collection of textual documents used for indexing, analysis, or evaluation.",
     "topic": "Corpus Definition",
     "slide_ref": "1. Information Retieval and Search Engines.pptx",
-    "answer": 1
+    "answer": 1,
+    "is_multi": false,
+    "required_choices": 1,
+    "correct_choices": [
+      1
+    ],
+    "correct_letter": "B",
+    "correct_letters": [
+      "B"
+    ]
   },
   {
     "id": "q_ch01_26",
@@ -414,7 +638,16 @@ window.SEG_QUESTIONS = [
     "explanation": "Document parsing processes raw formats (HTML, PDF, DOCX), extracts metadata, strips markup, and emits tokens.",
     "topic": "Document Parsing",
     "slide_ref": "1. Information Retieval and Search Engines.pptx",
-    "answer": 1
+    "answer": 1,
+    "is_multi": false,
+    "required_choices": 1,
+    "correct_choices": [
+      1
+    ],
+    "correct_letter": "B",
+    "correct_letters": [
+      "B"
+    ]
   },
   {
     "id": "q_ch01_27",
@@ -423,14 +656,23 @@ window.SEG_QUESTIONS = [
     "options": [
       "'FPT University portal login'",
       "'What is the distance between the Earth and Mars?'",
-      "'Best camera phones under $500'",
+      "'Best camera phones under \\$500'",
       "'History of machine learning algorithms'"
     ],
     "correct": 0,
     "explanation": "A navigational query has the immediate intent to reach a specific destination website or portal.",
     "topic": "Query Types",
     "slide_ref": "1. Information Retieval and Search Engines.pptx",
-    "answer": 0
+    "answer": 0,
+    "is_multi": false,
+    "required_choices": 1,
+    "correct_choices": [
+      0
+    ],
+    "correct_letter": "A",
+    "correct_letters": [
+      "A"
+    ]
   },
   {
     "id": "q_ch01_28",
@@ -446,7 +688,16 @@ window.SEG_QUESTIONS = [
     "explanation": "Scanning documents linearly (like grep) scales as O(N) over petabytes; an inverted index enables immediate posting list lookups.",
     "topic": "Inverted Index Purpose",
     "slide_ref": "1. Information Retieval and Search Engines.pptx",
-    "answer": 0
+    "answer": 0,
+    "is_multi": false,
+    "required_choices": 1,
+    "correct_choices": [
+      0
+    ],
+    "correct_letter": "A",
+    "correct_letters": [
+      "A"
+    ]
   },
   {
     "id": "q_ch01_29",
@@ -462,7 +713,16 @@ window.SEG_QUESTIONS = [
     "explanation": "Free natural language text in PDFs and news articles lacks a fixed tabular schema, making it unstructured.",
     "topic": "Unstructured Data",
     "slide_ref": "1. Information Retieval and Search Engines.pptx",
-    "answer": 2
+    "answer": 2,
+    "is_multi": false,
+    "required_choices": 1,
+    "correct_choices": [
+      2
+    ],
+    "correct_letter": "C",
+    "correct_letters": [
+      "C"
+    ]
   },
   {
     "id": "q_ch01_30",
@@ -478,7 +738,16 @@ window.SEG_QUESTIONS = [
     "explanation": "Relevance is subjective and context-dependent, measuring how effectively a document resolves the user's knowledge gap.",
     "topic": "Relevance Concept",
     "slide_ref": "1. Information Retieval and Search Engines.pptx",
-    "answer": 1
+    "answer": 1,
+    "is_multi": false,
+    "required_choices": 1,
+    "correct_choices": [
+      1
+    ],
+    "correct_letter": "B",
+    "correct_letters": [
+      "B"
+    ]
   },
   {
     "id": "q_ch01_31",
@@ -494,7 +763,16 @@ window.SEG_QUESTIONS = [
     "explanation": "Studies show increases in latency of just 100-200ms noticeably reduce user engagement, search volume, and ad revenue.",
     "topic": "Search Latency SLA",
     "slide_ref": "1. Information Retieval and Search Engines.pptx",
-    "answer": 0
+    "answer": 0,
+    "is_multi": false,
+    "required_choices": 1,
+    "correct_choices": [
+      0
+    ],
+    "correct_letter": "A",
+    "correct_letters": [
+      "A"
+    ]
   },
   {
     "id": "q_ch01_32",
@@ -510,7 +788,16 @@ window.SEG_QUESTIONS = [
     "explanation": "Freshness measures how quickly new pages and modifications on the web are discovered and indexed.",
     "topic": "Freshness",
     "slide_ref": "1. Information Retieval and Search Engines.pptx",
-    "answer": 1
+    "answer": 1,
+    "is_multi": false,
+    "required_choices": 1,
+    "correct_choices": [
+      1
+    ],
+    "correct_letter": "B",
+    "correct_letters": [
+      "B"
+    ]
   },
   {
     "id": "q_ch01_33",
@@ -526,7 +813,16 @@ window.SEG_QUESTIONS = [
     "explanation": "Typical web queries are remarkably brief (average 2 to 3 terms) and lack explicit operators, placing the burden of intent disambiguation on the engine.",
     "topic": "Query Characteristics",
     "slide_ref": "1. Information Retieval and Search Engines.pptx",
-    "answer": 1
+    "answer": 1,
+    "is_multi": false,
+    "required_choices": 1,
+    "correct_choices": [
+      1
+    ],
+    "correct_letter": "B",
+    "correct_letters": [
+      "B"
+    ]
   },
   {
     "id": "q_ch01_34",
@@ -542,7 +838,16 @@ window.SEG_QUESTIONS = [
     "explanation": "Ad-hoc retrieval is the classic search setup: an unpredictable query is evaluated against an existing collection of documents.",
     "topic": "Ad-hoc Retrieval",
     "slide_ref": "1. Information Retieval and Search Engines.pptx",
-    "answer": 1
+    "answer": 1,
+    "is_multi": false,
+    "required_choices": 1,
+    "correct_choices": [
+      1
+    ],
+    "correct_letter": "B",
+    "correct_letters": [
+      "B"
+    ]
   },
   {
     "id": "q_ch01_35",
@@ -558,7 +863,16 @@ window.SEG_QUESTIONS = [
     "explanation": "Autocomplete predicts and suggests full queries based on prefix matching, historical query logs, and trending topics.",
     "topic": "Autocomplete",
     "slide_ref": "1. Information Retieval and Search Engines.pptx",
-    "answer": 1
+    "answer": 1,
+    "is_multi": false,
+    "required_choices": 1,
+    "correct_choices": [
+      1
+    ],
+    "correct_letter": "B",
+    "correct_letters": [
+      "B"
+    ]
   },
   {
     "id": "q_ch01_36",
@@ -574,7 +888,16 @@ window.SEG_QUESTIONS = [
     "explanation": "Scalability allows a search architecture to maintain low latency and high throughput as data and query traffic grow.",
     "topic": "Scalability",
     "slide_ref": "1. Information Retieval and Search Engines.pptx",
-    "answer": 0
+    "answer": 0,
+    "is_multi": false,
+    "required_choices": 1,
+    "correct_choices": [
+      0
+    ],
+    "correct_letter": "A",
+    "correct_letters": [
+      "A"
+    ]
   },
   {
     "id": "q_ch01_37",
@@ -590,7 +913,16 @@ window.SEG_QUESTIONS = [
     "explanation": "DNS resolution is a basic networking protocol, unrelated to NLP.",
     "topic": "NLP in Search",
     "slide_ref": "1. Information Retieval and Search Engines.pptx",
-    "answer": 2
+    "answer": 2,
+    "is_multi": false,
+    "required_choices": 1,
+    "correct_choices": [
+      2
+    ],
+    "correct_letter": "C",
+    "correct_letters": [
+      "C"
+    ]
   },
   {
     "id": "q_ch01_38",
@@ -606,7 +938,16 @@ window.SEG_QUESTIONS = [
     "explanation": "Stop words are extremely common functional words that occur in almost all documents and historically were filtered to save space.",
     "topic": "Stop Words Intro",
     "slide_ref": "1. Information Retieval and Search Engines.pptx",
-    "answer": 1
+    "answer": 1,
+    "is_multi": false,
+    "required_choices": 1,
+    "correct_choices": [
+      1
+    ],
+    "correct_letter": "B",
+    "correct_letters": [
+      "B"
+    ]
   },
   {
     "id": "q_ch01_39",
@@ -622,7 +963,16 @@ window.SEG_QUESTIONS = [
     "explanation": "Anchor text reflects how third-party creators describe the linked page, offering objective, high-signal relevance clues.",
     "topic": "Anchor Text Overview",
     "slide_ref": "1. Information Retieval and Search Engines.pptx",
-    "answer": 1
+    "answer": 1,
+    "is_multi": false,
+    "required_choices": 1,
+    "correct_choices": [
+      1
+    ],
+    "correct_letter": "B",
+    "correct_letters": [
+      "B"
+    ]
   },
   {
     "id": "q_ch01_40",
@@ -638,7 +988,16 @@ window.SEG_QUESTIONS = [
     "explanation": "The ranking function scores matched documents so the most helpful results appear at the top of the SERP.",
     "topic": "Ranking Function Purpose",
     "slide_ref": "1. Information Retieval and Search Engines.pptx",
-    "answer": 1
+    "answer": 1,
+    "is_multi": false,
+    "required_choices": 1,
+    "correct_choices": [
+      1
+    ],
+    "correct_letter": "B",
+    "correct_letters": [
+      "B"
+    ]
   },
   {
     "id": "q_ch01_41",
@@ -654,7 +1013,16 @@ window.SEG_QUESTIONS = [
     "explanation": "Enterprise search must enforce data privacy and security; unauthorized documents must never leak into search results or snippets.",
     "topic": "Enterprise ACLs",
     "slide_ref": "1. Information Retieval and Search Engines.pptx",
-    "answer": 0
+    "answer": 0,
+    "is_multi": false,
+    "required_choices": 1,
+    "correct_choices": [
+      0
+    ],
+    "correct_letter": "A",
+    "correct_letters": [
+      "A"
+    ]
   },
   {
     "id": "q_ch01_42",
@@ -670,7 +1038,16 @@ window.SEG_QUESTIONS = [
     "explanation": "SDI filters incoming document streams against saved standing queries; ad-hoc retrieval evaluates one-off queries against an indexed collection.",
     "topic": "SDI vs Ad-hoc",
     "slide_ref": "1. Information Retieval and Search Engines.pptx",
-    "answer": 0
+    "answer": 0,
+    "is_multi": false,
+    "required_choices": 1,
+    "correct_choices": [
+      0
+    ],
+    "correct_letter": "A",
+    "correct_letters": [
+      "A"
+    ]
   },
   {
     "id": "q_ch01_43",
@@ -686,7 +1063,16 @@ window.SEG_QUESTIONS = [
     "explanation": "Without case folding and stemming, inflectional variations of the same root term fail to match.",
     "topic": "Normalization Need",
     "slide_ref": "1. Information Retieval and Search Engines.pptx",
-    "answer": 0
+    "answer": 0,
+    "is_multi": false,
+    "required_choices": 1,
+    "correct_choices": [
+      0
+    ],
+    "correct_letter": "A",
+    "correct_letters": [
+      "A"
+    ]
   },
   {
     "id": "q_ch01_44",
@@ -702,7 +1088,16 @@ window.SEG_QUESTIONS = [
     "explanation": "Snippets show query terms highlighted in sentence context to help the user evaluate document relevance.",
     "topic": "Snippet Definition",
     "slide_ref": "1. Information Retieval and Search Engines.pptx",
-    "answer": 1
+    "answer": 1,
+    "is_multi": false,
+    "required_choices": 1,
+    "correct_choices": [
+      1
+    ],
+    "correct_letter": "B",
+    "correct_letters": [
+      "B"
+    ]
   },
   {
     "id": "q_ch01_45",
@@ -718,7 +1113,16 @@ window.SEG_QUESTIONS = [
     "explanation": "Search result clustering dynamically groups the current search results by subtopic on-the-fly (e.g., 'Jaguar' grouped into 'Car', 'Animal', 'OS').",
     "topic": "Result Clustering",
     "slide_ref": "1. Information Retieval and Search Engines.pptx",
-    "answer": 0
+    "answer": 0,
+    "is_multi": false,
+    "required_choices": 1,
+    "correct_choices": [
+      0
+    ],
+    "correct_letter": "A",
+    "correct_letters": [
+      "A"
+    ]
   },
   {
     "id": "q_ch01_46",
@@ -734,7 +1138,16 @@ window.SEG_QUESTIONS = [
     "explanation": "Search engines use implicit telemetry: click-through rate, dwell time (time spent on page before returning), and lack of reformulation indicate satisfaction.",
     "topic": "Implicit Feedback",
     "slide_ref": "1. Information Retieval and Search Engines.pptx",
-    "answer": 0
+    "answer": 0,
+    "is_multi": false,
+    "required_choices": 1,
+    "correct_choices": [
+      0
+    ],
+    "correct_letter": "A",
+    "correct_letters": [
+      "A"
+    ]
   },
   {
     "id": "q_ch01_47",
@@ -750,7 +1163,16 @@ window.SEG_QUESTIONS = [
     "explanation": "Retaining numbers increases vocabulary size significantly, but is necessary for part numbers, dates, version numbers, and phone numbers.",
     "topic": "Indexing Numbers",
     "slide_ref": "1. Information Retieval and Search Engines.pptx",
-    "answer": 0
+    "answer": 0,
+    "is_multi": false,
+    "required_choices": 1,
+    "correct_choices": [
+      0
+    ],
+    "correct_letter": "A",
+    "correct_letters": [
+      "A"
+    ]
   },
   {
     "id": "q_ch01_48",
@@ -766,7 +1188,16 @@ window.SEG_QUESTIONS = [
     "explanation": "Rate limiters and edge proxies inspect incoming request frequencies per IP to protect the backend infrastructure from abuse.",
     "topic": "Search Infrastructure",
     "slide_ref": "1. Information Retieval and Search Engines.pptx",
-    "answer": 0
+    "answer": 0,
+    "is_multi": false,
+    "required_choices": 1,
+    "correct_choices": [
+      0
+    ],
+    "correct_letter": "A",
+    "correct_letters": [
+      "A"
+    ]
   },
   {
     "id": "q_ch01_49",
@@ -782,7 +1213,16 @@ window.SEG_QUESTIONS = [
     "explanation": "Unsegmented scripts require dictionary-based or statistical tokenization before words can be placed into inverted lists.",
     "topic": "Multilingual Indexing",
     "slide_ref": "1. Information Retieval and Search Engines.pptx",
-    "answer": 0
+    "answer": 0,
+    "is_multi": false,
+    "required_choices": 1,
+    "correct_choices": [
+      0
+    ],
+    "correct_letter": "A",
+    "correct_letters": [
+      "A"
+    ]
   },
   {
     "id": "q_ch01_50",
@@ -798,7 +1238,16 @@ window.SEG_QUESTIONS = [
     "explanation": "The Cranfield tests (Cyril Cleverdon, 1960s) pioneered modern comparative evaluation using fixed corpora, queries, and relevance assessments.",
     "topic": "Cranfield Paradigm",
     "slide_ref": "1. Information Retieval and Search Engines.pptx",
-    "answer": 0
+    "answer": 0,
+    "is_multi": false,
+    "required_choices": 1,
+    "correct_choices": [
+      0
+    ],
+    "correct_letter": "A",
+    "correct_letters": [
+      "A"
+    ]
   },
   {
     "id": "q_ch02_01",
@@ -814,7 +1263,16 @@ window.SEG_QUESTIONS = [
     "explanation": "A search engine architecture fundamentally splits into the offline Indexing Process (building data structures) and the online Query Process (serving real-time queries).",
     "topic": "Search Architecture",
     "slide_ref": "2. Architecture of A Search Engine.pptx",
-    "answer": 1
+    "answer": 1,
+    "is_multi": false,
+    "required_choices": 1,
+    "correct_choices": [
+      1
+    ],
+    "correct_letter": "B",
+    "correct_letters": [
+      "B"
+    ]
   },
   {
     "id": "q_ch02_02",
@@ -830,7 +1288,16 @@ window.SEG_QUESTIONS = [
     "explanation": "Document parsers and conversion filters translate various binary/proprietary file formats into normalized character streams (typically UTF-8).",
     "topic": "Text Acquisition",
     "slide_ref": "2. Architecture of A Search Engine.pptx",
-    "answer": 1
+    "answer": 1,
+    "is_multi": false,
+    "required_choices": 1,
+    "correct_choices": [
+      1
+    ],
+    "correct_letter": "B",
+    "correct_letters": [
+      "B"
+    ]
   },
   {
     "id": "q_ch02_03",
@@ -846,7 +1313,16 @@ window.SEG_QUESTIONS = [
     "explanation": "The 3 core sub-processes of Indexing are: 1. Text Acquisition (gathering documents), 2. Text Transformation (parsing & normalizing text), and 3. Index Creation (building inverted indexes).",
     "topic": "Indexing Sub-processes",
     "slide_ref": "2. Architecture of A Search Engine.pptx",
-    "answer": 0
+    "answer": 0,
+    "is_multi": false,
+    "required_choices": 1,
+    "correct_choices": [
+      0
+    ],
+    "correct_letter": "A",
+    "correct_letters": [
+      "A"
+    ]
   },
   {
     "id": "q_ch02_04",
@@ -862,7 +1338,16 @@ window.SEG_QUESTIONS = [
     "explanation": "The tokenizer consumes normalized character streams and outputs individual tokens (words, numbers, symbols) based on delimiter boundaries.",
     "topic": "Tokenization",
     "slide_ref": "2. Architecture of A Search Engine.pptx",
-    "answer": 1
+    "answer": 1,
+    "is_multi": false,
+    "required_choices": 1,
+    "correct_choices": [
+      1
+    ],
+    "correct_letter": "B",
+    "correct_letters": [
+      "B"
+    ]
   },
   {
     "id": "q_ch02_05",
@@ -878,7 +1363,16 @@ window.SEG_QUESTIONS = [
     "explanation": "A stemmer or lemmatizer normalizes grammatical variations (e.g., 'running', 'runs', 'ran') to their root term.",
     "topic": "Stemming",
     "slide_ref": "2. Architecture of A Search Engine.pptx",
-    "answer": 1
+    "answer": 1,
+    "is_multi": false,
+    "required_choices": 1,
+    "correct_choices": [
+      1
+    ],
+    "correct_letter": "B",
+    "correct_letters": [
+      "B"
+    ]
   },
   {
     "id": "q_ch02_06",
@@ -894,7 +1388,16 @@ window.SEG_QUESTIONS = [
     "explanation": "The Query Process consists of User Interaction (accepting input, snippet display), Ranking (scoring candidates), and Evaluation (logging clicks and metrics).",
     "topic": "Query Sub-processes",
     "slide_ref": "2. Architecture of A Search Engine.pptx",
-    "answer": 1
+    "answer": 1,
+    "is_multi": false,
+    "required_choices": 1,
+    "correct_choices": [
+      1
+    ],
+    "correct_letter": "B",
+    "correct_letters": [
+      "B"
+    ]
   },
   {
     "id": "q_ch02_07",
@@ -910,7 +1413,16 @@ window.SEG_QUESTIONS = [
     "explanation": "The Scorer evaluates documents retrieved from the inverted index using ranking models (BM25, Language Models, LTR) to compute relevance scores.",
     "topic": "Ranking Component",
     "slide_ref": "2. Architecture of A Search Engine.pptx",
-    "answer": 1
+    "answer": 1,
+    "is_multi": false,
+    "required_choices": 1,
+    "correct_choices": [
+      1
+    ],
+    "correct_letter": "B",
+    "correct_letters": [
+      "B"
+    ]
   },
   {
     "id": "q_ch02_08",
@@ -926,7 +1438,16 @@ window.SEG_QUESTIONS = [
     "explanation": "Efficiency measures execution cost (latency, QPS, memory); Effectiveness measures result quality (Precision, MAP, NDCG). Complex ranking models improve effectiveness at the cost of efficiency.",
     "topic": "Efficiency vs Effectiveness",
     "slide_ref": "2. Architecture of A Search Engine.pptx",
-    "answer": 1
+    "answer": 1,
+    "is_multi": false,
+    "required_choices": 1,
+    "correct_choices": [
+      1
+    ],
+    "correct_letter": "B",
+    "correct_letters": [
+      "B"
+    ]
   },
   {
     "id": "q_ch02_09",
@@ -942,7 +1463,16 @@ window.SEG_QUESTIONS = [
     "explanation": "Throughput is measured in Queries Per Second (QPS), representing the capacity of the search system under load.",
     "topic": "System Throughput",
     "slide_ref": "2. Architecture of A Search Engine.pptx",
-    "answer": 1
+    "answer": 1,
+    "is_multi": false,
+    "required_choices": 1,
+    "correct_choices": [
+      1
+    ],
+    "correct_letter": "B",
+    "correct_letters": [
+      "B"
+    ]
   },
   {
     "id": "q_ch02_10",
@@ -958,7 +1488,16 @@ window.SEG_QUESTIONS = [
     "explanation": "A Service Level Agreement (SLA) for latency sets strict guarantees on the maximum time taken to serve a user query.",
     "topic": "Latency SLA",
     "slide_ref": "2. Architecture of A Search Engine.pptx",
-    "answer": 0
+    "answer": 0,
+    "is_multi": false,
+    "required_choices": 1,
+    "correct_choices": [
+      0
+    ],
+    "correct_letter": "A",
+    "correct_letters": [
+      "A"
+    ]
   },
   {
     "id": "q_ch02_11",
@@ -974,7 +1513,16 @@ window.SEG_QUESTIONS = [
     "explanation": "The dictionary (lexicon) maps each unique term to the memory offset of its corresponding postings list (docIDs, frequencies, positions).",
     "topic": "Inverted Index Anatomy",
     "slide_ref": "2. Architecture of A Search Engine.pptx",
-    "answer": 0
+    "answer": 0,
+    "is_multi": false,
+    "required_choices": 1,
+    "correct_choices": [
+      0
+    ],
+    "correct_letter": "A",
+    "correct_letters": [
+      "A"
+    ]
   },
   {
     "id": "q_ch02_12",
@@ -990,7 +1538,16 @@ window.SEG_QUESTIONS = [
     "explanation": "Large inverted indexes are immutable for read performance; new documents are accumulated in a small dynamic memory index and batch-merged into master segments.",
     "topic": "Index Updates",
     "slide_ref": "2. Architecture of A Search Engine.pptx",
-    "answer": 0
+    "answer": 0,
+    "is_multi": false,
+    "required_choices": 1,
+    "correct_choices": [
+      0
+    ],
+    "correct_letter": "A",
+    "correct_letters": [
+      "A"
+    ]
   },
   {
     "id": "q_ch02_13",
@@ -1006,7 +1563,16 @@ window.SEG_QUESTIONS = [
     "explanation": "Query transformation refines the raw query string into normalized terms, corrected tokens, or expanded synonyms before index lookup.",
     "topic": "Query Transformation",
     "slide_ref": "2. Architecture of A Search Engine.pptx",
-    "answer": 1
+    "answer": 1,
+    "is_multi": false,
+    "required_choices": 1,
+    "correct_choices": [
+      1
+    ],
+    "correct_letter": "B",
+    "correct_letters": [
+      "B"
+    ]
   },
   {
     "id": "q_ch02_14",
@@ -1022,7 +1588,16 @@ window.SEG_QUESTIONS = [
     "explanation": "The result cache stores pre-assembled SERP results for popular queries, delivering instant responses (< 5ms) and saving massive server compute.",
     "topic": "Caching",
     "slide_ref": "2. Architecture of A Search Engine.pptx",
-    "answer": 1
+    "answer": 1,
+    "is_multi": false,
+    "required_choices": 1,
+    "correct_choices": [
+      1
+    ],
+    "correct_letter": "B",
+    "correct_letters": [
+      "B"
+    ]
   },
   {
     "id": "q_ch02_15",
@@ -1038,7 +1613,16 @@ window.SEG_QUESTIONS = [
     "explanation": "An impolite crawler can flood target web servers with thousands of requests per second, taking them offline and triggering legal or network bans.",
     "topic": "Crawler Politeness",
     "slide_ref": "2. Architecture of A Search Engine.pptx",
-    "answer": 1
+    "answer": 1,
+    "is_multi": false,
+    "required_choices": 1,
+    "correct_choices": [
+      1
+    ],
+    "correct_letter": "B",
+    "correct_letters": [
+      "B"
+    ]
   },
   {
     "id": "q_ch02_16",
@@ -1054,7 +1638,16 @@ window.SEG_QUESTIONS = [
     "explanation": "Fault tolerance utilizes redundant replicas of shards and brokers so hardware failures do not bring down search services.",
     "topic": "Fault Tolerance",
     "slide_ref": "2. Architecture of A Search Engine.pptx",
-    "answer": 1
+    "answer": 1,
+    "is_multi": false,
+    "required_choices": 1,
+    "correct_choices": [
+      1
+    ],
+    "correct_letter": "B",
+    "correct_letters": [
+      "B"
+    ]
   },
   {
     "id": "q_ch02_17",
@@ -1070,7 +1663,16 @@ window.SEG_QUESTIONS = [
     "explanation": "Evaluating complex deep neural ranking models on millions of documents is too slow; multi-stage ranking uses fast filtering followed by precise re-ranking.",
     "topic": "Multi-stage Ranking",
     "slide_ref": "2. Architecture of A Search Engine.pptx",
-    "answer": 1
+    "answer": 1,
+    "is_multi": false,
+    "required_choices": 1,
+    "correct_choices": [
+      1
+    ],
+    "correct_letter": "B",
+    "correct_letters": [
+      "B"
+    ]
   },
   {
     "id": "q_ch02_18",
@@ -1086,7 +1688,16 @@ window.SEG_QUESTIONS = [
     "explanation": "Feed ingestion modules subscribe to structured syndicate feeds to discover real-time news updates without waiting for full web crawls.",
     "topic": "Feed Ingestion",
     "slide_ref": "2. Architecture of A Search Engine.pptx",
-    "answer": 0
+    "answer": 0,
+    "is_multi": false,
+    "required_choices": 1,
+    "correct_choices": [
+      0
+    ],
+    "correct_letter": "A",
+    "correct_letters": [
+      "A"
+    ]
   },
   {
     "id": "q_ch02_19",
@@ -1102,7 +1713,16 @@ window.SEG_QUESTIONS = [
     "explanation": "Logging captures telemetry (queries, clicks, dwell times, latency) essential for A/B testing and training Learning-to-Rank models.",
     "topic": "Logging Subsystem",
     "slide_ref": "2. Architecture of A Search Engine.pptx",
-    "answer": 0
+    "answer": 0,
+    "is_multi": false,
+    "required_choices": 1,
+    "correct_choices": [
+      0
+    ],
+    "correct_letter": "A",
+    "correct_letters": [
+      "A"
+    ]
   },
   {
     "id": "q_ch02_20",
@@ -1118,7 +1738,16 @@ window.SEG_QUESTIONS = [
     "explanation": "Removing words like 'to', 'be', or 'the' renders famous quotes, song titles, and idioms unsearchable.",
     "topic": "Stopword Trade-offs",
     "slide_ref": "2. Architecture of A Search Engine.pptx",
-    "answer": 1
+    "answer": 1,
+    "is_multi": false,
+    "required_choices": 1,
+    "correct_choices": [
+      1
+    ],
+    "correct_letter": "B",
+    "correct_letters": [
+      "B"
+    ]
   },
   {
     "id": "q_ch02_21",
@@ -1134,7 +1763,16 @@ window.SEG_QUESTIONS = [
     "explanation": "By Little's Law, L = lambda * W = 10,000 queries/sec * 0.050 sec = 500 concurrent active requests.",
     "topic": "Little's Law Capacity",
     "slide_ref": "2. Architecture of A Search Engine.pptx",
-    "answer": 1
+    "answer": 1,
+    "is_multi": false,
+    "required_choices": 1,
+    "correct_choices": [
+      1
+    ],
+    "correct_letter": "B",
+    "correct_letters": [
+      "B"
+    ]
   },
   {
     "id": "q_ch02_22",
@@ -1150,7 +1788,16 @@ window.SEG_QUESTIONS = [
     "explanation": "BSBI (Blocked Sort-Based Indexing) parses documents into blocks, sorts postings in memory, writes them to disk, and merges sorted runs.",
     "topic": "BSBI Indexing",
     "slide_ref": "2. Architecture of A Search Engine.pptx",
-    "answer": 1
+    "answer": 1,
+    "is_multi": false,
+    "required_choices": 1,
+    "correct_choices": [
+      1
+    ],
+    "correct_letter": "B",
+    "correct_letters": [
+      "B"
+    ]
   },
   {
     "id": "q_ch02_23",
@@ -1166,7 +1813,16 @@ window.SEG_QUESTIONS = [
     "explanation": "SPIMI allocates posting lists dynamically per block without pre-assigning global term IDs, writing a sorted block index when memory fills.",
     "topic": "SPIMI Indexing",
     "slide_ref": "2. Architecture of A Search Engine.pptx",
-    "answer": 0
+    "answer": 0,
+    "is_multi": false,
+    "required_choices": 1,
+    "correct_choices": [
+      0
+    ],
+    "correct_letter": "A",
+    "correct_letters": [
+      "A"
+    ]
   },
   {
     "id": "q_ch02_24",
@@ -1182,7 +1838,16 @@ window.SEG_QUESTIONS = [
     "explanation": "The Broker / Aggregator is the front-facing coordinator that distributes queries to shard leaf nodes and aggregates top results.",
     "topic": "Distributed Broker",
     "slide_ref": "2. Architecture of A Search Engine.pptx",
-    "answer": 1
+    "answer": 1,
+    "is_multi": false,
+    "required_choices": 1,
+    "correct_choices": [
+      1
+    ],
+    "correct_letter": "B",
+    "correct_letters": [
+      "B"
+    ]
   },
   {
     "id": "q_ch02_25",
@@ -1198,7 +1863,16 @@ window.SEG_QUESTIONS = [
     "explanation": "Postings contain the document identifier, frequency of the term in the document, and positional offsets for phrase and proximity ranking.",
     "topic": "Posting Payload",
     "slide_ref": "2. Architecture of A Search Engine.pptx",
-    "answer": 1
+    "answer": 1,
+    "is_multi": false,
+    "required_choices": 1,
+    "correct_choices": [
+      1
+    ],
+    "correct_letter": "B",
+    "correct_letters": [
+      "B"
+    ]
   },
   {
     "id": "q_ch02_26",
@@ -1214,7 +1888,16 @@ window.SEG_QUESTIONS = [
     "explanation": "A positional index stores the exact token offset of each word occurrence in the document, enabling phrase queries and proximity scoring.",
     "topic": "Positional Index",
     "slide_ref": "2. Architecture of A Search Engine.pptx",
-    "answer": 0
+    "answer": 0,
+    "is_multi": false,
+    "required_choices": 1,
+    "correct_choices": [
+      0
+    ],
+    "correct_letter": "A",
+    "correct_letters": [
+      "A"
+    ]
   },
   {
     "id": "q_ch02_27",
@@ -1230,7 +1913,16 @@ window.SEG_QUESTIONS = [
     "explanation": "Positional indexes store an integer offset for every single word token occurrence, expanding index size substantially.",
     "topic": "Positional Overhead",
     "slide_ref": "2. Architecture of A Search Engine.pptx",
-    "answer": 1
+    "answer": 1,
+    "is_multi": false,
+    "required_choices": 1,
+    "correct_choices": [
+      1
+    ],
+    "correct_letter": "B",
+    "correct_letters": [
+      "B"
+    ]
   },
   {
     "id": "q_ch02_28",
@@ -1246,7 +1938,16 @@ window.SEG_QUESTIONS = [
     "explanation": "The engine merges the posting lists of both terms and checks if the positional offsets satisfy $pos(intelligence) = pos(artificial) + 1$.",
     "topic": "Phrase Query Evaluation",
     "slide_ref": "2. Architecture of A Search Engine.pptx",
-    "answer": 0
+    "answer": 0,
+    "is_multi": false,
+    "required_choices": 1,
+    "correct_choices": [
+      0
+    ],
+    "correct_letter": "A",
+    "correct_letters": [
+      "A"
+    ]
   },
   {
     "id": "q_ch02_29",
@@ -1262,7 +1963,16 @@ window.SEG_QUESTIONS = [
     "explanation": "Early termination algorithms (like WAND or MaxScore) dynamically prune candidate documents that cannot beat the current top-k score threshold.",
     "topic": "Early Termination",
     "slide_ref": "2. Architecture of A Search Engine.pptx",
-    "answer": 1
+    "answer": 1,
+    "is_multi": false,
+    "required_choices": 1,
+    "correct_choices": [
+      1
+    ],
+    "correct_letter": "B",
+    "correct_letters": [
+      "B"
+    ]
   },
   {
     "id": "q_ch02_30",
@@ -1278,7 +1988,16 @@ window.SEG_QUESTIONS = [
     "explanation": "The HTML parser strips tags, parses DOM structure, extracts metadata (title, meta tags), and separates text content.",
     "topic": "HTML Stripping",
     "slide_ref": "2. Architecture of A Search Engine.pptx",
-    "answer": 0
+    "answer": 0,
+    "is_multi": false,
+    "required_choices": 1,
+    "correct_choices": [
+      0
+    ],
+    "correct_letter": "A",
+    "correct_letters": [
+      "A"
+    ]
   },
   {
     "id": "q_ch02_31",
@@ -1294,7 +2013,16 @@ window.SEG_QUESTIONS = [
     "explanation": "TAAT iterates term by term, accumulating partial scores in memory; DAAT advances synchronized cursors across postings lists, scoring each document fully.",
     "topic": "TAAT vs DAAT",
     "slide_ref": "2. Architecture of A Search Engine.pptx",
-    "answer": 0
+    "answer": 0,
+    "is_multi": false,
+    "required_choices": 1,
+    "correct_choices": [
+      0
+    ],
+    "correct_letter": "A",
+    "correct_letters": [
+      "A"
+    ]
   },
   {
     "id": "q_ch02_32",
@@ -1310,7 +2038,16 @@ window.SEG_QUESTIONS = [
     "explanation": "In DAAT, once a document is scored, its memory can be discarded if it does not qualify for the top-k heap, avoiding millions of open accumulators.",
     "topic": "DAAT Memory Advantage",
     "slide_ref": "2. Architecture of A Search Engine.pptx",
-    "answer": 0
+    "answer": 0,
+    "is_multi": false,
+    "required_choices": 1,
+    "correct_choices": [
+      0
+    ],
+    "correct_letter": "A",
+    "correct_letters": [
+      "A"
+    ]
   },
   {
     "id": "q_ch02_33",
@@ -1326,7 +2063,16 @@ window.SEG_QUESTIONS = [
     "explanation": "Impact-ordered indexes sort documents by their contribution to the score (e.g., $tf$), so the engine can scan from the beginning and stop early.",
     "topic": "Impact Ordering",
     "slide_ref": "2. Architecture of A Search Engine.pptx",
-    "answer": 0
+    "answer": 0,
+    "is_multi": false,
+    "required_choices": 1,
+    "correct_choices": [
+      0
+    ],
+    "correct_letter": "A",
+    "correct_letters": [
+      "A"
+    ]
   },
   {
     "id": "q_ch02_34",
@@ -1342,7 +2088,16 @@ window.SEG_QUESTIONS = [
     "explanation": "Load balancers and reverse proxies distribute incoming user HTTP/HTTPS requests across stateless front-end query brokers.",
     "topic": "Load Balancing",
     "slide_ref": "2. Architecture of A Search Engine.pptx",
-    "answer": 0
+    "answer": 0,
+    "is_multi": false,
+    "required_choices": 1,
+    "correct_choices": [
+      0
+    ],
+    "correct_letter": "A",
+    "correct_letters": [
+      "A"
+    ]
   },
   {
     "id": "q_ch02_35",
@@ -1358,7 +2113,16 @@ window.SEG_QUESTIONS = [
     "explanation": "An empty cache requires cache warming; otherwise, a sudden flood of un-cached queries can overwhelm backend index shards.",
     "topic": "Cache Cold Start",
     "slide_ref": "2. Architecture of A Search Engine.pptx",
-    "answer": 0
+    "answer": 0,
+    "is_multi": false,
+    "required_choices": 1,
+    "correct_choices": [
+      0
+    ],
+    "correct_letter": "A",
+    "correct_letters": [
+      "A"
+    ]
   },
   {
     "id": "q_ch02_36",
@@ -1374,7 +2138,16 @@ window.SEG_QUESTIONS = [
     "explanation": "Sharding distributes the massive document collection across a cluster, enabling parallel query execution and scalable storage.",
     "topic": "Sharding Rationale",
     "slide_ref": "2. Architecture of A Search Engine.pptx",
-    "answer": 0
+    "answer": 0,
+    "is_multi": false,
+    "required_choices": 1,
+    "correct_choices": [
+      0
+    ],
+    "correct_letter": "A",
+    "correct_letters": [
+      "A"
+    ]
   },
   {
     "id": "q_ch02_37",
@@ -1390,7 +2163,16 @@ window.SEG_QUESTIONS = [
     "explanation": "Pagination retrieves and displays only the top results initially, fetching subsequent pages only on demand.",
     "topic": "Pagination",
     "slide_ref": "2. Architecture of A Search Engine.pptx",
-    "answer": 0
+    "answer": 0,
+    "is_multi": false,
+    "required_choices": 1,
+    "correct_choices": [
+      0
+    ],
+    "correct_letter": "A",
+    "correct_letters": [
+      "A"
+    ]
   },
   {
     "id": "q_ch02_38",
@@ -1406,7 +2188,16 @@ window.SEG_QUESTIONS = [
     "explanation": "Spell correction intercepts mistyped queries and suggests or automatically rewrites terms to match actual indexed content.",
     "topic": "Spell Correction Role",
     "slide_ref": "2. Architecture of A Search Engine.pptx",
-    "answer": 1
+    "answer": 1,
+    "is_multi": false,
+    "required_choices": 1,
+    "correct_choices": [
+      1
+    ],
+    "correct_letter": "B",
+    "correct_letters": [
+      "B"
+    ]
   },
   {
     "id": "q_ch02_39",
@@ -1422,7 +2213,16 @@ window.SEG_QUESTIONS = [
     "explanation": "A min-heap of size K keeps the K highest scores. Any new document score is compared against the minimum root; if greater, the root is replaced and heapified in O(log K).",
     "topic": "Top-K Min-Heap",
     "slide_ref": "2. Architecture of A Search Engine.pptx",
-    "answer": 0
+    "answer": 0,
+    "is_multi": false,
+    "required_choices": 1,
+    "correct_choices": [
+      0
+    ],
+    "correct_letter": "A",
+    "correct_letters": [
+      "A"
+    ]
   },
   {
     "id": "q_ch02_40",
@@ -1438,7 +2238,16 @@ window.SEG_QUESTIONS = [
     "explanation": "In the Vector Space Model, documents and queries are represented as multidimensional vectors of term weights.",
     "topic": "Document Vector Concept",
     "slide_ref": "2. Architecture of A Search Engine.pptx",
-    "answer": 1
+    "answer": 1,
+    "is_multi": false,
+    "required_choices": 1,
+    "correct_choices": [
+      1
+    ],
+    "correct_letter": "B",
+    "correct_letters": [
+      "B"
+    ]
   },
   {
     "id": "q_ch02_41",
@@ -1454,7 +2263,16 @@ window.SEG_QUESTIONS = [
     "explanation": "The inverted index only maps term -> docIDs. Once top docIDs are determined, a forward store (DocID -> URL, Title, Snippet text) hydrates the SERP.",
     "topic": "Forward Store / DocStore",
     "slide_ref": "2. Architecture of A Search Engine.pptx",
-    "answer": 0
+    "answer": 0,
+    "is_multi": false,
+    "required_choices": 1,
+    "correct_choices": [
+      0
+    ],
+    "correct_letter": "A",
+    "correct_letters": [
+      "A"
+    ]
   },
   {
     "id": "q_ch02_42",
@@ -1470,7 +2288,16 @@ window.SEG_QUESTIONS = [
     "explanation": "Compressed inverted lists fit better in fast RAM and transfer much faster across system buses, speeding up query execution despite decompression overhead.",
     "topic": "Index Compression Benefits",
     "slide_ref": "2. Architecture of A Search Engine.pptx",
-    "answer": 0
+    "answer": 0,
+    "is_multi": false,
+    "required_choices": 1,
+    "correct_choices": [
+      0
+    ],
+    "correct_letter": "A",
+    "correct_letters": [
+      "A"
+    ]
   },
   {
     "id": "q_ch02_43",
@@ -1486,7 +2313,16 @@ window.SEG_QUESTIONS = [
     "explanation": "Tiered architectures use an append-only in-memory real-time tier for breaking news, merged periodically into the main stable index.",
     "topic": "Tiered Indexing",
     "slide_ref": "2. Architecture of A Search Engine.pptx",
-    "answer": 1
+    "answer": 1,
+    "is_multi": false,
+    "required_choices": 1,
+    "correct_choices": [
+      1
+    ],
+    "correct_letter": "B",
+    "correct_letters": [
+      "B"
+    ]
   },
   {
     "id": "q_ch02_44",
@@ -1502,7 +2338,16 @@ window.SEG_QUESTIONS = [
     "explanation": "Recall = (Relevant Retrieved) / (Total Relevant in Collection), measuring the completeness of retrieval.",
     "topic": "Recall Metric",
     "slide_ref": "2. Architecture of A Search Engine.pptx",
-    "answer": 1
+    "answer": 1,
+    "is_multi": false,
+    "required_choices": 1,
+    "correct_choices": [
+      1
+    ],
+    "correct_letter": "B",
+    "correct_letters": [
+      "B"
+    ]
   },
   {
     "id": "q_ch02_45",
@@ -1518,7 +2363,16 @@ window.SEG_QUESTIONS = [
     "explanation": "Precision = (Relevant Retrieved) / (Total Retrieved), measuring the purity or quality of the returned results.",
     "topic": "Precision Metric",
     "slide_ref": "2. Architecture of A Search Engine.pptx",
-    "answer": 0
+    "answer": 0,
+    "is_multi": false,
+    "required_choices": 1,
+    "correct_choices": [
+      0
+    ],
+    "correct_letter": "A",
+    "correct_letters": [
+      "A"
+    ]
   },
   {
     "id": "q_ch02_46",
@@ -1534,7 +2388,16 @@ window.SEG_QUESTIONS = [
     "explanation": "Dynamic additions and deletions leave tombstoned entries and fragmented posting segments, requiring periodic index compaction and segment merging.",
     "topic": "Index Fragmentation",
     "slide_ref": "2. Architecture of A Search Engine.pptx",
-    "answer": 0
+    "answer": 0,
+    "is_multi": false,
+    "required_choices": 1,
+    "correct_choices": [
+      0
+    ],
+    "correct_letter": "A",
+    "correct_letters": [
+      "A"
+    ]
   },
   {
     "id": "q_ch02_47",
@@ -1550,7 +2413,16 @@ window.SEG_QUESTIONS = [
     "explanation": "Segment merging combines multiple small segments, performs a merge-sort on postings, reclaims space from deleted docs, and writes an optimized segment.",
     "topic": "Segment Merging",
     "slide_ref": "2. Architecture of A Search Engine.pptx",
-    "answer": 0
+    "answer": 0,
+    "is_multi": false,
+    "required_choices": 1,
+    "correct_choices": [
+      0
+    ],
+    "correct_letter": "A",
+    "correct_letters": [
+      "A"
+    ]
   },
   {
     "id": "q_ch02_48",
@@ -1566,7 +2438,16 @@ window.SEG_QUESTIONS = [
     "explanation": "Federated search distributes a single user query across heterogeneous, siloed internal databases and unifies the returned results.",
     "topic": "Federated Search",
     "slide_ref": "2. Architecture of A Search Engine.pptx",
-    "answer": 1
+    "answer": 1,
+    "is_multi": false,
+    "required_choices": 1,
+    "correct_choices": [
+      1
+    ],
+    "correct_letter": "B",
+    "correct_letters": [
+      "B"
+    ]
   },
   {
     "id": "q_ch02_49",
@@ -1582,7 +2463,16 @@ window.SEG_QUESTIONS = [
     "explanation": "Reverse proxies (e.g., Cloudflare, Nginx) sit in front of the application cluster for security, caching, SSL, and load routing.",
     "topic": "Reverse Proxy",
     "slide_ref": "2. Architecture of A Search Engine.pptx",
-    "answer": 1
+    "answer": 1,
+    "is_multi": false,
+    "required_choices": 1,
+    "correct_choices": [
+      1
+    ],
+    "correct_letter": "B",
+    "correct_letters": [
+      "B"
+    ]
   },
   {
     "id": "q_ch02_50",
@@ -1598,7 +2488,16 @@ window.SEG_QUESTIONS = [
     "explanation": "Tiered storage keeps hot posting lists (frequent query terms) in RAM and cold posting lists (rare terms) on SSDs/disks to reduce hardware costs.",
     "topic": "Tiered Storage",
     "slide_ref": "2. Architecture of A Search Engine.pptx",
-    "answer": 1
+    "answer": 1,
+    "is_multi": false,
+    "required_choices": 1,
+    "correct_choices": [
+      1
+    ],
+    "correct_letter": "B",
+    "correct_letters": [
+      "B"
+    ]
   },
   {
     "id": "q_ch03_01",
@@ -1614,7 +2513,16 @@ window.SEG_QUESTIONS = [
     "explanation": "The URL Frontier is the core data structure managing queues of discovered URLs, enforcing crawl priorities and politeness constraints.",
     "topic": "URL Frontier",
     "slide_ref": "3. Crawls and Feeds.pptx",
-    "answer": 1
+    "answer": 1,
+    "is_multi": false,
+    "required_choices": 1,
+    "correct_choices": [
+      1
+    ],
+    "correct_letter": "B",
+    "correct_letters": [
+      "B"
+    ]
   },
   {
     "id": "q_ch03_02",
@@ -1630,7 +2538,16 @@ window.SEG_QUESTIONS = [
     "explanation": "The Deep Web consists of content hidden behind dynamic form queries, logins, paywalls, or unlinked databases that standard web crawlers cannot discover via static links.",
     "topic": "Deep Web",
     "slide_ref": "3. Crawls and Feeds.pptx",
-    "answer": 2
+    "answer": 2,
+    "is_multi": false,
+    "required_choices": 1,
+    "correct_choices": [
+      2
+    ],
+    "correct_letter": "C",
+    "correct_letters": [
+      "C"
+    ]
   },
   {
     "id": "q_ch03_03",
@@ -1646,7 +2563,16 @@ window.SEG_QUESTIONS = [
     "explanation": "robots.txt is a voluntary standard placed at the root of a domain instructing automated bots which paths to avoid crawling.",
     "topic": "robots.txt",
     "slide_ref": "3. Crawls and Feeds.pptx",
-    "answer": 0
+    "answer": 0,
+    "is_multi": false,
+    "required_choices": 1,
+    "correct_choices": [
+      0
+    ],
+    "correct_letter": "A",
+    "correct_letters": [
+      "A"
+    ]
   },
   {
     "id": "q_ch03_04",
@@ -1662,7 +2588,16 @@ window.SEG_QUESTIONS = [
     "explanation": "Spider traps (e.g., dynamic perpetual calendars, session-ID loops) generate endless unique URLs, causing crawlers to waste resources indefinitely.",
     "topic": "Spider Traps",
     "slide_ref": "3. Crawls and Feeds.pptx",
-    "answer": 1
+    "answer": 1,
+    "is_multi": false,
+    "required_choices": 1,
+    "correct_choices": [
+      1
+    ],
+    "correct_letter": "B",
+    "correct_letters": [
+      "B"
+    ]
   },
   {
     "id": "q_ch03_05",
@@ -1678,7 +2613,16 @@ window.SEG_QUESTIONS = [
     "explanation": "Politeness policies restrict request rates per domain/IP (e.g., adding a delay of a few seconds between requests) to prevent server strain.",
     "topic": "Crawler Politeness",
     "slide_ref": "3. Crawls and Feeds.pptx",
-    "answer": 1
+    "answer": 1,
+    "is_multi": false,
+    "required_choices": 1,
+    "correct_choices": [
+      1
+    ],
+    "correct_letter": "B",
+    "correct_letters": [
+      "B"
+    ]
   },
   {
     "id": "q_ch03_06",
@@ -1694,7 +2638,16 @@ window.SEG_QUESTIONS = [
     "explanation": "Disallow: /admin/ tells compliant web crawlers not to request any resource under the /admin/ path.",
     "topic": "robots.txt Directives",
     "slide_ref": "3. Crawls and Feeds.pptx",
-    "answer": 1
+    "answer": 1,
+    "is_multi": false,
+    "required_choices": 1,
+    "correct_choices": [
+      1
+    ],
+    "correct_letter": "B",
+    "correct_letters": [
+      "B"
+    ]
   },
   {
     "id": "q_ch03_07",
@@ -1710,7 +2663,16 @@ window.SEG_QUESTIONS = [
     "explanation": "HTTP 301 signals permanent redirection, instructing the crawler to update its index and URL frontier with the new destination URL.",
     "topic": "HTTP Status Codes",
     "slide_ref": "3. Crawls and Feeds.pptx",
-    "answer": 1
+    "answer": 1,
+    "is_multi": false,
+    "required_choices": 1,
+    "correct_choices": [
+      1
+    ],
+    "correct_letter": "B",
+    "correct_letters": [
+      "B"
+    ]
   },
   {
     "id": "q_ch03_08",
@@ -1726,7 +2688,16 @@ window.SEG_QUESTIONS = [
     "explanation": "Freshness evaluates how closely the index mirrors the latest live content and updates of the web.",
     "topic": "Index Freshness",
     "slide_ref": "3. Crawls and Feeds.pptx",
-    "answer": 1
+    "answer": 1,
+    "is_multi": false,
+    "required_choices": 1,
+    "correct_choices": [
+      1
+    ],
+    "correct_letter": "B",
+    "correct_letters": [
+      "B"
+    ]
   },
   {
     "id": "q_ch03_09",
@@ -1742,7 +2713,16 @@ window.SEG_QUESTIONS = [
     "explanation": "Mercator is the landmark modular web crawler architecture that introduced the two-tier URL frontier design for politeness and priority.",
     "topic": "Mercator Crawler",
     "slide_ref": "3. Crawls and Feeds.pptx",
-    "answer": 0
+    "answer": 0,
+    "is_multi": false,
+    "required_choices": 1,
+    "correct_choices": [
+      0
+    ],
+    "correct_letter": "A",
+    "correct_letters": [
+      "A"
+    ]
   },
   {
     "id": "q_ch03_10",
@@ -1758,7 +2738,16 @@ window.SEG_QUESTIONS = [
     "explanation": "Standard synchronous DNS lookups block worker threads; high-performance crawlers implement custom asynchronous multi-threaded DNS caches.",
     "topic": "DNS Bottleneck",
     "slide_ref": "3. Crawls and Feeds.pptx",
-    "answer": 1
+    "answer": 1,
+    "is_multi": false,
+    "required_choices": 1,
+    "correct_choices": [
+      1
+    ],
+    "correct_letter": "B",
+    "correct_letters": [
+      "B"
+    ]
   },
   {
     "id": "q_ch03_11",
@@ -1774,7 +2763,16 @@ window.SEG_QUESTIONS = [
     "explanation": "XML Sitemaps explicitly declare canonical URLs, change frequencies, and last modification dates to guide search engine discovery.",
     "topic": "XML Sitemaps",
     "slide_ref": "3. Crawls and Feeds.pptx",
-    "answer": 1
+    "answer": 1,
+    "is_multi": false,
+    "required_choices": 1,
+    "correct_choices": [
+      1
+    ],
+    "correct_letter": "B",
+    "correct_letters": [
+      "B"
+    ]
   },
   {
     "id": "q_ch03_12",
@@ -1790,7 +2788,16 @@ window.SEG_QUESTIONS = [
     "explanation": "SimHash and MinHash are Locality-Sensitive Hashing (LSH) algorithms where similar documents produce hashes with small Hamming distances, ideal for near-duplicate detection.",
     "topic": "Near-Duplicate Detection",
     "slide_ref": "3. Crawls and Feeds.pptx",
-    "answer": 1
+    "answer": 1,
+    "is_multi": false,
+    "required_choices": 1,
+    "correct_choices": [
+      1
+    ],
+    "correct_letter": "B",
+    "correct_letters": [
+      "B"
+    ]
   },
   {
     "id": "q_ch03_13",
@@ -1806,7 +2813,16 @@ window.SEG_QUESTIONS = [
     "explanation": "Seed URLs are the starting points loaded into the URL frontier to initiate a broad or focused crawl.",
     "topic": "Seed URLs",
     "slide_ref": "3. Crawls and Feeds.pptx",
-    "answer": 0
+    "answer": 0,
+    "is_multi": false,
+    "required_choices": 1,
+    "correct_choices": [
+      0
+    ],
+    "correct_letter": "A",
+    "correct_letters": [
+      "A"
+    ]
   },
   {
     "id": "q_ch03_14",
@@ -1822,7 +2838,16 @@ window.SEG_QUESTIONS = [
     "explanation": "A seen URL filter checks whether a URL has already been visited or queued, preventing infinite loops and redundant crawls.",
     "topic": "Seen URL Filtering",
     "slide_ref": "3. Crawls and Feeds.pptx",
-    "answer": 0
+    "answer": 0,
+    "is_multi": false,
+    "required_choices": 1,
+    "correct_choices": [
+      0
+    ],
+    "correct_letter": "A",
+    "correct_letters": [
+      "A"
+    ]
   },
   {
     "id": "q_ch03_15",
@@ -1838,7 +2863,16 @@ window.SEG_QUESTIONS = [
     "explanation": "Bloom filters store millions of URL hashes in a compact bit array with zero false negatives and configurable low false-positive rates.",
     "topic": "Bloom Filter",
     "slide_ref": "3. Crawls and Feeds.pptx",
-    "answer": 1
+    "answer": 1,
+    "is_multi": false,
+    "required_choices": 1,
+    "correct_choices": [
+      1
+    ],
+    "correct_letter": "B",
+    "correct_letters": [
+      "B"
+    ]
   },
   {
     "id": "q_ch03_16",
@@ -1854,7 +2888,16 @@ window.SEG_QUESTIONS = [
     "explanation": "HTTP 429 Too Many Requests indicates the server is rate-limiting the crawler, requiring the crawler to back off.",
     "topic": "HTTP Rate Limiting",
     "slide_ref": "3. Crawls and Feeds.pptx",
-    "answer": 1
+    "answer": 1,
+    "is_multi": false,
+    "required_choices": 1,
+    "correct_choices": [
+      1
+    ],
+    "correct_letter": "B",
+    "correct_letters": [
+      "B"
+    ]
   },
   {
     "id": "q_ch03_17",
@@ -1870,7 +2913,16 @@ window.SEG_QUESTIONS = [
     "explanation": "Focused crawlers predict the topic relevance of unvisited links and prioritize URLs most likely to lead to on-topic content.",
     "topic": "Focused Crawling",
     "slide_ref": "3. Crawls and Feeds.pptx",
-    "answer": 1
+    "answer": 1,
+    "is_multi": false,
+    "required_choices": 1,
+    "correct_choices": [
+      1
+    ],
+    "correct_letter": "B",
+    "correct_letters": [
+      "B"
+    ]
   },
   {
     "id": "q_ch03_18",
@@ -1886,7 +2938,16 @@ window.SEG_QUESTIONS = [
     "explanation": "Boilerplate removal isolates the primary informational article body from site navigation, legal disclaimers, and banner ads.",
     "topic": "Boilerplate Removal",
     "slide_ref": "3. Crawls and Feeds.pptx",
-    "answer": 1
+    "answer": 1,
+    "is_multi": false,
+    "required_choices": 1,
+    "correct_choices": [
+      1
+    ],
+    "correct_letter": "B",
+    "correct_letters": [
+      "B"
+    ]
   },
   {
     "id": "q_ch03_19",
@@ -1902,7 +2963,16 @@ window.SEG_QUESTIONS = [
     "explanation": "Crawlers inspect headers and meta tags and fallback to statistical encoding detectors (like chardet or ICU) to convert pages to clean UTF-8.",
     "topic": "Character Encoding",
     "slide_ref": "3. Crawls and Feeds.pptx",
-    "answer": 1
+    "answer": 1,
+    "is_multi": false,
+    "required_choices": 1,
+    "correct_choices": [
+      1
+    ],
+    "correct_letter": "B",
+    "correct_letters": [
+      "B"
+    ]
   },
   {
     "id": "q_ch03_20",
@@ -1918,7 +2988,16 @@ window.SEG_QUESTIONS = [
     "explanation": "Crawl-delay specifies the pause interval in seconds between successive HTTP requests to avoid overloading the server.",
     "topic": "Crawl-delay",
     "slide_ref": "3. Crawls and Feeds.pptx",
-    "answer": 1
+    "answer": 1,
+    "is_multi": false,
+    "required_choices": 1,
+    "correct_choices": [
+      1
+    ],
+    "correct_letter": "B",
+    "correct_letters": [
+      "B"
+    ]
   },
   {
     "id": "q_ch03_21",
@@ -1934,7 +3013,16 @@ window.SEG_QUESTIONS = [
     "explanation": "BFS explores pages tier-by-tier by link depth, which naturally discovers high-authority, well-linked homepage links first.",
     "topic": "BFS Crawling",
     "slide_ref": "3. Crawls and Feeds.pptx",
-    "answer": 1
+    "answer": 1,
+    "is_multi": false,
+    "required_choices": 1,
+    "correct_choices": [
+      1
+    ],
+    "correct_letter": "B",
+    "correct_letters": [
+      "B"
+    ]
   },
   {
     "id": "q_ch03_22",
@@ -1950,7 +3038,16 @@ window.SEG_QUESTIONS = [
     "explanation": "DFS dives deeply down single paths, making it vulnerable to infinite dynamic paths and missing broad web coverage.",
     "topic": "DFS Weakness",
     "slide_ref": "3. Crawls and Feeds.pptx",
-    "answer": 0
+    "answer": 0,
+    "is_multi": false,
+    "required_choices": 1,
+    "correct_choices": [
+      0
+    ],
+    "correct_letter": "A",
+    "correct_letters": [
+      "A"
+    ]
   },
   {
     "id": "q_ch03_23",
@@ -1966,7 +3063,16 @@ window.SEG_QUESTIONS = [
     "explanation": "RSS/Atom feeds provide structured XML notifications of newly published articles, allowing search engines to ingest content instantly without re-crawling.",
     "topic": "Web Feeds",
     "slide_ref": "3. Crawls and Feeds.pptx",
-    "answer": 0
+    "answer": 0,
+    "is_multi": false,
+    "required_choices": 1,
+    "correct_choices": [
+      0
+    ],
+    "correct_letter": "A",
+    "correct_letters": [
+      "A"
+    ]
   },
   {
     "id": "q_ch03_24",
@@ -1982,7 +3088,16 @@ window.SEG_QUESTIONS = [
     "explanation": "Page-level robots meta tags allow fine-grained indexing control (noindex, nofollow, noarchive) per HTML document.",
     "topic": "Robots Meta Tags",
     "slide_ref": "3. Crawls and Feeds.pptx",
-    "answer": 0
+    "answer": 0,
+    "is_multi": false,
+    "required_choices": 1,
+    "correct_choices": [
+      0
+    ],
+    "correct_letter": "A",
+    "correct_letters": [
+      "A"
+    ]
   },
   {
     "id": "q_ch03_25",
@@ -1998,7 +3113,16 @@ window.SEG_QUESTIONS = [
     "explanation": "Introduced in 2005, rel='nofollow' tells search engines that the link is untrusted, paid, or user-generated, preventing link spam endorsement.",
     "topic": "rel=nofollow",
     "slide_ref": "3. Crawls and Feeds.pptx",
-    "answer": 1
+    "answer": 1,
+    "is_multi": false,
+    "required_choices": 1,
+    "correct_choices": [
+      1
+    ],
+    "correct_letter": "B",
+    "correct_letters": [
+      "B"
+    ]
   },
   {
     "id": "q_ch03_26",
@@ -2014,7 +3138,16 @@ window.SEG_QUESTIONS = [
     "explanation": "Canonicalization transforms varied URL representations (http://site.com:80/index.html vs https://site.com/) into a unique standard form.",
     "topic": "URL Canonicalization",
     "slide_ref": "3. Crawls and Feeds.pptx",
-    "answer": 0
+    "answer": 0,
+    "is_multi": false,
+    "required_choices": 1,
+    "correct_choices": [
+      0
+    ],
+    "correct_letter": "A",
+    "correct_letters": [
+      "A"
+    ]
   },
   {
     "id": "q_ch03_27",
@@ -2030,7 +3163,16 @@ window.SEG_QUESTIONS = [
     "explanation": "The canonical link tag declares the authoritative version among duplicate or syndicated pages, consolidating ranking signals to one URL.",
     "topic": "Canonical Tags",
     "slide_ref": "3. Crawls and Feeds.pptx",
-    "answer": 0
+    "answer": 0,
+    "is_multi": false,
+    "required_choices": 1,
+    "correct_choices": [
+      0
+    ],
+    "correct_letter": "A",
+    "correct_letters": [
+      "A"
+    ]
   },
   {
     "id": "q_ch03_28",
@@ -2046,7 +3188,16 @@ window.SEG_QUESTIONS = [
     "explanation": "Mercator maintains separate FIFO queues for each host and enforces a delay between accesses to the same host using a priority heap of timestamps.",
     "topic": "Mercator Politeness Queues",
     "slide_ref": "3. Crawls and Feeds.pptx",
-    "answer": 0
+    "answer": 0,
+    "is_multi": false,
+    "required_choices": 1,
+    "correct_choices": [
+      0
+    ],
+    "correct_letter": "A",
+    "correct_letters": [
+      "A"
+    ]
   },
   {
     "id": "q_ch03_29",
@@ -2062,7 +3213,16 @@ window.SEG_QUESTIONS = [
     "explanation": "Single-Page Apps (SPAs) require headless browsers (e.g., Chromium, Puppeteer) to execute JavaScript before content can be extracted.",
     "topic": "JavaScript Crawling",
     "slide_ref": "3. Crawls and Feeds.pptx",
-    "answer": 1
+    "answer": 1,
+    "is_multi": false,
+    "required_choices": 1,
+    "correct_choices": [
+      1
+    ],
+    "correct_letter": "B",
+    "correct_letters": [
+      "B"
+    ]
   },
   {
     "id": "q_ch03_30",
@@ -2078,7 +3238,16 @@ window.SEG_QUESTIONS = [
     "explanation": "Headless browsers run browser engines programmatically to render client-side JavaScript, execute DOM events, and extract dynamically injected text.",
     "topic": "Headless Browsers",
     "slide_ref": "3. Crawls and Feeds.pptx",
-    "answer": 1
+    "answer": 1,
+    "is_multi": false,
+    "required_choices": 1,
+    "correct_choices": [
+      1
+    ],
+    "correct_letter": "B",
+    "correct_letters": [
+      "B"
+    ]
   },
   {
     "id": "q_ch03_31",
@@ -2094,7 +3263,16 @@ window.SEG_QUESTIONS = [
     "explanation": "Crawl budget is the combination of crawl rate limit (host capacity) and crawl demand (page popularity/importance).",
     "topic": "Crawl Budget",
     "slide_ref": "3. Crawls and Feeds.pptx",
-    "answer": 1
+    "answer": 1,
+    "is_multi": false,
+    "required_choices": 1,
+    "correct_choices": [
+      1
+    ],
+    "correct_letter": "B",
+    "correct_letters": [
+      "B"
+    ]
   },
   {
     "id": "q_ch03_32",
@@ -2110,7 +3288,16 @@ window.SEG_QUESTIONS = [
     "explanation": "The Last-Modified header, paired with the crawler's conditional GET (If-Modified-Since), allows servers to return 304 Not Modified to save bandwidth.",
     "topic": "HTTP Conditional GET",
     "slide_ref": "3. Crawls and Feeds.pptx",
-    "answer": 0
+    "answer": 0,
+    "is_multi": false,
+    "required_choices": 1,
+    "correct_choices": [
+      0
+    ],
+    "correct_letter": "A",
+    "correct_letters": [
+      "A"
+    ]
   },
   {
     "id": "q_ch03_33",
@@ -2126,7 +3313,16 @@ window.SEG_QUESTIONS = [
     "explanation": "HTTP 304 Not Modified indicates the cached copy is still fresh, transmitting zero response body and saving massive network transfer.",
     "topic": "HTTP 304 Not Modified",
     "slide_ref": "3. Crawls and Feeds.pptx",
-    "answer": 1
+    "answer": 1,
+    "is_multi": false,
+    "required_choices": 1,
+    "correct_choices": [
+      1
+    ],
+    "correct_letter": "B",
+    "correct_letters": [
+      "B"
+    ]
   },
   {
     "id": "q_ch03_34",
@@ -2142,7 +3338,16 @@ window.SEG_QUESTIONS = [
     "explanation": "Distributed crawlers hash the domain name to route URLs to designated crawler workers, ensuring politeness is maintained per domain.",
     "topic": "Distributed Crawling",
     "slide_ref": "3. Crawls and Feeds.pptx",
-    "answer": 0
+    "answer": 0,
+    "is_multi": false,
+    "required_choices": 1,
+    "correct_choices": [
+      0
+    ],
+    "correct_letter": "A",
+    "correct_letters": [
+      "A"
+    ]
   },
   {
     "id": "q_ch03_35",
@@ -2158,7 +3363,16 @@ window.SEG_QUESTIONS = [
     "explanation": "ETags provide validation tokens; crawlers use 'If-None-Match' with the ETag to check if content has changed without downloading the full body.",
     "topic": "HTTP ETag",
     "slide_ref": "3. Crawls and Feeds.pptx",
-    "answer": 1
+    "answer": 1,
+    "is_multi": false,
+    "required_choices": 1,
+    "correct_choices": [
+      1
+    ],
+    "correct_letter": "B",
+    "correct_letters": [
+      "B"
+    ]
   },
   {
     "id": "q_ch03_36",
@@ -2174,7 +3388,16 @@ window.SEG_QUESTIONS = [
     "explanation": "Crawling duplicate mirrors wastes significant crawler capacity that could otherwise discover fresh, unique content.",
     "topic": "Duplicate Content Impact",
     "slide_ref": "3. Crawls and Feeds.pptx",
-    "answer": 0
+    "answer": 0,
+    "is_multi": false,
+    "required_choices": 1,
+    "correct_choices": [
+      0
+    ],
+    "correct_letter": "A",
+    "correct_letters": [
+      "A"
+    ]
   },
   {
     "id": "q_ch03_37",
@@ -2190,7 +3413,16 @@ window.SEG_QUESTIONS = [
     "explanation": "In SimHash, documents that differ in only a few words produce fingerprints with a very small Hamming distance (typically <= 3 bits).",
     "topic": "SimHash Hamming Distance",
     "slide_ref": "3. Crawls and Feeds.pptx",
-    "answer": 1
+    "answer": 1,
+    "is_multi": false,
+    "required_choices": 1,
+    "correct_choices": [
+      1
+    ],
+    "correct_letter": "B",
+    "correct_letters": [
+      "B"
+    ]
   },
   {
     "id": "q_ch03_38",
@@ -2206,7 +3438,16 @@ window.SEG_QUESTIONS = [
     "explanation": "W-shingling decomposes text into overlapping word sequences (e.g., 5-grams), turning near-duplicate detection into a set intersection problem.",
     "topic": "Shingling",
     "slide_ref": "3. Crawls and Feeds.pptx",
-    "answer": 1
+    "answer": 1,
+    "is_multi": false,
+    "required_choices": 1,
+    "correct_choices": [
+      1
+    ],
+    "correct_letter": "B",
+    "correct_letters": [
+      "B"
+    ]
   },
   {
     "id": "q_ch03_39",
@@ -2222,7 +3463,16 @@ window.SEG_QUESTIONS = [
     "explanation": "Jaccard similarity is the ratio of the intersection of two sets over their union, ranging from 0.0 (disjoint) to 1.0 (identical).",
     "topic": "Jaccard Similarity",
     "slide_ref": "3. Crawls and Feeds.pptx",
-    "answer": 0
+    "answer": 0,
+    "is_multi": false,
+    "required_choices": 1,
+    "correct_choices": [
+      0
+    ],
+    "correct_letter": "A",
+    "correct_letters": [
+      "A"
+    ]
   },
   {
     "id": "q_ch03_40",
@@ -2238,7 +3488,16 @@ window.SEG_QUESTIONS = [
     "explanation": "MinHash produces compact sketch signatures where the probability of two hashes matching equals the Jaccard similarity of the original sets.",
     "topic": "MinHash Concept",
     "slide_ref": "3. Crawls and Feeds.pptx",
-    "answer": 0
+    "answer": 0,
+    "is_multi": false,
+    "required_choices": 1,
+    "correct_choices": [
+      0
+    ],
+    "correct_letter": "A",
+    "correct_letters": [
+      "A"
+    ]
   },
   {
     "id": "q_ch03_41",
@@ -2254,7 +3513,16 @@ window.SEG_QUESTIONS = [
     "explanation": "Honeypots use hidden links (e.g., display:none) that real users never click; any bot following them is identified as an aggressive scraper and blocked.",
     "topic": "Honeypot Traps",
     "slide_ref": "3. Crawls and Feeds.pptx",
-    "answer": 0
+    "answer": 0,
+    "is_multi": false,
+    "required_choices": 1,
+    "correct_choices": [
+      0
+    ],
+    "correct_letter": "A",
+    "correct_letters": [
+      "A"
+    ]
   },
   {
     "id": "q_ch03_42",
@@ -2270,7 +3538,16 @@ window.SEG_QUESTIONS = [
     "explanation": "URL normalization eliminates superficial syntactic differences, preventing duplicate downloads and wasted crawler bandwidth.",
     "topic": "URL Normalization",
     "slide_ref": "3. Crawls and Feeds.pptx",
-    "answer": 0
+    "answer": 0,
+    "is_multi": false,
+    "required_choices": 1,
+    "correct_choices": [
+      0
+    ],
+    "correct_letter": "A",
+    "correct_letters": [
+      "A"
+    ]
   },
   {
     "id": "q_ch03_43",
@@ -2286,7 +3563,16 @@ window.SEG_QUESTIONS = [
     "explanation": "A basic FIFO queue fetches URLs in order of discovery, but lacks priority differentiation and per-host politeness guarantees.",
     "topic": "FIFO Frontier",
     "slide_ref": "3. Crawls and Feeds.pptx",
-    "answer": 0
+    "answer": 0,
+    "is_multi": false,
+    "required_choices": 1,
+    "correct_choices": [
+      0
+    ],
+    "correct_letter": "A",
+    "correct_letters": [
+      "A"
+    ]
   },
   {
     "id": "q_ch03_44",
@@ -2302,7 +3588,16 @@ window.SEG_QUESTIONS = [
     "explanation": "Re-crawl schedulers model page dynamics (often using Poisson processes) and page importance so valuable, fast-changing pages stay fresh.",
     "topic": "Re-crawl Scheduling",
     "slide_ref": "3. Crawls and Feeds.pptx",
-    "answer": 0
+    "answer": 0,
+    "is_multi": false,
+    "required_choices": 1,
+    "correct_choices": [
+      0
+    ],
+    "correct_letter": "A",
+    "correct_letters": [
+      "A"
+    ]
   },
   {
     "id": "q_ch03_45",
@@ -2318,7 +3613,16 @@ window.SEG_QUESTIONS = [
     "explanation": "Client-side redirects occur inside the rendered page via JavaScript or meta refresh, requiring parsers or browser engines to detect them.",
     "topic": "Client-Side Redirects",
     "slide_ref": "3. Crawls and Feeds.pptx",
-    "answer": 1
+    "answer": 1,
+    "is_multi": false,
+    "required_choices": 1,
+    "correct_choices": [
+      1
+    ],
+    "correct_letter": "B",
+    "correct_letters": [
+      "B"
+    ]
   },
   {
     "id": "q_ch03_46",
@@ -2334,7 +3638,16 @@ window.SEG_QUESTIONS = [
     "explanation": "Web archives capture and preserve temporal snapshots of the World Wide Web for historical research and digital preservation.",
     "topic": "Web Archives",
     "slide_ref": "3. Crawls and Feeds.pptx",
-    "answer": 1
+    "answer": 1,
+    "is_multi": false,
+    "required_choices": 1,
+    "correct_choices": [
+      1
+    ],
+    "correct_letter": "B",
+    "correct_letters": [
+      "B"
+    ]
   },
   {
     "id": "q_ch03_47",
@@ -2350,7 +3663,16 @@ window.SEG_QUESTIONS = [
     "explanation": "Sending Accept-Encoding: gzip, deflate, br enables HTTP compression, cutting data transfer volume by 70-80%.",
     "topic": "HTTP Compression",
     "slide_ref": "3. Crawls and Feeds.pptx",
-    "answer": 1
+    "answer": 1,
+    "is_multi": false,
+    "required_choices": 1,
+    "correct_choices": [
+      1
+    ],
+    "correct_letter": "B",
+    "correct_letters": [
+      "B"
+    ]
   },
   {
     "id": "q_ch03_48",
@@ -2366,7 +3688,16 @@ window.SEG_QUESTIONS = [
     "explanation": "Polite crawlers enforce default backoff delays and monitor server latency, slowing down automatically if the server shows signs of strain.",
     "topic": "Adaptive Politeness",
     "slide_ref": "3. Crawls and Feeds.pptx",
-    "answer": 0
+    "answer": 0,
+    "is_multi": false,
+    "required_choices": 1,
+    "correct_choices": [
+      0
+    ],
+    "correct_letter": "A",
+    "correct_letters": [
+      "A"
+    ]
   },
   {
     "id": "q_ch03_49",
@@ -2382,7 +3713,16 @@ window.SEG_QUESTIONS = [
     "explanation": "Analytics tracking tags (UTM tags, click IDs) create infinite duplicate URLs for the same underlying document and should be stripped.",
     "topic": "Query Parameter Stripping",
     "slide_ref": "3. Crawls and Feeds.pptx",
-    "answer": 1
+    "answer": 1,
+    "is_multi": false,
+    "required_choices": 1,
+    "correct_choices": [
+      1
+    ],
+    "correct_letter": "B",
+    "correct_letters": [
+      "B"
+    ]
   },
   {
     "id": "q_ch03_50",
@@ -2398,7 +3738,16 @@ window.SEG_QUESTIONS = [
     "explanation": "Link extraction discovers outgoing edges on crawled pages, converts relative paths to absolute URLs, and feeds new targets into the crawler frontier.",
     "topic": "Link Extraction",
     "slide_ref": "3. Crawls and Feeds.pptx",
-    "answer": 1
+    "answer": 1,
+    "is_multi": false,
+    "required_choices": 1,
+    "correct_choices": [
+      1
+    ],
+    "correct_letter": "B",
+    "correct_letters": [
+      "B"
+    ]
   },
   {
     "id": "q_ch04_01",
@@ -2414,7 +3763,16 @@ window.SEG_QUESTIONS = [
     "explanation": "Zipf's Law states that the r-th most frequent word has frequency approximately proportional to 1/r, meaning a few words occur extremely frequently while most occur rarely.",
     "topic": "Zipf's Law",
     "slide_ref": "4. Processing Text.pptx",
-    "answer": 1
+    "answer": 1,
+    "is_multi": false,
+    "required_choices": 1,
+    "correct_choices": [
+      1
+    ],
+    "correct_letter": "B",
+    "correct_letters": [
+      "B"
+    ]
   },
   {
     "id": "q_ch04_02",
@@ -2430,7 +3788,16 @@ window.SEG_QUESTIONS = [
     "explanation": "By Zipf's Law, f(r) = f(1) / r. For r = 10, f(10) ≈ 100,000 / 10 = 10,000.",
     "topic": "Zipf Calculation",
     "slide_ref": "4. Processing Text.pptx",
-    "answer": 0
+    "answer": 0,
+    "is_multi": false,
+    "required_choices": 1,
+    "correct_choices": [
+      0
+    ],
+    "correct_letter": "A",
+    "correct_letters": [
+      "A"
+    ]
   },
   {
     "id": "q_ch04_03",
@@ -2446,7 +3813,16 @@ window.SEG_QUESTIONS = [
     "explanation": "Heaps' Law models vocabulary growth: V = k * N^beta (where typical beta is between 0.4 and 0.6), showing vocabulary continues to grow sublinearly and never completely saturates.",
     "topic": "Heaps' Law",
     "slide_ref": "4. Processing Text.pptx",
-    "answer": 1
+    "answer": 1,
+    "is_multi": false,
+    "required_choices": 1,
+    "correct_choices": [
+      1
+    ],
+    "correct_letter": "B",
+    "correct_letters": [
+      "B"
+    ]
   },
   {
     "id": "q_ch04_04",
@@ -2462,7 +3838,16 @@ window.SEG_QUESTIONS = [
     "explanation": "Empirically, beta is typically around 0.4 to 0.6, reflecting the power-law sublinear growth of unique words as corpus size N expands.",
     "topic": "Heaps' Law Parameters",
     "slide_ref": "4. Processing Text.pptx",
-    "answer": 1
+    "answer": 1,
+    "is_multi": false,
+    "required_choices": 1,
+    "correct_choices": [
+      1
+    ],
+    "correct_letter": "B",
+    "correct_letters": [
+      "B"
+    ]
   },
   {
     "id": "q_ch04_05",
@@ -2478,7 +3863,16 @@ window.SEG_QUESTIONS = [
     "explanation": "Stemming (e.g., Porter) strips suffixes algorithmically (producing e.g. 'comput' from 'computation'); Lemmatization reduces words to valid dictionary headwords (e.g., 'better' -> 'good').",
     "topic": "Stemming vs Lemmatization",
     "slide_ref": "4. Processing Text.pptx",
-    "answer": 1
+    "answer": 1,
+    "is_multi": false,
+    "required_choices": 1,
+    "correct_choices": [
+      1
+    ],
+    "correct_letter": "B",
+    "correct_letters": [
+      "B"
+    ]
   },
   {
     "id": "q_ch04_06",
@@ -2494,7 +3888,16 @@ window.SEG_QUESTIONS = [
     "explanation": "The Porter Stemmer is the standard algorithmic 5-phase suffix-stripping algorithm for English text retrieval.",
     "topic": "Porter Stemmer",
     "slide_ref": "4. Processing Text.pptx",
-    "answer": 1
+    "answer": 1,
+    "is_multi": false,
+    "required_choices": 1,
+    "correct_choices": [
+      1
+    ],
+    "correct_letter": "B",
+    "correct_letters": [
+      "B"
+    ]
   },
   {
     "id": "q_ch04_07",
@@ -2510,7 +3913,16 @@ window.SEG_QUESTIONS = [
     "explanation": "The Porter Stemmer strips common suffixes like '-ion', '-ive', and '-ed' to map related forms to the common root 'connect'.",
     "topic": "Porter Stemming Example",
     "slide_ref": "4. Processing Text.pptx",
-    "answer": 0
+    "answer": 0,
+    "is_multi": false,
+    "required_choices": 1,
+    "correct_choices": [
+      0
+    ],
+    "correct_letter": "A",
+    "correct_letters": [
+      "A"
+    ]
   },
   {
     "id": "q_ch04_08",
@@ -2526,7 +3938,16 @@ window.SEG_QUESTIONS = [
     "explanation": "Case folding maps all uppercase letters to lowercase so that 'Search', 'SEARCH', and 'search' all match the same term.",
     "topic": "Case Folding",
     "slide_ref": "4. Processing Text.pptx",
-    "answer": 1
+    "answer": 1,
+    "is_multi": false,
+    "required_choices": 1,
+    "correct_choices": [
+      1
+    ],
+    "correct_letter": "B",
+    "correct_letters": [
+      "B"
+    ]
   },
   {
     "id": "q_ch04_09",
@@ -2542,7 +3963,16 @@ window.SEG_QUESTIONS = [
     "explanation": "Aggressive lowercasing loses capitalization signals useful for Named Entity Recognition and disambiguation (e.g., 'CAT' scan vs 'cat' animal).",
     "topic": "Case Folding Trade-offs",
     "slide_ref": "4. Processing Text.pptx",
-    "answer": 1
+    "answer": 1,
+    "is_multi": false,
+    "required_choices": 1,
+    "correct_choices": [
+      1
+    ],
+    "correct_letter": "B",
+    "correct_letters": [
+      "B"
+    ]
   },
   {
     "id": "q_ch04_10",
@@ -2558,7 +3988,16 @@ window.SEG_QUESTIONS = [
     "explanation": "Tokenizers must balance treating 'state-of-the-art' as a single phrase vs allowing users who search for 'art' or 'state' to match individual components.",
     "topic": "Tokenization Challenges",
     "slide_ref": "4. Processing Text.pptx",
-    "answer": 0
+    "answer": 0,
+    "is_multi": false,
+    "required_choices": 1,
+    "correct_choices": [
+      0
+    ],
+    "correct_letter": "A",
+    "correct_letters": [
+      "A"
+    ]
   },
   {
     "id": "q_ch04_11",
@@ -2574,7 +4013,16 @@ window.SEG_QUESTIONS = [
     "explanation": "An n-gram is a contiguous sequence of n items (unigrams n=1, bigrams n=2, trigrams n=3) from a text sequence.",
     "topic": "N-Grams",
     "slide_ref": "4. Processing Text.pptx",
-    "answer": 1
+    "answer": 1,
+    "is_multi": false,
+    "required_choices": 1,
+    "correct_choices": [
+      1
+    ],
+    "correct_letter": "B",
+    "correct_letters": [
+      "B"
+    ]
   },
   {
     "id": "q_ch04_12",
@@ -2590,7 +4038,16 @@ window.SEG_QUESTIONS = [
     "explanation": "Subword character n-grams (e.g., 'appl', 'pple') match partial strings even if typos exist, enabling robust fuzzy matching.",
     "topic": "Character N-Grams",
     "slide_ref": "4. Processing Text.pptx",
-    "answer": 0
+    "answer": 0,
+    "is_multi": false,
+    "required_choices": 1,
+    "correct_choices": [
+      0
+    ],
+    "correct_letter": "A",
+    "correct_letters": [
+      "A"
+    ]
   },
   {
     "id": "q_ch04_13",
@@ -2606,7 +4063,16 @@ window.SEG_QUESTIONS = [
     "explanation": "NER identifies and tags real-world entities (e.g., 'Google' -> ORG, 'Paris' -> LOC, '2024' -> DATE) to enable entity search and knowledge graph linking.",
     "topic": "Named Entity Recognition",
     "slide_ref": "4. Processing Text.pptx",
-    "answer": 1
+    "answer": 1,
+    "is_multi": false,
+    "required_choices": 1,
+    "correct_choices": [
+      1
+    ],
+    "correct_letter": "B",
+    "correct_letters": [
+      "B"
+    ]
   },
   {
     "id": "q_ch04_14",
@@ -2622,7 +4088,16 @@ window.SEG_QUESTIONS = [
     "explanation": "POS taggers assign grammatical categories (NN for noun, VB for verb, JJ for adjective) to help disambiguate word senses (e.g., 'run' as a verb vs noun).",
     "topic": "POS Tagging",
     "slide_ref": "4. Processing Text.pptx",
-    "answer": 1
+    "answer": 1,
+    "is_multi": false,
+    "required_choices": 1,
+    "correct_choices": [
+      1
+    ],
+    "correct_letter": "B",
+    "correct_letters": [
+      "B"
+    ]
   },
   {
     "id": "q_ch04_15",
@@ -2638,7 +4113,16 @@ window.SEG_QUESTIONS = [
     "explanation": "Anchor text provides external editorial summaries of the target page (e.g., thousands of links saying 'IBM' pointing to ibm.com).",
     "topic": "Anchor Text Weighting",
     "slide_ref": "4. Processing Text.pptx",
-    "answer": 0
+    "answer": 0,
+    "is_multi": false,
+    "required_choices": 1,
+    "correct_choices": [
+      0
+    ],
+    "correct_letter": "A",
+    "correct_letters": [
+      "A"
+    ]
   },
   {
     "id": "q_ch04_16",
@@ -2654,7 +4138,16 @@ window.SEG_QUESTIONS = [
     "explanation": "The Krovetz stemmer is a dictionary-checked inflectional stemmer that only removes grammatical plurals and past tenses, producing real words.",
     "topic": "Krovetz Stemmer",
     "slide_ref": "4. Processing Text.pptx",
-    "answer": 0
+    "answer": 0,
+    "is_multi": false,
+    "required_choices": 1,
+    "correct_choices": [
+      0
+    ],
+    "correct_letter": "A",
+    "correct_letters": [
+      "A"
+    ]
   },
   {
     "id": "q_ch04_17",
@@ -2670,7 +4163,16 @@ window.SEG_QUESTIONS = [
     "explanation": "Over-stemming occurs when words with different meanings are aggressively chopped to the same root, harming precision.",
     "topic": "Over-stemming",
     "slide_ref": "4. Processing Text.pptx",
-    "answer": 1
+    "answer": 1,
+    "is_multi": false,
+    "required_choices": 1,
+    "correct_choices": [
+      1
+    ],
+    "correct_letter": "B",
+    "correct_letters": [
+      "B"
+    ]
   },
   {
     "id": "q_ch04_18",
@@ -2686,7 +4188,16 @@ window.SEG_QUESTIONS = [
     "explanation": "Under-stemming occurs when related words are not grouped together, harming recall.",
     "topic": "Under-stemming",
     "slide_ref": "4. Processing Text.pptx",
-    "answer": 0
+    "answer": 0,
+    "is_multi": false,
+    "required_choices": 1,
+    "correct_choices": [
+      0
+    ],
+    "correct_letter": "A",
+    "correct_letters": [
+      "A"
+    ]
   },
   {
     "id": "q_ch04_19",
@@ -2702,7 +4213,16 @@ window.SEG_QUESTIONS = [
     "explanation": "Chinese, Japanese, and Thai do not use spaces between words, requiring statistical word segmentation (e.g., Jieba, Hidden Markov Models).",
     "topic": "Word Segmentation",
     "slide_ref": "4. Processing Text.pptx",
-    "answer": 1
+    "answer": 1,
+    "is_multi": false,
+    "required_choices": 1,
+    "correct_choices": [
+      1
+    ],
+    "correct_letter": "B",
+    "correct_letters": [
+      "B"
+    ]
   },
   {
     "id": "q_ch04_20",
@@ -2718,7 +4238,16 @@ window.SEG_QUESTIONS = [
     "explanation": "Unicode allows multiple binary encodings for identical visual glyphs; normalization ensures consistent binary term representations.",
     "topic": "Unicode Normalization",
     "slide_ref": "4. Processing Text.pptx",
-    "answer": 1
+    "answer": 1,
+    "is_multi": false,
+    "required_choices": 1,
+    "correct_choices": [
+      1
+    ],
+    "correct_letter": "B",
+    "correct_letters": [
+      "B"
+    ]
   },
   {
     "id": "q_ch04_21",
@@ -2734,7 +4263,16 @@ window.SEG_QUESTIONS = [
     "explanation": "TTR = V / N measures the vocabulary richness or diversity of a text collection.",
     "topic": "Type-Token Ratio",
     "slide_ref": "4. Processing Text.pptx",
-    "answer": 1
+    "answer": 1,
+    "is_multi": false,
+    "required_choices": 1,
+    "correct_choices": [
+      1
+    ],
+    "correct_letter": "B",
+    "correct_letters": [
+      "B"
+    ]
   },
   {
     "id": "q_ch04_22",
@@ -2750,7 +4288,16 @@ window.SEG_QUESTIONS = [
     "explanation": "Hapax legomena are words that appear only once in a corpus; under Zipf's law, roughly 40-50% of unique vocabulary terms in large corpora are hapax legomena.",
     "topic": "Hapax Legomenon",
     "slide_ref": "4. Processing Text.pptx",
-    "answer": 0
+    "answer": 0,
+    "is_multi": false,
+    "required_choices": 1,
+    "correct_choices": [
+      0
+    ],
+    "correct_letter": "A",
+    "correct_letters": [
+      "A"
+    ]
   },
   {
     "id": "q_ch04_23",
@@ -2766,7 +4313,16 @@ window.SEG_QUESTIONS = [
     "explanation": "Stripping all alphanumeric tokens saves storage but destroys search capability for product IDs, formulas, dates, and versions.",
     "topic": "Token Filtering Trade-offs",
     "slide_ref": "4. Processing Text.pptx",
-    "answer": 0
+    "answer": 0,
+    "is_multi": false,
+    "required_choices": 1,
+    "correct_choices": [
+      0
+    ],
+    "correct_letter": "A",
+    "correct_letters": [
+      "A"
+    ]
   },
   {
     "id": "q_ch04_24",
@@ -2782,7 +4338,16 @@ window.SEG_QUESTIONS = [
     "explanation": "Collocations are statistically significant recurring word pairs or phrases identified via Mutual Information or Chi-square tests.",
     "topic": "Collocation Extraction",
     "slide_ref": "4. Processing Text.pptx",
-    "answer": 1
+    "answer": 1,
+    "is_multi": false,
+    "required_choices": 1,
+    "correct_choices": [
+      1
+    ],
+    "correct_letter": "B",
+    "correct_letters": [
+      "B"
+    ]
   },
   {
     "id": "q_ch04_25",
@@ -2798,7 +4363,16 @@ window.SEG_QUESTIONS = [
     "explanation": "Pointwise Mutual Information (PMI = log( P(w1, w2) / (P(w1) * P(w2)) )) quantifies how much more often two terms co-occur than expected by independent chance.",
     "topic": "Mutual Information",
     "slide_ref": "4. Processing Text.pptx",
-    "answer": 0
+    "answer": 0,
+    "is_multi": false,
+    "required_choices": 1,
+    "correct_choices": [
+      0
+    ],
+    "correct_letter": "A",
+    "correct_letters": [
+      "A"
+    ]
   },
   {
     "id": "q_ch04_26",
@@ -2814,7 +4388,16 @@ window.SEG_QUESTIONS = [
     "explanation": "IDF discounts common words and boosts discriminative rare words that pinpoint specific topics.",
     "topic": "IDF Motivation",
     "slide_ref": "4. Processing Text.pptx",
-    "answer": 0
+    "answer": 0,
+    "is_multi": false,
+    "required_choices": 1,
+    "correct_choices": [
+      0
+    ],
+    "correct_letter": "A",
+    "correct_letters": [
+      "A"
+    ]
   },
   {
     "id": "q_ch04_27",
@@ -2830,7 +4413,16 @@ window.SEG_QUESTIONS = [
     "explanation": "Lemmatization requires knowing whether a word like 'saw' is a noun (the cutting tool -> lemma 'saw') or past verb of 'see' (lemma 'see').",
     "topic": "Lemmatization Context",
     "slide_ref": "4. Processing Text.pptx",
-    "answer": 0
+    "answer": 0,
+    "is_multi": false,
+    "required_choices": 1,
+    "correct_choices": [
+      0
+    ],
+    "correct_letter": "A",
+    "correct_letters": [
+      "A"
+    ]
   },
   {
     "id": "q_ch04_28",
@@ -2846,7 +4438,16 @@ window.SEG_QUESTIONS = [
     "explanation": "NLTK is the classic Python toolkit containing standard tokenizers, stemmers, POS taggers, and linguistic lexicons.",
     "topic": "NLTK Library",
     "slide_ref": "4. Processing Text.pptx",
-    "answer": 0
+    "answer": 0,
+    "is_multi": false,
+    "required_choices": 1,
+    "correct_choices": [
+      0
+    ],
+    "correct_letter": "A",
+    "correct_letters": [
+      "A"
+    ]
   },
   {
     "id": "q_ch04_29",
@@ -2862,7 +4463,16 @@ window.SEG_QUESTIONS = [
     "explanation": "BPE and WordPiece break unfamiliar words (e.g., 'unhappiness') into known subwords ('un', 'happi', 'ness'), handling OOV words seamlessly.",
     "topic": "Subword Tokenization",
     "slide_ref": "4. Processing Text.pptx",
-    "answer": 1
+    "answer": 1,
+    "is_multi": false,
+    "required_choices": 1,
+    "correct_choices": [
+      1
+    ],
+    "correct_letter": "B",
+    "correct_letters": [
+      "B"
+    ]
   },
   {
     "id": "q_ch04_30",
@@ -2878,7 +4488,16 @@ window.SEG_QUESTIONS = [
     "explanation": "Germanic languages create long compound nouns that must be split into components so queries for individual parts can match.",
     "topic": "Compound Splitting",
     "slide_ref": "4. Processing Text.pptx",
-    "answer": 0
+    "answer": 0,
+    "is_multi": false,
+    "required_choices": 1,
+    "correct_choices": [
+      0
+    ],
+    "correct_letter": "A",
+    "correct_letters": [
+      "A"
+    ]
   },
   {
     "id": "q_ch04_31",
@@ -2894,7 +4513,16 @@ window.SEG_QUESTIONS = [
     "explanation": "Stopword lists contain closed-class function words ('the', 'and', 'to', 'of', 'in', 'is') that carry structural rather than topical meaning.",
     "topic": "Stopword Definition",
     "slide_ref": "4. Processing Text.pptx",
-    "answer": 1
+    "answer": 1,
+    "is_multi": false,
+    "required_choices": 1,
+    "correct_choices": [
+      1
+    ],
+    "correct_letter": "B",
+    "correct_letters": [
+      "B"
+    ]
   },
   {
     "id": "q_ch04_32",
@@ -2910,7 +4538,16 @@ window.SEG_QUESTIONS = [
     "explanation": "Large stoplists save index space but can cause false negatives when users search for short phrases or acronyms.",
     "topic": "Stoplist Trade-off",
     "slide_ref": "4. Processing Text.pptx",
-    "answer": 0
+    "answer": 0,
+    "is_multi": false,
+    "required_choices": 1,
+    "correct_choices": [
+      0
+    ],
+    "correct_letter": "A",
+    "correct_letters": [
+      "A"
+    ]
   },
   {
     "id": "q_ch04_33",
@@ -2926,7 +4563,16 @@ window.SEG_QUESTIONS = [
     "explanation": "Due to Zipf's power-law distribution, a tiny fraction of top rank words make up a massive percentage of total token volume.",
     "topic": "Zipf Space Savings",
     "slide_ref": "4. Processing Text.pptx",
-    "answer": 0
+    "answer": 0,
+    "is_multi": false,
+    "required_choices": 1,
+    "correct_choices": [
+      0
+    ],
+    "correct_letter": "A",
+    "correct_letters": [
+      "A"
+    ]
   },
   {
     "id": "q_ch04_34",
@@ -2942,7 +4588,16 @@ window.SEG_QUESTIONS = [
     "explanation": "Stemming broadens candidate matching (boosting Recall) but can conflate unrelated words like 'policy' and 'police' (lowering Precision).",
     "topic": "Stemming Impact",
     "slide_ref": "4. Processing Text.pptx",
-    "answer": 0
+    "answer": 0,
+    "is_multi": false,
+    "required_choices": 1,
+    "correct_choices": [
+      0
+    ],
+    "correct_letter": "A",
+    "correct_letters": [
+      "A"
+    ]
   },
   {
     "id": "q_ch04_35",
@@ -2958,7 +4613,16 @@ window.SEG_QUESTIONS = [
     "explanation": "PDF is a visual layout format; multi-column text, ligatures, and fragmented font vectors make reconstructing clean linear text challenging.",
     "topic": "PDF Text Extraction",
     "slide_ref": "4. Processing Text.pptx",
-    "answer": 0
+    "answer": 0,
+    "is_multi": false,
+    "required_choices": 1,
+    "correct_choices": [
+      0
+    ],
+    "correct_letter": "A",
+    "correct_letters": [
+      "A"
+    ]
   },
   {
     "id": "q_ch04_36",
@@ -2974,7 +4638,16 @@ window.SEG_QUESTIONS = [
     "explanation": "Ensuring uniform UTF-8 prevents mojibake (garbled characters) across European, Asian, and Arabic scripts.",
     "topic": "Encoding Normalization",
     "slide_ref": "4. Processing Text.pptx",
-    "answer": 0
+    "answer": 0,
+    "is_multi": false,
+    "required_choices": 1,
+    "correct_choices": [
+      0
+    ],
+    "correct_letter": "A",
+    "correct_letters": [
+      "A"
+    ]
   },
   {
     "id": "q_ch04_37",
@@ -2990,7 +4663,16 @@ window.SEG_QUESTIONS = [
     "explanation": "Skip-grams capture non-contiguous word pairs (e.g., 'audio ... player') within a sliding window, modeling looser phrase associations.",
     "topic": "Skip-grams",
     "slide_ref": "4. Processing Text.pptx",
-    "answer": 0
+    "answer": 0,
+    "is_multi": false,
+    "required_choices": 1,
+    "correct_choices": [
+      0
+    ],
+    "correct_letter": "A",
+    "correct_letters": [
+      "A"
+    ]
   },
   {
     "id": "q_ch04_38",
@@ -3006,7 +4688,16 @@ window.SEG_QUESTIONS = [
     "explanation": "Entity linking maps ambiguous textual mentions to unambiguous nodes in a Knowledge Base (e.g., Wikidata or Google Knowledge Graph).",
     "topic": "Entity Linking",
     "slide_ref": "4. Processing Text.pptx",
-    "answer": 1
+    "answer": 1,
+    "is_multi": false,
+    "required_choices": 1,
+    "correct_choices": [
+      1
+    ],
+    "correct_letter": "B",
+    "correct_letters": [
+      "B"
+    ]
   },
   {
     "id": "q_ch04_39",
@@ -3022,7 +4713,16 @@ window.SEG_QUESTIONS = [
     "explanation": "The long tail of Zipf's law comprises thousands of rare technical terms, misspellings, and names that occur only once or twice.",
     "topic": "Long Tail Words",
     "slide_ref": "4. Processing Text.pptx",
-    "answer": 0
+    "answer": 0,
+    "is_multi": false,
+    "required_choices": 1,
+    "correct_choices": [
+      0
+    ],
+    "correct_letter": "A",
+    "correct_letters": [
+      "A"
+    ]
   },
   {
     "id": "q_ch04_40",
@@ -3038,7 +4738,16 @@ window.SEG_QUESTIONS = [
     "explanation": "Boilerplate filters analyze HTML tag density; navigation bars have high link density, whereas article bodies have high text-to-tag ratios.",
     "topic": "Boilerplate Detection",
     "slide_ref": "4. Processing Text.pptx",
-    "answer": 0
+    "answer": 0,
+    "is_multi": false,
+    "required_choices": 1,
+    "correct_choices": [
+      0
+    ],
+    "correct_letter": "A",
+    "correct_letters": [
+      "A"
+    ]
   },
   {
     "id": "q_ch04_41",
@@ -3054,7 +4763,16 @@ window.SEG_QUESTIONS = [
     "explanation": "The BoW model simplifies documents to a collection of word counts, disregarding syntax and word order for computational efficiency.",
     "topic": "Bag of Words",
     "slide_ref": "4. Processing Text.pptx",
-    "answer": 1
+    "answer": 1,
+    "is_multi": false,
+    "required_choices": 1,
+    "correct_choices": [
+      1
+    ],
+    "correct_letter": "B",
+    "correct_letters": [
+      "B"
+    ]
   },
   {
     "id": "q_ch04_42",
@@ -3070,7 +4788,16 @@ window.SEG_QUESTIONS = [
     "explanation": "BoW discards word order, failing to capture semantic role reversals and phrase structure.",
     "topic": "BoW Limitations",
     "slide_ref": "4. Processing Text.pptx",
-    "answer": 0
+    "answer": 0,
+    "is_multi": false,
+    "required_choices": 1,
+    "correct_choices": [
+      0
+    ],
+    "correct_letter": "A",
+    "correct_letters": [
+      "A"
+    ]
   },
   {
     "id": "q_ch04_43",
@@ -3086,7 +4813,16 @@ window.SEG_QUESTIONS = [
     "explanation": "Periods serve double duty as sentence terminators, decimals, and abbreviation markers, requiring heuristic or ML classifiers to segment sentences.",
     "topic": "Sentence Segmentation",
     "slide_ref": "4. Processing Text.pptx",
-    "answer": 1
+    "answer": 1,
+    "is_multi": false,
+    "required_choices": 1,
+    "correct_choices": [
+      1
+    ],
+    "correct_letter": "B",
+    "correct_letters": [
+      "B"
+    ]
   },
   {
     "id": "q_ch04_44",
@@ -3102,7 +4838,16 @@ window.SEG_QUESTIONS = [
     "explanation": "Spelling normalization bridges regional spelling divergences so users searching for one variant retrieve documents written in the other.",
     "topic": "Spelling Normalization",
     "slide_ref": "4. Processing Text.pptx",
-    "answer": 0
+    "answer": 0,
+    "is_multi": false,
+    "required_choices": 1,
+    "correct_choices": [
+      0
+    ],
+    "correct_letter": "A",
+    "correct_letters": [
+      "A"
+    ]
   },
   {
     "id": "q_ch04_45",
@@ -3118,7 +4863,16 @@ window.SEG_QUESTIONS = [
     "explanation": "Homepages are often graphically heavy; external anchor text provides the textual keywords that describe what the website actually is.",
     "topic": "Anchor Propagation",
     "slide_ref": "4. Processing Text.pptx",
-    "answer": 0
+    "answer": 0,
+    "is_multi": false,
+    "required_choices": 1,
+    "correct_choices": [
+      0
+    ],
+    "correct_letter": "A",
+    "correct_letters": [
+      "A"
+    ]
   },
   {
     "id": "q_ch04_46",
@@ -3134,7 +4888,16 @@ window.SEG_QUESTIONS = [
     "explanation": "WSD determines the correct meaning of words with multiple senses based on surrounding context words.",
     "topic": "Word Sense Disambiguation",
     "slide_ref": "4. Processing Text.pptx",
-    "answer": 1
+    "answer": 1,
+    "is_multi": false,
+    "required_choices": 1,
+    "correct_choices": [
+      1
+    ],
+    "correct_letter": "B",
+    "correct_letters": [
+      "B"
+    ]
   },
   {
     "id": "q_ch04_47",
@@ -3150,7 +4913,16 @@ window.SEG_QUESTIONS = [
     "explanation": "Stemming collapse is the intended reduction of distinct morphological forms (e.g., 'connect', 'connection', 'connecting') into a single index term.",
     "topic": "Stemming Collapse",
     "slide_ref": "4. Processing Text.pptx",
-    "answer": 1
+    "answer": 1,
+    "is_multi": false,
+    "required_choices": 1,
+    "correct_choices": [
+      1
+    ],
+    "correct_letter": "B",
+    "correct_letters": [
+      "B"
+    ]
   },
   {
     "id": "q_ch04_48",
@@ -3166,7 +4938,16 @@ window.SEG_QUESTIONS = [
     "explanation": "Zipf's power-law distribution of word frequencies is a universal mathematical property of human natural languages.",
     "topic": "Universal Zipf",
     "slide_ref": "4. Processing Text.pptx",
-    "answer": 0
+    "answer": 0,
+    "is_multi": false,
+    "required_choices": 1,
+    "correct_choices": [
+      0
+    ],
+    "correct_letter": "A",
+    "correct_letters": [
+      "A"
+    ]
   },
   {
     "id": "q_ch04_49",
@@ -3182,7 +4963,16 @@ window.SEG_QUESTIONS = [
     "explanation": "The lexicon maintains the unique indexed terms, their document frequencies (df), and pointers to their posting lists.",
     "topic": "Lexicon Definition",
     "slide_ref": "4. Processing Text.pptx",
-    "answer": 0
+    "answer": 0,
+    "is_multi": false,
+    "required_choices": 1,
+    "correct_choices": [
+      0
+    ],
+    "correct_letter": "A",
+    "correct_letters": [
+      "A"
+    ]
   },
   {
     "id": "q_ch04_50",
@@ -3198,7 +4988,16 @@ window.SEG_QUESTIONS = [
     "explanation": "Because vocabulary size grows with N^beta without an upper asymptote, search engines must design dynamic, expandable dictionary structures.",
     "topic": "Heaps' Law Implication",
     "slide_ref": "4. Processing Text.pptx",
-    "answer": 1
+    "answer": 1,
+    "is_multi": false,
+    "required_choices": 1,
+    "correct_choices": [
+      1
+    ],
+    "correct_letter": "B",
+    "correct_letters": [
+      "B"
+    ]
   },
   {
     "id": "q_ch05_01",
@@ -3214,7 +5013,16 @@ window.SEG_QUESTIONS = [
     "explanation": "An Inverted Index consists of a Dictionary (storing unique terms and pointers) and Postings Lists (storing docIDs, frequencies, and positions).",
     "topic": "Inverted Index Anatomy",
     "slide_ref": "5. Ranking with Indexes.pptx",
-    "answer": 1
+    "answer": 1,
+    "is_multi": false,
+    "required_choices": 1,
+    "correct_choices": [
+      1
+    ],
+    "correct_letter": "B",
+    "correct_letters": [
+      "B"
+    ]
   },
   {
     "id": "q_ch05_02",
@@ -3230,7 +5038,16 @@ window.SEG_QUESTIONS = [
     "explanation": "Because docIDs in a posting list are strictly monotonically increasing, storing differences (gaps) results in much smaller integers that require far fewer bits to encode.",
     "topic": "d-gaps Compression",
     "slide_ref": "5. Ranking with Indexes.pptx",
-    "answer": 1
+    "answer": 1,
+    "is_multi": false,
+    "required_choices": 1,
+    "correct_choices": [
+      1
+    ],
+    "correct_letter": "B",
+    "correct_letters": [
+      "B"
+    ]
   },
   {
     "id": "q_ch05_03",
@@ -3246,7 +5063,16 @@ window.SEG_QUESTIONS = [
     "explanation": "The first gap is 14; subsequent gaps are 19 - 14 = 5, 21 - 19 = 2, and 35 - 21 = 14. Thus: [14, 5, 2, 14].",
     "topic": "d-gaps Calculation",
     "slide_ref": "5. Ranking with Indexes.pptx",
-    "answer": 0
+    "answer": 0,
+    "is_multi": false,
+    "required_choices": 1,
+    "correct_choices": [
+      0
+    ],
+    "correct_letter": "A",
+    "correct_letters": [
+      "A"
+    ]
   },
   {
     "id": "q_ch05_04",
@@ -3262,7 +5088,16 @@ window.SEG_QUESTIONS = [
     "explanation": "V-Byte uses 7 bits per byte to store the binary integer and the 8th most significant bit (MSB) as a continuation bit indicating whether more bytes follow.",
     "topic": "V-Byte Encoding",
     "slide_ref": "5. Ranking with Indexes.pptx",
-    "answer": 1
+    "answer": 1,
+    "is_multi": false,
+    "required_choices": 1,
+    "correct_choices": [
+      1
+    ],
+    "correct_letter": "B",
+    "correct_letters": [
+      "B"
+    ]
   },
   {
     "id": "q_ch05_05",
@@ -3278,7 +5113,16 @@ window.SEG_QUESTIONS = [
     "explanation": "130 in base 128 is 1 * 128 + 2. The lower 7 bits are 2 (0000010) and higher 7 bits are 1 (0000001), requiring 2 bytes.",
     "topic": "V-Byte Calculation",
     "slide_ref": "5. Ranking with Indexes.pptx",
-    "answer": 1
+    "answer": 1,
+    "is_multi": false,
+    "required_choices": 1,
+    "correct_choices": [
+      1
+    ],
+    "correct_letter": "B",
+    "correct_letters": [
+      "B"
+    ]
   },
   {
     "id": "q_ch05_06",
@@ -3294,7 +5138,16 @@ window.SEG_QUESTIONS = [
     "explanation": "SPIMI dynamically adds terms to a local block dictionary in RAM; when RAM is exhausted, postings are sorted by term and written as a run to disk.",
     "topic": "SPIMI Algorithm",
     "slide_ref": "5. Ranking with Indexes.pptx",
-    "answer": 0
+    "answer": 0,
+    "is_multi": false,
+    "required_choices": 1,
+    "correct_choices": [
+      0
+    ],
+    "correct_letter": "A",
+    "correct_letters": [
+      "A"
+    ]
   },
   {
     "id": "q_ch05_07",
@@ -3310,7 +5163,16 @@ window.SEG_QUESTIONS = [
     "explanation": "BSBI maps terms to termIDs first and accumulates (termID, docID) pairs, requiring a two-pass mapping dictionary, unlike SPIMI.",
     "topic": "BSBI vs SPIMI",
     "slide_ref": "5. Ranking with Indexes.pptx",
-    "answer": 0
+    "answer": 0,
+    "is_multi": false,
+    "required_choices": 1,
+    "correct_choices": [
+      0
+    ],
+    "correct_letter": "A",
+    "correct_letters": [
+      "A"
+    ]
   },
   {
     "id": "q_ch05_08",
@@ -3326,7 +5188,16 @@ window.SEG_QUESTIONS = [
     "explanation": "Once all blocks are written to disk, a multi-way merge simultaneously streams from all block files to produce the final continuous postings lists.",
     "topic": "Multi-way Merge",
     "slide_ref": "5. Ranking with Indexes.pptx",
-    "answer": 1
+    "answer": 1,
+    "is_multi": false,
+    "required_choices": 1,
+    "correct_choices": [
+      1
+    ],
+    "correct_letter": "B",
+    "correct_letters": [
+      "B"
+    ]
   },
   {
     "id": "q_ch05_09",
@@ -3342,7 +5213,16 @@ window.SEG_QUESTIONS = [
     "explanation": "DAAT advances pointers across all query postings lists in lockstep, computing the complete score for one document at a time.",
     "topic": "DAAT Processing",
     "slide_ref": "5. Ranking with Indexes.pptx",
-    "answer": 0
+    "answer": 0,
+    "is_multi": false,
+    "required_choices": 1,
+    "correct_choices": [
+      0
+    ],
+    "correct_letter": "A",
+    "correct_letters": [
+      "A"
+    ]
   },
   {
     "id": "q_ch05_10",
@@ -3358,7 +5238,16 @@ window.SEG_QUESTIONS = [
     "explanation": "TAAT processes each term's posting list sequentially, updating an accumulator table in memory for every document encountered.",
     "topic": "TAAT Processing",
     "slide_ref": "5. Ranking with Indexes.pptx",
-    "answer": 0
+    "answer": 0,
+    "is_multi": false,
+    "required_choices": 1,
+    "correct_choices": [
+      0
+    ],
+    "correct_letter": "A",
+    "correct_letters": [
+      "A"
+    ]
   },
   {
     "id": "q_ch05_11",
@@ -3374,7 +5263,16 @@ window.SEG_QUESTIONS = [
     "explanation": "WAND maintains upper-bound scores per term; if the sum of maximum possible scores for a document cannot beat the K-th score in the heap, it skips evaluation.",
     "topic": "WAND Dynamic Pruning",
     "slide_ref": "5. Ranking with Indexes.pptx",
-    "answer": 1
+    "answer": 1,
+    "is_multi": false,
+    "required_choices": 1,
+    "correct_choices": [
+      1
+    ],
+    "correct_letter": "B",
+    "correct_letters": [
+      "B"
+    ]
   },
   {
     "id": "q_ch05_12",
@@ -3390,7 +5288,16 @@ window.SEG_QUESTIONS = [
     "explanation": "Skip pointers let the intersection algorithm leap forward by multiple postings (e.g., skip 50 items) if the current target docID is much higher.",
     "topic": "Skip Pointers",
     "slide_ref": "5. Ranking with Indexes.pptx",
-    "answer": 1
+    "answer": 1,
+    "is_multi": false,
+    "required_choices": 1,
+    "correct_choices": [
+      1
+    ],
+    "correct_letter": "B",
+    "correct_letters": [
+      "B"
+    ]
   },
   {
     "id": "q_ch05_13",
@@ -3406,7 +5313,16 @@ window.SEG_QUESTIONS = [
     "explanation": "Setting the skip frequency to roughly sqrt(L) evenly spaced intervals balances the number of skips with the cost of scanning within a skip block.",
     "topic": "Skip Heuristic",
     "slide_ref": "5. Ranking with Indexes.pptx",
-    "answer": 0
+    "answer": 0,
+    "is_multi": false,
+    "required_choices": 1,
+    "correct_choices": [
+      0
+    ],
+    "correct_letter": "A",
+    "correct_letters": [
+      "A"
+    ]
   },
   {
     "id": "q_ch05_14",
@@ -3422,7 +5338,16 @@ window.SEG_QUESTIONS = [
     "explanation": "Elias Gamma code is a bit-level universal code optimal for small integers (like small d-gaps and term frequencies).",
     "topic": "Elias Gamma",
     "slide_ref": "5. Ranking with Indexes.pptx",
-    "answer": 0
+    "answer": 0,
+    "is_multi": false,
+    "required_choices": 1,
+    "correct_choices": [
+      0
+    ],
+    "correct_letter": "A",
+    "correct_letters": [
+      "A"
+    ]
   },
   {
     "id": "q_ch05_15",
@@ -3438,7 +5363,16 @@ window.SEG_QUESTIONS = [
     "explanation": "For x = 1, length of unary prefix is floor(log2(1)) = 0 zeros, followed by a 1 and empty remainder: simply '1'.",
     "topic": "Elias Gamma 1",
     "slide_ref": "5. Ranking with Indexes.pptx",
-    "answer": 1
+    "answer": 1,
+    "is_multi": false,
+    "required_choices": 1,
+    "correct_choices": [
+      1
+    ],
+    "correct_letter": "B",
+    "correct_letters": [
+      "B"
+    ]
   },
   {
     "id": "q_ch05_16",
@@ -3454,7 +5388,16 @@ window.SEG_QUESTIONS = [
     "explanation": "For 4, floor(log2(4)) = 2 zeros ('00'), followed by '1', and the remaining 2 binary bits of 4 ('00'): '00100'.",
     "topic": "Elias Gamma 4",
     "slide_ref": "5. Ranking with Indexes.pptx",
-    "answer": 1
+    "answer": 1,
+    "is_multi": false,
+    "required_choices": 1,
+    "correct_choices": [
+      1
+    ],
+    "correct_letter": "B",
+    "correct_letters": [
+      "B"
+    ]
   },
   {
     "id": "q_ch05_17",
@@ -3470,7 +5413,16 @@ window.SEG_QUESTIONS = [
     "explanation": "Positional intersect traverses the position lists within postings to verify phrase adjacency or proximity constraints (e.g., termA WITHIN 3 terms OF termB).",
     "topic": "Positional Intersect",
     "slide_ref": "5. Ranking with Indexes.pptx",
-    "answer": 0
+    "answer": 0,
+    "is_multi": false,
+    "required_choices": 1,
+    "correct_choices": [
+      0
+    ],
+    "correct_letter": "A",
+    "correct_letters": [
+      "A"
+    ]
   },
   {
     "id": "q_ch05_18",
@@ -3486,7 +5438,16 @@ window.SEG_QUESTIONS = [
     "explanation": "Impact ordering places high-frequency or high-weight documents at the front of the posting list to facilitate early-termination ranking.",
     "topic": "Impact Ordering",
     "slide_ref": "5. Ranking with Indexes.pptx",
-    "answer": 0
+    "answer": 0,
+    "is_multi": false,
+    "required_choices": 1,
+    "correct_choices": [
+      0
+    ],
+    "correct_letter": "A",
+    "correct_letters": [
+      "A"
+    ]
   },
   {
     "id": "q_ch05_19",
@@ -3502,7 +5463,16 @@ window.SEG_QUESTIONS = [
     "explanation": "AND queries intersect lists (bounded by the shortest list and skippable); OR queries require scanning the union of all candidate lists.",
     "topic": "AND vs OR Speed",
     "slide_ref": "5. Ranking with Indexes.pptx",
-    "answer": 0
+    "answer": 0,
+    "is_multi": false,
+    "required_choices": 1,
+    "correct_choices": [
+      0
+    ],
+    "correct_letter": "A",
+    "correct_letters": [
+      "A"
+    ]
   },
   {
     "id": "q_ch05_20",
@@ -3518,7 +5488,16 @@ window.SEG_QUESTIONS = [
     "explanation": "Probing from the shorter list into the longer list with skips requires at most 1,000 * log(1,000,000) operations, dramatically faster than a linear scan.",
     "topic": "Intersection Optimization",
     "slide_ref": "5. Ranking with Indexes.pptx",
-    "answer": 0
+    "answer": 0,
+    "is_multi": false,
+    "required_choices": 1,
+    "correct_choices": [
+      0
+    ],
+    "correct_letter": "A",
+    "correct_letters": [
+      "A"
+    ]
   },
   {
     "id": "q_ch05_21",
@@ -3534,7 +5513,16 @@ window.SEG_QUESTIONS = [
     "explanation": "The Lexicon is the vocabulary directory residing in RAM or fast storage that maps terms to their posting list offsets.",
     "topic": "Lexicon Definition",
     "slide_ref": "5. Ranking with Indexes.pptx",
-    "answer": 0
+    "answer": 0,
+    "is_multi": false,
+    "required_choices": 1,
+    "correct_choices": [
+      0
+    ],
+    "correct_letter": "A",
+    "correct_letters": [
+      "A"
+    ]
   },
   {
     "id": "q_ch05_22",
@@ -3550,7 +5538,16 @@ window.SEG_QUESTIONS = [
     "explanation": "In TAAT, accumulators track intermediate scores for all documents containing any evaluated query term.",
     "topic": "TAAT Accumulator",
     "slide_ref": "5. Ranking with Indexes.pptx",
-    "answer": 0
+    "answer": 0,
+    "is_multi": false,
+    "required_choices": 1,
+    "correct_choices": [
+      0
+    ],
+    "correct_letter": "A",
+    "correct_letters": [
+      "A"
+    ]
   },
   {
     "id": "q_ch05_23",
@@ -3566,7 +5563,16 @@ window.SEG_QUESTIONS = [
     "explanation": "TAAT can require millions of accumulators in RAM for broad multi-term queries, leading to memory exhaustion unless pruned heuristically.",
     "topic": "TAAT Drawback",
     "slide_ref": "5. Ranking with Indexes.pptx",
-    "answer": 0
+    "answer": 0,
+    "is_multi": false,
+    "required_choices": 1,
+    "correct_choices": [
+      0
+    ],
+    "correct_letter": "A",
+    "correct_letters": [
+      "A"
+    ]
   },
   {
     "id": "q_ch05_24",
@@ -3582,7 +5588,16 @@ window.SEG_QUESTIONS = [
     "explanation": "Dynamic pruning uses mathematical upper bounds to safely bypass documents that cannot make the top-K cutoff, saving massive CPU cycles.",
     "topic": "Dynamic Pruning",
     "slide_ref": "5. Ranking with Indexes.pptx",
-    "answer": 1
+    "answer": 1,
+    "is_multi": false,
+    "required_choices": 1,
+    "correct_choices": [
+      1
+    ],
+    "correct_letter": "B",
+    "correct_letters": [
+      "B"
+    ]
   },
   {
     "id": "q_ch05_25",
@@ -3598,7 +5613,16 @@ window.SEG_QUESTIONS = [
     "explanation": "Tiered indexes evaluate high-relevance 'champion' documents first; lower tiers are consulted only if insufficient relevant documents are found.",
     "topic": "Tiered Indexing",
     "slide_ref": "5. Ranking with Indexes.pptx",
-    "answer": 0
+    "answer": 0,
+    "is_multi": false,
+    "required_choices": 1,
+    "correct_choices": [
+      0
+    ],
+    "correct_letter": "A",
+    "correct_letters": [
+      "A"
+    ]
   },
   {
     "id": "q_ch05_26",
@@ -3614,7 +5638,16 @@ window.SEG_QUESTIONS = [
     "explanation": "The vocabulary problem (Furnas et al., 1987) shows that two people choose the same word for a concept only 10-20% of the time.",
     "topic": "Vocabulary Problem",
     "slide_ref": "5. Ranking with Indexes.pptx",
-    "answer": 0
+    "answer": 0,
+    "is_multi": false,
+    "required_choices": 1,
+    "correct_choices": [
+      0
+    ],
+    "correct_letter": "A",
+    "correct_letters": [
+      "A"
+    ]
   },
   {
     "id": "q_ch05_27",
@@ -3630,7 +5663,16 @@ window.SEG_QUESTIONS = [
     "explanation": "Elias Delta codes the length of the binary string with Elias Gamma, making it more compact than Gamma for large integers.",
     "topic": "Elias Delta",
     "slide_ref": "5. Ranking with Indexes.pptx",
-    "answer": 0
+    "answer": 0,
+    "is_multi": false,
+    "required_choices": 1,
+    "correct_choices": [
+      0
+    ],
+    "correct_letter": "A",
+    "correct_letters": [
+      "A"
+    ]
   },
   {
     "id": "q_ch05_28",
@@ -3646,7 +5688,16 @@ window.SEG_QUESTIONS = [
     "explanation": "Stopwords are common functional words traditionally omitted from the index to reduce postings storage.",
     "topic": "Stopword Indexing",
     "slide_ref": "5. Ranking with Indexes.pptx",
-    "answer": 0
+    "answer": 0,
+    "is_multi": false,
+    "required_choices": 1,
+    "correct_choices": [
+      0
+    ],
+    "correct_letter": "A",
+    "correct_letters": [
+      "A"
+    ]
   },
   {
     "id": "q_ch05_29",
@@ -3662,7 +5713,16 @@ window.SEG_QUESTIONS = [
     "explanation": "Excluding stopwords breaks phrase queries, book titles, and technical identifiers; modern compression mitigates the storage cost.",
     "topic": "Modern Stopword Retention",
     "slide_ref": "5. Ranking with Indexes.pptx",
-    "answer": 0
+    "answer": 0,
+    "is_multi": false,
+    "required_choices": 1,
+    "correct_choices": [
+      0
+    ],
+    "correct_letter": "A",
+    "correct_letters": [
+      "A"
+    ]
   },
   {
     "id": "q_ch05_30",
@@ -3678,7 +5738,16 @@ window.SEG_QUESTIONS = [
     "explanation": "Each posting contains the docID, term frequency, followed by the array of word offset positions within that document.",
     "topic": "Positional Payload Format",
     "slide_ref": "5. Ranking with Indexes.pptx",
-    "answer": 0
+    "answer": 0,
+    "is_multi": false,
+    "required_choices": 1,
+    "correct_choices": [
+      0
+    ],
+    "correct_letter": "A",
+    "correct_letters": [
+      "A"
+    ]
   },
   {
     "id": "q_ch05_31",
@@ -3694,7 +5763,16 @@ window.SEG_QUESTIONS = [
     "explanation": "An auxiliary index absorbs real-time document additions in RAM; queries search both master and auxiliary indexes until a background merge occurs.",
     "topic": "Auxiliary Index",
     "slide_ref": "5. Ranking with Indexes.pptx",
-    "answer": 0
+    "answer": 0,
+    "is_multi": false,
+    "required_choices": 1,
+    "correct_choices": [
+      0
+    ],
+    "correct_letter": "A",
+    "correct_letters": [
+      "A"
+    ]
   },
   {
     "id": "q_ch05_32",
@@ -3710,7 +5788,16 @@ window.SEG_QUESTIONS = [
     "explanation": "Logarithmic merge bounds the merge cost: each posting is merged at most O(log(N/M)) times, amortizing update overhead efficiently.",
     "topic": "Logarithmic Merge",
     "slide_ref": "5. Ranking with Indexes.pptx",
-    "answer": 0
+    "answer": 0,
+    "is_multi": false,
+    "required_choices": 1,
+    "correct_choices": [
+      0
+    ],
+    "correct_letter": "A",
+    "correct_letters": [
+      "A"
+    ]
   },
   {
     "id": "q_ch05_33",
@@ -3726,7 +5813,16 @@ window.SEG_QUESTIONS = [
     "explanation": "Security trimming checks user identity against document ACLs (either early during posting list traversal or late during ranking) to ensure data confidentiality.",
     "topic": "Security Trimming",
     "slide_ref": "5. Ranking with Indexes.pptx",
-    "answer": 0
+    "answer": 0,
+    "is_multi": false,
+    "required_choices": 1,
+    "correct_choices": [
+      0
+    ],
+    "correct_letter": "A",
+    "correct_letters": [
+      "A"
+    ]
   },
   {
     "id": "q_ch05_34",
@@ -3742,7 +5838,16 @@ window.SEG_QUESTIONS = [
     "explanation": "The forward index maps documents to their terms/metadata, used for snippet generation, document summarization, and clustering.",
     "topic": "Forward Index",
     "slide_ref": "5. Ranking with Indexes.pptx",
-    "answer": 0
+    "answer": 0,
+    "is_multi": false,
+    "required_choices": 1,
+    "correct_choices": [
+      0
+    ],
+    "correct_letter": "A",
+    "correct_letters": [
+      "A"
+    ]
   },
   {
     "id": "q_ch05_35",
@@ -3758,7 +5863,16 @@ window.SEG_QUESTIONS = [
     "explanation": "MaxScore partitions terms into essential and non-essential based on the current K-th score threshold, skipping documents that only match non-essential terms.",
     "topic": "MaxScore Algorithm",
     "slide_ref": "5. Ranking with Indexes.pptx",
-    "answer": 0
+    "answer": 0,
+    "is_multi": false,
+    "required_choices": 1,
+    "correct_choices": [
+      0
+    ],
+    "correct_letter": "A",
+    "correct_letters": [
+      "A"
+    ]
   },
   {
     "id": "q_ch05_36",
@@ -3774,7 +5888,16 @@ window.SEG_QUESTIONS = [
     "explanation": "Byte-aligned formats trade slightly lower compression ratios for significantly faster decoding speeds on modern CPU architectures.",
     "topic": "Bit vs Byte Alignment",
     "slide_ref": "5. Ranking with Indexes.pptx",
-    "answer": 0
+    "answer": 0,
+    "is_multi": false,
+    "required_choices": 1,
+    "correct_choices": [
+      0
+    ],
+    "correct_letter": "A",
+    "correct_letters": [
+      "A"
+    ]
   },
   {
     "id": "q_ch05_37",
@@ -3790,7 +5913,16 @@ window.SEG_QUESTIONS = [
     "explanation": "Golomb/Rice coding is mathematically optimal for geometrically distributed data, widely used in inverted index delta compression.",
     "topic": "Golomb Coding",
     "slide_ref": "5. Ranking with Indexes.pptx",
-    "answer": 0
+    "answer": 0,
+    "is_multi": false,
+    "required_choices": 1,
+    "correct_choices": [
+      0
+    ],
+    "correct_letter": "A",
+    "correct_letters": [
+      "A"
+    ]
   },
   {
     "id": "q_ch05_38",
@@ -3806,7 +5938,16 @@ window.SEG_QUESTIONS = [
     "explanation": "Sorted docIDs enable simultaneous linear scans through two or more posting lists using two-pointer algorithms.",
     "topic": "DocID Sorting Benefit",
     "slide_ref": "5. Ranking with Indexes.pptx",
-    "answer": 0
+    "answer": 0,
+    "is_multi": false,
+    "required_choices": 1,
+    "correct_choices": [
+      0
+    ],
+    "correct_letter": "A",
+    "correct_letters": [
+      "A"
+    ]
   },
   {
     "id": "q_ch05_39",
@@ -3822,7 +5963,16 @@ window.SEG_QUESTIONS = [
     "explanation": "A biword index indexes consecutive word pairs directly, speeding up common two-word phrase queries without requiring positional lookups.",
     "topic": "Biword Index",
     "slide_ref": "5. Ranking with Indexes.pptx",
-    "answer": 0
+    "answer": 0,
+    "is_multi": false,
+    "required_choices": 1,
+    "correct_choices": [
+      0
+    ],
+    "correct_letter": "A",
+    "correct_letters": [
+      "A"
+    ]
   },
   {
     "id": "q_ch05_40",
@@ -3838,7 +5988,16 @@ window.SEG_QUESTIONS = [
     "explanation": "Biword indexes double or triple the index size because the number of distinct word pairs is far greater than single words.",
     "topic": "Biword Trade-off",
     "slide_ref": "5. Ranking with Indexes.pptx",
-    "answer": 0
+    "answer": 0,
+    "is_multi": false,
+    "required_choices": 1,
+    "correct_choices": [
+      0
+    ],
+    "correct_letter": "A",
+    "correct_letters": [
+      "A"
+    ]
   },
   {
     "id": "q_ch05_41",
@@ -3854,7 +6013,16 @@ window.SEG_QUESTIONS = [
     "explanation": "Two-pointer linear merge advances one pointer at each comparison step, taking at most M + N steps.",
     "topic": "Intersection Complexity",
     "slide_ref": "5. Ranking with Indexes.pptx",
-    "answer": 0
+    "answer": 0,
+    "is_multi": false,
+    "required_choices": 1,
+    "correct_choices": [
+      0
+    ],
+    "correct_letter": "A",
+    "correct_letters": [
+      "A"
+    ]
   },
   {
     "id": "q_ch05_42",
@@ -3870,7 +6038,16 @@ window.SEG_QUESTIONS = [
     "explanation": "Deleted documents are marked with tombstone bitsets; background segment merging filters them out and reclaims disk space.",
     "topic": "Index Tombstones",
     "slide_ref": "5. Ranking with Indexes.pptx",
-    "answer": 0
+    "answer": 0,
+    "is_multi": false,
+    "required_choices": 1,
+    "correct_choices": [
+      0
+    ],
+    "correct_letter": "A",
+    "correct_letters": [
+      "A"
+    ]
   },
   {
     "id": "q_ch05_43",
@@ -3886,7 +6063,16 @@ window.SEG_QUESTIONS = [
     "explanation": "Accumulator capping bounds memory usage in TAAT by discarding or refusing to create accumulators for documents matching only weak terms.",
     "topic": "Accumulator Capping",
     "slide_ref": "5. Ranking with Indexes.pptx",
-    "answer": 1
+    "answer": 1,
+    "is_multi": false,
+    "required_choices": 1,
+    "correct_choices": [
+      1
+    ],
+    "correct_letter": "B",
+    "correct_letters": [
+      "B"
+    ]
   },
   {
     "id": "q_ch05_44",
@@ -3902,7 +6088,16 @@ window.SEG_QUESTIONS = [
     "explanation": "Empirically, adding positional offsets expands index volume by a factor of 2 to 4, which is why compression is essential.",
     "topic": "Positional Index Size",
     "slide_ref": "5. Ranking with Indexes.pptx",
-    "answer": 0
+    "answer": 0,
+    "is_multi": false,
+    "required_choices": 1,
+    "correct_choices": [
+      0
+    ],
+    "correct_letter": "A",
+    "correct_letters": [
+      "A"
+    ]
   },
   {
     "id": "q_ch05_45",
@@ -3918,7 +6113,16 @@ window.SEG_QUESTIONS = [
     "explanation": "Impact reflects the score contribution of that term to that document; sorting postings by impact allows evaluating the most promising documents first.",
     "topic": "Impact Definition",
     "slide_ref": "5. Ranking with Indexes.pptx",
-    "answer": 1
+    "answer": 1,
+    "is_multi": false,
+    "required_choices": 1,
+    "correct_choices": [
+      1
+    ],
+    "correct_letter": "B",
+    "correct_letters": [
+      "B"
+    ]
   },
   {
     "id": "q_ch05_46",
@@ -3934,7 +6138,16 @@ window.SEG_QUESTIONS = [
     "explanation": "Byte-aligned codes avoid complex bit-shifting and bitmasking, yielding 2x to 5x faster decompression rates on modern CPUs.",
     "topic": "V-Byte Decoding Speed",
     "slide_ref": "5. Ranking with Indexes.pptx",
-    "answer": 0
+    "answer": 0,
+    "is_multi": false,
+    "required_choices": 1,
+    "correct_choices": [
+      0
+    ],
+    "correct_letter": "A",
+    "correct_letters": [
+      "A"
+    ]
   },
   {
     "id": "q_ch05_47",
@@ -3950,7 +6163,16 @@ window.SEG_QUESTIONS = [
     "explanation": "Packing terms into a continuous character buffer eliminates memory fragmentation and pointer overhead in large vocabularies.",
     "topic": "Dictionary-as-a-String",
     "slide_ref": "5. Ranking with Indexes.pptx",
-    "answer": 0
+    "answer": 0,
+    "is_multi": false,
+    "required_choices": 1,
+    "correct_choices": [
+      0
+    ],
+    "correct_letter": "A",
+    "correct_letters": [
+      "A"
+    ]
   },
   {
     "id": "q_ch05_48",
@@ -3966,7 +6188,16 @@ window.SEG_QUESTIONS = [
     "explanation": "Because dictionary terms are sorted alphabetically, consecutive terms share prefixes; storing prefix lengths compresses dictionary size by ~50%.",
     "topic": "Front-Coding",
     "slide_ref": "5. Ranking with Indexes.pptx",
-    "answer": 0
+    "answer": 0,
+    "is_multi": false,
+    "required_choices": 1,
+    "correct_choices": [
+      0
+    ],
+    "correct_letter": "A",
+    "correct_letters": [
+      "A"
+    ]
   },
   {
     "id": "q_ch05_49",
@@ -3982,7 +6213,16 @@ window.SEG_QUESTIONS = [
     "explanation": "Reading posting lists from RAM takes nanoseconds vs microseconds/milliseconds from SSDs, making memory caching critical for high QPS.",
     "topic": "Index RAM Caching",
     "slide_ref": "5. Ranking with Indexes.pptx",
-    "answer": 0
+    "answer": 0,
+    "is_multi": false,
+    "required_choices": 1,
+    "correct_choices": [
+      0
+    ],
+    "correct_letter": "A",
+    "correct_letters": [
+      "A"
+    ]
   },
   {
     "id": "q_ch05_50",
@@ -3998,7 +6238,16 @@ window.SEG_QUESTIONS = [
     "explanation": "A run is a sorted intermediate block written to disk when memory fills; all runs are subsequently merged into the master index.",
     "topic": "Run Files",
     "slide_ref": "5. Ranking with Indexes.pptx",
-    "answer": 1
+    "answer": 1,
+    "is_multi": false,
+    "required_choices": 1,
+    "correct_choices": [
+      1
+    ],
+    "correct_letter": "B",
+    "correct_letters": [
+      "B"
+    ]
   },
   {
     "id": "q_ch06_01",
@@ -4014,7 +6263,16 @@ window.SEG_QUESTIONS = [
     "explanation": "Broder's classic taxonomy classifies queries into: Informational (seeking knowledge), Navigational (seeking a specific site), and Transactional (performing an activity/purchase).",
     "topic": "Broder's Query Taxonomy",
     "slide_ref": "6. Queries and Interfaces.pptx",
-    "answer": 1
+    "answer": 1,
+    "is_multi": false,
+    "required_choices": 1,
+    "correct_choices": [
+      1
+    ],
+    "correct_letter": "B",
+    "correct_letters": [
+      "B"
+    ]
   },
   {
     "id": "q_ch06_02",
@@ -4030,7 +6288,16 @@ window.SEG_QUESTIONS = [
     "explanation": "Transactional queries have the intent to perform an action, such as downloading software, buying a product, or booking a ticket.",
     "topic": "Transactional Queries",
     "slide_ref": "6. Queries and Interfaces.pptx",
-    "answer": 0
+    "answer": 0,
+    "is_multi": false,
+    "required_choices": 1,
+    "correct_choices": [
+      0
+    ],
+    "correct_letter": "A",
+    "correct_letters": [
+      "A"
+    ]
   },
   {
     "id": "q_ch06_03",
@@ -4046,7 +6313,16 @@ window.SEG_QUESTIONS = [
     "explanation": "PRF automates relevance feedback without requiring human user effort: it assumes initial top results are relevant, extracts salient terms, and re-queries the index.",
     "topic": "Pseudo-Relevance Feedback",
     "slide_ref": "6. Queries and Interfaces.pptx",
-    "answer": 1
+    "answer": 1,
+    "is_multi": false,
+    "required_choices": 1,
+    "correct_choices": [
+      1
+    ],
+    "correct_letter": "B",
+    "correct_letters": [
+      "B"
+    ]
   },
   {
     "id": "q_ch06_04",
@@ -4062,7 +6338,16 @@ window.SEG_QUESTIONS = [
     "explanation": "Rocchio formula: q_new = alpha * q_old + beta * (centroid of relevant docs) - gamma * (centroid of non-relevant docs).",
     "topic": "Rocchio Algorithm",
     "slide_ref": "6. Queries and Interfaces.pptx",
-    "answer": 0
+    "answer": 0,
+    "is_multi": false,
+    "required_choices": 1,
+    "correct_choices": [
+      0
+    ],
+    "correct_letter": "A",
+    "correct_letters": [
+      "A"
+    ]
   },
   {
     "id": "q_ch06_05",
@@ -4078,7 +6363,16 @@ window.SEG_QUESTIONS = [
     "explanation": "Alpha weights the original query vector, ensuring that the modified query does not drift too far from the user's initial intent.",
     "topic": "Rocchio Parameters",
     "slide_ref": "6. Queries and Interfaces.pptx",
-    "answer": 0
+    "answer": 0,
+    "is_multi": false,
+    "required_choices": 1,
+    "correct_choices": [
+      0
+    ],
+    "correct_letter": "A",
+    "correct_letters": [
+      "A"
+    ]
   },
   {
     "id": "q_ch06_06",
@@ -4094,7 +6388,16 @@ window.SEG_QUESTIONS = [
     "explanation": "Levenshtein distance counts the minimum insertions, deletions, and substitutions to convert string s1 into string s2.",
     "topic": "Levenshtein Distance",
     "slide_ref": "6. Queries and Interfaces.pptx",
-    "answer": 1
+    "answer": 1,
+    "is_multi": false,
+    "required_choices": 1,
+    "correct_choices": [
+      1
+    ],
+    "correct_letter": "B",
+    "correct_letters": [
+      "B"
+    ]
   },
   {
     "id": "q_ch06_07",
@@ -4110,7 +6413,16 @@ window.SEG_QUESTIONS = [
     "explanation": "Three edits: 1. Substitute 'k' -> 's' ('sitten'), 2. Substitute 'e' -> 'i' ('sittin'), 3. Insert 'g' at the end ('sitting'). Distance = 3.",
     "topic": "Levenshtein Calculation",
     "slide_ref": "6. Queries and Interfaces.pptx",
-    "answer": 2
+    "answer": 2,
+    "is_multi": false,
+    "required_choices": 1,
+    "correct_choices": [
+      2
+    ],
+    "correct_letter": "C",
+    "correct_letters": [
+      "C"
+    ]
   },
   {
     "id": "q_ch06_08",
@@ -4126,7 +6438,16 @@ window.SEG_QUESTIONS = [
     "explanation": "Damerau-Levenshtein includes adjacent character transposition (e.g., 'teh' -> 'the' counts as 1 edit rather than 2), which accounts for ~80% of human typing errors.",
     "topic": "Damerau-Levenshtein",
     "slide_ref": "6. Queries and Interfaces.pptx",
-    "answer": 0
+    "answer": 0,
+    "is_multi": false,
+    "required_choices": 1,
+    "correct_choices": [
+      0
+    ],
+    "correct_letter": "A",
+    "correct_letters": [
+      "A"
+    ]
   },
   {
     "id": "q_ch06_09",
@@ -4142,7 +6463,16 @@ window.SEG_QUESTIONS = [
     "explanation": "Soundex converts English words into 4-character alphanumeric codes (e.g., 'Smith' and 'Smyth' both map to S530) based on consonant phonetic classes.",
     "topic": "Soundex Phonetic Coding",
     "slide_ref": "6. Queries and Interfaces.pptx",
-    "answer": 0
+    "answer": 0,
+    "is_multi": false,
+    "required_choices": 1,
+    "correct_choices": [
+      0
+    ],
+    "correct_letter": "A",
+    "correct_letters": [
+      "A"
+    ]
   },
   {
     "id": "q_ch06_10",
@@ -4158,7 +6488,16 @@ window.SEG_QUESTIONS = [
     "explanation": "Context-sensitive correction uses n-gram language models to detect valid dictionary words used erroneously in context (e.g., form vs from).",
     "topic": "Context Spelling Correction",
     "slide_ref": "6. Queries and Interfaces.pptx",
-    "answer": 0
+    "answer": 0,
+    "is_multi": false,
+    "required_choices": 1,
+    "correct_choices": [
+      0
+    ],
+    "correct_letter": "A",
+    "correct_letters": [
+      "A"
+    ]
   },
   {
     "id": "q_ch06_11",
@@ -4174,7 +6513,16 @@ window.SEG_QUESTIONS = [
     "explanation": "SERP stands for Search Engine Result Page, the primary interface presenting organic results, rich snippets, ads, and query suggestions.",
     "topic": "SERP Definition",
     "slide_ref": "6. Queries and Interfaces.pptx",
-    "answer": 0
+    "answer": 0,
+    "is_multi": false,
+    "required_choices": 1,
+    "correct_choices": [
+      0
+    ],
+    "correct_letter": "A",
+    "correct_letters": [
+      "A"
+    ]
   },
   {
     "id": "q_ch06_12",
@@ -4190,7 +6538,16 @@ window.SEG_QUESTIONS = [
     "explanation": "Query expansion augments the query with synonyms and co-occurring terms (from thesauri or PRF) to match relevant documents that use alternative vocabulary.",
     "topic": "Query Expansion",
     "slide_ref": "6. Queries and Interfaces.pptx",
-    "answer": 1
+    "answer": 1,
+    "is_multi": false,
+    "required_choices": 1,
+    "correct_choices": [
+      1
+    ],
+    "correct_letter": "B",
+    "correct_letters": [
+      "B"
+    ]
   },
   {
     "id": "q_ch06_13",
@@ -4206,7 +6563,16 @@ window.SEG_QUESTIONS = [
     "explanation": "Topic drift occurs when expanded terms dilute the core intent, pulling in irrelevant documents from secondary word senses.",
     "topic": "Topic Drift",
     "slide_ref": "6. Queries and Interfaces.pptx",
-    "answer": 0
+    "answer": 0,
+    "is_multi": false,
+    "required_choices": 1,
+    "correct_choices": [
+      0
+    ],
+    "correct_letter": "A",
+    "correct_letters": [
+      "A"
+    ]
   },
   {
     "id": "q_ch06_14",
@@ -4222,7 +6588,16 @@ window.SEG_QUESTIONS = [
     "explanation": "Dynamic snippets locate query terms within the document and extract windowed sentence fragments with bolded highlights.",
     "topic": "Dynamic Snippets",
     "slide_ref": "6. Queries and Interfaces.pptx",
-    "answer": 1
+    "answer": 1,
+    "is_multi": false,
+    "required_choices": 1,
+    "correct_choices": [
+      1
+    ],
+    "correct_letter": "B",
+    "correct_letters": [
+      "B"
+    ]
   },
   {
     "id": "q_ch06_15",
@@ -4238,7 +6613,16 @@ window.SEG_QUESTIONS = [
     "explanation": "Knowledge panels synthesize facts directly from structured knowledge bases (Wikidata, Google Knowledge Graph) to answer entity queries immediately.",
     "topic": "Knowledge Panels",
     "slide_ref": "6. Queries and Interfaces.pptx",
-    "answer": 0
+    "answer": 0,
+    "is_multi": false,
+    "required_choices": 1,
+    "correct_choices": [
+      0
+    ],
+    "correct_letter": "A",
+    "correct_letters": [
+      "A"
+    ]
   },
   {
     "id": "q_ch06_16",
@@ -4254,7 +6638,16 @@ window.SEG_QUESTIONS = [
     "explanation": "Autocomplete matches query prefixes against historical query frequency logs using Trie structures to save typing and guide users.",
     "topic": "Autocomplete Mechanism",
     "slide_ref": "6. Queries and Interfaces.pptx",
-    "answer": 1
+    "answer": 1,
+    "is_multi": false,
+    "required_choices": 1,
+    "correct_choices": [
+      1
+    ],
+    "correct_letter": "B",
+    "correct_letters": [
+      "B"
+    ]
   },
   {
     "id": "q_ch06_17",
@@ -4270,7 +6663,16 @@ window.SEG_QUESTIONS = [
     "explanation": "Mutual Information quantifies statistical co-occurrence: high MI indicates terms appear together much more frequently than independent chance predicts.",
     "topic": "Mutual Information Expansion",
     "slide_ref": "6. Queries and Interfaces.pptx",
-    "answer": 0
+    "answer": 0,
+    "is_multi": false,
+    "required_choices": 1,
+    "correct_choices": [
+      0
+    ],
+    "correct_letter": "A",
+    "correct_letters": [
+      "A"
+    ]
   },
   {
     "id": "q_ch06_18",
@@ -4286,7 +6688,16 @@ window.SEG_QUESTIONS = [
     "explanation": "Query reformulation is the interactive process of refining queries (e.g., adding constraints, fixing typos) based on observing SERP results.",
     "topic": "Query Reformulation",
     "slide_ref": "6. Queries and Interfaces.pptx",
-    "answer": 0
+    "answer": 0,
+    "is_multi": false,
+    "required_choices": 1,
+    "correct_choices": [
+      0
+    ],
+    "correct_letter": "A",
+    "correct_letters": [
+      "A"
+    ]
   },
   {
     "id": "q_ch06_19",
@@ -4302,7 +6713,16 @@ window.SEG_QUESTIONS = [
     "explanation": "Faceted search (common in e-commerce) displays dynamic facet counts allowing users to slice and filter large result sets along structured metadata.",
     "topic": "Faceted Search",
     "slide_ref": "6. Queries and Interfaces.pptx",
-    "answer": 1
+    "answer": 1,
+    "is_multi": false,
+    "required_choices": 1,
+    "correct_choices": [
+      1
+    ],
+    "correct_letter": "B",
+    "correct_letters": [
+      "B"
+    ]
   },
   {
     "id": "q_ch06_20",
@@ -4318,7 +6738,16 @@ window.SEG_QUESTIONS = [
     "explanation": "Explicit relevance feedback uses user-marked relevant/non-relevant documents to re-weight terms and re-rank results.",
     "topic": "Relevance Feedback Concept",
     "slide_ref": "6. Queries and Interfaces.pptx",
-    "answer": 0
+    "answer": 0,
+    "is_multi": false,
+    "required_choices": 1,
+    "correct_choices": [
+      0
+    ],
+    "correct_letter": "A",
+    "correct_letters": [
+      "A"
+    ]
   },
   {
     "id": "q_ch06_21",
@@ -4334,7 +6763,16 @@ window.SEG_QUESTIONS = [
     "explanation": "Human users prefer submitting a reformulated query rather than taking time to grade individual documents, making implicit feedback far more practical.",
     "topic": "Explicit Feedback Reluctance",
     "slide_ref": "6. Queries and Interfaces.pptx",
-    "answer": 0
+    "answer": 0,
+    "is_multi": false,
+    "required_choices": 1,
+    "correct_choices": [
+      0
+    ],
+    "correct_letter": "A",
+    "correct_letters": [
+      "A"
+    ]
   },
   {
     "id": "q_ch06_22",
@@ -4350,7 +6788,16 @@ window.SEG_QUESTIONS = [
     "explanation": "Implicit feedback extracts signals from user behavior (e.g., clicking result #2 and staying on the page for 3 minutes implies relevance).",
     "topic": "Implicit Feedback Signals",
     "slide_ref": "6. Queries and Interfaces.pptx",
-    "answer": 0
+    "answer": 0,
+    "is_multi": false,
+    "required_choices": 1,
+    "correct_choices": [
+      0
+    ],
+    "correct_letter": "A",
+    "correct_letters": [
+      "A"
+    ]
   },
   {
     "id": "q_ch06_23",
@@ -4366,7 +6813,16 @@ window.SEG_QUESTIONS = [
     "explanation": "A high dwell time indicates the user found satisfying content; a dwell time of 2 seconds ('pogo-sticking') signals an unsatisfied click.",
     "topic": "Dwell Time",
     "slide_ref": "6. Queries and Interfaces.pptx",
-    "answer": 1
+    "answer": 1,
+    "is_multi": false,
+    "required_choices": 1,
+    "correct_choices": [
+      1
+    ],
+    "correct_letter": "B",
+    "correct_letters": [
+      "B"
+    ]
   },
   {
     "id": "q_ch06_24",
@@ -4382,7 +6838,16 @@ window.SEG_QUESTIONS = [
     "explanation": "Pogo-sticking is a strong negative implicit signal: bouncing back and forth indicates the top results are failing to meet the user's intent.",
     "topic": "Pogo-sticking",
     "slide_ref": "6. Queries and Interfaces.pptx",
-    "answer": 1
+    "answer": 1,
+    "is_multi": false,
+    "required_choices": 1,
+    "correct_choices": [
+      1
+    ],
+    "correct_letter": "B",
+    "correct_letters": [
+      "B"
+    ]
   },
   {
     "id": "q_ch06_25",
@@ -4398,7 +6863,16 @@ window.SEG_QUESTIONS = [
     "explanation": "Dice's coefficient normalizes the shared co-occurrence count by the sum of individual set sizes: 2|X ∩ Y| / (|X| + |Y|).",
     "topic": "Dice's Coefficient",
     "slide_ref": "6. Queries and Interfaces.pptx",
-    "answer": 0
+    "answer": 0,
+    "is_multi": false,
+    "required_choices": 1,
+    "correct_choices": [
+      0
+    ],
+    "correct_letter": "A",
+    "correct_letters": [
+      "A"
+    ]
   },
   {
     "id": "q_ch06_26",
@@ -4414,7 +6888,16 @@ window.SEG_QUESTIONS = [
     "explanation": "KWIC displays show matched terms highlighted in the middle of a short context window to demonstrate exact grammatical usage.",
     "topic": "KWIC Display",
     "slide_ref": "6. Queries and Interfaces.pptx",
-    "answer": 0
+    "answer": 0,
+    "is_multi": false,
+    "required_choices": 1,
+    "correct_choices": [
+      0
+    ],
+    "correct_letter": "A",
+    "correct_letters": [
+      "A"
+    ]
   },
   {
     "id": "q_ch06_27",
@@ -4430,7 +6913,16 @@ window.SEG_QUESTIONS = [
     "explanation": "Disambiguation predicts the probability distribution over candidate intents and diversifies top results to satisfy different interpretations.",
     "topic": "Intent Disambiguation",
     "slide_ref": "6. Queries and Interfaces.pptx",
-    "answer": 1
+    "answer": 1,
+    "is_multi": false,
+    "required_choices": 1,
+    "correct_choices": [
+      1
+    ],
+    "correct_letter": "B",
+    "correct_letters": [
+      "B"
+    ]
   },
   {
     "id": "q_ch06_28",
@@ -4446,7 +6938,16 @@ window.SEG_QUESTIONS = [
     "explanation": "Infinite scroll offers seamless browsing on social media, but on search engines it obscures footer navigation and complicates click-depth analytics.",
     "topic": "Infinite Scroll Trade-off",
     "slide_ref": "6. Queries and Interfaces.pptx",
-    "answer": 0
+    "answer": 0,
+    "is_multi": false,
+    "required_choices": 1,
+    "correct_choices": [
+      0
+    ],
+    "correct_letter": "A",
+    "correct_letters": [
+      "A"
+    ]
   },
   {
     "id": "q_ch06_29",
@@ -4462,7 +6963,16 @@ window.SEG_QUESTIONS = [
     "explanation": "Zero-result queries signal potential content deficiencies or parsing failures, monitored closely by search teams to build synonym mappings.",
     "topic": "Zero-Result Queries",
     "slide_ref": "6. Queries and Interfaces.pptx",
-    "answer": 0
+    "answer": 0,
+    "is_multi": false,
+    "required_choices": 1,
+    "correct_choices": [
+      0
+    ],
+    "correct_letter": "A",
+    "correct_letters": [
+      "A"
+    ]
   },
   {
     "id": "q_ch06_30",
@@ -4478,7 +6988,16 @@ window.SEG_QUESTIONS = [
     "explanation": "Session analysis reveals user journeys, helping train models to predict the user's next query and provide contextual suggestions.",
     "topic": "Session Logs",
     "slide_ref": "6. Queries and Interfaces.pptx",
-    "answer": 0
+    "answer": 0,
+    "is_multi": false,
+    "required_choices": 1,
+    "correct_choices": [
+      0
+    ],
+    "correct_letter": "A",
+    "correct_letters": [
+      "A"
+    ]
   },
   {
     "id": "q_ch06_31",
@@ -4494,7 +7013,16 @@ window.SEG_QUESTIONS = [
     "explanation": "If initial top results include non-relevant documents, terms extracted from them will 'drift' the query toward irrelevant subjects.",
     "topic": "Query Drift Mechanism",
     "slide_ref": "6. Queries and Interfaces.pptx",
-    "answer": 1
+    "answer": 1,
+    "is_multi": false,
+    "required_choices": 1,
+    "correct_choices": [
+      1
+    ],
+    "correct_letter": "B",
+    "correct_letters": [
+      "B"
+    ]
   },
   {
     "id": "q_ch06_32",
@@ -4510,7 +7038,16 @@ window.SEG_QUESTIONS = [
     "explanation": "Tries organize dictionary words sharing common prefixes, allowing rapid pruning when searching for typo corrections or autocomplete candidates.",
     "topic": "Trie Data Structure",
     "slide_ref": "6. Queries and Interfaces.pptx",
-    "answer": 0
+    "answer": 0,
+    "is_multi": false,
+    "required_choices": 1,
+    "correct_choices": [
+      0
+    ],
+    "correct_letter": "A",
+    "correct_letters": [
+      "A"
+    ]
   },
   {
     "id": "q_ch06_33",
@@ -4526,7 +7063,16 @@ window.SEG_QUESTIONS = [
     "explanation": "Non-word errors fail simple dictionary lookup; real-word errors pass dictionary lookup and require grammatical/n-gram context to detect.",
     "topic": "Spelling Error Types",
     "slide_ref": "6. Queries and Interfaces.pptx",
-    "answer": 0
+    "answer": 0,
+    "is_multi": false,
+    "required_choices": 1,
+    "correct_choices": [
+      0
+    ],
+    "correct_letter": "A",
+    "correct_letters": [
+      "A"
+    ]
   },
   {
     "id": "q_ch06_34",
@@ -4542,7 +7088,16 @@ window.SEG_QUESTIONS = [
     "explanation": "CTR measures the proportion of users who clicked on a displayed result, reflecting snippet attractiveness and query relevance.",
     "topic": "CTR Metric",
     "slide_ref": "6. Queries and Interfaces.pptx",
-    "answer": 0
+    "answer": 0,
+    "is_multi": false,
+    "required_choices": 1,
+    "correct_choices": [
+      0
+    ],
+    "correct_letter": "A",
+    "correct_letters": [
+      "A"
+    ]
   },
   {
     "id": "q_ch06_35",
@@ -4558,7 +7113,16 @@ window.SEG_QUESTIONS = [
     "explanation": "Position bias causes rank 1 to receive far more clicks than rank 5 even when rank 5 is more relevant, requiring debiasing algorithms in ML training.",
     "topic": "Position Bias",
     "slide_ref": "6. Queries and Interfaces.pptx",
-    "answer": 0
+    "answer": 0,
+    "is_multi": false,
+    "required_choices": 1,
+    "correct_choices": [
+      0
+    ],
+    "correct_letter": "A",
+    "correct_letters": [
+      "A"
+    ]
   },
   {
     "id": "q_ch06_36",
@@ -4574,7 +7138,16 @@ window.SEG_QUESTIONS = [
     "explanation": "Eye-tracking studies (e.g., Enquiro, 2005) revealed the F-shaped scanning pattern where users focus on the top 2-3 results and left margins.",
     "topic": "Golden Triangle",
     "slide_ref": "6. Queries and Interfaces.pptx",
-    "answer": 0
+    "answer": 0,
+    "is_multi": false,
+    "required_choices": 1,
+    "correct_choices": [
+      0
+    ],
+    "correct_letter": "A",
+    "correct_letters": [
+      "A"
+    ]
   },
   {
     "id": "q_ch06_37",
@@ -4590,7 +7163,16 @@ window.SEG_QUESTIONS = [
     "explanation": "Universal search blends vertical search results (images, maps, news, shopping) seamlessly into standard organic web listings.",
     "topic": "Universal Search",
     "slide_ref": "6. Queries and Interfaces.pptx",
-    "answer": 0
+    "answer": 0,
+    "is_multi": false,
+    "required_choices": 1,
+    "correct_choices": [
+      0
+    ],
+    "correct_letter": "A",
+    "correct_letters": [
+      "A"
+    ]
   },
   {
     "id": "q_ch06_38",
@@ -4606,7 +7188,16 @@ window.SEG_QUESTIONS = [
     "explanation": "By mining historical user session graphs, engines identify high-probability transition queries and suggest them at the bottom of the SERP.",
     "topic": "Query Suggestions",
     "slide_ref": "6. Queries and Interfaces.pptx",
-    "answer": 0
+    "answer": 0,
+    "is_multi": false,
+    "required_choices": 1,
+    "correct_choices": [
+      0
+    ],
+    "correct_letter": "A",
+    "correct_letters": [
+      "A"
+    ]
   },
   {
     "id": "q_ch06_39",
@@ -4622,7 +7213,16 @@ window.SEG_QUESTIONS = [
     "explanation": "Modern search engines interpret multi-term queries with implicit AND logic, but rank results probabilistically rather than treating all matches equally.",
     "topic": "Implicit AND",
     "slide_ref": "6. Queries and Interfaces.pptx",
-    "answer": 0
+    "answer": 0,
+    "is_multi": false,
+    "required_choices": 1,
+    "correct_choices": [
+      0
+    ],
+    "correct_letter": "A",
+    "correct_letters": [
+      "A"
+    ]
   },
   {
     "id": "q_ch06_40",
@@ -4638,7 +7238,16 @@ window.SEG_QUESTIONS = [
     "explanation": "Fuzzy search finds close matches even when query terms or document words contain typographical errors or slight spelling variations.",
     "topic": "Fuzzy Search",
     "slide_ref": "6. Queries and Interfaces.pptx",
-    "answer": 1
+    "answer": 1,
+    "is_multi": false,
+    "required_choices": 1,
+    "correct_choices": [
+      1
+    ],
+    "correct_letter": "B",
+    "correct_letters": [
+      "B"
+    ]
   },
   {
     "id": "q_ch06_41",
@@ -4654,7 +7263,16 @@ window.SEG_QUESTIONS = [
     "explanation": "Query segmentation identifies compound semantic units in queries to apply phrase-level scoring rather than isolated word scoring.",
     "topic": "Query Segmentation",
     "slide_ref": "6. Queries and Interfaces.pptx",
-    "answer": 0
+    "answer": 0,
+    "is_multi": false,
+    "required_choices": 1,
+    "correct_choices": [
+      0
+    ],
+    "correct_letter": "A",
+    "correct_letters": [
+      "A"
+    ]
   },
   {
     "id": "q_ch06_42",
@@ -4670,7 +7288,16 @@ window.SEG_QUESTIONS = [
     "explanation": "Breadcrumbs show structural hierarchy, helping users understand site structure and navigate directly to category levels.",
     "topic": "Breadcrumbs",
     "slide_ref": "6. Queries and Interfaces.pptx",
-    "answer": 1
+    "answer": 1,
+    "is_multi": false,
+    "required_choices": 1,
+    "correct_choices": [
+      1
+    ],
+    "correct_letter": "B",
+    "correct_letters": [
+      "B"
+    ]
   },
   {
     "id": "q_ch06_43",
@@ -4680,13 +7307,22 @@ window.SEG_QUESTIONS = [
       "A special card at the very top of the SERP that extracts a concise paragraph, table, or list directly answering the user query without needing to visit the site",
       "An automated phone call from Google",
       "A direct message on Twitter",
-      "A sponsored advertisement that costs $10 per click"
+      "A sponsored advertisement that costs \\$10 per click"
     ],
     "correct": 0,
     "explanation": "Featured snippets (Position Zero) extract the factual answer directly from high-authority pages and display it prominently at the top.",
     "topic": "Featured Snippets",
     "slide_ref": "6. Queries and Interfaces.pptx",
-    "answer": 0
+    "answer": 0,
+    "is_multi": false,
+    "required_choices": 1,
+    "correct_choices": [
+      0
+    ],
+    "correct_letter": "A",
+    "correct_letters": [
+      "A"
+    ]
   },
   {
     "id": "q_ch06_44",
@@ -4702,7 +7338,16 @@ window.SEG_QUESTIONS = [
     "explanation": "Phonetic algorithms (Soundex, Metaphone, Double Metaphone) map homophones to identical hash codes, solving phonetic spelling errors.",
     "topic": "Phonetic Matching",
     "slide_ref": "6. Queries and Interfaces.pptx",
-    "answer": 0
+    "answer": 0,
+    "is_multi": false,
+    "required_choices": 1,
+    "correct_choices": [
+      0
+    ],
+    "correct_letter": "A",
+    "correct_letters": [
+      "A"
+    ]
   },
   {
     "id": "q_ch06_45",
@@ -4718,7 +7363,16 @@ window.SEG_QUESTIONS = [
     "explanation": "Predicting query performance allows search engines to selectively activate computationally expensive models or prompt users for clarification.",
     "topic": "Query Difficulty",
     "slide_ref": "6. Queries and Interfaces.pptx",
-    "answer": 0
+    "answer": 0,
+    "is_multi": false,
+    "required_choices": 1,
+    "correct_choices": [
+      0
+    ],
+    "correct_letter": "A",
+    "correct_letters": [
+      "A"
+    ]
   },
   {
     "id": "q_ch06_46",
@@ -4734,7 +7388,16 @@ window.SEG_QUESTIONS = [
     "explanation": "Autocomplete ranks suggestions by popularity, velocity (trending events), geographic locality, and past user session behavior.",
     "topic": "Autocomplete Ranking",
     "slide_ref": "6. Queries and Interfaces.pptx",
-    "answer": 0
+    "answer": 0,
+    "is_multi": false,
+    "required_choices": 1,
+    "correct_choices": [
+      0
+    ],
+    "correct_letter": "A",
+    "correct_letters": [
+      "A"
+    ]
   },
   {
     "id": "q_ch06_47",
@@ -4750,7 +7413,16 @@ window.SEG_QUESTIONS = [
     "explanation": "'Did you mean' suggests plausible high-frequency corrections when an entered query is likely a typo of a popular search term.",
     "topic": "Did You Mean",
     "slide_ref": "6. Queries and Interfaces.pptx",
-    "answer": 0
+    "answer": 0,
+    "is_multi": false,
+    "required_choices": 1,
+    "correct_choices": [
+      0
+    ],
+    "correct_letter": "A",
+    "correct_letters": [
+      "A"
+    ]
   },
   {
     "id": "q_ch06_48",
@@ -4766,7 +7438,16 @@ window.SEG_QUESTIONS = [
     "explanation": "A search session groups continuous user activity (typically delimited by 30 minutes of inactivity) to analyze task completion.",
     "topic": "Search Session Definition",
     "slide_ref": "6. Queries and Interfaces.pptx",
-    "answer": 0
+    "answer": 0,
+    "is_multi": false,
+    "required_choices": 1,
+    "correct_choices": [
+      0
+    ],
+    "correct_letter": "A",
+    "correct_letters": [
+      "A"
+    ]
   },
   {
     "id": "q_ch06_49",
@@ -4782,7 +7463,16 @@ window.SEG_QUESTIONS = [
     "explanation": "The infamous 2006 AOL query log release showed that even pseudo-anonymized user IDs can be de-anonymized through unique query sequences.",
     "topic": "Query Log Privacy",
     "slide_ref": "6. Queries and Interfaces.pptx",
-    "answer": 0
+    "answer": 0,
+    "is_multi": false,
+    "required_choices": 1,
+    "correct_choices": [
+      0
+    ],
+    "correct_letter": "A",
+    "correct_letters": [
+      "A"
+    ]
   },
   {
     "id": "q_ch06_50",
@@ -4798,7 +7488,16 @@ window.SEG_QUESTIONS = [
     "explanation": "Verticals focus deeply on single verticals (travel, shopping, news, academic, images) with domain-specific schemas and filters.",
     "topic": "Vertical Search",
     "slide_ref": "6. Queries and Interfaces.pptx",
-    "answer": 1
+    "answer": 1,
+    "is_multi": false,
+    "required_choices": 1,
+    "correct_choices": [
+      1
+    ],
+    "correct_letter": "B",
+    "correct_letters": [
+      "B"
+    ]
   },
   {
     "id": "q_ch07_01",
@@ -4814,7 +7513,16 @@ window.SEG_QUESTIONS = [
     "explanation": "The Vector Space Model represents documents and queries as multidimensional vectors of term weights and ranks documents by cosine similarity.",
     "topic": "VSM Principle",
     "slide_ref": "7. Retrieval Models.pptx",
-    "answer": 0
+    "answer": 0,
+    "is_multi": false,
+    "required_choices": 1,
+    "correct_choices": [
+      0
+    ],
+    "correct_letter": "A",
+    "correct_letters": [
+      "A"
+    ]
   },
   {
     "id": "q_ch07_02",
@@ -4830,7 +7538,16 @@ window.SEG_QUESTIONS = [
     "explanation": "Cosine similarity is the dot product of the two vectors divided by the product of their Euclidean lengths (L2 norms), measuring the cosine of the angle between them.",
     "topic": "Cosine Similarity Formula",
     "slide_ref": "7. Retrieval Models.pptx",
-    "answer": 0
+    "answer": 0,
+    "is_multi": false,
+    "required_choices": 1,
+    "correct_choices": [
+      0
+    ],
+    "correct_letter": "A",
+    "correct_letters": [
+      "A"
+    ]
   },
   {
     "id": "q_ch07_03",
@@ -4846,7 +7563,16 @@ window.SEG_QUESTIONS = [
     "explanation": "Long documents naturally have higher term counts; cosine normalization divides by document length to prevent long documents from dominating short, concise documents.",
     "topic": "Length Normalization",
     "slide_ref": "7. Retrieval Models.pptx",
-    "answer": 0
+    "answer": 0,
+    "is_multi": false,
+    "required_choices": 1,
+    "correct_choices": [
+      0
+    ],
+    "correct_letter": "A",
+    "correct_letters": [
+      "A"
+    ]
   },
   {
     "id": "q_ch07_04",
@@ -4862,7 +7588,16 @@ window.SEG_QUESTIONS = [
     "explanation": "TF-IDF combines Term Frequency (how often term t appears in doc d) with Inverse Document Frequency (how rare term t is across the entire collection).",
     "topic": "TF-IDF Acronym",
     "slide_ref": "7. Retrieval Models.pptx",
-    "answer": 0
+    "answer": 0,
+    "is_multi": false,
+    "required_choices": 1,
+    "correct_choices": [
+      0
+    ],
+    "correct_letter": "A",
+    "correct_letters": [
+      "A"
+    ]
   },
   {
     "id": "q_ch07_05",
@@ -4878,7 +7613,16 @@ window.SEG_QUESTIONS = [
     "explanation": "IDF measures term rarity across the collection: as document frequency DF(t) decreases, IDF increases logarithmically.",
     "topic": "IDF Formula",
     "slide_ref": "7. Retrieval Models.pptx",
-    "answer": 0
+    "answer": 0,
+    "is_multi": false,
+    "required_choices": 1,
+    "correct_choices": [
+      0
+    ],
+    "correct_letter": "A",
+    "correct_letters": [
+      "A"
+    ]
   },
   {
     "id": "q_ch07_06",
@@ -4894,7 +7638,16 @@ window.SEG_QUESTIONS = [
     "explanation": "IDF = log10(1,000,000 / 100) = log10(10^4) = 4.",
     "topic": "IDF Calculation",
     "slide_ref": "7. Retrieval Models.pptx",
-    "answer": 0
+    "answer": 0,
+    "is_multi": false,
+    "required_choices": 1,
+    "correct_choices": [
+      0
+    ],
+    "correct_letter": "A",
+    "correct_letters": [
+      "A"
+    ]
   },
   {
     "id": "q_ch07_07",
@@ -4910,7 +7663,16 @@ window.SEG_QUESTIONS = [
     "explanation": "Sublinear TF scaling (e.g., 1 + log(tf)) models the diminishing marginal utility of additional occurrences of a term.",
     "topic": "Sublinear TF Scaling",
     "slide_ref": "7. Retrieval Models.pptx",
-    "answer": 0
+    "answer": 0,
+    "is_multi": false,
+    "required_choices": 1,
+    "correct_choices": [
+      0
+    ],
+    "correct_letter": "A",
+    "correct_letters": [
+      "A"
+    ]
   },
   {
     "id": "q_ch07_08",
@@ -4926,7 +7688,16 @@ window.SEG_QUESTIONS = [
     "explanation": "Okapi BM25 (Best Matching 25) is the preeminent classical probabilistic ranking model balancing term frequency saturation and document length normalization.",
     "topic": "BM25 Overview",
     "slide_ref": "7. Retrieval Models.pptx",
-    "answer": 0
+    "answer": 0,
+    "is_multi": false,
+    "required_choices": 1,
+    "correct_choices": [
+      0
+    ],
+    "correct_letter": "A",
+    "correct_letters": [
+      "A"
+    ]
   },
   {
     "id": "q_ch07_09",
@@ -4942,7 +7713,16 @@ window.SEG_QUESTIONS = [
     "explanation": "Parameter k1 (typically between 1.2 and 2.0) controls the curvature of saturation: small k1 leads to rapid saturation where extra term occurrences yield little additional score.",
     "topic": "BM25 k1 Parameter",
     "slide_ref": "7. Retrieval Models.pptx",
-    "answer": 0
+    "answer": 0,
+    "is_multi": false,
+    "required_choices": 1,
+    "correct_choices": [
+      0
+    ],
+    "correct_letter": "A",
+    "correct_letters": [
+      "A"
+    ]
   },
   {
     "id": "q_ch07_10",
@@ -4958,7 +7738,16 @@ window.SEG_QUESTIONS = [
     "explanation": "Parameter b (typically b ≈ 0.75) controls the degree of document length normalization relative to average document length (avgdl).",
     "topic": "BM25 b Parameter",
     "slide_ref": "7. Retrieval Models.pptx",
-    "answer": 0
+    "answer": 0,
+    "is_multi": false,
+    "required_choices": 1,
+    "correct_choices": [
+      0
+    ],
+    "correct_letter": "A",
+    "correct_letters": [
+      "A"
+    ]
   },
   {
     "id": "q_ch07_11",
@@ -4974,7 +7763,16 @@ window.SEG_QUESTIONS = [
     "explanation": "When b = 0, B = 1 regardless of document length, completely removing length penalties.",
     "topic": "BM25 b=0 Behavior",
     "slide_ref": "7. Retrieval Models.pptx",
-    "answer": 0
+    "answer": 0,
+    "is_multi": false,
+    "required_choices": 1,
+    "correct_choices": [
+      0
+    ],
+    "correct_letter": "A",
+    "correct_letters": [
+      "A"
+    ]
   },
   {
     "id": "q_ch07_12",
@@ -4990,7 +7788,16 @@ window.SEG_QUESTIONS = [
     "explanation": "The Query Likelihood model posits that a user has a relevant document in mind and generates query terms from its language model; documents are ranked by P(Q|D).",
     "topic": "Query Likelihood Model",
     "slide_ref": "7. Retrieval Models.pptx",
-    "answer": 0
+    "answer": 0,
+    "is_multi": false,
+    "required_choices": 1,
+    "correct_choices": [
+      0
+    ],
+    "correct_letter": "A",
+    "correct_letters": [
+      "A"
+    ]
   },
   {
     "id": "q_ch07_13",
@@ -5006,7 +7813,16 @@ window.SEG_QUESTIONS = [
     "explanation": "Without smoothing, maximum likelihood estimates assign zero probability to unseen words, which zero-out the entire product across query terms.",
     "topic": "Zero-Frequency Problem",
     "slide_ref": "7. Retrieval Models.pptx",
-    "answer": 1
+    "answer": 1,
+    "is_multi": false,
+    "required_choices": 1,
+    "correct_choices": [
+      1
+    ],
+    "correct_letter": "B",
+    "correct_letters": [
+      "B"
+    ]
   },
   {
     "id": "q_ch07_14",
@@ -5022,7 +7838,16 @@ window.SEG_QUESTIONS = [
     "explanation": "Jelinek-Mercer smoothing interpolates the document model with the collection background model using a constant weight lambda.",
     "topic": "Jelinek-Mercer Smoothing",
     "slide_ref": "7. Retrieval Models.pptx",
-    "answer": 0
+    "answer": 0,
+    "is_multi": false,
+    "required_choices": 1,
+    "correct_choices": [
+      0
+    ],
+    "correct_letter": "A",
+    "correct_letters": [
+      "A"
+    ]
   },
   {
     "id": "q_ch07_15",
@@ -5038,7 +7863,16 @@ window.SEG_QUESTIONS = [
     "explanation": "Dirichlet smoothing: P(t|D) = (c(t, D) + mu * P(t|C)) / (|d| + mu), which naturally provides less background smoothing for long documents and more for short documents.",
     "topic": "Dirichlet Smoothing",
     "slide_ref": "7. Retrieval Models.pptx",
-    "answer": 0
+    "answer": 0,
+    "is_multi": false,
+    "required_choices": 1,
+    "correct_choices": [
+      0
+    ],
+    "correct_letter": "A",
+    "correct_letters": [
+      "A"
+    ]
   },
   {
     "id": "q_ch07_16",
@@ -5054,7 +7888,16 @@ window.SEG_QUESTIONS = [
     "explanation": "The PRP is the foundational theorem of IR stating that sorting documents by P(Relevant | Query, Doc) yields optimal retrieval performance.",
     "topic": "Probability Ranking Principle",
     "slide_ref": "7. Retrieval Models.pptx",
-    "answer": 0
+    "answer": 0,
+    "is_multi": false,
+    "required_choices": 1,
+    "correct_choices": [
+      0
+    ],
+    "correct_letter": "A",
+    "correct_letters": [
+      "A"
+    ]
   },
   {
     "id": "q_ch07_17",
@@ -5070,7 +7913,16 @@ window.SEG_QUESTIONS = [
     "explanation": "BIM (Robertson & Spärck Jones, 1976) models documents as binary indicator vectors and applies Bayes' rule under conditional term independence.",
     "topic": "Binary Independence Model",
     "slide_ref": "7. Retrieval Models.pptx",
-    "answer": 0
+    "answer": 0,
+    "is_multi": false,
+    "required_choices": 1,
+    "correct_choices": [
+      0
+    ],
+    "correct_letter": "A",
+    "correct_letters": [
+      "A"
+    ]
   },
   {
     "id": "q_ch07_18",
@@ -5086,7 +7938,16 @@ window.SEG_QUESTIONS = [
     "explanation": "Boolean models do not produce continuous scores; results are unranked sets of matching documents.",
     "topic": "Boolean Retrieval Limitations",
     "slide_ref": "7. Retrieval Models.pptx",
-    "answer": 0
+    "answer": 0,
+    "is_multi": false,
+    "required_choices": 1,
+    "correct_choices": [
+      0
+    ],
+    "correct_letter": "A",
+    "correct_letters": [
+      "A"
+    ]
   },
   {
     "id": "q_ch07_19",
@@ -5102,7 +7963,16 @@ window.SEG_QUESTIONS = [
     "explanation": "Term independence ignores word co-occurrence and syntax, treating words like 'white' and 'house' as completely independent variables.",
     "topic": "Term Independence",
     "slide_ref": "7. Retrieval Models.pptx",
-    "answer": 0
+    "answer": 0,
+    "is_multi": false,
+    "required_choices": 1,
+    "correct_choices": [
+      0
+    ],
+    "correct_letter": "A",
+    "correct_letters": [
+      "A"
+    ]
   },
   {
     "id": "q_ch07_20",
@@ -5118,7 +7988,16 @@ window.SEG_QUESTIONS = [
     "explanation": "Orthogonal vectors have a dot product of 0, meaning cos(90°) = 0.0, indicating zero shared vocabulary terms.",
     "topic": "Orthogonal Vectors",
     "slide_ref": "7. Retrieval Models.pptx",
-    "answer": 0
+    "answer": 0,
+    "is_multi": false,
+    "required_choices": 1,
+    "correct_choices": [
+      0
+    ],
+    "correct_letter": "A",
+    "correct_letters": [
+      "A"
+    ]
   },
   {
     "id": "q_ch07_21",
@@ -5134,7 +8013,16 @@ window.SEG_QUESTIONS = [
     "explanation": "The angle between a vector and itself is 0 degrees; cos(0°) = 1.0, indicating perfect similarity.",
     "topic": "Self-Similarity Cosine",
     "slide_ref": "7. Retrieval Models.pptx",
-    "answer": 0
+    "answer": 0,
+    "is_multi": false,
+    "required_choices": 1,
+    "correct_choices": [
+      0
+    ],
+    "correct_letter": "A",
+    "correct_letters": [
+      "A"
+    ]
   },
   {
     "id": "q_ch07_22",
@@ -5150,7 +8038,16 @@ window.SEG_QUESTIONS = [
     "explanation": "In BM25, the TF component saturates gracefully toward (k1 + 1), ensuring repeated terms cannot infinitely inflate document scores.",
     "topic": "TF Saturation Curve",
     "slide_ref": "7. Retrieval Models.pptx",
-    "answer": 0
+    "answer": 0,
+    "is_multi": false,
+    "required_choices": 1,
+    "correct_choices": [
+      0
+    ],
+    "correct_letter": "A",
+    "correct_letters": [
+      "A"
+    ]
   },
   {
     "id": "q_ch07_23",
@@ -5166,7 +8063,16 @@ window.SEG_QUESTIONS = [
     "explanation": "B = (1 - b) + b * (|d| / avgdl). When |d| = avgdl, B = (1 - b) + b * 1 = 1.0.",
     "topic": "BM25 Length Factor Calculation",
     "slide_ref": "7. Retrieval Models.pptx",
-    "answer": 0
+    "answer": 0,
+    "is_multi": false,
+    "required_choices": 1,
+    "correct_choices": [
+      0
+    ],
+    "correct_letter": "A",
+    "correct_letters": [
+      "A"
+    ]
   },
   {
     "id": "q_ch07_24",
@@ -5182,7 +8088,16 @@ window.SEG_QUESTIONS = [
     "explanation": "Dirichlet smoothing treats mu as pseudo-counts from a Dirichlet prior, blending the document with mu background collection tokens.",
     "topic": "Dirichlet Prior Intuition",
     "slide_ref": "7. Retrieval Models.pptx",
-    "answer": 0
+    "answer": 0,
+    "is_multi": false,
+    "required_choices": 1,
+    "correct_choices": [
+      0
+    ],
+    "correct_letter": "A",
+    "correct_letters": [
+      "A"
+    ]
   },
   {
     "id": "q_ch07_25",
@@ -5198,7 +8113,16 @@ window.SEG_QUESTIONS = [
     "explanation": "The unigram model treats each token generation as an independent draw from a single categorical probability distribution over the vocabulary.",
     "topic": "Unigram Model",
     "slide_ref": "7. Retrieval Models.pptx",
-    "answer": 0
+    "answer": 0,
+    "is_multi": false,
+    "required_choices": 1,
+    "correct_choices": [
+      0
+    ],
+    "correct_letter": "A",
+    "correct_letters": [
+      "A"
+    ]
   },
   {
     "id": "q_ch07_26",
@@ -5214,7 +8138,16 @@ window.SEG_QUESTIONS = [
     "explanation": "Ranking documents by negative KL-divergence from the query model provides a theoretically sound framework that subsumes query likelihood.",
     "topic": "KL Divergence IR",
     "slide_ref": "7. Retrieval Models.pptx",
-    "answer": 0
+    "answer": 0,
+    "is_multi": false,
+    "required_choices": 1,
+    "correct_choices": [
+      0
+    ],
+    "correct_letter": "A",
+    "correct_letters": [
+      "A"
+    ]
   },
   {
     "id": "q_ch07_27",
@@ -5230,7 +8163,16 @@ window.SEG_QUESTIONS = [
     "explanation": "Terms appearing in more than half the collection have negative IDF in the standard formula; modern Lucene/BM25 implementations clamp IDF = log(1 + (N - df + 0.5)/(df + 0.5)) >= 0.",
     "topic": "Negative IDF Fix",
     "slide_ref": "7. Retrieval Models.pptx",
-    "answer": 0
+    "answer": 0,
+    "is_multi": false,
+    "required_choices": 1,
+    "correct_choices": [
+      0
+    ],
+    "correct_letter": "A",
+    "correct_letters": [
+      "A"
+    ]
   },
   {
     "id": "q_ch07_28",
@@ -5246,7 +8188,16 @@ window.SEG_QUESTIONS = [
     "explanation": "SMART notation (Salton & Buckley, 1988) uses 3 letters for doc weighting and 3 for query weighting (e.g., 'ltc' = log tf, idf, cosine norm).",
     "topic": "SMART Notation",
     "slide_ref": "7. Retrieval Models.pptx",
-    "answer": 0
+    "answer": 0,
+    "is_multi": false,
+    "required_choices": 1,
+    "correct_choices": [
+      0
+    ],
+    "correct_letter": "A",
+    "correct_letters": [
+      "A"
+    ]
   },
   {
     "id": "q_ch07_29",
@@ -5262,7 +8213,16 @@ window.SEG_QUESTIONS = [
     "explanation": "'n' denotes no normalization, meaning the raw weighted vector is used directly without dividing by Euclidean length.",
     "topic": "SMART 'n' Normalization",
     "slide_ref": "7. Retrieval Models.pptx",
-    "answer": 0
+    "answer": 0,
+    "is_multi": false,
+    "required_choices": 1,
+    "correct_choices": [
+      0
+    ],
+    "correct_letter": "A",
+    "correct_letters": [
+      "A"
+    ]
   },
   {
     "id": "q_ch07_30",
@@ -5278,7 +8238,16 @@ window.SEG_QUESTIONS = [
     "explanation": "'c' denotes cosine normalization, dividing each term weight by sqrt(sum(w_i^2)).",
     "topic": "SMART 'c' Normalization",
     "slide_ref": "7. Retrieval Models.pptx",
-    "answer": 0
+    "answer": 0,
+    "is_multi": false,
+    "required_choices": 1,
+    "correct_choices": [
+      0
+    ],
+    "correct_letter": "A",
+    "correct_letters": [
+      "A"
+    ]
   },
   {
     "id": "q_ch07_31",
@@ -5294,7 +8263,16 @@ window.SEG_QUESTIONS = [
     "explanation": "Proximity ranking rewards documents where multiple query terms appear within a narrow word window (e.g., within 5 words).",
     "topic": "Proximity Ranking",
     "slide_ref": "7. Retrieval Models.pptx",
-    "answer": 0
+    "answer": 0,
+    "is_multi": false,
+    "required_choices": 1,
+    "correct_choices": [
+      0
+    ],
+    "correct_letter": "A",
+    "correct_letters": [
+      "A"
+    ]
   },
   {
     "id": "q_ch07_32",
@@ -5310,7 +8288,16 @@ window.SEG_QUESTIONS = [
     "explanation": "Boolean exact match does not rank results; users are overwhelmed by huge unranked sets or frustrated by empty results if one term misses.",
     "topic": "Feast or Famine",
     "slide_ref": "7. Retrieval Models.pptx",
-    "answer": 0
+    "answer": 0,
+    "is_multi": false,
+    "required_choices": 1,
+    "correct_choices": [
+      0
+    ],
+    "correct_letter": "A",
+    "correct_letters": [
+      "A"
+    ]
   },
   {
     "id": "q_ch07_33",
@@ -5326,7 +8313,16 @@ window.SEG_QUESTIONS = [
     "explanation": "Metzler and Croft's MRF model captures term dependencies by scoring cliques of ordered and unordered query term combinations.",
     "topic": "Markov Random Field IR",
     "slide_ref": "7. Retrieval Models.pptx",
-    "answer": 0
+    "answer": 0,
+    "is_multi": false,
+    "required_choices": 1,
+    "correct_choices": [
+      0
+    ],
+    "correct_letter": "A",
+    "correct_letters": [
+      "A"
+    ]
   },
   {
     "id": "q_ch07_34",
@@ -5342,7 +8338,16 @@ window.SEG_QUESTIONS = [
     "explanation": "SDM linearly weights independent term scores (f_T), ordered bigram phrases (f_O), and unordered co-occurrence within window size 8 (f_U).",
     "topic": "SDM Components",
     "slide_ref": "7. Retrieval Models.pptx",
-    "answer": 0
+    "answer": 0,
+    "is_multi": false,
+    "required_choices": 1,
+    "correct_choices": [
+      0
+    ],
+    "correct_letter": "A",
+    "correct_letters": [
+      "A"
+    ]
   },
   {
     "id": "q_ch07_35",
@@ -5358,7 +8363,16 @@ window.SEG_QUESTIONS = [
     "explanation": "Logarithmic dampening ensures that while rare terms have high weights, their impact does not grow unboundedly.",
     "topic": "IDF Dampening",
     "slide_ref": "7. Retrieval Models.pptx",
-    "answer": 0
+    "answer": 0,
+    "is_multi": false,
+    "required_choices": 1,
+    "correct_choices": [
+      0
+    ],
+    "correct_letter": "A",
+    "correct_letters": [
+      "A"
+    ]
   },
   {
     "id": "q_ch07_36",
@@ -5374,7 +8388,16 @@ window.SEG_QUESTIONS = [
     "explanation": "Under pure MLE, any word missing from a document has P(w|D) = 0, causing the entire unigram product P(Q|D) = 0.",
     "topic": "MLE Zero Frequency",
     "slide_ref": "7. Retrieval Models.pptx",
-    "answer": 0
+    "answer": 0,
+    "is_multi": false,
+    "required_choices": 1,
+    "correct_choices": [
+      0
+    ],
+    "correct_letter": "A",
+    "correct_letters": [
+      "A"
+    ]
   },
   {
     "id": "q_ch07_37",
@@ -5390,7 +8413,16 @@ window.SEG_QUESTIONS = [
     "explanation": "P(t|D) = lambda * P_MLE(t|D) + (1 - lambda) * P_MLE(t|C). As lambda -> 1, background smoothing vanishes.",
     "topic": "JM Lambda Behavior",
     "slide_ref": "7. Retrieval Models.pptx",
-    "answer": 0
+    "answer": 0,
+    "is_multi": false,
+    "required_choices": 1,
+    "correct_choices": [
+      0
+    ],
+    "correct_letter": "A",
+    "correct_letters": [
+      "A"
+    ]
   },
   {
     "id": "q_ch07_38",
@@ -5406,7 +8438,16 @@ window.SEG_QUESTIONS = [
     "explanation": "When lambda = 0, document text is ignored and every document receives the exact same score based solely on collection frequency.",
     "topic": "JM Lambda 0",
     "slide_ref": "7. Retrieval Models.pptx",
-    "answer": 0
+    "answer": 0,
+    "is_multi": false,
+    "required_choices": 1,
+    "correct_choices": [
+      0
+    ],
+    "correct_letter": "A",
+    "correct_letters": [
+      "A"
+    ]
   },
   {
     "id": "q_ch07_39",
@@ -5422,7 +8463,16 @@ window.SEG_QUESTIONS = [
     "explanation": "Dirichlet smoothing automatically accounts for document length variation, which is critical for ranking ad-hoc short queries.",
     "topic": "Dirichlet vs JM",
     "slide_ref": "7. Retrieval Models.pptx",
-    "answer": 0
+    "answer": 0,
+    "is_multi": false,
+    "required_choices": 1,
+    "correct_choices": [
+      0
+    ],
+    "correct_letter": "A",
+    "correct_letters": [
+      "A"
+    ]
   },
   {
     "id": "q_ch07_40",
@@ -5438,7 +8488,16 @@ window.SEG_QUESTIONS = [
     "explanation": "Collection frequency sums all occurrences; document frequency counts distinct documents (e.g., term occurs 10 times in 1 doc: cf=10, df=1).",
     "topic": "cf vs df",
     "slide_ref": "7. Retrieval Models.pptx",
-    "answer": 0
+    "answer": 0,
+    "is_multi": false,
+    "required_choices": 1,
+    "correct_choices": [
+      0
+    ],
+    "correct_letter": "A",
+    "correct_letters": [
+      "A"
+    ]
   },
   {
     "id": "q_ch07_41",
@@ -5454,7 +8513,16 @@ window.SEG_QUESTIONS = [
     "explanation": "Log scaling prevents words with huge rarity from eclipsing multiple moderate term matches.",
     "topic": "IDF Saturation",
     "slide_ref": "7. Retrieval Models.pptx",
-    "answer": 0
+    "answer": 0,
+    "is_multi": false,
+    "required_choices": 1,
+    "correct_choices": [
+      0
+    ],
+    "correct_letter": "A",
+    "correct_letters": [
+      "A"
+    ]
   },
   {
     "id": "q_ch07_42",
@@ -5470,7 +8538,16 @@ window.SEG_QUESTIONS = [
     "explanation": "The odds ratio compares the likelihood of relevance to non-relevance, serving as the basis for the Binary Independence Model and BM25.",
     "topic": "Odds of Relevance",
     "slide_ref": "7. Retrieval Models.pptx",
-    "answer": 0
+    "answer": 0,
+    "is_multi": false,
+    "required_choices": 1,
+    "correct_choices": [
+      0
+    ],
+    "correct_letter": "A",
+    "correct_letters": [
+      "A"
+    ]
   },
   {
     "id": "q_ch07_43",
@@ -5486,7 +8563,16 @@ window.SEG_QUESTIONS = [
     "explanation": "Empirically on TREC benchmarks, BM25 consistently achieves higher MAP and NDCG than standard Vector Space Models.",
     "topic": "BM25 Benchmark Superiority",
     "slide_ref": "7. Retrieval Models.pptx",
-    "answer": 0
+    "answer": 0,
+    "is_multi": false,
+    "required_choices": 1,
+    "correct_choices": [
+      0
+    ],
+    "correct_letter": "A",
+    "correct_letters": [
+      "A"
+    ]
   },
   {
     "id": "q_ch07_44",
@@ -5502,7 +8588,16 @@ window.SEG_QUESTIONS = [
     "explanation": "In BM25, the TF component tf / (k1 * B + tf) equals 0 / (k1 * B + 0) = 0, contributing 0 to the sum.",
     "topic": "BM25 tf=0 Contribution",
     "slide_ref": "7. Retrieval Models.pptx",
-    "answer": 0
+    "answer": 0,
+    "is_multi": false,
+    "required_choices": 1,
+    "correct_choices": [
+      0
+    ],
+    "correct_letter": "A",
+    "correct_letters": [
+      "A"
+    ]
   },
   {
     "id": "q_ch07_45",
@@ -5518,7 +8613,16 @@ window.SEG_QUESTIONS = [
     "explanation": "Query length normalization ensures that scores across different queries are on comparable scales.",
     "topic": "Query Length Normalization",
     "slide_ref": "7. Retrieval Models.pptx",
-    "answer": 0
+    "answer": 0,
+    "is_multi": false,
+    "required_choices": 1,
+    "correct_choices": [
+      0
+    ],
+    "correct_letter": "A",
+    "correct_letters": [
+      "A"
+    ]
   },
   {
     "id": "q_ch07_46",
@@ -5534,7 +8638,16 @@ window.SEG_QUESTIONS = [
     "explanation": "The 2-Poisson model (Bookstein & Swanson; Harter) posits that words appear with two Poisson rates depending on whether the document is 'about' the topic.",
     "topic": "2-Poisson Model",
     "slide_ref": "7. Retrieval Models.pptx",
-    "answer": 0
+    "answer": 0,
+    "is_multi": false,
+    "required_choices": 1,
+    "correct_choices": [
+      0
+    ],
+    "correct_letter": "A",
+    "correct_letters": [
+      "A"
+    ]
   },
   {
     "id": "q_ch07_47",
@@ -5550,7 +8663,16 @@ window.SEG_QUESTIONS = [
     "explanation": "The first derivative is positive (monotonic increase) and second derivative is negative (concave diminishing returns).",
     "topic": "BM25 Mathematical Properties",
     "slide_ref": "7. Retrieval Models.pptx",
-    "answer": 0
+    "answer": 0,
+    "is_multi": false,
+    "required_choices": 1,
+    "correct_choices": [
+      0
+    ],
+    "correct_letter": "A",
+    "correct_letters": [
+      "A"
+    ]
   },
   {
     "id": "q_ch07_48",
@@ -5566,7 +8688,16 @@ window.SEG_QUESTIONS = [
     "explanation": "Term weighting quantifies the semantic salience and discriminative power of terms in documents and queries.",
     "topic": "Term Weighting",
     "slide_ref": "7. Retrieval Models.pptx",
-    "answer": 0
+    "answer": 0,
+    "is_multi": false,
+    "required_choices": 1,
+    "correct_choices": [
+      0
+    ],
+    "correct_letter": "A",
+    "correct_letters": [
+      "A"
+    ]
   },
   {
     "id": "q_ch07_49",
@@ -5582,7 +8713,16 @@ window.SEG_QUESTIONS = [
     "explanation": "Unit vector normalization projects all document vectors onto the unit hypersphere, making dot products equal to cosine similarities.",
     "topic": "Vector Normalization",
     "slide_ref": "7. Retrieval Models.pptx",
-    "answer": 0
+    "answer": 0,
+    "is_multi": false,
+    "required_choices": 1,
+    "correct_choices": [
+      0
+    ],
+    "correct_letter": "A",
+    "correct_letters": [
+      "A"
+    ]
   },
   {
     "id": "q_ch07_50",
@@ -5598,7 +8738,16 @@ window.SEG_QUESTIONS = [
     "explanation": "A language model assigns probabilities P(w1, w2, ..., wn) to word strings, modeling how likely that text is to be generated.",
     "topic": "Language Model Definition",
     "slide_ref": "7. Retrieval Models.pptx",
-    "answer": 0
+    "answer": 0,
+    "is_multi": false,
+    "required_choices": 1,
+    "correct_choices": [
+      0
+    ],
+    "correct_letter": "A",
+    "correct_letters": [
+      "A"
+    ]
   },
   {
     "id": "q_ch08_01",
@@ -5614,7 +8763,16 @@ window.SEG_QUESTIONS = [
     "explanation": "SEO focuses on enhancing organic search visibility and driving quality traffic through technical, content, and authority optimization without paying for ad placement.",
     "topic": "SEO Objectives",
     "slide_ref": "8 Search Engine Optimization (SEO).pptx",
-    "answer": 1
+    "answer": 1,
+    "is_multi": false,
+    "required_choices": 1,
+    "correct_choices": [
+      1
+    ],
+    "correct_letter": "B",
+    "correct_letters": [
+      "B"
+    ]
   },
   {
     "id": "q_ch08_02",
@@ -5630,7 +8788,16 @@ window.SEG_QUESTIONS = [
     "explanation": "The 3 core pillars are: On-Page SEO (content & tags), Off-Page SEO (backlinks & external authority), and Technical SEO (crawlability, speed, indexability).",
     "topic": "Pillars of SEO",
     "slide_ref": "8 Search Engine Optimization (SEO).pptx",
-    "answer": 0
+    "answer": 0,
+    "is_multi": false,
+    "required_choices": 1,
+    "correct_choices": [
+      0
+    ],
+    "correct_letter": "A",
+    "correct_letters": [
+      "A"
+    ]
   },
   {
     "id": "q_ch08_03",
@@ -5646,7 +8813,16 @@ window.SEG_QUESTIONS = [
     "explanation": "Google Panda targeted scraper sites, duplicate content, thin affiliate pages, and low-quality content farms.",
     "topic": "Google Panda Update",
     "slide_ref": "8 Search Engine Optimization (SEO).pptx",
-    "answer": 0
+    "answer": 0,
+    "is_multi": false,
+    "required_choices": 1,
+    "correct_choices": [
+      0
+    ],
+    "correct_letter": "A",
+    "correct_letters": [
+      "A"
+    ]
   },
   {
     "id": "q_ch08_04",
@@ -5662,7 +8838,16 @@ window.SEG_QUESTIONS = [
     "explanation": "Google Penguin targeted web spam: artificial link networks, link exchanges, paid links, and unnatural exact-match anchor text profiles.",
     "topic": "Google Penguin Update",
     "slide_ref": "8 Search Engine Optimization (SEO).pptx",
-    "answer": 0
+    "answer": 0,
+    "is_multi": false,
+    "required_choices": 1,
+    "correct_choices": [
+      0
+    ],
+    "correct_letter": "A",
+    "correct_letters": [
+      "A"
+    ]
   },
   {
     "id": "q_ch08_05",
@@ -5678,7 +8863,16 @@ window.SEG_QUESTIONS = [
     "explanation": "Hummingbird introduced semantic search understanding: parsing the full contextual intent behind complex, natural language questions.",
     "topic": "Google Hummingbird",
     "slide_ref": "8 Search Engine Optimization (SEO).pptx",
-    "answer": 0
+    "answer": 0,
+    "is_multi": false,
+    "required_choices": 1,
+    "correct_choices": [
+      0
+    ],
+    "correct_letter": "A",
+    "correct_letters": [
+      "A"
+    ]
   },
   {
     "id": "q_ch08_06",
@@ -5694,7 +8888,16 @@ window.SEG_QUESTIONS = [
     "explanation": "RankBrain is Google's ML-based query interpretation and ranking engine, converting words into semantic vectors to match unfamiliar queries.",
     "topic": "Google RankBrain",
     "slide_ref": "8 Search Engine Optimization (SEO).pptx",
-    "answer": 0
+    "answer": 0,
+    "is_multi": false,
+    "required_choices": 1,
+    "correct_choices": [
+      0
+    ],
+    "correct_letter": "A",
+    "correct_letters": [
+      "A"
+    ]
   },
   {
     "id": "q_ch08_07",
@@ -5710,7 +8913,16 @@ window.SEG_QUESTIONS = [
     "explanation": "Search engines allocate roughly 600px width for titles; keeping titles within 50-60 characters ensures they display cleanly without truncation ellipses.",
     "topic": "Title Tag Best Practice",
     "slide_ref": "8 Search Engine Optimization (SEO).pptx",
-    "answer": 0
+    "answer": 0,
+    "is_multi": false,
+    "required_choices": 1,
+    "correct_choices": [
+      0
+    ],
+    "correct_letter": "A",
+    "correct_letters": [
+      "A"
+    ]
   },
   {
     "id": "q_ch08_08",
@@ -5726,7 +8938,16 @@ window.SEG_QUESTIONS = [
     "explanation": "Compelling, informative meta descriptions improve organic CTR, signaling relevance and driving higher traffic.",
     "topic": "Meta Description Role",
     "slide_ref": "8 Search Engine Optimization (SEO).pptx",
-    "answer": 0
+    "answer": 0,
+    "is_multi": false,
+    "required_choices": 1,
+    "correct_choices": [
+      0
+    ],
+    "correct_letter": "A",
+    "correct_letters": [
+      "A"
+    ]
   },
   {
     "id": "q_ch08_09",
@@ -5742,7 +8963,16 @@ window.SEG_QUESTIONS = [
     "explanation": "Keyword cannibalization occurs when a site's own pages compete against each other for the same query, confusing search engines on which URL to rank.",
     "topic": "Keyword Cannibalization",
     "slide_ref": "8 Search Engine Optimization (SEO).pptx",
-    "answer": 1
+    "answer": 1,
+    "is_multi": false,
+    "required_choices": 1,
+    "correct_choices": [
+      1
+    ],
+    "correct_letter": "B",
+    "correct_letters": [
+      "B"
+    ]
   },
   {
     "id": "q_ch08_10",
@@ -5758,7 +8988,16 @@ window.SEG_QUESTIONS = [
     "explanation": "The rel='canonical' tag directs search bots to attribute all ranking equity and indexing preference to a single primary URL.",
     "topic": "Canonical Tag Role",
     "slide_ref": "8 Search Engine Optimization (SEO).pptx",
-    "answer": 0
+    "answer": 0,
+    "is_multi": false,
+    "required_choices": 1,
+    "correct_choices": [
+      0
+    ],
+    "correct_letter": "A",
+    "correct_letters": [
+      "A"
+    ]
   },
   {
     "id": "q_ch08_11",
@@ -5774,7 +9013,16 @@ window.SEG_QUESTIONS = [
     "explanation": "Core Web Vitals measure real-world user experience: loading performance (LCP), interactivity/responsiveness (INP), and visual stability (CLS).",
     "topic": "Core Web Vitals",
     "slide_ref": "8 Search Engine Optimization (SEO).pptx",
-    "answer": 0
+    "answer": 0,
+    "is_multi": false,
+    "required_choices": 1,
+    "correct_choices": [
+      0
+    ],
+    "correct_letter": "A",
+    "correct_letters": [
+      "A"
+    ]
   },
   {
     "id": "q_ch08_12",
@@ -5790,7 +9038,16 @@ window.SEG_QUESTIONS = [
     "explanation": "LCP marks when the main content of a page has likely loaded; good user experience requires an LCP of 2.5 seconds or faster.",
     "topic": "LCP Metric",
     "slide_ref": "8 Search Engine Optimization (SEO).pptx",
-    "answer": 0
+    "answer": 0,
+    "is_multi": false,
+    "required_choices": 1,
+    "correct_choices": [
+      0
+    ],
+    "correct_letter": "A",
+    "correct_letters": [
+      "A"
+    ]
   },
   {
     "id": "q_ch08_13",
@@ -5806,7 +9063,16 @@ window.SEG_QUESTIONS = [
     "explanation": "CLS quantifies jarring visual movement (e.g., buttons moving suddenly while reading or tapping due to late-loading ads), ensuring visual stability.",
     "topic": "CLS Metric",
     "slide_ref": "8 Search Engine Optimization (SEO).pptx",
-    "answer": 0
+    "answer": 0,
+    "is_multi": false,
+    "required_choices": 1,
+    "correct_choices": [
+      0
+    ],
+    "correct_letter": "A",
+    "correct_letters": [
+      "A"
+    ]
   },
   {
     "id": "q_ch08_14",
@@ -5822,7 +9088,16 @@ window.SEG_QUESTIONS = [
     "explanation": "INP assesses page responsiveness by logging the latency of all user clicks, taps, and keypresses, requiring < 200ms for a 'good' rating.",
     "topic": "INP Metric",
     "slide_ref": "8 Search Engine Optimization (SEO).pptx",
-    "answer": 0
+    "answer": 0,
+    "is_multi": false,
+    "required_choices": 1,
+    "correct_choices": [
+      0
+    ],
+    "correct_letter": "A",
+    "correct_letters": [
+      "A"
+    ]
   },
   {
     "id": "q_ch08_15",
@@ -5838,7 +9113,16 @@ window.SEG_QUESTIONS = [
     "explanation": "Link equity refers to the authority and trustworthiness transferred through a hyperlink from a high-quality referring domain to the target URL.",
     "topic": "Link Equity",
     "slide_ref": "8 Search Engine Optimization (SEO).pptx",
-    "answer": 1
+    "answer": 1,
+    "is_multi": false,
+    "required_choices": 1,
+    "correct_choices": [
+      1
+    ],
+    "correct_letter": "B",
+    "correct_letters": [
+      "B"
+    ]
   },
   {
     "id": "q_ch08_16",
@@ -5854,7 +9138,16 @@ window.SEG_QUESTIONS = [
     "explanation": "Search engines assign high trust to accredited educational and government domains due to their stringent editorial standards and strong backlink graphs.",
     "topic": "Domain Authority Differences",
     "slide_ref": "8 Search Engine Optimization (SEO).pptx",
-    "answer": 0
+    "answer": 0,
+    "is_multi": false,
+    "required_choices": 1,
+    "correct_choices": [
+      0
+    ],
+    "correct_letter": "A",
+    "correct_letters": [
+      "A"
+    ]
   },
   {
     "id": "q_ch08_17",
@@ -5870,7 +9163,16 @@ window.SEG_QUESTIONS = [
     "explanation": "A natural link profile exhibits diverse anchor text; having 100% exact commercial keywords (e.g., 'buy cheap shoes') triggers Penguin penalties.",
     "topic": "Anchor Text Diversity",
     "slide_ref": "8 Search Engine Optimization (SEO).pptx",
-    "answer": 0
+    "answer": 0,
+    "is_multi": false,
+    "required_choices": 1,
+    "correct_choices": [
+      0
+    ],
+    "correct_letter": "A",
+    "correct_letters": [
+      "A"
+    ]
   },
   {
     "id": "q_ch08_18",
@@ -5886,7 +9188,16 @@ window.SEG_QUESTIONS = [
     "explanation": "301 Permanent Redirect tells search bots to transfer historical link equity and canonical status to the new URL.",
     "topic": "301 vs 302 SEO",
     "slide_ref": "8 Search Engine Optimization (SEO).pptx",
-    "answer": 0
+    "answer": 0,
+    "is_multi": false,
+    "required_choices": 1,
+    "correct_choices": [
+      0
+    ],
+    "correct_letter": "A",
+    "correct_letters": [
+      "A"
+    ]
   },
   {
     "id": "q_ch08_19",
@@ -5894,7 +9205,7 @@ window.SEG_QUESTIONS = [
     "question": "What is 'Crawl Budget' and how can large websites optimize it?",
     "options": [
       "By eliminating redirect chains, blocking low-value URLs in robots.txt, fixing 404 errors, and maintaining an up-to-date XML Sitemap",
-      "By paying Google $100 per day",
+      "By paying Google \\$100 per day",
       "By disabling HTTPS",
       "By removing all images from the site"
     ],
@@ -5902,7 +9213,16 @@ window.SEG_QUESTIONS = [
     "explanation": "Crawl budget is conserved by preventing bots from wasting requests on infinite loops, broken links, faceted filters, and duplicate URLs.",
     "topic": "Crawl Budget Optimization",
     "slide_ref": "8 Search Engine Optimization (SEO).pptx",
-    "answer": 0
+    "answer": 0,
+    "is_multi": false,
+    "required_choices": 1,
+    "correct_choices": [
+      0
+    ],
+    "correct_letter": "A",
+    "correct_letters": [
+      "A"
+    ]
   },
   {
     "id": "q_ch08_20",
@@ -5918,7 +9238,16 @@ window.SEG_QUESTIONS = [
     "explanation": "Google crawls and indexes the web using a mobile smartphone Googlebot; desktop-only content that is hidden on mobile will not be indexed.",
     "topic": "Mobile-First Indexing",
     "slide_ref": "8 Search Engine Optimization (SEO).pptx",
-    "answer": 0
+    "answer": 0,
+    "is_multi": false,
+    "required_choices": 1,
+    "correct_choices": [
+      0
+    ],
+    "correct_letter": "A",
+    "correct_letters": [
+      "A"
+    ]
   },
   {
     "id": "q_ch08_21",
@@ -5934,7 +9263,16 @@ window.SEG_QUESTIONS = [
     "explanation": "Schema.org structured data (embedded via JSON-LD) allows search engines to understand entities and display rich visual snippets (star ratings, event dates, pricing).",
     "topic": "Structured Data JSON-LD",
     "slide_ref": "8 Search Engine Optimization (SEO).pptx",
-    "answer": 0
+    "answer": 0,
+    "is_multi": false,
+    "required_choices": 1,
+    "correct_choices": [
+      0
+    ],
+    "correct_letter": "A",
+    "correct_letters": [
+      "A"
+    ]
   },
   {
     "id": "q_ch08_22",
@@ -5943,14 +9281,23 @@ window.SEG_QUESTIONS = [
     "options": [
       "An enhanced search result that displays supplementary visual information (e.g., star ratings, review counts, product pricing, cooking times) extracted from structured data",
       "A search result displayed on gold background",
-      "An advertisement that costs $1,000",
+      "An advertisement that costs \\$1,000",
       "A snippet that plays background music"
     ],
     "correct": 0,
     "explanation": "Rich snippets display visual enhancements (ratings, images, recipes) directly in the SERP, drastically improving organic click-through rates.",
     "topic": "Rich Snippets",
     "slide_ref": "8 Search Engine Optimization (SEO).pptx",
-    "answer": 0
+    "answer": 0,
+    "is_multi": false,
+    "required_choices": 1,
+    "correct_choices": [
+      0
+    ],
+    "correct_letter": "A",
+    "correct_letters": [
+      "A"
+    ]
   },
   {
     "id": "q_ch08_23",
@@ -5966,7 +9313,16 @@ window.SEG_QUESTIONS = [
     "explanation": "Keyword stuffing is an obsolete spam technique that violates quality guidelines, detected easily by modern language models and spam filters.",
     "topic": "Keyword Stuffing Penalty",
     "slide_ref": "8 Search Engine Optimization (SEO).pptx",
-    "answer": 0
+    "answer": 0,
+    "is_multi": false,
+    "required_choices": 1,
+    "correct_choices": [
+      0
+    ],
+    "correct_letter": "A",
+    "correct_letters": [
+      "A"
+    ]
   },
   {
     "id": "q_ch08_24",
@@ -5982,7 +9338,16 @@ window.SEG_QUESTIONS = [
     "explanation": "Matching search intent is the single most critical ranking factor: delivering the precise format and depth of content that satisfies the user's implicit goal.",
     "topic": "Search Intent",
     "slide_ref": "8 Search Engine Optimization (SEO).pptx",
-    "answer": 0
+    "answer": 0,
+    "is_multi": false,
+    "required_choices": 1,
+    "correct_choices": [
+      0
+    ],
+    "correct_letter": "A",
+    "correct_letters": [
+      "A"
+    ]
   },
   {
     "id": "q_ch08_25",
@@ -5998,7 +9363,16 @@ window.SEG_QUESTIONS = [
     "explanation": "E-E-A-T represents the core criteria human quality raters and algorithms evaluate, especially for YMYL (Your Money or Your Life) topics.",
     "topic": "E-E-A-T Guidelines",
     "slide_ref": "8 Search Engine Optimization (SEO).pptx",
-    "answer": 0
+    "answer": 0,
+    "is_multi": false,
+    "required_choices": 1,
+    "correct_choices": [
+      0
+    ],
+    "correct_letter": "A",
+    "correct_letters": [
+      "A"
+    ]
   },
   {
     "id": "q_ch08_26",
@@ -6014,7 +9388,16 @@ window.SEG_QUESTIONS = [
     "explanation": "YMYL pages are held to the highest E-E-A-T standards because inaccurate or low-quality advice could harm a user's health, safety, or financial well-being.",
     "topic": "YMYL Content",
     "slide_ref": "8 Search Engine Optimization (SEO).pptx",
-    "answer": 0
+    "answer": 0,
+    "is_multi": false,
+    "required_choices": 1,
+    "correct_choices": [
+      0
+    ],
+    "correct_letter": "A",
+    "correct_letters": [
+      "A"
+    ]
   },
   {
     "id": "q_ch08_27",
@@ -6030,7 +9413,16 @@ window.SEG_QUESTIONS = [
     "explanation": "Strategic internal linking passes link equity to important deep pages and helps crawlers discover and index the entire site architecture efficiently.",
     "topic": "Internal Linking",
     "slide_ref": "8 Search Engine Optimization (SEO).pptx",
-    "answer": 0
+    "answer": 0,
+    "is_multi": false,
+    "required_choices": 1,
+    "correct_choices": [
+      0
+    ],
+    "correct_letter": "A",
+    "correct_letters": [
+      "A"
+    ]
   },
   {
     "id": "q_ch08_28",
@@ -6046,7 +9438,16 @@ window.SEG_QUESTIONS = [
     "explanation": "Orphan pages are isolated from the site hierarchy; unless listed in an XML sitemap, crawlers rarely discover or re-crawl them.",
     "topic": "Orphan Pages",
     "slide_ref": "8 Search Engine Optimization (SEO).pptx",
-    "answer": 0
+    "answer": 0,
+    "is_multi": false,
+    "required_choices": 1,
+    "correct_choices": [
+      0
+    ],
+    "correct_letter": "A",
+    "correct_letters": [
+      "A"
+    ]
   },
   {
     "id": "q_ch08_29",
@@ -6062,7 +9463,16 @@ window.SEG_QUESTIONS = [
     "explanation": "A 404 indicates a missing resource; widespread internal 404s degrade user satisfaction and waste crawler resources.",
     "topic": "HTTP 404 SEO",
     "slide_ref": "8 Search Engine Optimization (SEO).pptx",
-    "answer": 0
+    "answer": 0,
+    "is_multi": false,
+    "required_choices": 1,
+    "correct_choices": [
+      0
+    ],
+    "correct_letter": "A",
+    "correct_letters": [
+      "A"
+    ]
   },
   {
     "id": "q_ch08_30",
@@ -6078,7 +9488,16 @@ window.SEG_QUESTIONS = [
     "explanation": "Soft 404s confuse search bots because the server claims success (HTTP 200) while presenting blank or missing content, wasting crawl budget.",
     "topic": "Soft 404",
     "slide_ref": "8 Search Engine Optimization (SEO).pptx",
-    "answer": 0
+    "answer": 0,
+    "is_multi": false,
+    "required_choices": 1,
+    "correct_choices": [
+      0
+    ],
+    "correct_letter": "A",
+    "correct_letters": [
+      "A"
+    ]
   },
   {
     "id": "q_ch08_31",
@@ -6094,7 +9513,16 @@ window.SEG_QUESTIONS = [
     "explanation": "Proper heading hierarchies (a single main H1 followed by nested H2s and H3s) communicate topical structure to search engines and screen readers.",
     "topic": "Heading Hierarchy",
     "slide_ref": "8 Search Engine Optimization (SEO).pptx",
-    "answer": 0
+    "answer": 0,
+    "is_multi": false,
+    "required_choices": 1,
+    "correct_choices": [
+      0
+    ],
+    "correct_letter": "A",
+    "correct_letters": [
+      "A"
+    ]
   },
   {
     "id": "q_ch08_32",
@@ -6110,7 +9538,16 @@ window.SEG_QUESTIONS = [
     "explanation": "While HTML5 permits multiple H1s in section tags, standard SEO convention recommends a single clear H1 reflecting the primary document focus.",
     "topic": "H1 Best Practice",
     "slide_ref": "8 Search Engine Optimization (SEO).pptx",
-    "answer": 0
+    "answer": 0,
+    "is_multi": false,
+    "required_choices": 1,
+    "correct_choices": [
+      0
+    ],
+    "correct_letter": "A",
+    "correct_letters": [
+      "A"
+    ]
   },
   {
     "id": "q_ch08_33",
@@ -6126,7 +9563,16 @@ window.SEG_QUESTIONS = [
     "explanation": "Alt text provides accessibility for screen readers and critical textual signals for image search indexing.",
     "topic": "Image Alt Attribute",
     "slide_ref": "8 Search Engine Optimization (SEO).pptx",
-    "answer": 0
+    "answer": 0,
+    "is_multi": false,
+    "required_choices": 1,
+    "correct_choices": [
+      0
+    ],
+    "correct_letter": "A",
+    "correct_letters": [
+      "A"
+    ]
   },
   {
     "id": "q_ch08_34",
@@ -6142,7 +9588,16 @@ window.SEG_QUESTIONS = [
     "explanation": "HTTPS encrypts communications between client and server, protecting privacy and serving as a baseline trust signal in Google's page experience ranking.",
     "topic": "HTTPS Ranking Factor",
     "slide_ref": "8 Search Engine Optimization (SEO).pptx",
-    "answer": 0
+    "answer": 0,
+    "is_multi": false,
+    "required_choices": 1,
+    "correct_choices": [
+      0
+    ],
+    "correct_letter": "A",
+    "correct_letters": [
+      "A"
+    ]
   },
   {
     "id": "q_ch08_35",
@@ -6158,7 +9613,16 @@ window.SEG_QUESTIONS = [
     "explanation": "The Disavow Tool allows site owners to formally disassociate their site from manipulative or toxic links they cannot manually remove.",
     "topic": "Disavow Tool",
     "slide_ref": "8 Search Engine Optimization (SEO).pptx",
-    "answer": 0
+    "answer": 0,
+    "is_multi": false,
+    "required_choices": 1,
+    "correct_choices": [
+      0
+    ],
+    "correct_letter": "A",
+    "correct_letters": [
+      "A"
+    ]
   },
   {
     "id": "q_ch08_36",
@@ -6174,7 +9638,16 @@ window.SEG_QUESTIONS = [
     "explanation": "Content decay is the gradual decline in organic traffic as search intent evolves or competitors publish more comprehensive, updated guides.",
     "topic": "Content Decay",
     "slide_ref": "8 Search Engine Optimization (SEO).pptx",
-    "answer": 0
+    "answer": 0,
+    "is_multi": false,
+    "required_choices": 1,
+    "correct_choices": [
+      0
+    ],
+    "correct_letter": "A",
+    "correct_letters": [
+      "A"
+    ]
   },
   {
     "id": "q_ch08_37",
@@ -6182,7 +9655,7 @@ window.SEG_QUESTIONS = [
     "question": "What is 'Featured Snippet' (Position Zero) optimization?",
     "options": [
       "Structuring clear, concise 40-60 word definitions, bulleted lists, or comparison tables directly beneath target questions to be selected as Google's direct answer",
-      "Paying Google $50 to be placed above organic results",
+      "Paying Google \\$50 to be placed above organic results",
       "Hiding text using CSS",
       "Submitting an XML sitemap every hour"
     ],
@@ -6190,7 +9663,16 @@ window.SEG_QUESTIONS = [
     "explanation": "Direct, objective answers formatted concisely in paragraphs or HTML tables are primed for extraction into Featured Snippets.",
     "topic": "Featured Snippet Optimization",
     "slide_ref": "8 Search Engine Optimization (SEO).pptx",
-    "answer": 0
+    "answer": 0,
+    "is_multi": false,
+    "required_choices": 1,
+    "correct_choices": [
+      0
+    ],
+    "correct_letter": "A",
+    "correct_letters": [
+      "A"
+    ]
   },
   {
     "id": "q_ch08_38",
@@ -6206,7 +9688,16 @@ window.SEG_QUESTIONS = [
     "explanation": "Sitemap index files organize large websites with millions of URLs into manageable chunks under 50,000 URLs per individual sitemap.",
     "topic": "Sitemap Index File",
     "slide_ref": "8 Search Engine Optimization (SEO).pptx",
-    "answer": 0
+    "answer": 0,
+    "is_multi": false,
+    "required_choices": 1,
+    "correct_choices": [
+      0
+    ],
+    "correct_letter": "A",
+    "correct_letters": [
+      "A"
+    ]
   },
   {
     "id": "q_ch08_39",
@@ -6222,7 +9713,16 @@ window.SEG_QUESTIONS = [
     "explanation": "Noindex prevents the document from appearing in search results, ideal for thank-you pages, internal search results, and admin logins.",
     "topic": "Noindex Directive",
     "slide_ref": "8 Search Engine Optimization (SEO).pptx",
-    "answer": 0
+    "answer": 0,
+    "is_multi": false,
+    "required_choices": 1,
+    "correct_choices": [
+      0
+    ],
+    "correct_letter": "A",
+    "correct_letters": [
+      "A"
+    ]
   },
   {
     "id": "q_ch08_40",
@@ -6238,7 +9738,16 @@ window.SEG_QUESTIONS = [
     "explanation": "Shallow crawl architectures ensure all important content is accessible within 3-4 clicks from the homepage, maximizing link equity distribution.",
     "topic": "Crawl Depth",
     "slide_ref": "8 Search Engine Optimization (SEO).pptx",
-    "answer": 1
+    "answer": 1,
+    "is_multi": false,
+    "required_choices": 1,
+    "correct_choices": [
+      1
+    ],
+    "correct_letter": "B",
+    "correct_letters": [
+      "B"
+    ]
   },
   {
     "id": "q_ch08_41",
@@ -6254,7 +9763,16 @@ window.SEG_QUESTIONS = [
     "explanation": "Rigid keyword density formulas are relics of 1990s retrieval; modern search engines analyze semantic completeness and natural phrasing.",
     "topic": "Keyword Density Myth",
     "slide_ref": "8 Search Engine Optimization (SEO).pptx",
-    "answer": 0
+    "answer": 0,
+    "is_multi": false,
+    "required_choices": 1,
+    "correct_choices": [
+      0
+    ],
+    "correct_letter": "A",
+    "correct_letters": [
+      "A"
+    ]
   },
   {
     "id": "q_ch08_42",
@@ -6270,7 +9788,16 @@ window.SEG_QUESTIONS = [
     "explanation": "Black Hat SEO exploits algorithmic loopholes to manipulate rankings, risking permanent algorithmic penalties or complete domain de-indexing.",
     "topic": "Black Hat SEO",
     "slide_ref": "8 Search Engine Optimization (SEO).pptx",
-    "answer": 1
+    "answer": 1,
+    "is_multi": false,
+    "required_choices": 1,
+    "correct_choices": [
+      1
+    ],
+    "correct_letter": "B",
+    "correct_letters": [
+      "B"
+    ]
   },
   {
     "id": "q_ch08_43",
@@ -6286,7 +9813,16 @@ window.SEG_QUESTIONS = [
     "explanation": "White Hat SEO focuses on long-term sustainability, creating exceptional user-centric content and clean technical architectures.",
     "topic": "White Hat SEO",
     "slide_ref": "8 Search Engine Optimization (SEO).pptx",
-    "answer": 0
+    "answer": 0,
+    "is_multi": false,
+    "required_choices": 1,
+    "correct_choices": [
+      0
+    ],
+    "correct_letter": "A",
+    "correct_letters": [
+      "A"
+    ]
   },
   {
     "id": "q_ch08_44",
@@ -6302,7 +9838,16 @@ window.SEG_QUESTIONS = [
     "explanation": "PBNs fabricate artificial authority networks; Google actively detects PBN footprint patterns and de-indexes entire network topologies.",
     "topic": "PBN Link Schemes",
     "slide_ref": "8 Search Engine Optimization (SEO).pptx",
-    "answer": 0
+    "answer": 0,
+    "is_multi": false,
+    "required_choices": 1,
+    "correct_choices": [
+      0
+    ],
+    "correct_letter": "A",
+    "correct_letters": [
+      "A"
+    ]
   },
   {
     "id": "q_ch08_45",
@@ -6318,7 +9863,16 @@ window.SEG_QUESTIONS = [
     "explanation": "Placing primary content and clear value above the fold engages users immediately and avoids ad-heavy layout penalties.",
     "topic": "Above the Fold",
     "slide_ref": "8 Search Engine Optimization (SEO).pptx",
-    "answer": 0
+    "answer": 0,
+    "is_multi": false,
+    "required_choices": 1,
+    "correct_choices": [
+      0
+    ],
+    "correct_letter": "A",
+    "correct_letters": [
+      "A"
+    ]
   },
   {
     "id": "q_ch08_46",
@@ -6334,7 +9888,16 @@ window.SEG_QUESTIONS = [
     "explanation": "Hreflang annotations prevent duplicate content penalties across regional variations (e.g., en-US vs en-GB) and direct users to their localized version.",
     "topic": "Hreflang Tags",
     "slide_ref": "8 Search Engine Optimization (SEO).pptx",
-    "answer": 0
+    "answer": 0,
+    "is_multi": false,
+    "required_choices": 1,
+    "correct_choices": [
+      0
+    ],
+    "correct_letter": "A",
+    "correct_letters": [
+      "A"
+    ]
   },
   {
     "id": "q_ch08_47",
@@ -6350,7 +9913,16 @@ window.SEG_QUESTIONS = [
     "explanation": "Organic traffic represents free visitors arriving via standard unpaid search engine rankings, the primary performance metric of SEO campaigns.",
     "topic": "Organic Traffic",
     "slide_ref": "8 Search Engine Optimization (SEO).pptx",
-    "answer": 1
+    "answer": 1,
+    "is_multi": false,
+    "required_choices": 1,
+    "correct_choices": [
+      1
+    ],
+    "correct_letter": "B",
+    "correct_letters": [
+      "B"
+    ]
   },
   {
     "id": "q_ch08_48",
@@ -6366,7 +9938,16 @@ window.SEG_QUESTIONS = [
     "explanation": "While high bounce on an e-commerce checkout is bad, on a quick-answer informational page it often signifies rapid user satisfaction.",
     "topic": "Bounce Rate Nuance",
     "slide_ref": "8 Search Engine Optimization (SEO).pptx",
-    "answer": 0
+    "answer": 0,
+    "is_multi": false,
+    "required_choices": 1,
+    "correct_choices": [
+      0
+    ],
+    "correct_letter": "A",
+    "correct_letters": [
+      "A"
+    ]
   },
   {
     "id": "q_ch08_49",
@@ -6382,7 +9963,16 @@ window.SEG_QUESTIONS = [
     "explanation": "Google's Rich Results Test verifies JSON-LD and Microdata syntax and previews eligibility for rich visual SERP features.",
     "topic": "Schema Validation",
     "slide_ref": "8 Search Engine Optimization (SEO).pptx",
-    "answer": 0
+    "answer": 0,
+    "is_multi": false,
+    "required_choices": 1,
+    "correct_choices": [
+      0
+    ],
+    "correct_letter": "A",
+    "correct_letters": [
+      "A"
+    ]
   },
   {
     "id": "q_ch08_50",
@@ -6398,7 +9988,16 @@ window.SEG_QUESTIONS = [
     "explanation": "With the majority of searches occurring on smartphones, search engines prioritize websites that render seamlessly across all screen viewports.",
     "topic": "Mobile Friendliness",
     "slide_ref": "8 Search Engine Optimization (SEO).pptx",
-    "answer": 0
+    "answer": 0,
+    "is_multi": false,
+    "required_choices": 1,
+    "correct_choices": [
+      0
+    ],
+    "correct_letter": "A",
+    "correct_letters": [
+      "A"
+    ]
   },
   {
     "id": "q_ch09_01",
@@ -6414,7 +10013,16 @@ window.SEG_QUESTIONS = [
     "explanation": "The Cranfield evaluation paradigm requires 3 standardized pillars: 1. A benchmark document collection, 2. A set of test queries/topics, and 3. Ground-truth relevance assessments (qrels).",
     "topic": "Cranfield Paradigm",
     "slide_ref": "9. Evaluating Search Engines.pptx",
-    "answer": 1
+    "answer": 1,
+    "is_multi": false,
+    "required_choices": 1,
+    "correct_choices": [
+      1
+    ],
+    "correct_letter": "B",
+    "correct_letters": [
+      "B"
+    ]
   },
   {
     "id": "q_ch09_02",
@@ -6430,7 +10038,16 @@ window.SEG_QUESTIONS = [
     "explanation": "TREC (Text REtrieval Conference) is the preeminent annual benchmark workshop providing standardized corpora, tasks, and ground truth for IR evaluation.",
     "topic": "TREC Conference",
     "slide_ref": "9. Evaluating Search Engines.pptx",
-    "answer": 0
+    "answer": 0,
+    "is_multi": false,
+    "required_choices": 1,
+    "correct_choices": [
+      0
+    ],
+    "correct_letter": "A",
+    "correct_letters": [
+      "A"
+    ]
   },
   {
     "id": "q_ch09_03",
@@ -6446,7 +10063,16 @@ window.SEG_QUESTIONS = [
     "explanation": "Precision is the proportion of retrieved documents that are actually relevant: Precision = (Relevant Retrieved) / (Total Retrieved).",
     "topic": "Precision Formula",
     "slide_ref": "9. Evaluating Search Engines.pptx",
-    "answer": 0
+    "answer": 0,
+    "is_multi": false,
+    "required_choices": 1,
+    "correct_choices": [
+      0
+    ],
+    "correct_letter": "A",
+    "correct_letters": [
+      "A"
+    ]
   },
   {
     "id": "q_ch09_04",
@@ -6462,7 +10088,16 @@ window.SEG_QUESTIONS = [
     "explanation": "Recall is the proportion of all relevant documents in the collection that were successfully retrieved: Recall = (Relevant Retrieved) / (Total Relevant).",
     "topic": "Recall Formula",
     "slide_ref": "9. Evaluating Search Engines.pptx",
-    "answer": 0
+    "answer": 0,
+    "is_multi": false,
+    "required_choices": 1,
+    "correct_choices": [
+      0
+    ],
+    "correct_letter": "A",
+    "correct_letters": [
+      "A"
+    ]
   },
   {
     "id": "q_ch09_05",
@@ -6478,7 +10113,16 @@ window.SEG_QUESTIONS = [
     "explanation": "Precision = 15/20 = 0.75 (75%). Recall = 15/30 = 0.50 (50%).",
     "topic": "Precision Recall Calculation",
     "slide_ref": "9. Evaluating Search Engines.pptx",
-    "answer": 0
+    "answer": 0,
+    "is_multi": false,
+    "required_choices": 1,
+    "correct_choices": [
+      0
+    ],
+    "correct_letter": "A",
+    "correct_letters": [
+      "A"
+    ]
   },
   {
     "id": "q_ch09_06",
@@ -6494,7 +10138,16 @@ window.SEG_QUESTIONS = [
     "explanation": "F1 is the harmonic mean of Precision and Recall, which penalizes extreme imbalances (if either is 0, F1 is 0).",
     "topic": "F1 Score Formula",
     "slide_ref": "9. Evaluating Search Engines.pptx",
-    "answer": 1
+    "answer": 1,
+    "is_multi": false,
+    "required_choices": 1,
+    "correct_choices": [
+      1
+    ],
+    "correct_letter": "B",
+    "correct_letters": [
+      "B"
+    ]
   },
   {
     "id": "q_ch09_07",
@@ -6510,7 +10163,16 @@ window.SEG_QUESTIONS = [
     "explanation": "The arithmetic mean of 100% recall and 0% precision is 50%, which is misleadingly high; the harmonic mean correctly drops to near 0%.",
     "topic": "Harmonic Mean Rationale",
     "slide_ref": "9. Evaluating Search Engines.pptx",
-    "answer": 0
+    "answer": 0,
+    "is_multi": false,
+    "required_choices": 1,
+    "correct_choices": [
+      0
+    ],
+    "correct_letter": "A",
+    "correct_letters": [
+      "A"
+    ]
   },
   {
     "id": "q_ch09_08",
@@ -6526,7 +10188,16 @@ window.SEG_QUESTIONS = [
     "explanation": "F_beta weights recall beta times as much as precision. Beta = 2 weights recall more; beta = 0.5 weights precision more.",
     "topic": "F-beta Weighting",
     "slide_ref": "9. Evaluating Search Engines.pptx",
-    "answer": 1
+    "answer": 1,
+    "is_multi": false,
+    "required_choices": 1,
+    "correct_choices": [
+      1
+    ],
+    "correct_letter": "B",
+    "correct_letters": [
+      "B"
+    ]
   },
   {
     "id": "q_ch09_09",
@@ -6542,7 +10213,16 @@ window.SEG_QUESTIONS = [
     "explanation": "P@k (e.g., P@5, P@10) evaluates user experience on the first page of results, counting how many of the top-k results are relevant.",
     "topic": "Precision at k",
     "slide_ref": "9. Evaluating Search Engines.pptx",
-    "answer": 0
+    "answer": 0,
+    "is_multi": false,
+    "required_choices": 1,
+    "correct_choices": [
+      0
+    ],
+    "correct_letter": "A",
+    "correct_letters": [
+      "A"
+    ]
   },
   {
     "id": "q_ch09_10",
@@ -6558,7 +10238,16 @@ window.SEG_QUESTIONS = [
     "explanation": "MAP calculates the Average Precision for each query (averaging P@k at each rank k where a relevant document appears) and takes the mean across all queries.",
     "topic": "MAP Definition",
     "slide_ref": "9. Evaluating Search Engines.pptx",
-    "answer": 0
+    "answer": 0,
+    "is_multi": false,
+    "required_choices": 1,
+    "correct_choices": [
+      0
+    ],
+    "correct_letter": "A",
+    "correct_letters": [
+      "A"
+    ]
   },
   {
     "id": "q_ch09_11",
@@ -6574,7 +10263,16 @@ window.SEG_QUESTIONS = [
     "explanation": "AP averages P@k at each relevant position: at rank 1: 1/1=1.0; rank 3: 2/3=0.667; rank 5: 3/5=0.60. Mean = (1.0 + 0.667 + 0.60)/3 = 0.756.",
     "topic": "Average Precision Calculation",
     "slide_ref": "9. Evaluating Search Engines.pptx",
-    "answer": 0
+    "answer": 0,
+    "is_multi": false,
+    "required_choices": 1,
+    "correct_choices": [
+      0
+    ],
+    "correct_letter": "A",
+    "correct_letters": [
+      "A"
+    ]
   },
   {
     "id": "q_ch09_12",
@@ -6590,7 +10288,16 @@ window.SEG_QUESTIONS = [
     "explanation": "MRR = (1/|Q|) * sum(1 / rank_i), where rank_i is the position of the first relevant document, ideal for navigational queries and QA.",
     "topic": "MRR Evaluation",
     "slide_ref": "9. Evaluating Search Engines.pptx",
-    "answer": 0
+    "answer": 0,
+    "is_multi": false,
+    "required_choices": 1,
+    "correct_choices": [
+      0
+    ],
+    "correct_letter": "A",
+    "correct_letters": [
+      "A"
+    ]
   },
   {
     "id": "q_ch09_13",
@@ -6606,7 +10313,16 @@ window.SEG_QUESTIONS = [
     "explanation": "Reciprocal ranks are 1/2 = 0.5 and 1/4 = 0.25. The mean across the 2 queries is (0.5 + 0.25)/2 = 0.375.",
     "topic": "MRR Calculation",
     "slide_ref": "9. Evaluating Search Engines.pptx",
-    "answer": 0
+    "answer": 0,
+    "is_multi": false,
+    "required_choices": 1,
+    "correct_choices": [
+      0
+    ],
+    "correct_letter": "A",
+    "correct_letters": [
+      "A"
+    ]
   },
   {
     "id": "q_ch09_14",
@@ -6622,7 +10338,16 @@ window.SEG_QUESTIONS = [
     "explanation": "NDCG handles non-binary relevance levels and heavily penalizes placing highly relevant documents down at ranks 8 or 9 instead of rank 1.",
     "topic": "NDCG Rationale",
     "slide_ref": "9. Evaluating Search Engines.pptx",
-    "answer": 0
+    "answer": 0,
+    "is_multi": false,
+    "required_choices": 1,
+    "correct_choices": [
+      0
+    ],
+    "correct_letter": "A",
+    "correct_letters": [
+      "A"
+    ]
   },
   {
     "id": "q_ch09_15",
@@ -6638,7 +10363,16 @@ window.SEG_QUESTIONS = [
     "explanation": "DCG accumulates relevance discounted logarithmically by rank position: rel_1 + sum_{i=2}^p (rel_i / log2(i)).",
     "topic": "DCG Formula",
     "slide_ref": "9. Evaluating Search Engines.pptx",
-    "answer": 0
+    "answer": 0,
+    "is_multi": false,
+    "required_choices": 1,
+    "correct_choices": [
+      0
+    ],
+    "correct_letter": "A",
+    "correct_letters": [
+      "A"
+    ]
   },
   {
     "id": "q_ch09_16",
@@ -6654,7 +10388,16 @@ window.SEG_QUESTIONS = [
     "explanation": "IDCG is the maximum possible DCG for that query; dividing actual DCG by IDCG normalizes the score into the range [0.0, 1.0].",
     "topic": "IDCG Concept",
     "slide_ref": "9. Evaluating Search Engines.pptx",
-    "answer": 0
+    "answer": 0,
+    "is_multi": false,
+    "required_choices": 1,
+    "correct_choices": [
+      0
+    ],
+    "correct_letter": "A",
+    "correct_letters": [
+      "A"
+    ]
   },
   {
     "id": "q_ch09_17",
@@ -6670,7 +10413,16 @@ window.SEG_QUESTIONS = [
     "explanation": "NDCG@p = DCG_p / IDCG_p = 4.5 / 6.0 = 0.75.",
     "topic": "NDCG Calculation",
     "slide_ref": "9. Evaluating Search Engines.pptx",
-    "answer": 0
+    "answer": 0,
+    "is_multi": false,
+    "required_choices": 1,
+    "correct_choices": [
+      0
+    ],
+    "correct_letter": "A",
+    "correct_letters": [
+      "A"
+    ]
   },
   {
     "id": "q_ch09_18",
@@ -6686,7 +10438,16 @@ window.SEG_QUESTIONS = [
     "explanation": "Assessing all documents in millions of web pages is impossible; pooling gathers the union of top-k outputs from many diverse systems for assessment.",
     "topic": "Pooling Methodology",
     "slide_ref": "9. Evaluating Search Engines.pptx",
-    "answer": 1
+    "answer": 1,
+    "is_multi": false,
+    "required_choices": 1,
+    "correct_choices": [
+      1
+    ],
+    "correct_letter": "B",
+    "correct_letters": [
+      "B"
+    ]
   },
   {
     "id": "q_ch09_19",
@@ -6702,7 +10463,16 @@ window.SEG_QUESTIONS = [
     "explanation": "A/B testing exposes a small slice of live traffic to an experimental algorithm to evaluate real user behavioral telemetry against the status quo.",
     "topic": "A/B Testing",
     "slide_ref": "9. Evaluating Search Engines.pptx",
-    "answer": 0
+    "answer": 0,
+    "is_multi": false,
+    "required_choices": 1,
+    "correct_choices": [
+      0
+    ],
+    "correct_letter": "A",
+    "correct_letters": [
+      "A"
+    ]
   },
   {
     "id": "q_ch09_20",
@@ -6718,7 +10488,16 @@ window.SEG_QUESTIONS = [
     "explanation": "Team Draft Interleaving merges candidate lists side-by-side into one SERP, detecting user preference with 100x less traffic than standard A/B testing.",
     "topic": "Interleaving",
     "slide_ref": "9. Evaluating Search Engines.pptx",
-    "answer": 0
+    "answer": 0,
+    "is_multi": false,
+    "required_choices": 1,
+    "correct_choices": [
+      0
+    ],
+    "correct_letter": "A",
+    "correct_letters": [
+      "A"
+    ]
   },
   {
     "id": "q_ch09_21",
@@ -6734,7 +10513,16 @@ window.SEG_QUESTIONS = [
     "explanation": "Significance tests verify that improvements (e.g., p < 0.05) are robust and repeatable across query populations.",
     "topic": "Significance Testing",
     "slide_ref": "9. Evaluating Search Engines.pptx",
-    "answer": 0
+    "answer": 0,
+    "is_multi": false,
+    "required_choices": 1,
+    "correct_choices": [
+      0
+    ],
+    "correct_letter": "A",
+    "correct_letters": [
+      "A"
+    ]
   },
   {
     "id": "q_ch09_22",
@@ -6750,7 +10538,16 @@ window.SEG_QUESTIONS = [
     "explanation": "Query difficulty varies wildly (some queries are inherently easy, others hard); pairing removes between-query variance.",
     "topic": "Paired Testing",
     "slide_ref": "9. Evaluating Search Engines.pptx",
-    "answer": 0
+    "answer": 0,
+    "is_multi": false,
+    "required_choices": 1,
+    "correct_choices": [
+      0
+    ],
+    "correct_letter": "A",
+    "correct_letters": [
+      "A"
+    ]
   },
   {
     "id": "q_ch09_23",
@@ -6766,7 +10563,16 @@ window.SEG_QUESTIONS = [
     "explanation": "Because users trust search engine ordering and scan top-down, rank 1 receives ~30% clicks even if rank 3 is superior.",
     "topic": "Position Bias in Telemetry",
     "slide_ref": "9. Evaluating Search Engines.pptx",
-    "answer": 0
+    "answer": 0,
+    "is_multi": false,
+    "required_choices": 1,
+    "correct_choices": [
+      0
+    ],
+    "correct_letter": "A",
+    "correct_letters": [
+      "A"
+    ]
   },
   {
     "id": "q_ch09_24",
@@ -6782,7 +10588,16 @@ window.SEG_QUESTIONS = [
     "explanation": "Inverse Propensity Scoring (Joachims et al., 2017) divides each click by the position's display probability to compute unbiased relevance estimates.",
     "topic": "Inverse Propensity Scoring",
     "slide_ref": "9. Evaluating Search Engines.pptx",
-    "answer": 0
+    "answer": 0,
+    "is_multi": false,
+    "required_choices": 1,
+    "correct_choices": [
+      0
+    ],
+    "correct_letter": "A",
+    "correct_letters": [
+      "A"
+    ]
   },
   {
     "id": "q_ch09_25",
@@ -6798,7 +10613,16 @@ window.SEG_QUESTIONS = [
     "explanation": "Fallout = FP / (FP + TN), measuring the rate at which irrelevant clutter leaks into search results.",
     "topic": "Fallout Metric",
     "slide_ref": "9. Evaluating Search Engines.pptx",
-    "answer": 0
+    "answer": 0,
+    "is_multi": false,
+    "required_choices": 1,
+    "correct_choices": [
+      0
+    ],
+    "correct_letter": "A",
+    "correct_letters": [
+      "A"
+    ]
   },
   {
     "id": "q_ch09_26",
@@ -6814,7 +10638,16 @@ window.SEG_QUESTIONS = [
     "explanation": "Precision-Recall curves demonstrate that increasing recall (retrieving more documents) almost inevitably causes precision to decline.",
     "topic": "Precision-Recall Curve",
     "slide_ref": "9. Evaluating Search Engines.pptx",
-    "answer": 0
+    "answer": 0,
+    "is_multi": false,
+    "required_choices": 1,
+    "correct_choices": [
+      0
+    ],
+    "correct_letter": "A",
+    "correct_letters": [
+      "A"
+    ]
   },
   {
     "id": "q_ch09_27",
@@ -6830,7 +10663,16 @@ window.SEG_QUESTIONS = [
     "explanation": "Interpolation smooths the 'jaggies' in empirical precision-recall curves by taking the highest precision observed at or to the right of recall level r.",
     "topic": "Interpolated Precision",
     "slide_ref": "9. Evaluating Search Engines.pptx",
-    "answer": 0
+    "answer": 0,
+    "is_multi": false,
+    "required_choices": 1,
+    "correct_choices": [
+      0
+    ],
+    "correct_letter": "A",
+    "correct_letters": [
+      "A"
+    ]
   },
   {
     "id": "q_ch09_28",
@@ -6846,7 +10688,16 @@ window.SEG_QUESTIONS = [
     "explanation": "R-Precision evaluates at rank R: if a query has 15 relevant documents, R-Precision is P@15. At this rank, Precision mathematically equals Recall.",
     "topic": "R-Precision",
     "slide_ref": "9. Evaluating Search Engines.pptx",
-    "answer": 0
+    "answer": 0,
+    "is_multi": false,
+    "required_choices": 1,
+    "correct_choices": [
+      0
+    ],
+    "correct_letter": "A",
+    "correct_letters": [
+      "A"
+    ]
   },
   {
     "id": "q_ch09_29",
@@ -6862,7 +10713,16 @@ window.SEG_QUESTIONS = [
     "explanation": "If r relevant documents are found in top R, Precision = r/R and Recall = r/R; both metrics coincide.",
     "topic": "R-Precision Property",
     "slide_ref": "9. Evaluating Search Engines.pptx",
-    "answer": 0
+    "answer": 0,
+    "is_multi": false,
+    "required_choices": 1,
+    "correct_choices": [
+      0
+    ],
+    "correct_letter": "A",
+    "correct_letters": [
+      "A"
+    ]
   },
   {
     "id": "q_ch09_30",
@@ -6878,7 +10738,16 @@ window.SEG_QUESTIONS = [
     "explanation": "Bpref (Buckley & Voorhees, 2004) computes relative preference among judged documents, preventing unjudged documents from artificially penalizing systems.",
     "topic": "Bpref Metric",
     "slide_ref": "9. Evaluating Search Engines.pptx",
-    "answer": 0
+    "answer": 0,
+    "is_multi": false,
+    "required_choices": 1,
+    "correct_choices": [
+      0
+    ],
+    "correct_letter": "A",
+    "correct_letters": [
+      "A"
+    ]
   },
   {
     "id": "q_ch09_31",
@@ -6894,7 +10763,16 @@ window.SEG_QUESTIONS = [
     "explanation": "Ablation tests confirm which components truly drive performance gains versus which add unnecessary complexity.",
     "topic": "Ablation Studies",
     "slide_ref": "9. Evaluating Search Engines.pptx",
-    "answer": 0
+    "answer": 0,
+    "is_multi": false,
+    "required_choices": 1,
+    "correct_choices": [
+      0
+    ],
+    "correct_letter": "A",
+    "correct_letters": [
+      "A"
+    ]
   },
   {
     "id": "q_ch09_32",
@@ -6910,7 +10788,16 @@ window.SEG_QUESTIONS = [
     "explanation": "Clicks with dwell times over 30-60 seconds are designated SAT clicks in industrial search telemetry, indicating successful relevance.",
     "topic": "SAT Clicks",
     "slide_ref": "9. Evaluating Search Engines.pptx",
-    "answer": 0
+    "answer": 0,
+    "is_multi": false,
+    "required_choices": 1,
+    "correct_choices": [
+      0
+    ],
+    "correct_letter": "A",
+    "correct_letters": [
+      "A"
+    ]
   },
   {
     "id": "q_ch09_33",
@@ -6926,7 +10813,16 @@ window.SEG_QUESTIONS = [
     "explanation": "Frequent immediate reformulations signal that the engine failed to comprehend the user's intent or returned low-quality results.",
     "topic": "Reformulation Rate",
     "slide_ref": "9. Evaluating Search Engines.pptx",
-    "answer": 0
+    "answer": 0,
+    "is_multi": false,
+    "required_choices": 1,
+    "correct_choices": [
+      0
+    ],
+    "correct_letter": "A",
+    "correct_letters": [
+      "A"
+    ]
   },
   {
     "id": "q_ch09_34",
@@ -6942,7 +10838,16 @@ window.SEG_QUESTIONS = [
     "explanation": "Cranfield treats relevance as static and query-centric, which allows reproducible offline benchmarks despite real-world user subjectivity.",
     "topic": "Cranfield Assumptions",
     "slide_ref": "9. Evaluating Search Engines.pptx",
-    "answer": 0
+    "answer": 0,
+    "is_multi": false,
+    "required_choices": 1,
+    "correct_choices": [
+      0
+    ],
+    "correct_letter": "A",
+    "correct_letters": [
+      "A"
+    ]
   },
   {
     "id": "q_ch09_35",
@@ -6958,7 +10863,16 @@ window.SEG_QUESTIONS = [
     "explanation": "SBS evaluation collects blinded human judgments on overall SERP quality to validate ranking updates before deployment.",
     "topic": "Side-by-Side Evaluation",
     "slide_ref": "9. Evaluating Search Engines.pptx",
-    "answer": 0
+    "answer": 0,
+    "is_multi": false,
+    "required_choices": 1,
+    "correct_choices": [
+      0
+    ],
+    "correct_letter": "A",
+    "correct_letters": [
+      "A"
+    ]
   },
   {
     "id": "q_ch09_36",
@@ -6974,7 +10888,16 @@ window.SEG_QUESTIONS = [
     "explanation": "Mobile searchers exhibit extreme top-rank bias; satisfying intent at rank 1 or via featured snippets is essential.",
     "topic": "Mobile Evaluation Priority",
     "slide_ref": "9. Evaluating Search Engines.pptx",
-    "answer": 0
+    "answer": 0,
+    "is_multi": false,
+    "required_choices": 1,
+    "correct_choices": [
+      0
+    ],
+    "correct_letter": "A",
+    "correct_letters": [
+      "A"
+    ]
   },
   {
     "id": "q_ch09_37",
@@ -6990,7 +10913,16 @@ window.SEG_QUESTIONS = [
     "explanation": "Evaluation frameworks increasingly track diversity (e.g., alpha-NDCG) to ensure multi-intent queries satisfy different sub-populations.",
     "topic": "Diversity & Fairness",
     "slide_ref": "9. Evaluating Search Engines.pptx",
-    "answer": 0
+    "answer": 0,
+    "is_multi": false,
+    "required_choices": 1,
+    "correct_choices": [
+      0
+    ],
+    "correct_letter": "A",
+    "correct_letters": [
+      "A"
+    ]
   },
   {
     "id": "q_ch09_38",
@@ -7006,7 +10938,16 @@ window.SEG_QUESTIONS = [
     "explanation": "Alpha-NDCG models intent diversity: once a subtopic is satisfied by a top result, subsequent documents covering the same subtopic receive diminished credit.",
     "topic": "alpha-NDCG",
     "slide_ref": "9. Evaluating Search Engines.pptx",
-    "answer": 0
+    "answer": 0,
+    "is_multi": false,
+    "required_choices": 1,
+    "correct_choices": [
+      0
+    ],
+    "correct_letter": "A",
+    "correct_letters": [
+      "A"
+    ]
   },
   {
     "id": "q_ch09_39",
@@ -7022,7 +10963,16 @@ window.SEG_QUESTIONS = [
     "explanation": "Roughly 15% of daily web queries are entirely novel, requiring retrieval models to generalize without relying on past click histories.",
     "topic": "Cold Start Queries",
     "slide_ref": "9. Evaluating Search Engines.pptx",
-    "answer": 0
+    "answer": 0,
+    "is_multi": false,
+    "required_choices": 1,
+    "correct_choices": [
+      0
+    ],
+    "correct_letter": "A",
+    "correct_letters": [
+      "A"
+    ]
   },
   {
     "id": "q_ch09_40",
@@ -7038,7 +10988,16 @@ window.SEG_QUESTIONS = [
     "explanation": "A Type I error is rejecting the null hypothesis when it is true (claiming a bogus improvement).",
     "topic": "Type I Error",
     "slide_ref": "9. Evaluating Search Engines.pptx",
-    "answer": 0
+    "answer": 0,
+    "is_multi": false,
+    "required_choices": 1,
+    "correct_choices": [
+      0
+    ],
+    "correct_letter": "A",
+    "correct_letters": [
+      "A"
+    ]
   },
   {
     "id": "q_ch09_41",
@@ -7054,7 +11013,16 @@ window.SEG_QUESTIONS = [
     "explanation": "A Type II error is accepting the null hypothesis when an actual difference exists (missing a real improvement).",
     "topic": "Type II Error",
     "slide_ref": "9. Evaluating Search Engines.pptx",
-    "answer": 0
+    "answer": 0,
+    "is_multi": false,
+    "required_choices": 1,
+    "correct_choices": [
+      0
+    ],
+    "correct_letter": "A",
+    "correct_letters": [
+      "A"
+    ]
   },
   {
     "id": "q_ch09_42",
@@ -7070,7 +11038,16 @@ window.SEG_QUESTIONS = [
     "explanation": "The qrels file specifies the gold-standard ground truth: query ID, document ID, and relevance score assigned by human assessors.",
     "topic": "Qrels Format",
     "slide_ref": "9. Evaluating Search Engines.pptx",
-    "answer": 0
+    "answer": 0,
+    "is_multi": false,
+    "required_choices": 1,
+    "correct_choices": [
+      0
+    ],
+    "correct_letter": "A",
+    "correct_letters": [
+      "A"
+    ]
   },
   {
     "id": "q_ch09_43",
@@ -7086,7 +11063,16 @@ window.SEG_QUESTIONS = [
     "explanation": "Assessors only grade pooled documents; in standard TREC scoring, unjudged documents are conservatively assumed to be non-relevant.",
     "topic": "Unjudged Documents",
     "slide_ref": "9. Evaluating Search Engines.pptx",
-    "answer": 0
+    "answer": 0,
+    "is_multi": false,
+    "required_choices": 1,
+    "correct_choices": [
+      0
+    ],
+    "correct_letter": "A",
+    "correct_letters": [
+      "A"
+    ]
   },
   {
     "id": "q_ch09_44",
@@ -7102,7 +11088,16 @@ window.SEG_QUESTIONS = [
     "explanation": "New retrieval techniques find relevant documents outside old pools; treating unjudged docs as non-relevant artificially depresses their evaluation scores.",
     "topic": "Pooling Bias",
     "slide_ref": "9. Evaluating Search Engines.pptx",
-    "answer": 0
+    "answer": 0,
+    "is_multi": false,
+    "required_choices": 1,
+    "correct_choices": [
+      0
+    ],
+    "correct_letter": "A",
+    "correct_letters": [
+      "A"
+    ]
   },
   {
     "id": "q_ch09_45",
@@ -7118,7 +11113,16 @@ window.SEG_QUESTIONS = [
     "explanation": "Session success measures overall task completion rather than single-query clicks.",
     "topic": "Session Success",
     "slide_ref": "9. Evaluating Search Engines.pptx",
-    "answer": 0
+    "answer": 0,
+    "is_multi": false,
+    "required_choices": 1,
+    "correct_choices": [
+      0
+    ],
+    "correct_letter": "A",
+    "correct_letters": [
+      "A"
+    ]
   },
   {
     "id": "q_ch09_46",
@@ -7134,7 +11138,16 @@ window.SEG_QUESTIONS = [
     "explanation": "Average Precision approximates the area under the Precision-Recall curve for an individual query.",
     "topic": "AP Geometric Meaning",
     "slide_ref": "9. Evaluating Search Engines.pptx",
-    "answer": 0
+    "answer": 0,
+    "is_multi": false,
+    "required_choices": 1,
+    "correct_choices": [
+      0
+    ],
+    "correct_letter": "A",
+    "correct_letters": [
+      "A"
+    ]
   },
   {
     "id": "q_ch09_47",
@@ -7150,7 +11163,16 @@ window.SEG_QUESTIONS = [
     "explanation": "Abandonment occurs when users leave without clicking, indicating either complete failure (terrible results) or immediate success (featured snippet direct answer).",
     "topic": "Abandonment Rate",
     "slide_ref": "9. Evaluating Search Engines.pptx",
-    "answer": 0
+    "answer": 0,
+    "is_multi": false,
+    "required_choices": 1,
+    "correct_choices": [
+      0
+    ],
+    "correct_letter": "A",
+    "correct_letters": [
+      "A"
+    ]
   },
   {
     "id": "q_ch09_48",
@@ -7166,7 +11188,16 @@ window.SEG_QUESTIONS = [
     "explanation": "Featured snippets and direct knowledge panels fulfill informational needs without requiring a click (good abandonment).",
     "topic": "Good vs Bad Abandonment",
     "slide_ref": "9. Evaluating Search Engines.pptx",
-    "answer": 0
+    "answer": 0,
+    "is_multi": false,
+    "required_choices": 1,
+    "correct_choices": [
+      0
+    ],
+    "correct_letter": "A",
+    "correct_letters": [
+      "A"
+    ]
   },
   {
     "id": "q_ch09_49",
@@ -7182,7 +11213,16 @@ window.SEG_QUESTIONS = [
     "explanation": "Throughput benchmarks measure how many concurrent queries the engine can serve without degrading response times.",
     "topic": "Throughput Benchmarking",
     "slide_ref": "9. Evaluating Search Engines.pptx",
-    "answer": 0
+    "answer": 0,
+    "is_multi": false,
+    "required_choices": 1,
+    "correct_choices": [
+      0
+    ],
+    "correct_letter": "A",
+    "correct_letters": [
+      "A"
+    ]
   },
   {
     "id": "q_ch09_50",
@@ -7198,7 +11238,16 @@ window.SEG_QUESTIONS = [
     "explanation": "Reproducibility ensures scientific integrity, facilitated by standardized open-source benchmarks like Anserini, Pyserini, and Terrier.",
     "topic": "IR Reproducibility",
     "slide_ref": "9. Evaluating Search Engines.pptx",
-    "answer": 0
+    "answer": 0,
+    "is_multi": false,
+    "required_choices": 1,
+    "correct_choices": [
+      0
+    ],
+    "correct_letter": "A",
+    "correct_letters": [
+      "A"
+    ]
   },
   {
     "id": "q_ch10_01",
@@ -7214,7 +11263,16 @@ window.SEG_QUESTIONS = [
     "explanation": "Classification learns from labeled examples to categorize new inputs; clustering groups unlabelled documents based on pairwise similarity.",
     "topic": "Supervised vs Unsupervised",
     "slide_ref": "10. Classification and Clustering.pptx",
-    "answer": 0
+    "answer": 0,
+    "is_multi": false,
+    "required_choices": 1,
+    "correct_choices": [
+      0
+    ],
+    "correct_letter": "A",
+    "correct_letters": [
+      "A"
+    ]
   },
   {
     "id": "q_ch10_02",
@@ -7230,7 +11288,16 @@ window.SEG_QUESTIONS = [
     "explanation": "The 'naive' assumption posits that attributes (word tokens) are statistically independent given the class, ignoring real-world word co-occurrence.",
     "topic": "Naive Bayes Assumption",
     "slide_ref": "10. Classification and Clustering.pptx",
-    "answer": 0
+    "answer": 0,
+    "is_multi": false,
+    "required_choices": 1,
+    "correct_choices": [
+      0
+    ],
+    "correct_letter": "A",
+    "correct_letters": [
+      "A"
+    ]
   },
   {
     "id": "q_ch10_03",
@@ -7246,7 +11313,16 @@ window.SEG_QUESTIONS = [
     "explanation": "Laplace smoothing adds pseudo-counts (usually 1) to each word frequency to avoid multiplying by zero on unseen terms.",
     "topic": "Laplace Smoothing Naive Bayes",
     "slide_ref": "10. Classification and Clustering.pptx",
-    "answer": 0
+    "answer": 0,
+    "is_multi": false,
+    "required_choices": 1,
+    "correct_choices": [
+      0
+    ],
+    "correct_letter": "A",
+    "correct_letters": [
+      "A"
+    ]
   },
   {
     "id": "q_ch10_04",
@@ -7262,7 +11338,16 @@ window.SEG_QUESTIONS = [
     "explanation": "Adding 1 to the numerator requires adding |V| to the denominator to ensure the distribution sums to 1.0.",
     "topic": "Laplace Smoothing Formula",
     "slide_ref": "10. Classification and Clustering.pptx",
-    "answer": 0
+    "answer": 0,
+    "is_multi": false,
+    "required_choices": 1,
+    "correct_choices": [
+      0
+    ],
+    "correct_letter": "A",
+    "correct_letters": [
+      "A"
+    ]
   },
   {
     "id": "q_ch10_05",
@@ -7278,7 +11363,16 @@ window.SEG_QUESTIONS = [
     "explanation": "Multinomial NB accounts for how many times a word appears; Bernoulli NB only tracks whether the word appears or not.",
     "topic": "Multinomial vs Bernoulli NB",
     "slide_ref": "10. Classification and Clustering.pptx",
-    "answer": 0
+    "answer": 0,
+    "is_multi": false,
+    "required_choices": 1,
+    "correct_choices": [
+      0
+    ],
+    "correct_letter": "A",
+    "correct_letters": [
+      "A"
+    ]
   },
   {
     "id": "q_ch10_06",
@@ -7294,7 +11388,16 @@ window.SEG_QUESTIONS = [
     "explanation": "SVM is a maximum-margin classifier: maximizing the margin provides the best theoretical generalization guarantee against overfitting.",
     "topic": "SVM Maximum Margin",
     "slide_ref": "10. Classification and Clustering.pptx",
-    "answer": 0
+    "answer": 0,
+    "is_multi": false,
+    "required_choices": 1,
+    "correct_choices": [
+      0
+    ],
+    "correct_letter": "A",
+    "correct_letters": [
+      "A"
+    ]
   },
   {
     "id": "q_ch10_07",
@@ -7310,7 +11413,16 @@ window.SEG_QUESTIONS = [
     "explanation": "Only the points lying on the margin boundary (support vectors) influence the final hyperplane; removing other points changes nothing.",
     "topic": "Support Vectors Definition",
     "slide_ref": "10. Classification and Clustering.pptx",
-    "answer": 0
+    "answer": 0,
+    "is_multi": false,
+    "required_choices": 1,
+    "correct_choices": [
+      0
+    ],
+    "correct_letter": "A",
+    "correct_letters": [
+      "A"
+    ]
   },
   {
     "id": "q_ch10_08",
@@ -7326,7 +11438,16 @@ window.SEG_QUESTIONS = [
     "explanation": "The kernel trick computes inner products in high-dimensional Hilbert spaces directly (e.g., RBF kernel), enabling complex non-linear classification.",
     "topic": "SVM Kernel Trick",
     "slide_ref": "10. Classification and Clustering.pptx",
-    "answer": 0
+    "answer": 0,
+    "is_multi": false,
+    "required_choices": 1,
+    "correct_choices": [
+      0
+    ],
+    "correct_letter": "A",
+    "correct_letters": [
+      "A"
+    ]
   },
   {
     "id": "q_ch10_09",
@@ -7342,7 +11463,16 @@ window.SEG_QUESTIONS = [
     "explanation": "Joachims (1998) showed that high dimensionality in text classification makes linear hyperplanes powerful and less prone to overfitting.",
     "topic": "Linear SVM for Text",
     "slide_ref": "10. Classification and Clustering.pptx",
-    "answer": 0
+    "answer": 0,
+    "is_multi": false,
+    "required_choices": 1,
+    "correct_choices": [
+      0
+    ],
+    "correct_letter": "A",
+    "correct_letters": [
+      "A"
+    ]
   },
   {
     "id": "q_ch10_10",
@@ -7358,7 +11488,16 @@ window.SEG_QUESTIONS = [
     "explanation": "KNN is an instance-based lazy learner: it stores all training data and assigns the modal class of the K nearest neighbors at query time.",
     "topic": "KNN Classification",
     "slide_ref": "10. Classification and Clustering.pptx",
-    "answer": 0
+    "answer": 0,
+    "is_multi": false,
+    "required_choices": 1,
+    "correct_choices": [
+      0
+    ],
+    "correct_letter": "A",
+    "correct_letters": [
+      "A"
+    ]
   },
   {
     "id": "q_ch10_11",
@@ -7374,7 +11513,16 @@ window.SEG_QUESTIONS = [
     "explanation": "KNN has zero training phase (it just stores training vectors); the downside is slow O(N * D) inference cost per test query.",
     "topic": "Lazy Learning",
     "slide_ref": "10. Classification and Clustering.pptx",
-    "answer": 0
+    "answer": 0,
+    "is_multi": false,
+    "required_choices": 1,
+    "correct_choices": [
+      0
+    ],
+    "correct_letter": "A",
+    "correct_letters": [
+      "A"
+    ]
   },
   {
     "id": "q_ch10_12",
@@ -7390,7 +11538,16 @@ window.SEG_QUESTIONS = [
     "explanation": "In K-Means, K is the user-specified hyperparameter defining how many cluster centroids are initialized.",
     "topic": "K-Means K Parameter",
     "slide_ref": "10. Classification and Clustering.pptx",
-    "answer": 0
+    "answer": 0,
+    "is_multi": false,
+    "required_choices": 1,
+    "correct_choices": [
+      0
+    ],
+    "correct_letter": "A",
+    "correct_letters": [
+      "A"
+    ]
   },
   {
     "id": "q_ch10_13",
@@ -7406,7 +11563,16 @@ window.SEG_QUESTIONS = [
     "explanation": "K-Means alternates between: 1. Assignment (Voronoi partitioning), and 2. Update (computing mean vectors of clusters) until convergence.",
     "topic": "K-Means Iteration Steps",
     "slide_ref": "10. Classification and Clustering.pptx",
-    "answer": 0
+    "answer": 0,
+    "is_multi": false,
+    "required_choices": 1,
+    "correct_choices": [
+      0
+    ],
+    "correct_letter": "A",
+    "correct_letters": [
+      "A"
+    ]
   },
   {
     "id": "q_ch10_14",
@@ -7422,7 +11588,16 @@ window.SEG_QUESTIONS = [
     "explanation": "K-Means minimizes the sum of squared Euclidean distances between each data point and its assigned cluster centroid.",
     "topic": "SSE Objective",
     "slide_ref": "10. Classification and Clustering.pptx",
-    "answer": 0
+    "answer": 0,
+    "is_multi": false,
+    "required_choices": 1,
+    "correct_choices": [
+      0
+    ],
+    "correct_letter": "A",
+    "correct_letters": [
+      "A"
+    ]
   },
   {
     "id": "q_ch10_15",
@@ -7438,7 +11613,16 @@ window.SEG_QUESTIONS = [
     "explanation": "K-Means is a greedy hill-climbing algorithm; initialization methods like K-Means++ spread initial centroids to achieve near-optimal convergence.",
     "topic": "K-Means++ Initialization",
     "slide_ref": "10. Classification and Clustering.pptx",
-    "answer": 0
+    "answer": 0,
+    "is_multi": false,
+    "required_choices": 1,
+    "correct_choices": [
+      0
+    ],
+    "correct_letter": "A",
+    "correct_letters": [
+      "A"
+    ]
   },
   {
     "id": "q_ch10_16",
@@ -7454,7 +11638,16 @@ window.SEG_QUESTIONS = [
     "explanation": "HAC is an agglomerative (bottom-up) hierarchical strategy, building a binary cluster tree called a Dendrogram.",
     "topic": "HAC Agglomerative",
     "slide_ref": "10. Classification and Clustering.pptx",
-    "answer": 0
+    "answer": 0,
+    "is_multi": false,
+    "required_choices": 1,
+    "correct_choices": [
+      0
+    ],
+    "correct_letter": "A",
+    "correct_letters": [
+      "A"
+    ]
   },
   {
     "id": "q_ch10_17",
@@ -7470,7 +11663,16 @@ window.SEG_QUESTIONS = [
     "explanation": "Single-link defines cluster distance as min_{x in A, y in B} dist(x, y), which can lead to elongated, chaining effects.",
     "topic": "Single-Link HAC",
     "slide_ref": "10. Classification and Clustering.pptx",
-    "answer": 0
+    "answer": 0,
+    "is_multi": false,
+    "required_choices": 1,
+    "correct_choices": [
+      0
+    ],
+    "correct_letter": "A",
+    "correct_letters": [
+      "A"
+    ]
   },
   {
     "id": "q_ch10_18",
@@ -7486,7 +11688,16 @@ window.SEG_QUESTIONS = [
     "explanation": "Single-link merges clusters if just one pair of points is close, creating strung-out chains rather than compact clusters.",
     "topic": "Chaining Effect",
     "slide_ref": "10. Classification and Clustering.pptx",
-    "answer": 0
+    "answer": 0,
+    "is_multi": false,
+    "required_choices": 1,
+    "correct_choices": [
+      0
+    ],
+    "correct_letter": "A",
+    "correct_letters": [
+      "A"
+    ]
   },
   {
     "id": "q_ch10_19",
@@ -7502,7 +11713,16 @@ window.SEG_QUESTIONS = [
     "explanation": "Complete-link defines distance as max_{x in A, y in B} dist(x, y), which produces compact, spherical clusters.",
     "topic": "Complete-Link HAC",
     "slide_ref": "10. Classification and Clustering.pptx",
-    "answer": 0
+    "answer": 0,
+    "is_multi": false,
+    "required_choices": 1,
+    "correct_choices": [
+      0
+    ],
+    "correct_letter": "A",
+    "correct_letters": [
+      "A"
+    ]
   },
   {
     "id": "q_ch10_20",
@@ -7518,7 +11738,16 @@ window.SEG_QUESTIONS = [
     "explanation": "A dendrogram visually represents the hierarchical merges; cutting the tree at a specific height produces a flat clustering partition.",
     "topic": "Dendrogram Definition",
     "slide_ref": "10. Classification and Clustering.pptx",
-    "answer": 0
+    "answer": 0,
+    "is_multi": false,
+    "required_choices": 1,
+    "correct_choices": [
+      0
+    ],
+    "correct_letter": "A",
+    "correct_letters": [
+      "A"
+    ]
   },
   {
     "id": "q_ch10_21",
@@ -7534,7 +11763,16 @@ window.SEG_QUESTIONS = [
     "explanation": "Macro-averaging weights every class equally regardless of size; micro-averaging aggregates counts globally, heavily favoring dominant classes.",
     "topic": "Macro vs Micro F1",
     "slide_ref": "10. Classification and Clustering.pptx",
-    "answer": 0
+    "answer": 0,
+    "is_multi": false,
+    "required_choices": 1,
+    "correct_choices": [
+      0
+    ],
+    "correct_letter": "A",
+    "correct_letters": [
+      "A"
+    ]
   },
   {
     "id": "q_ch10_22",
@@ -7550,7 +11788,16 @@ window.SEG_QUESTIONS = [
     "explanation": "Confusion matrices reveal specific classification errors, showing which classes are commonly confused with one another.",
     "topic": "Confusion Matrix",
     "slide_ref": "10. Classification and Clustering.pptx",
-    "answer": 0
+    "answer": 0,
+    "is_multi": false,
+    "required_choices": 1,
+    "correct_choices": [
+      0
+    ],
+    "correct_letter": "A",
+    "correct_letters": [
+      "A"
+    ]
   },
   {
     "id": "q_ch10_23",
@@ -7566,7 +11813,16 @@ window.SEG_QUESTIONS = [
     "explanation": "LDA assumes documents are generated from mixtures of latent topics, enabling unsupervised thematic discovery across large corpora.",
     "topic": "Topic Modeling LDA",
     "slide_ref": "10. Classification and Clustering.pptx",
-    "answer": 0
+    "answer": 0,
+    "is_multi": false,
+    "required_choices": 1,
+    "correct_choices": [
+      0
+    ],
+    "correct_letter": "A",
+    "correct_letters": [
+      "A"
+    ]
   },
   {
     "id": "q_ch10_24",
@@ -7582,7 +11838,16 @@ window.SEG_QUESTIONS = [
     "explanation": "Feature selection keeps the top discriminative features (e.g., top 5,000 terms), improving classification accuracy and speed.",
     "topic": "Feature Selection",
     "slide_ref": "10. Classification and Clustering.pptx",
-    "answer": 0
+    "answer": 0,
+    "is_multi": false,
+    "required_choices": 1,
+    "correct_choices": [
+      0
+    ],
+    "correct_letter": "A",
+    "correct_letters": [
+      "A"
+    ]
   },
   {
     "id": "q_ch10_25",
@@ -7598,7 +11863,16 @@ window.SEG_QUESTIONS = [
     "explanation": "Every iteration computes the distance from each of N documents to each of K centroids of dimensionality D: O(N * K * D).",
     "topic": "K-Means Complexity",
     "slide_ref": "10. Classification and Clustering.pptx",
-    "answer": 0
+    "answer": 0,
+    "is_multi": false,
+    "required_choices": 1,
+    "correct_choices": [
+      0
+    ],
+    "correct_letter": "A",
+    "correct_letters": [
+      "A"
+    ]
   },
   {
     "id": "q_ch10_26",
@@ -7614,7 +11888,16 @@ window.SEG_QUESTIONS = [
     "explanation": "HAC requires computing and maintaining pairwise distances between all N documents, making it O(N^2) space and O(N^2 log N) to O(N^3) time, impractical for millions of documents.",
     "topic": "HAC Complexity",
     "slide_ref": "10. Classification and Clustering.pptx",
-    "answer": 0
+    "answer": 0,
+    "is_multi": false,
+    "required_choices": 1,
+    "correct_choices": [
+      0
+    ],
+    "correct_letter": "A",
+    "correct_letters": [
+      "A"
+    ]
   },
   {
     "id": "q_ch10_27",
@@ -7630,7 +11913,16 @@ window.SEG_QUESTIONS = [
     "explanation": "In hard clustering, document d belongs solely to cluster k; in soft clustering, d has fractional memberships sum(p_k) = 1 across clusters.",
     "topic": "Hard vs Soft Clustering",
     "slide_ref": "10. Classification and Clustering.pptx",
-    "answer": 0
+    "answer": 0,
+    "is_multi": false,
+    "required_choices": 1,
+    "correct_choices": [
+      0
+    ],
+    "correct_letter": "A",
+    "correct_letters": [
+      "A"
+    ]
   },
   {
     "id": "q_ch10_28",
@@ -7646,7 +11938,16 @@ window.SEG_QUESTIONS = [
     "explanation": "Purity measures whether each cluster contains predominantly documents from a single gold-standard class.",
     "topic": "Cluster Purity",
     "slide_ref": "10. Classification and Clustering.pptx",
-    "answer": 0
+    "answer": 0,
+    "is_multi": false,
+    "required_choices": 1,
+    "correct_choices": [
+      0
+    ],
+    "correct_letter": "A",
+    "correct_letters": [
+      "A"
+    ]
   },
   {
     "id": "q_ch10_29",
@@ -7662,7 +11963,16 @@ window.SEG_QUESTIONS = [
     "explanation": "Rand Index evaluates pairwise clustering decisions: RI = (TP + TN) / (TP + FP + FN + TN).",
     "topic": "Rand Index",
     "slide_ref": "10. Classification and Clustering.pptx",
-    "answer": 0
+    "answer": 0,
+    "is_multi": false,
+    "required_choices": 1,
+    "correct_choices": [
+      0
+    ],
+    "correct_letter": "A",
+    "correct_letters": [
+      "A"
+    ]
   },
   {
     "id": "q_ch10_30",
@@ -7678,7 +11988,16 @@ window.SEG_QUESTIONS = [
     "explanation": "ARI corrects the standard Rand Index for chance agreement, ensuring random labelings receive an expected score of 0.0.",
     "topic": "Adjusted Rand Index",
     "slide_ref": "9. Evaluating Search Engines.pptx",
-    "answer": 0
+    "answer": 0,
+    "is_multi": false,
+    "required_choices": 1,
+    "correct_choices": [
+      0
+    ],
+    "correct_letter": "A",
+    "correct_letters": [
+      "A"
+    ]
   },
   {
     "id": "q_ch10_31",
@@ -7694,7 +12013,16 @@ window.SEG_QUESTIONS = [
     "explanation": "Classifying queries guides backend routing: an e-commerce query triggers product carousels; a medical query triggers health information cards.",
     "topic": "Query Classification Role",
     "slide_ref": "10. Classification and Clustering.pptx",
-    "answer": 0
+    "answer": 0,
+    "is_multi": false,
+    "required_choices": 1,
+    "correct_choices": [
+      0
+    ],
+    "correct_letter": "A",
+    "correct_letters": [
+      "A"
+    ]
   },
   {
     "id": "q_ch10_32",
@@ -7710,7 +12038,16 @@ window.SEG_QUESTIONS = [
     "explanation": "Scatter-Gather (Cutting et al., 1992) uses fast clustering to let users explore unfamiliar document collections interactively.",
     "topic": "Scatter-Gather Browsing",
     "slide_ref": "10. Classification and Clustering.pptx",
-    "answer": 0
+    "answer": 0,
+    "is_multi": false,
+    "required_choices": 1,
+    "correct_choices": [
+      0
+    ],
+    "correct_letter": "A",
+    "correct_letters": [
+      "A"
+    ]
   },
   {
     "id": "q_ch10_33",
@@ -7726,7 +12063,16 @@ window.SEG_QUESTIONS = [
     "explanation": "Spam classifiers evaluate page quality and filter out keyword stuffing, doorway pages, and scraped content before indexing.",
     "topic": "Spam Classification Application",
     "slide_ref": "10. Classification and Clustering.pptx",
-    "answer": 0
+    "answer": 0,
+    "is_multi": false,
+    "required_choices": 1,
+    "correct_choices": [
+      0
+    ],
+    "correct_letter": "A",
+    "correct_letters": [
+      "A"
+    ]
   },
   {
     "id": "q_ch10_34",
@@ -7742,7 +12088,16 @@ window.SEG_QUESTIONS = [
     "explanation": "As dimensionality increases, data points become sparse and equidistant, degrading distance-based clustering algorithms like Euclidean K-Means.",
     "topic": "Curse of Dimensionality",
     "slide_ref": "10. Classification and Clustering.pptx",
-    "answer": 0
+    "answer": 0,
+    "is_multi": false,
+    "required_choices": 1,
+    "correct_choices": [
+      0
+    ],
+    "correct_letter": "A",
+    "correct_letters": [
+      "A"
+    ]
   },
   {
     "id": "q_ch10_35",
@@ -7758,7 +12113,16 @@ window.SEG_QUESTIONS = [
     "explanation": "Euclidean distance penalizes documents of different lengths even if their topic distribution is identical; Cosine similarity normalizes length away.",
     "topic": "Cosine vs Euclidean in Clustering",
     "slide_ref": "10. Classification and Clustering.pptx",
-    "answer": 0
+    "answer": 0,
+    "is_multi": false,
+    "required_choices": 1,
+    "correct_choices": [
+      0
+    ],
+    "correct_letter": "A",
+    "correct_letters": [
+      "A"
+    ]
   },
   {
     "id": "q_ch10_36",
@@ -7774,7 +12138,16 @@ window.SEG_QUESTIONS = [
     "explanation": "Medoids are real existing documents rather than artificial mean vectors, preventing extreme outliers from distorting cluster centroids.",
     "topic": "K-Medoids PAM",
     "slide_ref": "10. Classification and Clustering.pptx",
-    "answer": 0
+    "answer": 0,
+    "is_multi": false,
+    "required_choices": 1,
+    "correct_choices": [
+      0
+    ],
+    "correct_letter": "A",
+    "correct_letters": [
+      "A"
+    ]
   },
   {
     "id": "q_ch10_37",
@@ -7790,7 +12163,16 @@ window.SEG_QUESTIONS = [
     "explanation": "Bisecting K-Means combines the speed of K-Means with the hierarchical structure of divisive HAC, often producing better clusters than standard K-Means.",
     "topic": "Bisecting K-Means",
     "slide_ref": "10. Classification and Clustering.pptx",
-    "answer": 0
+    "answer": 0,
+    "is_multi": false,
+    "required_choices": 1,
+    "correct_choices": [
+      0
+    ],
+    "correct_letter": "A",
+    "correct_letters": [
+      "A"
+    ]
   },
   {
     "id": "q_ch10_38",
@@ -7806,7 +12188,16 @@ window.SEG_QUESTIONS = [
     "explanation": "Average-link balances single-link and complete-link by considering all pairwise distances, resisting chaining while avoiding extreme diameter constraints.",
     "topic": "Average-Link HAC",
     "slide_ref": "10. Classification and Clustering.pptx",
-    "answer": 0
+    "answer": 0,
+    "is_multi": false,
+    "required_choices": 1,
+    "correct_choices": [
+      0
+    ],
+    "correct_letter": "A",
+    "correct_letters": [
+      "A"
+    ]
   },
   {
     "id": "q_ch10_39",
@@ -7822,7 +12213,16 @@ window.SEG_QUESTIONS = [
     "explanation": "The prior reflects class imbalance in the training data: rare classes have smaller prior probabilities.",
     "topic": "Prior Probability NB",
     "slide_ref": "10. Classification and Clustering.pptx",
-    "answer": 0
+    "answer": 0,
+    "is_multi": false,
+    "required_choices": 1,
+    "correct_choices": [
+      0
+    ],
+    "correct_letter": "A",
+    "correct_letters": [
+      "A"
+    ]
   },
   {
     "id": "q_ch10_40",
@@ -7838,7 +12238,16 @@ window.SEG_QUESTIONS = [
     "explanation": "Under the naive conditional independence assumption, P(d|C) is the product of individual word likelihoods: prod_i P(w_i | C).",
     "topic": "Likelihood NB",
     "slide_ref": "10. Classification and Clustering.pptx",
-    "answer": 0
+    "answer": 0,
+    "is_multi": false,
+    "required_choices": 1,
+    "correct_choices": [
+      0
+    ],
+    "correct_letter": "A",
+    "correct_letters": [
+      "A"
+    ]
   },
   {
     "id": "q_ch10_41",
@@ -7854,7 +12263,16 @@ window.SEG_QUESTIONS = [
     "explanation": "Summing log-probabilities: log P(C) + sum(log P(w|C)) avoids floating-point underflow while preserving the exact argmax ranking.",
     "topic": "Log Space Computation",
     "slide_ref": "10. Classification and Clustering.pptx",
-    "answer": 0
+    "answer": 0,
+    "is_multi": false,
+    "required_choices": 1,
+    "correct_choices": [
+      0
+    ],
+    "correct_letter": "A",
+    "correct_letters": [
+      "A"
+    ]
   },
   {
     "id": "q_ch10_42",
@@ -7870,7 +12288,16 @@ window.SEG_QUESTIONS = [
     "explanation": "Active learning dramatically reduces annotation costs by asking humans to label only the ambiguous edge-case documents near the decision boundary.",
     "topic": "Active Learning",
     "slide_ref": "10. Classification and Clustering.pptx",
-    "answer": 0
+    "answer": 0,
+    "is_multi": false,
+    "required_choices": 1,
+    "correct_choices": [
+      0
+    ],
+    "correct_letter": "A",
+    "correct_letters": [
+      "A"
+    ]
   },
   {
     "id": "q_ch10_43",
@@ -7886,7 +12313,16 @@ window.SEG_QUESTIONS = [
     "explanation": "Zero-shot classification leverages pre-trained semantic representations (e.g., DeBERTa NLI) to evaluate entailment between text and candidate class hypotheses.",
     "topic": "Zero-Shot Classification",
     "slide_ref": "10. Classification and Clustering.pptx",
-    "answer": 0
+    "answer": 0,
+    "is_multi": false,
+    "required_choices": 1,
+    "correct_choices": [
+      0
+    ],
+    "correct_letter": "A",
+    "correct_letters": [
+      "A"
+    ]
   },
   {
     "id": "q_ch10_44",
@@ -7902,7 +12338,16 @@ window.SEG_QUESTIONS = [
     "explanation": "Hierarchical classification navigates tree-structured category graphs, routing documents through parent to child category nodes.",
     "topic": "Hierarchical Classification",
     "slide_ref": "10. Classification and Clustering.pptx",
-    "answer": 0
+    "answer": 0,
+    "is_multi": false,
+    "required_choices": 1,
+    "correct_choices": [
+      0
+    ],
+    "correct_letter": "A",
+    "correct_letters": [
+      "A"
+    ]
   },
   {
     "id": "q_ch10_45",
@@ -7918,7 +12363,16 @@ window.SEG_QUESTIONS = [
     "explanation": "The silhouette score measures cluster cohesion vs separation: s = (b - a) / max(a, b), where a is intra-cluster distance and b is nearest-cluster distance.",
     "topic": "Silhouette Coefficient",
     "slide_ref": "10. Classification and Clustering.pptx",
-    "answer": 0
+    "answer": 0,
+    "is_multi": false,
+    "required_choices": 1,
+    "correct_choices": [
+      0
+    ],
+    "correct_letter": "A",
+    "correct_letters": [
+      "A"
+    ]
   },
   {
     "id": "q_ch10_46",
@@ -7934,7 +12388,16 @@ window.SEG_QUESTIONS = [
     "explanation": "The Davies-Bouldin index evaluates the ratio of within-cluster scatter to between-cluster separation; lower values indicate superior clustering.",
     "topic": "Davies-Bouldin Index",
     "slide_ref": "10. Classification and Clustering.pptx",
-    "answer": 0
+    "answer": 0,
+    "is_multi": false,
+    "required_choices": 1,
+    "correct_choices": [
+      0
+    ],
+    "correct_letter": "A",
+    "correct_letters": [
+      "A"
+    ]
   },
   {
     "id": "q_ch10_47",
@@ -7950,7 +12413,16 @@ window.SEG_QUESTIONS = [
     "explanation": "Overfitting occurs when high-capacity models memorize training noise, failing to generalize to new, unseen test documents.",
     "topic": "Overfitting",
     "slide_ref": "10. Classification and Clustering.pptx",
-    "answer": 0
+    "answer": 0,
+    "is_multi": false,
+    "required_choices": 1,
+    "correct_choices": [
+      0
+    ],
+    "correct_letter": "A",
+    "correct_letters": [
+      "A"
+    ]
   },
   {
     "id": "q_ch10_48",
@@ -7966,7 +12438,16 @@ window.SEG_QUESTIONS = [
     "explanation": "L2 regularization penalizes extreme feature weights, smoothing the decision boundary and improving generalization on sparse text features.",
     "topic": "L2 Regularization",
     "slide_ref": "10. Classification and Clustering.pptx",
-    "answer": 0
+    "answer": 0,
+    "is_multi": false,
+    "required_choices": 1,
+    "correct_choices": [
+      0
+    ],
+    "correct_letter": "A",
+    "correct_letters": [
+      "A"
+    ]
   },
   {
     "id": "q_ch10_49",
@@ -7982,7 +12463,16 @@ window.SEG_QUESTIONS = [
     "explanation": "L1 regularization drives irrelevant word weights to zero, creating compact, interpretable models with built-in feature selection.",
     "topic": "L1 Regularization",
     "slide_ref": "10. Classification and Clustering.pptx",
-    "answer": 0
+    "answer": 0,
+    "is_multi": false,
+    "required_choices": 1,
+    "correct_choices": [
+      0
+    ],
+    "correct_letter": "A",
+    "correct_letters": [
+      "A"
+    ]
   },
   {
     "id": "q_ch10_50",
@@ -7998,7 +12488,16 @@ window.SEG_QUESTIONS = [
     "explanation": "If stopwords are not filtered or heavily down-weighted, documents will cluster based on shared grammar and syntax rather than real topical meaning.",
     "topic": "Stopwords in Clustering",
     "slide_ref": "10. Classification and Clustering.pptx",
-    "answer": 0
+    "answer": 0,
+    "is_multi": false,
+    "required_choices": 1,
+    "correct_choices": [
+      0
+    ],
+    "correct_letter": "A",
+    "correct_letters": [
+      "A"
+    ]
   },
   {
     "id": "q_ch11_01",
@@ -8014,7 +12513,16 @@ window.SEG_QUESTIONS = [
     "explanation": "Social search incorporates social metadata (tags, reviews, shared bookmarks, friend connections) to personalize and refine information discovery.",
     "topic": "Social Search Definition",
     "slide_ref": "11. Social search.pptx",
-    "answer": 0
+    "answer": 0,
+    "is_multi": false,
+    "required_choices": 1,
+    "correct_choices": [
+      0
+    ],
+    "correct_letter": "A",
+    "correct_letters": [
+      "A"
+    ]
   },
   {
     "id": "q_ch11_02",
@@ -8030,7 +12538,16 @@ window.SEG_QUESTIONS = [
     "explanation": "Folksonomy (coined by Thomas Vander Wal, 2004) blends 'folk' and 'taxonomy', representing bottom-up user tagging (e.g., Delicious, Flickr).",
     "topic": "Folksonomy",
     "slide_ref": "11. Social search.pptx",
-    "answer": 0
+    "answer": 0,
+    "is_multi": false,
+    "required_choices": 1,
+    "correct_choices": [
+      0
+    ],
+    "correct_letter": "A",
+    "correct_letters": [
+      "A"
+    ]
   },
   {
     "id": "q_ch11_03",
@@ -8046,7 +12563,16 @@ window.SEG_QUESTIONS = [
     "explanation": "Formal taxonomies (like Dewey Decimal) impose rigid hierarchical rules; folksonomies allow free, dynamic, crowd-sourced tag vocabulary.",
     "topic": "Taxonomy vs Folksonomy",
     "slide_ref": "11. Social search.pptx",
-    "answer": 0
+    "answer": 0,
+    "is_multi": false,
+    "required_choices": 1,
+    "correct_choices": [
+      0
+    ],
+    "correct_letter": "A",
+    "correct_letters": [
+      "A"
+    ]
   },
   {
     "id": "q_ch11_04",
@@ -8062,7 +12588,16 @@ window.SEG_QUESTIONS = [
     "explanation": "Content-based tags directly describe the factual subject matter or entity represented by the resource.",
     "topic": "Content-Based Tags",
     "slide_ref": "11. Social search.pptx",
-    "answer": 0
+    "answer": 0,
+    "is_multi": false,
+    "required_choices": 1,
+    "correct_choices": [
+      0
+    ],
+    "correct_letter": "A",
+    "correct_letters": [
+      "A"
+    ]
   },
   {
     "id": "q_ch11_05",
@@ -8078,7 +12613,16 @@ window.SEG_QUESTIONS = [
     "explanation": "Organizational tags serve personal workflow management for the specific user (e.g., 'toread', 'jobsearch') and lack broad semantic value for others.",
     "topic": "Organizational Tags",
     "slide_ref": "11. Social search.pptx",
-    "answer": 0
+    "answer": 0,
+    "is_multi": false,
+    "required_choices": 1,
+    "correct_choices": [
+      0
+    ],
+    "correct_letter": "A",
+    "correct_letters": [
+      "A"
+    ]
   },
   {
     "id": "q_ch11_06",
@@ -8094,7 +12638,16 @@ window.SEG_QUESTIONS = [
     "explanation": "Subjective tags express individual emotional reactions, value judgments, or opinions rather than objective facts.",
     "topic": "Subjective Tags",
     "slide_ref": "11. Social search.pptx",
-    "answer": 0
+    "answer": 0,
+    "is_multi": false,
+    "required_choices": 1,
+    "correct_choices": [
+      0
+    ],
+    "correct_letter": "A",
+    "correct_letters": [
+      "A"
+    ]
   },
   {
     "id": "q_ch11_07",
@@ -8110,7 +12663,16 @@ window.SEG_QUESTIONS = [
     "explanation": "Context-based tags locate the resource in space, time, or specific events (e.g., wedding, vacation2024, Tokyo).",
     "topic": "Context-Based Tags",
     "slide_ref": "11. Social search.pptx",
-    "answer": 0
+    "answer": 0,
+    "is_multi": false,
+    "required_choices": 1,
+    "correct_choices": [
+      0
+    ],
+    "correct_letter": "A",
+    "correct_letters": [
+      "A"
+    ]
   },
   {
     "id": "q_ch11_08",
@@ -8126,7 +12688,16 @@ window.SEG_QUESTIONS = [
     "explanation": "Tag clouds provide an interactive visual summary of prevalent themes, allowing users to browse popular tags by clicking weighted text.",
     "topic": "Tag Cloud",
     "slide_ref": "11. Social search.pptx",
-    "answer": 0
+    "answer": 0,
+    "is_multi": false,
+    "required_choices": 1,
+    "correct_choices": [
+      0
+    ],
+    "correct_letter": "A",
+    "correct_letters": [
+      "A"
+    ]
   },
   {
     "id": "q_ch11_09",
@@ -8142,7 +12713,16 @@ window.SEG_QUESTIONS = [
     "explanation": "Without historical tags or interaction data, collaborative and social search systems cannot reliably score or recommend new content.",
     "topic": "Social Cold Start",
     "slide_ref": "11. Social search.pptx",
-    "answer": 0
+    "answer": 0,
+    "is_multi": false,
+    "required_choices": 1,
+    "correct_choices": [
+      0
+    ],
+    "correct_letter": "A",
+    "correct_letters": [
+      "A"
+    ]
   },
   {
     "id": "q_ch11_10",
@@ -8158,7 +12738,16 @@ window.SEG_QUESTIONS = [
     "explanation": "Collaborative filtering leverages crowd wisdom: if User A and User B agree on many past items, User A is likely to enjoy an unrated item liked by User B.",
     "topic": "Collaborative Filtering",
     "slide_ref": "11. Social search.pptx",
-    "answer": 0
+    "answer": 0,
+    "is_multi": false,
+    "required_choices": 1,
+    "correct_choices": [
+      0
+    ],
+    "correct_letter": "A",
+    "correct_letters": [
+      "A"
+    ]
   },
   {
     "id": "q_ch11_11",
@@ -8174,7 +12763,16 @@ window.SEG_QUESTIONS = [
     "explanation": "User-based compares user vectors; Item-based compares item rating vectors (Sarwar et al., 2001), which is more stable when item counts change slower than user counts.",
     "topic": "User vs Item CF",
     "slide_ref": "11. Social search.pptx",
-    "answer": 0
+    "answer": 0,
+    "is_multi": false,
+    "required_choices": 1,
+    "correct_choices": [
+      0
+    ],
+    "correct_letter": "A",
+    "correct_letters": [
+      "A"
+    ]
   },
   {
     "id": "q_ch11_12",
@@ -8190,7 +12788,16 @@ window.SEG_QUESTIONS = [
     "explanation": "Pearson correlation accounts for differences in individual rating biases (e.g., harsh raters vs generous raters) across shared rated items.",
     "topic": "Pearson Correlation CF",
     "slide_ref": "11. Social search.pptx",
-    "answer": 0
+    "answer": 0,
+    "is_multi": false,
+    "required_choices": 1,
+    "correct_choices": [
+      0
+    ],
+    "correct_letter": "A",
+    "correct_letters": [
+      "A"
+    ]
   },
   {
     "id": "q_ch11_13",
@@ -8206,7 +12813,16 @@ window.SEG_QUESTIONS = [
     "explanation": "CQA combines human expertise, social voting, and IR to curate high-quality solutions for long-tail complex questions.",
     "topic": "CQA Platforms",
     "slide_ref": "11. Social search.pptx",
-    "answer": 0
+    "answer": 0,
+    "is_multi": false,
+    "required_choices": 1,
+    "correct_choices": [
+      0
+    ],
+    "correct_letter": "A",
+    "correct_letters": [
+      "A"
+    ]
   },
   {
     "id": "q_ch11_14",
@@ -8222,7 +12838,16 @@ window.SEG_QUESTIONS = [
     "explanation": "Reputation metrics incentivize quality participation and provide strong algorithmic ranking signals for answer quality.",
     "topic": "CQA Reputation",
     "slide_ref": "11. Social search.pptx",
-    "answer": 0
+    "answer": 0,
+    "is_multi": false,
+    "required_choices": 1,
+    "correct_choices": [
+      0
+    ],
+    "correct_letter": "A",
+    "correct_letters": [
+      "A"
+    ]
   },
   {
     "id": "q_ch11_15",
@@ -8238,7 +12863,16 @@ window.SEG_QUESTIONS = [
     "explanation": "Expertise retrieval matches a topic query against corporate knowledge graphs to pinpoint human authorities within the company.",
     "topic": "Expert Finding",
     "slide_ref": "11. Social search.pptx",
-    "answer": 0
+    "answer": 0,
+    "is_multi": false,
+    "required_choices": 1,
+    "correct_choices": [
+      0
+    ],
+    "correct_letter": "A",
+    "correct_letters": [
+      "A"
+    ]
   },
   {
     "id": "q_ch11_16",
@@ -8254,7 +12888,16 @@ window.SEG_QUESTIONS = [
     "explanation": "Because users tag without guidelines, vocabulary divergence, typos, and ambiguity create noisy, fragmented metadata.",
     "topic": "Tag Ambiguity",
     "slide_ref": "11. Social search.pptx",
-    "answer": 0
+    "answer": 0,
+    "is_multi": false,
+    "required_choices": 1,
+    "correct_choices": [
+      0
+    ],
+    "correct_letter": "A",
+    "correct_letters": [
+      "A"
+    ]
   },
   {
     "id": "q_ch11_17",
@@ -8270,7 +12913,16 @@ window.SEG_QUESTIONS = [
     "explanation": "Spammers hijack popular tags to siphon traffic to affiliate or scam sites, requiring automated tag spam classification.",
     "topic": "Tag Spam",
     "slide_ref": "11. Social search.pptx",
-    "answer": 0
+    "answer": 0,
+    "is_multi": false,
+    "required_choices": 1,
+    "correct_choices": [
+      0
+    ],
+    "correct_letter": "A",
+    "correct_letters": [
+      "A"
+    ]
   },
   {
     "id": "q_ch11_18",
@@ -8286,7 +12938,16 @@ window.SEG_QUESTIONS = [
     "explanation": "Small-world networks have short average path lengths between arbitrary nodes, enabling rapid information diffusion across social search graphs.",
     "topic": "Small World Phenomenon",
     "slide_ref": "11. Social search.pptx",
-    "answer": 0
+    "answer": 0,
+    "is_multi": false,
+    "required_choices": 1,
+    "correct_choices": [
+      0
+    ],
+    "correct_letter": "A",
+    "correct_letters": [
+      "A"
+    ]
   },
   {
     "id": "q_ch11_19",
@@ -8302,7 +12963,16 @@ window.SEG_QUESTIONS = [
     "explanation": "Personalized social search injects social affinity signals: recommendations from friends and trusted connections are ranked higher.",
     "topic": "Social Personalization",
     "slide_ref": "11. Social search.pptx",
-    "answer": 0
+    "answer": 0,
+    "is_multi": false,
+    "required_choices": 1,
+    "correct_choices": [
+      0
+    ],
+    "correct_letter": "A",
+    "correct_letters": [
+      "A"
+    ]
   },
   {
     "id": "q_ch11_20",
@@ -8318,7 +12988,16 @@ window.SEG_QUESTIONS = [
     "explanation": "Social tweets, social bookmarks, and pinboards act as de facto crowd-sourced descriptive tags for linked URLs.",
     "topic": "Implicit Tagging",
     "slide_ref": "11. Social search.pptx",
-    "answer": 0
+    "answer": 0,
+    "is_multi": false,
+    "required_choices": 1,
+    "correct_choices": [
+      0
+    ],
+    "correct_letter": "A",
+    "correct_letters": [
+      "A"
+    ]
   },
   {
     "id": "q_ch11_21",
@@ -8334,7 +13013,16 @@ window.SEG_QUESTIONS = [
     "explanation": "Matrix factorization (made famous by the Netflix Prize) maps users and items to a shared latent factor space (e.g., 50 dimensions) to predict missing ratings.",
     "topic": "Matrix Factorization CF",
     "slide_ref": "11. Social search.pptx",
-    "answer": 0
+    "answer": 0,
+    "is_multi": false,
+    "required_choices": 1,
+    "correct_choices": [
+      0
+    ],
+    "correct_letter": "A",
+    "correct_letters": [
+      "A"
+    ]
   },
   {
     "id": "q_ch11_22",
@@ -8350,7 +13038,16 @@ window.SEG_QUESTIONS = [
     "explanation": "Extreme sparsity makes finding overlapping ratings between users difficult, necessitating latent factor models or content-collaborative hybrids.",
     "topic": "CF Sparsity",
     "slide_ref": "11. Social search.pptx",
-    "answer": 0
+    "answer": 0,
+    "is_multi": false,
+    "required_choices": 1,
+    "correct_choices": [
+      0
+    ],
+    "correct_letter": "A",
+    "correct_letters": [
+      "A"
+    ]
   },
   {
     "id": "q_ch11_23",
@@ -8366,7 +13063,16 @@ window.SEG_QUESTIONS = [
     "explanation": "Content-based filtering analyzes document text (TF-IDF, embeddings), so newly published articles can be recommended immediately without waiting for user ratings.",
     "topic": "Hybrid Recommendation",
     "slide_ref": "11. Social search.pptx",
-    "answer": 0
+    "answer": 0,
+    "is_multi": false,
+    "required_choices": 1,
+    "correct_choices": [
+      0
+    ],
+    "correct_letter": "A",
+    "correct_letters": [
+      "A"
+    ]
   },
   {
     "id": "q_ch11_24",
@@ -8382,7 +13088,16 @@ window.SEG_QUESTIONS = [
     "explanation": "Displaying existing tags creates social feedback loops that reinforce top tags, homogenizing the folksonomy vocabulary.",
     "topic": "Matthew Effect Tagging",
     "slide_ref": "11. Social search.pptx",
-    "answer": 0
+    "answer": 0,
+    "is_multi": false,
+    "required_choices": 1,
+    "correct_choices": [
+      0
+    ],
+    "correct_letter": "A",
+    "correct_letters": [
+      "A"
+    ]
   },
   {
     "id": "q_ch11_25",
@@ -8398,7 +13113,16 @@ window.SEG_QUESTIONS = [
     "explanation": "Ego networks analyze local neighborhood subgraphs around a user to personalize social search results.",
     "topic": "Ego Network",
     "slide_ref": "11. Social search.pptx",
-    "answer": 0
+    "answer": 0,
+    "is_multi": false,
+    "required_choices": 1,
+    "correct_choices": [
+      0
+    ],
+    "correct_letter": "A",
+    "correct_letters": [
+      "A"
+    ]
   },
   {
     "id": "q_ch11_26",
@@ -8414,7 +13138,16 @@ window.SEG_QUESTIONS = [
     "explanation": "Triadic closure models link formation in social graphs, used to suggest friends and predict shared interests.",
     "topic": "Triadic Closure",
     "slide_ref": "11. Social search.pptx",
-    "answer": 0
+    "answer": 0,
+    "is_multi": false,
+    "required_choices": 1,
+    "correct_choices": [
+      0
+    ],
+    "correct_letter": "A",
+    "correct_letters": [
+      "A"
+    ]
   },
   {
     "id": "q_ch11_27",
@@ -8430,7 +13163,16 @@ window.SEG_QUESTIONS = [
     "explanation": "Homophily explains why friends in social graphs exhibit correlated information needs, validating social personalization algorithms.",
     "topic": "Homophily",
     "slide_ref": "11. Social search.pptx",
-    "answer": 0
+    "answer": 0,
+    "is_multi": false,
+    "required_choices": 1,
+    "correct_choices": [
+      0
+    ],
+    "correct_letter": "A",
+    "correct_letters": [
+      "A"
+    ]
   },
   {
     "id": "q_ch11_28",
@@ -8446,7 +13188,16 @@ window.SEG_QUESTIONS = [
     "explanation": "Classifiers predict whether an answer will be accepted based on content features (length, code, formatting) and social features (author badge level).",
     "topic": "Best Answer Prediction",
     "slide_ref": "11. Social search.pptx",
-    "answer": 0
+    "answer": 0,
+    "is_multi": false,
+    "required_choices": 1,
+    "correct_choices": [
+      0
+    ],
+    "correct_letter": "A",
+    "correct_letters": [
+      "A"
+    ]
   },
   {
     "id": "q_ch11_29",
@@ -8462,7 +13213,16 @@ window.SEG_QUESTIONS = [
     "explanation": "Social bookmarking platforms generate crowdsourced metadata and high-quality link directories for information retrieval.",
     "topic": "Social Bookmarking",
     "slide_ref": "11. Social search.pptx",
-    "answer": 0
+    "answer": 0,
+    "is_multi": false,
+    "required_choices": 1,
+    "correct_choices": [
+      0
+    ],
+    "correct_letter": "A",
+    "correct_letters": [
+      "A"
+    ]
   },
   {
     "id": "q_ch11_30",
@@ -8478,7 +13238,16 @@ window.SEG_QUESTIONS = [
     "explanation": "Co-occurring tags (e.g., 'jaguar' + 'savannah' vs 'jaguar' + 'v8 engine') provide context to disambiguate meaning.",
     "topic": "Tag Disambiguation",
     "slide_ref": "11. Social search.pptx",
-    "answer": 0
+    "answer": 0,
+    "is_multi": false,
+    "required_choices": 1,
+    "correct_choices": [
+      0
+    ],
+    "correct_letter": "A",
+    "correct_letters": [
+      "A"
+    ]
   },
   {
     "id": "q_ch11_31",
@@ -8494,7 +13263,16 @@ window.SEG_QUESTIONS = [
     "explanation": "Social tagging forms a 3-way tripartite hypergraph (Users, Resources, Tags), often projected into bipartite graphs for network analysis.",
     "topic": "Bipartite Tag Graph",
     "slide_ref": "11. Social search.pptx",
-    "answer": 0
+    "answer": 0,
+    "is_multi": false,
+    "required_choices": 1,
+    "correct_choices": [
+      0
+    ],
+    "correct_letter": "A",
+    "correct_letters": [
+      "A"
+    ]
   },
   {
     "id": "q_ch11_32",
@@ -8510,7 +13288,16 @@ window.SEG_QUESTIONS = [
     "explanation": "FolkRank (Hotho et al., 2006) adapts PageRank to tripartite folksonomies, finding prominent tags and resources simultaneously.",
     "topic": "FolkRank Algorithm",
     "slide_ref": "11. Social search.pptx",
-    "answer": 0
+    "answer": 0,
+    "is_multi": false,
+    "required_choices": 1,
+    "correct_choices": [
+      0
+    ],
+    "correct_letter": "A",
+    "correct_letters": [
+      "A"
+    ]
   },
   {
     "id": "q_ch11_33",
@@ -8526,7 +13313,16 @@ window.SEG_QUESTIONS = [
     "explanation": "Like Zipf's law, tag distributions exhibit power-law behavior: head tags are broad ('music', 'tech'), tail tags are granular ('django-rest-framework').",
     "topic": "Long Tail Tags",
     "slide_ref": "11. Social search.pptx",
-    "answer": 0
+    "answer": 0,
+    "is_multi": false,
+    "required_choices": 1,
+    "correct_choices": [
+      0
+    ],
+    "correct_letter": "A",
+    "correct_letters": [
+      "A"
+    ]
   },
   {
     "id": "q_ch11_34",
@@ -8542,7 +13338,16 @@ window.SEG_QUESTIONS = [
     "explanation": "Because CF relies on unverified user ratings, bot armies can inject biased rating profiles to manipulate recommendation outputs.",
     "topic": "Shilling Attacks",
     "slide_ref": "11. Social search.pptx",
-    "answer": 0
+    "answer": 0,
+    "is_multi": false,
+    "required_choices": 1,
+    "correct_choices": [
+      0
+    ],
+    "correct_letter": "A",
+    "correct_letters": [
+      "A"
+    ]
   },
   {
     "id": "q_ch11_35",
@@ -8558,7 +13363,16 @@ window.SEG_QUESTIONS = [
     "explanation": "Trust networks replace raw statistical correlations with explicit interpersonal trust weights, increasing resilience against spam.",
     "topic": "Trust-Aware Recommendation",
     "slide_ref": "11. Social search.pptx",
-    "answer": 0
+    "answer": 0,
+    "is_multi": false,
+    "required_choices": 1,
+    "correct_choices": [
+      0
+    ],
+    "correct_letter": "A",
+    "correct_letters": [
+      "A"
+    ]
   },
   {
     "id": "q_ch11_36",
@@ -8574,7 +13388,16 @@ window.SEG_QUESTIONS = [
     "explanation": "Profile-centric models aggregate text from publications, patents, and internal wiki edits to estimate an employee's competence in target topics.",
     "topic": "Expertise Modeling",
     "slide_ref": "11. Social search.pptx",
-    "answer": 0
+    "answer": 0,
+    "is_multi": false,
+    "required_choices": 1,
+    "correct_choices": [
+      0
+    ],
+    "correct_letter": "A",
+    "correct_letters": [
+      "A"
+    ]
   },
   {
     "id": "q_ch11_37",
@@ -8590,7 +13413,16 @@ window.SEG_QUESTIONS = [
     "explanation": "James Surowiecki's principle shows that aggregating collective independent judgments cancels out individual biases, producing robust metadata.",
     "topic": "Wisdom of Crowds",
     "slide_ref": "11. Social search.pptx",
-    "answer": 0
+    "answer": 0,
+    "is_multi": false,
+    "required_choices": 1,
+    "correct_choices": [
+      0
+    ],
+    "correct_letter": "A",
+    "correct_letters": [
+      "A"
+    ]
   },
   {
     "id": "q_ch11_38",
@@ -8606,7 +13438,16 @@ window.SEG_QUESTIONS = [
     "explanation": "While not direct algorithmic ranking factors like PageRank, social signals correlate with increased visibility, secondary backlinks, and organic brand queries.",
     "topic": "Social Signals SEO",
     "slide_ref": "11. Social search.pptx",
-    "answer": 0
+    "answer": 0,
+    "is_multi": false,
+    "required_choices": 1,
+    "correct_choices": [
+      0
+    ],
+    "correct_letter": "A",
+    "correct_letters": [
+      "A"
+    ]
   },
   {
     "id": "q_ch11_39",
@@ -8622,7 +13463,16 @@ window.SEG_QUESTIONS = [
     "explanation": "Microblog search prioritizes real-time breaking events, tracking trending hashtags and streaming sentiment as events unfold.",
     "topic": "Real-Time Microblog Search",
     "slide_ref": "11. Social search.pptx",
-    "answer": 0
+    "answer": 0,
+    "is_multi": false,
+    "required_choices": 1,
+    "correct_choices": [
+      0
+    ],
+    "correct_letter": "A",
+    "correct_letters": [
+      "A"
+    ]
   },
   {
     "id": "q_ch11_40",
@@ -8638,7 +13488,16 @@ window.SEG_QUESTIONS = [
     "explanation": "Sentiment analysis extracts subjective polarity from user reviews and tweets to summarize community opinions.",
     "topic": "Sentiment Analysis",
     "slide_ref": "11. Social search.pptx",
-    "answer": 0
+    "answer": 0,
+    "is_multi": false,
+    "required_choices": 1,
+    "correct_choices": [
+      0
+    ],
+    "correct_letter": "A",
+    "correct_letters": [
+      "A"
+    ]
   },
   {
     "id": "q_ch11_41",
@@ -8654,7 +13513,16 @@ window.SEG_QUESTIONS = [
     "explanation": "Social knowledge graphs connect people, organizations, concepts, and relationships to support entity-based social search.",
     "topic": "Social Knowledge Graph",
     "slide_ref": "11. Social search.pptx",
-    "answer": 0
+    "answer": 0,
+    "is_multi": false,
+    "required_choices": 1,
+    "correct_choices": [
+      0
+    ],
+    "correct_letter": "A",
+    "correct_letters": [
+      "A"
+    ]
   },
   {
     "id": "q_ch11_42",
@@ -8670,7 +13538,16 @@ window.SEG_QUESTIONS = [
     "explanation": "New users lack interaction history, so engines display onboarding interest surveys or show universally popular items until behavior is observed.",
     "topic": "User Cold Start",
     "slide_ref": "11. Social search.pptx",
-    "answer": 0
+    "answer": 0,
+    "is_multi": false,
+    "required_choices": 1,
+    "correct_choices": [
+      0
+    ],
+    "correct_letter": "A",
+    "correct_letters": [
+      "A"
+    ]
   },
   {
     "id": "q_ch11_43",
@@ -8686,7 +13563,16 @@ window.SEG_QUESTIONS = [
     "explanation": "K-core decomposition extracts cohesive, highly connected community backbones from massive sparse social graphs.",
     "topic": "K-Core Social Graphs",
     "slide_ref": "11. Social search.pptx",
-    "answer": 0
+    "answer": 0,
+    "is_multi": false,
+    "required_choices": 1,
+    "correct_choices": [
+      0
+    ],
+    "correct_letter": "A",
+    "correct_letters": [
+      "A"
+    ]
   },
   {
     "id": "q_ch11_44",
@@ -8702,7 +13588,16 @@ window.SEG_QUESTIONS = [
     "explanation": "Twitter's UserRank applies PageRank to the follower graph, identifying high-authority influencers whose retweets carry high weight.",
     "topic": "UserRank",
     "slide_ref": "11. Social search.pptx",
-    "answer": 0
+    "answer": 0,
+    "is_multi": false,
+    "required_choices": 1,
+    "correct_choices": [
+      0
+    ],
+    "correct_letter": "A",
+    "correct_letters": [
+      "A"
+    ]
   },
   {
     "id": "q_ch11_45",
@@ -8718,7 +13613,16 @@ window.SEG_QUESTIONS = [
     "explanation": "Modularity-based community detection identifies organic interest cliques (e.g., sports fans, crypto traders) within massive social graphs.",
     "topic": "Community Detection",
     "slide_ref": "11. Social search.pptx",
-    "answer": 0
+    "answer": 0,
+    "is_multi": false,
+    "required_choices": 1,
+    "correct_choices": [
+      0
+    ],
+    "correct_letter": "A",
+    "correct_letters": [
+      "A"
+    ]
   },
   {
     "id": "q_ch11_46",
@@ -8734,7 +13638,16 @@ window.SEG_QUESTIONS = [
     "explanation": "Effective question routing directs incoming queries to active domain experts, reducing time-to-first-answer and boosting platform health.",
     "topic": "Question Routing",
     "slide_ref": "11. Social search.pptx",
-    "answer": 0
+    "answer": 0,
+    "is_multi": false,
+    "required_choices": 1,
+    "correct_choices": [
+      0
+    ],
+    "correct_letter": "A",
+    "correct_letters": [
+      "A"
+    ]
   },
   {
     "id": "q_ch11_47",
@@ -8750,7 +13663,16 @@ window.SEG_QUESTIONS = [
     "explanation": "Users with high overlap in their folksonomy bookmark collections share specialized interests, making them prime candidates for social following.",
     "topic": "Folksonomy Friend Recommendation",
     "slide_ref": "11. Social search.pptx",
-    "answer": 0
+    "answer": 0,
+    "is_multi": false,
+    "required_choices": 1,
+    "correct_choices": [
+      0
+    ],
+    "correct_letter": "A",
+    "correct_letters": [
+      "A"
+    ]
   },
   {
     "id": "q_ch11_48",
@@ -8766,7 +13688,16 @@ window.SEG_QUESTIONS = [
     "explanation": "Geo-social search filters social media streams and reviews based on spatial proximity to the user's current physical location.",
     "topic": "Geo-Social Search",
     "slide_ref": "11. Social search.pptx",
-    "answer": 0
+    "answer": 0,
+    "is_multi": false,
+    "required_choices": 1,
+    "correct_choices": [
+      0
+    ],
+    "correct_letter": "A",
+    "correct_letters": [
+      "A"
+    ]
   },
   {
     "id": "q_ch11_49",
@@ -8782,7 +13713,16 @@ window.SEG_QUESTIONS = [
     "explanation": "The half-life of a tweet or social post is measured in hours; search engines must ingest and index social feeds with sub-minute latency.",
     "topic": "Social Freshness Demands",
     "slide_ref": "11. Social search.pptx",
-    "answer": 0
+    "answer": 0,
+    "is_multi": false,
+    "required_choices": 1,
+    "correct_choices": [
+      0
+    ],
+    "correct_letter": "A",
+    "correct_letters": [
+      "A"
+    ]
   },
   {
     "id": "q_ch11_50",
@@ -8798,7 +13738,16 @@ window.SEG_QUESTIONS = [
     "explanation": "Social search must strictly enforce complex dynamic privacy settings so private posts are never surfaced outside designated friend circles.",
     "topic": "Social Privacy",
     "slide_ref": "11. Social search.pptx",
-    "answer": 0
+    "answer": 0,
+    "is_multi": false,
+    "required_choices": 1,
+    "correct_choices": [
+      0
+    ],
+    "correct_letter": "A",
+    "correct_letters": [
+      "A"
+    ]
   },
   {
     "id": "q_ch12_01",
@@ -8814,7 +13763,16 @@ window.SEG_QUESTIONS = [
     "explanation": "BoW assumes words are conditionally independent, unable to distinguish phrase context or distinguish 'cats eat fish' from 'fish eat cats'.",
     "topic": "BoW Limitations",
     "slide_ref": "12. Beyond bag of words.pptx",
-    "answer": 0
+    "answer": 0,
+    "is_multi": false,
+    "required_choices": 1,
+    "correct_choices": [
+      0
+    ],
+    "correct_letter": "A",
+    "correct_letters": [
+      "A"
+    ]
   },
   {
     "id": "q_ch12_02",
@@ -8830,7 +13788,16 @@ window.SEG_QUESTIONS = [
     "explanation": "Term dependence models reward documents where multiple query terms appear as exact phrases or within close proximity windows.",
     "topic": "Term Dependence Models",
     "slide_ref": "12. Beyond bag of words.pptx",
-    "answer": 0
+    "answer": 0,
+    "is_multi": false,
+    "required_choices": 1,
+    "correct_choices": [
+      0
+    ],
+    "correct_letter": "A",
+    "correct_letters": [
+      "A"
+    ]
   },
   {
     "id": "q_ch12_03",
@@ -8846,7 +13813,16 @@ window.SEG_QUESTIONS = [
     "explanation": "SDM score = lambda_T * sum(f_T) + lambda_O * sum(f_O) + lambda_U * sum(f_U), blending term, phrase, and proximity signals.",
     "topic": "SDM Formula",
     "slide_ref": "12. Beyond bag of words.pptx",
-    "answer": 0
+    "answer": 0,
+    "is_multi": false,
+    "required_choices": 1,
+    "correct_choices": [
+      0
+    ],
+    "correct_letter": "A",
+    "correct_letters": [
+      "A"
+    ]
   },
   {
     "id": "q_ch12_04",
@@ -8862,7 +13838,16 @@ window.SEG_QUESTIONS = [
     "explanation": "Ordered window features capture exact contiguous bigrams (e.g., query 'new york' matching document 'new york' at positions p and p+1).",
     "topic": "Ordered Window Feature",
     "slide_ref": "12. Beyond bag of words.pptx",
-    "answer": 0
+    "answer": 0,
+    "is_multi": false,
+    "required_choices": 1,
+    "correct_choices": [
+      0
+    ],
+    "correct_letter": "A",
+    "correct_letters": [
+      "A"
+    ]
   },
   {
     "id": "q_ch12_05",
@@ -8878,7 +13863,16 @@ window.SEG_QUESTIONS = [
     "explanation": "Unordered window features capture looser proximity: terms appearing within e.g. 8 words of each other even if inverted or separated.",
     "topic": "Unordered Window Feature",
     "slide_ref": "12. Beyond bag of words.pptx",
-    "answer": 0
+    "answer": 0,
+    "is_multi": false,
+    "required_choices": 1,
+    "correct_choices": [
+      0
+    ],
+    "correct_letter": "A",
+    "correct_letters": [
+      "A"
+    ]
   },
   {
     "id": "q_ch12_06",
@@ -8894,7 +13888,16 @@ window.SEG_QUESTIONS = [
     "explanation": "Feature-based models generalize ranking beyond raw word matching to combine hundreds of content, link, and quality signals.",
     "topic": "Feature-Based Retrieval",
     "slide_ref": "12. Beyond bag of words.pptx",
-    "answer": 0
+    "answer": 0,
+    "is_multi": false,
+    "required_choices": 1,
+    "correct_choices": [
+      0
+    ],
+    "correct_letter": "A",
+    "correct_letters": [
+      "A"
+    ]
   },
   {
     "id": "q_ch12_07",
@@ -8910,7 +13913,16 @@ window.SEG_QUESTIONS = [
     "explanation": "XML retrieval addresses Content-and-Structure (CAS) queries, returning the most specific, focused XML sub-element that satisfies the need.",
     "topic": "XML Retrieval",
     "slide_ref": "12. Beyond bag of words.pptx",
-    "answer": 0
+    "answer": 0,
+    "is_multi": false,
+    "required_choices": 1,
+    "correct_choices": [
+      0
+    ],
+    "correct_letter": "A",
+    "correct_letters": [
+      "A"
+    ]
   },
   {
     "id": "q_ch12_08",
@@ -8926,7 +13938,16 @@ window.SEG_QUESTIONS = [
     "explanation": "INEX established standard XML test collections, topics, and evaluation metrics for component-level and structured retrieval.",
     "topic": "INEX Benchmark",
     "slide_ref": "12. Beyond bag of words.pptx",
-    "answer": 0
+    "answer": 0,
+    "is_multi": false,
+    "required_choices": 1,
+    "correct_choices": [
+      0
+    ],
+    "correct_letter": "A",
+    "correct_letters": [
+      "A"
+    ]
   },
   {
     "id": "q_ch12_09",
@@ -8942,7 +13963,16 @@ window.SEG_QUESTIONS = [
     "explanation": "Entity search moves from 'strings to things': understanding that the query refers to a distinct entity node with known attributes in a Knowledge Base.",
     "topic": "Entity-Centric Search",
     "slide_ref": "12. Beyond bag of words.pptx",
-    "answer": 0
+    "answer": 0,
+    "is_multi": false,
+    "required_choices": 1,
+    "correct_choices": [
+      0
+    ],
+    "correct_letter": "A",
+    "correct_letters": [
+      "A"
+    ]
   },
   {
     "id": "q_ch12_10",
@@ -8958,7 +13988,16 @@ window.SEG_QUESTIONS = [
     "explanation": "Knowledge Graphs structure factual world knowledge as RDF-style subject-predicate-object triples, enabling direct entity exploration.",
     "topic": "Knowledge Graph Definition",
     "slide_ref": "12. Beyond bag of words.pptx",
-    "answer": 0
+    "answer": 0,
+    "is_multi": false,
+    "required_choices": 1,
+    "correct_choices": [
+      0
+    ],
+    "correct_letter": "A",
+    "correct_letters": [
+      "A"
+    ]
   },
   {
     "id": "q_ch12_11",
@@ -8974,7 +14013,16 @@ window.SEG_QUESTIONS = [
     "explanation": "MMIR retrieves unstructured visual and acoustic media using low-level features (color, timbre) and high-level semantic embeddings.",
     "topic": "Multimedia IR",
     "slide_ref": "12. Beyond bag of words.pptx",
-    "answer": 0
+    "answer": 0,
+    "is_multi": false,
+    "required_choices": 1,
+    "correct_choices": [
+      0
+    ],
+    "correct_letter": "A",
+    "correct_letters": [
+      "A"
+    ]
   },
   {
     "id": "q_ch12_12",
@@ -8990,7 +14038,16 @@ window.SEG_QUESTIONS = [
     "explanation": "CBIR analyzes pixel arrays directly, using visual descriptors and deep convolutional embeddings to find visually similar images.",
     "topic": "CBIR",
     "slide_ref": "12. Beyond bag of words.pptx",
-    "answer": 0
+    "answer": 0,
+    "is_multi": false,
+    "required_choices": 1,
+    "correct_choices": [
+      0
+    ],
+    "correct_letter": "A",
+    "correct_letters": [
+      "A"
+    ]
   },
   {
     "id": "q_ch12_13",
@@ -9006,7 +14063,16 @@ window.SEG_QUESTIONS = [
     "explanation": "Color histograms quantify global color distribution, providing an invariant descriptor for color-based image matching.",
     "topic": "Color Histogram",
     "slide_ref": "12. Beyond bag of words.pptx",
-    "answer": 0
+    "answer": 0,
+    "is_multi": false,
+    "required_choices": 1,
+    "correct_choices": [
+      0
+    ],
+    "correct_letter": "A",
+    "correct_letters": [
+      "A"
+    ]
   },
   {
     "id": "q_ch12_14",
@@ -9022,7 +14088,16 @@ window.SEG_QUESTIONS = [
     "explanation": "QBE allows users to upload a photo to find identical products, identify landmarks, or discover visually matching artwork.",
     "topic": "Query-by-Example",
     "slide_ref": "12. Beyond bag of words.pptx",
-    "answer": 0
+    "answer": 0,
+    "is_multi": false,
+    "required_choices": 1,
+    "correct_choices": [
+      0
+    ],
+    "correct_letter": "A",
+    "correct_letters": [
+      "A"
+    ]
   },
   {
     "id": "q_ch12_15",
@@ -9038,7 +14113,16 @@ window.SEG_QUESTIONS = [
     "explanation": "Shazam (Wang, 2003) creates combinatorial hash pairs of peak frequencies in spectrogram time-frequency graphs for sub-second song identification.",
     "topic": "Acoustic Fingerprinting",
     "slide_ref": "12. Beyond bag of words.pptx",
-    "answer": 0
+    "answer": 0,
+    "is_multi": false,
+    "required_choices": 1,
+    "correct_choices": [
+      0
+    ],
+    "correct_letter": "A",
+    "correct_letters": [
+      "A"
+    ]
   },
   {
     "id": "q_ch12_16",
@@ -9054,7 +14138,16 @@ window.SEG_QUESTIONS = [
     "explanation": "Cross-modal retrieval projects text, audio, and visual representations into a unified multimodal embedding space (e.g., OpenAI CLIP).",
     "topic": "Cross-Modal Retrieval",
     "slide_ref": "12. Beyond bag of words.pptx",
-    "answer": 0
+    "answer": 0,
+    "is_multi": false,
+    "required_choices": 1,
+    "correct_choices": [
+      0
+    ],
+    "correct_letter": "A",
+    "correct_letters": [
+      "A"
+    ]
   },
   {
     "id": "q_ch12_17",
@@ -9070,7 +14163,16 @@ window.SEG_QUESTIONS = [
     "explanation": "Bridging the semantic gap (mapping raw pixels/waveforms to abstract human concepts) is the central challenge of multimedia AI.",
     "topic": "Semantic Gap",
     "slide_ref": "12. Beyond bag of words.pptx",
-    "answer": 0
+    "answer": 0,
+    "is_multi": false,
+    "required_choices": 1,
+    "correct_choices": [
+      0
+    ],
+    "correct_letter": "A",
+    "correct_letters": [
+      "A"
+    ]
   },
   {
     "id": "q_ch12_18",
@@ -9086,7 +14188,16 @@ window.SEG_QUESTIONS = [
     "explanation": "CLIP aligns text and image vectors, allowing arbitrary text queries to match image content directly via cosine similarity without manual tags.",
     "topic": "CLIP Model",
     "slide_ref": "12. Beyond bag of words.pptx",
-    "answer": 0
+    "answer": 0,
+    "is_multi": false,
+    "required_choices": 1,
+    "correct_choices": [
+      0
+    ],
+    "correct_letter": "A",
+    "correct_letters": [
+      "A"
+    ]
   },
   {
     "id": "q_ch12_19",
@@ -9102,7 +14213,16 @@ window.SEG_QUESTIONS = [
     "explanation": "Shot boundary detection breaks long video streams into distinct shots, allowing keyframe extraction for indexing.",
     "topic": "Shot Boundary Detection",
     "slide_ref": "12. Beyond bag of words.pptx",
-    "answer": 0
+    "answer": 0,
+    "is_multi": false,
+    "required_choices": 1,
+    "correct_choices": [
+      0
+    ],
+    "correct_letter": "A",
+    "correct_letters": [
+      "A"
+    ]
   },
   {
     "id": "q_ch12_20",
@@ -9118,7 +14238,16 @@ window.SEG_QUESTIONS = [
     "explanation": "Keyframes serve as static image proxies for video shots, allowing standard CBIR and visual embeddings to index video content efficiently.",
     "topic": "Keyframe Extraction",
     "slide_ref": "12. Beyond bag of words.pptx",
-    "answer": 0
+    "answer": 0,
+    "is_multi": false,
+    "required_choices": 1,
+    "correct_choices": [
+      0
+    ],
+    "correct_letter": "A",
+    "correct_letters": [
+      "A"
+    ]
   },
   {
     "id": "q_ch12_21",
@@ -9134,7 +14263,16 @@ window.SEG_QUESTIONS = [
     "explanation": "The FI variant of MRF reduces to standard unigram language modeling, assuming zero term interaction.",
     "topic": "Full Independence MRF",
     "slide_ref": "12. Beyond bag of words.pptx",
-    "answer": 0
+    "answer": 0,
+    "is_multi": false,
+    "required_choices": 1,
+    "correct_choices": [
+      0
+    ],
+    "correct_letter": "A",
+    "correct_letters": [
+      "A"
+    ]
   },
   {
     "id": "q_ch12_22",
@@ -9150,7 +14288,16 @@ window.SEG_QUESTIONS = [
     "explanation": "FD connects all query terms into a fully connected clique, considering all possible term pairings and higher-order combinations.",
     "topic": "Full Dependence MRF",
     "slide_ref": "12. Beyond bag of words.pptx",
-    "answer": 0
+    "answer": 0,
+    "is_multi": false,
+    "required_choices": 1,
+    "correct_choices": [
+      0
+    ],
+    "correct_letter": "A",
+    "correct_letters": [
+      "A"
+    ]
   },
   {
     "id": "q_ch12_23",
@@ -9166,7 +14313,16 @@ window.SEG_QUESTIONS = [
     "explanation": "Natural language phrases reside primarily in adjacent word pairs; restricting dependence to adjacent tokens O(N) avoids the exponential clique explosion of FD.",
     "topic": "SDM vs FD Trade-off",
     "slide_ref": "12. Beyond bag of words.pptx",
-    "answer": 0
+    "answer": 0,
+    "is_multi": false,
+    "required_choices": 1,
+    "correct_choices": [
+      0
+    ],
+    "correct_letter": "A",
+    "correct_letters": [
+      "A"
+    ]
   },
   {
     "id": "q_ch12_24",
@@ -9182,7 +14338,16 @@ window.SEG_QUESTIONS = [
     "explanation": "Because XML is hierarchical, both a book chapter and a paragraph within it might match; returning both clutters results with nested duplicates.",
     "topic": "XML Overlap Problem",
     "slide_ref": "12. Beyond bag of words.pptx",
-    "answer": 0
+    "answer": 0,
+    "is_multi": false,
+    "required_choices": 1,
+    "correct_choices": [
+      0
+    ],
+    "correct_letter": "A",
+    "correct_letters": [
+      "A"
+    ]
   },
   {
     "id": "q_ch12_25",
@@ -9198,7 +14363,16 @@ window.SEG_QUESTIONS = [
     "explanation": "Filtering algorithms inspect tree paths to ensure that only the most focused element in an ancestor-descendant chain is returned.",
     "topic": "Overlap Resolution",
     "slide_ref": "12. Beyond bag of words.pptx",
-    "answer": 0
+    "answer": 0,
+    "is_multi": false,
+    "required_choices": 1,
+    "correct_choices": [
+      0
+    ],
+    "correct_letter": "A",
+    "correct_letters": [
+      "A"
+    ]
   },
   {
     "id": "q_ch12_26",
@@ -9214,7 +14388,16 @@ window.SEG_QUESTIONS = [
     "explanation": "XPath enables Content-and-Structure queries (e.g., //article[//author='Smith']//section[contains(., 'quantum')]).",
     "topic": "XPath in IR",
     "slide_ref": "12. Beyond bag of words.pptx",
-    "answer": 0
+    "answer": 0,
+    "is_multi": false,
+    "required_choices": 1,
+    "correct_choices": [
+      0
+    ],
+    "correct_letter": "A",
+    "correct_letters": [
+      "A"
+    ]
   },
   {
     "id": "q_ch12_27",
@@ -9230,7 +14413,16 @@ window.SEG_QUESTIONS = [
     "explanation": "Entity disambiguation resolves polysemy by evaluating surrounding context against entity graph properties.",
     "topic": "Entity Disambiguation KG",
     "slide_ref": "12. Beyond bag of words.pptx",
-    "answer": 0
+    "answer": 0,
+    "is_multi": false,
+    "required_choices": 1,
+    "correct_choices": [
+      0
+    ],
+    "correct_letter": "A",
+    "correct_letters": [
+      "A"
+    ]
   },
   {
     "id": "q_ch12_28",
@@ -9246,7 +14438,16 @@ window.SEG_QUESTIONS = [
     "explanation": "Knowledge panels ingest curated, verified entity-attribute-value triples from knowledge graphs to answer who/what/where questions directly.",
     "topic": "Entity Card Source",
     "slide_ref": "12. Beyond bag of words.pptx",
-    "answer": 0
+    "answer": 0,
+    "is_multi": false,
+    "required_choices": 1,
+    "correct_choices": [
+      0
+    ],
+    "correct_letter": "A",
+    "correct_letters": [
+      "A"
+    ]
   },
   {
     "id": "q_ch12_29",
@@ -9262,7 +14463,16 @@ window.SEG_QUESTIONS = [
     "explanation": "SIFT (1999) revolutionized CBIR by identifying invariant local keypoint gradients, allowing robust visual matching despite angle or scale changes.",
     "topic": "SIFT Algorithm",
     "slide_ref": "12. Beyond bag of words.pptx",
-    "answer": 0
+    "answer": 0,
+    "is_multi": false,
+    "required_choices": 1,
+    "correct_choices": [
+      0
+    ],
+    "correct_letter": "A",
+    "correct_letters": [
+      "A"
+    ]
   },
   {
     "id": "q_ch12_30",
@@ -9278,7 +14488,16 @@ window.SEG_QUESTIONS = [
     "explanation": "Deep CNN and ViT embeddings capture hierarchical, semantic visual representations that dramatically outperform hand-crafted SIFT features.",
     "topic": "Deep Visual Embeddings",
     "slide_ref": "12. Beyond bag of words.pptx",
-    "answer": 0
+    "answer": 0,
+    "is_multi": false,
+    "required_choices": 1,
+    "correct_choices": [
+      0
+    ],
+    "correct_letter": "A",
+    "correct_letters": [
+      "A"
+    ]
   },
   {
     "id": "q_ch12_31",
@@ -9294,7 +14513,16 @@ window.SEG_QUESTIONS = [
     "explanation": "Spectrograms convert raw 1D time-domain audio waveforms into 2D time-frequency images, enabling visual peak detection algorithms like Shazam.",
     "topic": "Spectrogram",
     "slide_ref": "12. Beyond bag of words.pptx",
-    "answer": 0
+    "answer": 0,
+    "is_multi": false,
+    "required_choices": 1,
+    "correct_choices": [
+      0
+    ],
+    "correct_letter": "A",
+    "correct_letters": [
+      "A"
+    ]
   },
   {
     "id": "q_ch12_32",
@@ -9310,7 +14538,16 @@ window.SEG_QUESTIONS = [
     "explanation": "Combinatorial hashing of anchor peak pairs produces distinctive hashes; matching hashes that maintain consistent time offsets identify the track instantly.",
     "topic": "Shazam Constellation Hash",
     "slide_ref": "12. Beyond bag of words.pptx",
-    "answer": 0
+    "answer": 0,
+    "is_multi": false,
+    "required_choices": 1,
+    "correct_choices": [
+      0
+    ],
+    "correct_letter": "A",
+    "correct_letters": [
+      "A"
+    ]
   },
   {
     "id": "q_ch12_33",
@@ -9326,7 +14563,16 @@ window.SEG_QUESTIONS = [
     "explanation": "MIR tackles query-by-humming, genre tagging, tempo detection, and chord recognition across audio and symbolic music formats.",
     "topic": "Music IR Definition",
     "slide_ref": "12. Beyond bag of words.pptx",
-    "answer": 0
+    "answer": 0,
+    "is_multi": false,
+    "required_choices": 1,
+    "correct_choices": [
+      0
+    ],
+    "correct_letter": "A",
+    "correct_letters": [
+      "A"
+    ]
   },
   {
     "id": "q_ch12_34",
@@ -9342,7 +14588,16 @@ window.SEG_QUESTIONS = [
     "explanation": "QBH converts acoustic singing into a pitch contour (Parsons code or MIDI notes) and matches it against thematic musical databases.",
     "topic": "Query by Humming",
     "slide_ref": "12. Beyond bag of words.pptx",
-    "answer": 0
+    "answer": 0,
+    "is_multi": false,
+    "required_choices": 1,
+    "correct_choices": [
+      0
+    ],
+    "correct_letter": "A",
+    "correct_letters": [
+      "A"
+    ]
   },
   {
     "id": "q_ch12_35",
@@ -9358,7 +14613,16 @@ window.SEG_QUESTIONS = [
     "explanation": "Joint multimodal embedding spaces (like CLIP) allow computing cosine similarity directly between a text vector and an image vector.",
     "topic": "Multimodal Embedding Space",
     "slide_ref": "12. Beyond bag of words.pptx",
-    "answer": 0
+    "answer": 0,
+    "is_multi": false,
+    "required_choices": 1,
+    "correct_choices": [
+      0
+    ],
+    "correct_letter": "A",
+    "correct_letters": [
+      "A"
+    ]
   },
   {
     "id": "q_ch12_36",
@@ -9374,7 +14638,16 @@ window.SEG_QUESTIONS = [
     "explanation": "Video OCR extracts burned-in text (e.g., lecture slide titles, chyron news headers), providing high-value textual metadata for video search.",
     "topic": "Video OCR",
     "slide_ref": "12. Beyond bag of words.pptx",
-    "answer": 0
+    "answer": 0,
+    "is_multi": false,
+    "required_choices": 1,
+    "correct_choices": [
+      0
+    ],
+    "correct_letter": "A",
+    "correct_letters": [
+      "A"
+    ]
   },
   {
     "id": "q_ch12_37",
@@ -9390,7 +14663,16 @@ window.SEG_QUESTIONS = [
     "explanation": "ASR creates synchronized textual transcripts, allowing search engines to index spoken dialogue and deep-link users directly to matching timestamps.",
     "topic": "ASR Video Search",
     "slide_ref": "12. Beyond bag of words.pptx",
-    "answer": 0
+    "answer": 0,
+    "is_multi": false,
+    "required_choices": 1,
+    "correct_choices": [
+      0
+    ],
+    "correct_letter": "A",
+    "correct_letters": [
+      "A"
+    ]
   },
   {
     "id": "q_ch12_38",
@@ -9406,7 +14688,16 @@ window.SEG_QUESTIONS = [
     "explanation": "RDF triples represent factual knowledge as directed labeled edges: Subject (Node) -> Predicate (Edge) -> Object (Node/Literal).",
     "topic": "KG Triple",
     "slide_ref": "12. Beyond bag of words.pptx",
-    "answer": 0
+    "answer": 0,
+    "is_multi": false,
+    "required_choices": 1,
+    "correct_choices": [
+      0
+    ],
+    "correct_letter": "A",
+    "correct_letters": [
+      "A"
+    ]
   },
   {
     "id": "q_ch12_39",
@@ -9422,7 +14713,16 @@ window.SEG_QUESTIONS = [
     "explanation": "Property graphs enrich nodes and edges with structured metadata (e.g., edge 'acted_in' having property 'role: Luke Skywalker', 'year: 1977').",
     "topic": "Property Graph Model",
     "slide_ref": "12. Beyond bag of words.pptx",
-    "answer": 0
+    "answer": 0,
+    "is_multi": false,
+    "required_choices": 1,
+    "correct_choices": [
+      0
+    ],
+    "correct_letter": "A",
+    "correct_letters": [
+      "A"
+    ]
   },
   {
     "id": "q_ch12_40",
@@ -9438,7 +14738,16 @@ window.SEG_QUESTIONS = [
     "explanation": "Contiguous word sequences convey precise semantic idioms; unordered matches indicate loose co-occurrence with higher ambiguity.",
     "topic": "Phrase vs Proximity Weight",
     "slide_ref": "12. Beyond bag of words.pptx",
-    "answer": 0
+    "answer": 0,
+    "is_multi": false,
+    "required_choices": 1,
+    "correct_choices": [
+      0
+    ],
+    "correct_letter": "A",
+    "correct_letters": [
+      "A"
+    ]
   },
   {
     "id": "q_ch12_41",
@@ -9454,7 +14763,16 @@ window.SEG_QUESTIONS = [
     "explanation": "Passage retrieval isolates specific answers within multi-page documents, serving as the foundational first stage of modern RAG pipelines.",
     "topic": "Passage Retrieval",
     "slide_ref": "12. Beyond bag of words.pptx",
-    "answer": 0
+    "answer": 0,
+    "is_multi": false,
+    "required_choices": 1,
+    "correct_choices": [
+      0
+    ],
+    "correct_letter": "A",
+    "correct_letters": [
+      "A"
+    ]
   },
   {
     "id": "q_ch12_42",
@@ -9470,7 +14788,16 @@ window.SEG_QUESTIONS = [
     "explanation": "Document-level TF-IDF dilutes localized relevance; passage scoring ensures short, dense clusters of query terms are not penalized by document length.",
     "topic": "Passage Scoring Advantage",
     "slide_ref": "12. Beyond bag of words.pptx",
-    "answer": 0
+    "answer": 0,
+    "is_multi": false,
+    "required_choices": 1,
+    "correct_choices": [
+      0
+    ],
+    "correct_letter": "A",
+    "correct_letters": [
+      "A"
+    ]
   },
   {
     "id": "q_ch12_43",
@@ -9486,7 +14813,16 @@ window.SEG_QUESTIONS = [
     "explanation": "Diffusion models synthesize novel visual content directly from descriptive textual prompts.",
     "topic": "Text-to-Image Generation",
     "slide_ref": "12. Beyond bag of words.pptx",
-    "answer": 0
+    "answer": 0,
+    "is_multi": false,
+    "required_choices": 1,
+    "correct_choices": [
+      0
+    ],
+    "correct_letter": "A",
+    "correct_letters": [
+      "A"
+    ]
   },
   {
     "id": "q_ch12_44",
@@ -9502,7 +14838,16 @@ window.SEG_QUESTIONS = [
     "explanation": "Entity catalogs maintain canonical identifier authorities (e.g., Q42 for Douglas Adams) to resolve aliases and abbreviations.",
     "topic": "Entity Catalog",
     "slide_ref": "12. Beyond bag of words.pptx",
-    "answer": 0
+    "answer": 0,
+    "is_multi": false,
+    "required_choices": 1,
+    "correct_choices": [
+      0
+    ],
+    "correct_letter": "A",
+    "correct_letters": [
+      "A"
+    ]
   },
   {
     "id": "q_ch12_45",
@@ -9518,7 +14863,16 @@ window.SEG_QUESTIONS = [
     "explanation": "Reverse image search matches image hashes and deep embeddings across index graphs to trace provenance, mirrors, and entity topics.",
     "topic": "Reverse Image Search",
     "slide_ref": "12. Beyond bag of words.pptx",
-    "answer": 0
+    "answer": 0,
+    "is_multi": false,
+    "required_choices": 1,
+    "correct_choices": [
+      0
+    ],
+    "correct_letter": "A",
+    "correct_letters": [
+      "A"
+    ]
   },
   {
     "id": "q_ch12_46",
@@ -9534,7 +14888,16 @@ window.SEG_QUESTIONS = [
     "explanation": "Fusion combines heterogeneous modality scores (early fusion at feature level or late fusion at score level) to rank multimedia documents.",
     "topic": "Multimodal Fusion",
     "slide_ref": "12. Beyond bag of words.pptx",
-    "answer": 0
+    "answer": 0,
+    "is_multi": false,
+    "required_choices": 1,
+    "correct_choices": [
+      0
+    ],
+    "correct_letter": "A",
+    "correct_letters": [
+      "A"
+    ]
   },
   {
     "id": "q_ch12_47",
@@ -9550,7 +14913,16 @@ window.SEG_QUESTIONS = [
     "explanation": "BoVW treats clustered visual keypoint centroids as 'visual words', enabling standard text inverted index machinery to index image features.",
     "topic": "Bag of Visual Words",
     "slide_ref": "12. Beyond bag of words.pptx",
-    "answer": 0
+    "answer": 0,
+    "is_multi": false,
+    "required_choices": 1,
+    "correct_choices": [
+      0
+    ],
+    "correct_letter": "A",
+    "correct_letters": [
+      "A"
+    ]
   },
   {
     "id": "q_ch12_48",
@@ -9566,7 +14938,16 @@ window.SEG_QUESTIONS = [
     "explanation": "Temporal localization pinpoints the precise sub-clip timeframe answering a user's action query within hours of footage.",
     "topic": "Temporal Video Localization",
     "slide_ref": "12. Beyond bag of words.pptx",
-    "answer": 0
+    "answer": 0,
+    "is_multi": false,
+    "required_choices": 1,
+    "correct_choices": [
+      0
+    ],
+    "correct_letter": "A",
+    "correct_letters": [
+      "A"
+    ]
   },
   {
     "id": "q_ch12_49",
@@ -9582,7 +14963,16 @@ window.SEG_QUESTIONS = [
     "explanation": "Structured search evaluates explicit ontological constraints (actor, release year, director) against structured database attributes.",
     "topic": "Structured Search",
     "slide_ref": "12. Beyond bag of words.pptx",
-    "answer": 0
+    "answer": 0,
+    "is_multi": false,
+    "required_choices": 1,
+    "correct_choices": [
+      0
+    ],
+    "correct_letter": "A",
+    "correct_letters": [
+      "A"
+    ]
   },
   {
     "id": "q_ch12_50",
@@ -9598,7 +14988,16 @@ window.SEG_QUESTIONS = [
     "explanation": "Modern search architectures unify sparse inverted indexes, dense vector spaces, knowledge graphs, and media classifiers into holistic, intent-driven result pages.",
     "topic": "Unified Modern Search",
     "slide_ref": "12. Beyond bag of words.pptx",
-    "answer": 0
+    "answer": 0,
+    "is_multi": false,
+    "required_choices": 1,
+    "correct_choices": [
+      0
+    ],
+    "correct_letter": "A",
+    "correct_letters": [
+      "A"
+    ]
   },
   {
     "id": "q_comp_001",
@@ -9611,7 +15010,17 @@ window.SEG_QUESTIONS = [
       "PageRank Computation -> Query Execution -> Index Compression -> Crawling"
     ],
     "answer": 0,
-    "explanation": "The standard query serving flow is: Query parsing/expansion -> fast candidate retrieval (top-1000) -> heavy LTR re-ranking (top-50) -> diversification/deduplication -> snippet generation."
+    "explanation": "The standard query serving flow is: Query parsing/expansion -> fast candidate retrieval (top-1000) -> heavy LTR re-ranking (top-50) -> diversification/deduplication -> snippet generation.",
+    "is_multi": false,
+    "required_choices": 1,
+    "correct": 0,
+    "correct_choices": [
+      0
+    ],
+    "correct_letter": "A",
+    "correct_letters": [
+      "A"
+    ]
   },
   {
     "id": "q_comp_002",
@@ -9624,7 +15033,17 @@ window.SEG_QUESTIONS = [
       "log(1,000 / 1,000,000) = -3"
     ],
     "answer": 0,
-    "explanation": "IDF measures inverse document frequency: log(N / df). For N=1M and df=1k, N/df = 1000, yielding log10(1000) = 3."
+    "explanation": "IDF measures inverse document frequency: log(N / df). For N=1M and df=1k, N/df = 1000, yielding log10(1000) = 3.",
+    "is_multi": false,
+    "required_choices": 1,
+    "correct": 0,
+    "correct_choices": [
+      0
+    ],
+    "correct_letter": "A",
+    "correct_letters": [
+      "A"
+    ]
   },
   {
     "id": "q_comp_003",
@@ -9637,7 +15056,17 @@ window.SEG_QUESTIONS = [
       "1 / 3 = 0.33 (33%)"
     ],
     "answer": 0,
-    "explanation": "Precision@5 is the count of relevant documents among the top 5 results divided by 5. Here, ranks 1, 3, and 5 are relevant (3 items), so 3 / 5 = 0.60."
+    "explanation": "Precision@5 is the count of relevant documents among the top 5 results divided by 5. Here, ranks 1, 3, and 5 are relevant (3 items), so 3 / 5 = 0.60.",
+    "is_multi": false,
+    "required_choices": 1,
+    "correct": 0,
+    "correct_choices": [
+      0
+    ],
+    "correct_letter": "A",
+    "correct_letters": [
+      "A"
+    ]
   },
   {
     "id": "q_comp_004",
@@ -9650,7 +15079,17 @@ window.SEG_QUESTIONS = [
       "(1 + 1/3 + 1/5) / 3 = 0.51"
     ],
     "answer": 0,
-    "explanation": "MRR (or RR for a single query) evaluates the reciprocal rank of the FIRST relevant document. Since rank 1 is relevant, RR = 1 / 1 = 1.0."
+    "explanation": "MRR (or RR for a single query) evaluates the reciprocal rank of the FIRST relevant document. Since rank 1 is relevant, RR = 1 / 1 = 1.0.",
+    "is_multi": false,
+    "required_choices": 1,
+    "correct": 0,
+    "correct_choices": [
+      0
+    ],
+    "correct_letter": "A",
+    "correct_letters": [
+      "A"
+    ]
   },
   {
     "id": "q_comp_005",
@@ -9663,7 +15102,17 @@ window.SEG_QUESTIONS = [
       "1.0"
     ],
     "answer": 0,
-    "explanation": "Average Precision is the mean of precision values calculated at each point where a relevant document is retrieved: P@1 = 1/1, P@3 = 2/3, P@5 = 3/5. Mean = (1 + 0.667 + 0.6) / 3 = 0.756."
+    "explanation": "Average Precision is the mean of precision values calculated at each point where a relevant document is retrieved: P@1 = 1/1, P@3 = 2/3, P@5 = 3/5. Mean = (1 + 0.667 + 0.6) / 3 = 0.756.",
+    "is_multi": false,
+    "required_choices": 1,
+    "correct": 0,
+    "correct_choices": [
+      0
+    ],
+    "correct_letter": "A",
+    "correct_letters": [
+      "A"
+    ]
   },
   {
     "id": "q_comp_006",
@@ -9676,7 +15125,17 @@ window.SEG_QUESTIONS = [
       "It rounds numbers to the nearest multiple of 10"
     ],
     "answer": 0,
-    "explanation": "Operating on whole byte boundaries avoids CPU bit-shifting overhead, and continuation flags allow small gaps (common in dense lists) to fit into single bytes."
+    "explanation": "Operating on whole byte boundaries avoids CPU bit-shifting overhead, and continuation flags allow small gaps (common in dense lists) to fit into single bytes.",
+    "is_multi": false,
+    "required_choices": 1,
+    "correct": 0,
+    "correct_choices": [
+      0
+    ],
+    "correct_letter": "A",
+    "correct_letters": [
+      "A"
+    ]
   },
   {
     "id": "q_comp_007",
@@ -9689,7 +15148,17 @@ window.SEG_QUESTIONS = [
       "It oscillates periodically"
     ],
     "answer": 1,
-    "explanation": "BM25's TF saturation component tf / (tf + k1) asymptotically approaches 1 as tf -> ∞, capping total score contribution at (k1 + 1) * IDF."
+    "explanation": "BM25's TF saturation component tf / (tf + k1) asymptotically approaches 1 as tf -> ∞, capping total score contribution at (k1 + 1) * IDF.",
+    "is_multi": false,
+    "required_choices": 1,
+    "correct": 1,
+    "correct_choices": [
+      1
+    ],
+    "correct_letter": "B",
+    "correct_letters": [
+      "B"
+    ]
   },
   {
     "id": "q_comp_008",
@@ -9702,7 +15171,17 @@ window.SEG_QUESTIONS = [
       "By giving all web pages a PageRank of zero"
     ],
     "answer": 0,
-    "explanation": "Teleportation with probability (1 - d) ensures the random surfer escapes dead ends and loops by jumping to a uniformly random page in the graph."
+    "explanation": "Teleportation with probability (1 - d) ensures the random surfer escapes dead ends and loops by jumping to a uniformly random page in the graph.",
+    "is_multi": false,
+    "required_choices": 1,
+    "correct": 0,
+    "correct_choices": [
+      0
+    ],
+    "correct_letter": "A",
+    "correct_letters": [
+      "A"
+    ]
   },
   {
     "id": "q_comp_011",
@@ -9715,7 +15194,17 @@ window.SEG_QUESTIONS = [
       "Stopwords are illegal in neural search"
     ],
     "answer": 0,
-    "explanation": "In classic inverted indexes, stopwords bloated posting lists. In Transformers, attention mechanisms rely heavily on prepositions and pronouns to understand context and intent."
+    "explanation": "In classic inverted indexes, stopwords bloated posting lists. In Transformers, attention mechanisms rely heavily on prepositions and pronouns to understand context and intent.",
+    "is_multi": false,
+    "required_choices": 1,
+    "correct": 0,
+    "correct_choices": [
+      0
+    ],
+    "correct_letter": "A",
+    "correct_letters": [
+      "A"
+    ]
   },
   {
     "id": "q_comp_012",
@@ -9728,7 +15217,17 @@ window.SEG_QUESTIONS = [
       "Stemming always returns valid dictionary words"
     ],
     "answer": 0,
-    "explanation": "Porter stemming chops endings heuristically ('operational' -> 'oper'), while lemmatization uses grammatical rules and lexicons to yield true dictionary roots ('better' -> 'good')."
+    "explanation": "Porter stemming chops endings heuristically ('operational' -> 'oper'), while lemmatization uses grammatical rules and lexicons to yield true dictionary roots ('better' -> 'good').",
+    "is_multi": false,
+    "required_choices": 1,
+    "correct": 0,
+    "correct_choices": [
+      0
+    ],
+    "correct_letter": "A",
+    "correct_letters": [
+      "A"
+    ]
   },
   {
     "id": "q_comp_013",
@@ -9741,7 +15240,17 @@ window.SEG_QUESTIONS = [
       "Rendering CSS layouts"
     ],
     "answer": 1,
-    "explanation": "Shingling breaks documents into contiguous word sequences of length W. Combining shingle sets with MinHash allows fast near-duplicate detection across billions of pages."
+    "explanation": "Shingling breaks documents into contiguous word sequences of length W. Combining shingle sets with MinHash allows fast near-duplicate detection across billions of pages.",
+    "is_multi": false,
+    "required_choices": 1,
+    "correct": 1,
+    "correct_choices": [
+      1
+    ],
+    "correct_letter": "B",
+    "correct_letters": [
+      "B"
+    ]
   },
   {
     "id": "q_comp_014",
@@ -9754,7 +15263,17 @@ window.SEG_QUESTIONS = [
       "A search engine advertising network"
     ],
     "answer": 1,
-    "explanation": "Mercator (Heydon & Najork) is the classic reference architecture for polite, distributed, high-performance web crawlers."
+    "explanation": "Mercator (Heydon & Najork) is the classic reference architecture for polite, distributed, high-performance web crawlers.",
+    "is_multi": false,
+    "required_choices": 1,
+    "correct": 1,
+    "correct_choices": [
+      1
+    ],
+    "correct_letter": "B",
+    "correct_letters": [
+      "B"
+    ]
   },
   {
     "id": "q_comp_015",
@@ -9767,7 +15286,17 @@ window.SEG_QUESTIONS = [
       "TCP request queue and UDP response queue"
     ],
     "answer": 1,
-    "explanation": "The URL Frontier balances importance and politeness: Priority queues rank which URLs deserve crawling first; Politeness queues ensure no individual web server is overwhelmed with requests."
+    "explanation": "The URL Frontier balances importance and politeness: Priority queues rank which URLs deserve crawling first; Politeness queues ensure no individual web server is overwhelmed with requests.",
+    "is_multi": false,
+    "required_choices": 1,
+    "correct": 1,
+    "correct_choices": [
+      1
+    ],
+    "correct_letter": "B",
+    "correct_letters": [
+      "B"
+    ]
   },
   {
     "id": "q_comp_016",
@@ -9780,7 +15309,17 @@ window.SEG_QUESTIONS = [
       "Encrypting DNS queries with HTTPS"
     ],
     "answer": 0,
-    "explanation": "DNS resolution over the public internet takes 20-100ms. A crawler fetching thousands of pages per second must maintain a dedicated high-speed in-memory DNS cache."
+    "explanation": "DNS resolution over the public internet takes 20-100ms. A crawler fetching thousands of pages per second must maintain a dedicated high-speed in-memory DNS cache.",
+    "is_multi": false,
+    "required_choices": 1,
+    "correct": 0,
+    "correct_choices": [
+      0
+    ],
+    "correct_letter": "A",
+    "correct_letters": [
+      "A"
+    ]
   },
   {
     "id": "q_comp_017",
@@ -9793,7 +15332,17 @@ window.SEG_QUESTIONS = [
       "The server has run out of disk space"
     ],
     "answer": 1,
-    "explanation": "301 redirects inform crawlers and clients that content has moved permanently, prompting search engines to redirect index entries and pass link equity (link juice)."
+    "explanation": "301 redirects inform crawlers and clients that content has moved permanently, prompting search engines to redirect index entries and pass link equity (link juice).",
+    "is_multi": false,
+    "required_choices": 1,
+    "correct": 1,
+    "correct_choices": [
+      1
+    ],
+    "correct_letter": "B",
+    "correct_letters": [
+      "B"
+    ]
   },
   {
     "id": "q_comp_018",
@@ -9806,7 +15355,17 @@ window.SEG_QUESTIONS = [
       "The average length of a query is always 3 words"
     ],
     "answer": 0,
-    "explanation": "Zipf's Law states that a few words occur with massive frequency (top 100 words account for ~50% of text), while the long tail consists of rare words occurring only once or twice (hapax legomena)."
+    "explanation": "Zipf's Law states that a few words occur with massive frequency (top 100 words account for ~50% of text), while the long tail consists of rare words occurring only once or twice (hapax legomena).",
+    "is_multi": false,
+    "required_choices": 1,
+    "correct": 0,
+    "correct_choices": [
+      0
+    ],
+    "correct_letter": "A",
+    "correct_letters": [
+      "A"
+    ]
   },
   {
     "id": "q_comp_019",
@@ -9819,7 +15378,17 @@ window.SEG_QUESTIONS = [
       "The number of crawlers needed equals the number of hard drives"
     ],
     "answer": 0,
-    "explanation": "Heaps' Law models vocabulary growth: as more text is indexed, new words continue to be discovered, meaning vocabulary never strictly levels off at a constant size."
+    "explanation": "Heaps' Law models vocabulary growth: as more text is indexed, new words continue to be discovered, meaning vocabulary never strictly levels off at a constant size.",
+    "is_multi": false,
+    "required_choices": 1,
+    "correct": 0,
+    "correct_choices": [
+      0
+    ],
+    "correct_letter": "A",
+    "correct_letters": [
+      "A"
+    ]
   },
   {
     "id": "q_comp_020",
@@ -9832,7 +15401,17 @@ window.SEG_QUESTIONS = [
       "Anchor text cannot be manipulated by spammers"
     ],
     "answer": 0,
-    "explanation": "Anchor text provides an external description of a page's content, often supplying exact keywords that the target page itself might omit (e.g. anchor text 'search engine' pointing to google.com)."
+    "explanation": "Anchor text provides an external description of a page's content, often supplying exact keywords that the target page itself might omit (e.g. anchor text 'search engine' pointing to google.com).",
+    "is_multi": false,
+    "required_choices": 1,
+    "correct": 0,
+    "correct_choices": [
+      0
+    ],
+    "correct_letter": "A",
+    "correct_letters": [
+      "A"
+    ]
   },
   {
     "id": "q_comp_021",
@@ -9845,7 +15424,17 @@ window.SEG_QUESTIONS = [
       "Compressing web pages to hide code"
     ],
     "answer": 1,
-    "explanation": "Cloaking detects crawler IP ranges or User-Agent headers to deliver keyword-stuffed pages for ranking, while human visitors receive spam or affiliate ads. Search engines penalize it with permanent de-indexing."
+    "explanation": "Cloaking detects crawler IP ranges or User-Agent headers to deliver keyword-stuffed pages for ranking, while human visitors receive spam or affiliate ads. Search engines penalize it with permanent de-indexing.",
+    "is_multi": false,
+    "required_choices": 1,
+    "correct": 1,
+    "correct_choices": [
+      1
+    ],
+    "correct_letter": "B",
+    "correct_letters": [
+      "B"
+    ]
   },
   {
     "id": "q_comp_024",
@@ -9858,7 +15447,17 @@ window.SEG_QUESTIONS = [
       "VSM requires deep learning; BM25 does not"
     ],
     "answer": 0,
-    "explanation": "Classic VSM uses linear TF weighting and cosine normalization, whereas BM25 incorporates non-linear sub-linear TF saturation (k1) and explicit average document length compensation (b)."
+    "explanation": "Classic VSM uses linear TF weighting and cosine normalization, whereas BM25 incorporates non-linear sub-linear TF saturation (k1) and explicit average document length compensation (b).",
+    "is_multi": false,
+    "required_choices": 1,
+    "correct": 0,
+    "correct_choices": [
+      0
+    ],
+    "correct_letter": "A",
+    "correct_letters": [
+      "A"
+    ]
   },
   {
     "id": "q_comp_025",
@@ -9871,7 +15470,17 @@ window.SEG_QUESTIONS = [
       "Users click links with probability proportional to font size"
     ],
     "answer": 1,
-    "explanation": "Robertson's PRP states that ranking documents by descending P(R=1 | Q, D) minimizes the overall expected loss under the assumption that document utilities are independent."
+    "explanation": "Robertson's PRP states that ranking documents by descending P(R=1 | Q, D) minimizes the overall expected loss under the assumption that document utilities are independent.",
+    "is_multi": false,
+    "required_choices": 1,
+    "correct": 1,
+    "correct_choices": [
+      1
+    ],
+    "correct_letter": "B",
+    "correct_letters": [
+      "B"
+    ]
   },
   {
     "id": "q_comp_026",
@@ -9884,7 +15493,17 @@ window.SEG_QUESTIONS = [
       "Predicting the language (English, French) of a query"
     ],
     "answer": 1,
-    "explanation": "Query Likelihood represents each document as a generative unigram language model and ranks documents by the likelihood that the query would be generated by sampling from that document model."
+    "explanation": "Query Likelihood represents each document as a generative unigram language model and ranks documents by the likelihood that the query would be generated by sampling from that document model.",
+    "is_multi": false,
+    "required_choices": 1,
+    "correct": 1,
+    "correct_choices": [
+      1
+    ],
+    "correct_letter": "B",
+    "correct_letters": [
+      "B"
+    ]
   },
   {
     "id": "q_comp_027",
@@ -9897,7 +15516,17 @@ window.SEG_QUESTIONS = [
       "To compress index files on disk"
     ],
     "answer": 1,
-    "explanation": "Without smoothing, if a single query term is absent from a document, P(t | M_d) = 0, causing the product over all query terms to collapse to zero."
+    "explanation": "Without smoothing, if a single query term is absent from a document, P(t | M_d) = 0, causing the product over all query terms to collapse to zero.",
+    "is_multi": false,
+    "required_choices": 1,
+    "correct": 1,
+    "correct_choices": [
+      1
+    ],
+    "correct_letter": "B",
+    "correct_letters": [
+      "B"
+    ]
   },
   {
     "id": "q_comp_028",
@@ -9910,7 +15539,17 @@ window.SEG_QUESTIONS = [
       "A database indexing format"
     ],
     "answer": 0,
-    "explanation": "Dirichlet smoothing treats the collection language model as a pseudo-count prior μ. For long documents, observed counts dominate; for short documents, the prior pulls probabilities toward corpus background."
+    "explanation": "Dirichlet smoothing treats the collection language model as a pseudo-count prior μ. For long documents, observed counts dominate; for short documents, the prior pulls probabilities toward corpus background.",
+    "is_multi": false,
+    "required_choices": 1,
+    "correct": 0,
+    "correct_choices": [
+      0
+    ],
+    "correct_letter": "A",
+    "correct_letters": [
+      "A"
+    ]
   },
   {
     "id": "q_comp_029",
@@ -9923,7 +15562,17 @@ window.SEG_QUESTIONS = [
       "It converts relevance ratings into binary values"
     ],
     "answer": 1,
-    "explanation": "DCG sums relevance gains discounted logarithmically: rel_i / log2(i + 1). Finding a highly relevant document at rank 1 provides far greater utility than finding it at rank 20."
+    "explanation": "DCG sums relevance gains discounted logarithmically: rel_i / log2(i + 1). Finding a highly relevant document at rank 1 provides far greater utility than finding it at rank 20.",
+    "is_multi": false,
+    "required_choices": 1,
+    "correct": 1,
+    "correct_choices": [
+      1
+    ],
+    "correct_letter": "B",
+    "correct_letters": [
+      "B"
+    ]
   },
   {
     "id": "q_comp_030",
@@ -9936,7 +15585,17 @@ window.SEG_QUESTIONS = [
       "By dividing DCG@k by total collection size"
     ],
     "answer": 0,
-    "explanation": "NDCG = DCG / IDCG. Dividing by IDCG normalizes scores into [0.0, 1.0], enabling meaningful comparisons across different queries with varying numbers of relevant documents."
+    "explanation": "NDCG = DCG / IDCG. Dividing by IDCG normalizes scores into [0.0, 1.0], enabling meaningful comparisons across different queries with varying numbers of relevant documents.",
+    "is_multi": false,
+    "required_choices": 1,
+    "correct": 0,
+    "correct_choices": [
+      0
+    ],
+    "correct_letter": "A",
+    "correct_letters": [
+      "A"
+    ]
   },
   {
     "id": "q_comp_031",
@@ -9949,7 +15608,17 @@ window.SEG_QUESTIONS = [
       "The percentage of queries that return 0 results"
     ],
     "answer": 0,
-    "explanation": "MAP is the definitive single-number summary metric for binary relevance across a test collection: it computes the mean of AP over all evaluation queries in the benchmark."
+    "explanation": "MAP is the definitive single-number summary metric for binary relevance across a test collection: it computes the mean of AP over all evaluation queries in the benchmark.",
+    "is_multi": false,
+    "required_choices": 1,
+    "correct": 0,
+    "correct_choices": [
+      0
+    ],
+    "correct_letter": "A",
+    "correct_letters": [
+      "A"
+    ]
   },
   {
     "id": "q_comp_032",
@@ -9962,7 +15631,17 @@ window.SEG_QUESTIONS = [
       "Three software engineers"
     ],
     "answer": 1,
-    "explanation": "The Cranfield evaluation methodology requires: 1) a static corpus of documents, 2) a representative set of queries/topics, and 3) explicit relevance assessments (qrels) by human judges."
+    "explanation": "The Cranfield evaluation methodology requires: 1) a static corpus of documents, 2) a representative set of queries/topics, and 3) explicit relevance assessments (qrels) by human judges.",
+    "is_multi": false,
+    "required_choices": 1,
+    "correct": 1,
+    "correct_choices": [
+      1
+    ],
+    "correct_letter": "B",
+    "correct_letters": [
+      "B"
+    ]
   },
   {
     "id": "q_comp_033",
@@ -9975,7 +15654,17 @@ window.SEG_QUESTIONS = [
       "Pooling money to buy servers"
     ],
     "answer": 1,
-    "explanation": "Judging every document in millions of web pages is impossible. Pooling unions top-100 results from dozens of diverse systems; documents outside the pool are assumed non-relevant."
+    "explanation": "Judging every document in millions of web pages is impossible. Pooling unions top-100 results from dozens of diverse systems; documents outside the pool are assumed non-relevant.",
+    "is_multi": false,
+    "required_choices": 1,
+    "correct": 1,
+    "correct_choices": [
+      1
+    ],
+    "correct_letter": "B",
+    "correct_letters": [
+      "B"
+    ]
   },
   {
     "id": "q_comp_034",
@@ -9988,7 +15677,17 @@ window.SEG_QUESTIONS = [
       "Evaluating Greek search queries"
     ],
     "answer": 0,
-    "explanation": "Cohen's Kappa quantifies inter-rater reliability between judges. A Kappa > 0.70 indicates strong agreement beyond random chance."
+    "explanation": "Cohen's Kappa quantifies inter-rater reliability between judges. A Kappa > 0.70 indicates strong agreement beyond random chance.",
+    "is_multi": false,
+    "required_choices": 1,
+    "correct": 0,
+    "correct_choices": [
+      0
+    ],
+    "correct_letter": "A",
+    "correct_letters": [
+      "A"
+    ]
   },
   {
     "id": "q_comp_035",
@@ -10001,7 +15700,17 @@ window.SEG_QUESTIONS = [
       "A metric evaluating search query length"
     ],
     "answer": 1,
-    "explanation": "When test collections have incomplete pools, standard MAP penalizes unjudged relevant docs. Bpref computes preferences strictly over judged documents, remaining robust against incomplete qrels."
+    "explanation": "When test collections have incomplete pools, standard MAP penalizes unjudged relevant docs. Bpref computes preferences strictly over judged documents, remaining robust against incomplete qrels.",
+    "is_multi": false,
+    "required_choices": 1,
+    "correct": 1,
+    "correct_choices": [
+      1
+    ],
+    "correct_letter": "B",
+    "correct_letters": [
+      "B"
+    ]
   },
   {
     "id": "q_comp_036",
@@ -10014,7 +15723,17 @@ window.SEG_QUESTIONS = [
       "Training data is independent of testing data"
     ],
     "answer": 1,
-    "explanation": "Naive Bayes assumes words appear independently given the class. While linguistically false (words form collocations), it drastically simplifies probability estimation and performs remarkably well in practice."
+    "explanation": "Naive Bayes assumes words appear independently given the class. While linguistically false (words form collocations), it drastically simplifies probability estimation and performs remarkably well in practice.",
+    "is_multi": false,
+    "required_choices": 1,
+    "correct": 1,
+    "correct_choices": [
+      1
+    ],
+    "correct_letter": "B",
+    "correct_letters": [
+      "B"
+    ]
   },
   {
     "id": "q_comp_037",
@@ -10027,7 +15746,17 @@ window.SEG_QUESTIONS = [
       "Adding 1 second to search latency"
     ],
     "answer": 0,
-    "explanation": "If a test word never appeared with class C in training, P(w | C) = 0. Laplace smoothing adds 1 to the numerator and |V| to the denominator, preventing zero-probability collapse."
+    "explanation": "If a test word never appeared with class C in training, P(w | C) = 0. Laplace smoothing adds 1 to the numerator and |V| to the denominator, preventing zero-probability collapse.",
+    "is_multi": false,
+    "required_choices": 1,
+    "correct": 0,
+    "correct_choices": [
+      0
+    ],
+    "correct_letter": "A",
+    "correct_letters": [
+      "A"
+    ]
   },
   {
     "id": "q_comp_038",
@@ -10040,7 +15769,17 @@ window.SEG_QUESTIONS = [
       "K-Means cannot run on computers"
     ],
     "answer": 0,
-    "explanation": "K-Means partitions points around k centroids with O(k*N*I) complexity. HAC begins with every item as its own cluster and repeatedly merges closest pairs, creating a full hierarchy."
+    "explanation": "K-Means partitions points around k centroids with O(k*N*I) complexity. HAC begins with every item as its own cluster and repeatedly merges closest pairs, creating a full hierarchy.",
+    "is_multi": false,
+    "required_choices": 1,
+    "correct": 0,
+    "correct_choices": [
+      0
+    ],
+    "correct_letter": "A",
+    "correct_letters": [
+      "A"
+    ]
   },
   {
     "id": "q_comp_039",
@@ -10053,7 +15792,17 @@ window.SEG_QUESTIONS = [
       "A method for harvesting email addresses"
     ],
     "answer": 1,
-    "explanation": "Cutting et al. pioneered Scatter/Gather: documents are clustered dynamically into top-level themes, allowing users to navigate large corpora without formulating explicit keyword queries."
+    "explanation": "Cutting et al. pioneered Scatter/Gather: documents are clustered dynamically into top-level themes, allowing users to navigate large corpora without formulating explicit keyword queries.",
+    "is_multi": false,
+    "required_choices": 1,
+    "correct": 1,
+    "correct_choices": [
+      1
+    ],
+    "correct_letter": "B",
+    "correct_letters": [
+      "B"
+    ]
   },
   {
     "id": "q_comp_040",
@@ -10066,7 +15815,17 @@ window.SEG_QUESTIONS = [
       "The size of the dataset in megabytes"
     ],
     "answer": 1,
-    "explanation": "SSE measures cluster compactness: lower inertia means points are clustered closer to their centroids. Plotting SSE against k helps determine the optimal cluster count via the 'Elbow Method'."
+    "explanation": "SSE measures cluster compactness: lower inertia means points are clustered closer to their centroids. Plotting SSE against k helps determine the optimal cluster count via the 'Elbow Method'.",
+    "is_multi": false,
+    "required_choices": 1,
+    "correct": 1,
+    "correct_choices": [
+      1
+    ],
+    "correct_letter": "B",
+    "correct_letters": [
+      "B"
+    ]
   },
   {
     "id": "q_comp_041",
@@ -10079,7 +15838,17 @@ window.SEG_QUESTIONS = [
       "A firewall blocking social media websites"
     ],
     "answer": 1,
-    "explanation": "Collaborative filtering relies on user-item interaction matrices rather than item content descriptions, identifying latent preferences shared across similar user cohorts."
+    "explanation": "Collaborative filtering relies on user-item interaction matrices rather than item content descriptions, identifying latent preferences shared across similar user cohorts.",
+    "is_multi": false,
+    "required_choices": 1,
+    "correct": 1,
+    "correct_choices": [
+      1
+    ],
+    "correct_letter": "B",
+    "correct_letters": [
+      "B"
+    ]
   },
   {
     "id": "q_comp_042",
@@ -10092,7 +15861,17 @@ window.SEG_QUESTIONS = [
       "Manufacturing computer motherboard matrices"
     ],
     "answer": 0,
-    "explanation": "Matrix Factorization projects users and items into a shared latent factor space (e.g. 50-100 dimensions). The predicted affinity is computed as the inner product of user and item vectors."
+    "explanation": "Matrix Factorization projects users and items into a shared latent factor space (e.g. 50-100 dimensions). The predicted affinity is computed as the inner product of user and item vectors.",
+    "is_multi": false,
+    "required_choices": 1,
+    "correct": 0,
+    "correct_choices": [
+      0
+    ],
+    "correct_letter": "A",
+    "correct_letters": [
+      "A"
+    ]
   },
   {
     "id": "q_comp_043",
@@ -10105,7 +15884,17 @@ window.SEG_QUESTIONS = [
       "A biological classification system"
     ],
     "answer": 1,
-    "explanation": "Folksonomy (folk + taxonomy) describes bottom-up collaborative tagging (e.g. Delicious, Flickr, Reddit) where decentralized user tags generate dynamic navigation structures."
+    "explanation": "Folksonomy (folk + taxonomy) describes bottom-up collaborative tagging (e.g. Delicious, Flickr, Reddit) where decentralized user tags generate dynamic navigation structures.",
+    "is_multi": false,
+    "required_choices": 1,
+    "correct": 1,
+    "correct_choices": [
+      1
+    ],
+    "correct_letter": "B",
+    "correct_letters": [
+      "B"
+    ]
   },
   {
     "id": "q_comp_044",
@@ -10118,7 +15907,17 @@ window.SEG_QUESTIONS = [
       "The encryption strength of SSL certificates"
     ],
     "answer": 1,
-    "explanation": "Granovetter demonstrated that novel information, job opportunities, and viral ideas travel predominantly across weak ties bridging disparate social circles rather than within tight, insular friend cliques."
+    "explanation": "Granovetter demonstrated that novel information, job opportunities, and viral ideas travel predominantly across weak ties bridging disparate social circles rather than within tight, insular friend cliques.",
+    "is_multi": false,
+    "required_choices": 1,
+    "correct": 1,
+    "correct_choices": [
+      1
+    ],
+    "correct_letter": "B",
+    "correct_letters": [
+      "B"
+    ]
   },
   {
     "id": "q_comp_045",
@@ -10131,7 +15930,17 @@ window.SEG_QUESTIONS = [
       "Filter bubbles are hardware devices installed on routers"
     ],
     "answer": 0,
-    "explanation": "Personalization improves relevance for ambiguous queries (e.g., 'python' -> programming vs snake), but over-personalization isolates users into echo chambers by concealing alternative viewpoints."
+    "explanation": "Personalization improves relevance for ambiguous queries (e.g., 'python' -> programming vs snake), but over-personalization isolates users into echo chambers by concealing alternative viewpoints.",
+    "is_multi": false,
+    "required_choices": 1,
+    "correct": 0,
+    "correct_choices": [
+      0
+    ],
+    "correct_letter": "A",
+    "correct_letters": [
+      "A"
+    ]
   },
   {
     "id": "q_comp_046",
@@ -10144,7 +15953,17 @@ window.SEG_QUESTIONS = [
       "Deleting entity names from search indexes"
     ],
     "answer": 1,
-    "explanation": "Entity linking resolves ambiguous textual mentions (e.g., 'Washington') to canonical Knowledge Graph nodes (George Washington the president vs Washington State vs Washington D.C.)."
+    "explanation": "Entity linking resolves ambiguous textual mentions (e.g., 'Washington') to canonical Knowledge Graph nodes (George Washington the president vs Washington State vs Washington D.C.).",
+    "is_multi": false,
+    "required_choices": 1,
+    "correct": 1,
+    "correct_choices": [
+      1
+    ],
+    "correct_letter": "B",
+    "correct_letters": [
+      "B"
+    ]
   },
   {
     "id": "q_comp_047",
@@ -10157,7 +15976,17 @@ window.SEG_QUESTIONS = [
       "A collection of mathematical formulas"
     ],
     "answer": 1,
-    "explanation": "Knowledge Graphs organize human knowledge as triples (e.g., (Marie Curie, WonPrize, Nobel Prize in Physics)), enabling search engines to understand 'things, not strings'."
+    "explanation": "Knowledge Graphs organize human knowledge as triples (e.g., (Marie Curie, WonPrize, Nobel Prize in Physics)), enabling search engines to understand 'things, not strings'.",
+    "is_multi": false,
+    "required_choices": 1,
+    "correct": 1,
+    "correct_choices": [
+      1
+    ],
+    "correct_letter": "B",
+    "correct_letters": [
+      "B"
+    ]
   },
   {
     "id": "q_comp_048",
@@ -10170,7 +15999,17 @@ window.SEG_QUESTIONS = [
       "A popup advertisement"
     ],
     "answer": 1,
-    "explanation": "Zero-click searches leverage knowledge graphs and question-answering extractors to fulfill user information needs directly in the interface."
+    "explanation": "Zero-click searches leverage knowledge graphs and question-answering extractors to fulfill user information needs directly in the interface.",
+    "is_multi": false,
+    "required_choices": 1,
+    "correct": 1,
+    "correct_choices": [
+      1
+    ],
+    "correct_letter": "B",
+    "correct_letters": [
+      "B"
+    ]
   },
   {
     "id": "q_comp_049",
@@ -10183,7 +16022,17 @@ window.SEG_QUESTIONS = [
       "A typo made during search typing"
     ],
     "answer": 1,
-    "explanation": "Bootstrapping algorithms (e.g., extracting names of books) can mistakenly accept a false positive, causing subsequent pattern learning to degenerate into extracting movies or authors."
+    "explanation": "Bootstrapping algorithms (e.g., extracting names of books) can mistakenly accept a false positive, causing subsequent pattern learning to degenerate into extracting movies or authors.",
+    "is_multi": false,
+    "required_choices": 1,
+    "correct": 1,
+    "correct_choices": [
+      1
+    ],
+    "correct_letter": "B",
+    "correct_letters": [
+      "B"
+    ]
   },
   {
     "id": "q_comp_050",
@@ -10196,7 +16045,17 @@ window.SEG_QUESTIONS = [
       "They are strictly identical concepts"
     ],
     "answer": 0,
-    "explanation": "Query expansion is the general process of augmenting queries with any relevant terms (PRFun, pseudo-relevance feedback, synonyms, translations, or acronym expansions)."
+    "explanation": "Query expansion is the general process of augmenting queries with any relevant terms (PRFun, pseudo-relevance feedback, synonyms, translations, or acronym expansions).",
+    "is_multi": false,
+    "required_choices": 1,
+    "correct": 0,
+    "correct_choices": [
+      0
+    ],
+    "correct_letter": "A",
+    "correct_letters": [
+      "A"
+    ]
   },
   {
     "id": "q_comp_051",
@@ -10209,7 +16068,17 @@ window.SEG_QUESTIONS = [
       "A feedback form submitted via email"
     ],
     "answer": 1,
-    "explanation": "PRF automates relevance feedback without user intervention: it assumes top-k results from round 1 are relevant, expands the query vector with high-weight terms from those documents, and retrieves round 2."
+    "explanation": "PRF automates relevance feedback without user intervention: it assumes top-k results from round 1 are relevant, expands the query vector with high-weight terms from those documents, and retrieves round 2.",
+    "is_multi": false,
+    "required_choices": 1,
+    "correct": 1,
+    "correct_choices": [
+      1
+    ],
+    "correct_letter": "B",
+    "correct_letters": [
+      "B"
+    ]
   },
   {
     "id": "q_comp_052",
@@ -10222,7 +16091,17 @@ window.SEG_QUESTIONS = [
       "When search results contain PDF files"
     ],
     "answer": 1,
-    "explanation": "If the initial retrieval retrieves off-topic results, PRF extracts off-topic keywords, causing 'query drift' that drives the second-stage search even further away from the user's intent."
+    "explanation": "If the initial retrieval retrieves off-topic results, PRF extracts off-topic keywords, causing 'query drift' that drives the second-stage search even further away from the user's intent.",
+    "is_multi": false,
+    "required_choices": 1,
+    "correct": 1,
+    "correct_choices": [
+      1
+    ],
+    "correct_letter": "B",
+    "correct_letters": [
+      "B"
+    ]
   },
   {
     "id": "q_comp_053",
@@ -10235,7 +16114,17 @@ window.SEG_QUESTIONS = [
       "A 3D virtual reality search engine"
     ],
     "answer": 1,
-    "explanation": "Faceted navigation combines keyword search with dynamic drill-down filters, displaying facet value counts calculated over the active result set (standard in e-commerce)."
+    "explanation": "Faceted navigation combines keyword search with dynamic drill-down filters, displaying facet value counts calculated over the active result set (standard in e-commerce).",
+    "is_multi": false,
+    "required_choices": 1,
+    "correct": 1,
+    "correct_choices": [
+      1
+    ],
+    "correct_letter": "B",
+    "correct_letters": [
+      "B"
+    ]
   },
   {
     "id": "q_comp_054",
@@ -10248,7 +16137,17 @@ window.SEG_QUESTIONS = [
       "Translating the web page on the fly"
     ],
     "answer": 1,
-    "explanation": "Static snippets use page meta descriptions. Dynamic snippets locate text regions with high query term proximity and highlight matched keywords so users can verify relevance before clicking."
+    "explanation": "Static snippets use page meta descriptions. Dynamic snippets locate text regions with high query term proximity and highlight matched keywords so users can verify relevance before clicking.",
+    "is_multi": false,
+    "required_choices": 1,
+    "correct": 1,
+    "correct_choices": [
+      1
+    ],
+    "correct_letter": "B",
+    "correct_letters": [
+      "B"
+    ]
   },
   {
     "id": "q_comp_055",
@@ -10261,7 +16160,17 @@ window.SEG_QUESTIONS = [
       "Correcting misspelled words after submission"
     ],
     "answer": 1,
-    "explanation": "QAC matches typed prefix against trie structures of query logs, ranking completions by historical frequency, freshness, and user intent to reduce keystroke effort."
+    "explanation": "QAC matches typed prefix against trie structures of query logs, ranking completions by historical frequency, freshness, and user intent to reduce keystroke effort.",
+    "is_multi": false,
+    "required_choices": 1,
+    "correct": 1,
+    "correct_choices": [
+      1
+    ],
+    "correct_letter": "B",
+    "correct_letters": [
+      "B"
+    ]
   },
   {
     "id": "q_comp_056",
@@ -10274,7 +16183,17 @@ window.SEG_QUESTIONS = [
       "A hardware noise filter for microphone input"
     ],
     "answer": 1,
-    "explanation": "The noisy channel decomposes correction into P(S|Q) (error model: keyboard typos, Damerau-Levenshtein edits) and P(Q) (prior likelihood of intended query from query logs/corpus)."
+    "explanation": "The noisy channel decomposes correction into P(S|Q) (error model: keyboard typos, Damerau-Levenshtein edits) and P(Q) (prior likelihood of intended query from query logs/corpus).",
+    "is_multi": false,
+    "required_choices": 1,
+    "correct": 1,
+    "correct_choices": [
+      1
+    ],
+    "correct_letter": "B",
+    "correct_letters": [
+      "B"
+    ]
   },
   {
     "id": "q_comp_057",
@@ -10287,7 +16206,17 @@ window.SEG_QUESTIONS = [
       "The number of hops in a web graph"
     ],
     "answer": 1,
-    "explanation": "Unlike standard Levenshtein distance, Damerau-Levenshtein includes adjacent transpositions (e.g., 'teh' -> 'the'), which account for over 80% of human typing errors."
+    "explanation": "Unlike standard Levenshtein distance, Damerau-Levenshtein includes adjacent transpositions (e.g., 'teh' -> 'the'), which account for over 80% of human typing errors.",
+    "is_multi": false,
+    "required_choices": 1,
+    "correct": 1,
+    "correct_choices": [
+      1
+    ],
+    "correct_letter": "B",
+    "correct_letters": [
+      "B"
+    ]
   },
   {
     "id": "q_comp_058",
@@ -10300,7 +16229,17 @@ window.SEG_QUESTIONS = [
       "Translating spoken queries into text"
     ],
     "answer": 1,
-    "explanation": "Soundex maps similar sounding consonants to identical numeric codes, allowing retrieval of names that sound alike despite diverse orthography."
+    "explanation": "Soundex maps similar sounding consonants to identical numeric codes, allowing retrieval of names that sound alike despite diverse orthography.",
+    "is_multi": false,
+    "required_choices": 1,
+    "correct": 1,
+    "correct_choices": [
+      1
+    ],
+    "correct_letter": "B",
+    "correct_letters": [
+      "B"
+    ]
   },
   {
     "id": "q_comp_059",
@@ -10313,7 +16252,17 @@ window.SEG_QUESTIONS = [
       "Because inverted indexes are required by the HTTP standard"
     ],
     "answer": 0,
-    "explanation": "A forward index maps Document -> Terms (useful for snippet extraction or LTR feature calculation). An inverted index maps Term -> Documents, allowing instant lookup of postings lists for query terms."
+    "explanation": "A forward index maps Document -> Terms (useful for snippet extraction or LTR feature calculation). An inverted index maps Term -> Documents, allowing instant lookup of postings lists for query terms.",
+    "is_multi": false,
+    "required_choices": 1,
+    "correct": 0,
+    "correct_choices": [
+      0
+    ],
+    "correct_letter": "A",
+    "correct_letters": [
+      "A"
+    ]
   },
   {
     "id": "q_comp_060",
@@ -10326,7 +16275,17 @@ window.SEG_QUESTIONS = [
       "An index storing only HTML header positions"
     ],
     "answer": 1,
-    "explanation": "Adding term positions to postings allows the search engine to verify that query terms occur consecutively or within a specified token distance, essential for exact phrase matching."
+    "explanation": "Adding term positions to postings allows the search engine to verify that query terms occur consecutively or within a specified token distance, essential for exact phrase matching.",
+    "is_multi": false,
+    "required_choices": 1,
+    "correct": 1,
+    "correct_choices": [
+      1
+    ],
+    "correct_letter": "B",
+    "correct_letters": [
+      "B"
+    ]
   },
   {
     "id": "q_comp_061",
@@ -10339,7 +16298,17 @@ window.SEG_QUESTIONS = [
       "There is zero overhead"
     ],
     "answer": 1,
-    "explanation": "Because words occur multiple times per document, recording every position offset increases the number of stored integers substantially, requiring aggressive compression."
+    "explanation": "Because words occur multiple times per document, recording every position offset increases the number of stored integers substantially, requiring aggressive compression.",
+    "is_multi": false,
+    "required_choices": 1,
+    "correct": 1,
+    "correct_choices": [
+      1
+    ],
+    "correct_letter": "B",
+    "correct_letters": [
+      "B"
+    ]
   },
   {
     "id": "q_comp_062",
@@ -10352,7 +16321,17 @@ window.SEG_QUESTIONS = [
       "Memory pointers that bypass garbage collection"
     ],
     "answer": 1,
-    "explanation": "When intersecting postings of length L1 and L2 where L1 << L2, skip pointers allow O(sqrt(L)) traversal rather than O(L), skipping irrelevant document IDs in large blocks."
+    "explanation": "When intersecting postings of length L1 and L2 where L1 << L2, skip pointers allow O(sqrt(L)) traversal rather than O(L), skipping irrelevant document IDs in large blocks.",
+    "is_multi": false,
+    "required_choices": 1,
+    "correct": 1,
+    "correct_choices": [
+      1
+    ],
+    "correct_letter": "B",
+    "correct_letters": [
+      "B"
+    ]
   },
   {
     "id": "q_comp_063",
@@ -10365,7 +16344,17 @@ window.SEG_QUESTIONS = [
       "Tiered index is for users; Tiered storage is for servers"
     ],
     "answer": 0,
-    "explanation": "Tiered indexing is an IR algorithmic optimization (querying high PageRank Tier-1 index first). Tiered storage (hot/warm/cold) is an IT infrastructure cost optimization."
+    "explanation": "Tiered indexing is an IR algorithmic optimization (querying high PageRank Tier-1 index first). Tiered storage (hot/warm/cold) is an IT infrastructure cost optimization.",
+    "is_multi": false,
+    "required_choices": 1,
+    "correct": 0,
+    "correct_choices": [
+      0
+    ],
+    "correct_letter": "A",
+    "correct_letters": [
+      "A"
+    ]
   },
   {
     "id": "q_comp_064",
@@ -10378,7 +16367,17 @@ window.SEG_QUESTIONS = [
       "A block storage device protocol"
     ],
     "answer": 1,
-    "explanation": "Block-Max WAND stores upper-bound impact scores for postings blocks (e.g. 64 docs). If a block's max score cannot push a doc into the top-k, the whole block is skipped without decompression."
+    "explanation": "Block-Max WAND stores upper-bound impact scores for postings blocks (e.g. 64 docs). If a block's max score cannot push a doc into the top-k, the whole block is skipped without decompression.",
+    "is_multi": false,
+    "required_choices": 1,
+    "correct": 1,
+    "correct_choices": [
+      1
+    ],
+    "correct_letter": "B",
+    "correct_letters": [
+      "B"
+    ]
   },
   {
     "id": "q_comp_065",
@@ -10391,7 +16390,17 @@ window.SEG_QUESTIONS = [
       "The clock speed of server processors"
     ],
     "answer": 1,
-    "explanation": "Core Web Vitals represent user experience benchmarks incorporated directly into Google's search ranking algorithm to reward fast, stable web pages."
+    "explanation": "Core Web Vitals represent user experience benchmarks incorporated directly into Google's search ranking algorithm to reward fast, stable web pages.",
+    "is_multi": false,
+    "required_choices": 1,
+    "correct": 1,
+    "correct_choices": [
+      1
+    ],
+    "correct_letter": "B",
+    "correct_letters": [
+      "B"
+    ]
   },
   {
     "id": "q_comp_066",
@@ -10404,7 +16413,17 @@ window.SEG_QUESTIONS = [
       "Declaring the legal copyright owner"
     ],
     "answer": 1,
-    "explanation": "When the same content is accessible via multiple URLs (e.g. tracking parameters, HTTP/HTTPS, category variations), canonical tags specify which single URL should appear in search results."
+    "explanation": "When the same content is accessible via multiple URLs (e.g. tracking parameters, HTTP/HTTPS, category variations), canonical tags specify which single URL should appear in search results.",
+    "is_multi": false,
+    "required_choices": 1,
+    "correct": 1,
+    "correct_choices": [
+      1
+    ],
+    "correct_letter": "B",
+    "correct_letters": [
+      "B"
+    ]
   },
   {
     "id": "q_comp_067",
@@ -10417,7 +16436,17 @@ window.SEG_QUESTIONS = [
       "A directive requiring robots to pay a fee"
     ],
     "answer": 1,
-    "explanation": "`noindex, follow` prevents a private or low-value page from cluttering the search index while still allowing the crawler to discover other pages via its outgoing hyperlinks."
+    "explanation": "`noindex, follow` prevents a private or low-value page from cluttering the search index while still allowing the crawler to discover other pages via its outgoing hyperlinks.",
+    "is_multi": false,
+    "required_choices": 1,
+    "correct": 1,
+    "correct_choices": [
+      1
+    ],
+    "correct_letter": "B",
+    "correct_letters": [
+      "B"
+    ]
   },
   {
     "id": "q_comp_068",
@@ -10430,7 +16459,17 @@ window.SEG_QUESTIONS = [
       "A file format for compressing image files"
     ],
     "answer": 1,
-    "explanation": "Schema.org structured data provides explicit semantic annotations (price, rating, recipe cooking time), allowing search engines to generate rich cards and interactive snippets."
+    "explanation": "Schema.org structured data provides explicit semantic annotations (price, rating, recipe cooking time), allowing search engines to generate rich cards and interactive snippets.",
+    "is_multi": false,
+    "required_choices": 1,
+    "correct": 1,
+    "correct_choices": [
+      1
+    ],
+    "correct_letter": "B",
+    "correct_letters": [
+      "B"
+    ]
   },
   {
     "id": "q_comp_069",
@@ -10443,7 +16482,17 @@ window.SEG_QUESTIONS = [
       "A tool for ranking brain surgery doctors"
     ],
     "answer": 1,
-    "explanation": "RankBrain was Google's first major deep neural AI component deployed in the core ranking algorithm, specializing in interpreting long-tail, unfamiliar, and colloquial queries."
+    "explanation": "RankBrain was Google's first major deep neural AI component deployed in the core ranking algorithm, specializing in interpreting long-tail, unfamiliar, and colloquial queries.",
+    "is_multi": false,
+    "required_choices": 1,
+    "correct": 1,
+    "correct_choices": [
+      1
+    ],
+    "correct_letter": "B",
+    "correct_letters": [
+      "B"
+    ]
   },
   {
     "id": "q_comp_070",
@@ -10456,7 +16505,17 @@ window.SEG_QUESTIONS = [
       "An algorithm for sorting database tables"
     ],
     "answer": 1,
-    "explanation": "Bidirectional Encoder Representations from Transformers (BERT) processes words in relation to all other words in a sentence, drastically improving query intent comprehension."
+    "explanation": "Bidirectional Encoder Representations from Transformers (BERT) processes words in relation to all other words in a sentence, drastically improving query intent comprehension.",
+    "is_multi": false,
+    "required_choices": 1,
+    "correct": 1,
+    "correct_choices": [
+      1
+    ],
+    "correct_letter": "B",
+    "correct_letters": [
+      "B"
+    ]
   },
   {
     "id": "q_comp_071",
@@ -10469,7 +16528,17 @@ window.SEG_QUESTIONS = [
       "A data compression tool"
     ],
     "answer": 1,
-    "explanation": "Google's MUM handles complex cross-modal and cross-lingual tasks (e.g., comparing gear needed for hiking Mt. Fuji using Japanese local guides without requiring translation)."
+    "explanation": "Google's MUM handles complex cross-modal and cross-lingual tasks (e.g., comparing gear needed for hiking Mt. Fuji using Japanese local guides without requiring translation).",
+    "is_multi": false,
+    "required_choices": 1,
+    "correct": 1,
+    "correct_choices": [
+      1
+    ],
+    "correct_letter": "B",
+    "correct_letters": [
+      "B"
+    ]
   },
   {
     "id": "q_comp_074",
@@ -10482,7 +16551,17 @@ window.SEG_QUESTIONS = [
       "When a query has more than 50 words"
     ],
     "answer": 1,
-    "explanation": "Languages like Chinese, Japanese, and Thai do not use spaces between words, requiring morphological segmenters. Inconsistent tokenization between indexing and querying destroys exact match capability."
+    "explanation": "Languages like Chinese, Japanese, and Thai do not use spaces between words, requiring morphological segmenters. Inconsistent tokenization between indexing and querying destroys exact match capability.",
+    "is_multi": false,
+    "required_choices": 1,
+    "correct": 1,
+    "correct_choices": [
+      1
+    ],
+    "correct_letter": "B",
+    "correct_letters": [
+      "B"
+    ]
   },
   {
     "id": "q_comp_075",
@@ -10495,7 +16574,17 @@ window.SEG_QUESTIONS = [
       "A method for sorting hash tables"
     ],
     "answer": 0,
-    "explanation": "SimHash (Charikar) computes a fingerprint such that the Hamming distance between two document hashes directly reflects their cosine similarity, making near-duplicate identification highly efficient."
+    "explanation": "SimHash (Charikar) computes a fingerprint such that the Hamming distance between two document hashes directly reflects their cosine similarity, making near-duplicate identification highly efficient.",
+    "is_multi": false,
+    "required_choices": 1,
+    "correct": 0,
+    "correct_choices": [
+      0
+    ],
+    "correct_letter": "A",
+    "correct_letters": [
+      "A"
+    ]
   },
   {
     "id": "q_comp_076",
@@ -10508,7 +16597,17 @@ window.SEG_QUESTIONS = [
       "The time taken to transmit the hash over the network"
     ],
     "answer": 1,
-    "explanation": "Hamming distance counts differing bit positions (`popcount(hash1 ^ hash2)`). Documents with Hamming distance ≤ 3 are typically near-duplicates."
+    "explanation": "Hamming distance counts differing bit positions (`popcount(hash1 ^ hash2)`). Documents with Hamming distance ≤ 3 are typically near-duplicates.",
+    "is_multi": false,
+    "required_choices": 1,
+    "correct": 1,
+    "correct_choices": [
+      1
+    ],
+    "correct_letter": "B",
+    "correct_letters": [
+      "B"
+    ]
   },
   {
     "id": "q_comp_077",
@@ -10521,7 +16620,17 @@ window.SEG_QUESTIONS = [
       "Selecting corrupted audio files"
     ],
     "answer": 1,
-    "explanation": "Computing full Softmax over a vocabulary of 1,000,000 words for every token update is computationally intractable. Negative sampling formulates binary logistic regression over the true word and k negative samples."
+    "explanation": "Computing full Softmax over a vocabulary of 1,000,000 words for every token update is computationally intractable. Negative sampling formulates binary logistic regression over the true word and k negative samples.",
+    "is_multi": false,
+    "required_choices": 1,
+    "correct": 1,
+    "correct_choices": [
+      1
+    ],
+    "correct_letter": "B",
+    "correct_letters": [
+      "B"
+    ]
   },
   {
     "id": "q_comp_078",
@@ -10534,7 +16643,17 @@ window.SEG_QUESTIONS = [
       "A network routing protocol"
     ],
     "answer": 1,
-    "explanation": "GloVe (Pennington et al., Stanford) factorizes the log of global word-word co-occurrence counts, capturing global corpus statistics while learning linear semantic vector substructures."
+    "explanation": "GloVe (Pennington et al., Stanford) factorizes the log of global word-word co-occurrence counts, capturing global corpus statistics while learning linear semantic vector substructures.",
+    "is_multi": false,
+    "required_choices": 1,
+    "correct": 1,
+    "correct_choices": [
+      1
+    ],
+    "correct_letter": "B",
+    "correct_letters": [
+      "B"
+    ]
   },
   {
     "id": "q_comp_079",
@@ -10547,7 +16666,17 @@ window.SEG_QUESTIONS = [
       "They only work on English text"
     ],
     "answer": 1,
-    "explanation": "Static embeddings provide one static vector per dictionary entry. Contextual models (Transformers) dynamically compute token representations based on surrounding sentence context."
+    "explanation": "Static embeddings provide one static vector per dictionary entry. Contextual models (Transformers) dynamically compute token representations based on surrounding sentence context.",
+    "is_multi": false,
+    "required_choices": 1,
+    "correct": 1,
+    "correct_choices": [
+      1
+    ],
+    "correct_letter": "B",
+    "correct_letters": [
+      "B"
+    ]
   },
   {
     "id": "q_comp_080",
@@ -10560,7 +16689,17 @@ window.SEG_QUESTIONS = [
       "A human psychological trait"
     ],
     "answer": 1,
-    "explanation": "Self-attention computes dynamic attention weights between queries and keys, weighting value vectors to capture syntactic dependencies and contextual relationships regardless of token distance."
+    "explanation": "Self-attention computes dynamic attention weights between queries and keys, weighting value vectors to capture syntactic dependencies and contextual relationships regardless of token distance.",
+    "is_multi": false,
+    "required_choices": 1,
+    "correct": 1,
+    "correct_choices": [
+      1
+    ],
+    "correct_letter": "B",
+    "correct_letters": [
+      "B"
+    ]
   },
   {
     "id": "q_comp_081",
@@ -10573,7 +16712,17 @@ window.SEG_QUESTIONS = [
       "It compresses the model parameters by 50%"
     ],
     "answer": 0,
-    "explanation": "Multi-head attention projects queries, keys, and values into multiple distinct lower-dimensional subspaces, enabling distinct heads to specialize in different linguistic relationships."
+    "explanation": "Multi-head attention projects queries, keys, and values into multiple distinct lower-dimensional subspaces, enabling distinct heads to specialize in different linguistic relationships.",
+    "is_multi": false,
+    "required_choices": 1,
+    "correct": 0,
+    "correct_choices": [
+      0
+    ],
+    "correct_letter": "A",
+    "correct_letters": [
+      "A"
+    ]
   },
   {
     "id": "q_comp_082",
@@ -10586,7 +16735,17 @@ window.SEG_QUESTIONS = [
       "A metric for evaluating memory limits"
     ],
     "answer": 1,
-    "explanation": "MMR iteratively selects documents that maximize a weighted trade-off between relevance to the query and diversity from already picked documents, preventing redundant SERP results."
+    "explanation": "MMR iteratively selects documents that maximize a weighted trade-off between relevance to the query and diversity from already picked documents, preventing redundant SERP results.",
+    "is_multi": false,
+    "required_choices": 1,
+    "correct": 1,
+    "correct_choices": [
+      1
+    ],
+    "correct_letter": "B",
+    "correct_letters": [
+      "B"
+    ]
   },
   {
     "id": "q_comp_083",
@@ -10599,7 +16758,17 @@ window.SEG_QUESTIONS = [
       "Searching inside database session tables"
     ],
     "answer": 1,
-    "explanation": "Conversational IR models search as an interactive dialogue, utilizing previous query context, user clarifications, and feedback to refine information delivery over multiple turns."
+    "explanation": "Conversational IR models search as an interactive dialogue, utilizing previous query context, user clarifications, and feedback to refine information delivery over multiple turns.",
+    "is_multi": false,
+    "required_choices": 1,
+    "correct": 1,
+    "correct_choices": [
+      1
+    ],
+    "correct_letter": "B",
+    "correct_letters": [
+      "B"
+    ]
   },
   {
     "id": "q_comp_084",
@@ -10612,7 +16781,17 @@ window.SEG_QUESTIONS = [
       "Searching with zero query words"
     ],
     "answer": 1,
-    "explanation": "BEIR (Thakur et al.) tests zero-shot transfer: models trained on MS MARCO are evaluated across 18 distinct domain datasets without task-specific training, measuring out-of-domain robustness."
+    "explanation": "BEIR (Thakur et al.) tests zero-shot transfer: models trained on MS MARCO are evaluated across 18 distinct domain datasets without task-specific training, measuring out-of-domain robustness.",
+    "is_multi": false,
+    "required_choices": 1,
+    "correct": 1,
+    "correct_choices": [
+      1
+    ],
+    "correct_letter": "B",
+    "correct_letters": [
+      "B"
+    ]
   },
   {
     "id": "q_comp_085",
@@ -10625,7 +16804,17 @@ window.SEG_QUESTIONS = [
       "Because technical datasets cannot be converted to vectors"
     ],
     "answer": 0,
-    "explanation": "General-domain embedding models suffer Out-Of-Vocabulary and semantic dispersion on specialized terminology (e.g., gene variants like 'TP53 mutation'), whereas lexical matching precisely hits exact codes."
+    "explanation": "General-domain embedding models suffer Out-Of-Vocabulary and semantic dispersion on specialized terminology (e.g., gene variants like 'TP53 mutation'), whereas lexical matching precisely hits exact codes.",
+    "is_multi": false,
+    "required_choices": 1,
+    "correct": 0,
+    "correct_choices": [
+      0
+    ],
+    "correct_letter": "A",
+    "correct_letters": [
+      "A"
+    ]
   },
   {
     "id": "q_comp_088",
@@ -10638,7 +16827,17 @@ window.SEG_QUESTIONS = [
       "A web page that opens in a popup window"
     ],
     "answer": 1,
-    "explanation": "Doorway pages are low-quality intermediary pages optimized for search crawler algorithms that automatically redirect human users to commercial landing pages."
+    "explanation": "Doorway pages are low-quality intermediary pages optimized for search crawler algorithms that automatically redirect human users to commercial landing pages.",
+    "is_multi": false,
+    "required_choices": 1,
+    "correct": 1,
+    "correct_choices": [
+      1
+    ],
+    "correct_letter": "B",
+    "correct_letters": [
+      "B"
+    ]
   },
   {
     "id": "q_comp_089",
@@ -10651,7 +16850,17 @@ window.SEG_QUESTIONS = [
       "SEO without paying money"
     ],
     "answer": 1,
-    "explanation": "Negative SEO attempts to trigger algorithmic penalties on a competitor's site by pointing low-quality link farms or scraped duplicates to their domain."
+    "explanation": "Negative SEO attempts to trigger algorithmic penalties on a competitor's site by pointing low-quality link farms or scraped duplicates to their domain.",
+    "is_multi": false,
+    "required_choices": 1,
+    "correct": 1,
+    "correct_choices": [
+      1
+    ],
+    "correct_letter": "B",
+    "correct_letters": [
+      "B"
+    ]
   },
   {
     "id": "q_comp_090",
@@ -10664,7 +16873,17 @@ window.SEG_QUESTIONS = [
       "A tool for disabling Google Ads"
     ],
     "answer": 1,
-    "explanation": "Disavowing links informs Google to discount specific unnatural backlinks when evaluating link graph algorithms, helping webmasters recover from manual or algorithmic link penalties."
+    "explanation": "Disavowing links informs Google to discount specific unnatural backlinks when evaluating link graph algorithms, helping webmasters recover from manual or algorithmic link penalties.",
+    "is_multi": false,
+    "required_choices": 1,
+    "correct": 1,
+    "correct_choices": [
+      1
+    ],
+    "correct_letter": "B",
+    "correct_letters": [
+      "B"
+    ]
   },
   {
     "id": "q_comp_091",
@@ -10677,7 +16896,17 @@ window.SEG_QUESTIONS = [
       "CTR is only calculated for paid ads"
     ],
     "answer": 0,
-    "explanation": "A sensational clickbait snippet can achieve a high click rate even if the landing page is useless (high bounce, short dwell time). Sophisticated search engines evaluate dwell time and satisfaction alongside CTR."
+    "explanation": "A sensational clickbait snippet can achieve a high click rate even if the landing page is useless (high bounce, short dwell time). Sophisticated search engines evaluate dwell time and satisfaction alongside CTR.",
+    "is_multi": false,
+    "required_choices": 1,
+    "correct": 0,
+    "correct_choices": [
+      0
+    ],
+    "correct_letter": "A",
+    "correct_letters": [
+      "A"
+    ]
   },
   {
     "id": "q_comp_092",
@@ -10690,7 +16919,17 @@ window.SEG_QUESTIONS = [
       "When a server disconnects an idle user"
     ],
     "answer": 1,
-    "explanation": "Not all zero-click sessions represent failure. For queries like 'weather tomorrow' or '5 + 5', the user gets the answer directly from the SERP and leaves satisfied without clicking external URLs."
+    "explanation": "Not all zero-click sessions represent failure. For queries like 'weather tomorrow' or '5 + 5', the user gets the answer directly from the SERP and leaves satisfied without clicking external URLs.",
+    "is_multi": false,
+    "required_choices": 1,
+    "correct": 1,
+    "correct_choices": [
+      1
+    ],
+    "correct_letter": "B",
+    "correct_letters": [
+      "B"
+    ]
   },
   {
     "id": "q_comp_093",
@@ -10703,7 +16942,17 @@ window.SEG_QUESTIONS = [
       "When a search engine is blocked by parental controls"
     ],
     "answer": 0,
-    "explanation": "Bad abandonment occurs when none of the presented results satisfy the user's intent, leading to abandonment in frustration."
+    "explanation": "Bad abandonment occurs when none of the presented results satisfy the user's intent, leading to abandonment in frustration.",
+    "is_multi": false,
+    "required_choices": 1,
+    "correct": 0,
+    "correct_choices": [
+      0
+    ],
+    "correct_letter": "A",
+    "correct_letters": [
+      "A"
+    ]
   },
   {
     "id": "q_comp_094",
@@ -10716,7 +16965,17 @@ window.SEG_QUESTIONS = [
       "There is no difference between them"
     ],
     "answer": 0,
-    "explanation": "Offline metrics measure algorithm relevance on static benchmarks before deployment. Online metrics measure behavioral response and user satisfaction in production via live A/B experiments."
+    "explanation": "Offline metrics measure algorithm relevance on static benchmarks before deployment. Online metrics measure behavioral response and user satisfaction in production via live A/B experiments.",
+    "is_multi": false,
+    "required_choices": 1,
+    "correct": 0,
+    "correct_choices": [
+      0
+    ],
+    "correct_letter": "A",
+    "correct_letters": [
+      "A"
+    ]
   },
   {
     "id": "q_comp_095",
@@ -10729,7 +16988,17 @@ window.SEG_QUESTIONS = [
       "A fast sorting algorithm"
     ],
     "answer": 1,
-    "explanation": "Flighting (canary deployment / staged rollout) safeguards production systems by exposing small cohorts of users to experimental rankers to verify reliability, latency SLAs, and business metrics."
+    "explanation": "Flighting (canary deployment / staged rollout) safeguards production systems by exposing small cohorts of users to experimental rankers to verify reliability, latency SLAs, and business metrics.",
+    "is_multi": false,
+    "required_choices": 1,
+    "correct": 1,
+    "correct_choices": [
+      1
+    ],
+    "correct_letter": "B",
+    "correct_letters": [
+      "B"
+    ]
   },
   {
     "id": "q_comp_096",
@@ -10742,7 +17011,17 @@ window.SEG_QUESTIONS = [
       "Question, Answer, Feedback"
     ],
     "answer": 1,
-    "explanation": "Andrei Broder established the fundamental search taxonomy: Navigational (seeking a particular site), Informational (seeking topic knowledge), and Transactional (seeking to download, buy, or interact)."
+    "explanation": "Andrei Broder established the fundamental search taxonomy: Navigational (seeking a particular site), Informational (seeking topic knowledge), and Transactional (seeking to download, buy, or interact).",
+    "is_multi": false,
+    "required_choices": 1,
+    "correct": 1,
+    "correct_choices": [
+      1
+    ],
+    "correct_letter": "B",
+    "correct_letters": [
+      "B"
+    ]
   },
   {
     "id": "q_comp_097",
@@ -10755,7 +17034,17 @@ window.SEG_QUESTIONS = [
       "A zero-result page"
     ],
     "answer": 1,
-    "explanation": "Navigational queries have exactly one correct destination. Success is binary: the target homepage must appear at Rank 1; having it at Rank 2 is a failure."
+    "explanation": "Navigational queries have exactly one correct destination. Success is binary: the target homepage must appear at Rank 1; having it at Rank 2 is a failure.",
+    "is_multi": false,
+    "required_choices": 1,
+    "correct": 1,
+    "correct_choices": [
+      1
+    ],
+    "correct_letter": "B",
+    "correct_letters": [
+      "B"
+    ]
   },
   {
     "id": "q_comp_098",
@@ -10768,7 +17057,17 @@ window.SEG_QUESTIONS = [
       "A weather forecast for Paris"
     ],
     "answer": 1,
-    "explanation": "Informational queries have multiple relevant documents with varying degrees of depth and authority, benefiting from graded relevance evaluation (NDCG)."
+    "explanation": "Informational queries have multiple relevant documents with varying degrees of depth and authority, benefiting from graded relevance evaluation (NDCG).",
+    "is_multi": false,
+    "required_choices": 1,
+    "correct": 1,
+    "correct_choices": [
+      1
+    ],
+    "correct_letter": "B",
+    "correct_letters": [
+      "B"
+    ]
   },
   {
     "id": "q_comp_099",
@@ -10781,7 +17080,17 @@ window.SEG_QUESTIONS = [
       "A feature that refreshes the browser every 5 seconds"
     ],
     "answer": 1,
-    "explanation": "QDF detects query volume spikes (e.g. 'earthquake Tokyo') and temporarily overrides static PageRank/authority to surface fresh news articles published minutes ago."
+    "explanation": "QDF detects query volume spikes (e.g. 'earthquake Tokyo') and temporarily overrides static PageRank/authority to surface fresh news articles published minutes ago.",
+    "is_multi": false,
+    "required_choices": 1,
+    "correct": 1,
+    "correct_choices": [
+      1
+    ],
+    "correct_letter": "B",
+    "correct_letters": [
+      "B"
+    ]
   },
   {
     "id": "q_comp_100",
@@ -10794,7 +17103,17 @@ window.SEG_QUESTIONS = [
       "The amplification of audio in video search"
     ],
     "answer": 1,
-    "explanation": "If one shard has a 1% chance of a 200ms latency spike, a scatter-gather query touching 100 shards has a ~63% chance (1 - 0.99^100) of experiencing a 200ms delay."
+    "explanation": "If one shard has a 1% chance of a 200ms latency spike, a scatter-gather query touching 100 shards has a ~63% chance (1 - 0.99^100) of experiencing a 200ms delay.",
+    "is_multi": false,
+    "required_choices": 1,
+    "correct": 1,
+    "correct_choices": [
+      1
+    ],
+    "correct_letter": "B",
+    "correct_letters": [
+      "B"
+    ]
   },
   {
     "id": "q_comp_101",
@@ -10807,7 +17126,17 @@ window.SEG_QUESTIONS = [
       "Displaying an error page to all users"
     ],
     "answer": 1,
-    "explanation": "Under overload, search systems shed non-critical compute load (e.g., using simpler BM25 scoring or smaller candidate pools) to keep serving valid results within SLA."
+    "explanation": "Under overload, search systems shed non-critical compute load (e.g., using simpler BM25 scoring or smaller candidate pools) to keep serving valid results within SLA.",
+    "is_multi": false,
+    "required_choices": 1,
+    "correct": 1,
+    "correct_choices": [
+      1
+    ],
+    "correct_letter": "B",
+    "correct_letters": [
+      "B"
+    ]
   },
   {
     "id": "q_comp_102",
@@ -10820,6 +17149,16 @@ window.SEG_QUESTIONS = [
       "To run the most complex neural network architecture available"
     ],
     "answer": 1,
-    "explanation": "Information Retrieval fundamentally bridges the gap between human information needs and vast digital knowledge, optimizing for relevance, utility, speed, and user trust."
+    "explanation": "Information Retrieval fundamentally bridges the gap between human information needs and vast digital knowledge, optimizing for relevance, utility, speed, and user trust.",
+    "is_multi": false,
+    "required_choices": 1,
+    "correct": 1,
+    "correct_choices": [
+      1
+    ],
+    "correct_letter": "B",
+    "correct_letters": [
+      "B"
+    ]
   }
 ];

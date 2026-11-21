@@ -1,0 +1,8689 @@
+window.SEG_FE_QUESTIONS = [
+  {
+    "id": "seg_fe_001",
+    "slide": 1,
+    "is_info": true,
+    "topic": "Slide phân mục",
+    "question": "Thong tin source & Rule Co héi gi vé src thi xem link trén da xong hdi",
+    "vn_question": "",
+    "options": [],
+    "vn_options": [],
+    "correct": 0,
+    "answer": 0,
+    "correct_letter": "A",
+    "correct_letters": [
+      "A"
+    ],
+    "correct_choices": [
+      0
+    ],
+    "is_multi": false,
+    "required_choices": 1,
+    "explanation": "Slide phân mục hoặc tiêu đề chương.",
+    "image_path": "src/Slide_001.png"
+  },
+  {
+    "id": "seg_fe_002",
+    "slide": 2,
+    "is_info": true,
+    "topic": "Slide phân mục",
+    "question": "Thong tin source & Rule Co héi gi vé src thi xem link trén da xong hdi",
+    "vn_question": "",
+    "options": [],
+    "vn_options": [],
+    "correct": 0,
+    "answer": 0,
+    "correct_letter": "A",
+    "correct_letters": [
+      "A"
+    ],
+    "correct_choices": [
+      0
+    ],
+    "is_multi": false,
+    "required_choices": 1,
+    "explanation": "Slide phân mục hoặc tiêu đề chương.",
+    "image_path": "src/Slide_002.png"
+  },
+  {
+    "id": "seg_fe_003",
+    "slide": 3,
+    "is_info": true,
+    "topic": "Slide phân mục",
+    "question": "Tai liéu doc hiéu",
+    "vn_question": "",
+    "options": [],
+    "vn_options": [],
+    "correct": 0,
+    "answer": 0,
+    "correct_letter": "A",
+    "correct_letters": [
+      "A"
+    ],
+    "correct_choices": [
+      0
+    ],
+    "is_multi": false,
+    "required_choices": 1,
+    "explanation": "Slide phân mục hoặc tiêu đề chương.",
+    "image_path": "src/Slide_003.png"
+  },
+  {
+    "id": "seg_fe_004",
+    "slide": 4,
+    "is_info": true,
+    "topic": "Slide phân mục",
+    "question": "Update dap an slide 31, 62",
+    "vn_question": "",
+    "options": [],
+    "vn_options": [],
+    "correct": 0,
+    "answer": 0,
+    "correct_letter": "A",
+    "correct_letters": [
+      "A"
+    ],
+    "correct_choices": [
+      0
+    ],
+    "is_multi": false,
+    "required_choices": 1,
+    "explanation": "Slide phân mục hoặc tiêu đề chương.",
+    "image_path": "src/Slide_004.png"
+  },
+  {
+    "id": "seg_fe_005",
+    "slide": 5,
+    "is_info": true,
+    "topic": "Slide phân mục",
+    "question": "xX Nhie dap an",
+    "vn_question": "",
+    "options": [],
+    "vn_options": [],
+    "correct": 0,
+    "answer": 0,
+    "correct_letter": "A",
+    "correct_letters": [
+      "A"
+    ],
+    "correct_choices": [
+      0
+    ],
+    "is_multi": false,
+    "required_choices": 1,
+    "explanation": "Slide phân mục hoặc tiêu đề chương.",
+    "image_path": "src/Slide_005.png"
+  },
+  {
+    "id": "seg_fe_006",
+    "slide": 6,
+    "is_info": false,
+    "topic": "Chương 3: Crawls and Feeds (Mục 3.5: Conversion problem: character encodings - Slide 21).",
+    "question": "What is a character encoding? (3 options)",
+    "vn_question": "",
+    "options": [
+      "A way to represent text using a series of bits",
+      "A way to map bits to glyphs",
+      "A way to make HTML files compatible with each other",
+      "A way to translate web page text into images for better display"
+    ],
+    "vn_options": [],
+    "correct": [
+      0,
+      1,
+      2
+    ],
+    "answer": [
+      0,
+      1,
+      2
+    ],
+    "correct_letter": "A, B, C",
+    "correct_letters": [
+      "A",
+      "B",
+      "C"
+    ],
+    "correct_choices": [
+      0,
+      1,
+      2
+    ],
+    "is_multi": true,
+    "required_choices": 3,
+    "explanation": "A & B (Bản chất kỹ thuật): Theo định nghĩa trong giáo trình Croft (Slide 21 Ch.3): \"Text on pages is a series of little pictures called letters or glyphs. Character encoding is a mapping between bits and glyphs\". Nói cách khác, nó là cách biểu diễn ký tự/văn bản dưới dạng chuỗi bit nhị phân và ánh xạ các bit này thành hình ảnh ký tự hiển thị (glyphs).\nC (Mục đích thực tế trên Web): Các trang web sử dụng nhiều bảng mã khác nhau; việc chuẩn hóa/nhận diện đúng character encoding (như UTF-8) giúp các trình phân tích và tệp HTML tương thích, không bị lỗi hiển thị font (mojibake).\nD (Sai hoàn toàn): Character encoding không phải là chuyển văn bản thành hình ảnh đồ họa.\nKiến thức cốt lõi cần nhớ:\nConversion Problem: Crawler thu thập văn bản từ đủ mọi nguồn với nhiều bảng mã khác nhau. Để lập chỉ mục (index), search engine buộc phải chuyển đổi (decode) tất cả về một định dạng thống nhất (thường là Unicode / UTF-8).\nCác chuẩn phổ biến: ASCII (1 byte), CJK (Chinese-Japanese-Korean, 2 bytes), UTF-8 (độ dài biến thiên 1–4 bytes, chuẩn cho Web).",
+    "image_path": "src/Slide_006.png"
+  },
+  {
+    "id": "seg_fe_007",
+    "slide": 7,
+    "is_info": false,
+    "topic": "Chương 3: Crawls and Feeds (Mục 3.5: Conversion problem: character encodings - Slide 21).",
+    "question": "What is a character encoding? (3 options)",
+    "vn_question": "",
+    "options": [
+      "A way to represent text using a series of bits",
+      "A way to map bits to glyphs",
+      "A way to make HTML files compatible with each other",
+      "A way to translate web page text into images for better display"
+    ],
+    "vn_options": [],
+    "correct": [
+      0,
+      1,
+      2
+    ],
+    "answer": [
+      0,
+      1,
+      2
+    ],
+    "correct_letter": "A, B, C",
+    "correct_letters": [
+      "A",
+      "B",
+      "C"
+    ],
+    "correct_choices": [
+      0,
+      1,
+      2
+    ],
+    "is_multi": true,
+    "required_choices": 3,
+    "explanation": "A & B (Bản chất kỹ thuật): Theo định nghĩa trong giáo trình Croft (Slide 21 Ch.3): \"Text on pages is a series of little pictures called letters or glyphs. Character encoding is a mapping between bits and glyphs\". Nói cách khác, nó là cách biểu diễn ký tự/văn bản dưới dạng chuỗi bit nhị phân và ánh xạ các bit này thành hình ảnh ký tự hiển thị (glyphs).\nC (Mục đích thực tế trên Web): Các trang web sử dụng nhiều bảng mã khác nhau; việc chuẩn hóa/nhận diện đúng character encoding (như UTF-8) giúp các trình phân tích và tệp HTML tương thích, không bị lỗi hiển thị font (mojibake).\nD (Sai hoàn toàn): Character encoding không phải là chuyển văn bản thành hình ảnh đồ họa.\nKiến thức cốt lõi cần nhớ:\nConversion Problem: Crawler thu thập văn bản từ đủ mọi nguồn với nhiều bảng mã khác nhau. Để lập chỉ mục (index), search engine buộc phải chuyển đổi (decode) tất cả về một định dạng thống nhất (thường là Unicode / UTF-8).\nCác chuẩn phổ biến: ASCII (1 byte), CJK (Chinese-Japanese-Korean, 2 bytes), UTF-8 (độ dài biến thiên 1–4 bytes, chuẩn cho Web).",
+    "image_path": "src/Slide_007.png"
+  },
+  {
+    "id": "seg_fe_008",
+    "slide": 8,
+    "is_info": false,
+    "topic": "Chương 5: Ranking with Indexes (Mục 5.1: Abstract model of ranking) và Chương 7: Retrieval Models (Mục 7.5: Web Search / Learning to Rank).",
+    "question": "Which features are typically considered query-independent (static)? (Choose 2)",
+    "vn_question": "",
+    "options": [
+      "Page age",
+      "BM25 score",
+      "URL depth",
+      "Query length"
+    ],
+    "vn_options": [],
+    "correct": [
+      0,
+      2
+    ],
+    "answer": [
+      0,
+      2
+    ],
+    "correct_letter": "A, C",
+    "correct_letters": [
+      "A",
+      "C"
+    ],
+    "correct_choices": [
+      0,
+      2
+    ],
+    "is_multi": true,
+    "required_choices": 2,
+    "explanation": "Query-independent features (Static features - Đặc trưng tĩnh): Là các đặc trưng chỉ phụ thuộc vào bản thân tài liệu/trang web, có thể tính toán và lưu trữ từ trước lúc lập chỉ mục mà không cần biết câu truy vấn là gì.\nPage age (A): Tuổi của trang web / thời gian cập nhật.\nURL depth (C): Độ sâu đường dẫn URL (số lượng dấu gạch chéo /, ví dụ trang chủ có độ sâu thấp thường uy tín hơn trang nằm sâu trong thư mục con).\nQuery-dependent features (Dynamic features - Đặc trưng động): Phụ thuộc vào sự khớp giữa tài liệu và truy vấn, chỉ tính toán được khi người dùng gõ query vào lúc runtime (ví dụ: BM25 score (B), TF-IDF, vị trí từ khóa lân cận).\nQuery length (D): Là đặc trưng của câu truy vấn (Query feature), không phải đặc trưng của tài liệu.\nKiến thức cốt lõi cần nhớ:\n Xếp hạng thực tế kết hợp cả 2 loại: Điểm tài liệu = f(Static features) + g(Dynamic features).\nCác ví dụ Static features hay thi: PageRank, In-link count, URL depth, Domain extension (.edu, .gov), Spam score.",
+    "image_path": "src/Slide_008.png"
+  },
+  {
+    "id": "seg_fe_009",
+    "slide": 9,
+    "is_info": false,
+    "topic": "Chương 8: Evaluating Search Engines (Query Logs)",
+    "question": "Which fields are standard in anonymized query logs? (Choose 2)",
+    "vn_question": "",
+    "options": [
+      "Query timestamp",
+      "Result URLs shown",
+      "User passwords",
+      "Credit card numbers"
+    ],
+    "vn_options": [],
+    "correct": [
+      0,
+      1
+    ],
+    "answer": [
+      0,
+      1
+    ],
+    "correct_letter": "A, B",
+    "correct_letters": [
+      "A",
+      "B"
+    ],
+    "correct_choices": [
+      0,
+      1
+    ],
+    "is_multi": true,
+    "required_choices": 2,
+    "explanation": "Nhật ký truy vấn ẩn danh (Anonymized Query Logs) lưu giữ dấu thời gian truy vấn (A. Query timestamp) và các URL kết quả hiển thị (B. Result URLs shown); tuyệt đối không lưu mật khẩu hay thẻ tín dụng.",
+    "image_path": "src/Slide_009.png"
+  },
+  {
+    "id": "seg_fe_010",
+    "slide": 10,
+    "is_info": false,
+    "topic": "Chương 3: Crawls and Feeds (Politeness Policies)",
+    "question": "Why do web crawlers use politeness policies? Check all correct answers.",
+    "vn_question": "",
+    "options": [
+      "To be respectful of web servers and avoid overloading them",
+      "To improve the efficiency of the web",
+      "To avoid getting banned from websites",
+      "To speed up crawling web"
+    ],
+    "vn_options": [],
+    "correct": [
+      0,
+      2
+    ],
+    "answer": [
+      0,
+      2
+    ],
+    "correct_letter": "A, C",
+    "correct_letters": [
+      "A",
+      "C"
+    ],
+    "correct_choices": [
+      0,
+      2
+    ],
+    "is_multi": true,
+    "required_choices": 2,
+    "explanation": "Theo Giáo trình Croft (Chương 3 - Politeness Policies): Web crawler dùng chính sách lịch sự nhằm 2 mục đích: (A) Tránh làm quá tải web server và (C) Tránh bị chặn/cấm IP. (Lưu ý: Politeness policy làm chậm tốc độ crawl để tránh gây hại server, không làm tăng hiệu suất mạng web nên B sai).",
+    "image_path": "src/Slide_010.png"
+  },
+  {
+    "id": "seg_fe_011",
+    "slide": 11,
+    "is_info": false,
+    "topic": "Chương 3: Crawls and Feeds (Politeness Policies)",
+    "question": "Why do web crawlers use politeness policies? Check all correct answers.",
+    "vn_question": "",
+    "options": [
+      "To be respectful of web servers and avoid overloading them",
+      "To improve the efficiency of the web",
+      "To avoid getting banned from websites",
+      "To speed up crawling web"
+    ],
+    "vn_options": [],
+    "correct": [
+      0,
+      2
+    ],
+    "answer": [
+      0,
+      2
+    ],
+    "correct_letter": "A, C",
+    "correct_letters": [
+      "A",
+      "C"
+    ],
+    "correct_choices": [
+      0,
+      2
+    ],
+    "is_multi": true,
+    "required_choices": 2,
+    "explanation": "Theo Giáo trình Croft (Chương 3 - Politeness Policies): Web crawler dùng chính sách lịch sự nhằm 2 mục đích: (A) Tránh làm quá tải web server và (C) Tránh bị chặn/cấm IP. (Lưu ý: Politeness policy làm chậm tốc độ crawl để tránh gây hại server, không làm tăng hiệu suất mạng web nên B sai).",
+    "image_path": "src/Slide_011.png"
+  },
+  {
+    "id": "seg_fe_012",
+    "slide": 12,
+    "is_info": true,
+    "topic": "Slide phân mục",
+    "question": "7",
+    "vn_question": "",
+    "options": [],
+    "vn_options": [],
+    "correct": 0,
+    "answer": 0,
+    "correct_letter": "A",
+    "correct_letters": [
+      "A"
+    ],
+    "correct_choices": [
+      0
+    ],
+    "is_multi": false,
+    "required_choices": 1,
+    "explanation": "Slide phân mục hoặc tiêu đề chương.",
+    "image_path": "src/Slide_012.png"
+  },
+  {
+    "id": "seg_fe_013",
+    "slide": 13,
+    "is_info": false,
+    "topic": "Chương 2: Architecture of A Search Engine (Mục 2.2: Building blocks - The Indexing Process).",
+    "question": "What are the major components of the indexing process in search engine components?",
+    "vn_question": "",
+    "options": [
+      "Text acquisition, text transformation, and index creation",
+      "Text acquisition, text transformation, and query processing",
+      "Text acquisition, query processing, and index creation",
+      "Text transformation, query processing, and index creation"
+    ],
+    "vn_options": [],
+    "correct": 0,
+    "answer": 0,
+    "correct_letter": "A",
+    "correct_letters": [
+      "A"
+    ],
+    "correct_choices": [
+      0
+    ],
+    "is_multi": false,
+    "required_choices": 1,
+    "explanation": "Kiến trúc một Search Engine trong giáo trình Croft chia làm 2 tiến trình lớn:\n1. The Indexing Process (Tiến trình lập chỉ mục - Offline) gồm 3 khối:\nText acquisition: Thu thập văn bản (Crawler, Feeds, Conversion, Document Data Store).\nText transformation: Tiền xử lý văn bản (Parser, Stopper, Stemmer, Link Analysis, Information Extraction).\nIndex creation: Tạo chỉ mục đảo (Document Statistics, Weighting, Inversion, Index Distribution).\n2. The Query Process (Tiến trình xử lý truy vấn - Online): Gồm User Interaction, Ranking, và Evaluation.\nDo đó, các đáp án chứa Query processing (B, C, D) đều thuộc Query Process, không nằm trong Indexing Process.\nKiến thức cốt lõi cần nhớ:\nHãy nhớ sơ đồ luồng dữ liệu 3 bước của Indexing: Thu thập (Acquisition) → Biến đổi (Transformation) → Lập chỉ mục (Index Creation).",
+    "image_path": "src/Slide_013.png"
+  },
+  {
+    "id": "seg_fe_014",
+    "slide": 14,
+    "is_info": false,
+    "topic": "Chương 2: Architecture of A Search Engine (Mục 2.2: Building blocks - The Indexing Process).",
+    "question": "What are the major components of the indexing process in search engine components?",
+    "vn_question": "",
+    "options": [
+      "Text acquisition, text transformation, and index creation",
+      "Text acquisition, text transformation, and query processing",
+      "Text acquisition, query processing, and index creation",
+      "Text transformation, query processing, and index creation"
+    ],
+    "vn_options": [],
+    "correct": 0,
+    "answer": 0,
+    "correct_letter": "A",
+    "correct_letters": [
+      "A"
+    ],
+    "correct_choices": [
+      0
+    ],
+    "is_multi": false,
+    "required_choices": 1,
+    "explanation": "Kiến trúc một Search Engine trong giáo trình Croft chia làm 2 tiến trình lớn:\n1. The Indexing Process (Tiến trình lập chỉ mục - Offline) gồm 3 khối:\nText acquisition: Thu thập văn bản (Crawler, Feeds, Conversion, Document Data Store).\nText transformation: Tiền xử lý văn bản (Parser, Stopper, Stemmer, Link Analysis, Information Extraction).\nIndex creation: Tạo chỉ mục đảo (Document Statistics, Weighting, Inversion, Index Distribution).\n2. The Query Process (Tiến trình xử lý truy vấn - Online): Gồm User Interaction, Ranking, và Evaluation.\nDo đó, các đáp án chứa Query processing (B, C, D) đều thuộc Query Process, không nằm trong Indexing Process.\nKiến thức cốt lõi cần nhớ:\nHãy nhớ sơ đồ luồng dữ liệu 3 bước của Indexing: Thu thập (Acquisition) → Biến đổi (Transformation) → Lập chỉ mục (Index Creation).",
+    "image_path": "src/Slide_014.png"
+  },
+  {
+    "id": "seg_fe_015",
+    "slide": 15,
+    "is_info": false,
+    "topic": "Chương 8: Search Engine Optimization (SEO) (Mục 8.4 On-Page SEO & 8.5 Off-Page SEO).",
+    "question": "Which of the following correctly identifies the on-page and off-page factor groups?",
+    "vn_question": "",
+    "options": [
+      "Content, Links, Trust are on-page factors; Architecture, HTML, User are off-page factors",
+      "Content, Architecture, HTML are on-page factors; Trust, Links, User are off-page factors",
+      "Content, Links, User are on-page factors; Trust, Links, Architecture are off-page factors",
+      "Content, Links, User are on-page factors; Trust, HTML, Architecture are off-page factors"
+    ],
+    "vn_options": [],
+    "correct": 1,
+    "answer": 1,
+    "correct_letter": "B",
+    "correct_letters": [
+      "B"
+    ],
+    "correct_choices": [
+      1
+    ],
+    "is_multi": false,
+    "required_choices": 1,
+    "explanation": "Dựa trên bảng tuần hoàn các yếu tố SEO chuẩn (Search Engine Land's Periodic Table of SEO Factors):\nOn-page factors (Yếu tố trên trang - Webmaster trực tiếp kiểm soát):\nContent (Chất lượng nội dung, từ khóa, độ dài, mức độ hữu ích).\nArchitecture (Cấu trúc site, tốc độ tải trang, tính thân thiện di động, bảo mật HTTPS).\nHTML (Thẻ tiêu đề Title, thẻ meta description, thẻ Header H1-H6, thẻ alt ảnh).\nOff-page factors (Yếu tố ngoài trang - Tín hiệu từ cộng đồng và người dùng):\nTrust (Độ tin cậy của tên miền, thẩm quyền trang Domain Authority, lịch sử trang).\nLinks (Liên kết trỏ về - Backlinks chất lượng, Anchor text).\nUser (Vị trí địa lý của người dùng, hành vi tìm kiếm, tín hiệu mạng xã hội).\nKiến thức cốt lõi cần nhớ:\n On-Page = Những gì nằm trong mã nguồn và máy chủ của website.\n Off-Page = Những gì người khác và môi trường bên ngoài nói về website đó.",
+    "image_path": "src/Slide_015.png"
+  },
+  {
+    "id": "seg_fe_016",
+    "slide": 16,
+    "is_info": true,
+    "topic": "Slide phân mục",
+    "question": "Slide thông tin tài liệu môn học",
+    "vn_question": "",
+    "options": [],
+    "vn_options": [],
+    "correct": 0,
+    "answer": 0,
+    "correct_letter": "A",
+    "correct_letters": [
+      "A"
+    ],
+    "correct_choices": [
+      0
+    ],
+    "is_multi": false,
+    "required_choices": 1,
+    "explanation": "Slide phân mục hoặc tiêu đề chương.",
+    "image_path": "src/Slide_016.png"
+  },
+  {
+    "id": "seg_fe_017",
+    "slide": 17,
+    "is_info": false,
+    "topic": "Chương 9: Evaluating Search Engines (Mục 9.4: Effectiveness Metrics - Focusing on the Top Documents - Slide 14).",
+    "question": "When is recall not an appropriate measure in search applications, according to the text?",
+    "vn_question": "",
+    "options": [
+      "When users extensively explore lower-ranked results",
+      "When tasks involve multiple relevant documents",
+      "When users focus on the first page or two of results",
+      "When navigational search is the primary task"
+    ],
+    "vn_options": [],
+    "correct": 2,
+    "answer": 2,
+    "correct_letter": "C",
+    "correct_letters": [
+      "C"
+    ],
+    "correct_choices": [
+      2
+    ],
+    "is_multi": false,
+    "required_choices": 1,
+    "explanation": "Trong sách giáo khoa Croft (Chương 8/9):\n\"In the case of web search, this means that many users look at just the first page or two of results... In these situations, recall is not an appropriate measure. Instead, the focus of an effectiveness measure should be on how well the search engine does at retrieving relevant documents at very high ranks.\"\nBản chất: Recall (Độ phủ) đo lường tỷ lệ tìm thấy tất cả tài liệu liên quan trên toàn bộ kho web hàng triệu trang. Tuy nhiên, người dùng tìm kiếm web thông thường chỉ xem 1 hoặc 2 trang đầu tiên (Top 10–20 kết quả). Do đó, Recall là thước đo không phù hợp; thay vào đó hệ thống phải dùng các độ đo tập trung vào phần đầu danh sách như Precision@10, MRR, nDCG.\n(Lưu ý thêm): Trong trường hợp Navigational search (D) chỉ có duy nhất 1 trang đích đúng, Recall cũng không có nhiều ý nghĩa (Reciprocal Rank phù hợp hơn). Tuy nhiên, câu C trích xuất chuẩn xác lý do phổ quát về hành vi người dùng web theo văn bản giáo trình.\nKiến thức cốt lõi cần nhớ:\nKhi người dùng chỉ nhìn trang đầu: Dùng P@10 hoặc nDCG@10.\nKhi truy vấn chỉ có 1 kết quả đúng duy nhất (Navigational search): Dùng MRR (Mean Reciprocal Rank).",
+    "image_path": "src/Slide_017.png"
+  },
+  {
+    "id": "seg_fe_018",
+    "slide": 18,
+    "is_info": false,
+    "topic": "Chương 9: Evaluating Search Engines (Mục 9.4: Effectiveness Metrics - Focusing on the Top Documents - Slide 14).",
+    "question": "When is recall not an appropriate measure in search applications, according to the text?",
+    "vn_question": "",
+    "options": [
+      "When users extensively explore lower-ranked results",
+      "When tasks involve multiple relevant documents",
+      "When users focus on the first page or two of results",
+      "When navigational search is the primary task"
+    ],
+    "vn_options": [],
+    "correct": 2,
+    "answer": 2,
+    "correct_letter": "C",
+    "correct_letters": [
+      "C"
+    ],
+    "correct_choices": [
+      2
+    ],
+    "is_multi": false,
+    "required_choices": 1,
+    "explanation": "Trong sách giáo khoa Croft (Chương 8/9):\n\"In the case of web search, this means that many users look at just the first page or two of results... In these situations, recall is not an appropriate measure. Instead, the focus of an effectiveness measure should be on how well the search engine does at retrieving relevant documents at very high ranks.\"\nBản chất: Recall (Độ phủ) đo lường tỷ lệ tìm thấy tất cả tài liệu liên quan trên toàn bộ kho web hàng triệu trang. Tuy nhiên, người dùng tìm kiếm web thông thường chỉ xem 1 hoặc 2 trang đầu tiên (Top 10–20 kết quả). Do đó, Recall là thước đo không phù hợp; thay vào đó hệ thống phải dùng các độ đo tập trung vào phần đầu danh sách như Precision@10, MRR, nDCG.\n(Lưu ý thêm): Trong trường hợp Navigational search (D) chỉ có duy nhất 1 trang đích đúng, Recall cũng không có nhiều ý nghĩa (Reciprocal Rank phù hợp hơn). Tuy nhiên, câu C trích xuất chuẩn xác lý do phổ quát về hành vi người dùng web theo văn bản giáo trình.\nKiến thức cốt lõi cần nhớ:\nKhi người dùng chỉ nhìn trang đầu: Dùng P@10 hoặc nDCG@10.\nKhi truy vấn chỉ có 1 kết quả đúng duy nhất (Navigational search): Dùng MRR (Mean Reciprocal Rank).",
+    "image_path": "src/Slide_018.png"
+  },
+  {
+    "id": "seg_fe_019",
+    "slide": 19,
+    "is_info": false,
+    "topic": "Chương 7: Retrieval Models (Mục 7.1: Vector Space Model - Similarity Measures).",
+    "question": "Which of the following is NOT true?",
+    "vn_question": "",
+    "options": [
+      "When calculating the similarity between Document and Query, Euclidean similarity is worse than cosine similarity because normally, the query vector is more likely to be shorter than the document vector",
+      "When calculating the similarity between Document and Query, Jaccard similarity is better than Inner similarity because Inner similarity penalizes the dissimilarity",
+      "Jaccard coefficient separates the scores of relevant documents further apart",
+      "The inner similarity betw"
+    ],
+    "vn_options": [],
+    "correct": 1,
+    "answer": 1,
+    "correct_letter": "B",
+    "correct_letters": [
+      "B"
+    ],
+    "correct_choices": [
+      1
+    ],
+    "is_multi": false,
+    "required_choices": 1,
+    "explanation": "Xem xét phát biểu B: \"Inner similarity is better than... because Inner similarity penalizes the dissimilarity\" → SAI VỀ MẶT TOÁN HỌC.\nInner similarity (Tích vô hướng / Dot product): Inner(D, Q) = ∑ d_i · q_i. Nó chỉ tính tổng các từ trùng nhau. Nếu một tài liệu dài chứa thêm hàng nghìn từ không liên quan, giá trị Inner product không hề bị giảm đi một chút nào (tức là Inner similarity KHÔNG hề phạt sự khác biệt / does NOT penalize dissimilarity).\nNgược lại, Jaccard Similarity: (|D ∩ Q| / |D ∪ Q|) mới là độ đo phạt sự khác biệt vì mẫu số |D ∪ Q| sẽ tăng vọt nếu tài liệu chứa nhiều từ nằm ngoài câu query.\nDo câu B khẳng định \"Inner similarity penalizes the dissimilarity\" nên câu B là phát biểu KHÔNG ĐÚNG (NOT true).\nKiến thức cốt lõi cần nhớ:\n Các độ đo trong Vector Space Model:\nCosine Similarity: Chuẩn hóa theo độ dài vector ((D · Q / |D| |Q|)), triệt tiêu ảnh hưởng của việc tài liệu dài hay ngắn → Được dùng phổ biến nhất.\nEuclidean Distance: Bị ảnh hưởng nặng bởi độ dài; tài liệu càng dài vector càng xa gốc toạ độ, khiến khoảng cách tới query vector ngắn bị sai lệch lớn.",
+    "image_path": "src/Slide_019.png"
+  },
+  {
+    "id": "seg_fe_020",
+    "slide": 20,
+    "is_info": false,
+    "topic": "Chương 7: Retrieval Models (Mục 7.1: Vector Space Model - Similarity Measures).",
+    "question": "Which of the following is NOT true?",
+    "vn_question": "",
+    "options": [
+      "When calculating the similarity between Document and Query, Euclidean similarity is worse than cosine similarity because normally, the query vector is more likely to be shorter than the document vector",
+      "When calculating the similarity between Document and Query, Jaccard similarity is better than Inner similarity because Inner similarity penalizes the dissimilarity",
+      "Jaccard coefficient separates the scores of relevant documents further apart",
+      "The inner similarity betw"
+    ],
+    "vn_options": [],
+    "correct": 1,
+    "answer": 1,
+    "correct_letter": "B",
+    "correct_letters": [
+      "B"
+    ],
+    "correct_choices": [
+      1
+    ],
+    "is_multi": false,
+    "required_choices": 1,
+    "explanation": "Xem xét phát biểu B: \"Inner similarity is better than... because Inner similarity penalizes the dissimilarity\" → SAI VỀ MẶT TOÁN HỌC.\nInner similarity (Tích vô hướng / Dot product): Inner(D, Q) = ∑ d_i · q_i. Nó chỉ tính tổng các từ trùng nhau. Nếu một tài liệu dài chứa thêm hàng nghìn từ không liên quan, giá trị Inner product không hề bị giảm đi một chút nào (tức là Inner similarity KHÔNG hề phạt sự khác biệt / does NOT penalize dissimilarity).\nNgược lại, Jaccard Similarity: (|D ∩ Q| / |D ∪ Q|) mới là độ đo phạt sự khác biệt vì mẫu số |D ∪ Q| sẽ tăng vọt nếu tài liệu chứa nhiều từ nằm ngoài câu query.\nDo câu B khẳng định \"Inner similarity penalizes the dissimilarity\" nên câu B là phát biểu KHÔNG ĐÚNG (NOT true).\nKiến thức cốt lõi cần nhớ:\n Các độ đo trong Vector Space Model:\nCosine Similarity: Chuẩn hóa theo độ dài vector ((D · Q / |D| |Q|)), triệt tiêu ảnh hưởng của việc tài liệu dài hay ngắn → Được dùng phổ biến nhất.\nEuclidean Distance: Bị ảnh hưởng nặng bởi độ dài; tài liệu càng dài vector càng xa gốc toạ độ, khiến khoảng cách tới query vector ngắn bị sai lệch lớn.",
+    "image_path": "src/Slide_020.png"
+  },
+  {
+    "id": "seg_fe_021",
+    "slide": 21,
+    "is_info": false,
+    "topic": "Chương 6: Queries and Interfaces (Mục 6.2: Query Transformation and Expansion) đối chiếu với Chương 4: Processing Text (Mục 4.3: Stemming).",
+    "question": "Which of the following is NOT a query expansion technique?",
+    "vn_question": "",
+    "options": [
+      "Finding synonyms of words",
+      "Adding typical words to query",
+      "Stemming words",
+      "Using a general thesaurus"
+    ],
+    "vn_options": [],
+    "correct": 2,
+    "answer": 2,
+    "correct_letter": "C",
+    "correct_letters": [
+      "C"
+    ],
+    "correct_choices": [
+      2
+    ],
+    "is_multi": false,
+    "required_choices": 1,
+    "explanation": "Đề bài yêu cầu tìm kỹ thuật KHÔNG PHẢI là kỹ thuật mở rộng truy vấn (Query Expansion):\nQuery Expansion: Là việc thêm các từ khóa mới/từ đồng nghĩa vào truy vấn gốc để khắc phục hiện tượng lệch từ vựng (Vocabulary Mismatch) và nâng cao độ bao phủ (Recall). Các phương pháp gồm: Tìm từ đồng nghĩa (A), thêm từ đặc trưng từ phản hồi liên quan (B - Pseudo-Relevance Feedback), tra cứu từ điển đồng nghĩa tổng quát (D - Thesaurus / WordNet).\nStemming (C): Là kỹ thuật rút gọn từ về gốc (ví dụ: walking, walked → walk) trong bước bóc tách văn bản (Text Transformation / Normalization - Chương 4), không phải là hành động bổ sung thêm các thuật ngữ mới vào câu query.\nKiến thức cốt lõi cần nhớ:\nPhân biệt: Query Expansion = thêm từ (add terms); Stemming / Lemmatization = chuẩn hóa dạng gốc (normalize form).",
+    "image_path": "src/Slide_021.png"
+  },
+  {
+    "id": "seg_fe_022",
+    "slide": 22,
+    "is_info": false,
+    "topic": "Chương 6: Queries and Interfaces (Mục 6.2: Context and Personalization).",
+    "question": "Which of the following is NOT an advantage of using contextual information in search engines?",
+    "vn_question": "",
+    "options": [
+      "It can improve the relevance of search results",
+      "It can reduce the need for users to enter multiple queries",
+      "It can protect users' privacy",
+      "It can be used to personalize search results"
+    ],
+    "vn_options": [],
+    "correct": 2,
+    "answer": 2,
+    "correct_letter": "C",
+    "correct_letters": [
+      "C"
+    ],
+    "correct_choices": [
+      2
+    ],
+    "is_multi": false,
+    "required_choices": 1,
+    "explanation": "Thông tin ngữ cảnh (Contextual information) bao gồm: Vị trí địa lý (GPS/IP), lịch sử tìm kiếm trước đó, loại thiết bị (mobile/desktop), thời gian trong ngày.\n Việc sử dụng ngữ cảnh giúp: Cải thiện độ liên quan (A), cá nhân hóa kết quả (D), và giúp người dùng không phải gõ các câu query dài dòng lặp đi lặp lại (B).\nC là phát biểu SAI (và là đáp án cần chọn): Việc thu thập và theo dõi thông tin người dùng là mối đe dọa trực tiếp đến quyền riêng tư (Privacy Concern), chứ hoàn toàn không phải là \"bảo vệ quyền riêng tư\".\nKiến thức cốt lõi cần nhớ:\nHai thách thức lớn nhất của Personalization & Context: Quyền riêng tư của người dùng (User Privacy) và Thiếu dữ liệu khởi tạo (Cold Start Problem).",
+    "image_path": "src/Slide_022.png"
+  },
+  {
+    "id": "seg_fe_023",
+    "slide": 23,
+    "is_info": false,
+    "topic": "Chương 6: Queries and Interfaces (Mục 6.3: Relevance Feedback).",
+    "question": "Which of the following is NOT a benefit of relevance feedback?",
+    "vn_question": "",
+    "options": [
+      "It allows users to refine their search results without having to enter a new query",
+      "It can improve the accuracy of search results by helping the system to better understand the user's intent",
+      "It is a fully automated process that does not require any user input",
+      "It can be used to identify relevant documents in a ranking based on the initial query"
+    ],
+    "vn_options": [],
+    "correct": 2,
+    "answer": 2,
+    "correct_letter": "C",
+    "correct_letters": [
+      "C"
+    ],
+    "correct_choices": [
+      2
+    ],
+    "is_multi": false,
+    "required_choices": 1,
+    "explanation": "Phản hồi liên quan (Relevance Feedback - như thuật toán Rocchio): Là quá trình hệ thống trả về kết quả ban đầu, sau đó người dùng trực tiếp đánh dấu tài liệu nào là liên quan (D_R) hoặc không liên quan (D_{NR}). Hệ thống lấy thông tin này để cập nhật lại vector truy vấn.\nVì vậy, Relevance Feedback bắt buộc phải có sự tương tác của người dùng (User input). Phát biểu cho rằng nó là quy trình \"hoàn toàn tự động không cần người dùng can thiệp\" (C) là SAI.\nKiến thức cốt lõi cần nhớ:\n Phân biệt:\nExplicit Relevance Feedback: Người dùng chủ động bấm chọn/đánh dấu kết quả.\nImplicit Relevance Feedback: Hệ thống theo dõi hành vi ngầm (clicks, thời gian dừng dwell time).\nPseudo-Relevance Feedback (Blind Feedback): Hệ thống tự động giả định Top-k tài liệu đầu tiên là liên quan mà không cần hỏi người dùng.",
+    "image_path": "src/Slide_023.png"
+  },
+  {
+    "id": "seg_fe_024",
+    "slide": 24,
+    "is_info": false,
+    "topic": "Chương 6: Queries and Interfaces (Section 6.1)",
+    "question": "What is NOT the reason for a query being a poor representation of the information need?",
+    "vn_question": "",
+    "options": [
+      "The user is encouraged to enter short queries",
+      "The user finds it difficult to express the information need",
+      "The search engine interface is not user-friendly",
+      "Long queries often fail"
+    ],
+    "vn_options": [],
+    "correct": 2,
+    "answer": 2,
+    "correct_letter": "C",
+    "correct_letters": [
+      "C"
+    ],
+    "correct_choices": [
+      2
+    ],
+    "is_multi": false,
+    "required_choices": 1,
+    "explanation": "Theo nguyên văn Giáo trình Croft (Chương 6, Mục 6.1): Có 3 lý do khiến query đại diện kém cho information need: (A) Người dùng bị khuyến khích nhập query ngắn, (B) Người dùng khó diễn đạt nhu cầu thông tin, và (D) Truy vấn dài thường thất bại (\"long queries often fail\"). Do đó đáp án KHÔNG PHẢI lý do là C (The search engine interface is not user-friendly).",
+    "image_path": "src/Slide_024.png"
+  },
+  {
+    "id": "seg_fe_025",
+    "slide": 25,
+    "is_info": true,
+    "topic": "Slide phân mục",
+    "question": "i 4 Ca =",
+    "vn_question": "",
+    "options": [],
+    "vn_options": [],
+    "correct": 0,
+    "answer": 0,
+    "correct_letter": "A",
+    "correct_letters": [
+      "A"
+    ],
+    "correct_choices": [
+      0
+    ],
+    "is_multi": false,
+    "required_choices": 1,
+    "explanation": "Slide phân mục hoặc tiêu đề chương.",
+    "image_path": "src/Slide_025.png"
+  },
+  {
+    "id": "seg_fe_026",
+    "slide": 26,
+    "is_info": true,
+    "topic": "Slide phân mục",
+    "question": "i 4 Ca =",
+    "vn_question": "",
+    "options": [],
+    "vn_options": [],
+    "correct": 0,
+    "answer": 0,
+    "correct_letter": "A",
+    "correct_letters": [
+      "A"
+    ],
+    "correct_choices": [
+      0
+    ],
+    "is_multi": false,
+    "required_choices": 1,
+    "explanation": "Slide phân mục hoặc tiêu đề chương.",
+    "image_path": "src/Slide_026.png"
+  },
+  {
+    "id": "seg_fe_027",
+    "slide": 27,
+    "is_info": false,
+    "topic": "Chương 1: Information Retrieval and Search Engines (Mục 1.1: Information Retrieval).",
+    "question": "What is a fundamental concept in information retrieval?",
+    "vn_question": "",
+    "options": [
+      "Relevance",
+      "Completeness",
+      "Scalability",
+      "Stability"
+    ],
+    "vn_options": [],
+    "correct": 0,
+    "answer": 0,
+    "correct_letter": "A",
+    "correct_letters": [
+      "A"
+    ],
+    "correct_choices": [
+      0
+    ],
+    "is_multi": false,
+    "required_choices": 1,
+    "explanation": "Relevance (Độ liên quan) là khái niệm trung tâm, nền tảng và quan trọng nhất xuyên suốt toàn bộ ngành Khoa học Thu nhận Thông tin (IR). Mọi mô hình xếp hạng (Boolean, VSM, BM25, Language Model) đều được sinh ra nhằm mục đích ước lượng độ liên quan giữa tài liệu và nhu cầu thông tin của người dùng.\nKiến thức cốt lõi cần nhớ:\nPhân biệt giữa Relevance (Độ liên quan) và Similarity (Độ tương đồng): Một tài liệu có thể chứa đúng từ khóa (Similarity cao) nhưng chưa chắc đã giải quyết đúng nhu cầu thực tế của người dùng (Relevance thấp).",
+    "image_path": "src/Slide_027.png"
+  },
+  {
+    "id": "seg_fe_028",
+    "slide": 28,
+    "is_info": false,
+    "topic": "Chương 1 & Chương 2: Architecture of A Search Engine (Mục 2.2: The Query Process - Ranking).",
+    "question": "What is the task of search engine related to determine the document relevance?",
+    "vn_question": "",
+    "options": [
+      "Ranking",
+      "Testing",
+      "Measuring",
+      "Creating user interaction"
+    ],
+    "vn_options": [],
+    "correct": 0,
+    "answer": 0,
+    "correct_letter": "A",
+    "correct_letters": [
+      "A"
+    ],
+    "correct_choices": [
+      0
+    ],
+    "is_multi": false,
+    "required_choices": 1,
+    "explanation": "Nhiệm vụ cốt lõi của công cụ tìm kiếm trong việc xác định tài liệu nào phù hợp với người dùng chính là Ranking (Xếp hạng): Sắp xếp các tài liệu theo thứ tự xác suất liên quan giảm dần (theo nguyên lý Probability Ranking Principle - PRP).",
+    "image_path": "src/Slide_028.png"
+  },
+  {
+    "id": "seg_fe_029",
+    "slide": 29,
+    "is_info": false,
+    "topic": "Chương 4: Processing Text (Mục 4.1: From Words to Terms).",
+    "question": "What is the primary content of most documents represented?",
+    "vn_question": "",
+    "options": [
+      "Metadata",
+      "Images",
+      "Words",
+      "Graphics"
+    ],
+    "vn_options": [],
+    "correct": 2,
+    "answer": 2,
+    "correct_letter": "C",
+    "correct_letters": [
+      "C"
+    ],
+    "correct_choices": [
+      2
+    ],
+    "is_multi": false,
+    "required_choices": 1,
+    "explanation": "Trong các tài liệu văn bản thông thường và trang web truyền thống, nội dung cơ bản chiếm phần lớn nhất của tài liệu là Words (Các từ vựng/văn bản). Search engine trích xuất các từ này để chuyển hóa thành các Term đại diện cho nội dung tài liệu.",
+    "image_path": "src/Slide_029.png"
+  },
+  {
+    "id": "seg_fe_030",
+    "slide": 30,
+    "is_info": false,
+    "topic": "Chương 4: Processing Text (Mục 4.3: Document parsing: Tokenizing - Slide 8).",
+    "question": "What is the technique used for recognizing each word occurrence in a document?",
+    "vn_question": "",
+    "options": [
+      "Tokenizing",
+      "Lexical analysis",
+      "Metadata",
+      "Markup languages"
+    ],
+    "vn_options": [],
+    "correct": 0,
+    "answer": 0,
+    "correct_letter": "A",
+    "correct_letters": [
+      "A"
+    ],
+    "correct_choices": [
+      0
+    ],
+    "is_multi": false,
+    "required_choices": 1,
+    "explanation": "Theo Slide 8 Chương 4: \"Tokenizing is the process of forming words from the sequence of characters in a document\" (Tách chuỗi ký tự liên tục thành các từ đơn lẻ độc lập). Kỹ thuật này nhận diện từng lần xuất hiện của từ (word occurrence) trong văn bản.\nKiến thức cốt lõi cần nhớ:\n Thứ tự các bước xử lý từ vựng trong Text Processing:\nVăn bản thô \\xrightarrow{Tokenizing} Tokens \\xrightarrow{Stopping} Lọc từ dừng \\xrightarrow{Stemming} Terms (Gốc từ đưa vào Index)",
+    "image_path": "src/Slide_030.png"
+  },
+  {
+    "id": "seg_fe_031",
+    "slide": 31,
+    "is_info": false,
+    "topic": "Chương 4: Processing Text (Mục 4.3: Document parsing: Tokenizing - Slide 8).",
+    "question": "What is the technique used for recognizing each word occurrence in a document?",
+    "vn_question": "",
+    "options": [
+      "Tokenizing",
+      "Lexical analysis",
+      "Metadata",
+      "Markup languages"
+    ],
+    "vn_options": [],
+    "correct": 0,
+    "answer": 0,
+    "correct_letter": "A",
+    "correct_letters": [
+      "A"
+    ],
+    "correct_choices": [
+      0
+    ],
+    "is_multi": false,
+    "required_choices": 1,
+    "explanation": "Theo Slide 8 Chương 4: \"Tokenizing is the process of forming words from the sequence of characters in a document\" (Tách chuỗi ký tự liên tục thành các từ đơn lẻ độc lập). Kỹ thuật này nhận diện từng lần xuất hiện của từ (word occurrence) trong văn bản.\nKiến thức cốt lõi cần nhớ:\n Thứ tự các bước xử lý từ vựng trong Text Processing:\nVăn bản thô \\xrightarrow{Tokenizing} Tokens \\xrightarrow{Stopping} Lọc từ dừng \\xrightarrow{Stemming} Terms (Gốc từ đưa vào Index)",
+    "image_path": "src/Slide_031.png"
+  },
+  {
+    "id": "seg_fe_032",
+    "slide": 32,
+    "is_info": false,
+    "topic": "Chương 4: Processing Text (Mục 4.3: Document parsing: Tokenizing - Slide 8).",
+    "question": "What is the technique used for recognizing each word occurrence in a document?",
+    "vn_question": "",
+    "options": [
+      "Tokenizing",
+      "Lexical analysis",
+      "Metadata",
+      "Markup languages"
+    ],
+    "vn_options": [],
+    "correct": 0,
+    "answer": 0,
+    "correct_letter": "A",
+    "correct_letters": [
+      "A"
+    ],
+    "correct_choices": [
+      0
+    ],
+    "is_multi": false,
+    "required_choices": 1,
+    "explanation": "Theo Slide 8 Chương 4: \"Tokenizing is the process of forming words from the sequence of characters in a document\" (Tách chuỗi ký tự liên tục thành các từ đơn lẻ độc lập). Kỹ thuật này nhận diện từng lần xuất hiện của từ (word occurrence) trong văn bản.\nKiến thức cốt lõi cần nhớ:\n Thứ tự các bước xử lý từ vựng trong Text Processing:\nVăn bản thô \\xrightarrow{Tokenizing} Tokens \\xrightarrow{Stopping} Lọc từ dừng \\xrightarrow{Stemming} Terms (Gốc từ đưa vào Index)",
+    "image_path": "src/Slide_032.png"
+  },
+  {
+    "id": "seg_fe_033",
+    "slide": 33,
+    "is_info": false,
+    "topic": "Chương 7: Retrieval Models (Mục 7.3: Ranking based on Language Models - Slide 11).",
+    "question": "What is the simplest form of a language model that represents a probability distribution over words?",
+    "vn_question": "",
+    "options": [
+      "Topic model",
+      "Unigram language model",
+      "Multinomial distribution model",
+      "Gaussian distribution model"
+    ],
+    "vn_options": [],
+    "correct": 1,
+    "answer": 1,
+    "correct_letter": "B",
+    "correct_letters": [
+      "B"
+    ],
+    "correct_choices": [
+      1
+    ],
+    "is_multi": false,
+    "required_choices": 1,
+    "explanation": "Theo Slide 11 Chương 7: \"Simplest form is unigram language model: probability distribution over the words\".\nUnigram Language Model giả định xác suất xuất hiện của một từ là độc lập với các từ xung quanh (tương đương với giả định Bag-of-Words):\nP(d \\mid M) = ∏_{w ∈ d} P(w \\mid M)\nKiến thức cốt lõi cần nhớ:\nKỹ thuật thiết yếu khi dùng Language Model: Smoothing (Làm mịn) (ví dụ: Jelinek-Mercer, Dirichlet smoothing) để giải quyết vấn đề Zero Probability (khi một từ trong truy vấn không xuất hiện trong tài liệu thì xác suất không bị rớt về 0).",
+    "image_path": "src/Slide_033.png"
+  },
+  {
+    "id": "seg_fe_034",
+    "slide": 34,
+    "is_info": false,
+    "topic": "Chương 11: Social Search & Chương 4: Processing Text (Mục 4.5: Link Analysis).",
+    "question": "What term is commonly used for a set of web pages that are all about the same topic?",
+    "vn_question": "",
+    "options": [
+      "Internet ensemble",
+      "Digital assortment",
+      "Web consortium",
+      "Web community"
+    ],
+    "vn_options": [],
+    "correct": 3,
+    "answer": 3,
+    "correct_letter": "D",
+    "correct_letters": [
+      "D"
+    ],
+    "correct_choices": [
+      3
+    ],
+    "is_multi": false,
+    "required_choices": 1,
+    "explanation": "Trong phân tích cấu trúc đồ thị Web (Web Graph Analysis), thuật ngữ Web Community (Cộng đồng Web) dùng để chỉ một tập hợp các trang web cùng nói về một chủ đề chung, được đặc trưng bởi mật độ liên kết trỏ lẫn nhau dày đặc hơn hẳn so với liên kết ra ngoài tập hợp đó.",
+    "image_path": "src/Slide_034.png"
+  },
+  {
+    "id": "seg_fe_035",
+    "slide": 35,
+    "is_info": false,
+    "topic": "Chương 5: Ranking with Indexes (Mục 5.4: Auxiliary Structures / Fast Posting Traversal).",
+    "question": "What structure accelerates merging postings by allowing jumps within a long list?",
+    "vn_question": "",
+    "options": [
+      "Bloom filters",
+      "Skip pointers",
+      "Suffix arrays",
+      "B-trees"
+    ],
+    "vn_options": [],
+    "correct": 1,
+    "answer": 1,
+    "correct_letter": "B",
+    "correct_letters": [
+      "B"
+    ],
+    "correct_choices": [
+      1
+    ],
+    "is_multi": false,
+    "required_choices": 1,
+    "explanation": "Khi xử lý truy vấn phép giao (AND query) giữa hai danh sách posting dài, việc duyệt tuần tự từng phần tử sẽ mất O(L_1 + L_2).\nSkip pointers (Con trỏ nhảy) được gắn thêm vào danh sách posting theo khoảng cách cố định (thường là \\sqrt{L}) để cho phép thuật toán \"nhảy cóc\" qua các khối phần tử nhỏ hơn giá trị cần tìm, giúp tăng tốc độ giao danh sách chỉ mục lên đáng kể.\nKiến thức cốt lõi cần nhớ:\n Khoảng cách đặt skip pointers tối ưu về mặt lý thuyết cho danh sách độ dài L là \\sqrt{L}.",
+    "image_path": "src/Slide_035.png"
+  },
+  {
+    "id": "seg_fe_036",
+    "slide": 36,
+    "is_info": false,
+    "topic": "Chương 2: Architecture of A Search Engine (Mục 2.2: Search Engine Architecture).",
+    "question": "What are the two major functions supported by search engine components?",
+    "vn_question": "",
+    "options": [
+      "Indexing process and query process",
+      "Crawling process and ranking process",
+      "Indexing process and ranking process",
+      "Crawling process and query process"
+    ],
+    "vn_options": [],
+    "correct": 0,
+    "answer": 0,
+    "correct_letter": "A",
+    "correct_letters": [
+      "A"
+    ],
+    "correct_choices": [
+      0
+    ],
+    "is_multi": false,
+    "required_choices": 1,
+    "explanation": "Toàn bộ kiến trúc Search Engine chuẩn hóa theo Croft et al. được chia thành hai tiến trình chức năng lớn:\n1. Indexing process (Tiến trình lập chỉ mục): Thu thập văn bản → Biến đổi văn bản → Tạo chỉ mục (Chạy ngầm/Offline).\n2. Query process (Tiến trình truy vấn): Tương tác người dùng → Xếp hạng → Đánh giá (Chạy thời gian thực/Online).\n Các khái niệm như crawling chỉ là nhánh con của Indexing, còn ranking là nhánh con của Query process.",
+    "image_path": "src/Slide_036.png"
+  },
+  {
+    "id": "seg_fe_037",
+    "slide": 37,
+    "is_info": false,
+    "topic": "Chương 2: Architecture of A Search Engine (Mục 2.2: Search Engine Architecture).",
+    "question": "What are the two major functions supported by search engine components?",
+    "vn_question": "",
+    "options": [
+      "Indexing process and query process",
+      "Crawling process and ranking process",
+      "Indexing process and ranking process",
+      "Crawling process and query process"
+    ],
+    "vn_options": [],
+    "correct": 0,
+    "answer": 0,
+    "correct_letter": "A",
+    "correct_letters": [
+      "A"
+    ],
+    "correct_choices": [
+      0
+    ],
+    "is_multi": false,
+    "required_choices": 1,
+    "explanation": "Toàn bộ kiến trúc Search Engine chuẩn hóa theo Croft et al. được chia thành hai tiến trình chức năng lớn:\n1. Indexing process (Tiến trình lập chỉ mục): Thu thập văn bản → Biến đổi văn bản → Tạo chỉ mục (Chạy ngầm/Offline).\n2. Query process (Tiến trình truy vấn): Tương tác người dùng → Xếp hạng → Đánh giá (Chạy thời gian thực/Online).\n Các khái niệm như crawling chỉ là nhánh con của Indexing, còn ranking là nhánh con của Query process.",
+    "image_path": "src/Slide_037.png"
+  },
+  {
+    "id": "seg_fe_038",
+    "slide": 38,
+    "is_info": false,
+    "topic": "Chương 4: Processing Text (Mục 4.3: Document parsing: Tokenizing).",
+    "question": "Which language typically requires segmentation in tokenization because words are not whitespace-delimited?",
+    "vn_question": "",
+    "options": [
+      "English",
+      "Vietnamese",
+      "Chinese",
+      "German"
+    ],
+    "vn_options": [],
+    "correct": 2,
+    "answer": 2,
+    "correct_letter": "C",
+    "correct_letters": [
+      "C"
+    ],
+    "correct_choices": [
+      2
+    ],
+    "is_multi": false,
+    "required_choices": 1,
+    "explanation": "Tiếng Anh, tiếng Đức và tiếng Việt đều sử dụng khoảng trắng (whitespace) để phân tách các âm tiết/từ vựng cơ bản.\nTiếng Trung (Chinese) (và tiếng Nhật) là ví dụ kinh điển trong xử lý ngôn ngữ tự nhiên: Các ký tự viết liền kề nhau mà hoàn toàn không có khoảng trắng để báo hiệu ranh giới từ. Do đó, search engine bắt buộc phải chạy thuật toán Word Segmentation (Phân đoạn từ) (dùng từ điển hoặc mô hình xác suất HMM/CRF) trước khi tokenize.",
+    "image_path": "src/Slide_038.png"
+  },
+  {
+    "id": "seg_fe_039",
+    "slide": 39,
+    "is_info": false,
+    "topic": "Chương 6: Queries and Interfaces (Mục 6.3: Relevance Feedback - Rocchio Algorithm).",
+    "question": "Which feedback method moves the query vector closer to relevant documents?",
+    "vn_question": "",
+    "options": [
+      "Rocchio",
+      "HITS",
+      "PageRank",
+      "AdaRank"
+    ],
+    "vn_options": [],
+    "correct": 0,
+    "answer": 0,
+    "correct_letter": "A",
+    "correct_letters": [
+      "A"
+    ],
+    "correct_choices": [
+      0
+    ],
+    "is_multi": false,
+    "required_choices": 1,
+    "explanation": "Thuật toán Rocchio (1971) trong Vector Space Model điều chỉnh vector truy vấn q_m theo công thức:\nq_m = α q_0 + \\beta (1 / |D_R|)∑_{d ∈ D_R} d - γ (1 / |D_{NR)|}∑_{d ∈ D_{NR}} d\nThuật toán này cộng thêm trọng số tâm của các tài liệu liên quan (D_R) và trừ đi trọng số tâm của các tài liệu không liên quan (D_{NR}), giúp kéo vector truy vấn lại gần các tài liệu liên quan hơn trong không gian vector.\n HITS và PageRank là thuật toán đồ thị liên kết (Chương 4); AdaRank là thuật toán học máy xếp hạng (Chương 7).",
+    "image_path": "src/Slide_039.png"
+  },
+  {
+    "id": "seg_fe_040",
+    "slide": 40,
+    "is_info": false,
+    "topic": "Chương 7: Retrieval Models (Mục 7.1: Boolean Retrieval).",
+    "question": "Which operators are typically used in Boolean retrieval?",
+    "vn_question": "",
+    "options": [
+      "Addition, subtraction, multiplication",
+      "AND, OR, NOT",
+      "Addition, subtraction,",
+      "AND, OR, Addition, subtraction"
+    ],
+    "vn_options": [],
+    "correct": 1,
+    "answer": 1,
+    "correct_letter": "B",
+    "correct_letters": [
+      "B"
+    ],
+    "correct_choices": [
+      1
+    ],
+    "is_multi": false,
+    "required_choices": 1,
+    "explanation": "Mô hình tìm kiếm Boolean cổ điển (Exact Match) dựa trên đại số logic Boolean, sử dụng 3 toán tử cơ bản:\nAND: Giao (cả hai điều kiện đều thỏa mãn).\nOR: Hợp (ít nhất một điều kiện thỏa mãn).\nNOT: Phủ định / loại trừ.\nKiến thức cốt lõi cần nhớ:\n Ưu điểm của Boolean Retrieval: Rất dễ hiểu và kiểm soát cho chuyên gia (thư viện, luật sư).\nNhược điểm: Không có cơ chế xếp hạng độ liên quan mềm (Feast or Famine - kết quả trả về hoặc quá nhiều, hoặc bằng 0).",
+    "image_path": "src/Slide_040.png"
+  },
+  {
+    "id": "seg_fe_041",
+    "slide": 41,
+    "is_info": false,
+    "topic": "Chương 7: Retrieval Models (Mục 7.1: Vector Space Model).",
+    "question": "Cosine similarity is usually computed between:",
+    "vn_question": "",
+    "options": [
+      "Raw term counts",
+      "Binary vectors",
+      "L2-normalized TF-IDF vectors",
+      "PageRank values"
+    ],
+    "vn_options": [],
+    "correct": 2,
+    "answer": 2,
+    "correct_letter": "C",
+    "correct_letters": [
+      "C"
+    ],
+    "correct_choices": [
+      2
+    ],
+    "is_multi": false,
+    "required_choices": 1,
+    "explanation": "Độ tương đồng Cosine đo góc giữa hai vector:\ncos(\\theta) = (vec(d) · vec(q) / \\|vec(d)\\|_2 \\|vec(q)\\|_2)\nTrong các hệ thống IR thực tế, việc tính độ dài vector ở mẫu số tại mỗi truy vấn runtime rất tốn kém. Do đó, người ta tính trước các trọng số TF-IDF và chuẩn hóa theo chuẩn Euclid (L2-norm, \\|vec(v)\\|_2 = 1) trong lúc offline. Khi đó, Cosine similarity thu gọn lại thành phép nhân tích vô hướng (Dot product) cực nhanh giữa các L2-normalized TF-IDF vectors.",
+    "image_path": "src/Slide_041.png"
+  },
+  {
+    "id": "seg_fe_042",
+    "slide": 42,
+    "is_info": false,
+    "topic": "Chương 1: Information Retrieval and Search Engines & Chương 9: Evaluating Search Engines (Mục 9.1: Evaluation Corpus).",
+    "question": "In IR, the set of documents we search over is commonly called the:",
+    "vn_question": "",
+    "options": [
+      "Ledger",
+      "Registry",
+      "Corpus",
+      "Cache"
+    ],
+    "vn_options": [],
+    "correct": 2,
+    "answer": 2,
+    "correct_letter": "C",
+    "correct_letters": [
+      "C"
+    ],
+    "correct_choices": [
+      2
+    ],
+    "is_multi": false,
+    "required_choices": 1,
+    "explanation": "Trong Khoa học Thu nhận Thông tin (IR) và Xử lý Ngôn ngữ Tự nhiên (NLP), toàn bộ tập hợp các tài liệu văn bản mà hệ thống lưu trữ và tìm kiếm trên đó được gọi là Corpus (hoặc Document Collection).\nKiến thức cốt lõi cần nhớ:\nMột bộ kiểm thử IR chuẩn (Standard Test Collection) gồm 3 thành phần:\n1. Corpus: Tập hợp tài liệu.\n2. Queries: Tập các câu truy vấn mẫu đại diện cho nhu cầu thông tin.\n3. Relevance Judgments (Qrels): Bảng nhãn đánh giá tài liệu nào liên quan tới query nào do chuyên gia gán nhãn.",
+    "image_path": "src/Slide_042.png"
+  },
+  {
+    "id": "seg_fe_043",
+    "slide": 43,
+    "is_info": false,
+    "topic": "Search Engines & Information Retrieval",
+    "question": "Which two user actions, apart from clickthroughs, have been identified as good predictors of relevance in search engine evaluation?",
+    "vn_question": "",
+    "options": [
+      "Scrolling and zooming",
+      "Page dwell time and search exit action",
+      "Bookmarking and sharing",
+      "Downloading and liking"
+    ],
+    "vn_options": [],
+    "correct": 1,
+    "answer": 1,
+    "correct_letter": "B",
+    "correct_letters": [
+      "B"
+    ],
+    "correct_choices": [
+      1
+    ],
+    "is_multi": false,
+    "required_choices": 1,
+    "explanation": "Đáp án chuẩn là B. Dựa trên giáo trình Search Engines: Information Retrieval in Practice (Bruce Croft).",
+    "image_path": "src/Slide_043.png"
+  },
+  {
+    "id": "seg_fe_044",
+    "slide": 44,
+    "is_info": false,
+    "topic": "Search Engines & Information Retrieval",
+    "question": "What is the main function of a sitemap provided to search engines?",
+    "vn_question": "",
+    "options": [
+      "Help discover site URLs more efficiently",
+      "Block unwanted crawling paths",
+      "Improve keyword ranking directly",
+      "Compress duplicate content"
+    ],
+    "vn_options": [],
+    "correct": 0,
+    "answer": 0,
+    "correct_letter": "A",
+    "correct_letters": [
+      "A"
+    ],
+    "correct_choices": [
+      0
+    ],
+    "is_multi": false,
+    "required_choices": 1,
+    "explanation": "Đáp án chuẩn là A. Dựa trên giáo trình Search Engines: Information Retrieval in Practice (Bruce Croft).",
+    "image_path": "src/Slide_044.png"
+  },
+  {
+    "id": "seg_fe_045",
+    "slide": 45,
+    "is_info": false,
+    "topic": "Search Engines & Information Retrieval",
+    "question": "What is the main function of a sitemap provided to search engines?",
+    "vn_question": "",
+    "options": [
+      "Help discover site URLs more efficiently",
+      "Block unwanted crawling paths",
+      "Improve keyword ranking directly",
+      "Compress duplicate content"
+    ],
+    "vn_options": [],
+    "correct": 0,
+    "answer": 0,
+    "correct_letter": "A",
+    "correct_letters": [
+      "A"
+    ],
+    "correct_choices": [
+      0
+    ],
+    "is_multi": false,
+    "required_choices": 1,
+    "explanation": "Đáp án chuẩn là A. Dựa trên giáo trình Search Engines: Information Retrieval in Practice (Bruce Croft).",
+    "image_path": "src/Slide_045.png"
+  },
+  {
+    "id": "seg_fe_046",
+    "slide": 46,
+    "is_info": false,
+    "topic": "Search Engines & Information Retrieval",
+    "question": "Lowercasing and accent stripping are examples of which text processing step?",
+    "vn_question": "",
+    "options": [
+      "Stemming",
+      "Stopping",
+      "Normalization",
+      "Lemmatization"
+    ],
+    "vn_options": [],
+    "correct": 2,
+    "answer": 2,
+    "correct_letter": "C",
+    "correct_letters": [
+      "C"
+    ],
+    "correct_choices": [
+      2
+    ],
+    "is_multi": false,
+    "required_choices": 1,
+    "explanation": "Đáp án chuẩn là C. Dựa trên giáo trình Search Engines: Information Retrieval in Practice (Bruce Croft).",
+    "image_path": "src/Slide_046.png"
+  },
+  {
+    "id": "seg_fe_047",
+    "slide": 47,
+    "is_info": false,
+    "topic": "Search Engines & Information Retrieval",
+    "question": "Lowercasing and accent stripping are examples of which text processing step?",
+    "vn_question": "",
+    "options": [
+      "Stemming",
+      "Stopping",
+      "Normalization",
+      "Lemmatization"
+    ],
+    "vn_options": [],
+    "correct": 2,
+    "answer": 2,
+    "correct_letter": "C",
+    "correct_letters": [
+      "C"
+    ],
+    "correct_choices": [
+      2
+    ],
+    "is_multi": false,
+    "required_choices": 1,
+    "explanation": "Đáp án chuẩn là C. Dựa trên giáo trình Search Engines: Information Retrieval in Practice (Bruce Croft).",
+    "image_path": "src/Slide_047.png"
+  },
+  {
+    "id": "seg_fe_048",
+    "slide": 48,
+    "is_info": true,
+    "topic": "Slide phân mục",
+    "question": "Caulhung binh",
+    "vn_question": "",
+    "options": [],
+    "vn_options": [],
+    "correct": 0,
+    "answer": 0,
+    "correct_letter": "A",
+    "correct_letters": [
+      "A"
+    ],
+    "correct_choices": [
+      0
+    ],
+    "is_multi": false,
+    "required_choices": 1,
+    "explanation": "Slide phân mục hoặc tiêu đề chương.",
+    "image_path": "src/Slide_048.png"
+  },
+  {
+    "id": "seg_fe_049",
+    "slide": 49,
+    "is_info": true,
+    "topic": "Slide phân mục",
+    "question": "Caulhung binh",
+    "vn_question": "",
+    "options": [],
+    "vn_options": [],
+    "correct": 0,
+    "answer": 0,
+    "correct_letter": "A",
+    "correct_letters": [
+      "A"
+    ],
+    "correct_choices": [
+      0
+    ],
+    "is_multi": false,
+    "required_choices": 1,
+    "explanation": "Slide phân mục hoặc tiêu đề chương.",
+    "image_path": "src/Slide_049.png"
+  },
+  {
+    "id": "seg_fe_050",
+    "slide": 50,
+    "is_info": false,
+    "topic": "Chương 5: Ranking with Indexes (Mục 5.6: Query Processing - Top-k Retrieval & Optimization).",
+    "question": "What is the minimum score that each document needs to reach before it can be shown to the user?",
+    "vn_question": "",
+    "options": [
+      "The score of the highest scoring document",
+      "The score of the lowest scoring document",
+      "The score of the kth-highest scoring document",
+      "The score of the kth-lowest scoring document"
+    ],
+    "vn_options": [],
+    "correct": 2,
+    "answer": 2,
+    "correct_letter": "C",
+    "correct_letters": [
+      "C"
+    ],
+    "correct_choices": [
+      2
+    ],
+    "is_multi": false,
+    "required_choices": 1,
+    "explanation": "Trong tìm kiếm Top-k (ví dụ hiển thị k = 10 kết quả tốt nhất), hệ thống duy trì một hàng đợi ưu tiên (Min-Heap) kích thước k.\nĐiểm ngưỡng sàn (threshold) để một tài liệu mới có cơ hội lọt vào danh sách Top-k hiển thị cho người dùng chính là điểm số của tài liệu đang đứng ở vị trí thứ k (The score of the k-th highest scoring document). Nếu điểm của tài liệu mới nhỏ hơn ngưỡng này, hệ thống sẽ bỏ qua ngay mà không cần xử lý tiếp.\nKiến thức cốt lõi cần nhớ:\nKỹ thuật WAND (Weak AND) và MaxScore đều dựa trên nguyên lý này: Tận dụng điểm của tài liệu thứ k làm ngưỡng cắt tỉa (pruning threshold) để bỏ qua hàng triệu tài liệu có điểm tiềm năng thấp.",
+    "image_path": "src/Slide_050.png"
+  },
+  {
+    "id": "seg_fe_051",
+    "slide": 51,
+    "is_info": false,
+    "topic": "Chương 3: Crawls and Feeds (Mục 3.2: Crawling the Web - Slide 5).",
+    "question": "What is the biggest challenge of crawling web pages?",
+    "vn_question": "",
+    "options": [
+      "The sheer scale of the Web",
+      "The cost of crawling the Web",
+      "The technical challenges of crawling the Web",
+      "The security of the Web"
+    ],
+    "vn_options": [],
+    "correct": 0,
+    "answer": 0,
+    "correct_letter": "A",
+    "correct_letters": [
+      "A"
+    ],
+    "correct_choices": [
+      0
+    ],
+    "is_multi": false,
+    "required_choices": 1,
+    "explanation": "Theo giáo trình Croft và bài giảng: Thách thức lớn nhất khi thu thập dữ liệu web là Quy mô khổng lồ của Web (The sheer scale of the Web): Hàng chục tỷ trang web tĩnh, hàng trăm tỷ trang web động sinh ra tự động từ cơ sở dữ liệu (Deep Web), cấu trúc đồ thị thay đổi liên tục từng giây và bẫy crawler vô hạn (crawler traps).",
+    "image_path": "src/Slide_051.png"
+  },
+  {
+    "id": "seg_fe_052",
+    "slide": 52,
+    "is_info": false,
+    "topic": "Chương 3: Crawls and Feeds (Mục 3.2: Crawling the Web - Slide 5).",
+    "question": "What is the biggest challenge of crawling web pages?",
+    "vn_question": "",
+    "options": [
+      "The sheer scale of the Web",
+      "The cost of crawling the Web",
+      "The technical challenges of crawling the Web",
+      "The security of the Web"
+    ],
+    "vn_options": [],
+    "correct": 0,
+    "answer": 0,
+    "correct_letter": "A",
+    "correct_letters": [
+      "A"
+    ],
+    "correct_choices": [
+      0
+    ],
+    "is_multi": false,
+    "required_choices": 1,
+    "explanation": "Theo giáo trình Croft và bài giảng: Thách thức lớn nhất khi thu thập dữ liệu web là Quy mô khổng lồ của Web (The sheer scale of the Web): Hàng chục tỷ trang web tĩnh, hàng trăm tỷ trang web động sinh ra tự động từ cơ sở dữ liệu (Deep Web), cấu trúc đồ thị thay đổi liên tục từng giây và bẫy crawler vô hạn (crawler traps).",
+    "image_path": "src/Slide_052.png"
+  },
+  {
+    "id": "seg_fe_053",
+    "slide": 53,
+    "is_info": false,
+    "topic": "Chương 5: Ranking with Indexes (Mục 5.7: Query Processing - Document-at-a-time evaluation - Slide 32).",
+    "question": "What is the score for a document in document-at-a-time retrieval?",
+    "vn_question": "",
+    "options": [
+      "The sum of the word counts in each document",
+      "The number of words in each document",
+      "The number of documents containing each word",
+      "The number of times each word appears in each document"
+    ],
+    "vn_options": [],
+    "correct": 0,
+    "answer": 0,
+    "correct_letter": "A",
+    "correct_letters": [
+      "A"
+    ],
+    "correct_choices": [
+      0
+    ],
+    "is_multi": false,
+    "required_choices": 1,
+    "explanation": "Theo ví dụ mô hình mẫu trong giáo trình Croft & Slide 32 Chương 5:\nTrong phương pháp Document-at-a-time (DAAT), hệ thống duyệt đồng thời qua các danh sách posting của các từ trong query, tính toán trọn vẹn điểm số của từng tài liệu một trước khi chuyển sang tài liệu tiếp theo. Trong mô hình đếm cơ bản, điểm của tài liệu bằng tổng số lần xuất hiện của các từ truy vấn trong tài liệu đó (The sum of the word counts in each document).\nKiến thức cốt lõi cần nhớ:\nDocument-at-a-time (DAAT): Bộ nhớ tiêu tốn rất ít (chỉ cần lưu Top-k heap), nhưng yêu cầu phải mở và đồng bộ con trỏ của tất cả các danh sách posting cùng lúc.\nTerm-at-a-time (TAAT): Đọc hết posting của từ thứ nhất rồi mới sang từ thứ hai, nhưng cần bảng tích lũy (accumulators) lớn trong RAM để lưu điểm tạm của tất cả tài liệu.",
+    "image_path": "src/Slide_053.png"
+  },
+  {
+    "id": "seg_fe_054",
+    "slide": 54,
+    "is_info": false,
+    "topic": "Chương 5: Ranking with Indexes (Mục 5.7: Query Processing - Document-at-a-time evaluation - Slide 32).",
+    "question": "What is the score for a document in document-at-a-time retrieval?",
+    "vn_question": "",
+    "options": [
+      "The sum of the word counts in each document",
+      "The number of words in each document",
+      "The number of documents containing each word",
+      "The number of times each word appears in each document"
+    ],
+    "vn_options": [],
+    "correct": 0,
+    "answer": 0,
+    "correct_letter": "A",
+    "correct_letters": [
+      "A"
+    ],
+    "correct_choices": [
+      0
+    ],
+    "is_multi": false,
+    "required_choices": 1,
+    "explanation": "Theo ví dụ mô hình mẫu trong giáo trình Croft & Slide 32 Chương 5:\nTrong phương pháp Document-at-a-time (DAAT), hệ thống duyệt đồng thời qua các danh sách posting của các từ trong query, tính toán trọn vẹn điểm số của từng tài liệu một trước khi chuyển sang tài liệu tiếp theo. Trong mô hình đếm cơ bản, điểm của tài liệu bằng tổng số lần xuất hiện của các từ truy vấn trong tài liệu đó (The sum of the word counts in each document).\nKiến thức cốt lõi cần nhớ:\nDocument-at-a-time (DAAT): Bộ nhớ tiêu tốn rất ít (chỉ cần lưu Top-k heap), nhưng yêu cầu phải mở và đồng bộ con trỏ của tất cả các danh sách posting cùng lúc.\nTerm-at-a-time (TAAT): Đọc hết posting của từ thứ nhất rồi mới sang từ thứ hai, nhưng cần bảng tích lũy (accumulators) lớn trong RAM để lưu điểm tạm của tất cả tài liệu.",
+    "image_path": "src/Slide_054.png"
+  },
+  {
+    "id": "seg_fe_055",
+    "slide": 55,
+    "is_info": false,
+    "topic": "Chương 5: Ranking with Indexes (Mục 5.7: Query Processing: Optimization techniques - Slide 37).",
+    "question": "What is the primary advantage of conjunctive processing to short queries?",
+    "vn_question": "",
+    "options": [
+      "It improves effectiveness and efficiency simultaneously",
+      "It is more flexible than other query optimization techniques",
+      "It is more accurate than other query optimization techniques",
+      "It is more efficient than other query optimization techniques"
+    ],
+    "vn_options": [],
+    "correct": 0,
+    "answer": 0,
+    "correct_letter": "A",
+    "correct_letters": [
+      "A"
+    ],
+    "correct_choices": [
+      0
+    ],
+    "is_multi": false,
+    "required_choices": 1,
+    "explanation": "Conjunctive processing (Xử lý liên hiệp / Phép AND): Bắt buộc tài liệu phải chứa đầy đủ tất cả các từ khóa trong câu truy vấn ngắn.\nLợi thế cốt lõi là đồng thời nâng cao cả độ hiệu quả (Effectiveness) lẫn hiệu năng (Efficiency):\n1. Efficiency (Hiệu năng): Vì chỉ tính điểm cho các tài liệu nằm ở phần giao nhau (intersection) của các danh sách posting, số lượng tài liệu cần chấm điểm giảm đi từ hàng triệu xuống chỉ còn vài nghìn → Tốc độ tìm kiếm tăng vọt.\n2. Effectiveness (Độ chính xác/hiệu quả): Loại bỏ các tài liệu rác chỉ chứa 1 từ khóa ngẫu nhiên, đảm bảo các kết quả trả về đều bám sát đúng chủ đề mà người dùng tìm kiếm.",
+    "image_path": "src/Slide_055.png"
+  },
+  {
+    "id": "seg_fe_056",
+    "slide": 56,
+    "is_info": false,
+    "topic": "Chương 5: Ranking with Indexes (Mục 5.7: Query Processing - Document-at-a-time evaluation - Slide 32).",
+    "question": "What is the score for a document in document-at-a-time retrieval?",
+    "vn_question": "",
+    "options": [
+      "The sum of the word counts in each document",
+      "The number of words in each document",
+      "The number of documents containing each word",
+      "The number of times each word appears in each document"
+    ],
+    "vn_options": [],
+    "correct": 0,
+    "answer": 0,
+    "correct_letter": "A",
+    "correct_letters": [
+      "A"
+    ],
+    "correct_choices": [
+      0
+    ],
+    "is_multi": false,
+    "required_choices": 1,
+    "explanation": "Theo ví dụ mô hình mẫu trong giáo trình Croft & Slide 32 Chương 5:\nTrong phương pháp Document-at-a-time (DAAT), hệ thống duyệt đồng thời qua các danh sách posting của các từ trong query, tính toán trọn vẹn điểm số của từng tài liệu một trước khi chuyển sang tài liệu tiếp theo. Trong mô hình đếm cơ bản, điểm của tài liệu bằng tổng số lần xuất hiện của các từ truy vấn trong tài liệu đó (The sum of the word counts in each document).\nKiến thức cốt lõi cần nhớ:\nDocument-at-a-time (DAAT): Bộ nhớ tiêu tốn rất ít (chỉ cần lưu Top-k heap), nhưng yêu cầu phải mở và đồng bộ con trỏ của tất cả các danh sách posting cùng lúc.\nTerm-at-a-time (TAAT): Đọc hết posting của từ thứ nhất rồi mới sang từ thứ hai, nhưng cần bảng tích lũy (accumulators) lớn trong RAM để lưu điểm tạm của tất cả tài liệu.",
+    "image_path": "src/Slide_056.png"
+  },
+  {
+    "id": "seg_fe_057",
+    "slide": 57,
+    "is_info": false,
+    "topic": "Chương 5: Ranking with Indexes (Mục 5.7: Query Processing - Document-at-a-time evaluation - Slide 32).",
+    "question": "What is the order of scoring documents in document-at-a-time retrieval?",
+    "vn_question": "",
+    "options": [
+      "Random",
+      "By the number of words in each document",
+      "By the number of documents containing each word",
+      "Sequentially, starting with the first document"
+    ],
+    "vn_options": [],
+    "correct": 3,
+    "answer": 3,
+    "correct_letter": "D",
+    "correct_letters": [
+      "D"
+    ],
+    "correct_choices": [
+      3
+    ],
+    "is_multi": false,
+    "required_choices": 1,
+    "explanation": "Trong cấu trúc chỉ mục đảo (Inverted Index), danh sách posting của mỗi từ luôn được sắp xếp tăng dần theo mã định danh tài liệu (docID).\nThuật toán Document-at-a-time (DAAT) đồng bộ các con trỏ và tính toán điểm trọn vẹn cho từng tài liệu một theo thứ tự tuần tự tăng dần của docID, bắt đầu từ tài liệu đầu tiên có mã nhỏ nhất (Sequentially, starting with the first document) rồi duyệt tiếp tới cuối.",
+    "image_path": "src/Slide_057.png"
+  },
+  {
+    "id": "seg_fe_058",
+    "slide": 58,
+    "is_info": false,
+    "topic": "Chương 8: Search Engine Optimization (SEO) (Mục 8.5: Off-Page SEO - Slide 15 & 16).",
+    "question": "What is the main goal of off-page SEO efforts?",
+    "vn_question": "",
+    "options": [
+      "Increasing the number of keywords in your content",
+      "Improving the website's on-page elements",
+      "Enhancing your website's authority, credibility, and popularity",
+      "Optimizing meta tags and headers on your website"
+    ],
+    "vn_options": [],
+    "correct": 2,
+    "answer": 2,
+    "correct_letter": "C",
+    "correct_letters": [
+      "C"
+    ],
+    "correct_choices": [
+      2
+    ],
+    "is_multi": false,
+    "required_choices": 1,
+    "explanation": "Off-page SEO bao gồm các hoạt động diễn ra bên ngoài trang web (xây dựng mạng lưới Backlinks chất lượng, quan hệ truyền thông số Digital PR, tín hiệu mạng xã hội). Mục tiêu tối thượng của Off-Page SEO là nâng cao thẩm quyền (Authority), độ tin cậy (Credibility) và độ phổ biến (Popularity) của trang trong mắt công cụ tìm kiếm.\nCác phương án A, B, D đều là công việc thuộc phạm vi của On-page SEO.",
+    "image_path": "src/Slide_058.png"
+  },
+  {
+    "id": "seg_fe_059",
+    "slide": 59,
+    "is_info": false,
+    "topic": "Chương 8: Search Engine Optimization (SEO) (Mục 8.5: Off-Page SEO - Slide 15 & 16).",
+    "question": "What is the main goal of off-page SEO efforts?",
+    "vn_question": "",
+    "options": [
+      "Increasing the number of keywords in your content",
+      "Improving the website's on-page elements",
+      "Enhancing your website's authority, credibility, and popularity",
+      "Optimizing meta tags and headers on your website"
+    ],
+    "vn_options": [],
+    "correct": 2,
+    "answer": 2,
+    "correct_letter": "C",
+    "correct_letters": [
+      "C"
+    ],
+    "correct_choices": [
+      2
+    ],
+    "is_multi": false,
+    "required_choices": 1,
+    "explanation": "Off-page SEO bao gồm các hoạt động diễn ra bên ngoài trang web (xây dựng mạng lưới Backlinks chất lượng, quan hệ truyền thông số Digital PR, tín hiệu mạng xã hội). Mục tiêu tối thượng của Off-Page SEO là nâng cao thẩm quyền (Authority), độ tin cậy (Credibility) và độ phổ biến (Popularity) của trang trong mắt công cụ tìm kiếm.\nCác phương án A, B, D đều là công việc thuộc phạm vi của On-page SEO.",
+    "image_path": "src/Slide_059.png"
+  },
+  {
+    "id": "seg_fe_060",
+    "slide": 60,
+    "is_info": false,
+    "topic": "Chương 9: Evaluating Search Engines (Mục 9.3: Logging - Click Logs - Slide 8 & 9).",
+    "question": "What is one key advantage of clickthrough data in the log when evaluating search engine?",
+    "vn_question": "",
+    "options": [
+      "It has a low correlation with explicit judgments of relevance",
+      "It is rarely used in training or evaluating search engines",
+      "It provides highly detailed information about user interaction",
+      "It is not correlated with relevance judgments"
+    ],
+    "vn_options": [],
+    "correct": 2,
+    "answer": 2,
+    "correct_letter": "C",
+    "correct_letters": [
+      "C"
+    ],
+    "correct_choices": [
+      2
+    ],
+    "is_multi": false,
+    "required_choices": 1,
+    "explanation": "Dữ liệu nhấp chuột (Clickthrough data) trong Query log thu thập trực tiếp từ hàng triệu người dùng thực tế với chi phí gần như bằng 0 (so với thuê chuyên gia gán nhãn thủ công). Nó cung cấp thông tin chi tiết, phong phú về hành vi tương tác thực tế của người dùng (Detailed information about user interaction) như: vị trí click, thời gian dừng đọc trang (dwell time), hành vi quay lại tìm kiếm tiếp (pogo-sticking).\n Các phát biểu A, B, D đều sai (Click data được dùng rất nhiều trong thực tế và có độ tương quan mạnh với mức độ thỏa mãn của người dùng).",
+    "image_path": "src/Slide_060.png"
+  },
+  {
+    "id": "seg_fe_061",
+    "slide": 61,
+    "is_info": false,
+    "topic": "Chương 9: Evaluating Search Engines (Mục 9.3: Logging - Click Logs - Slide 8 & 9).",
+    "question": "What is one key advantage of clickthrough data in the log when evaluating search engine?",
+    "vn_question": "",
+    "options": [
+      "It has a low correlation with explicit judgments of relevance",
+      "It is rarely used in training or evaluating search engines",
+      "It provides highly detailed information about user interaction",
+      "It is not correlated with relevance judgments"
+    ],
+    "vn_options": [],
+    "correct": 2,
+    "answer": 2,
+    "correct_letter": "C",
+    "correct_letters": [
+      "C"
+    ],
+    "correct_choices": [
+      2
+    ],
+    "is_multi": false,
+    "required_choices": 1,
+    "explanation": "Dữ liệu nhấp chuột (Clickthrough data) trong Query log thu thập trực tiếp từ hàng triệu người dùng thực tế với chi phí gần như bằng 0 (so với thuê chuyên gia gán nhãn thủ công). Nó cung cấp thông tin chi tiết, phong phú về hành vi tương tác thực tế của người dùng (Detailed information about user interaction) như: vị trí click, thời gian dừng đọc trang (dwell time), hành vi quay lại tìm kiếm tiếp (pogo-sticking).\n Các phát biểu A, B, D đều sai (Click data được dùng rất nhiều trong thực tế và có độ tương quan mạnh với mức độ thỏa mãn của người dùng).",
+    "image_path": "src/Slide_061.png"
+  },
+  {
+    "id": "seg_fe_062",
+    "slide": 62,
+    "is_info": false,
+    "topic": "Chương 3: Crawls and Feeds (Mục 3.2: Crawling the Web: The Web Crawler - Network Protocols).",
+    "question": "What is the purpose of a port in a network?",
+    "vn_question": "",
+    "options": [
+      "To translate a hostname into an IP address",
+      "To identify a particular service on a server computer",
+      "To store web pages that have been downloaded",
+      "To send requests for web pages to a server computer"
+    ],
+    "vn_options": [],
+    "correct": 1,
+    "answer": 1,
+    "correct_letter": "B",
+    "correct_letters": [
+      "B"
+    ],
+    "correct_choices": [
+      1
+    ],
+    "is_multi": false,
+    "required_choices": 1,
+    "explanation": "Khi Crawler kết nối tới một máy chủ mạng:\nIP Address: Định danh máy tính (host) trên mạng Internet.\nPort (Cổng kết nối): Định danh một tiến trình hoặc dịch vụ cụ thể đang chạy trên máy chủ đó (ví dụ: cổng 80 cho dịch vụ HTTP, cổng 443 cho HTTPS).\nLoại trừ: Phương án A là chức năng của DNS (Domain Name System), C là chức năng của Cache/Document Store, D là chức năng của Crawler/HTTP Client.",
+    "image_path": "src/Slide_062.png"
+  },
+  {
+    "id": "seg_fe_063",
+    "slide": 63,
+    "is_info": false,
+    "topic": "Chương 2: Architecture of A Search Engine (Mục 2.2: Building blocks - The Indexing Process).",
+    "question": "What are the major components of the indexing process in search engine components?",
+    "vn_question": "",
+    "options": [
+      "Text acquisition, text transformation, and index creation",
+      "Text acquisition, text transformation, and query processing",
+      "Text acquisition, query processing, and index creation",
+      "Text transformation, query processing, and index creation"
+    ],
+    "vn_options": [],
+    "correct": 0,
+    "answer": 0,
+    "correct_letter": "A",
+    "correct_letters": [
+      "A"
+    ],
+    "correct_choices": [
+      0
+    ],
+    "is_multi": false,
+    "required_choices": 1,
+    "explanation": "Kiến trúc một Search Engine trong giáo trình Croft chia làm 2 tiến trình lớn:\n1. The Indexing Process (Tiến trình lập chỉ mục - Offline) gồm 3 khối:\nText acquisition: Thu thập văn bản (Crawler, Feeds, Conversion, Document Data Store).\nText transformation: Tiền xử lý văn bản (Parser, Stopper, Stemmer, Link Analysis, Information Extraction).\nIndex creation: Tạo chỉ mục đảo (Document Statistics, Weighting, Inversion, Index Distribution).\n2. The Query Process (Tiến trình xử lý truy vấn - Online): Gồm User Interaction, Ranking, và Evaluation.\nDo đó, các đáp án chứa Query processing (B, C, D) đều thuộc Query Process, không nằm trong Indexing Process.\nKiến thức cốt lõi cần nhớ:\nHãy nhớ sơ đồ luồng dữ liệu 3 bước của Indexing: Thu thập (Acquisition) → Biến đổi (Transformation) → Lập chỉ mục (Index Creation).",
+    "image_path": "src/Slide_063.png"
+  },
+  {
+    "id": "seg_fe_064",
+    "slide": 64,
+    "is_info": false,
+    "topic": "Chương 2: Architecture of A Search Engine (Mục 2.2: Building blocks - The Indexing Process).",
+    "question": "What are the major components of the indexing process in search engine components?",
+    "vn_question": "",
+    "options": [
+      "Text acquisition, text transformation, and index creation",
+      "Text acquisition, text transformation, and query processing",
+      "Text acquisition, query processing, and index creation",
+      "Text transformation, query processing, and index creation"
+    ],
+    "vn_options": [],
+    "correct": 0,
+    "answer": 0,
+    "correct_letter": "A",
+    "correct_letters": [
+      "A"
+    ],
+    "correct_choices": [
+      0
+    ],
+    "is_multi": false,
+    "required_choices": 1,
+    "explanation": "Kiến trúc một Search Engine trong giáo trình Croft chia làm 2 tiến trình lớn:\n1. The Indexing Process (Tiến trình lập chỉ mục - Offline) gồm 3 khối:\nText acquisition: Thu thập văn bản (Crawler, Feeds, Conversion, Document Data Store).\nText transformation: Tiền xử lý văn bản (Parser, Stopper, Stemmer, Link Analysis, Information Extraction).\nIndex creation: Tạo chỉ mục đảo (Document Statistics, Weighting, Inversion, Index Distribution).\n2. The Query Process (Tiến trình xử lý truy vấn - Online): Gồm User Interaction, Ranking, và Evaluation.\nDo đó, các đáp án chứa Query processing (B, C, D) đều thuộc Query Process, không nằm trong Indexing Process.\nKiến thức cốt lõi cần nhớ:\nHãy nhớ sơ đồ luồng dữ liệu 3 bước của Indexing: Thu thập (Acquisition) → Biến đổi (Transformation) → Lập chỉ mục (Index Creation).",
+    "image_path": "src/Slide_064.png"
+  },
+  {
+    "id": "seg_fe_065",
+    "slide": 65,
+    "is_info": false,
+    "topic": "Chương 8: Search Engine Optimization (SEO) (Mục 8.6: Technical SEO - Slide 18 & 19).",
+    "question": "What does technical search engine optimization primarily aim to achieve in relation to search engines?",
+    "vn_question": "",
+    "options": [
+      "Enhancing the loading speed of a website",
+      "Making content more challenging to understand",
+      "Facilitating search engine access, understanding, and indexing",
+      "Increasing the number of backlinks to a website"
+    ],
+    "vn_options": [],
+    "correct": 2,
+    "answer": 2,
+    "correct_letter": "C",
+    "correct_letters": [
+      "C"
+    ],
+    "correct_choices": [
+      2
+    ],
+    "is_multi": false,
+    "required_choices": 1,
+    "explanation": "Định nghĩa chuẩn của Technical SEO là việc tối ưu hóa hạ tầng kỹ thuật của trang web và máy chủ nhằm mục đích: Tạo điều kiện thuận lợi nhất để bot tìm kiếm (crawlers) có thể truy cập (access/crawl), thấu hiểu nội dung (understand/render) và lập chỉ mục (indexing).\n Tốc độ tải trang (A) chỉ là một phần nhỏ trong Technical SEO; còn Backlinks (D) thuộc về Off-page SEO.",
+    "image_path": "src/Slide_065.png"
+  },
+  {
+    "id": "seg_fe_066",
+    "slide": 66,
+    "is_info": false,
+    "topic": "Chương 6: Queries and Interfaces (Mục 6.2: Query Expansion).",
+    "question": "Which of the following is the key to effective query expansion?",
+    "vn_question": "",
+    "options": [
+      "Choosing words that are appropriate for the context of the query",
+      "Adding many documents to the initial dataset",
+      "Expanding the query with as many related terms as possible",
+      "None of the above"
+    ],
+    "vn_options": [],
+    "correct": 0,
+    "answer": 0,
+    "correct_letter": "A",
+    "correct_letters": [
+      "A"
+    ],
+    "correct_choices": [
+      0
+    ],
+    "is_multi": false,
+    "required_choices": 1,
+    "explanation": "Chìa khóa quyết định sự thành bại của kỹ thuật mở rộng truy vấn (Query Expansion) là phải chọn được những từ vựng phù hợp với đúng ngữ cảnh của câu truy vấn (Appropriate for the context of the query).\nCảnh báo bẫy thi: Nếu chọn C (thêm càng nhiều từ liên quan càng tốt), hệ thống sẽ gặp thảm họa Query Drift (Hiện tượng trôi dạt truy vấn)  làm loãng nội dung gốc và khiến độ chính xác (Precision) giảm mạnh (ví dụ: query \"Apple\" bị mở rộng bừa bãi thành \"pie, orchard, fruit\" trong khi người dùng đang muốn mua điện thoại iPhone).",
+    "image_path": "src/Slide_066.png"
+  },
+  {
+    "id": "seg_fe_067",
+    "slide": 67,
+    "is_info": false,
+    "topic": "Chương 8: Search Engine Optimization (SEO) (Mục 8.4: On-Page SEO - Slide 13).",
+    "question": "Which elements are typically optimized in the process of on-page SEO for content?",
+    "vn_question": "",
+    "options": [
+      "Website design and layout",
+      "Video and multimedia elements",
+      "Content, Keywords, Meta Tags, and Headers",
+      "Social media engagement and shares"
+    ],
+    "vn_options": [],
+    "correct": 2,
+    "answer": 2,
+    "correct_letter": "C",
+    "correct_letters": [
+      "C"
+    ],
+    "correct_choices": [
+      2
+    ],
+    "is_multi": false,
+    "required_choices": 1,
+    "explanation": "Tiêu đề chính thức của Slide 13 Chương 8 nêu rõ: \"On-Page SEO: Optimization of Content, Keywords, Meta Tags, and Headers\".\nĐây là 4 thành tố hạt nhân trên trang mà quản trị viên web cần tối ưu hóa để bot tìm kiếm hiểu rõ ngữ nghĩa chủ đề của bài viết. Phương án D là tín hiệu Off-page/Social, A thuộc về UI/UX Design.",
+    "image_path": "src/Slide_067.png"
+  },
+  {
+    "id": "seg_fe_068",
+    "slide": 68,
+    "is_info": false,
+    "topic": "Chương 4: Processing Text (Stopping & Stemming)",
+    "question": "Which is the most reasonable query term weights of the query \"what are the popular programming languages and a programming frameworks\"?",
+    "vn_question": "",
+    "options": [
+      "<popular 1, program 1, language 1, framework 1>",
+      "<popular 1, program 2, language 1, framework 1>",
+      "<programming 2, languages 1, frameworks 1>",
+      "<popular 1, programming 2, languages 1, frameworks 1>"
+    ],
+    "vn_options": [],
+    "correct": 1,
+    "answer": 1,
+    "correct_letter": "B",
+    "correct_letters": [
+      "B"
+    ],
+    "correct_choices": [
+      1
+    ],
+    "is_multi": false,
+    "required_choices": 1,
+    "explanation": "Sau bước Stopping (loại bỏ \"what\", \"are\", \"the\", \"and\", \"a\") và Stemming (\"programming\" -> \"program\" xuất hiện 2 lần, \"languages\" -> \"language\", \"frameworks\" -> \"framework\"), vector trọng số hợp lý nhất là <popular 1, program 2, language 1, framework 1> (Đáp án B).",
+    "image_path": "src/Slide_068.png"
+  },
+  {
+    "id": "seg_fe_069",
+    "slide": 69,
+    "is_info": false,
+    "topic": "Chương 4: Processing Text (Stopping & Stemming)",
+    "question": "Which is the most reasonable query term weights of the query \"what are the popular programming languages and a programming frameworks\"?",
+    "vn_question": "",
+    "options": [
+      "<popular 1, program 1, language 1, framework 1>",
+      "<popular 1, program 2, language 1, framework 1>",
+      "<programming 2, languages 1, frameworks 1>",
+      "<popular 1, programming 2, languages 1, frameworks 1>"
+    ],
+    "vn_options": [],
+    "correct": 1,
+    "answer": 1,
+    "correct_letter": "B",
+    "correct_letters": [
+      "B"
+    ],
+    "correct_choices": [
+      1
+    ],
+    "is_multi": false,
+    "required_choices": 1,
+    "explanation": "Sau bước Stopping (loại bỏ \"what\", \"are\", \"the\", \"and\", \"a\") và Stemming (\"programming\" -> \"program\" xuất hiện 2 lần, \"languages\" -> \"language\", \"frameworks\" -> \"framework\"), vector trọng số hợp lý nhất là <popular 1, program 2, language 1, framework 1> (Đáp án B).",
+    "image_path": "src/Slide_069.png"
+  },
+  {
+    "id": "seg_fe_070",
+    "slide": 70,
+    "is_info": false,
+    "topic": "Chương 8: Search Engine Optimization (SEO) (Mục 8.1 & 8.3: Introduction & Ranking Factors).",
+    "question": "Why is it important for search engine optimizers to know the basic procedures and factor groups of ranking, as mentioned in the text?",
+    "vn_question": "",
+    "options": [
+      "To completely disregard short-term changes in search engines",
+      "To achieve higher visibility for websites in the long term",
+      "To ignore the impact of Google updates on optimization",
+      "To rely solely on a pragmatic approach to SEO"
+    ],
+    "vn_options": [],
+    "correct": 1,
+    "answer": 1,
+    "correct_letter": "B",
+    "correct_letters": [
+      "B"
+    ],
+    "correct_choices": [
+      1
+    ],
+    "is_multi": false,
+    "required_choices": 1,
+    "explanation": "Các thuật toán cập nhật của Google thay đổi liên tục hàng ngày, nhưng các nguyên tắc xếp hạng cốt lõi (chất lượng nội dung, độ uy tín tên miền, cấu trúc kỹ thuật) luôn giữ vai trò gốc rễ. Việc nắm vững quy trình cơ bản và các nhóm yếu tố xếp hạng giúp SEOer xây dựng chiến lược bền vững nhằm đạt được thứ hạng hiển thị cao lâu dài cho website (To achieve higher visibility for websites in the long term), thay vì dùng thủ thuật \"mẹo ngắn hạn\" dễ bị phạt.",
+    "image_path": "src/Slide_070.png"
+  },
+  {
+    "id": "seg_fe_071",
+    "slide": 71,
+    "is_info": false,
+    "topic": "Chương 8: Search Engine Optimization (SEO) (Mục 8.1 & 8.3: Introduction & Ranking Factors).",
+    "question": "Why is it important for search engine optimizers to know the basic procedures and factor groups of ranking, as mentioned in the text?",
+    "vn_question": "",
+    "options": [
+      "To completely disregard short-term changes in search engines",
+      "To achieve higher visibility for websites in the long term",
+      "To ignore the impact of Google updates on optimization",
+      "To rely solely on a pragmatic approach to SEO"
+    ],
+    "vn_options": [],
+    "correct": 1,
+    "answer": 1,
+    "correct_letter": "B",
+    "correct_letters": [
+      "B"
+    ],
+    "correct_choices": [
+      1
+    ],
+    "is_multi": false,
+    "required_choices": 1,
+    "explanation": "Các thuật toán cập nhật của Google thay đổi liên tục hàng ngày, nhưng các nguyên tắc xếp hạng cốt lõi (chất lượng nội dung, độ uy tín tên miền, cấu trúc kỹ thuật) luôn giữ vai trò gốc rễ. Việc nắm vững quy trình cơ bản và các nhóm yếu tố xếp hạng giúp SEOer xây dựng chiến lược bền vững nhằm đạt được thứ hạng hiển thị cao lâu dài cho website (To achieve higher visibility for websites in the long term), thay vì dùng thủ thuật \"mẹo ngắn hạn\" dễ bị phạt.",
+    "image_path": "src/Slide_071.png"
+  },
+  {
+    "id": "seg_fe_072",
+    "slide": 72,
+    "is_info": false,
+    "topic": "Chương 2: Architecture of A Search Engine & Chương 3: Crawls and Feeds (Mục 3.5 & 3.6: Conversion problem and Document Storage - Slide 22).",
+    "question": "Why do most search engines require documents to be converted into a consistent text plus metadata format? (select the best answer)",
+    "vn_question": "",
+    "options": [
+      "To make it easier for the search engine to index the documents",
+      "To ensure that the documents are displayed correctly in the search results",
+      "To protect the search engine from malware",
+      "To improve the accuracy of the search results"
+    ],
+    "vn_options": [],
+    "correct": 0,
+    "answer": 0,
+    "correct_letter": "A",
+    "correct_letters": [
+      "A"
+    ],
+    "correct_choices": [
+      0
+    ],
+    "is_multi": false,
+    "required_choices": 1,
+    "explanation": "Thu thập dữ liệu từ Web gặp đủ loại định dạng không đồng nhất: HTML, PDF, DOCX, PPTX, XML,... với các cấu trúc khác nhau.\nSearch engine cần bước Conversion (Chuyển đổi) để quy tất cả về một cấu trúc đồng nhất chuẩn hóa gồm: Text thuần + Metadata. Điều này giúp các mô-đun bóc tách từ vựng (Parser, Tokenizer) và tạo chỉ mục (Indexer) phía sau hoạt động một cách đơn giản, đồng bộ và hiệu quả nhất (To make it easier for the search engine to index the documents).",
+    "image_path": "src/Slide_072.png"
+  },
+  {
+    "id": "seg_fe_073",
+    "slide": 73,
+    "is_info": false,
+    "topic": "Chương 9: Evaluating Search Engines (Mục 9.1: Evaluation Corpus & 9.6: Training, Testing and Statistics).",
+    "question": "Why is it important to fix experimental settings and data for fair comparisons in search engine evaluations?",
+    "vn_question": "",
+    "options": [
+      "To make experiments more challenging and unpredictable",
+      "To encourage the introduction of new techniques without constraints",
+      "To ensure repeatability and fair comparisons between different techniques",
+      "To create a dynamic and ever-changing evaluation environment"
+    ],
+    "vn_options": [],
+    "correct": 2,
+    "answer": 2,
+    "correct_letter": "C",
+    "correct_letters": [
+      "C"
+    ],
+    "correct_choices": [
+      2
+    ],
+    "is_multi": false,
+    "required_choices": 1,
+    "explanation": "Trong khoa học thực nghiệm IR (chuẩn đánh giá Cranfield / TREC): Để so sánh giải thuật A và giải thuật B xem thuật toán nào tốt hơn, người ta bắt buộc phải cố định bộ dữ liệu thực nghiệm (Corpus), tập truy vấn (Queries) và nhãn đúng (Qrels).\nMục đích là để đảm bảo tính lặp lại (Repeatability / Reproducibility) và so sánh công bằng (Fair comparisons). Nếu thay đổi dữ liệu hoặc điều kiện giữa các lần chạy, ta không thể biết sự chênh lệch hiệu năng là do thuật toán cải tiến hay do dữ liệu ngẫu nhiên.",
+    "image_path": "src/Slide_073.png"
+  },
+  {
+    "id": "seg_fe_074",
+    "slide": 74,
+    "is_info": false,
+    "topic": "Chương 9: Evaluating Search Engines (Mục 9.1: Evaluation Corpus & 9.6: Training, Testing and Statistics).",
+    "question": "Why is it important to fix experimental settings and data for fair comparisons in search engine evaluations?",
+    "vn_question": "",
+    "options": [
+      "To make experiments more challenging and unpredictable",
+      "To encourage the introduction of new techniques without constraints",
+      "To ensure repeatability and fair comparisons between different techniques",
+      "To create a dynamic and ever-changing evaluation environment"
+    ],
+    "vn_options": [],
+    "correct": 2,
+    "answer": 2,
+    "correct_letter": "C",
+    "correct_letters": [
+      "C"
+    ],
+    "correct_choices": [
+      2
+    ],
+    "is_multi": false,
+    "required_choices": 1,
+    "explanation": "Trong khoa học thực nghiệm IR (chuẩn đánh giá Cranfield / TREC): Để so sánh giải thuật A và giải thuật B xem thuật toán nào tốt hơn, người ta bắt buộc phải cố định bộ dữ liệu thực nghiệm (Corpus), tập truy vấn (Queries) và nhãn đúng (Qrels).\nMục đích là để đảm bảo tính lặp lại (Repeatability / Reproducibility) và so sánh công bằng (Fair comparisons). Nếu thay đổi dữ liệu hoặc điều kiện giữa các lần chạy, ta không thể biết sự chênh lệch hiệu năng là do thuật toán cải tiến hay do dữ liệu ngẫu nhiên.",
+    "image_path": "src/Slide_074.png"
+  },
+  {
+    "id": "seg_fe_075",
+    "slide": 75,
+    "is_info": false,
+    "topic": "Chương 11: Social Search (Mục 11.2: Searching with Communities & Social Tagging).",
+    "question": "How can tags be used to aid browsing in a large collection of items?",
+    "vn_question": "",
+    "options": [
+      "Tags are used to create a static list of items for users to browse",
+      "Users can click on tags associated with an item to explore related items",
+      "Tags are primarily used for searching and not for browsing",
+      "Browsing is not facilitated by tags"
+    ],
+    "vn_options": [],
+    "correct": 1,
+    "answer": 1,
+    "correct_letter": "B",
+    "correct_letters": [
+      "B"
+    ],
+    "correct_choices": [
+      1
+    ],
+    "is_multi": false,
+    "required_choices": 1,
+    "explanation": "Trong các hệ thống gắn thẻ cộng đồng (Social Bookmarking / Tagging / Tag Cloud): Thẻ (Tags) cho phép người dùng điều hướng phi phân cấp. Khi đang xem một đối tượng bất kỳ, người dùng có thể nhấp vào thẻ được gắn kèm đối tượng đó để lập tức khám phá các đối tượng liên quan khác cùng chia sẻ chung thẻ này (Users can click on tags associated with an item to explore related items).",
+    "image_path": "src/Slide_075.png"
+  },
+  {
+    "id": "seg_fe_076",
+    "slide": 76,
+    "is_info": false,
+    "topic": "Chương 11: Social Search (Mục 11.2: Searching with Communities & Social Tagging).",
+    "question": "How can tags be used to aid browsing in a large collection of items?",
+    "vn_question": "",
+    "options": [
+      "Tags are used to create a static list of items for users to browse",
+      "Users can click on tags associated with an item to explore related items",
+      "Tags are primarily used for searching and not for browsing",
+      "Browsing is not facilitated by tags"
+    ],
+    "vn_options": [],
+    "correct": 1,
+    "answer": 1,
+    "correct_letter": "B",
+    "correct_letters": [
+      "B"
+    ],
+    "correct_choices": [
+      1
+    ],
+    "is_multi": false,
+    "required_choices": 1,
+    "explanation": "Trong các hệ thống gắn thẻ cộng đồng (Social Bookmarking / Tagging / Tag Cloud): Thẻ (Tags) cho phép người dùng điều hướng phi phân cấp. Khi đang xem một đối tượng bất kỳ, người dùng có thể nhấp vào thẻ được gắn kèm đối tượng đó để lập tức khám phá các đối tượng liên quan khác cùng chia sẻ chung thẻ này (Users can click on tags associated with an item to explore related items).",
+    "image_path": "src/Slide_076.png"
+  },
+  {
+    "id": "seg_fe_077",
+    "slide": 77,
+    "is_info": false,
+    "topic": "Chương 9: Evaluating Search Engines (Mục 9.4: Effectiveness Metrics - MAP - Slide 12).",
+    "question": "Mean Average Precision (MAP) is defined as:",
+    "vn_question": "",
+    "options": [
+      "Average of DCG across queries",
+      "Mean of per-query average precision values",
+      "Precision at rank k averaged",
+      "Area under the ROC curve"
+    ],
+    "vn_options": [],
+    "correct": 1,
+    "answer": 1,
+    "correct_letter": "B",
+    "correct_letters": [
+      "B"
+    ],
+    "correct_choices": [
+      1
+    ],
+    "is_multi": false,
+    "required_choices": 1,
+    "explanation": "Theo công thức Slide 12 Chương 9:\nMAP = (1 / |Q|) ∑_{i=1}^{|Q|} AP_i\n Trong đó AP_i là Average Precision (độ chính xác trung bình) của câu truy vấn thứ i.\nDo đó, MAP chính là giá trị trung bình cộng của các giá trị Average Precision tính trên toàn bộ tập câu truy vấn (Mean of per-query average precision values).\nKiến thức cốt lõi cần nhớ:\n MAP là thước đo chuẩn mực vàng (Gold standard) được sử dụng rộng rãi nhất trong các cuộc thi và đánh giá hệ thống tìm kiếm thông tin có nhãn liên quan nhị phân (Binary relevance).",
+    "image_path": "src/Slide_077.png"
+  },
+  {
+    "id": "seg_fe_078",
+    "slide": 78,
+    "is_info": false,
+    "topic": "Search Engines & Information Retrieval",
+    "question": "Why is the harmonic mean considered a better summary of the effectiveness of a retrieved set in specific cases?",
+    "vn_question": "",
+    "options": [
+      "Because it heavily weights large values, making it more accurate",
+      "Because it is always higher than the arithmetic mean",
+      "Because it accounts for the importance of small values",
+      "Because it is more sensitive to the recall and precision values"
+    ],
+    "vn_options": [],
+    "correct": 2,
+    "answer": 2,
+    "correct_letter": "C",
+    "correct_letters": [
+      "C"
+    ],
+    "correct_choices": [
+      2
+    ],
+    "is_multi": false,
+    "required_choices": 1,
+    "explanation": "Đáp án chuẩn là C. Dựa trên giáo trình Search Engines: Information Retrieval in Practice (Bruce Croft).",
+    "image_path": "src/Slide_078.png"
+  },
+  {
+    "id": "seg_fe_079",
+    "slide": 79,
+    "is_info": false,
+    "topic": "Search Engines & Information Retrieval",
+    "question": "Why is the harmonic mean considered a better summary of the effectiveness of a retrieved set in specific cases?",
+    "vn_question": "",
+    "options": [
+      "Because it heavily weights large values, making it more accurate",
+      "Because it is always higher than the arithmetic mean",
+      "Because it accounts for the importance of small values",
+      "Because it is more sensitive to the recall and precision values"
+    ],
+    "vn_options": [],
+    "correct": 2,
+    "answer": 2,
+    "correct_letter": "C",
+    "correct_letters": [
+      "C"
+    ],
+    "correct_choices": [
+      2
+    ],
+    "is_multi": false,
+    "required_choices": 1,
+    "explanation": "Đáp án chuẩn là C. Dựa trên giáo trình Search Engines: Information Retrieval in Practice (Bruce Croft).",
+    "image_path": "src/Slide_079.png"
+  },
+  {
+    "id": "seg_fe_080",
+    "slide": 80,
+    "is_info": false,
+    "topic": "Chương 9: Evaluating Search Engines (Mục 9.3: Logging - Click Logs - Slide 8 & 9).",
+    "question": "What is one key advantage of clickthrough data in the log when evaluating search engine?",
+    "vn_question": "",
+    "options": [
+      "It has a low correlation with explicit judgments of relevance",
+      "It is rarely used in training or evaluating search engines",
+      "It provides highly detailed information about user interaction",
+      "It is not correlated with relevance judgments"
+    ],
+    "vn_options": [],
+    "correct": 2,
+    "answer": 2,
+    "correct_letter": "C",
+    "correct_letters": [
+      "C"
+    ],
+    "correct_choices": [
+      2
+    ],
+    "is_multi": false,
+    "required_choices": 1,
+    "explanation": "Dữ liệu nhấp chuột (Clickthrough data) trong Query log thu thập trực tiếp từ hàng triệu người dùng thực tế với chi phí gần như bằng 0 (so với thuê chuyên gia gán nhãn thủ công). Nó cung cấp thông tin chi tiết, phong phú về hành vi tương tác thực tế của người dùng (Detailed information about user interaction) như: vị trí click, thời gian dừng đọc trang (dwell time), hành vi quay lại tìm kiếm tiếp (pogo-sticking).\n Các phát biểu A, B, D đều sai (Click data được dùng rất nhiều trong thực tế và có độ tương quan mạnh với mức độ thỏa mãn của người dùng).",
+    "image_path": "src/Slide_080.png"
+  },
+  {
+    "id": "seg_fe_081",
+    "slide": 81,
+    "is_info": false,
+    "topic": "Search Engines & Information Retrieval",
+    "question": "What is the reason for not stemming during document indexing?",
+    "vn_question": "",
+    "options": [
+      "To increase the flexibility of the search engi",
+      "To reduce the accuracy of the results",
+      "To make the decision at query time whether or not to stem",
+      "To stem the query words"
+    ],
+    "vn_options": [],
+    "correct": 2,
+    "answer": 2,
+    "correct_letter": "C",
+    "correct_letters": [
+      "C"
+    ],
+    "correct_choices": [
+      2
+    ],
+    "is_multi": false,
+    "required_choices": 1,
+    "explanation": "Đáp án chuẩn là C. Dựa trên giáo trình Search Engines: Information Retrieval in Practice (Bruce Croft).",
+    "image_path": "src/Slide_081.png"
+  },
+  {
+    "id": "seg_fe_082",
+    "slide": 82,
+    "is_info": false,
+    "topic": "Search Engines & Information Retrieval",
+    "question": "What is the reason for not stemming during document indexing?",
+    "vn_question": "",
+    "options": [
+      "To increase the flexibility of the search engi",
+      "To reduce the accuracy of the results",
+      "To make the decision at query time whether or not to stem",
+      "To stem the query words"
+    ],
+    "vn_options": [],
+    "correct": 2,
+    "answer": 2,
+    "correct_letter": "C",
+    "correct_letters": [
+      "C"
+    ],
+    "correct_choices": [
+      2
+    ],
+    "is_multi": false,
+    "required_choices": 1,
+    "explanation": "Đáp án chuẩn là C. Dựa trên giáo trình Search Engines: Information Retrieval in Practice (Bruce Croft).",
+    "image_path": "src/Slide_082.png"
+  },
+  {
+    "id": "seg_fe_083",
+    "slide": 83,
+    "is_info": false,
+    "topic": "Chương 1: Search Engines and Information Retrieval (Trang 29)",
+    "question": "What does the quality of a document ranking depend on?",
+    "vn_question": "",
+    "options": [
+      "How well it matches a person’s expectations",
+      "How well it matches the search engine's expectations",
+      "How well it matches the user's expectations",
+      "How well it matches the ranking algorithm’s expectations"
+    ],
+    "vn_options": [],
+    "correct": 0,
+    "answer": 0,
+    "correct_letter": "A",
+    "correct_letters": [
+      "A"
+    ],
+    "correct_choices": [
+      0
+    ],
+    "is_multi": false,
+    "required_choices": 1,
+    "explanation": "Trích nguyên văn Giáo trình Bruce Croft (Chương 1, trang 29): \"Since the quality of a document ranking depends on how well it matches a person's expectations...\" -> Đáp án chuẩn xác nhất theo giáo trình là A.",
+    "image_path": "src/Slide_083.png"
+  },
+  {
+    "id": "seg_fe_084",
+    "slide": 84,
+    "is_info": false,
+    "topic": "Search Engines & Information Retrieval",
+    "question": "What is the purpose of the text transformation component in information retrieval systems?",
+    "vn_question": "",
+    "options": [
+      "To transform documents into index terms or features",
+      "To rank documents based on their relevance to a query",
+      "To store documents in a way that is efficient for searching",
+      "To extract information from documents"
+    ],
+    "vn_options": [],
+    "correct": 0,
+    "answer": 0,
+    "correct_letter": "A",
+    "correct_letters": [
+      "A"
+    ],
+    "correct_choices": [
+      0
+    ],
+    "is_multi": false,
+    "required_choices": 1,
+    "explanation": "Đáp án chuẩn là A. Dựa trên giáo trình Search Engines: Information Retrieval in Practice (Bruce Croft).",
+    "image_path": "src/Slide_084.png"
+  },
+  {
+    "id": "seg_fe_085",
+    "slide": 85,
+    "is_info": false,
+    "topic": "Search Engines & Information Retrieval",
+    "question": "What is the purpose of the text transformation component in information retrieval systems?",
+    "vn_question": "",
+    "options": [
+      "To transform documents into index terms or features",
+      "To rank documents based on their relevance to a query",
+      "To store documents in a way that is efficient for searching",
+      "To extract information from documents"
+    ],
+    "vn_options": [],
+    "correct": 0,
+    "answer": 0,
+    "correct_letter": "A",
+    "correct_letters": [
+      "A"
+    ],
+    "correct_choices": [
+      0
+    ],
+    "is_multi": false,
+    "required_choices": 1,
+    "explanation": "Đáp án chuẩn là A. Dựa trên giáo trình Search Engines: Information Retrieval in Practice (Bruce Croft).",
+    "image_path": "src/Slide_085.png"
+  },
+  {
+    "id": "seg_fe_086",
+    "slide": 86,
+    "is_info": false,
+    "topic": "Search Engines & Information Retrieval",
+    "question": "What is the primary focus of off-page SEO in contrast to on-page search engine optimization?",
+    "vn_question": "",
+    "options": [
+      "Optimizing elements within your own website",
+      "Enhancing your website's loading speed",
+      "Conducting activities on other websites and platforms",
+      "Improving your website's layout and design"
+    ],
+    "vn_options": [],
+    "correct": 2,
+    "answer": 2,
+    "correct_letter": "C",
+    "correct_letters": [
+      "C"
+    ],
+    "correct_choices": [
+      2
+    ],
+    "is_multi": false,
+    "required_choices": 1,
+    "explanation": "Đáp án chuẩn là C. Dựa trên giáo trình Search Engines: Information Retrieval in Practice (Bruce Croft).",
+    "image_path": "src/Slide_086.png"
+  },
+  {
+    "id": "seg_fe_087",
+    "slide": 87,
+    "is_info": true,
+    "topic": "Slide phân mục",
+    "question": "Slide thông tin tài liệu môn học",
+    "vn_question": "",
+    "options": [],
+    "vn_options": [],
+    "correct": 0,
+    "answer": 0,
+    "correct_letter": "A",
+    "correct_letters": [
+      "A"
+    ],
+    "correct_choices": [
+      0
+    ],
+    "is_multi": false,
+    "required_choices": 1,
+    "explanation": "Slide phân mục hoặc tiêu đề chương.",
+    "image_path": "src/Slide_087.png"
+  },
+  {
+    "id": "seg_fe_088",
+    "slide": 88,
+    "is_info": true,
+    "topic": "Slide phân mục",
+    "question": "C 5 d a",
+    "vn_question": "",
+    "options": [],
+    "vn_options": [],
+    "correct": 0,
+    "answer": 0,
+    "correct_letter": "A",
+    "correct_letters": [
+      "A"
+    ],
+    "correct_choices": [
+      0
+    ],
+    "is_multi": false,
+    "required_choices": 1,
+    "explanation": "Slide phân mục hoặc tiêu đề chương.",
+    "image_path": "src/Slide_088.png"
+  },
+  {
+    "id": "seg_fe_089",
+    "slide": 89,
+    "is_info": true,
+    "topic": "Slide phân mục",
+    "question": "C 5 d a",
+    "vn_question": "",
+    "options": [],
+    "vn_options": [],
+    "correct": 0,
+    "answer": 0,
+    "correct_letter": "A",
+    "correct_letters": [
+      "A"
+    ],
+    "correct_choices": [
+      0
+    ],
+    "is_multi": false,
+    "required_choices": 1,
+    "explanation": "Slide phân mục hoặc tiêu đề chương.",
+    "image_path": "src/Slide_089.png"
+  },
+  {
+    "id": "seg_fe_090",
+    "slide": 90,
+    "is_info": false,
+    "topic": "Chương 11: Social Search (Mục 11.2: Communities and Semantic Web) & Chương 12: Beyond Bag of Words (Mục 12.3: XML and Structured Retrieval).",
+    "question": "What is the primary goal of the semantic web?",
+    "vn_question": "",
+    "options": [
+      "The semantic web aims to restrict the use of metadata tags on web content",
+      "The semantic web intends to limit user-driven tagging on the web",
+      "The semantic web seeks to develop and consistently use standardized metadata tags",
+      "The semantic web aims to prioritize user-driven folksonomies over rigid ontologies"
+    ],
+    "vn_options": [],
+    "correct": 2,
+    "answer": 2,
+    "correct_letter": "C",
+    "correct_letters": [
+      "C"
+    ],
+    "correct_choices": [
+      2
+    ],
+    "is_multi": false,
+    "required_choices": 1,
+    "explanation": "Semantic Web (Web ngữ nghĩa) do Tim Berners-Lee đề xuất với mục tiêu biến Web từ \"nơi chứa tài liệu chỉ cho con người đọc\" thành \"mạng lưới dữ liệu có cấu trúc mà máy móc có thể hiểu và tự động suy luận\".\nMục tiêu tiên quyết của nó là xây dựng và áp dụng nhất quán các thẻ siêu dữ liệu chuẩn hóa (Standardized metadata tags & Ontologies như RDF, OWL, Schema.org) trên toàn bộ nội dung web.",
+    "image_path": "src/Slide_090.png"
+  },
+  {
+    "id": "seg_fe_091",
+    "slide": 91,
+    "is_info": false,
+    "topic": "Chương 11: Social Search (Mục 11.2: Folksonomies vs. Taxonomies).",
+    "question": "What is the key distinction between card catalog generation and social media tagging?",
+    "vn_question": "",
+    "options": [
+      "Card catalogs are generated by non-experts, while social media tagging is done by experts",
+      "Card catalogs use user-generated ontologies, while social media tagging relies on controlled vocabularies",
+      "Card catalogs ensure standardized descriptors, while user tags in social media are not standardized",
+      "Card catalogs form their own descriptions of concepts, while social media tagging uses fixed vocabularies"
+    ],
+    "vn_options": [],
+    "correct": 2,
+    "answer": 2,
+    "correct_letter": "C",
+    "correct_letters": [
+      "C"
+    ],
+    "correct_choices": [
+      2
+    ],
+    "is_multi": false,
+    "required_choices": 1,
+    "explanation": "Mục lục thẻ thư viện (Card Catalog / Taxonomy): Được xây dựng bởi các chuyên gia thủ thư dựa trên bộ từ vựng kiểm soát nghiêm ngặt (Controlled Vocabulary như hệ thống phân loại Dewey) → Đảm bảo tính chuẩn hóa tuyệt đối (Standardized descriptors).\nGắn thẻ mạng xã hội (Social Media Tagging / Folksonomy): Do đông đảo người dùng tự do gắn nhãn theo sở thích cá nhân → Hoàn toàn không theo chuẩn mực nào (Not standardized), chứa nhiều biến thể, tiếng lóng và lỗi chính tả.",
+    "image_path": "src/Slide_091.png"
+  },
+  {
+    "id": "seg_fe_092",
+    "slide": 92,
+    "is_info": false,
+    "topic": "Chương 2: Architecture of A Search Engine (Mục 2.2: Text Transformation - Parser) & Chương 4: Processing Text (Mục 4.4: Document Structure and Markup).",
+    "question": "What is the purpose of the parsing component in information retrieval systems?",
+    "vn_question": "",
+    "options": [
+      "To identify structural elements in documents, such as titles, figures, links, and headings",
+      "To convert documents and queries into a consistent text format",
+      "To rank documents based on their relevance to a query",
+      "To store documents in a way that is efficient for searching"
+    ],
+    "vn_options": [],
+    "correct": 0,
+    "answer": 0,
+    "correct_letter": "A",
+    "correct_letters": [
+      "A"
+    ],
+    "correct_choices": [
+      0
+    ],
+    "is_multi": false,
+    "required_choices": 1,
+    "explanation": "Trong kiến trúc Search Engine, mô-đun Parser (Trình phân tích cú pháp) trong khối Text Transformation có nhiệm vụ: Bóc tách mã nguồn (HTML/XML), loại bỏ thẻ định dạng và nhận diện các thành phần cấu trúc của tài liệu (tiêu đề Title, hình ảnh Figures, liên kết Links, tiêu đề mục Headings H1-H6) để hệ thống có thể gán trọng số xếp hạng riêng cho từng vùng cấu trúc.\n(Phân biệt): Chuyển đổi định dạng tệp (B) là nhiệm vụ của bộ Conversion; Xếp hạng (C) là nhiệm vụ của bộ Ranking; Lưu trữ (D) là nhiệm vụ của Document Data Store.",
+    "image_path": "src/Slide_092.png"
+  },
+  {
+    "id": "seg_fe_093",
+    "slide": 93,
+    "is_info": false,
+    "topic": "Chương 9: Evaluating Search Engines (Mục 9.4: Effectiveness Metrics & Mục 9.5: Efficiency Metrics).",
+    "question": "What is the primary difference between effectiveness and efficiency in search engines evaluation?",
+    "vn_question": "",
+    "options": [
+      "Effectiveness measures how quickly the search engine retrieves information, while efficiency gauges the relevance of the results",
+      "Effectiveness evaluates the search engine's ability to find relevant information, while efficiency assesses how quickly it accomplishes this",
+      "Effectiveness measures the time and space requirements of the algorithm, while efficiency evaluates how well the ranking corresponds to user judgments",
+      "Effectiveness and efficiency are synonymous terms used interchangeably in the evaluation of search engines"
+    ],
+    "vn_options": [],
+    "correct": 1,
+    "answer": 1,
+    "correct_letter": "B",
+    "correct_letters": [
+      "B"
+    ],
+    "correct_choices": [
+      1
+    ],
+    "is_multi": false,
+    "required_choices": 1,
+    "explanation": "Hai khái niệm nền tảng trong đánh giá Search Engine:\nEffectiveness (Độ hiệu quả / Chất lượng): Đánh giá khả năng tìm đúng tài liệu liên quan đáp ứng nhu cầu của người dùng (Đo bằng: Precision, Recall, MAP, nDCG).\nEfficiency (Hiệu năng / Tốc độ): Đánh giá tốc độ và tài nguyên hệ thống tiêu tốn để thực hiện tìm kiếm (Đo bằng: Response time, Throughput/QPS, Indexing speed).\nCâu B mô tả chuẩn xác: Effectiveness đo khả năng tìm tin liên quan, còn Efficiency đo tốc độ hoàn thành việc đó.",
+    "image_path": "src/Slide_093.png"
+  },
+  {
+    "id": "seg_fe_094",
+    "slide": 94,
+    "is_info": false,
+    "topic": "Chương 8: Search Engine Optimization (SEO) (Mục 8.4: On-Page SEO & Mục 8.5: Off-Page SEO).",
+    "question": "What is the primary difference between on-page factors and off-page factors in search engine optimization?",
+    "vn_question": "",
+    "options": [
+      "On-page factors involve external elements like links and likes",
+      "On-page factors are related to website content, while off-page factors are not",
+      "Off-page factors can be directly controlled on one's website, while on-page factors cannot",
+      "On-page factors primarily include Trust, Links, and User groups"
+    ],
+    "vn_options": [],
+    "correct": 1,
+    "answer": 1,
+    "correct_letter": "B",
+    "correct_letters": [
+      "B"
+    ],
+    "correct_choices": [
+      1
+    ],
+    "is_multi": false,
+    "required_choices": 1,
+    "explanation": "On-page factors liên quan trực tiếp đến nội dung văn bản (Content), mã HTML và cấu trúc của trang web.\nOff-page factors hoàn toàn không nằm trong nội dung website mà bao gồm các tín hiệu ngoại vi bên ngoài (Backlinks từ site khác, sự uy tín của tên miền, lượt chia sẻ trên mạng xã hội).\n(Loại trừ): A sai vì links và likes là off-page; C sai vì on-page mới là thứ chủ web trực tiếp kiểm soát được; D sai vì Trust, Links, User là off-page.",
+    "image_path": "src/Slide_094.png"
+  },
+  {
+    "id": "seg_fe_095",
+    "slide": 95,
+    "is_info": false,
+    "topic": "Chương 8: Search Engine Optimization (SEO) (Mục 8.4: On-Page SEO & Mục 8.5: Off-Page SEO).",
+    "question": "What is the primary difference between on-page factors and off-page factors in search engine optimization?",
+    "vn_question": "",
+    "options": [
+      "On-page factors involve external elements like links and likes",
+      "On-page factors are related to website content, while off-page factors are not",
+      "Off-page factors can be directly controlled on one's website, while on-page factors cannot",
+      "On-page factors primarily include Trust, Links, and User groups"
+    ],
+    "vn_options": [],
+    "correct": 1,
+    "answer": 1,
+    "correct_letter": "B",
+    "correct_letters": [
+      "B"
+    ],
+    "correct_choices": [
+      1
+    ],
+    "is_multi": false,
+    "required_choices": 1,
+    "explanation": "On-page factors liên quan trực tiếp đến nội dung văn bản (Content), mã HTML và cấu trúc của trang web.\nOff-page factors hoàn toàn không nằm trong nội dung website mà bao gồm các tín hiệu ngoại vi bên ngoài (Backlinks từ site khác, sự uy tín của tên miền, lượt chia sẻ trên mạng xã hội).\n(Loại trừ): A sai vì links và likes là off-page; C sai vì on-page mới là thứ chủ web trực tiếp kiểm soát được; D sai vì Trust, Links, User là off-page.",
+    "image_path": "src/Slide_095.png"
+  },
+  {
+    "id": "seg_fe_096",
+    "slide": 96,
+    "is_info": false,
+    "topic": "Chương 11: Social Search (Mục 11.2: Social Tagging & Multimedia Retrieval).",
+    "question": "What is one unique property of tags used to describe items in a collection?",
+    "vn_question": "",
+    "options": [
+      "Tags are primarily used for organizing items, not for textual descriptions",
+      "Tags are exclusively used for non-textual items like images and videos",
+      "Tags provide a textual dimension to items, even if they lack a simple textual representation",
+      "Tags are only applied to items with simple textual representations"
+    ],
+    "vn_options": [],
+    "correct": 2,
+    "answer": 2,
+    "correct_letter": "C",
+    "correct_letters": [
+      "C"
+    ],
+    "correct_choices": [
+      2
+    ],
+    "is_multi": false,
+    "required_choices": 1,
+    "explanation": "Các đối tượng đa phương tiện như hình ảnh, âm thanh, video hoặc trang web đồ họa vốn thiếu biểu diễn văn bản tự nhiên (Lack a simple textual representation) để máy móc tìm kiếm.\nĐặc tính độc đáo của Thẻ (Tags) do cộng đồng gán vào là: Chúng cung cấp một chiều dữ liệu dạng văn bản (Textual dimension) cho các đối tượng này, cho phép search engine truyền thống dựa trên từ khóa có thể dễ dàng lập chỉ mục và tìm kiếm chính xác các tệp phi văn bản.",
+    "image_path": "src/Slide_096.png"
+  },
+  {
+    "id": "seg_fe_097",
+    "slide": 97,
+    "is_info": false,
+    "topic": "Chương 5: Indexing - Index Maintenance and Updates.",
+    "question": "What is the main difference between document distribution and term distribution?",
+    "vn_question": "",
+    "options": [
+      "In document distribution, each index server stores a different part of the inverted index, while in term distribution, each index server stores a copy of the entire document collection",
+      "In document distribution, the director is responsible for merging the results from the index servers, while in term distribution, one of the index servers is responsible for processing the query and merging the results from the other index servers",
+      "Document distribution is more difficult to implement than term distribution",
+      "Seek time for document distribution is shorter than term distribution with the same number of terms queried over the same number of index servers"
+    ],
+    "vn_options": [],
+    "correct": 1,
+    "answer": 1,
+    "correct_letter": "B",
+    "correct_letters": [
+      "B"
+    ],
+    "correct_choices": [
+      1
+    ],
+    "is_multi": false,
+    "required_choices": 1,
+    "explanation": "Khi có văn bản mới hoặc chỉnh sửa:\n1. Result merging (Dynamic indexing): Giữ một chỉ mục chính trên đĩa (Main Index) và một chỉ mục nhỏ lưu trên RAM (Auxiliary / In-memory Index). Khi truy vấn, hệ thống tìm trên cả hai chỉ mục rồi gộp kết quả trả về.\n2. Index merging: Định kỳ (khi bộ nhớ RAM đầy), hệ thống thực hiện trộn gộp chỉ mục phụ vào chỉ mục chính (như Logarithmic Merge).",
+    "image_path": "src/Slide_097.png"
+  },
+  {
+    "id": "seg_fe_098",
+    "slide": 98,
+    "is_info": false,
+    "topic": "Chương 8: Search Engine Optimization (SEO) (Mục 8.4: On-Page SEO & Mục 8.5: Off-Page SEO).",
+    "question": "What is the primary difference between on-page factors and off-page factors in search engine optimization?",
+    "vn_question": "",
+    "options": [
+      "On-page factors involve external elements like links and likes",
+      "On-page factors are related to website content, while off-page factors are not",
+      "Off-page factors can be directly controlled on one's website, while on-page factors cannot",
+      "On-page factors primarily include Trust, Links, and User groups"
+    ],
+    "vn_options": [],
+    "correct": 1,
+    "answer": 1,
+    "correct_letter": "B",
+    "correct_letters": [
+      "B"
+    ],
+    "correct_choices": [
+      1
+    ],
+    "is_multi": false,
+    "required_choices": 1,
+    "explanation": "On-page factors liên quan trực tiếp đến nội dung văn bản (Content), mã HTML và cấu trúc của trang web.\nOff-page factors hoàn toàn không nằm trong nội dung website mà bao gồm các tín hiệu ngoại vi bên ngoài (Backlinks từ site khác, sự uy tín của tên miền, lượt chia sẻ trên mạng xã hội).\n(Loại trừ): A sai vì links và likes là off-page; C sai vì on-page mới là thứ chủ web trực tiếp kiểm soát được; D sai vì Trust, Links, User là off-page.",
+    "image_path": "src/Slide_098.png"
+  },
+  {
+    "id": "seg_fe_099",
+    "slide": 99,
+    "is_info": false,
+    "topic": "Chương 8: Search Engine Optimization (SEO) (Mục 8.4: On-Page SEO & Mục 8.5: Off-Page SEO).",
+    "question": "What is the primary difference between on-page factors and off-page factors in search engine optimization?",
+    "vn_question": "",
+    "options": [
+      "On-page factors involve external elements like links and likes",
+      "On-page factors are related to website content, while off-page factors are not",
+      "Off-page factors can be directly controlled on one's website, while on-page factors cannot",
+      "On-page factors primarily include Trust, Links, and User groups"
+    ],
+    "vn_options": [],
+    "correct": 1,
+    "answer": 1,
+    "correct_letter": "B",
+    "correct_letters": [
+      "B"
+    ],
+    "correct_choices": [
+      1
+    ],
+    "is_multi": false,
+    "required_choices": 1,
+    "explanation": "On-page factors liên quan trực tiếp đến nội dung văn bản (Content), mã HTML và cấu trúc của trang web.\nOff-page factors hoàn toàn không nằm trong nội dung website mà bao gồm các tín hiệu ngoại vi bên ngoài (Backlinks từ site khác, sự uy tín của tên miền, lượt chia sẻ trên mạng xã hội).\n(Loại trừ): A sai vì links và likes là off-page; C sai vì on-page mới là thứ chủ web trực tiếp kiểm soát được; D sai vì Trust, Links, User là off-page.",
+    "image_path": "src/Slide_099.png"
+  },
+  {
+    "id": "seg_fe_100",
+    "slide": 100,
+    "is_info": false,
+    "topic": "Chương 2: Architecture of A Search Engine (Mục 2.2: Text Transformation - Parser) & Chương 4: Processing Text (Mục 4.4: Document Structure and Markup).",
+    "question": "What is the purpose of the parsing component in information retrieval systems?",
+    "vn_question": "",
+    "options": [
+      "To identify structural elements in documents, such as titles, figures, links, and headings",
+      "To convert documents and queries into a consistent text format",
+      "To rank documents based on their relevance to a query",
+      "To store documents in a way that is efficient for searching"
+    ],
+    "vn_options": [],
+    "correct": 0,
+    "answer": 0,
+    "correct_letter": "A",
+    "correct_letters": [
+      "A"
+    ],
+    "correct_choices": [
+      0
+    ],
+    "is_multi": false,
+    "required_choices": 1,
+    "explanation": "Trong kiến trúc Search Engine, mô-đun Parser (Trình phân tích cú pháp) trong khối Text Transformation có nhiệm vụ: Bóc tách mã nguồn (HTML/XML), loại bỏ thẻ định dạng và nhận diện các thành phần cấu trúc của tài liệu (tiêu đề Title, hình ảnh Figures, liên kết Links, tiêu đề mục Headings H1-H6) để hệ thống có thể gán trọng số xếp hạng riêng cho từng vùng cấu trúc.\n(Phân biệt): Chuyển đổi định dạng tệp (B) là nhiệm vụ của bộ Conversion; Xếp hạng (C) là nhiệm vụ của bộ Ranking; Lưu trữ (D) là nhiệm vụ của Document Data Store.",
+    "image_path": "src/Slide_100.png"
+  },
+  {
+    "id": "seg_fe_101",
+    "slide": 101,
+    "is_info": false,
+    "topic": "Chương 10: Classification and Clustering (Mục 10.2: Clustering - Hierarchical vs. K-Means - Slide 16 & 17).",
+    "question": "What is a difference between agglomerative clustering and the $K$-means algorithm regarding the cluster assignments of instances?",
+    "vn_question": "",
+    "options": [
+      "Instances within the same cluster may end up in different clusters as the algorithm proceeds in $K$-means algorithm but in agglomerative clustering",
+      "Instances are always assigned to the same cluster in agglomerative clustering but in $K$-means algorithm",
+      "Instances can never be assigned to different clusters in $K$-means algorithm but in agglomerative clustering",
+      "Instances can change clusters during each iteration in agglomerative clustering but in $K$-means algorithm"
+    ],
+    "vn_options": [],
+    "correct": 0,
+    "answer": 0,
+    "correct_letter": "A",
+    "correct_letters": [
+      "A"
+    ],
+    "correct_choices": [
+      0
+    ],
+    "is_multi": false,
+    "required_choices": 1,
+    "explanation": "K-means (Phân cụm phân hoạch): Sau mỗi vòng lặp cập nhật tâm cụm (centroid), một điểm dữ liệu có thể bị đổi từ cụm này sang cụm khác nếu nó gần tâm cụm mới hơn. Do đó, các điểm ban đầu cùng cụm có thể bị tách ra các cụm khác nhau khi thuật toán tiến triển (Instances within the same cluster may end up in different clusters).\nAgglomerative Clustering (Phân cụm phân cấp từ dưới lên): Hai điểm một khi đã được gộp chung vào một cụm thì sẽ mãi mãi nằm cùng cụm đó (và các cụm cha) cho đến hết thuật toán, không bao giờ bị tách rời ra.",
+    "image_path": "src/Slide_101.png"
+  },
+  {
+    "id": "seg_fe_102",
+    "slide": 102,
+    "is_info": false,
+    "topic": "Search Engines & Information Retrieval",
+    "question": "What is the main goal of a good retrieval model?",
+    "vn_question": "",
+    "options": [
+      "To find documents that are likely to be considered relevant by the person who submitted the query",
+      "To find documents that are lowly ranked by the search engi",
+      "To find documents that are topically relevant",
+      "To find documents that are relevant to the search engine's ranking algorithms"
+    ],
+    "vn_options": [],
+    "correct": 0,
+    "answer": 0,
+    "correct_letter": "A",
+    "correct_letters": [
+      "A"
+    ],
+    "correct_choices": [
+      0
+    ],
+    "is_multi": false,
+    "required_choices": 1,
+    "explanation": "Đáp án chuẩn là A. Dựa trên giáo trình Search Engines: Information Retrieval in Practice (Bruce Croft).",
+    "image_path": "src/Slide_102.png"
+  },
+  {
+    "id": "seg_fe_103",
+    "slide": 103,
+    "is_info": false,
+    "topic": "Search Engines & Information Retrieval",
+    "question": "What is a significant advantage of using query logs for web search engine development from an evaluation perspective?",
+    "vn_question": "",
+    "options": [
+      "They provide highly precise relevance judgments",
+      "They offer limited data, making evaluation more manageable",
+      "They represent a small user and query sample",
+      "They support extensive and realistic evaluation due to the large volume of data"
+    ],
+    "vn_options": [],
+    "correct": 3,
+    "answer": 3,
+    "correct_letter": "D",
+    "correct_letters": [
+      "D"
+    ],
+    "correct_choices": [
+      3
+    ],
+    "is_multi": false,
+    "required_choices": 1,
+    "explanation": "Đáp án chuẩn là D. Dựa trên giáo trình Search Engines: Information Retrieval in Practice (Bruce Croft).",
+    "image_path": "src/Slide_103.png"
+  },
+  {
+    "id": "seg_fe_104",
+    "slide": 104,
+    "is_info": false,
+    "topic": "Search Engines & Information Retrieval",
+    "question": "What is a significant advantage of using query logs for web search engine development from an evaluation perspective?",
+    "vn_question": "",
+    "options": [
+      "They provide highly precise relevance judgments",
+      "They offer limited data, making evaluation more manageable",
+      "They represent a small user and query sample",
+      "They support extensive and realistic evaluation due to the large volume of data"
+    ],
+    "vn_options": [],
+    "correct": 3,
+    "answer": 3,
+    "correct_letter": "D",
+    "correct_letters": [
+      "D"
+    ],
+    "correct_choices": [
+      3
+    ],
+    "is_multi": false,
+    "required_choices": 1,
+    "explanation": "Đáp án chuẩn là D. Dựa trên giáo trình Search Engines: Information Retrieval in Practice (Bruce Croft).",
+    "image_path": "src/Slide_104.png"
+  },
+  {
+    "id": "seg_fe_105",
+    "slide": 105,
+    "is_info": false,
+    "topic": "Chương 5: Indexing - Index Maintenance and Updates.",
+    "question": "What is the main difference between document distribution and term distribution?",
+    "vn_question": "",
+    "options": [
+      "In document distribution, each index server stores a different part of the inverted index, while in term distribution, each index server stores a copy of the entire document collection",
+      "In document distribution, the director is responsible for merging the results from the index servers, while in term distribution, one of the index servers is responsible for processing the query and merging the results from the other index servers",
+      "Document distribution is more difficult to implement than term distribution",
+      "Seek time for document distribution is shorter than term distribution with the same number of terms queried over the same number of index servers"
+    ],
+    "vn_options": [],
+    "correct": 1,
+    "answer": 1,
+    "correct_letter": "B",
+    "correct_letters": [
+      "B"
+    ],
+    "correct_choices": [
+      1
+    ],
+    "is_multi": false,
+    "required_choices": 1,
+    "explanation": "Khi có văn bản mới hoặc chỉnh sửa:\n1. Result merging (Dynamic indexing): Giữ một chỉ mục chính trên đĩa (Main Index) và một chỉ mục nhỏ lưu trên RAM (Auxiliary / In-memory Index). Khi truy vấn, hệ thống tìm trên cả hai chỉ mục rồi gộp kết quả trả về.\n2. Index merging: Định kỳ (khi bộ nhớ RAM đầy), hệ thống thực hiện trộn gộp chỉ mục phụ vào chỉ mục chính (như Logarithmic Merge).",
+    "image_path": "src/Slide_105.png"
+  },
+  {
+    "id": "seg_fe_106",
+    "slide": 106,
+    "is_info": false,
+    "topic": "Search Engines & Information Retrieval",
+    "question": "What are the types of changes made during text transformation?",
+    "vn_question": "",
+    "options": [
+      "Changes that allow random access to the data",
+      "Changes that reduce the storage used to store the documents",
+      "Changes that reduce the time of creating index terms",
+      "Changes that convert the many forms in which words can occur into more consistent index terms"
+    ],
+    "vn_options": [],
+    "correct": 3,
+    "answer": 3,
+    "correct_letter": "D",
+    "correct_letters": [
+      "D"
+    ],
+    "correct_choices": [
+      3
+    ],
+    "is_multi": false,
+    "required_choices": 1,
+    "explanation": "Đáp án chuẩn là D. Dựa trên giáo trình Search Engines: Information Retrieval in Practice (Bruce Croft).",
+    "image_path": "src/Slide_106.png"
+  },
+  {
+    "id": "seg_fe_107",
+    "slide": 107,
+    "is_info": false,
+    "topic": "Chương 11: Social Search (Mục 11.3 Searching with Communities).",
+    "question": "What are some key characteristics of online communities?",
+    "vn_question": "",
+    "options": [
+      "Online communities are formal groups with specific membership criteria",
+      "Interactions within online communities are limited to passive activities",
+      "Online communities are ad hoc and lack a formal mechanism for joining",
+      "Community-based question answering is less social and interactive than standard web search"
+    ],
+    "vn_options": [],
+    "correct": 2,
+    "answer": 2,
+    "correct_letter": "C",
+    "correct_letters": [
+      "C"
+    ],
+    "correct_choices": [
+      2
+    ],
+    "is_multi": false,
+    "required_choices": 1,
+    "explanation": "Khác với các tổ chức chính quy ngoài đời thực (formal organizations) có tiêu chí thành viên nghiêm ngặt, cộng đồng trực tuyến thường hình thành tự phát (ad hoc), người dùng tự do tham gia/rời bỏ xoay quanh mối quan tâm hoặc mục tiêu chung (shared interests/goals).\n Các câu hỏi đáp cộng đồng (CQA - như Stack Overflow, Quora) mang tính tương tác xã hội cao hơn rất nhiều so với web search truyền thống, và tương tác của thành viên bao gồm cả tạo nội dung, đánh giá (vote), bình luận chứ không chỉ là hoạt động thụ động.",
+    "image_path": "src/Slide_107.png"
+  },
+  {
+    "id": "seg_fe_108",
+    "slide": 108,
+    "is_info": false,
+    "topic": "Chương 11: Social Search (Mục 11.2 User Tags and Manual Indexing).",
+    "question": "What distinguishes social media tagging, as seen in folksonomies, from the approach of the semantic web?",
+    "vn_question": "",
+    "options": [
+      "Social media tagging uses rigid, predefined ontologies, while the semantic web is based on user-driven folksonomies",
+      "Social media tagging relies on standardized, fixed ontologies, while the semantic web allows a relatively unrestricted set of tags meaningful to users",
+      "Social media tagging is primarily used for organizing information, while the semantic web focuses on sharing information",
+      "Social media tagging is restricted to a small number of web pages, while the semantic web is widely adopted"
+    ],
+    "vn_options": [],
+    "correct": 2,
+    "answer": 2,
+    "correct_letter": "C",
+    "correct_letters": [
+      "C"
+    ],
+    "correct_choices": [
+      2
+    ],
+    "is_multi": false,
+    "required_choices": 1,
+    "explanation": "Phân tích các phương án loại trừ:\nCác phương án A và B bị đảo ngược hoàn toàn bản chất: Semantic Web dựa trên các ontologies chuẩn hóa, cố định và chặt chẽ (RDF, OWL), trong khi Social Tagging (folksonomies) là hệ thống phân loại tự do do người dùng tự đặt tên (unrestricted, user-driven).\nPhương án D sai thực tế: Tagging mạng xã hội cực kỳ phổ biến (Flickr, Twitter, Instagram), còn Semantic Web gặp rào cản lớn về việc áp dụng rộng rãi do chi phí gán nhãn dữ liệu có cấu trúc quá cao.\nDo đó, C là phương án duy nhất chính xác về mặt ý niệm học thuật: Folksonomies phục vụ nhu cầu cá nhân/nhóm để phân loại và truy hồi (organizing), còn Semantic Web hướng đến khả năng máy hiểu để chia sẻ dữ liệu liên thông (sharing/interoperability).",
+    "image_path": "src/Slide_108.png"
+  },
+  {
+    "id": "seg_fe_109",
+    "slide": 109,
+    "is_info": false,
+    "topic": "Chương 11: Social Search (Mục 11.2 User Tags and Manual Indexing).",
+    "question": "What distinguishes social media tagging, as seen in folksonomies, from the approach of the semantic web?",
+    "vn_question": "",
+    "options": [
+      "Social media tagging uses rigid, predefined ontologies, while the semantic web is based on user-driven folksonomies",
+      "Social media tagging relies on standardized, fixed ontologies, while the semantic web allows a relatively unrestricted set of tags meaningful to users",
+      "Social media tagging is primarily used for organizing information, while the semantic web focuses on sharing information",
+      "Social media tagging is restricted to a small number of web pages, while the semantic web is widely adopted"
+    ],
+    "vn_options": [],
+    "correct": 2,
+    "answer": 2,
+    "correct_letter": "C",
+    "correct_letters": [
+      "C"
+    ],
+    "correct_choices": [
+      2
+    ],
+    "is_multi": false,
+    "required_choices": 1,
+    "explanation": "Phân tích các phương án loại trừ:\nCác phương án A và B bị đảo ngược hoàn toàn bản chất: Semantic Web dựa trên các ontologies chuẩn hóa, cố định và chặt chẽ (RDF, OWL), trong khi Social Tagging (folksonomies) là hệ thống phân loại tự do do người dùng tự đặt tên (unrestricted, user-driven).\nPhương án D sai thực tế: Tagging mạng xã hội cực kỳ phổ biến (Flickr, Twitter, Instagram), còn Semantic Web gặp rào cản lớn về việc áp dụng rộng rãi do chi phí gán nhãn dữ liệu có cấu trúc quá cao.\nDo đó, C là phương án duy nhất chính xác về mặt ý niệm học thuật: Folksonomies phục vụ nhu cầu cá nhân/nhóm để phân loại và truy hồi (organizing), còn Semantic Web hướng đến khả năng máy hiểu để chia sẻ dữ liệu liên thông (sharing/interoperability).",
+    "image_path": "src/Slide_109.png"
+  },
+  {
+    "id": "seg_fe_110",
+    "slide": 110,
+    "is_info": false,
+    "topic": "Chương 2: Architecture of A Search Engine & Chương 4: Processing Text.",
+    "question": "What is the purpose of the text transformation component in HTML and XML documents?",
+    "vn_question": "",
+    "options": [
+      "To remove control sequences and non-content data",
+      "To convert the documents to a consistent text format",
+      "To extract metadata from the documents",
+      "To prepare the documents for further processing"
+    ],
+    "vn_options": [],
+    "correct": 0,
+    "answer": 0,
+    "correct_letter": "A",
+    "correct_letters": [
+      "A"
+    ],
+    "correct_choices": [
+      0
+    ],
+    "is_multi": false,
+    "required_choices": 1,
+    "explanation": "Tài liệu HTML/XML chứa rất nhiều mã cấu trúc và điều khiển hiển thị (như thẻ <p>, <div>, JavaScript trong <script>, CSS, các ký tự thực thể &nbsp;).\nBộ phân tích cú pháp (Parser/Text Transformation) có nhiệm vụ bóc tách, loại bỏ toàn bộ dữ liệu điều khiển không mang nội dung này (non-content data / control sequences) để thu về luồng ký tự văn bản thuần túy (plain text content stream) phục vụ quá trình tách từ (tokenization) và tạo chỉ mục (indexing).",
+    "image_path": "src/Slide_110.png"
+  },
+  {
+    "id": "seg_fe_111",
+    "slide": 111,
+    "is_info": false,
+    "topic": "Chương 3: Crawls and Feeds (Mục 3.2 Crawling the Web: Dynamic Web Pages).",
+    "question": "What is the difference between a static web page and a dynamic web page?",
+    "vn_question": "",
+    "options": [
+      "A static web page is stored on a web server and displayed in a web browser unmodified, while a dynamic web page is generated by code execution on the web server or the client",
+      "A static web page is only accessible through web forms, while a dynamic web page can be accessed directly",
+      "A static web page is more difficult to crawl than a dynamic web page",
+      "A static web page is impossible to crawl and a dynamic web page is only accessed through web forms"
+    ],
+    "vn_options": [],
+    "correct": 0,
+    "answer": 0,
+    "correct_letter": "A",
+    "correct_letters": [
+      "A"
+    ],
+    "correct_choices": [
+      0
+    ],
+    "is_multi": false,
+    "required_choices": 1,
+    "explanation": "Static page: Là tệp HTML/ảnh tĩnh lưu trên ổ đĩa server; mỗi khi có request, web server chỉ việc đọc tệp và gửi thẳng về cho trình duyệt.\nDynamic page: Trang web được dựng theo thời gian thực khi có request (chạy code PHP/Python/Node.js truy vấn CSDL hoặc client-side JS/React/SPA). Đối với crawler, trang động tiềm ẩn nguy cơ vô tận (bẫy crawler - spider traps hay hidden web) do sinh URL có tham số liên tục.",
+    "image_path": "src/Slide_111.png"
+  },
+  {
+    "id": "seg_fe_112",
+    "slide": 112,
+    "is_info": false,
+    "topic": "Chương 11: Social Search (Mục 11.3 Searching with Communities - Slide 10 bài giảng).",
+    "question": "What characterizes an online community?",
+    "vn_question": "",
+    "options": [
+      "A single user who engages in online activities",
+      "A group of entities with common goals and interests interacting in an online environment",
+      "A collection of unrelated websites",
+      "An individual browsing various web pages"
+    ],
+    "vn_options": [],
+    "correct": 1,
+    "answer": 1,
+    "correct_letter": "B",
+    "correct_letters": [
+      "B"
+    ],
+    "correct_choices": [
+      1
+    ],
+    "is_multi": false,
+    "required_choices": 1,
+    "explanation": "Khớp nguyên văn định nghĩa trong giáo trình Croft: \"Groups of entities that interact in an online environment and that share common goals, traits, or interests are an online community\".\nCác đáp án A, D chỉ đề cập đến một cá nhân đơn lẻ (single user / individual), còn C đề cập đến tập hợp trang web không liên quan, đều hoàn toàn sai.",
+    "image_path": "src/Slide_112.png"
+  },
+  {
+    "id": "seg_fe_113",
+    "slide": 113,
+    "is_info": false,
+    "topic": "Chương 9: Evaluating Search Engines (Mục 9.1 Why Evaluate?).",
+    "question": "Why is it challenging to conduct a holistic evaluation of effectiveness and efficiency of a search engine?",
+    "vn_question": "",
+    "options": [
+      "Because effectiveness and efficiency are not important factors in search engine evaluation",
+      "Due to the limited number of factors that affect effectiveness and efficiency",
+      "Because the search environment involves various users and factors like interface design, query refinement techniques, and more",
+      "Because holistic evaluation can be easily controlled and conducted in tightly defined experimental settings"
+    ],
+    "vn_options": [],
+    "correct": 2,
+    "answer": 2,
+    "correct_letter": "C",
+    "correct_letters": [
+      "C"
+    ],
+    "correct_choices": [
+      2
+    ],
+    "is_multi": false,
+    "required_choices": 1,
+    "explanation": "Đánh giá toàn diện (holistic evaluation) xem xét hệ thống trong bối cảnh người dùng thực tế thao tác từ đầu đến cuối. Tuy nhiên, hành vi người dùng, trải nghiệm giao diện (UI/UX), tốc độ phản hồi, và cách người dùng sửa đổi truy vấn (query refinement) tạo ra quá nhiều biến số ngoại lai (confounding factors).\nChính vì khó cô lập nguyên nhân, cộng đồng Information Retrieval (IR) thường sử dụng phương pháp Component Evaluation (đánh giá riêng lẻ từng thành phần theo mô hình Cranfield / TREC với tập văn bản mẫu, truy vấn mẫu và nhãn độ liên quan cố định) để đo lường chính xác thuật toán xếp hạng.",
+    "image_path": "src/Slide_113.png"
+  },
+  {
+    "id": "seg_fe_114",
+    "slide": 114,
+    "is_info": false,
+    "topic": "Chương 11: Social Search (Mục 11.2 User Tags and Manual Indexing).",
+    "question": "How are user tags typically used on social media websites?",
+    "vn_question": "",
+    "options": [
+      "User tags are automatically assigned to items by the website",
+      "User tags are single-term labels applied to user-created content",
+      "User tags are primarily used for visualizing clusters of content",
+      "User tags are used for manual indexing, allowing users to represent content with assigned terms"
+    ],
+    "vn_options": [],
+    "correct": 3,
+    "answer": 3,
+    "correct_letter": "D",
+    "correct_letters": [
+      "D"
+    ],
+    "correct_choices": [
+      3
+    ],
+    "is_multi": false,
+    "required_choices": 1,
+    "explanation": "Giáo trình định nghĩa user tagging là cầu nối nằm giữa việc thủ thư lập chỉ mục bằng tay (manual indexing) và bộ máy tìm kiếm lập chỉ mục hoàn toàn tự động (automatic indexing).\nNgười dùng tự tay gán các từ khóa mô tả nội dung, ngữ cảnh hoặc cảm xúc lên tài nguyên (ảnh, video, bài viết), giúp hệ thống có thêm siêu dữ liệu (metadata) để tìm kiếm những nội dung mà thuật toán tự động khó bóc tách ngữ nghĩa.",
+    "image_path": "src/Slide_114.png"
+  },
+  {
+    "id": "seg_fe_115",
+    "slide": 115,
+    "is_info": false,
+    "topic": "Search Engines & Information Retrieval",
+    "question": "What is the key difference between a GET request and a POST request when fetching web pages?",
+    "vn_question": "",
+    "options": [
+      "GET requests are used for editing web pages, while POST requests retrieve existing data",
+      "GET requests are used for sending additional request information, while POST requests retrieve data",
+      "GET requests are typically used to inform the server, while POST requests are for retrieving existing content",
+      "GET requests are used for purchasing products, while POST requests are used for data retrieval"
+    ],
+    "vn_options": [],
+    "correct": 1,
+    "answer": 1,
+    "correct_letter": "B",
+    "correct_letters": [
+      "B"
+    ],
+    "correct_choices": [
+      1
+    ],
+    "is_multi": false,
+    "required_choices": 1,
+    "explanation": "Lưu ý: Theo chuẩn HTTP & Giáo trình Croft (Chương 3), GET dùng để lấy dữ liệu (retrieve data) còn POST gửi thêm thông tin lên server (send additional information). Trong câu hỏi gốc của ngân hàng đề này cả 4 đáp án bị đảo ngược vế GET/POST, key hệ thống chấm là B.",
+    "image_path": "src/Slide_115.png"
+  },
+  {
+    "id": "seg_fe_116",
+    "slide": 116,
+    "is_info": false,
+    "topic": "Chương 11: Social Search (Mục 11.4 Filtering and Recommending).",
+    "question": "How are recommender systems different from document filtering systems?",
+    "vn_question": "",
+    "options": [
+      "Recommender systems retrieve relevant documents based on long-term information needs, while document filtering systems predict user ratings for items",
+      "Recommender systems are used for standard web search, while document filtering systems are not",
+      "Recommender systems focus on short-term information needs, while document filtering systems focus on long-term information needs",
+      "Recommender systems predict user item ratings and make recommendations, while document filtering systems monitor incoming documents"
+    ],
+    "vn_options": [],
+    "correct": 3,
+    "answer": 3,
+    "correct_letter": "D",
+    "correct_letters": [
+      "D"
+    ],
+    "correct_choices": [
+      3
+    ],
+    "is_multi": false,
+    "required_choices": 1,
+    "explanation": "Document Filtering: Nhu cầu thông tin của người dùng là cố định dài hạn (persistent profile), còn tập tài liệu là luồng dữ liệu động liên tục đến (incoming stream). Nhiệm vụ của hệ thống lọc là giám sát luồng này để tìm và phân phối các tài liệu phù hợp (ví dụ: cảnh báo tin tức, lọc email spam).\nRecommender Systems (đặc biệt là Collaborative Filtering): Tập trung vào ma trận Người dùng - Món hàng (User - Item). Hệ thống tìm cách dự đoán các điểm đánh giá còn thiếu (predict unknown ratings) dựa trên hành vi của các người dùng tương tự (user clusters / nearest neighbors) để đưa ra danh sách đề xuất sản phẩm.",
+    "image_path": "src/Slide_116.png"
+  },
+  {
+    "id": "seg_fe_117",
+    "slide": 117,
+    "is_info": false,
+    "topic": "Chương 9: Evaluating Search Engines (Mục Discounted Cumulative Gain & NDCG).",
+    "question": "What are two assumptions on which the discounted cumulative gain (DCG) measure bases for evaluating web search and related applications?",
+    "vn_question": "",
+    "options": [
+      "Highly relevant documents are less useful than marginally relevant documents",
+      "The higher the ranked position of a relevant document, the more useful it is",
+      "Highly relevant documents are more useful than marginally relevant documents, and the lower the ranked position of a relevant document, the less useful it is",
+      "The higher the ranked position of a relevant document, the more likely it is to be examined by the user"
+    ],
+    "vn_options": [],
+    "correct": 2,
+    "answer": 2,
+    "correct_letter": "C",
+    "correct_letters": [
+      "C"
+    ],
+    "correct_choices": [
+      2
+    ],
+    "is_multi": false,
+    "required_choices": 1,
+    "explanation": "Thước đo DCG do Järvelin & Kekäläinen đề xuất dựa trên 2 nguyên lý thực tế của người dùng:\n1. Thang liên quan phân cấp (Graded Relevance): Tài liệu rất liên quan (điểm 3) mang lại giá trị cao hơn hẳn tài liệu liên quan vừa phải (điểm 1).\n2. Chiết khấu theo vị trí (Positional Discounting): Người dùng ít khi kiên nhẫn xem các kết quả ở phía dưới, do đó lợi ích nhận được từ tài liệu ở vị trí i phải bị phạt giảm dần bởi hàm logarit (chia cho log_2(1+i) hoặc log_2(i)).",
+    "image_path": "src/Slide_117.png"
+  },
+  {
+    "id": "seg_fe_118",
+    "slide": 118,
+    "is_info": false,
+    "topic": "Chương 8: Search Engine Optimization (SEO) (Mục On-Page SEO).",
+    "question": "Why is on-page SEO considered crucial for better rankings in search engine results?",
+    "vn_question": "",
+    "options": [
+      "It primarily involves optimizing external factors that influence rankings",
+      "It helps search engines understand the content and purpose of a page",
+      "On-page SEO is not important for search engine rankings",
+      "It focuses on offline marketing efforts, which directly impact rankings"
+    ],
+    "vn_options": [],
+    "correct": 1,
+    "answer": 1,
+    "correct_letter": "B",
+    "correct_letters": [
+      "B"
+    ],
+    "correct_choices": [
+      1
+    ],
+    "is_multi": false,
+    "required_choices": 1,
+    "explanation": "On-page SEO bao gồm các tối ưu trực tiếp trên chính trang web (thẻ tiêu đề <title>, mô tả <meta description>, các tiêu đề <h1>–<h3>, cấu trúc URL thân thiện, mật độ từ khóa, thẻ alt cho ảnh, liên kết nội bộ).\n Mục tiêu tiên quyết của On-page SEO là cung cấp các tín hiệu ngữ cảnh rõ ràng để bot tìm kiếm cào dữ liệu, phân loại chủ đề và đánh chỉ mục chính xác nội dung trang. (Phương án A mô tả Off-page SEO như backlink; C và D hoàn toàn sai).",
+    "image_path": "src/Slide_118.png"
+  },
+  {
+    "id": "seg_fe_119",
+    "slide": 119,
+    "is_info": false,
+    "topic": "Chương 11: Social Search (Mục 11.2 User Tags and Manual Indexing).",
+    "question": "How are user tags typically used on social media websites?",
+    "vn_question": "",
+    "options": [
+      "User tags are automatically assigned to items by the website",
+      "User tags are single-term labels applied to user-created content",
+      "User tags are primarily used for visualizing clusters of content",
+      "User tags are used for manual indexing, allowing users to represent content with assigned terms el"
+    ],
+    "vn_options": [],
+    "correct": 3,
+    "answer": 3,
+    "correct_letter": "D",
+    "correct_letters": [
+      "D"
+    ],
+    "correct_choices": [
+      3
+    ],
+    "is_multi": false,
+    "required_choices": 1,
+    "explanation": "Giáo trình định nghĩa user tagging là cầu nối nằm giữa việc thủ thư lập chỉ mục bằng tay (manual indexing) và bộ máy tìm kiếm lập chỉ mục hoàn toàn tự động (automatic indexing).\nNgười dùng tự tay gán các từ khóa mô tả nội dung, ngữ cảnh hoặc cảm xúc lên tài nguyên (ảnh, video, bài viết), giúp hệ thống có thêm siêu dữ liệu (metadata) để tìm kiếm những nội dung mà thuật toán tự động khó bóc tách ngữ nghĩa.",
+    "image_path": "src/Slide_119.png"
+  },
+  {
+    "id": "seg_fe_120",
+    "slide": 120,
+    "is_info": false,
+    "topic": "Chương 11: Social Search (Mục 11.2 User Tags and Manual Indexing).",
+    "question": "How are user tags typically used on social media websites?",
+    "vn_question": "",
+    "options": [
+      "User tags are automatically assigned to items by the website",
+      "User tags are single-term labels applied to user-created content",
+      "User tags are primarily used for visualizing clusters of content",
+      "User tags are used for manual indexing, allowing users to represent content with assigned terms el"
+    ],
+    "vn_options": [],
+    "correct": 3,
+    "answer": 3,
+    "correct_letter": "D",
+    "correct_letters": [
+      "D"
+    ],
+    "correct_choices": [
+      3
+    ],
+    "is_multi": false,
+    "required_choices": 1,
+    "explanation": "Giáo trình định nghĩa user tagging là cầu nối nằm giữa việc thủ thư lập chỉ mục bằng tay (manual indexing) và bộ máy tìm kiếm lập chỉ mục hoàn toàn tự động (automatic indexing).\nNgười dùng tự tay gán các từ khóa mô tả nội dung, ngữ cảnh hoặc cảm xúc lên tài nguyên (ảnh, video, bài viết), giúp hệ thống có thêm siêu dữ liệu (metadata) để tìm kiếm những nội dung mà thuật toán tự động khó bóc tách ngữ nghĩa.",
+    "image_path": "src/Slide_120.png"
+  },
+  {
+    "id": "seg_fe_121",
+    "slide": 121,
+    "is_info": false,
+    "topic": "Chương 10: Classification and Clustering (Mục 10.3 Clustering Evaluation).",
+    "question": "Why is evaluating the output of a clustering algorithm challenging, especially in the absence of labeled data?",
+    "vn_question": "",
+    "options": [
+      "Because clustering algorithms do not produce any output",
+      "Because there is no way to assess the quality of the clusters",
+      "Because the evaluation metric depends on the algorithm, and vice versa",
+      "Because clusters are assigned explicit and meaningful labels"
+    ],
+    "vn_options": [],
+    "correct": 2,
+    "answer": 2,
+    "correct_letter": "C",
+    "correct_letters": [
+      "C"
+    ],
+    "correct_choices": [
+      2
+    ],
+    "is_multi": false,
+    "required_choices": 1,
+    "explanation": "Trong học không giám sát (unsupervised learning), do không có nhãn đúng thực tế (ground truth labels), các thước đo nội tại (intrinsic metrics như khoảng cách nội cụm hay độ tách biệt giữa các cụm) thường chính là hàm mục tiêu mà thuật toán cố gắng tối ưu hóa.\nĐiều này dẫn đến sự phụ thuộc luẩn quẩn (circular dependency): một thước đo nội tại chỉ kiểm tra xem thuật toán có tối ưu đúng hàm mục tiêu của nó hay không, chứ không phản ánh được liệu các cụm tạo ra có mang ý nghĩa thực tế đối với con người hay không.",
+    "image_path": "src/Slide_121.png"
+  },
+  {
+    "id": "seg_fe_122",
+    "slide": 122,
+    "is_info": false,
+    "topic": "Chương 1: Information Retrieval and Search Engines & Chương 2: Architecture.",
+    "question": "Is there a trade-off between efficiency and effectiveness in search engine design?",
+    "vn_question": "",
+    "options": [
+      "Yes, there is recently a trade-off, and search engine designers often have to choose between one or the other",
+      "No, search engines can simultaneously maximize both efficiency and effectiveness without any compromise",
+      "Yes, but current search engine techniques prioritize effectiveness over efficiency",
+      "No, efficiency considerations are not relevant to search engine design"
+    ],
+    "vn_options": [],
+    "correct": 0,
+    "answer": 0,
+    "correct_letter": "A",
+    "correct_letters": [
+      "A"
+    ],
+    "correct_choices": [
+      0
+    ],
+    "is_multi": false,
+    "required_choices": 1,
+    "explanation": "Effectiveness (Tính hiệu quả): Đo lường độ chuẩn xác của kết quả (Precision, Recall, NDCG). Muốn hiệu quả cao, hệ thống phải chạy các mô hình máy học phức tạp, tính toán lân cận từ khóa (proximity), mở rộng truy vấn... → tốn rất nhiều tài nguyên CPU, RAM và tăng thời gian phản hồi.\nEfficiency (Hiệu năng): Đo lường tốc độ xử lý, thời gian đáp ứng (latency) và chi phí phần cứng. Muốn chạy siêu nhanh, hệ thống buộc phải cắt tỉa danh sách lập chỉ mục (pruning), dừng sớm (early termination), từ đó có thể làm giảm bớt độ chính xác tối ưu. Do đó, kỹ sư luôn phải cân đối sự đánh đổi này.",
+    "image_path": "src/Slide_122.png"
+  },
+  {
+    "id": "seg_fe_123",
+    "slide": 123,
+    "is_info": false,
+    "topic": "Chương 6: Queries and Interfaces (Mục 6.2: Query Transformation and Expansion).",
+    "question": "Query expansion techniques are usually based on an analysis of word or term co-occurrence in what?",
+    "vn_question": "",
+    "options": [
+      "The small fraction of the entire document collection",
+      "A large collection of queries",
+      "The top-ranked documents in a result list",
+      "A large collection of queries and the top-ranked documents in a result list"
+    ],
+    "vn_options": [],
+    "correct": 3,
+    "answer": 3,
+    "correct_letter": "D",
+    "correct_letters": [
+      "D"
+    ],
+    "correct_choices": [
+      3
+    ],
+    "is_multi": false,
+    "required_choices": 1,
+    "explanation": "Các kỹ thuật mở rộng truy vấn dựa trên phân tích đồng xuất hiện từ vựng (Term Co-occurrence Analysis) khai thác hai nguồn dữ liệu quan trọng nhất:\n1. Tập dữ liệu truy vấn lớn (Query Logs): Khai thác mối quan hệ giữa các từ khóa thường xuyên được tìm kiếm cùng nhau trong các phiên làm việc của người dùng.\n2. Tập tài liệu xếp hạng đầu (Top-ranked documents / Pseudo-Relevance Feedback): Phân tích các từ xuất hiện cùng với từ khóa truy vấn trong các tài liệu đứng đầu danh sách kết quả trả về ban đầu.\nKết hợp cả hai nguồn này (D) mang lại khả năng mở rộng truy vấn chính xác và toàn diện nhất.",
+    "image_path": "src/Slide_123.png"
+  },
+  {
+    "id": "seg_fe_124",
+    "slide": 124,
+    "is_info": false,
+    "topic": "Chương 2: Architecture of a Search Engine (Section 2.2.2)",
+    "question": "What is the difference between an index term and a feature in information retrieval systems?",
+    "vn_question": "",
+    "options": [
+      "An index term is a part of a document that is stored in the index and used in searching, while a feature is a part of a document that is used to represent its content",
+      "An index term is always a word, while a feature can be any part of a document, such as a word, phrase, or even a number",
+      "Index terms are used in traditional information retrieval systems, while features are used in machine learning-based information retrieval systems",
+      "There is no difference between an index term and a feature in information retrieval systems"
+    ],
+    "vn_options": [],
+    "correct": 0,
+    "answer": 0,
+    "correct_letter": "A",
+    "correct_letters": [
+      "A"
+    ],
+    "correct_choices": [
+      0
+    ],
+    "is_multi": false,
+    "required_choices": 1,
+    "explanation": "Theo Giáo trình Croft (Chương 2): Index term là thành phần của tài liệu được lưu trong chỉ mục để phục vụ tìm kiếm, trong khi Feature là thành phần dùng để biểu diễn nội dung tài liệu (Đáp án A).",
+    "image_path": "src/Slide_124.png"
+  },
+  {
+    "id": "seg_fe_125",
+    "slide": 125,
+    "is_info": false,
+    "topic": "Search Engines & Information Retrieval",
+    "question": "What factors must be taken into account when designing algorithms for comparing text and ranking documents?",
+    "vn_question": "",
+    "options": [
+      "Length of the document",
+      "Number of words in the document",
+      "Complexity of the document",
+      "Factors that go into a person’s decision as to whether a particular document is relevant"
+    ],
+    "vn_options": [],
+    "correct": 3,
+    "answer": 3,
+    "correct_letter": "D",
+    "correct_letters": [
+      "D"
+    ],
+    "correct_choices": [
+      3
+    ],
+    "is_multi": false,
+    "required_choices": 1,
+    "explanation": "Đáp án chuẩn là D. Dựa trên giáo trình Search Engines: Information Retrieval in Practice (Bruce Croft).",
+    "image_path": "src/Slide_125.png"
+  },
+  {
+    "id": "seg_fe_126",
+    "slide": 126,
+    "is_info": false,
+    "topic": "Search Engines & Information Retrieval",
+    "question": "What factors must be taken into account when designing algorithms for comparing text and ranking documents?",
+    "vn_question": "",
+    "options": [
+      "Length of the document",
+      "Number of words in the document",
+      "Complexity of the document",
+      "Factors that go into a person’s decision as to whether a particular document is relevant"
+    ],
+    "vn_options": [],
+    "correct": 3,
+    "answer": 3,
+    "correct_letter": "D",
+    "correct_letters": [
+      "D"
+    ],
+    "correct_choices": [
+      3
+    ],
+    "is_multi": false,
+    "required_choices": 1,
+    "explanation": "Đáp án chuẩn là D. Dựa trên giáo trình Search Engines: Information Retrieval in Practice (Bruce Croft).",
+    "image_path": "src/Slide_126.png"
+  },
+  {
+    "id": "seg_fe_127",
+    "slide": 127,
+    "is_info": true,
+    "topic": "Slide phân mục",
+    "question": "> :",
+    "vn_question": "",
+    "options": [],
+    "vn_options": [],
+    "correct": 0,
+    "answer": 0,
+    "correct_letter": "A",
+    "correct_letters": [
+      "A"
+    ],
+    "correct_choices": [
+      0
+    ],
+    "is_multi": false,
+    "required_choices": 1,
+    "explanation": "Slide phân mục hoặc tiêu đề chương.",
+    "image_path": "src/Slide_127.png"
+  },
+  {
+    "id": "seg_fe_128",
+    "slide": 128,
+    "is_info": true,
+    "topic": "Slide phân mục",
+    "question": "> :",
+    "vn_question": "",
+    "options": [],
+    "vn_options": [],
+    "correct": 0,
+    "answer": 0,
+    "correct_letter": "A",
+    "correct_letters": [
+      "A"
+    ],
+    "correct_choices": [
+      0
+    ],
+    "is_multi": false,
+    "required_choices": 1,
+    "explanation": "Slide phân mục hoặc tiêu đề chương.",
+    "image_path": "src/Slide_128.png"
+  },
+  {
+    "id": "seg_fe_129",
+    "slide": 129,
+    "is_info": true,
+    "topic": "Slide phân mục",
+    "question": "Information Retrieval and Search Engine Architecture",
+    "vn_question": "",
+    "options": [],
+    "vn_options": [],
+    "correct": 0,
+    "answer": 0,
+    "correct_letter": "A",
+    "correct_letters": [
+      "A"
+    ],
+    "correct_choices": [
+      0
+    ],
+    "is_multi": false,
+    "required_choices": 1,
+    "explanation": "Slide phân mục hoặc tiêu đề chương.",
+    "image_path": "src/Slide_129.png"
+  },
+  {
+    "id": "seg_fe_130",
+    "slide": 130,
+    "is_info": false,
+    "topic": "Chương 1: Information Retrieval and Search Engines (Mục 1.1 What is Information Retrieval?).",
+    "question": "What is described as the core task of information retrieval?",
+    "vn_question": "",
+    "options": [
+      "Understanding and modeling how people compare texts, then designing algorithms that perform this comparison accurately",
+      "Building faster processors to scan documents",
+      "Storing every document in a relational database",
+      "Translating queries into SQL statements"
+    ],
+    "vn_options": [],
+    "correct": 0,
+    "answer": 0,
+    "correct_letter": "A",
+    "correct_letters": [
+      "A"
+    ],
+    "correct_choices": [
+      0
+    ],
+    "is_multi": false,
+    "required_choices": 1,
+    "explanation": "Bản chất của việc tìm kiếm là người dùng có một nhu cầu thông tin (được diễn đạt bằng văn bản truy vấn), và hệ thống phải đối chiếu nó với tập văn bản tài liệu để tìm sự tương đồng về ngữ nghĩa.\n Nhiệm vụ trung tâm của IR là toán học hóa quy trình nhận thức so sánh này (thông qua mô hình Vector Space, mô hình Xác suất, Mô hình Ngôn ngữ, v.v.).",
+    "image_path": "src/Slide_130.png"
+  },
+  {
+    "id": "seg_fe_131",
+    "slide": 131,
+    "is_info": false,
+    "topic": "Chương 1: Information Retrieval and Search Engines (Mục 1.1 What is Information Retrieval?).",
+    "question": "What is described as the core task of information retrieval?",
+    "vn_question": "",
+    "options": [
+      "Understanding and modeling how people compare texts, then designing algorithms that perform this comparison accurately",
+      "Building faster processors to scan documents",
+      "Storing every document in a relational database",
+      "Translating queries into SQL statements"
+    ],
+    "vn_options": [],
+    "correct": 0,
+    "answer": 0,
+    "correct_letter": "A",
+    "correct_letters": [
+      "A"
+    ],
+    "correct_choices": [
+      0
+    ],
+    "is_multi": false,
+    "required_choices": 1,
+    "explanation": "Bản chất của việc tìm kiếm là người dùng có một nhu cầu thông tin (được diễn đạt bằng văn bản truy vấn), và hệ thống phải đối chiếu nó với tập văn bản tài liệu để tìm sự tương đồng về ngữ nghĩa.\n Nhiệm vụ trung tâm của IR là toán học hóa quy trình nhận thức so sánh này (thông qua mô hình Vector Space, mô hình Xác suất, Mô hình Ngôn ngữ, v.v.).",
+    "image_path": "src/Slide_131.png"
+  },
+  {
+    "id": "seg_fe_132",
+    "slide": 132,
+    "is_info": false,
+    "topic": "Chương 1: Information Retrieval and Search Engines (Mục 1.1 IR and Search Engines).",
+    "question": "Which statement best defines a search engine?",
+    "vn_question": "",
+    "options": [
+      "A database management system for structured records",
+      "A program that only stores web pages without ranking them",
+      "The practical application of information retrieval techniques to large-scale text collections",
+      "A tool used only to detect spam in email"
+    ],
+    "vn_options": [],
+    "correct": 2,
+    "answer": 2,
+    "correct_letter": "C",
+    "correct_letters": [
+      "C"
+    ],
+    "correct_choices": [
+      2
+    ],
+    "is_multi": false,
+    "required_choices": 1,
+    "explanation": "Khớp nguyên văn định nghĩa mở đầu chương 1 của giáo trình: Search engine chính là sự triển khai thực tế của các lý thuyết IR nhằm đáp ứng khối lượng dữ liệu khổng lồ, thời gian thực, có khả năng mở rộng (scalability) và chịu lỗi cao.",
+    "image_path": "src/Slide_132.png"
+  },
+  {
+    "id": "seg_fe_133",
+    "slide": 133,
+    "is_info": false,
+    "topic": "Chương 1 & Chương 2: Search Engine Architecture & Ranking Process.",
+    "question": "When a web search engine receives a query, which step comes right after computing a score for each page?",
+    "vn_question": "",
+    "options": [
+      "Generating summaries for the remaining pages",
+      "Removing duplicate and redundant pages",
+      "Identifying the set of pages that contain the query terms",
+      "Crawling new web pages"
+    ],
+    "vn_options": [],
+    "correct": 1,
+    "answer": 1,
+    "correct_letter": "B",
+    "correct_letters": [
+      "B"
+    ],
+    "correct_choices": [
+      1
+    ],
+    "is_multi": false,
+    "required_choices": 1,
+    "explanation": "Trình tự xử lý truy vấn:\n1. Xác định tập các trang chứa từ khóa truy vấn qua chỉ mục đảo (candidate selection).\n2. Chấm điểm mức độ liên quan cho các trang (scoring / ranking).\n3. Loại bỏ các trang trùng lặp / gần trùng lặp (duplicate & redundant pages) và phân cụm đa dạng hóa kết quả.\n4. Trích xuất đoạn trích / tóm tắt (snippets) cho các trang còn lại đứng đầu.\n5. Hiển thị trang kết quả (SERP) cho người dùng.",
+    "image_path": "src/Slide_133.png"
+  },
+  {
+    "id": "seg_fe_134",
+    "slide": 134,
+    "is_info": false,
+    "topic": "Chương 1 & Chương 2: Search Engine Architecture & Ranking Process.",
+    "question": "When a web search engine receives a query, which step comes right after computing a score for each page?",
+    "vn_question": "",
+    "options": [
+      "Generating summaries for the remaining pages",
+      "Removing duplicate and redundant pages",
+      "Identifying the set of pages that contain the query terms",
+      "Crawling new web pages"
+    ],
+    "vn_options": [],
+    "correct": 1,
+    "answer": 1,
+    "correct_letter": "B",
+    "correct_letters": [
+      "B"
+    ],
+    "correct_choices": [
+      1
+    ],
+    "is_multi": false,
+    "required_choices": 1,
+    "explanation": "Trình tự xử lý truy vấn:\n1. Xác định tập các trang chứa từ khóa truy vấn qua chỉ mục đảo (candidate selection).\n2. Chấm điểm mức độ liên quan cho các trang (scoring / ranking).\n3. Loại bỏ các trang trùng lặp / gần trùng lặp (duplicate & redundant pages) và phân cụm đa dạng hóa kết quả.\n4. Trích xuất đoạn trích / tóm tắt (snippets) cho các trang còn lại đứng đầu.\n5. Hiển thị trang kết quả (SERP) cho người dùng.",
+    "image_path": "src/Slide_134.png"
+  },
+  {
+    "id": "seg_fe_135",
+    "slide": 135,
+    "is_info": false,
+    "topic": "Chương 1: Information Retrieval and Search Engines (Mục Desktop Search vs. Web Search).",
+    "question": "Compared with web search, a desktop search engine especially requires a better understanding of what?",
+    "vn_question": "",
+    "options": [
+      "Advertising keywords and bidding",
+      "Link popularity and PageRank",
+      "File formats and file creation time",
+      "Multilingual machine translation"
+    ],
+    "vn_options": [],
+    "correct": 2,
+    "answer": 2,
+    "correct_letter": "C",
+    "correct_letters": [
+      "C"
+    ],
+    "correct_choices": [
+      2
+    ],
+    "is_multi": false,
+    "required_choices": 1,
+    "explanation": "Trên máy tính cá nhân (desktop search), dữ liệu bao gồm rất nhiều loại định dạng độc quyền phức tạp (PDF, Word, Excel, file nén, file code, email cá nhân) và siêu dữ liệu hệ thống tệp (thời gian tạo/sửa đổi, thư mục).\nNgược lại, desktop search không có đồ thị liên kết siêu văn bản (không có PageRank - loại B) và không có cơ chế đấu thầu từ khóa quảng cáo (loại A).",
+    "image_path": "src/Slide_135.png"
+  },
+  {
+    "id": "seg_fe_136",
+    "slide": 136,
+    "is_info": false,
+    "topic": "Chương 1: Information Retrieval and Search Engines (Mục Enterprise Search).",
+    "question": "Besides managing and searching documents, an enterprise search engine helps an organization do what?",
+    "vn_question": "",
+    "options": [
+      "Crawl the entire public Web",
+      "Increase advertising revenue",
+      "Replace its email system",
+      "Comply with regulations on retaining email and business communications"
+    ],
+    "vn_options": [],
+    "correct": 3,
+    "answer": 3,
+    "correct_letter": "D",
+    "correct_letters": [
+      "D"
+    ],
+    "correct_choices": [
+      3
+    ],
+    "is_multi": false,
+    "required_choices": 1,
+    "explanation": "Tìm kiếm doanh nghiệp hoạt động phía sau tường lửa nội bộ. Một trong những động lực triển khai quan trọng nhất của doanh nghiệp là tuân thủ pháp lý (compliance & e-discovery): hệ thống phải có khả năng lưu trữ, truy vết và tìm kiếm nhanh chóng toàn bộ thông tin trao đổi nội bộ khi có thanh tra pháp lý hoặc kiểm toán.\n Enterprise search không cào web công cộng (loại A), không nhằm tăng doanh thu quảng cáo (loại B) và không thay thế hệ thống email (loại C).",
+    "image_path": "src/Slide_136.png"
+  },
+  {
+    "id": "seg_fe_137",
+    "slide": 137,
+    "is_info": false,
+    "topic": "Chương 1: Information Retrieval and Search Engines (Mục Search Engineers in Practice).",
+    "question": "What background do most search engineers have?",
+    "vn_question": "",
+    "options": [
+      "Computer science, mostly with a systems or database background; few are trained in information retrieval",
+      "Linguistics, with deep training in grammar",
+      "Information retrieval, with almost no computer science training",
+      "Marketing and advertising"
+    ],
+    "vn_options": [],
+    "correct": 0,
+    "answer": 0,
+    "correct_letter": "A",
+    "correct_letters": [
+      "A"
+    ],
+    "correct_choices": [
+      0
+    ],
+    "is_multi": false,
+    "required_choices": 1,
+    "explanation": "Trong phần mở đầu của cuốn sách Search Engines: Information Retrieval in Practice, các tác giả Croft, Metzler và Strohman đã chỉ ra thực trạng: Đa số kỹ sư xây dựng hệ thống tìm kiếm là dân kỹ thuật hệ thống (hệ điều hành, mạng, CSDL), ít người được đào tạo bài bản từ đầu về các mô hình toán học của IR. Đây cũng chính là lý do cuốn giáo trình này được viết ra để đào tạo kỹ sư hệ thống làm chủ kiến thức IR.",
+    "image_path": "src/Slide_137.png"
+  },
+  {
+    "id": "seg_fe_138",
+    "slide": 138,
+    "is_info": false,
+    "topic": "Chương 1 & Chương 11: Social Search (Mục Document Filtering, Routing & SDI).",
+    "question": "A system that delivers new articles on business, politics or lifestyle to subscribers according to their interests is an example of what?",
+    "vn_question": "",
+    "options": [
+      "Summarization",
+      "Document routing, filtering and selective dissemination",
+      "Expert search",
+      "Question answering"
+    ],
+    "vn_options": [],
+    "correct": 1,
+    "answer": 1,
+    "correct_letter": "B",
+    "correct_letters": [
+      "B"
+    ],
+    "correct_choices": [
+      1
+    ],
+    "is_multi": false,
+    "required_choices": 1,
+    "explanation": "Đây là định nghĩa kinh điển của Selective Dissemination of Information (SDI) hay Document Filtering/Routing: Người dùng có hồ sơ sở thích cố định (persistent interest profile), khi có tài liệu mới đổ vào dòng dữ liệu, hệ thống tự động so khớp và đẩy (push) các tài liệu phù hợp tới từng người đăng ký.\n Tóm tắt văn bản (A), tìm kiếm chuyên gia (C) hay hệ thống hỏi đáp (D) không phù hợp với mô tả này.",
+    "image_path": "src/Slide_138.png"
+  },
+  {
+    "id": "seg_fe_139",
+    "slide": 139,
+    "is_info": false,
+    "topic": "Chương 1 & Chương 11: Social Search (Mục Document Filtering, Routing & SDI).",
+    "question": "A system that delivers new articles on business, politics or lifestyle to subscribers according to their interests is an example of what?",
+    "vn_question": "",
+    "options": [
+      "Summarization",
+      "Document routing, filtering and selective dissemination",
+      "Expert search",
+      "Question answering"
+    ],
+    "vn_options": [],
+    "correct": 1,
+    "answer": 1,
+    "correct_letter": "B",
+    "correct_letters": [
+      "B"
+    ],
+    "correct_choices": [
+      1
+    ],
+    "is_multi": false,
+    "required_choices": 1,
+    "explanation": "Đây là định nghĩa kinh điển của Selective Dissemination of Information (SDI) hay Document Filtering/Routing: Người dùng có hồ sơ sở thích cố định (persistent interest profile), khi có tài liệu mới đổ vào dòng dữ liệu, hệ thống tự động so khớp và đẩy (push) các tài liệu phù hợp tới từng người đăng ký.\n Tóm tắt văn bản (A), tìm kiếm chuyên gia (C) hay hệ thống hỏi đáp (D) không phù hợp với mô tả này.",
+    "image_path": "src/Slide_139.png"
+  },
+  {
+    "id": "seg_fe_140",
+    "slide": 140,
+    "is_info": false,
+    "topic": "Chương 1: Information Retrieval and Search Engines (Mục Information Extraction).",
+    "question": "A system that recognizes named entities such as places and dates and combines them into structured records is called what?",
+    "vn_question": "",
+    "options": [
+      "Text clustering system",
+      "Topic detection and tracking system",
+      "Information extraction system",
+      "Summarization system"
+    ],
+    "vn_options": [],
+    "correct": 2,
+    "answer": 2,
+    "correct_letter": "C",
+    "correct_letters": [
+      "C"
+    ],
+    "correct_choices": [
+      2
+    ],
+    "is_multi": false,
+    "required_choices": 1,
+    "explanation": "Information Extraction (IE): Là quá trình tự động bóc tách các mẩu thông tin có cấu trúc (thực thể tên người, tổ chức, ngày tháng, sự kiện) từ các văn bản phi cấu trúc (unstructured text) để nạp vào cơ sở dữ liệu.\n Phân biệt: Phân cụm (A) nhóm tài liệu tương đồng; TDT (B) theo dõi chủ đề tin tức; Tóm tắt (D) cô đọng nội dung.",
+    "image_path": "src/Slide_140.png"
+  },
+  {
+    "id": "seg_fe_141",
+    "slide": 141,
+    "is_info": false,
+    "topic": "Chương 1: Information Retrieval and Search Engines (Mục Expert Search).",
+    "question": "Which system identifies members of an organization who are experts in a given area?",
+    "vn_question": "",
+    "options": [
+      "Question answering system",
+      "Summarization system",
+      "Clustering system",
+      "Expert search system"
+    ],
+    "vn_options": [],
+    "correct": 3,
+    "answer": 3,
+    "correct_letter": "D",
+    "correct_letters": [
+      "D"
+    ],
+    "correct_choices": [
+      3
+    ],
+    "is_multi": false,
+    "required_choices": 1,
+    "explanation": "Expert Search (Enterprise Expertise Retrieval): Thay vì xếp hạng tài liệu, hệ thống phân tích các ấn phẩm, báo cáo dự án, email nội bộ mà nhân viên viết để xếp hạng chính các nhân sự / chuyên gia phù hợp nhất với chủ đề cần tìm.",
+    "image_path": "src/Slide_141.png"
+  },
+  {
+    "id": "seg_fe_142",
+    "slide": 142,
+    "is_info": false,
+    "topic": "Chương 1: Information Retrieval and Search Engines (Mục Question Answering - QA).",
+    "question": "Which system synthesizes information from multiple sources to give a concise answer to a specific question?",
+    "vn_question": "",
+    "options": [
+      "Information extraction system",
+      "Question answering system",
+      "Desktop search engi",
+      "Text categorization system"
+    ],
+    "vn_options": [],
+    "correct": 1,
+    "answer": 1,
+    "correct_letter": "B",
+    "correct_letters": [
+      "B"
+    ],
+    "correct_choices": [
+      1
+    ],
+    "is_multi": false,
+    "required_choices": 1,
+    "explanation": "Hệ thống tìm kiếm tài liệu thông thường trả về một danh sách liên kết trang web. Hệ thống Question Answering (QA) phân tích câu hỏi bằng ngôn ngữ tự nhiên và trích xuất/tổng hợp chính xác câu trả lời ngắn gọn (Direct Answer).",
+    "image_path": "src/Slide_142.png"
+  },
+  {
+    "id": "seg_fe_143",
+    "slide": 143,
+    "is_info": false,
+    "topic": "Chương 1: Information Retrieval and Search Engines (Mục Question Answering - QA).",
+    "question": "Which system synthesizes information from multiple sources to give a concise answer to a specific question?",
+    "vn_question": "",
+    "options": [
+      "Information extraction system",
+      "Question answering system",
+      "Desktop search engi",
+      "Text categorization system"
+    ],
+    "vn_options": [],
+    "correct": 1,
+    "answer": 1,
+    "correct_letter": "B",
+    "correct_letters": [
+      "B"
+    ],
+    "correct_choices": [
+      1
+    ],
+    "is_multi": false,
+    "required_choices": 1,
+    "explanation": "Hệ thống tìm kiếm tài liệu thông thường trả về một danh sách liên kết trang web. Hệ thống Question Answering (QA) phân tích câu hỏi bằng ngôn ngữ tự nhiên và trích xuất/tổng hợp chính xác câu trả lời ngắn gọn (Direct Answer).",
+    "image_path": "src/Slide_143.png"
+  },
+  {
+    "id": "seg_fe_144",
+    "slide": 144,
+    "is_info": false,
+    "topic": "Chương 1 & Chương 2: Architecture of A Search Engine (Mục Information Need vs. Query).",
+    "question": "In the basic IR system architecture, what is the foundation and motivation of the search process?",
+    "vn_question": "",
+    "options": [
+      "The inverted index",
+      "The crawler",
+      "The user's information need",
+      "The ranking algorithm"
+    ],
+    "vn_options": [],
+    "correct": 2,
+    "answer": 2,
+    "correct_letter": "C",
+    "correct_letters": [
+      "C"
+    ],
+    "correct_choices": [
+      2
+    ],
+    "is_multi": false,
+    "required_choices": 1,
+    "explanation": "Giáo trình nhấn mạnh: Động lực khởi phát của việc tìm kiếm là sự thiếu hụt tri thức - tức Information Need trong tâm trí người dùng. Truy vấn (query) chỉ là phương tiện biểu đạt (thường chưa hoàn hảo) của nhu cầu thông tin đó.",
+    "image_path": "src/Slide_144.png"
+  },
+  {
+    "id": "seg_fe_145",
+    "slide": 145,
+    "is_info": false,
+    "topic": "Chương 1 & Chương 9: Evaluating Search Engines (Mục Effectiveness vs. Efficiency).",
+    "question": "In search engine design, what does effectiveness (quality) mean?",
+    "vn_question": "",
+    "options": [
+      "Processing queries as quickly as possible",
+      "Using the smallest possible index",
+      "Reducing hardware cost",
+      "Retrieving the most relevant set of documents possible for a query"
+    ],
+    "vn_options": [],
+    "correct": 3,
+    "answer": 3,
+    "correct_letter": "D",
+    "correct_letters": [
+      "D"
+    ],
+    "correct_choices": [
+      3
+    ],
+    "is_multi": false,
+    "required_choices": 1,
+    "explanation": "Effectiveness (Chất lượng/Độ hiệu quả): Đo lường mức độ thỏa mãn nhu cầu người dùng thông qua các chỉ số liên quan như Precision, Recall, MAP, NDCG.\nCác tiêu chí như tốc độ phản hồi (A), kích thước chỉ mục nhỏ (B), giảm giá thành phần cứng (C) thuộc về nhóm Efficiency (Hiệu năng).",
+    "image_path": "src/Slide_145.png"
+  },
+  {
+    "id": "seg_fe_146",
+    "slide": 146,
+    "is_info": false,
+    "topic": "Chương 1 & Chương 9: Evaluating Search Engines (Mục Effectiveness vs. Efficiency).",
+    "question": "In search engine design, what does efficiency (speed) mean?",
+    "vn_question": "",
+    "options": [
+      "Returning only relevant documents",
+      "Processing user queries as quickly as possible",
+      "Showing more advertisements",
+      "Crawling more websites"
+    ],
+    "vn_options": [],
+    "correct": 1,
+    "answer": 1,
+    "correct_letter": "B",
+    "correct_letters": [
+      "B"
+    ],
+    "correct_choices": [
+      1
+    ],
+    "is_multi": false,
+    "required_choices": 1,
+    "explanation": "Efficiency tập trung vào khía cạnh tài nguyên và thời gian: tối thiểu hóa độ trễ xử lý (latency), tối đa hóa thông lượng truy vấn (throughput) và tiết kiệm bộ nhớ/CPU.",
+    "image_path": "src/Slide_146.png"
+  },
+  {
+    "id": "seg_fe_147",
+    "slide": 147,
+    "is_info": false,
+    "topic": "Chương 2: Architecture of A Search Engine (Mục 2.1 Major System Components).",
+    "question": "Which building blocks belong to the indexing process?",
+    "vn_question": "",
+    "options": [
+      "Text acquisition, text transformation, index creation",
+      "User interaction, ranking, evaluation",
+      "Crawling, ranking, advertising",
+      "Logging, scoring, caching"
+    ],
+    "vn_options": [],
+    "correct": 0,
+    "answer": 0,
+    "correct_letter": "A",
+    "correct_letters": [
+      "A"
+    ],
+    "correct_choices": [
+      0
+    ],
+    "is_multi": false,
+    "required_choices": 1,
+    "explanation": "Kiến trúc search engine chia làm 2 quy trình vĩ mô độc lập:\n1. The Indexing Process (Quy trình chỉ mục): Gồm 3 khối: Text acquisition (crawler/feeds) → Text transformation (parser/tokenization/stemming) → Index creation (inversion/statistics).\n2. The Query Process (Quy trình truy vấn): Gồm: User interaction → Ranking → Evaluation.",
+    "image_path": "src/Slide_147.png"
+  },
+  {
+    "id": "seg_fe_148",
+    "slide": 148,
+    "is_info": false,
+    "topic": "Chương 2: Architecture of A Search Engine (Mục 2.1 Major System Components).",
+    "question": "Which building blocks belong to the query process?",
+    "vn_question": "",
+    "options": [
+      "Text acquisition, text transformation, index creation",
+      "Parsing, stemming, inversion",
+      "User interaction, ranking, evaluation",
+      "Feeds, conversion, document data store"
+    ],
+    "vn_options": [],
+    "correct": 2,
+    "answer": 2,
+    "correct_letter": "C",
+    "correct_letters": [
+      "C"
+    ],
+    "correct_choices": [
+      2
+    ],
+    "is_multi": false,
+    "required_choices": 1,
+    "explanation": "Kiến trúc search engine chia làm 2 quy trình vĩ mô độc lập:\n1. The Indexing Process (Quy trình chỉ mục): Gồm 3 khối: Text acquisition (crawler/feeds) → Text transformation (parser/tokenization/stemming) → Index creation (inversion/statistics).\n2. The Query Process (Quy trình truy vấn): Gồm: User interaction → Ranking → Evaluation.",
+    "image_path": "src/Slide_148.png"
+  },
+  {
+    "id": "seg_fe_149",
+    "slide": 149,
+    "is_info": false,
+    "topic": "Chương 2: Architecture of A Search Engine (Mục 2.1 Major System Components).",
+    "question": "Which building blocks belong to the query process?",
+    "vn_question": "",
+    "options": [
+      "Text acquisition, text transformation, index creation",
+      "Parsing, stemming, inversion",
+      "User interaction, ranking, evaluation",
+      "Feeds, conversion, document data store"
+    ],
+    "vn_options": [],
+    "correct": 2,
+    "answer": 2,
+    "correct_letter": "C",
+    "correct_letters": [
+      "C"
+    ],
+    "correct_choices": [
+      2
+    ],
+    "is_multi": false,
+    "required_choices": 1,
+    "explanation": "Kiến trúc search engine chia làm 2 quy trình vĩ mô độc lập:\n1. The Indexing Process (Quy trình chỉ mục): Gồm 3 khối: Text acquisition (crawler/feeds) → Text transformation (parser/tokenization/stemming) → Index creation (inversion/statistics).\n2. The Query Process (Quy trình truy vấn): Gồm: User interaction → Ranking → Evaluation.",
+    "image_path": "src/Slide_149.png"
+  },
+  {
+    "id": "seg_fe_150",
+    "slide": 150,
+    "is_info": false,
+    "topic": "Chương 3: Crawls and Feeds (Mục 3.2 Crawling the Web: Coverage and Freshness).",
+    "question": "A general web crawler must efficiently find a huge number of pages and keep them up to date. These two requirements are called what?",
+    "vn_question": "",
+    "options": [
+      "Precision and recall",
+      "Latency and throughput",
+      "Authority and hubs",
+      "Coverage and freshness"
+    ],
+    "vn_options": [],
+    "correct": 3,
+    "answer": 3,
+    "correct_letter": "D",
+    "correct_letters": [
+      "D"
+    ],
+    "correct_choices": [
+      3
+    ],
+    "is_multi": false,
+    "required_choices": 1,
+    "explanation": "Coverage (Độ bao phủ): Tỷ lệ phần trăm web hữu ích mà bot thu thập được so với toàn mạng.\nFreshness (Độ tươi mới): Tần suất cập nhật lại các trang đã thay đổi nội dung để chỉ mục không bị lỗi thời.",
+    "image_path": "src/Slide_150.png"
+  },
+  {
+    "id": "seg_fe_151",
+    "slide": 151,
+    "is_info": false,
+    "topic": "Chương 3: Crawls and Feeds (Mục 3.1 Document Feeds & Document Crawlers).",
+    "question": "How does a document crawler for enterprise and desktop search find documents?",
+    "vn_question": "",
+    "options": [
+      "Only by reading RSS feeds",
+      "Only by following hyperlinks on public websites",
+      "By following links and scanning directories",
+      "By asking users to upload files"
+    ],
+    "vn_options": [],
+    "correct": 2,
+    "answer": 2,
+    "correct_letter": "C",
+    "correct_letters": [
+      "C"
+    ],
+    "correct_choices": [
+      2
+    ],
+    "is_multi": false,
+    "required_choices": 1,
+    "explanation": "Trong mạng nội bộ công ty hoặc ổ cứng cá nhân, tài liệu nằm rải rác trong các thư mục chia sẻ (file directories/folders) và các cổng thông tin nội bộ (intranet pages). Do đó crawler phải kết hợp cả quét thư mục (scanning directories) và duyệt siêu liên kết nội bộ (following links).",
+    "image_path": "src/Slide_151.png"
+  },
+  {
+    "id": "seg_fe_152",
+    "slide": 152,
+    "is_info": false,
+    "topic": "Chương 3: Crawls and Feeds (Mục 3.1 Document Feeds & Document Crawlers).",
+    "question": "How does a document crawler for enterprise and desktop search find documents?",
+    "vn_question": "",
+    "options": [
+      "Only by reading RSS feeds",
+      "Only by following hyperlinks on public websites",
+      "By following links and scanning directories",
+      "By asking users to upload files"
+    ],
+    "vn_options": [],
+    "correct": 2,
+    "answer": 2,
+    "correct_letter": "C",
+    "correct_letters": [
+      "C"
+    ],
+    "correct_choices": [
+      2
+    ],
+    "is_multi": false,
+    "required_choices": 1,
+    "explanation": "Trong mạng nội bộ công ty hoặc ổ cứng cá nhân, tài liệu nằm rải rác trong các thư mục chia sẻ (file directories/folders) và các cổng thông tin nội bộ (intranet pages). Do đó crawler phải kết hợp cả quét thư mục (scanning directories) và duyệt siêu liên kết nội bộ (following links).",
+    "image_path": "src/Slide_152.png"
+  },
+  {
+    "id": "seg_fe_153",
+    "slide": 153,
+    "is_info": false,
+    "topic": "Search Engines & Information Retrieval",
+    "question": "What is a common standard used for web feeds such as news, blogs and video?",
+    "vn_question": "",
+    "options": [
+      "RSS",
+      "SQL",
+      "HTTP POST",
+      "CORBA"
+    ],
+    "vn_options": [],
+    "correct": 0,
+    "answer": 0,
+    "correct_letter": "A",
+    "correct_letters": [
+      "A"
+    ],
+    "correct_choices": [
+      0
+    ],
+    "is_multi": false,
+    "required_choices": 1,
+    "explanation": "Đáp án chuẩn là A. Dựa trên giáo trình Search Engines: Information Retrieval in Practice (Bruce Croft).",
+    "image_path": "src/Slide_153.png"
+  },
+  {
+    "id": "seg_fe_154",
+    "slide": 154,
+    "is_info": false,
+    "topic": "Chương 2: Architecture of A Search Engine (Mục 2.2 Text Acquisition: Conversion).",
+    "question": "What does the conversion component of text acquisition do?",
+    "vn_question": "",
+    "options": [
+      "Ranks documents by relevance",
+      "Converts documents (HTML, PDF, Word...) into a consistent text-plus-metadata format such as XML",
+      "Removes stopwords from queries",
+      "Distributes the index across machines"
+    ],
+    "vn_options": [],
+    "correct": 1,
+    "answer": 1,
+    "correct_letter": "B",
+    "correct_letters": [
+      "B"
+    ],
+    "correct_choices": [
+      1
+    ],
+    "is_multi": false,
+    "required_choices": 1,
+    "explanation": "Dữ liệu thu thập từ bên ngoài có hàng trăm định dạng nhị phân khác nhau. Module Conversion chuẩn hóa toàn bộ về một cấu trúc trung gian đồng nhất (thường là XML nội bộ) để các công đoạn phân tích văn bản phía sau xử lý một cách nhất quán.",
+    "image_path": "src/Slide_154.png"
+  },
+  {
+    "id": "seg_fe_155",
+    "slide": 155,
+    "is_info": false,
+    "topic": "Chương 2: Architecture of A Search Engine (Mục 2.2 Text Acquisition: Conversion).",
+    "question": "What does the conversion component of text acquisition do?",
+    "vn_question": "",
+    "options": [
+      "Ranks documents by relevance",
+      "Converts documents (HTML, PDF, Word...) into a consistent text-plus-metadata format such as XML",
+      "Removes stopwords from queries",
+      "Distributes the index across machines"
+    ],
+    "vn_options": [],
+    "correct": 1,
+    "answer": 1,
+    "correct_letter": "B",
+    "correct_letters": [
+      "B"
+    ],
+    "correct_choices": [
+      1
+    ],
+    "is_multi": false,
+    "required_choices": 1,
+    "explanation": "Dữ liệu thu thập từ bên ngoài có hàng trăm định dạng nhị phân khác nhau. Module Conversion chuẩn hóa toàn bộ về một cấu trúc trung gian đồng nhất (thường là XML nội bộ) để các công đoạn phân tích văn bản phía sau xử lý một cách nhất quán.",
+    "image_path": "src/Slide_155.png"
+  },
+  {
+    "id": "seg_fe_156",
+    "slide": 156,
+    "is_info": false,
+    "topic": "Chương 2: Architecture of A Search Engine (Mục 2.2 Document Data Store).",
+    "question": "Why does a document data store often use a simpler storage system instead of a relational database?",
+    "vn_question": "",
+    "options": [
+      "Relational databases cannot store text",
+      "Relational databases do not support metadata",
+      "Simpler systems provide complex query languages",
+      "The number of documents is very large, so a simpler and more efficient system is preferred"
+    ],
+    "vn_options": [],
+    "correct": 3,
+    "answer": 3,
+    "correct_letter": "D",
+    "correct_letters": [
+      "D"
+    ],
+    "correct_choices": [
+      3
+    ],
+    "is_multi": false,
+    "required_choices": 1,
+    "explanation": "Search engine chỉ cần thao tác lưu và đọc văn bản theo mã ID tài liệu (key-value lookup). Các tính năng phức tạp của RDBMS (giao dịch ACID, khóa bảng, kết nối bảng JOIN) gây tắc nghẽn hiệu năng khi quy mô lên tới hàng tỷ trang web. Do đó người ta dùng các hệ thống lưu trữ phân tán đơn giản (như Google Bigtable, NoSQL, distributed file systems).",
+    "image_path": "src/Slide_156.png"
+  },
+  {
+    "id": "seg_fe_157",
+    "slide": 157,
+    "is_info": false,
+    "topic": "Chương 2: Architecture & Chương 4: Processing Text (Mục 4.3 Stopwords).",
+    "question": "What does stopping do in text transformation?",
+    "vn_question": "",
+    "options": [
+      "Groups words derived from the same stem",
+      "Stops the crawler from visiting a site",
+      "Removes common words such as \"and\", \"or\", \"the\", \"in\"",
+      "Ends query processing after ten results"
+    ],
+    "vn_options": [],
+    "correct": 2,
+    "answer": 2,
+    "correct_letter": "C",
+    "correct_letters": [
+      "C"
+    ],
+    "correct_choices": [
+      2
+    ],
+    "is_multi": false,
+    "required_choices": 1,
+    "explanation": "Từ dừng (stopwords) xuất hiện với tần suất cực lớn nhưng hầu như không mang giá trị phân biệt nội dung tài liệu. Việc loại bỏ chúng giúp giảm dung lượng chỉ mục và tăng tốc độ xử lý câu truy vấn.",
+    "image_path": "src/Slide_157.png"
+  },
+  {
+    "id": "seg_fe_158",
+    "slide": 158,
+    "is_info": false,
+    "topic": "Chương 2: Architecture of A Search Engine (Mục 2.4 Index Creation: Inversion).",
+    "question": "Grouping \"computer\", \"computers\", \"computing\" and \"compute\" together is an example of what?",
+    "vn_question": "",
+    "options": [
+      "Stopping",
+      "Tokenizing",
+      "Stemming",
+      "Inversion"
+    ],
+    "vn_options": [],
+    "correct": 2,
+    "answer": 2,
+    "correct_letter": "C",
+    "correct_letters": [
+      "C"
+    ],
+    "correct_choices": [
+      2
+    ],
+    "is_multi": false,
+    "required_choices": 1,
+    "explanation": "Dữ liệu đầu vào thu thập được có dạng `Document -> [Words]`. Quá trình nghịch đảo (Inversion) đảo ngược quan hệ này để tạo ra bảng chỉ mục Word -> [List of Documents], cho phép tra cứu ngay lập tức các tài liệu khi biết từ khóa truy vấn.",
+    "image_path": "src/Slide_158.png"
+  },
+  {
+    "id": "seg_fe_159",
+    "slide": 159,
+    "is_info": false,
+    "topic": "Chương 2: Architecture & Chương 3 & 5: Link Analysis (Mục PageRank and HITS).",
+    "question": "Which are examples of link analysis algorithms?",
+    "vn_question": "",
+    "options": [
+      "$tf \\cdot idf$ and BM25",
+      "PageRank and Hubs & Authorities",
+      "Porter and Krovetz",
+      "$K$-means and KNN"
+    ],
+    "vn_options": [],
+    "correct": 1,
+    "answer": 1,
+    "correct_letter": "B",
+    "correct_letters": [
+      "B"
+    ],
+    "correct_choices": [
+      1
+    ],
+    "is_multi": false,
+    "required_choices": 1,
+    "explanation": "PageRank (Google) và HITS (Hubs & Authorities) của Jon Kleinberg là hai thuật toán nền tảng phân tích cấu trúc đồ thị liên kết web để đánh giá độ uy tín (authority) của trang web.\n Phân biệt: tf.idf/BM25 (A) là mô hình so khớp nội dung; Porter/Krovetz (C) là thuật toán stemming; K-means/KNN (D) là gom cụm/phân loại.",
+    "image_path": "src/Slide_159.png"
+  },
+  {
+    "id": "seg_fe_160",
+    "slide": 160,
+    "is_info": false,
+    "topic": "Chương 2: Architecture & Chương 3 & 5: Link Analysis (Mục PageRank and HITS).",
+    "question": "Which are examples of link analysis algorithms?",
+    "vn_question": "",
+    "options": [
+      "$tf \\cdot idf$ and BM25",
+      "PageRank and Hubs & Authorities",
+      "Porter and Krovetz",
+      "$K$-means and KNN"
+    ],
+    "vn_options": [],
+    "correct": 1,
+    "answer": 1,
+    "correct_letter": "B",
+    "correct_letters": [
+      "B"
+    ],
+    "correct_choices": [
+      1
+    ],
+    "is_multi": false,
+    "required_choices": 1,
+    "explanation": "PageRank (Google) và HITS (Hubs & Authorities) của Jon Kleinberg là hai thuật toán nền tảng phân tích cấu trúc đồ thị liên kết web để đánh giá độ uy tín (authority) của trang web.\n Phân biệt: tf.idf/BM25 (A) là mô hình so khớp nội dung; Porter/Krovetz (C) là thuật toán stemming; K-means/KNN (D) là gom cụm/phân loại.",
+    "image_path": "src/Slide_160.png"
+  },
+  {
+    "id": "seg_fe_161",
+    "slide": 161,
+    "is_info": false,
+    "topic": "Chương 2: Architecture of A Search Engine (Mục 2.3 Document Classifiers).",
+    "question": "What is the role of a classifier in text transformation?",
+    "vn_question": "",
+    "options": [
+      "Assigning class-related metadata such as topic, sentiment or spam labels to documents",
+      "Converting PDF files into XML",
+      "Computing the PageRank of each page",
+      "Merging results from multiple search engines"
+    ],
+    "vn_options": [],
+    "correct": 0,
+    "answer": 0,
+    "correct_letter": "A",
+    "correct_letters": [
+      "A"
+    ],
+    "correct_choices": [
+      0
+    ],
+    "is_multi": false,
+    "required_choices": 1,
+    "explanation": "Trong pipeline xử lý văn bản, các bộ phân loại tự động gán nhãn cho tài liệu: trang này có phải web spam không, thuộc chủ đề thể thao hay kinh tế, giọng điệu tích cực hay tiêu cực. Các nhãn này trở thành thuộc tính quan trọng phục vụ cho việc xếp hạng và lọc kết quả.",
+    "image_path": "src/Slide_161.png"
+  },
+  {
+    "id": "seg_fe_162",
+    "slide": 162,
+    "is_info": false,
+    "topic": "Chương 2, Chương 5 & Chương 7: Retrieval Models (Mục TF-IDF Weighting).",
+    "question": "The $tf \\cdot idf$ weighting combines which two quantities?",
+    "vn_question": "",
+    "options": [
+      "Page load time and bounce rate",
+      "Term frequency in the document and inverse document frequency in the collection",
+      "Number of inlinks and number of outlinks",
+      "Query length and document length only"
+    ],
+    "vn_options": [],
+    "correct": 1,
+    "answer": 1,
+    "correct_letter": "B",
+    "correct_letters": [
+      "B"
+    ],
+    "correct_choices": [
+      1
+    ],
+    "is_multi": false,
+    "required_choices": 1,
+    "explanation": "TF đo lường mức độ quan trọng cục bộ của từ trong bài viết cụ thể.\n IDF (log(N/df)) đo lường mức độ quý hiếm/đặc trưng của từ trên quy mô toàn bộ kho dữ liệu. Từ càng hiếm và xuất hiện càng nhiều trong văn bản thì trọng số liên quan càng cao.",
+    "image_path": "src/Slide_162.png"
+  },
+  {
+    "id": "seg_fe_163",
+    "slide": 163,
+    "is_info": false,
+    "topic": "Chương 2, Chương 5 & Chương 7: Retrieval Models (Mục TF-IDF Weighting).",
+    "question": "The $tf \\cdot idf$ weighting combines which two quantities?",
+    "vn_question": "",
+    "options": [
+      "Page load time and bounce rate",
+      "Term frequency in the document and inverse document frequency in the collection",
+      "Number of inlinks and number of outlinks",
+      "Query length and document length only"
+    ],
+    "vn_options": [],
+    "correct": 1,
+    "answer": 1,
+    "correct_letter": "B",
+    "correct_letters": [
+      "B"
+    ],
+    "correct_choices": [
+      1
+    ],
+    "is_multi": false,
+    "required_choices": 1,
+    "explanation": "TF đo lường mức độ quan trọng cục bộ của từ trong bài viết cụ thể.\n IDF (log(N/df)) đo lường mức độ quý hiếm/đặc trưng của từ trên quy mô toàn bộ kho dữ liệu. Từ càng hiếm và xuất hiện càng nhiều trong văn bản thì trọng số liên quan càng cao.",
+    "image_path": "src/Slide_163.png"
+  },
+  {
+    "id": "seg_fe_164",
+    "slide": 164,
+    "is_info": false,
+    "topic": "Search Engines & Information Retrieval",
+    "question": "Query logs, click-through data and dwell time are recorded mainly by which evaluation component?",
+    "vn_question": "",
+    "options": [
+      "Logging",
+      "Ranking analysis",
+      "Performance analysis",
+      "Index distribution"
+    ],
+    "vn_options": [],
+    "correct": 0,
+    "answer": 0,
+    "correct_letter": "A",
+    "correct_letters": [
+      "A"
+    ],
+    "correct_choices": [
+      0
+    ],
+    "is_multi": false,
+    "required_choices": 1,
+    "explanation": "Đáp án chuẩn là A. Dựa trên giáo trình Search Engines: Information Retrieval in Practice (Bruce Croft).",
+    "image_path": "src/Slide_164.png"
+  },
+  {
+    "id": "seg_fe_165",
+    "slide": 165,
+    "is_info": true,
+    "topic": "Slide phân mục",
+    "question": "Crawls,.Feeds.and Text Processing",
+    "vn_question": "",
+    "options": [],
+    "vn_options": [],
+    "correct": 0,
+    "answer": 0,
+    "correct_letter": "A",
+    "correct_letters": [
+      "A"
+    ],
+    "correct_choices": [
+      0
+    ],
+    "is_multi": false,
+    "required_choices": 1,
+    "explanation": "Slide phân mục hoặc tiêu đề chương.",
+    "image_path": "src/Slide_165.png"
+  },
+  {
+    "id": "seg_fe_166",
+    "slide": 166,
+    "is_info": false,
+    "topic": "Chương 3: Crawls and Feeds (Mục 3.2 Crawling the Web: Multi-threaded Crawlers).",
+    "question": "Why does a web crawler use many threads?",
+    "vn_question": "",
+    "options": [
+      "Because each thread stores a different index",
+      "Because web servers require one thread per page",
+      "Because it spends much time waiting for DNS replies, connection acknowledgements and page data",
+      "Because threads remove duplicate pages automatically"
+    ],
+    "vn_options": [],
+    "correct": 2,
+    "answer": 2,
+    "correct_letter": "C",
+    "correct_letters": [
+      "C"
+    ],
+    "correct_choices": [
+      2
+    ],
+    "is_multi": false,
+    "required_choices": 1,
+    "explanation": "Thu thập web là tác vụ bị nghẽn bởi mạng và I/O (I/O-bound / Network latency-bound). Nếu chạy đơn luồng, CPU sẽ nhàn rỗi hơn 90% thời gian chỉ để chờ đợi gói tin TCP/DNS. Chạy đa luồng cho phép crawler gửi yêu cầu tới hàng trăm server khác nhau cùng lúc để tối đa hóa băng thông.",
+    "image_path": "src/Slide_166.png"
+  },
+  {
+    "id": "seg_fe_167",
+    "slide": 167,
+    "is_info": false,
+    "topic": "Chương 3: Crawls and Feeds (Mục 3.2 Crawling the Web: Multi-threaded Crawlers).",
+    "question": "Why does a web crawler use many threads?",
+    "vn_question": "",
+    "options": [
+      "Because each thread stores a different index",
+      "Because web servers require one thread per page",
+      "Because it spends much time waiting for DNS replies, connection acknowledgements and page data",
+      "Because threads remove duplicate pages automatically"
+    ],
+    "vn_options": [],
+    "correct": 2,
+    "answer": 2,
+    "correct_letter": "C",
+    "correct_letters": [
+      "C"
+    ],
+    "correct_choices": [
+      2
+    ],
+    "is_multi": false,
+    "required_choices": 1,
+    "explanation": "Thu thập web là tác vụ bị nghẽn bởi mạng và I/O (I/O-bound / Network latency-bound). Nếu chạy đơn luồng, CPU sẽ nhàn rỗi hơn 90% thời gian chỉ để chờ đợi gói tin TCP/DNS. Chạy đa luồng cho phép crawler gửi yêu cầu tới hàng trăm server khác nhau cùng lúc để tối đa hóa băng thông.",
+    "image_path": "src/Slide_167.png"
+  },
+  {
+    "id": "seg_fe_168",
+    "slide": 168,
+    "is_info": false,
+    "topic": "Chương 3: Crawls and Feeds (Mục 3.2 Crawling the Web: Politeness Policies).",
+    "question": "Which behavior is part of a crawler's politeness policy?",
+    "vn_question": "",
+    "options": [
+      "Downloading all pages of a server in parallel",
+      "Ignoring robots rules to improve coverage",
+      "Sending POST requests to every form",
+      "Fetching at most one page at a time from a server and waiting seconds or minutes between requests"
+    ],
+    "vn_options": [],
+    "correct": 3,
+    "answer": 3,
+    "correct_letter": "D",
+    "correct_letters": [
+      "D"
+    ],
+    "correct_choices": [
+      3
+    ],
+    "is_multi": false,
+    "required_choices": 1,
+    "explanation": "Politeness Policy: Nhằm tránh làm tê liệt (tấn công từ chối dịch vụ DoS) máy chủ mục tiêu. Crawler lịch sự phải:\n1. Tuân thủ tệp chỉ dẫn robots.txt.\n2. Giới hạn tần suất cào (crawl-delay) trên cùng một tên miền (chỉ gửi 1 request tại một thời điểm và có độ trễ nghỉ giữa các request).",
+    "image_path": "src/Slide_168.png"
+  },
+  {
+    "id": "seg_fe_169",
+    "slide": 169,
+    "is_info": false,
+    "topic": "Chương 11: Social Search - Community-Based Question Answering.",
+    "question": "Which HTTP request lets a crawler check whether a page has changed without downloading it?",
+    "vn_question": "",
+    "options": [
+      "GET",
+      "HEAD",
+      "POST",
+      "PUT"
+    ],
+    "vn_options": [],
+    "correct": 1,
+    "answer": 1,
+    "correct_letter": "B",
+    "correct_letters": [
+      "B"
+    ],
+    "correct_choices": [
+      1
+    ],
+    "is_multi": false,
+    "required_choices": 1,
+    "explanation": "Do phụ thuộc hoàn toàn vào sự tự nguyện và kiến thức của các thành viên trong cộng đồng con người:\n Độ trễ thời gian rất cao so với việc máy tìm kiếm tự động phản hồi trong vài mili-giây.\n Chất lượng câu trả lời không đồng đều, thiếu sự kiểm duyệt học thuật chặt chẽ.",
+    "image_path": "src/Slide_169.png"
+  },
+  {
+    "id": "seg_fe_170",
+    "slide": 170,
+    "is_info": false,
+    "topic": "Chương 11: Social Search - Community-Based Question Answering.",
+    "question": "Which HTTP request lets a crawler check whether a page has changed without downloading it?",
+    "vn_question": "",
+    "options": [
+      "GET",
+      "HEAD",
+      "POST",
+      "PUT"
+    ],
+    "vn_options": [],
+    "correct": 1,
+    "answer": 1,
+    "correct_letter": "B",
+    "correct_letters": [
+      "B"
+    ],
+    "correct_choices": [
+      1
+    ],
+    "is_multi": false,
+    "required_choices": 1,
+    "explanation": "Do phụ thuộc hoàn toàn vào sự tự nguyện và kiến thức của các thành viên trong cộng đồng con người:\n Độ trễ thời gian rất cao so với việc máy tìm kiếm tự động phản hồi trong vài mili-giây.\n Chất lượng câu trả lời không đồng đều, thiếu sự kiểm duyệt học thuật chặt chẽ.",
+    "image_path": "src/Slide_170.png"
+  },
+  {
+    "id": "seg_fe_171",
+    "slide": 171,
+    "is_info": false,
+    "topic": "Chương 3: Crawls and Feeds (Mục 3.2 Crawling the Web: Freshness, Age metric and Poisson Process).",
+    "question": "In the Age metric used to optimize crawling, what does $\\lambda$ represent?",
+    "vn_question": "",
+    "options": [
+      "The number of days since the last crawl",
+      "The rate at which the page changes",
+      "The number of inlinks to the page",
+      "The size of the page in bytes"
+    ],
+    "vn_options": [],
+    "correct": 1,
+    "answer": 1,
+    "correct_letter": "B",
+    "correct_letters": [
+      "B"
+    ],
+    "correct_choices": [
+      1
+    ],
+    "is_multi": false,
+    "required_choices": 1,
+    "explanation": "Mô hình của Cho & Garcia-Molina mô hình hóa sự thay đổi của trang web dưới dạng một tiến trình Poisson (Poisson process) với tham số \\lambda.\n \\lambda chính là tốc độ thay đổi (số lần thay đổi kỳ vọng trong một đơn vị thời gian). Trang có \\lambda cao (như trang tin tức) cần được crawler ghé thăm thường xuyên hơn trang có \\lambda thấp (trang lưu trữ tĩnh).",
+    "image_path": "src/Slide_171.png"
+  },
+  {
+    "id": "seg_fe_172",
+    "slide": 172,
+    "is_info": false,
+    "topic": "Chương 3: Crawls and Feeds (Mục 3.2 Crawling the Web: Retrieving Web Pages - Slide 7).",
+    "question": "How does a POST request differ from a GET request?",
+    "vn_question": "",
+    "options": [
+      "POST also sends information to the server, for example when buying something or editing a page",
+      "POST can only retrieve images",
+      "POST is used only by crawlers",
+      "POST asks only for the last modification time"
+    ],
+    "vn_options": [],
+    "correct": 0,
+    "answer": 0,
+    "correct_letter": "A",
+    "correct_letters": [
+      "A"
+    ],
+    "correct_choices": [
+      0
+    ],
+    "is_multi": false,
+    "required_choices": 1,
+    "explanation": "Lưu ý đặc biệt: Ở Slide 99 trước đây, người ra đề đã viết ngược vị trí của GET và POST. Đến Slide 153 này, câu hỏi đã được viết chuẩn xác theo nguyên văn bài giảng: GET dùng để lấy trang web, còn POST dùng khi có gửi dữ liệu kèm theo trong request body.",
+    "image_path": "src/Slide_172.png"
+  },
+  {
+    "id": "seg_fe_173",
+    "slide": 173,
+    "is_info": false,
+    "topic": "Chương 3: Crawls and Feeds (Mục 3.2 Crawling the Web: Topical Crawlers).",
+    "question": "What is the main drawback of crawling a full copy of the Web and then discarding off-topic pages?",
+    "vn_question": "",
+    "options": [
+      "It cannot find any relevant pages",
+      "It breaks politeness policies by design",
+      "It wastes a lot of disk space and bandwidth because most pages are thrown away",
+      "It produces too few duplicates"
+    ],
+    "vn_options": [],
+    "correct": 2,
+    "answer": 2,
+    "correct_letter": "C",
+    "correct_letters": [
+      "C"
+    ],
+    "correct_choices": [
+      2
+    ],
+    "is_multi": false,
+    "required_choices": 1,
+    "explanation": "Khi xây dựng công cụ tìm kiếm chuyên ngành (Vertical Search), nếu cào toàn bộ web rồi mới lọc thì hơn 99% dữ liệu tải về là rác đối với chủ đề đó. Đây chính là lý do cần phát triển Topical / Focused Crawler (chỉ chọn lọc và lần theo các liên kết có triển vọng dẫn tới trang đúng chủ đề ngay từ đầu).",
+    "image_path": "src/Slide_173.png"
+  },
+  {
+    "id": "seg_fe_174",
+    "slide": 174,
+    "is_info": false,
+    "topic": "Chương 3: Crawls and Feeds (Mục 3.2 Crawling the Web: Topical Crawlers).",
+    "question": "What is the main drawback of crawling a full copy of the Web and then discarding off-topic pages?",
+    "vn_question": "",
+    "options": [
+      "It cannot find any relevant pages",
+      "It breaks politeness policies by design",
+      "It wastes a lot of disk space and bandwidth because most pages are thrown away",
+      "It produces too few duplicates"
+    ],
+    "vn_options": [],
+    "correct": 2,
+    "answer": 2,
+    "correct_letter": "C",
+    "correct_letters": [
+      "C"
+    ],
+    "correct_choices": [
+      2
+    ],
+    "is_multi": false,
+    "required_choices": 1,
+    "explanation": "Khi xây dựng công cụ tìm kiếm chuyên ngành (Vertical Search), nếu cào toàn bộ web rồi mới lọc thì hơn 99% dữ liệu tải về là rác đối với chủ đề đó. Đây chính là lý do cần phát triển Topical / Focused Crawler (chỉ chọn lọc và lần theo các liên kết có triển vọng dẫn tới trang đúng chủ đề ngay từ đầu).",
+    "image_path": "src/Slide_174.png"
+  },
+  {
+    "id": "seg_fe_175",
+    "slide": 175,
+    "is_info": false,
+    "topic": "Chương 3: Crawls and Feeds (Mục 3.1 Sitemaps).",
+    "question": "What information does a sitemap give to a crawler?",
+    "vn_question": "",
+    "options": [
+      "The PageRank of each page",
+      "The list of users who visited the site",
+      "URLs, modification time and modification frequency",
+      "The anchor text of every inlink"
+    ],
+    "vn_options": [],
+    "correct": 2,
+    "answer": 2,
+    "correct_letter": "C",
+    "correct_letters": [
+      "C"
+    ],
+    "correct_choices": [
+      2
+    ],
+    "is_multi": false,
+    "required_choices": 1,
+    "explanation": "Tệp XML Sitemap (chuẩn sitemaps.org) cung cấp trực tiếp cho crawler các thẻ: <loc> (đường dẫn URL), <lastmod> (thời điểm cập nhật cuối), <changefreq> (tần suất sửa đổi: daily, weekly...) và <priority> (độ ưu tiên của trang).",
+    "image_path": "src/Slide_175.png"
+  },
+  {
+    "id": "seg_fe_176",
+    "slide": 176,
+    "is_info": false,
+    "topic": "Chương 3: Crawls and Feeds (Mục 3.1 Desktop Crawling).",
+    "question": "Which challenges arise when crawling desktop data such as email and documents?",
+    "vn_question": "",
+    "options": [
+      "Coverage of billions of servers",
+      "Update speed, disk space and a strong focus on data privacy",
+      "Politeness toward remote web servers",
+      "Detecting link spam in blog comments"
+    ],
+    "vn_options": [],
+    "correct": 1,
+    "answer": 1,
+    "correct_letter": "B",
+    "correct_letters": [
+      "B"
+    ],
+    "correct_choices": [
+      1
+    ],
+    "is_multi": false,
+    "required_choices": 1,
+    "explanation": "Thu thập dữ liệu trên máy tính cá nhân phải giải quyết các bài toán: tài nguyên phần cứng giới hạn (không được chiếm dụng nhiều RAM/ổ đĩa khiến máy bị đơ), dữ liệu thay đổi liên tục khi người dùng soạn thảo, và đặc biệt là tính bảo mật riêng tư (privacy) vì chứa email, mật khẩu và dữ liệu cá nhân.",
+    "image_path": "src/Slide_176.png"
+  },
+  {
+    "id": "seg_fe_177",
+    "slide": 177,
+    "is_info": false,
+    "topic": "Chương 3: Crawls and Feeds (Mục 3.1 Push vs. Pull Document Feeds).",
+    "question": "How does a push document feed work?",
+    "vn_question": "",
+    "options": [
+      "The subscriber checks periodically for new documents",
+      "The crawler follows hyperlinks to find documents",
+      "Documents are stored in Big Table tablets",
+      "Subscribers are notified when a new document is available"
+    ],
+    "vn_options": [],
+    "correct": 3,
+    "answer": 3,
+    "correct_letter": "D",
+    "correct_letters": [
+      "D"
+    ],
+    "correct_choices": [
+      3
+    ],
+    "is_multi": false,
+    "required_choices": 1,
+    "explanation": "Pull Feed: Bên nhận định kỳ chủ động gửi request kiểm tra (polling) xem có bài mới không.\nPush Feed: Máy chủ nguồn dữ liệu sẽ tự động đẩy thông báo / nội dung sang cho bên đăng ký (subscribers) ngay khi có sự kiện xuất bản mới (giúp dữ liệu tươi mới theo thời gian thực).",
+    "image_path": "src/Slide_177.png"
+  },
+  {
+    "id": "seg_fe_178",
+    "slide": 178,
+    "is_info": false,
+    "topic": "Chương 3: Crawls and Feeds (Mục 3.1 Push vs. Pull Document Feeds).",
+    "question": "How does a push document feed work?",
+    "vn_question": "",
+    "options": [
+      "The subscriber checks periodically for new documents",
+      "The crawler follows hyperlinks to find documents",
+      "Documents are stored in Big Table tablets",
+      "Subscribers are notified when a new document is available"
+    ],
+    "vn_options": [],
+    "correct": 3,
+    "answer": 3,
+    "correct_letter": "D",
+    "correct_letters": [
+      "D"
+    ],
+    "correct_choices": [
+      3
+    ],
+    "is_multi": false,
+    "required_choices": 1,
+    "explanation": "Pull Feed: Bên nhận định kỳ chủ động gửi request kiểm tra (polling) xem có bài mới không.\nPush Feed: Máy chủ nguồn dữ liệu sẽ tự động đẩy thông báo / nội dung sang cho bên đăng ký (subscribers) ngay khi có sự kiện xuất bản mới (giúp dữ liệu tươi mới theo thời gian thực).",
+    "image_path": "src/Slide_178.png"
+  },
+  {
+    "id": "seg_fe_179",
+    "slide": 179,
+    "is_info": false,
+    "topic": "Chương 3: Crawls and Feeds (Mục 3.1 Feeds: RSS).",
+    "question": "What does RSS stand for?",
+    "vn_question": "",
+    "options": [
+      "Really Simple Syndication (also RDF Site Summary or Rich Site Summary)",
+      "Remote Search Service",
+      "Ranked Search System",
+      "Random Surfer Simulation"
+    ],
+    "vn_options": [],
+    "correct": 0,
+    "answer": 0,
+    "correct_letter": "A",
+    "correct_letters": [
+      "A"
+    ],
+    "correct_choices": [
+      0
+    ],
+    "is_multi": false,
+    "required_choices": 1,
+    "explanation": "Về mặt lịch sử phát triển, chuẩn RSS từng được gọi là Rich Site Summary (bản 0.91), RDF Site Summary (bản 0.9 và 1.0) và phổ biến rộng rãi nhất hiện nay với tên gọi Really Simple Syndication (RSS 2.0).",
+    "image_path": "src/Slide_179.png"
+  },
+  {
+    "id": "seg_fe_180",
+    "slide": 180,
+    "is_info": false,
+    "topic": "Chương 3: Crawls and Feeds (Mục 3.1 Feeds: RSS).",
+    "question": "What does RSS stand for?",
+    "vn_question": "",
+    "options": [
+      "Really Simple Syndication (also RDF Site Summary or Rich Site Summary)",
+      "Remote Search Service",
+      "Ranked Search System",
+      "Random Surfer Simulation"
+    ],
+    "vn_options": [],
+    "correct": 0,
+    "answer": 0,
+    "correct_letter": "A",
+    "correct_letters": [
+      "A"
+    ],
+    "correct_choices": [
+      0
+    ],
+    "is_multi": false,
+    "required_choices": 1,
+    "explanation": "Về mặt lịch sử phát triển, chuẩn RSS từng được gọi là Rich Site Summary (bản 0.91), RDF Site Summary (bản 0.9 và 1.0) và phổ biến rộng rãi nhất hiện nay với tên gọi Really Simple Syndication (RSS 2.0).",
+    "image_path": "src/Slide_180.png"
+  },
+  {
+    "id": "seg_fe_181",
+    "slide": 181,
+    "is_info": false,
+    "topic": "Chương 4: Processing Text (Mục 4.1 Text Character Formats: ASCII vs CJK).",
+    "question": "How do ASCII and CJK encodings differ?",
+    "vn_question": "",
+    "options": [
+      "Both are 1-byte standards",
+      "ASCII is a 2-byte standard; CJK is 1-byte",
+      "Both are 4-byte standards",
+      "ASCII is a 1-byte standard; CJK is a 2-byte standard"
+    ],
+    "vn_options": [],
+    "correct": 3,
+    "answer": 3,
+    "correct_letter": "D",
+    "correct_letters": [
+      "D"
+    ],
+    "correct_choices": [
+      3
+    ],
+    "is_multi": false,
+    "required_choices": 1,
+    "explanation": "ASCII chuẩn dùng 1 byte (chỉ mã hóa được tối đa 128-256 ký tự). Hệ chữ tượng hình CJK có hàng vạn chữ nên các bảng mã truyền thống (như GB2312, Big5, Shift-JIS) bắt buộc phải dùng tối thiểu 2 byte (double-byte) cho mỗi ký tự.",
+    "image_path": "src/Slide_181.png"
+  },
+  {
+    "id": "seg_fe_182",
+    "slide": 182,
+    "is_info": false,
+    "topic": "Chương 3: Crawls and Feeds (Mục 3.3 Storing the Documents).",
+    "question": "What are the basic requirements of a document store?",
+    "vn_question": "",
+    "options": [
+      "Ranking, clustering and classification",
+      "Random access, compression and updating",
+      "Tokenizing, stopping and stemming",
+      "Crawling, feeding and converting"
+    ],
+    "vn_options": [],
+    "correct": 1,
+    "answer": 1,
+    "correct_letter": "B",
+    "correct_letters": [
+      "B"
+    ],
+    "correct_choices": [
+      1
+    ],
+    "is_multi": false,
+    "required_choices": 1,
+    "explanation": "Ba yêu cầu tiên quyết của Document Store:\n1. Random access: Lấy nội dung trang bất kỳ theo mã ID hoặc URL tức thì khi tạo đoạn trích kết quả (snippets).\n2. Compression: Giảm thiểu chi phí phần cứng lưu trữ hàng tỷ trang web.\n3. Updating: Thêm mới và ghi đè nội dung trang nhanh chóng khi crawler cào lại bản mới.",
+    "image_path": "src/Slide_182.png"
+  },
+  {
+    "id": "seg_fe_183",
+    "slide": 183,
+    "is_info": false,
+    "topic": "Search Engines & Information Retrieval",
+    "question": "What is the easiest way for a data store to support random access to a document by its URL?",
+    "vn_question": "",
+    "options": [
+      "Hashing",
+      "Sequential scanning",
+      "Stemming the URL",
+      "Sorting by PageRank"
+    ],
+    "vn_options": [],
+    "correct": 0,
+    "answer": 0,
+    "correct_letter": "A",
+    "correct_letters": [
+      "A"
+    ],
+    "correct_choices": [
+      0
+    ],
+    "is_multi": false,
+    "required_choices": 1,
+    "explanation": "Đáp án chuẩn là A. Dựa trên giáo trình Search Engines: Information Retrieval in Practice (Bruce Croft).",
+    "image_path": "src/Slide_183.png"
+  },
+  {
+    "id": "seg_fe_184",
+    "slide": 184,
+    "is_info": false,
+    "topic": "Chương 3: Crawls and Feeds (Mục 3.3 Bigtable - Slide 21/22 bài giảng).",
+    "question": "Which statement about BigTable is TRUE?",
+    "vn_question": "",
+    "options": [
+      "It supports a full SQL query language",
+      "It runs on a single machi",
+      "Tables are split into tablets served by thousands of machines, with only row-level transactions",
+      "It supports complex multi-table joins"
+    ],
+    "vn_options": [],
+    "correct": 2,
+    "answer": 2,
+    "correct_letter": "C",
+    "correct_letters": [
+      "C"
+    ],
+    "correct_choices": [
+      2
+    ],
+    "is_multi": false,
+    "required_choices": 1,
+    "explanation": "Bigtable là hệ thống CSDL phân tán dạng bản đồ nhiều chiều có thứ tự (sorted map). Bảng dữ liệu lớn được chia thành các phân đoạn gọi là tablets phân tán trên cụm máy tính.\nBigtable không hỗ trợ ngôn ngữ SQL đầy đủ, không hỗ trợ phép kết nối JOIN nhiều bảng, và chỉ đảm bảo tính toàn vẹn giao dịch nguyên tử ở phạm vi từng hàng đơn lẻ (single-row transactions).",
+    "image_path": "src/Slide_184.png"
+  },
+  {
+    "id": "seg_fe_185",
+    "slide": 185,
+    "is_info": false,
+    "topic": "Chương 3: Crawls and Feeds (Mục 3.4 Detecting Duplicates: Exact Duplicates).",
+    "question": "How are exact duplicate documents usually detected?",
+    "vn_question": "",
+    "options": [
+      "By comparing PageRank values",
+      "By counting anchor text",
+      "By POS tagging",
+      "By checksumming the document content"
+    ],
+    "vn_options": [],
+    "correct": 3,
+    "answer": 3,
+    "correct_letter": "D",
+    "correct_letters": [
+      "D"
+    ],
+    "correct_choices": [
+      3
+    ],
+    "is_multi": false,
+    "required_choices": 1,
+    "explanation": "Để phát hiện hai tài liệu giống nhau 100% từng byte hoặc từng từ, hệ thống tính mã băm/checksum (MD5, SHA, CRC32) trên toàn bộ nội dung. Nếu hai mã checksum trùng nhau, hai tài liệu đó là bản sao giống hệt nhau (exact duplicates).",
+    "image_path": "src/Slide_185.png"
+  },
+  {
+    "id": "seg_fe_186",
+    "slide": 186,
+    "is_info": false,
+    "topic": "Chương 3: Crawls and Feeds (Mục 3.4 Detecting Duplicates: Near Duplicates - Slide 26).",
+    "question": "What threshold is given as an example for defining near-duplicates?",
+    "vn_question": "",
+    "options": [
+      "10% of the words are the same",
+      "90% of the words in the two documents are the same",
+      "The two pages have the same URL",
+      "The two pages were crawled on the same day"
+    ],
+    "vn_options": [],
+    "correct": 1,
+    "answer": 1,
+    "correct_letter": "B",
+    "correct_letters": [
+      "B"
+    ],
+    "correct_choices": [
+      1
+    ],
+    "is_multi": false,
+    "required_choices": 1,
+    "explanation": "Hai tài liệu được coi là near-duplicates khi chúng chỉ khác nhau ở các chi tiết vụn vặt (như quảng cáo, thanh điều hướng hoặc dấu thời gian). Ví dụ tiêu chuẩn trong giáo trình Croft quy định: hai văn bản có từ 90% từ ngữ trùng khớp trở lên được xếp vào diện gần trùng lặp.",
+    "image_path": "src/Slide_186.png"
+  },
+  {
+    "id": "seg_fe_187",
+    "slide": 187,
+    "is_info": false,
+    "topic": "Chương 3: Crawls and Feeds (Mục 3.4 Detecting Duplicates: Fingerprinting Algorithm).",
+    "question": "In the fingerprinting procedure, what happens right after words are grouped into contiguous n-grams?",
+    "vn_question": "",
+    "options": [
+      "The document is parsed into words",
+      "Hash values are stored in an inverted index",
+      "Some of the n-grams are selected to represent the document",
+      "Punctuation and HTML tags are removed"
+    ],
+    "vn_options": [],
+    "correct": 2,
+    "answer": 2,
+    "correct_letter": "C",
+    "correct_letters": [
+      "C"
+    ],
+    "correct_choices": [
+      2
+    ],
+    "is_multi": false,
+    "required_choices": 1,
+    "explanation": "Trình tự 6 bước của thuật toán Fingerprinting (Shingling):\n1. Tách văn bản thành các từ (bỏ dấu câu, thẻ HTML).\n2. Gom các từ liên tiếp thành cụm n-grams (shingles).\n3. Chọn lọc một tập con các n-gram đại diện (selective sampling).\n4. Băm các n-gram được chọn thành các giá trị số.\n5. Lưu các giá trị băm vào chỉ mục/bảng tra cứu.\n6. So sánh tỷ lệ trùng mã băm giữa các văn bản để phát hiện near-duplicate.",
+    "image_path": "src/Slide_187.png"
+  },
+  {
+    "id": "seg_fe_188",
+    "slide": 188,
+    "is_info": false,
+    "topic": "Chương 3: Crawls and Feeds (Mục 3.4 Detecting Duplicates: Fingerprinting Example - Slide 29 bài giảng).",
+    "question": "In the tropical fish fingerprint example, which hash values were selected as the fingerprint?",
+    "vn_question": "",
+    "options": [
+      "Those satisfying \"0 mod 4\"",
+      "The largest four values",
+      "All odd values",
+      "The first and last values"
+    ],
+    "vn_options": [],
+    "correct": 0,
+    "answer": 0,
+    "correct_letter": "A",
+    "correct_letters": [
+      "A"
+    ],
+    "correct_choices": [
+      0
+    ],
+    "is_multi": false,
+    "required_choices": 1,
+    "explanation": "Để giảm kích thước dấu vân tay, kỹ thuật chọn mẫu thường lấy các giá trị băm chia hết cho một số nguyên p (ở ví dụ trong slide bài giảng và sách Croft, tác giả chọn các giá trị có h \\pmod 4 = 0, tức lấy mẫu xấp xỉ 25% số shingle).",
+    "image_path": "src/Slide_188.png"
+  },
+  {
+    "id": "seg_fe_189",
+    "slide": 189,
+    "is_info": false,
+    "topic": "Chương 4: Processing Text (Mục Document Structure / Finding the Content Block - Bit Sequence Method - Slide 28/29).",
+    "question": "In the bit-sequence method for finding the content block, when is $b_n = 1$?",
+    "vn_question": "",
+    "options": [
+      "When the n-th token is a stopword",
+      "When the n-th token is a noun",
+      "When the n-th token appears in the title",
+      "When the n-th token is a tag"
+    ],
+    "vn_options": [],
+    "correct": 3,
+    "answer": 3,
+    "correct_letter": "D",
+    "correct_letters": [
+      "D"
+    ],
+    "correct_choices": [
+      3
+    ],
+    "is_multi": false,
+    "required_choices": 1,
+    "explanation": "Phương pháp chuỗi bit chuyển đổi tài liệu HTML thành dãy bit nhị phân b_1, b_2, \\dots, b_N:\nb_n = 1 nếu token thứ n là một thẻ HTML (tag).\nb_n = 0 nếu token thứ n là từ ngữ văn bản nội dung (text content).\nKhối nội dung chính (content block) được nhận diện là đoạn liên tục có mật độ bit 0 dày đặc nhất (ít thẻ HTML nhất).",
+    "image_path": "src/Slide_189.png"
+  },
+  {
+    "id": "seg_fe_190",
+    "slide": 190,
+    "is_info": false,
+    "topic": "Chương 4: Processing Text (Mục 4.3 Stopwords / Term Specificity).",
+    "question": "Which statement correctly describes generic terms such as conjunctions and prepositions?",
+    "vn_question": "",
+    "options": [
+      "High discriminative power, low term frequency",
+      "High discriminative power, low document frequency",
+      "Low discriminative power, high term frequency",
+      "They never appear in documents"
+    ],
+    "vn_options": [],
+    "correct": 2,
+    "answer": 2,
+    "correct_letter": "C",
+    "correct_letters": [
+      "C"
+    ],
+    "correct_choices": [
+      2
+    ],
+    "is_multi": false,
+    "required_choices": 1,
+    "explanation": "Các từ chức năng ngữ pháp (như and, or, of, in, the) xuất hiện với tần suất cực lớn ở hầu hết mọi tài liệu (high term/document frequency). Tuy nhiên, vì tài liệu nào cũng có chúng, nên chúng gần như không có khả năng phân biệt tài liệu liên quan với tài liệu không liên quan (low discriminative power).",
+    "image_path": "src/Slide_190.png"
+  },
+  {
+    "id": "seg_fe_191",
+    "slide": 191,
+    "is_info": false,
+    "topic": "Chương 4: Processing Text (Mục 4.3 Stopwords / Term Specificity).",
+    "question": "Which statement correctly describes generic terms such as conjunctions and prepositions?",
+    "vn_question": "",
+    "options": [
+      "High discriminative power, low term frequency",
+      "High discriminative power, low document frequency",
+      "Low discriminative power, high term frequency",
+      "They never appear in documents"
+    ],
+    "vn_options": [],
+    "correct": 2,
+    "answer": 2,
+    "correct_letter": "C",
+    "correct_letters": [
+      "C"
+    ],
+    "correct_choices": [
+      2
+    ],
+    "is_multi": false,
+    "required_choices": 1,
+    "explanation": "Các từ chức năng ngữ pháp (như and, or, of, in, the) xuất hiện với tần suất cực lớn ở hầu hết mọi tài liệu (high term/document frequency). Tuy nhiên, vì tài liệu nào cũng có chúng, nên chúng gần như không có khả năng phân biệt tài liệu liên quan với tài liệu không liên quan (low discriminative power).",
+    "image_path": "src/Slide_191.png"
+  },
+  {
+    "id": "seg_fe_192",
+    "slide": 192,
+    "is_info": false,
+    "topic": "Chương 4: Processing Text (Mục 4.3 Statistical Properties of Text: Zipf's Law).",
+    "question": "What does Zipf's law state?",
+    "vn_question": "",
+    "options": [
+      "The rank of a word times its frequency is approximately a constant",
+      "Vocabulary size grows linearly with collection size",
+      "All words appear with equal frequency",
+      "The most frequent word appears exactly twice as often as the least frequent"
+    ],
+    "vn_options": [],
+    "correct": 0,
+    "answer": 0,
+    "correct_letter": "A",
+    "correct_letters": [
+      "A"
+    ],
+    "correct_choices": [
+      0
+    ],
+    "is_multi": false,
+    "required_choices": 1,
+    "explanation": "Định luật Zipf phát biểu: r × f ≈ k (hay f \\propto (1 / r)), trong đó r là thứ hạng và f là tần suất xuất hiện. Từ phổ biến nhất sẽ xuất hiện gấp đôi từ đứng thứ hai, gấp ba từ đứng thứ ba...",
+    "image_path": "src/Slide_192.png"
+  },
+  {
+    "id": "seg_fe_193",
+    "slide": 193,
+    "is_info": false,
+    "topic": "Chương 4: Processing Text (Mục 4.3 Stopwords - Impact on Effectiveness).",
+    "question": "What is the risk of removing too many stopwords?",
+    "vn_question": "",
+    "options": [
+      "The index becomes larger",
+      "Retrieval effectiveness decreases",
+      "Crawling becomes slower",
+      "Duplicate detection fails"
+    ],
+    "vn_options": [],
+    "correct": 1,
+    "answer": 1,
+    "correct_letter": "B",
+    "correct_letters": [
+      "B"
+    ],
+    "correct_choices": [
+      1
+    ],
+    "is_multi": false,
+    "required_choices": 1,
+    "explanation": "Nếu danh sách stopword quá dài và hung hãn, các cụm từ quan trọng mang ngữ nghĩa gắn liền với từ dừng sẽ bị phá vỡ (ví dụ: truy vấn tìm tác phẩm \"To be or not to be\", ban nhạc \"The Who\", hay \"Vitamin A\" sẽ bị xóa sạch từ khóa), dẫn đến việc tìm kiếm sai lệch nghiêm trọng.",
+    "image_path": "src/Slide_193.png"
+  },
+  {
+    "id": "seg_fe_194",
+    "slide": 194,
+    "is_info": false,
+    "topic": "Search Engines & Information Retrieval",
+    "question": "Under the Porter stemmer rules, what does \"stresses\" become?",
+    "vn_question": "",
+    "options": [
+      "stres",
+      "stresse",
+      "stressed",
+      "stress"
+    ],
+    "vn_options": [],
+    "correct": 3,
+    "answer": 3,
+    "correct_letter": "D",
+    "correct_letters": [
+      "D"
+    ],
+    "correct_choices": [
+      3
+    ],
+    "is_multi": false,
+    "required_choices": 1,
+    "explanation": "Đáp án chuẩn là D. Dựa trên giáo trình Search Engines: Information Retrieval in Practice (Bruce Croft).",
+    "image_path": "src/Slide_194.png"
+  },
+  {
+    "id": "seg_fe_195",
+    "slide": 195,
+    "is_info": false,
+    "topic": "Chương 4: Processing Text (Mục 4.4 Stemming Errors: Overstemming vs. Understemming).",
+    "question": "An algorithmic stemmer that conflates \"I\" and \"is\" makes which kind of error?",
+    "vn_question": "",
+    "options": [
+      "False positive",
+      "False negative",
+      "True negative",
+      "No error"
+    ],
+    "vn_options": [],
+    "correct": 0,
+    "answer": 0,
+    "correct_letter": "A",
+    "correct_letters": [
+      "A"
+    ],
+    "correct_choices": [
+      0
+    ],
+    "is_multi": false,
+    "required_choices": 1,
+    "explanation": "Overstemming (False Positive): Gom nhầm hai từ hoàn toàn khác nhau về ngữ nghĩa/nguồn gốc vào cùng một gốc từ (ở đây \"I\" và \"is\" không liên quan nhưng bị gộp chung).\nUnderstemming (False Negative): Không gộp được các từ có cùng gốc ngữ nghĩa lại với nhau (ví dụ: bỏ sót không gộp \"Europe\" và \"European\").",
+    "image_path": "src/Slide_195.png"
+  },
+  {
+    "id": "seg_fe_196",
+    "slide": 196,
+    "is_info": false,
+    "topic": "Chương 4: Processing Text (Mục 4.4 Stemming: Dictionary-based Stemmers).",
+    "question": "What is the main limitation of a dictionary-based stemmer?",
+    "vn_question": "",
+    "options": [
+      "It is slower than any algorithmic stemmer",
+      "It cannot handle plural nouns",
+      "The dictionary cannot be infinitely long, so it cannot handle new words automatically",
+      "It only works for Chinese"
+    ],
+    "vn_options": [],
+    "correct": 2,
+    "answer": 2,
+    "correct_letter": "C",
+    "correct_letters": [
+      "C"
+    ],
+    "correct_choices": [
+      2
+    ],
+    "is_multi": false,
+    "required_choices": 1,
+    "explanation": "Phương pháp dựa trên từ điển chỉ tra cứu được các từ đã có sẵn trong cơ sở dữ liệu từ vựng. Khi gặp từ mới (Out-Of-Vocabulary - OOV), tiếng lóng, từ ghép chuyên ngành, tên thương hiệu mới hoặc từ viết sai chính tả, bộ tách từ điển sẽ bất lực và không thể phân tích được gốc từ.",
+    "image_path": "src/Slide_196.png"
+  },
+  {
+    "id": "seg_fe_197",
+    "slide": 197,
+    "is_info": false,
+    "topic": "Chương 4: Processing Text (Mục 4.4 Stemming: The Krovetz Stemmer).",
+    "question": "What is the Krovetz stemmer?",
+    "vn_question": "",
+    "options": [
+      "A purely dictionary-based stemmer",
+      "A combination of an algorithmic stemmer and a dictionary-based stemmer",
+      "A stopword list",
+      "A Hidden Markov Model for entities"
+    ],
+    "vn_options": [],
+    "correct": 1,
+    "answer": 1,
+    "correct_letter": "B",
+    "correct_letters": [
+      "B"
+    ],
+    "correct_choices": [
+      1
+    ],
+    "is_multi": false,
+    "required_choices": 1,
+    "explanation": "Krovetz stemmer là phương pháp tiếp cận lai: Nó áp dụng các quy tắc biến đổi hình thái học từng bước, nhưng sau mỗi bước đều đối chiếu với từ điển chuẩn để đảm bảo từ sau khi cắt gốc phải là một từ có nghĩa thực tế trong tiếng Anh, từ đó khắc phục triệt để lỗi Overstemming của Porter.",
+    "image_path": "src/Slide_197.png"
+  },
+  {
+    "id": "seg_fe_198",
+    "slide": 198,
+    "is_info": false,
+    "topic": "Chương 4: Processing Text (Mục 4.4 Stemming: The Krovetz Stemmer).",
+    "question": "What is the Krovetz stemmer?",
+    "vn_question": "",
+    "options": [
+      "A purely dictionary-based stemmer",
+      "A combination of an algorithmic stemmer and a dictionary-based stemmer",
+      "A stopword list",
+      "A Hidden Markov Model for entities"
+    ],
+    "vn_options": [],
+    "correct": 1,
+    "answer": 1,
+    "correct_letter": "B",
+    "correct_letters": [
+      "B"
+    ],
+    "correct_choices": [
+      1
+    ],
+    "is_multi": false,
+    "required_choices": 1,
+    "explanation": "Krovetz stemmer là phương pháp tiếp cận lai: Nó áp dụng các quy tắc biến đổi hình thái học từng bước, nhưng sau mỗi bước đều đối chiếu với từ điển chuẩn để đảm bảo từ sau khi cắt gốc phải là một từ có nghĩa thực tế trong tiếng Anh, từ đó khắc phục triệt để lỗi Overstemming của Porter.",
+    "image_path": "src/Slide_198.png"
+  },
+  {
+    "id": "seg_fe_199",
+    "slide": 199,
+    "is_info": false,
+    "topic": "Chương 4: Processing Text (Mục Word n-grams and Phrases).",
+    "question": "How is an n-gram defined in text processing?",
+    "vn_question": "",
+    "options": [
+      "Any sequence of n words; n-gram indexing is a fast way to add phrase features to ranking",
+      "A noun followed by an adjective",
+      "A word with exactly n letters",
+      "A link with n words of anchor text"
+    ],
+    "vn_options": [],
+    "correct": 0,
+    "answer": 0,
+    "correct_letter": "A",
+    "correct_letters": [
+      "A"
+    ],
+    "correct_choices": [
+      0
+    ],
+    "is_multi": false,
+    "required_choices": 1,
+    "explanation": "Trong tìm kiếm, word n-gram là chuỗi n từ đi liền nhau. Việc lập chỉ mục các cặp từ (bigrams) hoặc cụm ba từ (trigrams) giúp hệ thống xử lý nhanh các truy vấn dạng cụm từ chính xác mà không cần tốn chi phí đối chiếu vị trí từ ở thời gian thực.",
+    "image_path": "src/Slide_199.png"
+  },
+  {
+    "id": "seg_fe_200",
+    "slide": 200,
+    "is_info": false,
+    "topic": "Chương 3: Crawls and Feeds & Chương 4: Processing Text (Mục Anchor Text).",
+    "question": "Why is anchor text especially useful for ranking web pages?",
+    "vn_question": "",
+    "options": [
+      "It is always longer than the page content",
+      "It is hidden from users",
+      "It is generated by the search engi",
+      "It is very short and describes the target page from a different perspective"
+    ],
+    "vn_options": [],
+    "correct": 3,
+    "answer": 3,
+    "correct_letter": "D",
+    "correct_letters": [
+      "D"
+    ],
+    "correct_choices": [
+      3
+    ],
+    "is_multi": false,
+    "required_choices": 1,
+    "explanation": "Anchor text là đoạn chữ nằm trong liên kết trỏ tới trang web khác. Vì do các tác giả bên ngoài viết, anchor text thường chứa các từ khóa tóm tắt ngắn gọn, đồng nghĩa hoặc tên gọi thông dụng mà chính trang đích có thể không tự đề cập trong nội dung của nó.",
+    "image_path": "src/Slide_200.png"
+  },
+  {
+    "id": "seg_fe_201",
+    "slide": 201,
+    "is_info": false,
+    "topic": "Chương 3: Crawls and Feeds & Chương 8: SEO (Mục The rel=nofollow attribute).",
+    "question": "How do search engines treat links marked rel=nofollow, such as links in blog comments?",
+    "vn_question": "",
+    "options": [
+      "They count them twice",
+      "They ignore them, although the links stay visible on the blog",
+      "They delete the blog post",
+      "They use them only for PageRank"
+    ],
+    "vn_options": [],
+    "correct": 1,
+    "answer": 1,
+    "correct_letter": "B",
+    "correct_letters": [
+      "B"
+    ],
+    "correct_choices": [
+      1
+    ],
+    "is_multi": false,
+    "required_choices": 1,
+    "explanation": "Thuộc tính `rel=\"nofollow\"` được các công cụ tìm kiếm chuẩn hóa để ngăn chặn tình trạng spam liên kết kiếm điểm PageRank trong các khung bình luận hoặc diễn đàn. Bot tìm kiếm sẽ không truyền điểm tín nhiệm (link juice / PageRank) qua các liên kết này.",
+    "image_path": "src/Slide_201.png"
+  },
+  {
+    "id": "seg_fe_202",
+    "slide": 202,
+    "is_info": false,
+    "topic": "Chương 3: Crawls and Feeds & Chương 8: SEO (Mục The rel=nofollow attribute).",
+    "question": "How do search engines treat links marked rel=nofollow, such as links in blog comments?",
+    "vn_question": "",
+    "options": [
+      "They count them twice",
+      "They ignore them, although the links stay visible on the blog",
+      "They delete the blog post",
+      "They use them only for PageRank"
+    ],
+    "vn_options": [],
+    "correct": 1,
+    "answer": 1,
+    "correct_letter": "B",
+    "correct_letters": [
+      "B"
+    ],
+    "correct_choices": [
+      1
+    ],
+    "is_multi": false,
+    "required_choices": 1,
+    "explanation": "Thuộc tính `rel=\"nofollow\"` được các công cụ tìm kiếm chuẩn hóa để ngăn chặn tình trạng spam liên kết kiếm điểm PageRank trong các khung bình luận hoặc diễn đàn. Bot tìm kiếm sẽ không truyền điểm tín nhiệm (link juice / PageRank) qua các liên kết này.",
+    "image_path": "src/Slide_202.png"
+  },
+  {
+    "id": "seg_fe_203",
+    "slide": 203,
+    "is_info": true,
+    "topic": "Slide phân mục",
+    "question": "Indexing,.Queries and Retrieval. Models LQ) Hoding Hoding Buén Source",
+    "vn_question": "",
+    "options": [],
+    "vn_options": [],
+    "correct": 0,
+    "answer": 0,
+    "correct_letter": "A",
+    "correct_letters": [
+      "A"
+    ],
+    "correct_choices": [
+      0
+    ],
+    "is_multi": false,
+    "required_choices": 1,
+    "explanation": "Slide phân mục hoặc tiêu đề chương.",
+    "image_path": "src/Slide_203.png"
+  },
+  {
+    "id": "seg_fe_204",
+    "slide": 204,
+    "is_info": false,
+    "topic": "Chương 5: Ranking with Indexes (Mục 5.2 Inverted Indexes).",
+    "question": "What is TRUE about an inverted index?",
+    "vn_question": "",
+    "options": [
+      "Each document stores a list of the terms it contains, and nothing else",
+      "It can only be used for book indexes",
+      "It stores only one list for the whole collection",
+      "Each index term has its own inverted list holding data related to that term"
+    ],
+    "vn_options": [],
+    "correct": 3,
+    "answer": 3,
+    "correct_letter": "D",
+    "correct_letters": [
+      "D"
+    ],
+    "correct_choices": [
+      3
+    ],
+    "is_multi": false,
+    "required_choices": 1,
+    "explanation": "Cấu trúc chỉ mục đảo gồm 2 phần: Từ vựng (Vocabulary) chứa danh sách các từ duy nhất, và mỗi từ trỏ tới một Inverted List (Postings List) riêng chứa danh sách các bản ghi (docID, tf, vị trí) của các tài liệu có chứa từ đó.",
+    "image_path": "src/Slide_204.png"
+  },
+  {
+    "id": "seg_fe_205",
+    "slide": 205,
+    "is_info": false,
+    "topic": "Chương 5: Ranking with Indexes (Mục 5.2 Inverted Indexes).",
+    "question": "What is TRUE about an inverted index?",
+    "vn_question": "",
+    "options": [
+      "Each document stores a list of the terms it contains, and nothing else",
+      "It can only be used for book indexes",
+      "It stores only one list for the whole collection",
+      "Each index term has its own inverted list holding data related to that term"
+    ],
+    "vn_options": [],
+    "correct": 3,
+    "answer": 3,
+    "correct_letter": "D",
+    "correct_letters": [
+      "D"
+    ],
+    "correct_choices": [
+      3
+    ],
+    "is_multi": false,
+    "required_choices": 1,
+    "explanation": "Cấu trúc chỉ mục đảo gồm 2 phần: Từ vựng (Vocabulary) chứa danh sách các từ duy nhất, và mỗi từ trỏ tới một Inverted List (Postings List) riêng chứa danh sách các bản ghi (docID, tf, vị trí) của các tài liệu có chứa từ đó.",
+    "image_path": "src/Slide_205.png"
+  },
+  {
+    "id": "seg_fe_206",
+    "slide": 206,
+    "is_info": false,
+    "topic": "Chương 2: Architecture of A Search Engine (Mục 2.2 Text Acquisition: Conversion).",
+    "question": "Which inverted index variant lets the engine find the phrase \"tropical fish\" by aligning posting lists?",
+    "vn_question": "",
+    "options": [
+      "Positions",
+      "Documents only",
+      "Counts",
+      "Scores"
+    ],
+    "vn_options": [],
+    "correct": 0,
+    "answer": 0,
+    "correct_letter": "A",
+    "correct_letters": [
+      "A"
+    ],
+    "correct_choices": [
+      0
+    ],
+    "is_multi": false,
+    "required_choices": 1,
+    "explanation": "Dữ liệu thu thập từ bên ngoài có hàng trăm định dạng nhị phân khác nhau. Module Conversion chuẩn hóa toàn bộ về một cấu trúc trung gian đồng nhất (thường là XML nội bộ) để các công đoạn phân tích văn bản phía sau xử lý một cách nhất quán.",
+    "image_path": "src/Slide_206.png"
+  },
+  {
+    "id": "seg_fe_207",
+    "slide": 207,
+    "is_info": false,
+    "topic": "Search Engines & Information Retrieval",
+    "question": "A title that starts at word 5 and ends just before word 9 is encoded as which extent?",
+    "vn_question": "",
+    "options": [
+      "(4, 9)",
+      "(5, 8)",
+      "(5, 9)",
+      "(9, 5)"
+    ],
+    "vn_options": [],
+    "correct": 2,
+    "answer": 2,
+    "correct_letter": "C",
+    "correct_letters": [
+      "C"
+    ],
+    "correct_choices": [
+      2
+    ],
+    "is_multi": false,
+    "required_choices": 1,
+    "explanation": "Đáp án chuẩn là C. Dựa trên giáo trình Search Engines: Information Retrieval in Practice (Bruce Croft).",
+    "image_path": "src/Slide_207.png"
+  },
+  {
+    "id": "seg_fe_208",
+    "slide": 208,
+    "is_info": false,
+    "topic": "Chương 5: Ranking with Indexes (Mục 5.2 Score-Ordered Posting Lists / Pruning).",
+    "question": "What is the benefit of ordering inverted lists by score?",
+    "vn_question": "",
+    "options": [
+      "It makes compression impossible",
+      "The query processing engine only needs to focus on the top part of each inverted list",
+      "It removes the need for a vocabulary",
+      "It guarantees Boolean retrieval"
+    ],
+    "vn_options": [],
+    "correct": 1,
+    "answer": 1,
+    "correct_letter": "B",
+    "correct_letters": [
+      "B"
+    ],
+    "correct_choices": [
+      1
+    ],
+    "is_multi": false,
+    "required_choices": 1,
+    "explanation": "Thay vì sắp xếp danh sách posting theo mã docID tăng dần, việc sắp xếp theo điểm đóng góp giảm dần (impact-ordered) cho phép áp dụng các thuật toán cắt tỉa sớm (early termination / WAND): hệ thống chỉ cần duyệt các tài liệu có điểm số cao nhất ở đầu danh sách; khi điểm số rơi xuống dưới ngưỡng thì có thể dừng ngay lập tức mà không cần quét hết danh sách.",
+    "image_path": "src/Slide_208.png"
+  },
+  {
+    "id": "seg_fe_209",
+    "slide": 209,
+    "is_info": false,
+    "topic": "Chương 5: Ranking with Indexes (Mục 5.2 Score-Ordered Posting Lists / Pruning).",
+    "question": "What is the benefit of ordering inverted lists by score?",
+    "vn_question": "",
+    "options": [
+      "It makes compression impossible",
+      "The query processing engine only needs to focus on the top part of each inverted list",
+      "It removes the need for a vocabulary",
+      "It guarantees Boolean retrieval"
+    ],
+    "vn_options": [],
+    "correct": 1,
+    "answer": 1,
+    "correct_letter": "B",
+    "correct_letters": [
+      "B"
+    ],
+    "correct_choices": [
+      1
+    ],
+    "is_multi": false,
+    "required_choices": 1,
+    "explanation": "Thay vì sắp xếp danh sách posting theo mã docID tăng dần, việc sắp xếp theo điểm đóng góp giảm dần (impact-ordered) cho phép áp dụng các thuật toán cắt tỉa sớm (early termination / WAND): hệ thống chỉ cần duyệt các tài liệu có điểm số cao nhất ở đầu danh sách; khi điểm số rơi xuống dưới ngưỡng thì có thể dừng ngay lập tức mà không cần quét hết danh sách.",
+    "image_path": "src/Slide_209.png"
+  },
+  {
+    "id": "seg_fe_210",
+    "slide": 210,
+    "is_info": false,
+    "topic": "Search Engines & Information Retrieval",
+    "question": "With compression ratio $r$ and decompression factor $d$, how many postings can be processed per second?",
+    "vn_question": "",
+    "options": [
+      "$\\min(mr, dp)$",
+      "$\\max(m, p)$",
+      "$m + p$",
+      "$\\min(m, p)$"
+    ],
+    "vn_options": [],
+    "correct": 0,
+    "answer": 0,
+    "correct_letter": "A",
+    "correct_letters": [
+      "A"
+    ],
+    "correct_choices": [
+      0
+    ],
+    "is_multi": false,
+    "required_choices": 1,
+    "explanation": "Đáp án chuẩn là A. Dựa trên giáo trình Search Engines: Information Retrieval in Practice (Bruce Croft).",
+    "image_path": "src/Slide_210.png"
+  },
+  {
+    "id": "seg_fe_211",
+    "slide": 211,
+    "is_info": false,
+    "topic": "Search Engines & Information Retrieval",
+    "question": "Using delta encoding, what does the sequence 1, 5, 9, 18 become?",
+    "vn_question": "",
+    "options": [
+      "1, 5, 9, 18",
+      "1,4,4,9",
+      "0, 4, 4,9",
+      "1, 6, 15, 33"
+    ],
+    "vn_options": [],
+    "correct": 1,
+    "answer": 1,
+    "correct_letter": "B",
+    "correct_letters": [
+      "B"
+    ],
+    "correct_choices": [
+      1
+    ],
+    "is_multi": false,
+    "required_choices": 1,
+    "explanation": "Đáp án chuẩn là B. Dựa trên giáo trình Search Engines: Information Retrieval in Practice (Bruce Croft).",
+    "image_path": "src/Slide_211.png"
+  },
+  {
+    "id": "seg_fe_212",
+    "slide": 212,
+    "is_info": false,
+    "topic": "Chương 5: Indexing - Variable-Byte Compression.",
+    "question": "How many bytes does v-byte encoding need to store $k = 200$?",
+    "vn_question": "",
+    "options": [
+      "2 bytes, because $2^7 \\le 200 < 2^{14}$",
+      "1 byte, because $200 < 2^7$",
+      "3 bytes",
+      "4 bytes"
+    ],
+    "vn_options": [],
+    "correct": 0,
+    "answer": 0,
+    "correct_letter": "A",
+    "correct_letters": [
+      "A"
+    ],
+    "correct_choices": [
+      0
+    ],
+    "is_multi": false,
+    "required_choices": 1,
+    "explanation": "Trong v-byte, mỗi byte gồm 8 bit:\n 7 bit thấp dùng làm payload lưu giá trị nhị phân.\n 1 bit cao nhất (MSB) dùng làm cờ tiếp tục (continuation bit hoặc termination bit).\n Dung lượng biểu diễn:\n 1 byte: lưu được các số từ 0 đến 2^7 - 1 = 127.\n 2 bytes: lưu được từ 128 đến 2^{14} - 1 = 16.383.\nVì 128 ≤ 200 < 16.384 (2^7 ≤ 200 < 2^{14}), số 200 bắt buộc phải dùng 2 bytes.",
+    "image_path": "src/Slide_212.png"
+  },
+  {
+    "id": "seg_fe_213",
+    "slide": 213,
+    "is_info": false,
+    "topic": "Search Engines & Information Retrieval",
+    "question": "What is the v-byte code (in hex) for $k = 1$?",
+    "vn_question": "",
+    "options": [
+      "01",
+      "01 80",
+      "FF",
+      "81"
+    ],
+    "vn_options": [],
+    "correct": 3,
+    "answer": 3,
+    "correct_letter": "D",
+    "correct_letters": [
+      "D"
+    ],
+    "correct_choices": [
+      3
+    ],
+    "is_multi": false,
+    "required_choices": 1,
+    "explanation": "Đáp án chuẩn là D. Dựa trên giáo trình Search Engines: Information Retrieval in Practice (Bruce Croft).",
+    "image_path": "src/Slide_213.png"
+  },
+  {
+    "id": "seg_fe_214",
+    "slide": 214,
+    "is_info": false,
+    "topic": "Search Engines & Information Retrieval",
+    "question": "What is the v-byte code (in hex) for $k = 1$?",
+    "vn_question": "",
+    "options": [
+      "01",
+      "01 80",
+      "FF",
+      "81"
+    ],
+    "vn_options": [],
+    "correct": 3,
+    "answer": 3,
+    "correct_letter": "D",
+    "correct_letters": [
+      "D"
+    ],
+    "correct_choices": [
+      3
+    ],
+    "is_multi": false,
+    "required_choices": 1,
+    "explanation": "Đáp án chuẩn là D. Dựa trên giáo trình Search Engines: Information Retrieval in Practice (Bruce Croft).",
+    "image_path": "src/Slide_214.png"
+  },
+  {
+    "id": "seg_fe_215",
+    "slide": 215,
+    "is_info": false,
+    "topic": "Chương 5: Indexing - Conjunctive Query Processing / Inverted List Merging.",
+    "question": "When intersecting \"galago AND animal\", what should be done if $d_g < d_a$?",
+    "vn_question": "",
+    "options": [
+      "Move $d_g$ to the next document number in the \"galago\" list",
+      "Move $d_a$ to the next document number in the \"animal\" list",
+      "Report $d_g$ as a match",
+      "Stop processing"
+    ],
+    "vn_options": [],
+    "correct": 0,
+    "answer": 0,
+    "correct_letter": "A",
+    "correct_letters": [
+      "A"
+    ],
+    "correct_choices": [
+      0
+    ],
+    "is_multi": false,
+    "required_choices": 1,
+    "explanation": "Thuật toán hợp/giao hai danh sách đã sắp xếp tăng dần theo DocID:\n Nếu d_g == d_a: Cả hai từ khóa cùng xuất hiện trong tài liệu → ghi nhận kết quả và tăng cả hai con trỏ.\n Nếu d_g < d_a: Vì danh sách sắp xếp tăng dần, không có phần tử nào phía sau của danh sách \"animal\" có thể bằng d_g → tăng con trỏ của danh sách có DocID nhỏ hơn (d_g).\n Nếu d_g > d_a: Tăng con trỏ của d_a.",
+    "image_path": "src/Slide_215.png"
+  },
+  {
+    "id": "seg_fe_216",
+    "slide": 216,
+    "is_info": false,
+    "topic": "Chương 5: Indexing - Index Maintenance and Updates.",
+    "question": "Which two techniques handle updates when a collection keeps changing?",
+    "vn_question": "",
+    "options": [
+      "Stopping and stemming",
+      "Index merging and result merging",
+      "Hashing and checksumming",
+      "Precision and recall"
+    ],
+    "vn_options": [],
+    "correct": 1,
+    "answer": 1,
+    "correct_letter": "B",
+    "correct_letters": [
+      "B"
+    ],
+    "correct_choices": [
+      1
+    ],
+    "is_multi": false,
+    "required_choices": 1,
+    "explanation": "Khi có văn bản mới hoặc chỉnh sửa:\n1. Result merging (Dynamic indexing): Giữ một chỉ mục chính trên đĩa (Main Index) và một chỉ mục nhỏ lưu trên RAM (Auxiliary / In-memory Index). Khi truy vấn, hệ thống tìm trên cả hai chỉ mục rồi gộp kết quả trả về.\n2. Index merging: Định kỳ (khi bộ nhớ RAM đầy), hệ thống thực hiện trộn gộp chỉ mục phụ vào chỉ mục chính (như Logarithmic Merge).",
+    "image_path": "src/Slide_216.png"
+  },
+  {
+    "id": "seg_fe_217",
+    "slide": 217,
+    "is_info": false,
+    "topic": "Chương 5: Indexing - Index Maintenance and Updates.",
+    "question": "Which two techniques handle updates when a collection keeps changing?",
+    "vn_question": "",
+    "options": [
+      "Stopping and stemming",
+      "Index merging and result merging",
+      "Hashing and checksumming",
+      "Precision and recall"
+    ],
+    "vn_options": [],
+    "correct": 1,
+    "answer": 1,
+    "correct_letter": "B",
+    "correct_letters": [
+      "B"
+    ],
+    "correct_choices": [
+      1
+    ],
+    "is_multi": false,
+    "required_choices": 1,
+    "explanation": "Khi có văn bản mới hoặc chỉnh sửa:\n1. Result merging (Dynamic indexing): Giữ một chỉ mục chính trên đĩa (Main Index) và một chỉ mục nhỏ lưu trên RAM (Auxiliary / In-memory Index). Khi truy vấn, hệ thống tìm trên cả hai chỉ mục rồi gộp kết quả trả về.\n2. Index merging: Định kỳ (khi bộ nhớ RAM đầy), hệ thống thực hiện trộn gộp chỉ mục phụ vào chỉ mục chính (như Logarithmic Merge).",
+    "image_path": "src/Slide_217.png"
+  },
+  {
+    "id": "seg_fe_218",
+    "slide": 218,
+    "is_info": false,
+    "topic": "Chương 5: Indexing - Distributed Indexing: MapReduce Framework.",
+    "question": "What does a MapReduce library do?",
+    "vn_question": "",
+    "options": [
+      "Draws maps of web communities",
+      "Reduces the vocabulary using stemming",
+      "Automatically launches many Mapper and Reducer tasks across a cluster of machines",
+      "Converts PDFs into XML"
+    ],
+    "vn_options": [],
+    "correct": 2,
+    "answer": 2,
+    "correct_letter": "C",
+    "correct_letters": [
+      "C"
+    ],
+    "correct_choices": [
+      2
+    ],
+    "is_multi": false,
+    "required_choices": 1,
+    "explanation": "MapReduce trừu tượng hóa toàn bộ sự phức tạp của tính toán song song: tự động chia tách dữ liệu (input splits), lập lịch phân phối tác vụ, xử lý lỗi phần cứng (fault tolerance), truyền dữ liệu trung gian qua mạng (shuffle/sort) giữa Mapper và Reducer.",
+    "image_path": "src/Slide_218.png"
+  },
+  {
+    "id": "seg_fe_219",
+    "slide": 219,
+    "is_info": false,
+    "topic": "Chương 5: Indexing - Optimization of Conjunctive Queries.",
+    "question": "When is conjunctive processing most effective?",
+    "vn_question": "",
+    "options": [
+      "When every query term is very common",
+      "Only in document-at-a-time systems",
+      "When the query has no terms",
+      "When one of the query terms is rare"
+    ],
+    "vn_options": [],
+    "correct": 3,
+    "answer": 3,
+    "correct_letter": "D",
+    "correct_letters": [
+      "D"
+    ],
+    "correct_choices": [
+      3
+    ],
+    "is_multi": false,
+    "required_choices": 1,
+    "explanation": "Phép toán AND yêu cầu tài liệu phải chứa tất cả các từ trong truy vấn.\n Nếu bắt đầu bằng việc duyệt danh sách của từ khóa hiếm nhất (có độ dài danh sách nhỏ nhất |L_{min}|), số lượng tài liệu ứng viên bị thu hẹp ngay lập tức xuống mức tối thiểu, giúp loại bỏ phần lớn thao tác kiểm tra trên các danh sách dài còn lại.",
+    "image_path": "src/Slide_219.png"
+  },
+  {
+    "id": "seg_fe_220",
+    "slide": 220,
+    "is_info": false,
+    "topic": "Chương 5: Indexing - Optimization of Conjunctive Queries.",
+    "question": "When is conjunctive processing most effective?",
+    "vn_question": "",
+    "options": [
+      "When every query term is very common",
+      "Only in document-at-a-time systems",
+      "When the query has no terms",
+      "When one of the query terms is rare"
+    ],
+    "vn_options": [],
+    "correct": 3,
+    "answer": 3,
+    "correct_letter": "D",
+    "correct_letters": [
+      "D"
+    ],
+    "correct_choices": [
+      3
+    ],
+    "is_multi": false,
+    "required_choices": 1,
+    "explanation": "Phép toán AND yêu cầu tài liệu phải chứa tất cả các từ trong truy vấn.\n Nếu bắt đầu bằng việc duyệt danh sách của từ khóa hiếm nhất (có độ dài danh sách nhỏ nhất |L_{min}|), số lượng tài liệu ứng viên bị thu hẹp ngay lập tức xuống mức tối thiểu, giúp loại bỏ phần lớn thao tác kiểm tra trên các danh sách dài còn lại.",
+    "image_path": "src/Slide_220.png"
+  },
+  {
+    "id": "seg_fe_221",
+    "slide": 221,
+    "is_info": false,
+    "topic": "Chương 5: Indexing - Threshold and Pruning Methods (Top-k Retrieval).",
+    "question": "In threshold methods, what does k usually represent?",
+    "vn_question": "",
+    "options": [
+      "The number of results the user wants, typically 10 to 20",
+      "The number of index servers",
+      "The number of stopwords",
+      "The compression ratio"
+    ],
+    "vn_options": [],
+    "correct": 0,
+    "answer": 0,
+    "correct_letter": "A",
+    "correct_letters": [
+      "A"
+    ],
+    "correct_choices": [
+      0
+    ],
+    "is_multi": false,
+    "required_choices": 1,
+    "explanation": "Công cụ tìm kiếm chỉ cần hiển thị trang kết quả đầu tiên (Top-10 hoặc Top-20).\n Trong các giải thuật cắt tỉa ngưỡng (WAND, MaxScore), k xác định kích thước của Min-Heap lưu Top-k điểm cao nhất. Ngưỡng điểm của phần tử thấp nhất trong Heap (threshold) được dùng để bỏ qua (skip) toàn bộ các tài liệu không thể lọt vào Top-k.",
+    "image_path": "src/Slide_221.png"
+  },
+  {
+    "id": "seg_fe_222",
+    "slide": 222,
+    "is_info": false,
+    "topic": "Chương 5: Indexing - Distributed Evaluation: Document vs. Term Partitioning.",
+    "question": "In distributed evaluation, what is term distribution?",
+    "vn_question": "",
+    "options": [
+      "Each index server is a search engine for a small part of the collection",
+      "One index is built for the whole cluster, and each inverted list is assigned to one index server",
+      "Each query term is sent to a different web search engi",
+      "Terms are cached in the user's browser"
+    ],
+    "vn_options": [],
+    "correct": 1,
+    "answer": 1,
+    "correct_letter": "B",
+    "correct_letters": [
+      "B"
+    ],
+    "correct_choices": [
+      1
+    ],
+    "is_multi": false,
+    "required_choices": 1,
+    "explanation": "Term Partitioning (Term Distribution): Máy A giữ toàn bộ danh sách của các từ bắt đầu bằng A-F, máy B giữ G-M... Khó cân bằng tải do một số từ khóa phổ biến sẽ làm quá tải máy chủ chứa nó (load imbalance).\nDocument Partitioning (Document Distribution): Mỗi node giữ chỉ mục hoàn chỉnh của một tập con các tài liệu. Đây là mô hình phổ biến và thực tế hơn trong các công cụ tìm kiếm hiện đại.",
+    "image_path": "src/Slide_222.png"
+  },
+  {
+    "id": "seg_fe_223",
+    "slide": 223,
+    "is_info": false,
+    "topic": "Chương 6: Queries and Interfaces - Stemming Issues vs. Query Reformulation.",
+    "question": "Queries \"fish village\" and \"fishing village\" give very different results, but a stemmer reduces \"fishing\" to \"fish\". What is the suggested fix?",
+    "vn_question": "",
+    "options": [
+      "Remove all stopwords from the query",
+      "Disable the inverted index",
+      "Expand the query with appropriate word variants instead of replacing words with their stems",
+      "Use Boolean NOT on \"fish\""
+    ],
+    "vn_options": [],
+    "correct": 2,
+    "answer": 2,
+    "correct_letter": "C",
+    "correct_letters": [
+      "C"
+    ],
+    "correct_choices": [
+      2
+    ],
+    "is_multi": false,
+    "required_choices": 1,
+    "explanation": "Stemming thay thế từ bằng gốc chung (root/stem), dễ làm mất các sắc thái ngữ nghĩa đặc thù (over-stemming / over-conflation).\nGiải pháp tối ưu: Giữ nguyên từ nguyên bản và áp dụng Query Expansion, bổ sung thêm các biến thể từ có quan hệ ngữ nghĩa chặt chẽ để vừa duy trì độ chuẩn xác (Precision) vừa tăng độ bao phủ (Recall).",
+    "image_path": "src/Slide_223.png"
+  },
+  {
+    "id": "seg_fe_224",
+    "slide": 224,
+    "is_info": false,
+    "topic": "Chương 6: Queries and Interfaces - Query Expansion: Term Association Measures.",
+    "question": "What does Dice's coefficient measure?",
+    "vn_question": "",
+    "options": [
+      "The association between two terms, based on windows that contain them",
+      "The PageRank of a page",
+      "The compression ratio of a list",
+      "The edit distance between two words"
+    ],
+    "vn_options": [],
+    "correct": 0,
+    "answer": 0,
+    "correct_letter": "A",
+    "correct_letters": [
+      "A"
+    ],
+    "correct_choices": [
+      0
+    ],
+    "is_multi": false,
+    "required_choices": 1,
+    "explanation": "Công thức hệ số Dice giữa hai từ a và b:\nDice(a, b) = \\frac{2 · n_{ab}}{n_a + n_b}\n n_{ab}: Số cửa sổ văn bản (hoặc tài liệu) chứa cả hai từ a và b.\n n_a, n_b: Số cửa sổ chứa từ a và từ b.\n Hệ số này chuẩn hóa tần suất đồng xuất hiện (co-occurrence) để tìm các từ liên quan nhất hỗ trợ mở rộng truy vấn.",
+    "image_path": "src/Slide_224.png"
+  },
+  {
+    "id": "seg_fe_225",
+    "slide": 225,
+    "is_info": false,
+    "topic": "Chương 6: Queries and Interfaces - Spell Checking & Query Suggestions (Damerau-Levenshtein Distance).",
+    "question": "\"poiner\" — \"pointer\" is which type of spelling error?",
+    "vn_question": "",
+    "options": [
+      "Insertion error",
+      "Substitution error",
+      "Deletion error",
+      "Transposition error"
+    ],
+    "vn_options": [],
+    "correct": 2,
+    "answer": 2,
+    "correct_letter": "C",
+    "correct_letters": [
+      "C"
+    ],
+    "correct_choices": [
+      2
+    ],
+    "is_multi": false,
+    "required_choices": 1,
+    "explanation": "Xét từ từ gốc \"pointer\" biến thành \"poiner\", ký tự 't' đã bị người dùng vô tình bỏ quên (bị xóa đi khi nhập liệu).\n Phân loại lỗi theo Damerau-Levenshtein (chiếm hơn 80% lỗi gõ chính tả):\nInsertion: Gõ thừa một ký tự.\nDeletion: Gõ thiếu (bỏ quên) một ký tự.\nSubstitution: Gõ nhầm ký tự này sang ký tự khác.\nTransposition: Đảo vị trí hai ký tự liền kề (ví dụ: teh thay vì the).",
+    "image_path": "src/Slide_225.png"
+  },
+  {
+    "id": "seg_fe_226",
+    "slide": 226,
+    "is_info": false,
+    "topic": "Chương 6: Queries and Interfaces - Context and Personalization: Local Search.",
+    "question": "What is the first step of local search based on geographic context?",
+    "vn_question": "",
+    "options": [
+      "Rank pages by comparing query and document locations",
+      "Identify the region of the query automatically",
+      "Remove all location names from the text",
+      "Identify the geographic region associated with each web page"
+    ],
+    "vn_options": [],
+    "correct": 3,
+    "answer": 3,
+    "correct_letter": "D",
+    "correct_letters": [
+      "D"
+    ],
+    "correct_choices": [
+      3
+    ],
+    "is_multi": false,
+    "required_choices": 1,
+    "explanation": "Quy trình 3 bước chuẩn của Local Search (Slide 11 - Chương 6):\n1. Bước 1: Gán nhãn/nhận diện vị trí địa lý cho từng trang web trong cơ sở dữ liệu (dựa trên địa chỉ bưu chính, số điện thoại, tên thành phố, hoặc địa chỉ IP máy chủ).\n2. Bước 2: Trích xuất thông tin vị trí địa lý từ truy vấn của người dùng (hoặc từ GPS / IP của người tìm kiếm).\n3. Bước 3: Xếp hạng các trang web dựa trên sự kết hợp giữa độ liên quan văn bản và khoảng cách địa lý.",
+    "image_path": "src/Slide_226.png"
+  },
+  {
+    "id": "seg_fe_227",
+    "slide": 227,
+    "is_info": false,
+    "topic": "Chương 6: Queries and Interfaces - Context and Personalization: Local Search.",
+    "question": "What is the first step of local search based on geographic context?",
+    "vn_question": "",
+    "options": [
+      "Rank pages by comparing query and document locations",
+      "Identify the region of the query automatically",
+      "Remove all location names from the text",
+      "Identify the geographic region associated with each web page"
+    ],
+    "vn_options": [],
+    "correct": 3,
+    "answer": 3,
+    "correct_letter": "D",
+    "correct_letters": [
+      "D"
+    ],
+    "correct_choices": [
+      3
+    ],
+    "is_multi": false,
+    "required_choices": 1,
+    "explanation": "Quy trình 3 bước chuẩn của Local Search (Slide 11 - Chương 6):\n1. Bước 1: Gán nhãn/nhận diện vị trí địa lý cho từng trang web trong cơ sở dữ liệu (dựa trên địa chỉ bưu chính, số điện thoại, tên thành phố, hoặc địa chỉ IP máy chủ).\n2. Bước 2: Trích xuất thông tin vị trí địa lý từ truy vấn của người dùng (hoặc từ GPS / IP của người tìm kiếm).\n3. Bước 3: Xếp hạng các trang web dựa trên sự kết hợp giữa độ liên quan văn bản và khoảng cách địa lý.",
+    "image_path": "src/Slide_227.png"
+  },
+  {
+    "id": "seg_fe_228",
+    "slide": 228,
+    "is_info": false,
+    "topic": "Chương 7: Retrieval Models - Boolean Retrieval Overview.",
+    "question": "Which is an ADVANTAGE of Boolean retrieval?",
+    "vn_question": "",
+    "options": [
+      "It has a sophisticated ranking algorithm",
+      "Simple queries always work well",
+      "Results are very predictable and easy to explain to users",
+      "Complex queries are easy to write"
+    ],
+    "vn_options": [],
+    "correct": 2,
+    "answer": 2,
+    "correct_letter": "C",
+    "correct_letters": [
+      "C"
+    ],
+    "correct_choices": [
+      2
+    ],
+    "is_multi": false,
+    "required_choices": 1,
+    "explanation": "Mô hình Bool sử dụng logic toán học tuyệt đối (trả về tập hợp thỏa mãn chính xác biểu thức AND, OR, NOT).\n Người dùng (đặc biệt là luật sư, thủ thư, nhân viên tra cứu bằng sáng chế) biết chính xác tại sao một tài liệu được chọn hoặc bị loại bỏ, loại bỏ tính mập mờ của các hàm trọng số thống kê.",
+    "image_path": "src/Slide_228.png"
+  },
+  {
+    "id": "seg_fe_229",
+    "slide": 229,
+    "is_info": false,
+    "topic": "Chương 7: Retrieval Models - Disadvantages of Boolean Retrieval.",
+    "question": "Which is a DISADVANTAGE of Boolean retrieval?",
+    "vn_question": "",
+    "options": [
+      "It is slower than ranked retrieval",
+      "Building complex Boolean queries is difficult and needs much experience",
+      "Results are hard to explain",
+      "It returns probabilities instead of TRUE/FALSE"
+    ],
+    "vn_options": [],
+    "correct": 1,
+    "answer": 1,
+    "correct_letter": "B",
+    "correct_letters": [
+      "B"
+    ],
+    "correct_choices": [
+      1
+    ],
+    "is_multi": false,
+    "required_choices": 1,
+    "explanation": "Người dùng phổ thông thường không nắm vững logic hình thức (dễ nhầm lẫn giữa AND và OR trong ngữ cảnh đời thực).\n Ngoài ra, mô hình Bool kinh điển không có cơ chế xếp hạng (unranked retrieval) - nó coi tất cả tài liệu thỏa mãn là ngang giá trị nhau, dẫn đến hiện tượng trả về quá ít (0 kết quả - \"Feast or Famine\") hoặc quá nhiều hàng nghìn tài liệu mà không biết tài liệu nào quan trọng nhất.",
+    "image_path": "src/Slide_229.png"
+  },
+  {
+    "id": "seg_fe_230",
+    "slide": 230,
+    "is_info": false,
+    "topic": "Chương 7: Retrieval Models - Vector Space Model.",
+    "question": "In the vector space model, which similarity measure is most commonly used between a document and a query vector?",
+    "vn_question": "",
+    "options": [
+      "Cosine similarity",
+      "Edit distance",
+      "Hamming distance",
+      "Kendall tau"
+    ],
+    "vn_options": [],
+    "correct": 0,
+    "answer": 0,
+    "correct_letter": "A",
+    "correct_letters": [
+      "A"
+    ],
+    "correct_choices": [
+      0
+    ],
+    "is_multi": false,
+    "required_choices": 1,
+    "explanation": "Trong VSM, cả tài liệu vec(d) và truy vấn vec(q) được biểu diễn dưới dạng vector trọng số (thường dùng TF-IDF).\nTích vô hướng đơn thuần sẽ thiên vị các tài liệu dài (chứa nhiều từ lặp lại). Cosine similarity chuẩn hóa độ dài vector theo khoảng cách Euclid:\nCosine(vec(q), vec(d)) = (vec(q) · vec(d) / |vec(q)| · |vec(d)|) = \\frac{∑_{t ∈ q ∩ d} w_{t,q} · w_{t,d}}{\\sqrt{∑ w_{t,q}^2} · \\sqrt{∑ w_{t,d}^2}}\n Nhờ đó, độ tương đồng chỉ phụ thuộc vào góc giữa hai vector (hướng chủ đề) thay vì độ dài vật lý của tài liệu.",
+    "image_path": "src/Slide_230.png"
+  },
+  {
+    "id": "seg_fe_231",
+    "slide": 231,
+    "is_info": false,
+    "topic": "Chương 7: Retrieval Models - Probabilistic Models: BM25 / Robertson-Spärck Jones (RSJ) Weight.",
+    "question": "In BM25, what happens to $r_i$ and $R$ when no relevance information is available?",
+    "vn_question": "",
+    "options": [
+      "They are set to N",
+      "They are set to 0",
+      "They are set to 1",
+      "They are estimated by PageRank"
+    ],
+    "vn_options": [],
+    "correct": 1,
+    "answer": 1,
+    "correct_letter": "B",
+    "correct_letters": [
+      "B"
+    ],
+    "correct_choices": [
+      1
+    ],
+    "is_multi": false,
+    "required_choices": 1,
+    "explanation": "Trọng số Robertson-Spärck Jones tổng quát có dạng:\nw_i = log ((r_i + 0.5) / (R - r_i + 0.5) / (n_i - r_i + 0.5) / (N - n_i - R + r_i + 0.5))\n R: Tổng số tài liệu liên quan đã biết; r_i: Số tài liệu liên quan chứa từ i.\n Trong tìm kiếm ad-hoc ban đầu khi chưa có người dùng gắn nhãn (no feedback), ta đặt R = 0 và r_i = 0. Công thức thu về trọng số IDF kinh điển của BM25:\nIDF_i = log (N - n_i + 0.5 / n_i + 0.5)",
+    "image_path": "src/Slide_231.png"
+  },
+  {
+    "id": "seg_fe_232",
+    "slide": 232,
+    "is_info": false,
+    "topic": "Chương 7: Retrieval Models - Probabilistic Models: BM25 / Robertson-Spärck Jones (RSJ) Weight.",
+    "question": "In BM25, what happens to $r_i$ and $R$ when no relevance information is available?",
+    "vn_question": "",
+    "options": [
+      "They are set to N",
+      "They are set to 0",
+      "They are set to 1",
+      "They are estimated by PageRank"
+    ],
+    "vn_options": [],
+    "correct": 1,
+    "answer": 1,
+    "correct_letter": "B",
+    "correct_letters": [
+      "B"
+    ],
+    "correct_choices": [
+      1
+    ],
+    "is_multi": false,
+    "required_choices": 1,
+    "explanation": "Trọng số Robertson-Spärck Jones tổng quát có dạng:\nw_i = log ((r_i + 0.5) / (R - r_i + 0.5) / (n_i - r_i + 0.5) / (N - n_i - R + r_i + 0.5))\n R: Tổng số tài liệu liên quan đã biết; r_i: Số tài liệu liên quan chứa từ i.\n Trong tìm kiếm ad-hoc ban đầu khi chưa có người dùng gắn nhãn (no feedback), ta đặt R = 0 và r_i = 0. Công thức thu về trọng số IDF kinh điển của BM25:\nIDF_i = log (N - n_i + 0.5 / n_i + 0.5)",
+    "image_path": "src/Slide_232.png"
+  },
+  {
+    "id": "seg_fe_233",
+    "slide": 233,
+    "is_info": false,
+    "topic": "Chương 6: Queries and Interfaces - Spelling Correction: Noisy Channel Model.",
+    "question": "What is the simplest form of language model?",
+    "vn_question": "",
+    "options": [
+      "Unigram language model: a probability distribution over words",
+      "Trigram language model",
+      "Hidden Markov Model",
+      "Inference network"
+    ],
+    "vn_options": [],
+    "correct": 0,
+    "answer": 0,
+    "correct_letter": "A",
+    "correct_letters": [
+      "A"
+    ],
+    "correct_choices": [
+      0
+    ],
+    "is_multi": false,
+    "required_choices": 1,
+    "explanation": "Công thức kênh truyền nhiễu:\n\\hat{w} = \\argmax_w P(w | s) = \\argmax_w P(s | w) · P(w)\nP(s | w) (Error Model / Channel Model): Xác suất người dùng gõ sai thành chuỗi ký tự s khi trong đầu họ thực sự định gõ từ đúng w.\nP(w) (Language Model): Xác suất từ w xuất hiện tự nhiên trong ngôn ngữ (từ phổ biến có P(w) cao hơn từ hiếm).",
+    "image_path": "src/Slide_233.png"
+  },
+  {
+    "id": "seg_fe_234",
+    "slide": 234,
+    "is_info": false,
+    "topic": "Chương 6: Queries and Interfaces - Spelling Correction: Noisy Channel Model.",
+    "question": "What is the simplest form of language model?",
+    "vn_question": "",
+    "options": [
+      "Unigram language model: a probability distribution over words",
+      "Trigram language model",
+      "Hidden Markov Model",
+      "Inference network"
+    ],
+    "vn_options": [],
+    "correct": 0,
+    "answer": 0,
+    "correct_letter": "A",
+    "correct_letters": [
+      "A"
+    ],
+    "correct_choices": [
+      0
+    ],
+    "is_multi": false,
+    "required_choices": 1,
+    "explanation": "Công thức kênh truyền nhiễu:\n\\hat{w} = \\argmax_w P(w | s) = \\argmax_w P(s | w) · P(w)\nP(s | w) (Error Model / Channel Model): Xác suất người dùng gõ sai thành chuỗi ký tự s khi trong đầu họ thực sự định gõ từ đúng w.\nP(w) (Language Model): Xác suất từ w xuất hiện tự nhiên trong ngôn ngữ (từ phổ biến có P(w) cao hơn từ hiếm).",
+    "image_path": "src/Slide_234.png"
+  },
+  {
+    "id": "seg_fe_235",
+    "slide": 235,
+    "is_info": false,
+    "topic": "Chương 7: Retrieval Models - Relevance-Based Language Models (RM1/RM2) & PRF.",
+    "question": "In pseudo-relevance feedback, what happens right after selecting the top-ranked documents as set C?",
+    "vn_question": "",
+    "options": [
+      "Rank documents by query likelinood",
+      "Rerank documents using KL-divergence",
+      "Remove all stopwords from C",
+      "Estimate the relevance model probabilities P(w|R) from C"
+    ],
+    "vn_options": [],
+    "correct": 3,
+    "answer": 3,
+    "correct_letter": "D",
+    "correct_letters": [
+      "D"
+    ],
+    "correct_choices": [
+      3
+    ],
+    "is_multi": false,
+    "required_choices": 1,
+    "explanation": "Quy trình 4 bước của Relevance Model (Lavrenko & Croft):\n1. Truy vấn ban đầu để lấy danh sách kết quả xếp hạng.\n2. Chọn top k tài liệu hàng đầu giả định là liên quan (tập C).\n3. Ước lượng xác suất P(w|R) cho mọi từ vựng w xuất hiện trong tập C.\n4. Xếp hạng lại toàn bộ tài liệu dựa trên độ phân kỳ KL (KL-divergence) giữa mô hình liên quan P(w|R) và mô hình từng tài liệu P(w|M_D).",
+    "image_path": "src/Slide_235.png"
+  },
+  {
+    "id": "seg_fe_236",
+    "slide": 236,
+    "is_info": false,
+    "topic": "Chương 7: Retrieval Models - Dirichlet Prior Smoothing in Language Models.",
+    "question": "In the inference network model, what does $\\mu$ represent?",
+    "vn_question": "",
+    "options": [
+      "The number of documents",
+      "The random jump probability",
+      "The Dirichlet smoothing parameter",
+      "The number of relevant documents"
+    ],
+    "vn_options": [],
+    "correct": 2,
+    "answer": 2,
+    "correct_letter": "C",
+    "correct_letters": [
+      "C"
+    ],
+    "correct_choices": [
+      2
+    ],
+    "is_multi": false,
+    "required_choices": 1,
+    "explanation": "Khi tính toán mô hình ngôn ngữ tài liệu, Dirichlet smoothing sử dụng một tham số giả định μ (thường chọn μ ≈ 1000 - 2500):\nP(w | M_D) = \\frac{f_{w,D} + μ · P(w | C)}{|D| + μ}\n f_{w,D}: Tần số từ w trong tài liệu D; |D|: Độ dài tài liệu.\n P(w|C): Xác suất của từ w trong toàn bộ kho ngữ liệu chung (Collection Language Model).\n Ký hiệu trên slide là μ (do lỗi font chữ hiển thị thành dạng ký tự tương tự p!).",
+    "image_path": "src/Slide_236.png"
+  },
+  {
+    "id": "seg_fe_237",
+    "slide": 237,
+    "is_info": false,
+    "topic": "Search Engines & Information Retrieval",
+    "question": "In learning to rank with an SVM, what is the input?",
+    "vn_question": "",
+    "options": [
+      "Raw HTML pages only",
+      "A list of stopwords",
+      "Pairs of URLs and PageRank values",
+      "Pairs $(q_i, r_i)$, where $q_i$ is a query and $r_i$ is partial information about the desired ranking"
+    ],
+    "vn_options": [],
+    "correct": 3,
+    "answer": 3,
+    "correct_letter": "D",
+    "correct_letters": [
+      "D"
+    ],
+    "correct_choices": [
+      3
+    ],
+    "is_multi": false,
+    "required_choices": 1,
+    "explanation": "Đáp án chuẩn là D. Dựa trên giáo trình Search Engines: Information Retrieval in Practice (Bruce Croft).",
+    "image_path": "src/Slide_237.png"
+  },
+  {
+    "id": "seg_fe_238",
+    "slide": 238,
+    "is_info": false,
+    "topic": "Chương 7: Retrieval Models - Topic Models: Latent Dirichlet Allocation (LDA).",
+    "question": "How does Latent Dirichlet Allocation (LDA) model a document?",
+    "vn_question": "",
+    "options": [
+      "As a single topic chosen at random",
+      "As a mixture of topics",
+      "As a Boolean vector of terms",
+      "As a list of hyperlinks"
+    ],
+    "vn_options": [],
+    "correct": 1,
+    "answer": 1,
+    "correct_letter": "B",
+    "correct_letters": [
+      "B"
+    ],
+    "correct_choices": [
+      1
+    ],
+    "is_multi": false,
+    "required_choices": 1,
+    "explanation": "Trong mô hình sinh LDA (Blei et al., 2003):\n Mỗi tài liệu được giả định là một phân phối xác suất (hòa trộn) trên một tập hợp các chủ đề tiềm ẩn (topics).\n Mỗi chủ đề lại là một phân phối xác suất trên toàn bộ kho từ vựng.\n Một tài liệu có thể gồm 60% chủ đề \"Thể thao\" và 40% chủ đề \"Kinh tế\".",
+    "image_path": "src/Slide_238.png"
+  },
+  {
+    "id": "seg_fe_239",
+    "slide": 239,
+    "is_info": true,
+    "topic": "Slide phân mục",
+    "question": "Web Search.and SEO",
+    "vn_question": "",
+    "options": [],
+    "vn_options": [],
+    "correct": 0,
+    "answer": 0,
+    "correct_letter": "A",
+    "correct_letters": [
+      "A"
+    ],
+    "correct_choices": [
+      0
+    ],
+    "is_multi": false,
+    "required_choices": 1,
+    "explanation": "Slide phân mục hoặc tiêu đề chương.",
+    "image_path": "src/Slide_239.png"
+  },
+  {
+    "id": "seg_fe_240",
+    "slide": 240,
+    "is_info": false,
+    "topic": "Search Engines & Information Retrieval",
+    "question": "A user looking for a site to buy shoes or download music is doing which type of web search?",
+    "vn_question": "",
+    "options": [
+      "Informational",
+      "Navigational",
+      "Collaborative",
+      "Transactional"
+    ],
+    "vn_options": [],
+    "correct": 3,
+    "answer": 3,
+    "correct_letter": "D",
+    "correct_letters": [
+      "D"
+    ],
+    "correct_choices": [
+      3
+    ],
+    "is_multi": false,
+    "required_choices": 1,
+    "explanation": "Đáp án chuẩn là D. Dựa trên giáo trình Search Engines: Information Retrieval in Practice (Bruce Croft).",
+    "image_path": "src/Slide_240.png"
+  },
+  {
+    "id": "seg_fe_241",
+    "slide": 241,
+    "is_info": false,
+    "topic": "Web Search & SEO - User Search Intent.",
+    "question": "What is the goal of an informational web search?",
+    "vn_question": "",
+    "options": [
+      "To find information about a topic, which may be on one or more web pages",
+      "To reach a specific page the user has seen before",
+      "To complete a purchase",
+      "To log into an account"
+    ],
+    "vn_options": [],
+    "correct": 0,
+    "answer": 0,
+    "correct_letter": "A",
+    "correct_letters": [
+      "A"
+    ],
+    "correct_choices": [
+      0
+    ],
+    "is_multi": false,
+    "required_choices": 1,
+    "explanation": "Truy vấn thông tin thường có không gian kết quả mở (open-ended). Người dùng đọc tài liệu để thỏa mãn nhu cầu tiếp thu kiến thức chứ không nhằm mục đích giao dịch hay tìm một địa chỉ URL cố định.",
+    "image_path": "src/Slide_241.png"
+  },
+  {
+    "id": "seg_fe_242",
+    "slide": 242,
+    "is_info": false,
+    "topic": "Web Search & SEO - Fundamentals of SEO.",
+    "question": "What is the basis of search engine optimization (SEO)?",
+    "vn_question": "",
+    "options": [
+      "The number of servers a search engine uses",
+      "The compression scheme of the inverted index",
+      "The relative importance of ranking features and how to influence them so pages rank better",
+      "The crawler's politeness policy"
+    ],
+    "vn_options": [],
+    "correct": 2,
+    "answer": 2,
+    "correct_letter": "C",
+    "correct_letters": [
+      "C"
+    ],
+    "correct_choices": [
+      2
+    ],
+    "is_multi": false,
+    "required_choices": 1,
+    "explanation": "Thuật toán tìm kiếm sử dụng hàng trăm tín hiệu (từ khóa on-page, cấu trúc thẻ HTML, liên kết ngoài backlink, tốc độ trang...).\n Bản chất của SEO là hiểu rõ trọng số của các yếu tố xếp hạng này để tối ưu hóa website đáp ứng tốt nhất tiêu chí của máy tìm kiếm.",
+    "image_path": "src/Slide_242.png"
+  },
+  {
+    "id": "seg_fe_243",
+    "slide": 243,
+    "is_info": false,
+    "topic": "Chương 6: Queries and Interfaces - Result Presentation & Snippets.",
+    "question": "Which elements make up a typical document summary on a result page?",
+    "vn_question": "",
+    "options": [
+      "Only the URL",
+      "Title, URL, links to the live and cached page, and a short snippet",
+      "The full text of the page",
+      "The page's PageRank and inlink count"
+    ],
+    "vn_options": [],
+    "correct": 1,
+    "answer": 1,
+    "correct_letter": "B",
+    "correct_letters": [
+      "B"
+    ],
+    "correct_choices": [
+      1
+    ],
+    "is_multi": false,
+    "required_choices": 1,
+    "explanation": "Đoạn snippet (trích đoạn động) giúp người dùng nhanh chóng đánh giá xem nội dung trang có khớp với ngữ cảnh từ khóa họ vừa tìm hay không trước khi quyết định click vào liên kết.",
+    "image_path": "src/Slide_243.png"
+  },
+  {
+    "id": "seg_fe_244",
+    "slide": 244,
+    "is_info": false,
+    "topic": "Chương 6: Queries and Interfaces - Snippet Generation & Text Summarization.",
+    "question": "What is Luhn's algorithm used for in search results?",
+    "vn_question": "",
+    "options": [
+      "Text summarization to build snippets",
+      "Detecting duplicate pages",
+      "Compressing inverted lists",
+      "Computing PageRank"
+    ],
+    "vn_options": [],
+    "correct": 0,
+    "answer": 0,
+    "correct_letter": "A",
+    "correct_letters": [
+      "A"
+    ],
+    "correct_choices": [
+      0
+    ],
+    "is_multi": false,
+    "required_choices": 1,
+    "explanation": "Thuật toán Luhn tính toán tầm quan trọng của câu dựa trên mật độ và khoảng cách giữa các từ khóa có trọng số cao trong câu.\n Trong search engines, biến thể của thuật toán Luhn được dùng để trích xuất các câu hoặc cụm từ chứa từ khóa truy vấn một cách tự nhiên nhất để làm snippet.",
+    "image_path": "src/Slide_244.png"
+  },
+  {
+    "id": "seg_fe_245",
+    "slide": 245,
+    "is_info": false,
+    "topic": "Chương 6: Queries and Interfaces - Snippet Generation & Text Summarization.",
+    "question": "What is Luhn's algorithm used for in search results?",
+    "vn_question": "",
+    "options": [
+      "Text summarization to build snippets",
+      "Detecting duplicate pages",
+      "Compressing inverted lists",
+      "Computing PageRank"
+    ],
+    "vn_options": [],
+    "correct": 0,
+    "answer": 0,
+    "correct_letter": "A",
+    "correct_letters": [
+      "A"
+    ],
+    "correct_choices": [
+      0
+    ],
+    "is_multi": false,
+    "required_choices": 1,
+    "explanation": "Thuật toán Luhn tính toán tầm quan trọng của câu dựa trên mật độ và khoảng cách giữa các từ khóa có trọng số cao trong câu.\n Trong search engines, biến thể của thuật toán Luhn được dùng để trích xuất các câu hoặc cụm từ chứa từ khóa truy vấn một cách tự nhiên nhất để làm snippet.",
+    "image_path": "src/Slide_245.png"
+  },
+  {
+    "id": "seg_fe_246",
+    "slide": 246,
+    "is_info": false,
+    "topic": "Web Search - Search Monetization & Sponsored Search.",
+    "question": "Why is advertising a key component of web search engines?",
+    "vn_question": "",
+    "options": [
+      "It speeds up crawling",
+      "It improves stemming",
+      "It removes spam pages",
+      "It is how search companies generate revenue; advertisers bid on keywords"
+    ],
+    "vn_options": [],
+    "correct": 3,
+    "answer": 3,
+    "correct_letter": "D",
+    "correct_letters": [
+      "D"
+    ],
+    "correct_choices": [
+      3
+    ],
+    "is_multi": false,
+    "required_choices": 1,
+    "explanation": "Quảng cáo trên công cụ tìm kiếm hoạt động theo mô hình đấu giá từ khóa (keyword auction / Generalized Second Price - GSP). Khi người dùng tìm một từ khóa thương mại, quảng cáo liên quan sẽ xuất hiện ở đầu trang và nhà quảng cáo trả tiền khi có người nhấp chuột (Pay-Per-Click - PPC).",
+    "image_path": "src/Slide_246.png"
+  },
+  {
+    "id": "seg_fe_247",
+    "slide": 247,
+    "is_info": false,
+    "topic": "Web Search - Matching Advertisements to Queries.",
+    "question": "What is a main technical problem in matching advertisements to queries?",
+    "vn_question": "",
+    "options": [
+      "Ads are always written in another language",
+      "Matching short pieces of text (queries and ads) and choosing keywords that represent a page's content",
+      "Ads cannot be stored in a database",
+      "Ads must contain every query word exactly"
+    ],
+    "vn_options": [],
+    "correct": 1,
+    "answer": 1,
+    "correct_letter": "B",
+    "correct_letters": [
+      "B"
+    ],
+    "correct_choices": [
+      1
+    ],
+    "is_multi": false,
+    "required_choices": 1,
+    "explanation": "Câu truy vấn của người dùng thường chỉ dài từ 2 đến 3 từ; tiêu đề quảng cáo cũng rất ngắn gọn.\n Hiện tượng không đồng nhất từ vựng (vocabulary mismatch) xảy ra nghiêm trọng, đòi hỏi các thuật toán semantic matching, mở rộng từ đồng nghĩa và embedding hiện đại để suy luận đúng ý định thương mại.",
+    "image_path": "src/Slide_247.png"
+  },
+  {
+    "id": "seg_fe_248",
+    "slide": 248,
+    "is_info": false,
+    "topic": "Chương 6: Queries and Interfaces - Clustering Search Results.",
+    "question": "Why does a search engine cluster its top results?",
+    "vn_question": "",
+    "options": [
+      "To hide irrelevant results permanently",
+      "To compress the result page",
+      "To group similar documents under labels so users can quickly judge relevance",
+      "To compute BM25 scores"
+    ],
+    "vn_options": [],
+    "correct": 2,
+    "answer": 2,
+    "correct_letter": "C",
+    "correct_letters": [
+      "C"
+    ],
+    "correct_choices": [
+      2
+    ],
+    "is_multi": false,
+    "required_choices": 1,
+    "explanation": "Với các truy vấn đa nghĩa (ambiguous query như \"jaguar\": xe hơi, con báo, hệ điều hành), gom cụm tự động phân chia kết quả thành các thư mục chủ đề riêng biệt, giúp người dùng lọc trúng thông tin mong muốn mà không cần duyệt hết danh sách phẳng.",
+    "image_path": "src/Slide_248.png"
+  },
+  {
+    "id": "seg_fe_249",
+    "slide": 249,
+    "is_info": false,
+    "topic": "Chương 8: Evaluation - Building Test Collections & Ranking Optimization.",
+    "question": "When tailoring a ranking algorithm to an application, what is the first step?",
+    "vn_question": "",
+    "options": [
+      "Build a test collection of queries, documents and relevance judgments",
+      "Buy more servers",
+      "Remove all stopwords",
+      "Publish the algorithm"
+    ],
+    "vn_options": [],
+    "correct": 0,
+    "answer": 0,
+    "correct_letter": "A",
+    "correct_letters": [
+      "A"
+    ],
+    "correct_choices": [
+      0
+    ],
+    "is_multi": false,
+    "required_choices": 1,
+    "explanation": "Theo nguyên lý Cranfield: Ta không thể đo lường và tối ưu hóa bất kỳ thuật toán nào nếu thiếu thước đo chuẩn.\n Cần có: (1) Tập tài liệu mẫu (D), (2) Tập truy vấn mẫu (Q), và (3) Bảng đánh giá liên quan chuẩn (Ground truth relevance judgments / qrels) để tính toán MAP, NDCG trước khi thay đổi thuật toán.",
+    "image_path": "src/Slide_249.png"
+  },
+  {
+    "id": "seg_fe_250",
+    "slide": 250,
+    "is_info": false,
+    "topic": "Web Search & SEO - Scope of SEO.",
+    "question": "What is the main goal of SEO?",
+    "vn_question": "",
+    "options": [
+      "To increase paid advertising spending",
+      "To reduce the number of pages on a website",
+      "To block search engine crawlers",
+      "To increase a website's organic (unpaid) visibility and ranking on search engines"
+    ],
+    "vn_options": [],
+    "correct": 3,
+    "answer": 3,
+    "correct_letter": "D",
+    "correct_letters": [
+      "D"
+    ],
+    "correct_choices": [
+      3
+    ],
+    "is_multi": false,
+    "required_choices": 1,
+    "explanation": "SEO tập trung vào kết quả tự nhiên (Organic Search Results), phân biệt hoàn toàn với hình thức quảng cáo trả phí trên kết quả tìm kiếm (Paid Ads / SEM).",
+    "image_path": "src/Slide_250.png"
+  },
+  {
+    "id": "seg_fe_251",
+    "slide": 251,
+    "is_info": false,
+    "topic": "Web Search & SEO - Terminology.",
+    "question": "What does SERP stand for?",
+    "vn_question": "",
+    "options": [
+      "Search Engine Ranking Protocol",
+      "Search Engine Results Page",
+      "Site Evaluation and Ranking Process",
+      "Search Engine Relevance Percentage"
+    ],
+    "vn_options": [],
+    "correct": 1,
+    "answer": 1,
+    "correct_letter": "B",
+    "correct_letters": [
+      "B"
+    ],
+    "correct_choices": [
+      1
+    ],
+    "is_multi": false,
+    "required_choices": 1,
+    "explanation": "SERP là trang giao diện hiển thị danh sách các kết quả trả về sau khi người dùng gửi một truy vấn tìm kiếm, bao gồm các kết quả tự nhiên (organic), kết quả quảng cáo (sponsored), featured snippets, bản đồ, hình ảnh...",
+    "image_path": "src/Slide_251.png"
+  },
+  {
+    "id": "seg_fe_252",
+    "slide": 252,
+    "is_info": false,
+    "topic": "Web Search & SEO - Terminology.",
+    "question": "What does SERP stand for?",
+    "vn_question": "",
+    "options": [
+      "Search Engine Ranking Protocol",
+      "Search Engine Results Page",
+      "Site Evaluation and Ranking Process",
+      "Search Engine Relevance Percentage"
+    ],
+    "vn_options": [],
+    "correct": 1,
+    "answer": 1,
+    "correct_letter": "B",
+    "correct_letters": [
+      "B"
+    ],
+    "correct_choices": [
+      1
+    ],
+    "is_multi": false,
+    "required_choices": 1,
+    "explanation": "SERP là trang giao diện hiển thị danh sách các kết quả trả về sau khi người dùng gửi một truy vấn tìm kiếm, bao gồm các kết quả tự nhiên (organic), kết quả quảng cáo (sponsored), featured snippets, bản đồ, hình ảnh...",
+    "image_path": "src/Slide_252.png"
+  },
+  {
+    "id": "seg_fe_253",
+    "slide": 253,
+    "is_info": false,
+    "topic": "Web Search & SEO - Technical SEO.",
+    "question": "What does technical SEO aim to do?",
+    "vn_question": "",
+    "options": [
+      "Write blog content around target keywords",
+      "Buy ads on social media",
+      "Make sure crawlers can access the site and fix technical issues that block indexing and ranking",
+      "Collect user reviews"
+    ],
+    "vn_options": [],
+    "correct": 2,
+    "answer": 2,
+    "correct_letter": "C",
+    "correct_letters": [
+      "C"
+    ],
+    "correct_choices": [
+      2
+    ],
+    "is_multi": false,
+    "required_choices": 1,
+    "explanation": "Technical SEO bao gồm cấu hình file robots.txt, sơ đồ trang sitemap.xml, tối ưu hóa tốc độ tải trang, chứng chỉ bảo mật SSL/HTTPS, cấu trúc URL thân thiện, tính thân thiện với thiết bị di động (Mobile-friendliness) và mã trạng thái HTTP (301, 404).",
+    "image_path": "src/Slide_253.png"
+  },
+  {
+    "id": "seg_fe_254",
+    "slide": 254,
+    "is_info": false,
+    "topic": "Web Search & SEO - Google Algorithm Updates.",
+    "question": "Which of the following are Google algorithm updates mentioned in the material?",
+    "vn_question": "",
+    "options": [
+      "Panda, Penguin and Hummingbird",
+      "Porter, Krovetz and Lovins",
+      "Galago, Indri and Luce",
+      "BigTable, MapReduce and GFS"
+    ],
+    "vn_options": [],
+    "correct": 0,
+    "answer": 0,
+    "correct_letter": "A",
+    "correct_letters": [
+      "A"
+    ],
+    "correct_choices": [
+      0
+    ],
+    "is_multi": false,
+    "required_choices": 1,
+    "explanation": "Panda (2011): Xử phạt nội dung chất lượng kém, nội dung mỏng (thin content), trang sao chép/spam từ khóa.\nPenguin (2012): Trừng phạt các website sử dụng liên kết rác, mua bán backlink thao túng PageRank (link schemes).\nHummingbird (2013): Tái thiết kế bộ máy tìm kiếm để hiểu ngữ nghĩa câu truy vấn tự nhiên (Semantic Search).",
+    "image_path": "src/Slide_254.png"
+  },
+  {
+    "id": "seg_fe_255",
+    "slide": 255,
+    "is_info": false,
+    "topic": "Web Search & SEO - Bing Search Engine Features.",
+    "question": "What characterizes Bing's algorithm?",
+    "vn_question": "",
+    "options": [
+      "It uses Yahoo's search technology",
+      "It ranks only by PageRank",
+      "It ignores social media completely",
+      "It aims for diverse, visually appealing results and emphasizes factors such as social media integration"
+    ],
+    "vn_options": [],
+    "correct": 3,
+    "answer": 3,
+    "correct_letter": "D",
+    "correct_letters": [
+      "D"
+    ],
+    "correct_choices": [
+      3
+    ],
+    "is_multi": false,
+    "required_choices": 1,
+    "explanation": "Bing chú trọng trải nghiệm giao diện đa phương tiện (hình ảnh chất lượng cao, bảng tri thức trực quan) và từng tiên phong trong việc tích hợp trực tiếp các tín hiệu xã hội (từ Twitter/Facebook) vào thuật toán xếp hạng.",
+    "image_path": "src/Slide_255.png"
+  },
+  {
+    "id": "seg_fe_256",
+    "slide": 256,
+    "is_info": false,
+    "topic": "Web Search & SEO - Bing Search Engine Features.",
+    "question": "What characterizes Bing's algorithm?",
+    "vn_question": "",
+    "options": [
+      "It uses Yahoo's search technology",
+      "It ranks only by PageRank",
+      "It ignores social media completely",
+      "It aims for diverse, visually appealing results and emphasizes factors such as social media integration"
+    ],
+    "vn_options": [],
+    "correct": 3,
+    "answer": 3,
+    "correct_letter": "D",
+    "correct_letters": [
+      "D"
+    ],
+    "correct_choices": [
+      3
+    ],
+    "is_multi": false,
+    "required_choices": 1,
+    "explanation": "Bing chú trọng trải nghiệm giao diện đa phương tiện (hình ảnh chất lượng cao, bảng tri thức trực quan) và từng tiên phong trong việc tích hợp trực tiếp các tín hiệu xã hội (từ Twitter/Facebook) vào thuật toán xếp hạng.",
+    "image_path": "src/Slide_256.png"
+  },
+  {
+    "id": "seg_fe_257",
+    "slide": 257,
+    "is_info": false,
+    "topic": "Web Search & SEO - Search Engine Partnerships & Ecosystem.",
+    "question": "What powers Yahoo's search algorithm today?",
+    "vn_question": "",
+    "options": [
+      "Google's search technology",
+      "Its own independent crawler only",
+      "Bing's search technology, through a partnership between the two companies",
+      "A community question-answering system"
+    ],
+    "vn_options": [],
+    "correct": 2,
+    "answer": 2,
+    "correct_letter": "C",
+    "correct_letters": [
+      "C"
+    ],
+    "correct_choices": [
+      2
+    ],
+    "is_multi": false,
+    "required_choices": 1,
+    "explanation": "Từ thỏa thuận hợp tác chiến lược công nghệ tìm kiếm năm 2009/2010 (Yahoo-Microsoft Search Alliance), Yahoo đã dừng vận hành bộ máy thu thập và chỉ mục độc lập của mình mà sử dụng nền tảng backend và thuật toán xếp hạng do Bing cung cấp.",
+    "image_path": "src/Slide_257.png"
+  },
+  {
+    "id": "seg_fe_258",
+    "slide": 258,
+    "is_info": false,
+    "topic": "Web Search & SEO - Ranking Algorithms & Feature Combination.",
+    "question": "Which formula is given as a simplified ranking algorithm?",
+    "vn_question": "",
+    "options": [
+      "Ranking Score = $\\text{Factor}_1 \\times \\text{Factor}_2 \\times \\dots \\times \\text{Factor}_n$",
+      "Ranking Score = $\\text{Weight}_1 \\times \\text{Factor}_1 + \\text{Weight}_2 \\times \\text{Factor}_2 + \\dots + \\text{Weight}_n \\times \\text{Factor}_n$",
+      "Ranking Score = number of backlinks only",
+      "Ranking Score = $\\max(\\text{Factor}_1, \\dots, \\text{Factor}_n)$"
+    ],
+    "vn_options": [],
+    "correct": 1,
+    "answer": 1,
+    "correct_letter": "B",
+    "correct_letters": [
+      "B"
+    ],
+    "correct_choices": [
+      1
+    ],
+    "is_multi": false,
+    "required_choices": 1,
+    "explanation": "Đây là mô hình tổ hợp tuyến tính trọng số (Linear Weighted Combination):\nScore(Q, D) = ∑_{i=1}^n w_i · f_i(Q, D)\n Mỗi đặc trưng f_i (độ khớp từ khóa, PageRank, độ tươi mới, thời gian tải trang...) được nhân với trọng số ảnh hưởng w_i tương ứng để ra điểm số tổng hợp cuối cùng.",
+    "image_path": "src/Slide_258.png"
+  },
+  {
+    "id": "seg_fe_259",
+    "slide": 259,
+    "is_info": false,
+    "topic": "Web Search & SEO - Ranking Factors: Freshness (QDF - Query Deserves Freshness).",
+    "question": "For which kind of query is freshness most important?",
+    "vn_question": "",
+    "options": [
+      "Time-sensitive queries",
+      "Navigational queries for old pages",
+      "Queries with many stopwords",
+      "Queries in a foreign language"
+    ],
+    "vn_options": [],
+    "correct": 0,
+    "answer": 0,
+    "correct_letter": "A",
+    "correct_letters": [
+      "A"
+    ],
+    "correct_choices": [
+      0
+    ],
+    "is_multi": false,
+    "required_choices": 1,
+    "explanation": "Khái niệm QDF của Google nhận diện những truy vấn người dùng cần thông tin mới nhất (tin tức đột xuất, thiên tai, kết quả bầu cử, tỷ số thể thao trực tiếp).\n Với các truy vấn này, tài liệu được xuất bản gần nhất sẽ được ưu tiên điểm xếp hạng cao hơn tài liệu cũ dù tài liệu cũ có nhiều backlink hơn.",
+    "image_path": "src/Slide_259.png"
+  },
+  {
+    "id": "seg_fe_260",
+    "slide": 260,
+    "is_info": false,
+    "topic": "Web Search & SEO - Ranking Factors: User Experience (Page Experience).",
+    "question": "Page load speed, mobile responsiveness and overall usability belong to which ranking factor?",
+    "vn_question": "",
+    "options": [
+      "User experience",
+      "Relevance to query",
+      "Personalization",
+      "Quality and authority"
+    ],
+    "vn_options": [],
+    "correct": 0,
+    "answer": 0,
+    "correct_letter": "A",
+    "correct_letters": [
+      "A"
+    ],
+    "correct_choices": [
+      0
+    ],
+    "is_multi": false,
+    "required_choices": 1,
+    "explanation": "Nhóm yếu tố trải nghiệm trang (Page Experience / Core Web Vitals) đánh giá mức độ mượt mà khi người dùng tương tác: tốc độ tải trang (LCP), độ ổn định thị giác khi cuộn (CLS), độ trễ phản hồi tương tác (FID/INP) và giao diện co giãn linh hoạt trên smartphone (Mobile-friendliness).",
+    "image_path": "src/Slide_260.png"
+  },
+  {
+    "id": "seg_fe_261",
+    "slide": 261,
+    "is_info": false,
+    "topic": "Web Search & SEO - Ranking Factors: User Experience (Page Experience).",
+    "question": "Page load speed, mobile responsiveness and overall usability belong to which ranking factor?",
+    "vn_question": "",
+    "options": [
+      "User experience",
+      "Relevance to query",
+      "Personalization",
+      "Quality and authority"
+    ],
+    "vn_options": [],
+    "correct": 0,
+    "answer": 0,
+    "correct_letter": "A",
+    "correct_letters": [
+      "A"
+    ],
+    "correct_choices": [
+      0
+    ],
+    "is_multi": false,
+    "required_choices": 1,
+    "explanation": "Nhóm yếu tố trải nghiệm trang (Page Experience / Core Web Vitals) đánh giá mức độ mượt mà khi người dùng tương tác: tốc độ tải trang (LCP), độ ổn định thị giác khi cuộn (CLS), độ trễ phản hồi tương tác (FID/INP) và giao diện co giãn linh hoạt trên smartphone (Mobile-friendliness).",
+    "image_path": "src/Slide_261.png"
+  },
+  {
+    "id": "seg_fe_262",
+    "slide": 262,
+    "is_info": false,
+    "topic": "Search Engines & Information Retrieval",
+    "question": "Which ranking factor takes the user's preferences, location and search history into account?",
+    "vn_question": "",
+    "options": [
+      "Relevance to query",
+      "Quality and authority",
+      "Freshness",
+      "Personalization"
+    ],
+    "vn_options": [],
+    "correct": 3,
+    "answer": 3,
+    "correct_letter": "D",
+    "correct_letters": [
+      "D"
+    ],
+    "correct_choices": [
+      3
+    ],
+    "is_multi": false,
+    "required_choices": 1,
+    "explanation": "Đáp án chuẩn là D. Dựa trên giáo trình Search Engines: Information Retrieval in Practice (Bruce Croft).",
+    "image_path": "src/Slide_262.png"
+  },
+  {
+    "id": "seg_fe_263",
+    "slide": 263,
+    "is_info": false,
+    "topic": "Web Search & SEO - On-Page SEO Fundamentals.",
+    "question": "What does on-page SEO optimize?",
+    "vn_question": "",
+    "options": [
+      "Links from other websites",
+      "Elements within the web page itself that the website owner controls",
+      "The search engine's ranking code",
+      "Social media advertising budgets"
+    ],
+    "vn_options": [],
+    "correct": 1,
+    "answer": 1,
+    "correct_letter": "B",
+    "correct_letters": [
+      "B"
+    ],
+    "correct_choices": [
+      1
+    ],
+    "is_multi": false,
+    "required_choices": 1,
+    "explanation": "On-page SEO bao gồm việc tối ưu nội dung bài viết, cấu trúc các thẻ HTML (title, meta description, heading H1-H6, alt ảnh), đường dẫn tĩnh (URL structure) và liên kết nội bộ (internal linking).",
+    "image_path": "src/Slide_263.png"
+  },
+  {
+    "id": "seg_fe_264",
+    "slide": 264,
+    "is_info": false,
+    "topic": "Web Search & SEO - On-Page SEO Fundamentals.",
+    "question": "What does on-page SEO optimize?",
+    "vn_question": "",
+    "options": [
+      "Links from other websites",
+      "Elements within the web page itself that the website owner controls",
+      "The search engine's ranking code",
+      "Social media advertising budgets"
+    ],
+    "vn_options": [],
+    "correct": 1,
+    "answer": 1,
+    "correct_letter": "B",
+    "correct_letters": [
+      "B"
+    ],
+    "correct_choices": [
+      1
+    ],
+    "is_multi": false,
+    "required_choices": 1,
+    "explanation": "On-page SEO bao gồm việc tối ưu nội dung bài viết, cấu trúc các thẻ HTML (title, meta description, heading H1-H6, alt ảnh), đường dẫn tĩnh (URL structure) và liên kết nội bộ (internal linking).",
+    "image_path": "src/Slide_264.png"
+  },
+  {
+    "id": "seg_fe_265",
+    "slide": 265,
+    "is_info": false,
+    "topic": "Web Search & SEO - Meta Tags & Search Snippets.",
+    "question": "Which elements appear as snippets in search results and should contain the target keyword?",
+    "vn_question": "",
+    "options": [
+      "Image alt attributes only",
+      "Footer links",
+      "HTML comments",
+      "The meta title and meta description"
+    ],
+    "vn_options": [],
+    "correct": 3,
+    "answer": 3,
+    "correct_letter": "D",
+    "correct_letters": [
+      "D"
+    ],
+    "correct_choices": [
+      3
+    ],
+    "is_multi": false,
+    "required_choices": 1,
+    "explanation": "Trên SERP của Google, một kết quả tìm kiếm cơ bản gồm:\n Dòng tiêu đề màu xanh: lấy từ <title>.\n Đoạn văn bản mô tả 2 dòng bên dưới: lấy từ <meta name=\"description\">.\n Đặt từ khóa khéo léo vào hai thẻ này giúp tăng độ liên quan ngữ nghĩa và thúc đẩy tỷ lệ click (CTR).",
+    "image_path": "src/Slide_265.png"
+  },
+  {
+    "id": "seg_fe_266",
+    "slide": 266,
+    "is_info": false,
+    "topic": "Web Search & SEO - Keyword Research.",
+    "question": "In the healthy-breakfast blog example, identifying phrases like \"quick healthy breakfast recipes\" belongs to which step?",
+    "vn_question": "",
+    "options": [
+      "Writing the meta description",
+      "Building backlinks",
+      "Keyword research",
+      "Adding schema markup"
+    ],
+    "vn_options": [],
+    "correct": 2,
+    "answer": 2,
+    "correct_letter": "C",
+    "correct_letters": [
+      "C"
+    ],
+    "correct_choices": [
+      2
+    ],
+    "is_multi": false,
+    "required_choices": 1,
+    "explanation": "Nghiên cứu từ khóa là bước đầu tiên của chiến dịch SEO nhằm phát hiện người dùng thực tế đang sử dụng những cụm từ nào khi tìm kiếm thông tin, từ đó định hướng sản xuất nội dung đáp ứng chính xác nhu cầu đó.",
+    "image_path": "src/Slide_266.png"
+  },
+  {
+    "id": "seg_fe_267",
+    "slide": 267,
+    "is_info": false,
+    "topic": "Web Search & SEO - Off-Page SEO & PageRank Principles.",
+    "question": "Why do search engines value backlinks from reputable websites?",
+    "vn_question": "",
+    "options": [
+      "They treat backlinks as endorsements showing the content is valuable and trustworthy",
+      "They make the page load faster",
+      "They reduce the size of the index",
+      "They replace the need for content"
+    ],
+    "vn_options": [],
+    "correct": 0,
+    "answer": 0,
+    "correct_letter": "A",
+    "correct_letters": [
+      "A"
+    ],
+    "correct_choices": [
+      0
+    ],
+    "is_multi": false,
+    "required_choices": 1,
+    "explanation": "Nền tảng thuật toán PageRank coi web là đồ thị liên kết. Khi một trang web có thẩm quyền cao (như báo chí, đại học .edu, cổng chính phủ .gov) trỏ link tới bạn, họ đang chuyển giao \"dòng chảy sức mạnh\" (link juice / authority), xác thực trang của bạn có độ tin cậy cao.",
+    "image_path": "src/Slide_267.png"
+  },
+  {
+    "id": "seg_fe_268",
+    "slide": 268,
+    "is_info": false,
+    "topic": "Web Search & SEO - Web Analytics & Traffic Channels.",
+    "question": "What does \"referral traffic\" from backlinks mean?",
+    "vn_question": "",
+    "options": [
+      "Traffic from paid ads",
+      "Traffic from search engine crawlers",
+      "Visitors who arrive by clicking a link on another website",
+      "Traffic from users typing the URL directly"
+    ],
+    "vn_options": [],
+    "correct": 2,
+    "answer": 2,
+    "correct_letter": "C",
+    "correct_letters": [
+      "C"
+    ],
+    "correct_choices": [
+      2
+    ],
+    "is_multi": false,
+    "required_choices": 1,
+    "explanation": "Các kênh lưu lượng truy cập phổ biến:\nDirect: Gõ thẳng URL vào thanh địa chỉ.\nOrganic Search: Bấm từ kết quả tìm kiếm tự nhiên.\nReferral: Bấm từ liên kết đặt trên blog/website bên thứ ba.\nPaid: Bấm từ các mẩu quảng cáo trả phí.",
+    "image_path": "src/Slide_268.png"
+  },
+  {
+    "id": "seg_fe_269",
+    "slide": 269,
+    "is_info": false,
+    "topic": "Web Search & SEO - Crawling & Discovery.",
+    "question": "How do backlinks help with indexing and crawling?",
+    "vn_question": "",
+    "options": [
+      "They make crawlers ignore the site",
+      "They help crawlers discover new pages and index them faster",
+      "They compress the pages",
+      "They block duplicate content"
+    ],
+    "vn_options": [],
+    "correct": 1,
+    "answer": 1,
+    "correct_letter": "B",
+    "correct_letters": [
+      "B"
+    ],
+    "correct_choices": [
+      1
+    ],
+    "is_multi": false,
+    "required_choices": 1,
+    "explanation": "Bot tìm kiếm (Googlebot) liên tục duyệt qua các siêu liên kết để mở rộng biên giới thu thập. Khi một trang mới được liên kết từ một website có sẵn trong cơ sở dữ liệu của Google, bot sẽ lập tức theo vết liên kết đó để nạp trang mới vào kho dữ liệu.",
+    "image_path": "src/Slide_269.png"
+  },
+  {
+    "id": "seg_fe_270",
+    "slide": 270,
+    "is_info": false,
+    "topic": "Web Search & SEO - Structured Data & Schema.org.",
+    "question": "What is schema markup?",
+    "vn_question": "",
+    "options": [
+      "Microdata added to HTML that gives search engines extra context and can produce rich snippets",
+      "A CSS framework for mobile layouts",
+      "A type of backlink",
+      "A Google ranking update"
+    ],
+    "vn_options": [],
+    "correct": 0,
+    "answer": 0,
+    "correct_letter": "A",
+    "correct_letters": [
+      "A"
+    ],
+    "correct_choices": [
+      0
+    ],
+    "is_multi": false,
+    "required_choices": 1,
+    "explanation": "Schema markup định danh rõ các đối tượng trong thế giới thực (ví dụ: đâu là giá tiền, xếp hạng đánh giá sao, thời gian nấu ăn, tên tác giả). Nhờ đó, Google có thể hiển thị kết quả trực quan dạng Rich Snippets trên SERP.",
+    "image_path": "src/Slide_270.png"
+  },
+  {
+    "id": "seg_fe_271",
+    "slide": 271,
+    "is_info": false,
+    "topic": "Web Search & SEO - Structured Data Formats.",
+    "question": "What does JSON-LD stand for?",
+    "vn_question": "",
+    "options": [
+      "Java Standard Object Notation for Link Data",
+      "JavaScript Online Network for Local Discovery",
+      "JSON Language Definition",
+      "JavaScript Object Notation for Linked Data"
+    ],
+    "vn_options": [],
+    "correct": 3,
+    "answer": 3,
+    "correct_letter": "D",
+    "correct_letters": [
+      "D"
+    ],
+    "correct_choices": [
+      3
+    ],
+    "is_multi": false,
+    "required_choices": 1,
+    "explanation": "JSON-LD là phương pháp nhúng Schema markup bằng cách đặt một đoạn mã <script type=\"application/ld+json\"> vào phần đầu (<head>) của trang web. Đây là định dạng được Google chính thức khuyến nghị sử dụng vì dễ quản lý và không làm xáo trộn mã HTML hiển thị.",
+    "image_path": "src/Slide_271.png"
+  },
+  {
+    "id": "seg_fe_272",
+    "slide": 272,
+    "is_info": false,
+    "topic": "Web Search & SEO - Structured Data Formats.",
+    "question": "What does JSON-LD stand for?",
+    "vn_question": "",
+    "options": [
+      "Java Standard Object Notation for Link Data",
+      "JavaScript Online Network for Local Discovery",
+      "JSON Language Definition",
+      "JavaScript Object Notation for Linked Data"
+    ],
+    "vn_options": [],
+    "correct": 3,
+    "answer": 3,
+    "correct_letter": "D",
+    "correct_letters": [
+      "D"
+    ],
+    "correct_choices": [
+      3
+    ],
+    "is_multi": false,
+    "required_choices": 1,
+    "explanation": "JSON-LD là phương pháp nhúng Schema markup bằng cách đặt một đoạn mã <script type=\"application/ld+json\"> vào phần đầu (<head>) của trang web. Đây là định dạng được Google chính thức khuyến nghị sử dụng vì dễ quản lý và không làm xáo trộn mã HTML hiển thị.",
+    "image_path": "src/Slide_272.png"
+  },
+  {
+    "id": "seg_fe_273",
+    "slide": 273,
+    "is_info": false,
+    "topic": "Web Search & SEO - SEO Performance Metrics.",
+    "question": "What does the organic traffic metric measure?",
+    "vn_question": "",
+    "options": [
+      "Visitors who arrive through unpaid search results",
+      "Visitors from paid ads",
+      "The number of backlinks",
+      "The number of indexed keywords"
+    ],
+    "vn_options": [],
+    "correct": 0,
+    "answer": 0,
+    "correct_letter": "A",
+    "correct_letters": [
+      "A"
+    ],
+    "correct_choices": [
+      0
+    ],
+    "is_multi": false,
+    "required_choices": 1,
+    "explanation": "Organic traffic là thước đo thành công cốt lõi của chiến dịch SEO, thể hiện trang web thu hút người dùng hoàn toàn nhờ chất lượng nội dung và thứ hạng tự nhiên trên SERP mà không tốn chi phí chạy quảng cáo (PPC/Ads).",
+    "image_path": "src/Slide_273.png"
+  },
+  {
+    "id": "seg_fe_274",
+    "slide": 274,
+    "is_info": false,
+    "topic": "Web Search & SEO - User Engagement Metrics.",
+    "question": "What does a high click-through rate (CTR) usually indicate?",
+    "vn_question": "",
+    "options": [
+      "The page loads slowly",
+      "The site has many broken links",
+      "The title and meta description are compelling and relevant",
+      "The site has no backlinks"
+    ],
+    "vn_options": [],
+    "correct": 2,
+    "answer": 2,
+    "correct_letter": "C",
+    "correct_letters": [
+      "C"
+    ],
+    "correct_choices": [
+      2
+    ],
+    "is_multi": false,
+    "required_choices": 1,
+    "explanation": "CTR = (Số lượt nhấp / Số lượt hiển thị) × 100\\%. CTR cao chứng minh đoạn trích kết quả trả về nổi bật, đúng ý định tìm kiếm hơn các đối thủ cạnh tranh hiển thị lân cận trên cùng một trang SERP.",
+    "image_path": "src/Slide_274.png"
+  },
+  {
+    "id": "seg_fe_275",
+    "slide": 275,
+    "is_info": false,
+    "topic": "Web Search & SEO - Google Algorithm Updates.",
+    "question": "Which of the following are third-party SEO tools?",
+    "vn_question": "",
+    "options": [
+      "Panda, Penguin, Hummingbird",
+      "BigTable, MapReduce, GFS",
+      "Galago, Indri, Luce",
+      "Ahrefs, SEMrush, Moz"
+    ],
+    "vn_options": [],
+    "correct": 3,
+    "answer": 3,
+    "correct_letter": "D",
+    "correct_letters": [
+      "D"
+    ],
+    "correct_choices": [
+      3
+    ],
+    "is_multi": false,
+    "required_choices": 1,
+    "explanation": "Panda (2011): Xử phạt nội dung chất lượng kém, nội dung mỏng (thin content), trang sao chép/spam từ khóa.\nPenguin (2012): Trừng phạt các website sử dụng liên kết rác, mua bán backlink thao túng PageRank (link schemes).\nHummingbird (2013): Tái thiết kế bộ máy tìm kiếm để hiểu ngữ nghĩa câu truy vấn tự nhiên (Semantic Search).",
+    "image_path": "src/Slide_275.png"
+  },
+  {
+    "id": "seg_fe_276",
+    "slide": 276,
+    "is_info": false,
+    "topic": "Web Search & SEO - Google Algorithm Updates.",
+    "question": "Which of the following are third-party SEO tools?",
+    "vn_question": "",
+    "options": [
+      "Panda, Penguin, Hummingbird",
+      "BigTable, MapReduce, GFS",
+      "Galago, Indri, Luce",
+      "Ahrefs, SEMrush, Moz"
+    ],
+    "vn_options": [],
+    "correct": 3,
+    "answer": 3,
+    "correct_letter": "D",
+    "correct_letters": [
+      "D"
+    ],
+    "correct_choices": [
+      3
+    ],
+    "is_multi": false,
+    "required_choices": 1,
+    "explanation": "Panda (2011): Xử phạt nội dung chất lượng kém, nội dung mỏng (thin content), trang sao chép/spam từ khóa.\nPenguin (2012): Trừng phạt các website sử dụng liên kết rác, mua bán backlink thao túng PageRank (link schemes).\nHummingbird (2013): Tái thiết kế bộ máy tìm kiếm để hiểu ngữ nghĩa câu truy vấn tự nhiên (Semantic Search).",
+    "image_path": "src/Slide_276.png"
+  },
+  {
+    "id": "seg_fe_277",
+    "slide": 277,
+    "is_info": true,
+    "topic": "Slide phân mục",
+    "question": "Evaluation,.Classification, Clustering,and Social Search",
+    "vn_question": "",
+    "options": [],
+    "vn_options": [],
+    "correct": 0,
+    "answer": 0,
+    "correct_letter": "A",
+    "correct_letters": [
+      "A"
+    ],
+    "correct_choices": [
+      0
+    ],
+    "is_multi": false,
+    "required_choices": 1,
+    "explanation": "Slide phân mục hoặc tiêu đề chương.",
+    "image_path": "src/Slide_277.png"
+  },
+  {
+    "id": "seg_fe_278",
+    "slide": 278,
+    "is_info": false,
+    "topic": "Chương 8: Evaluation - Effectiveness vs. Efficiency.",
+    "question": "In search engine evaluation, what does effectiveness measure?",
+    "vn_question": "",
+    "options": [
+      "The ability of the search engine to find the right information",
+      "How fast queries are processed",
+      "How much disk space the index uses",
+      "How many servers are used"
+    ],
+    "vn_options": [],
+    "correct": 0,
+    "answer": 0,
+    "correct_letter": "A",
+    "correct_letters": [
+      "A"
+    ],
+    "correct_choices": [
+      0
+    ],
+    "is_multi": false,
+    "required_choices": 1,
+    "explanation": "Effectiveness (Tính hiệu quả): Đánh giá chất lượng của danh sách kết quả trả về (đo bằng Precision, Recall, F-measure, MAP, NDCG...).\nEfficiency (Hiệu năng): Đánh giá khả năng vận hành kỹ thuật (thời gian phản hồi truy vấn, tốc độ tính toán, dung lượng bộ nhớ).",
+    "image_path": "src/Slide_278.png"
+  },
+  {
+    "id": "seg_fe_279",
+    "slide": 279,
+    "is_info": false,
+    "topic": "Chương 8: Evaluation - System Trade-offs: Effectiveness, Efficiency, and Cost.",
+    "question": "Besides effectiveness and efficiency, which other factor is important in search engine design?",
+    "vn_question": "",
+    "options": [
+      "The color scheme of the result page",
+      "The number of stopwords",
+      "Cost: processors, memory, disk space and networking",
+      "The length of the URL"
+    ],
+    "vn_options": [],
+    "correct": 2,
+    "answer": 2,
+    "correct_letter": "C",
+    "correct_letters": [
+      "C"
+    ],
+    "correct_choices": [
+      2
+    ],
+    "is_multi": false,
+    "required_choices": 1,
+    "explanation": "Thiết kế một hệ thống tìm kiếm thực tế luôn là sự thỏa hiệp (trade-off) trong tam giác:\n1. Effectiveness: Kết quả phải chính xác và liên quan nhất.\n2. Efficiency: Phải phản hồi trong vài chục mili-giây.\n3. Cost: Chi phí đầu tư phần cứng, máy chủ và băng thông viễn thông phải ở mức kinh tế chấp nhận được.",
+    "image_path": "src/Slide_279.png"
+  },
+  {
+    "id": "seg_fe_280",
+    "slide": 280,
+    "is_info": false,
+    "topic": "Search Engines & Information Retrieval",
+    "question": "Which evaluation collection consists of web pages crawled from .gov websites in early 2004?",
+    "vn_question": "",
+    "options": [
+      "CACM",
+      "AP",
+      "TREC disks 1-3",
+      "GOV2"
+    ],
+    "vn_options": [],
+    "correct": 3,
+    "answer": 3,
+    "correct_letter": "D",
+    "correct_letters": [
+      "D"
+    ],
+    "correct_choices": [
+      3
+    ],
+    "is_multi": false,
+    "required_choices": 1,
+    "explanation": "Đáp án chuẩn là D. Dựa trên giáo trình Search Engines: Information Retrieval in Practice (Bruce Croft).",
+    "image_path": "src/Slide_280.png"
+  },
+  {
+    "id": "seg_fe_281",
+    "slide": 281,
+    "is_info": false,
+    "topic": "Search Engines & Information Retrieval",
+    "question": "Which evaluation collection consists of web pages crawled from .gov websites in early 2004?",
+    "vn_question": "",
+    "options": [
+      "CACM",
+      "AP",
+      "TREC disks 1-3",
+      "GOV2"
+    ],
+    "vn_options": [],
+    "correct": 3,
+    "answer": 3,
+    "correct_letter": "D",
+    "correct_letters": [
+      "D"
+    ],
+    "correct_choices": [
+      3
+    ],
+    "is_multi": false,
+    "required_choices": 1,
+    "explanation": "Đáp án chuẩn là D. Dựa trên giáo trình Search Engines: Information Retrieval in Practice (Bruce Croft).",
+    "image_path": "src/Slide_281.png"
+  },
+  {
+    "id": "seg_fe_282",
+    "slide": 282,
+    "is_info": false,
+    "topic": "Chương 8: Evaluation - Historical Test Collections: CACM.",
+    "question": "What does the CACM collection contain?",
+    "vn_question": "",
+    "options": [
+      "Associated Press newswire stories from 1988-1990",
+      "Web pages from .gov domains",
+      "Twitter status messages",
+      "Titles and abstracts from Communications of the ACM, 1958-1979"
+    ],
+    "vn_options": [],
+    "correct": 3,
+    "answer": 3,
+    "correct_letter": "D",
+    "correct_letters": [
+      "D"
+    ],
+    "correct_choices": [
+      3
+    ],
+    "is_multi": false,
+    "required_choices": 1,
+    "explanation": "Tập dữ liệu CACM gồm 3.204 bài báo khoa học kèm 64 truy vấn thử nghiệm. Đây là một trong những bộ dữ liệu chuẩn đầu tiên của ngành khoa học máy tính được cộng đồng nghiên cứu dùng để thử nghiệm các thuật toán lập chỉ mục và xếp hạng sơ khai.",
+    "image_path": "src/Slide_282.png"
+  },
+  {
+    "id": "seg_fe_283",
+    "slide": 283,
+    "is_info": false,
+    "topic": "Chương 8: Evaluation - Query Logs & User Behavior Evaluation.",
+    "question": "What is a drawback of using query logs for evaluation?",
+    "vn_question": "",
+    "options": [
+      "They are too small to be useful",
+      "They are less precise than explicit relevance judgments, and user privacy must be protected",
+      "They contain no timestamps",
+      "They cannot record clicks"
+    ],
+    "vn_options": [],
+    "correct": 1,
+    "answer": 1,
+    "correct_letter": "B",
+    "correct_letters": [
+      "B"
+    ],
+    "correct_choices": [
+      1
+    ],
+    "is_multi": false,
+    "required_choices": 1,
+    "explanation": "Dữ liệu nhấp chuột (click logs) chỉ là phản hồi ngầm định (implicit feedback), chứa nhiều độ nhiễu và bị chi phối nặng nề bởi xu hướng người dùng bấm vào các kết quả ở trên cao (position bias).\n Hơn nữa, nhật ký tìm kiếm chứa nhiều thông tin cá nhân nhạy cảm, nếu không được ẩn danh hóa cẩn thận sẽ dẫn đến các sự cố rò rỉ quyền riêng tư nghiêm trọng.",
+    "image_path": "src/Slide_283.png"
+  },
+  {
+    "id": "seg_fe_284",
+    "slide": 284,
+    "is_info": false,
+    "topic": "Search Engines & Information Retrieval",
+    "question": "With $A$ = the set of relevant documents and $B$ = the set of retrieved documents, what is recall?",
+    "vn_question": "",
+    "options": [
+      "$|A \\cap B| / |A|$",
+      "$|A \\cap B| / |B|$",
+      "$|B| / |A|$",
+      "$|A \\cup B| / |B|$"
+    ],
+    "vn_options": [],
+    "correct": 0,
+    "answer": 0,
+    "correct_letter": "A",
+    "correct_letters": [
+      "A"
+    ],
+    "correct_choices": [
+      0
+    ],
+    "is_multi": false,
+    "required_choices": 1,
+    "explanation": "Đáp án chuẩn là A. Dựa trên giáo trình Search Engines: Information Retrieval in Practice (Bruce Croft).",
+    "image_path": "src/Slide_284.png"
+  },
+  {
+    "id": "seg_fe_285",
+    "slide": 285,
+    "is_info": false,
+    "topic": "Chương 8: Evaluation - Fallout Metric.",
+    "question": "What is fallout?",
+    "vn_question": "",
+    "options": [
+      "The proportion of relevant documents retrieved",
+      "The proportion of non-relevant documents that are retrieved",
+      "The number of queries with no results",
+      "The time needed to build the index"
+    ],
+    "vn_options": [],
+    "correct": 1,
+    "answer": 1,
+    "correct_letter": "B",
+    "correct_letters": [
+      "B"
+    ],
+    "correct_choices": [
+      1
+    ],
+    "is_multi": false,
+    "required_choices": 1,
+    "explanation": "Công thức tính Fallout:\nFallout = (|Retrieved ∩ Non-relevant| / |Non-relevant|) = (FP / FP + TN)\n Một hệ thống tìm kiếm lý tưởng mong muốn Recall tiến tới 1.0 (thu hồi hết tài liệu đúng) và Fallout tiến dần về 0.0 (không trả về tài liệu rác).",
+    "image_path": "src/Slide_285.png"
+  },
+  {
+    "id": "seg_fe_286",
+    "slide": 286,
+    "is_info": false,
+    "topic": "Chương 8: Evaluation - Fallout Metric.",
+    "question": "What is fallout?",
+    "vn_question": "",
+    "options": [
+      "The proportion of relevant documents retrieved",
+      "The proportion of non-relevant documents that are retrieved",
+      "The number of queries with no results",
+      "The time needed to build the index"
+    ],
+    "vn_options": [],
+    "correct": 1,
+    "answer": 1,
+    "correct_letter": "B",
+    "correct_letters": [
+      "B"
+    ],
+    "correct_choices": [
+      1
+    ],
+    "is_multi": false,
+    "required_choices": 1,
+    "explanation": "Công thức tính Fallout:\nFallout = (|Retrieved ∩ Non-relevant| / |Non-relevant|) = (FP / FP + TN)\n Một hệ thống tìm kiếm lý tưởng mong muốn Recall tiến tới 1.0 (thu hồi hết tài liệu đúng) và Fallout tiến dần về 0.0 (không trả về tài liệu rác).",
+    "image_path": "src/Slide_286.png"
+  },
+  {
+    "id": "seg_fe_287",
+    "slide": 287,
+    "is_info": false,
+    "topic": "Chương 8: Evaluation - Precision and Recall Calculation.",
+    "question": "How is mean average precision (MAP) computed?",
+    "vn_question": "",
+    "options": [
+      "The maximum precision over all queries",
+      "Precision at rank 10 for a single query",
+      "The harmonic mean of precision and recall",
+      "The mean of the average precision values over all n queries"
+    ],
+    "vn_options": [],
+    "correct": 3,
+    "answer": 3,
+    "correct_letter": "D",
+    "correct_letters": [
+      "D"
+    ],
+    "correct_choices": [
+      3
+    ],
+    "is_multi": false,
+    "required_choices": 1,
+    "explanation": "Tổng số tài liệu liên quan thực tế: |A| = 20.\n Tổng số tài liệu hệ thống trả về: |B| = 10.\n Số tài liệu liên quan trả về: |A ∩ B| = 8.\n Áp dụng định nghĩa:\nPrecision = (8 / 10) = 0.8 \\quad (80\\%)\nRecall = (8 / 20) = 0.4 \\quad (40\\%)",
+    "image_path": "src/Slide_287.png"
+  },
+  {
+    "id": "seg_fe_288",
+    "slide": 288,
+    "is_info": false,
+    "topic": "Chương 8: Evaluation - Discounted Cumulative Gain (DCG & NDCG).",
+    "question": "What does NDCG do?",
+    "vn_question": "",
+    "options": [
+      "It normalizes DCG by dividing by the ideal DCG for that query",
+      "It counts only binary relevance",
+      "It ignores document rank",
+      "It measures query latency"
+    ],
+    "vn_options": [],
+    "correct": 0,
+    "answer": 0,
+    "correct_letter": "A",
+    "correct_letters": [
+      "A"
+    ],
+    "correct_choices": [
+      0
+    ],
+    "is_multi": false,
+    "required_choices": 1,
+    "explanation": "DCG đánh giá mức độ liên quan đa cấp (ví dụ từ 0: hoàn toàn không liên quan, đến 3: cực kỳ liên quan) có chiết khấu theo thứ hạng vị trí (càng ở dưới càng ít điểm).\n Do các truy vấn có số lượng tài liệu liên quan khác nhau khiến điểm DCG không thể so sánh chéo, NDCG chuẩn hóa về dải [0, 1]:\nNDCG@k = (DCG@k / IDCG@k)\ntrong đó IDCG@k là điểm DCG đạt được khi sắp xếp danh sách theo thứ tự giảm dần lý tưởng tuyệt đối.",
+    "image_path": "src/Slide_288.png"
+  },
+  {
+    "id": "seg_fe_289",
+    "slide": 289,
+    "is_info": false,
+    "topic": "Chương 8: Evaluation - Rank Correlation: Kendall's Tau.",
+    "question": "Which coefficient compares two rankings expressed as preferences, using P agreeing and Q disagreeing preferences?",
+    "vn_question": "",
+    "options": [
+      "Dice's coefficient",
+      "Cosine similarity",
+      "Kendall tau ($\\tau$)",
+      "F measure"
+    ],
+    "vn_options": [],
+    "correct": 2,
+    "answer": 2,
+    "correct_letter": "C",
+    "correct_letters": [
+      "C"
+    ],
+    "correct_choices": [
+      2
+    ],
+    "is_multi": false,
+    "required_choices": 1,
+    "explanation": "Kendall's Tau (τ) đo lường độ tương đồng giữa hai cách sắp xếp thứ tự:\nτ = (P - Q / P + Q) = (P - Q / \\frac{1){2} n(n-1)}\n τ = 1: Hai bảng xếp hạng trùng khớp hoàn hảo.\n τ = -1: Một bảng xếp hạng bị đảo ngược hoàn toàn so với bảng kia.",
+    "image_path": "src/Slide_289.png"
+  },
+  {
+    "id": "seg_fe_290",
+    "slide": 290,
+    "is_info": false,
+    "topic": "Chương 8: Evaluation - Rank Correlation: Kendall's Tau.",
+    "question": "Which coefficient compares two rankings expressed as preferences, using P agreeing and Q disagreeing preferences?",
+    "vn_question": "",
+    "options": [
+      "Dice's coefficient",
+      "Cosine similarity",
+      "Kendall tau ($\\tau$)",
+      "F measure"
+    ],
+    "vn_options": [],
+    "correct": 2,
+    "answer": 2,
+    "correct_letter": "C",
+    "correct_letters": [
+      "C"
+    ],
+    "correct_choices": [
+      2
+    ],
+    "is_multi": false,
+    "required_choices": 1,
+    "explanation": "Kendall's Tau (τ) đo lường độ tương đồng giữa hai cách sắp xếp thứ tự:\nτ = (P - Q / P + Q) = (P - Q / \\frac{1){2} n(n-1)}\n τ = 1: Hai bảng xếp hạng trùng khớp hoàn hảo.\n τ = -1: Một bảng xếp hạng bị đảo ngược hoàn toàn so với bảng kia.",
+    "image_path": "src/Slide_290.png"
+  },
+  {
+    "id": "seg_fe_291",
+    "slide": 291,
+    "is_info": false,
+    "topic": "Chương 8: Evaluation - System Efficiency Metrics: Throughput.",
+    "question": "What is query throughput?",
+    "vn_question": "",
+    "options": [
+      "The number of queries processed per second",
+      "The time a user waits for results",
+      "The disk space of the index",
+      "The CPU time spent indexing"
+    ],
+    "vn_options": [],
+    "correct": 0,
+    "answer": 0,
+    "correct_letter": "A",
+    "correct_letters": [
+      "A"
+    ],
+    "correct_choices": [
+      0
+    ],
+    "is_multi": false,
+    "required_choices": 1,
+    "explanation": "Đây là chỉ số hiệu năng (efficiency) then chốt để đo lường năng lực chịu tải và độ co giãn (scalability) của hạ tầng máy chủ tìm kiếm khi phục vụ hàng triệu người dùng đồng thời.",
+    "image_path": "src/Slide_291.png"
+  },
+  {
+    "id": "seg_fe_292",
+    "slide": 292,
+    "is_info": false,
+    "topic": "Chương 8: Evaluation - Significance Testing: The Null Hypothesis.",
+    "question": "In significance testing, what is the null hypothesis?",
+    "vn_question": "",
+    "options": [
+      "Algorithm B is better than algorithm A",
+      "There is no difference in effectiveness between the two retrieval algorithms",
+      "Algorithm A is always better",
+      "Both algorithms return no results"
+    ],
+    "vn_options": [],
+    "correct": 1,
+    "answer": 1,
+    "correct_letter": "B",
+    "correct_letters": [
+      "B"
+    ],
+    "correct_choices": [
+      1
+    ],
+    "is_multi": false,
+    "required_choices": 1,
+    "explanation": "Trong phương pháp luận khoa học, H_0 luôn giả định sự vô hiệu: sự chênh lệch điểm số (ví dụ MAP của B cao hơn A một chút) chỉ thuần túy là do ngẫu nhiên từ tập mẫu truy vấn chứ không phải do B thực sự vượt trội.",
+    "image_path": "src/Slide_292.png"
+  },
+  {
+    "id": "seg_fe_293",
+    "slide": 293,
+    "is_info": false,
+    "topic": "Chương 8: Evaluation - Significance Testing: The Null Hypothesis.",
+    "question": "In significance testing, what is the null hypothesis?",
+    "vn_question": "",
+    "options": [
+      "Algorithm B is better than algorithm A",
+      "There is no difference in effectiveness between the two retrieval algorithms",
+      "Algorithm A is always better",
+      "Both algorithms return no results"
+    ],
+    "vn_options": [],
+    "correct": 1,
+    "answer": 1,
+    "correct_letter": "B",
+    "correct_letters": [
+      "B"
+    ],
+    "correct_choices": [
+      1
+    ],
+    "is_multi": false,
+    "required_choices": 1,
+    "explanation": "Trong phương pháp luận khoa học, H_0 luôn giả định sự vô hiệu: sự chênh lệch điểm số (ví dụ MAP của B cao hơn A một chút) chỉ thuần túy là do ngẫu nhiên từ tập mẫu truy vấn chứ không phải do B thực sự vượt trội.",
+    "image_path": "src/Slide_293.png"
+  },
+  {
+    "id": "seg_fe_294",
+    "slide": 294,
+    "is_info": false,
+    "topic": "Chương 8: Evaluation - Statistical Significance: P-value & Alpha.",
+    "question": "When is the null hypothesis rejected in favor of \"B is more effective than A\"?",
+    "vn_question": "",
+    "options": [
+      "When the $P$-value is greater than 0.5",
+      "When the P-value is less than or equal to the significance level $\\alpha$",
+      "When both algorithms have the same MAP",
+      "When fewer than 10 queries are used"
+    ],
+    "vn_options": [],
+    "correct": 1,
+    "answer": 1,
+    "correct_letter": "B",
+    "correct_letters": [
+      "B"
+    ],
+    "correct_choices": [
+      1
+    ],
+    "is_multi": false,
+    "required_choices": 1,
+    "explanation": "Mức ý nghĩa α thường được quy ước là 0.05 (5%) hoặc 0.01 (1%).\n Khi P-value ≤ α, xác suất sự khác biệt xảy ra do ngẫu nhiên là cực kỳ thấp, cho phép bác bỏ H_0 và khẳng định thuật toán B ưu việt hơn có ý nghĩa thống kê (statistically significant difference).",
+    "image_path": "src/Slide_294.png"
+  },
+  {
+    "id": "seg_fe_295",
+    "slide": 295,
+    "is_info": false,
+    "topic": "Chương 8: Evaluation - Online Testing (A/B Testing) Trade-offs.",
+    "question": "Which is a disadvantage of online testing with live traffic?",
+    "vn_question": "",
+    "options": [
+      "The collected data is usually very noisy, and changing live traffic can be harmful",
+      "Real users never interact with the system",
+      "It is more biased than offline testing",
+      "It is very expensive"
+    ],
+    "vn_options": [],
+    "correct": 0,
+    "answer": 0,
+    "correct_letter": "A",
+    "correct_letters": [
+      "A"
+    ],
+    "correct_choices": [
+      0
+    ],
+    "is_multi": false,
+    "required_choices": 1,
+    "explanation": "Người dùng thật có hành vi bấm click ngẫu nhiên, mạng lag, bot giả lập... tạo ra nhiều độ nhiễu. Đặc biệt, nếu đưa một thuật toán chưa được kiểm chứng kỹ ra môi trường live, người dùng gặp kết quả tồi tệ sẽ rời bỏ nền tảng ngay lập tức.",
+    "image_path": "src/Slide_295.png"
+  },
+  {
+    "id": "seg_fe_296",
+    "slide": 296,
+    "is_info": false,
+    "topic": "Chương 8: Evaluation - Online Testing (A/B Testing) Trade-offs.",
+    "question": "Which is a disadvantage of online testing with live traffic?",
+    "vn_question": "",
+    "options": [
+      "The collected data is usually very noisy, and changing live traffic can be harmful",
+      "Real users never interact with the system",
+      "It is more biased than offline testing",
+      "It is very expensive"
+    ],
+    "vn_options": [],
+    "correct": 0,
+    "answer": 0,
+    "correct_letter": "A",
+    "correct_letters": [
+      "A"
+    ],
+    "correct_choices": [
+      0
+    ],
+    "is_multi": false,
+    "required_choices": 1,
+    "explanation": "Người dùng thật có hành vi bấm click ngẫu nhiên, mạng lag, bot giả lập... tạo ra nhiều độ nhiễu. Đặc biệt, nếu đưa một thuật toán chưa được kiểm chứng kỹ ra môi trường live, người dùng gặp kết quả tồi tệ sẽ rời bỏ nền tảng ngay lập tức.",
+    "image_path": "src/Slide_296.png"
+  },
+  {
+    "id": "seg_fe_297",
+    "slide": 297,
+    "is_info": false,
+    "topic": "Chương 4: Processing Text (Mục 4.6 Information Extraction: Named Entity Recognition).",
+    "question": "Which classifier is an example of a non-parametric classifier?",
+    "vn_question": "",
+    "options": [
+      "Naive Bayes",
+      "Support Vector Machi",
+      "Nearest neighbor classifier",
+      "Hidden Markov Model"
+    ],
+    "vn_options": [],
+    "correct": 2,
+    "answer": 2,
+    "correct_letter": "C",
+    "correct_letters": [
+      "C"
+    ],
+    "correct_choices": [
+      2
+    ],
+    "is_multi": false,
+    "required_choices": 1,
+    "explanation": "Có 2 trường phái NER chính:\n1. Rule-based: Dùng từ điển (lexicons) và luật mẫu regex.\n2. Statistical / Probabilistic approach: Sử dụng các mô hình chuỗi thống kê như Hidden Markov Model (HMM) hoặc Conditional Random Fields (CRF) để tính xác suất chuyển trạng thái nhãn thực thể dựa trên ngữ cảnh từ xung quanh.",
+    "image_path": "src/Slide_297.png"
+  },
+  {
+    "id": "seg_fe_298",
+    "slide": 298,
+    "is_info": false,
+    "topic": "Chương 9: Classification - Soft-Margin SVM & Hinge Loss.",
+    "question": "How does an SVM handle data that is not linearly separable?",
+    "vn_question": "",
+    "options": [
+      "It refuses to train",
+      "It removes all difficult training examples",
+      "It switches to Naive Bayes",
+      "It adds a penalty for instances violating the constraints, using the hinge loss function"
+    ],
+    "vn_options": [],
+    "correct": 3,
+    "answer": 3,
+    "correct_letter": "D",
+    "correct_letters": [
+      "D"
+    ],
+    "correct_choices": [
+      3
+    ],
+    "is_multi": false,
+    "required_choices": 1,
+    "explanation": "Trong bài toán SVM biên mềm (Soft-margin SVM), ta chấp nhận một số điểm bị phân loại sai hoặc rơi vào vùng biên an toàn bằng cách đưa vào biến bù \\xi_i ≥ 0 kết hợp với hàm Hinge Loss:\n\\mathcal{L}(y, f(x)) = max(0, 1 - y · f(x))\n Tổng lỗi phạt được cân bằng với việc tối đa hóa độ rộng của lề thông qua siêu tham số điều chuẩn C.",
+    "image_path": "src/Slide_298.png"
+  },
+  {
+    "id": "seg_fe_299",
+    "slide": 299,
+    "is_info": false,
+    "topic": "Chương 9: Classification - Feature Selection: Information Gain.",
+    "question": "Which technique is an example of feature selection for classifiers?",
+    "vn_question": "",
+    "options": [
+      "Delta encoding",
+      "Checksumming",
+      "Information gain",
+      "PageRank"
+    ],
+    "vn_options": [],
+    "correct": 2,
+    "answer": 2,
+    "correct_letter": "C",
+    "correct_letters": [
+      "C"
+    ],
+    "correct_choices": [
+      2
+    ],
+    "is_multi": false,
+    "required_choices": 1,
+    "explanation": "Trong phân loại văn bản, không gian từ vựng có thể lên tới hàng trăm nghìn từ (chiều dữ liệu quá lớn gây ra hiện tượng quá khớp và chậm chạp).\n Các độ đo trích chọn đặc trưng kinh điển:\nInformation Gain (IG): Đo lường mức độ giảm độ hỗn loạn (Entropy) của nhãn lớp khi biết từ vựng đó có xuất hiện hay không.\n Chi-bình phương (χ^2), Tương hỗ thông tin (Mutual Information - MI), Tần số tài liệu (Document Frequency - DF).\n Delta encoding là kỹ thuật nén số nguyên; Checksumming là kiểm tra trùng lặp; PageRank là phân tích liên kết.",
+    "image_path": "src/Slide_299.png"
+  },
+  {
+    "id": "seg_fe_300",
+    "slide": 300,
+    "is_info": false,
+    "topic": "Chương 9: Classification / Web Search - Web Spam Taxonomy.",
+    "question": "What are the two top-level categories in the spam taxonomy?",
+    "vn_question": "",
+    "options": [
+      "Email spam and web spam",
+      "Link spam and term spam",
+      "Image spam and video spam",
+      "Paid spam and organic spam"
+    ],
+    "vn_options": [],
+    "correct": 1,
+    "answer": 1,
+    "correct_letter": "B",
+    "correct_letters": [
+      "B"
+    ],
+    "correct_choices": [
+      1
+    ],
+    "is_multi": false,
+    "required_choices": 1,
+    "explanation": "Để thao túng thứ hạng tìm kiếm, web spam được chia thành hai nhánh chính:\n1. Term spam (Content spam): Thao túng trực tiếp văn bản nhằm đánh lừa các hàm xếp hạng TF-IDF/BM25 (nhồi nhét từ khóa, chèn chữ ẩn trùng màu nền, dùng kỹ thuật cloaking hiển thị nội dung khác cho bot).\n2. Link spam: Thao túng đồ thị liên kết nhằm gian lận điểm số PageRank (xây dựng trang trại liên kết - link farm, spam bình luận chứa link trên các blog/diễn đàn, mua bán backlink).",
+    "image_path": "src/Slide_300.png"
+  },
+  {
+    "id": "seg_fe_301",
+    "slide": 301,
+    "is_info": false,
+    "topic": "Chương 10: Clustering - Hierarchical Clustering: Agglomerative vs. Divisive.",
+    "question": "Which hierarchical clustering approach is bottom-up?",
+    "vn_question": "",
+    "options": [
+      "Agglomerative clustering",
+      "Divisive clustering",
+      "$K$-means clustering",
+      "Collaborative filtering"
+    ],
+    "vn_options": [],
+    "correct": 0,
+    "answer": 0,
+    "correct_letter": "A",
+    "correct_letters": [
+      "A"
+    ],
+    "correct_choices": [
+      0
+    ],
+    "is_multi": false,
+    "required_choices": 1,
+    "explanation": "Agglomerative (Bottom-up): Khởi đầu với mỗi tài liệu là một cụm đơn lẻ riêng biệt. Ở mỗi bước lặp, thuật toán tìm và gộp hai cụm gần nhau nhất lại với nhau cho đến khi tất cả quy về một cụm gốc duy nhất.\nDivisive (Top-down): Khởi đầu với toàn bộ dữ liệu nằm trong một cụm lớn duy nhất, sau đó chia nhỏ dần thành các cụm con cho đến khi mỗi cụm chỉ còn một tài liệu.",
+    "image_path": "src/Slide_301.png"
+  },
+  {
+    "id": "seg_fe_302",
+    "slide": 302,
+    "is_info": false,
+    "topic": "Chương 10: Clustering - Hierarchical Clustering: Agglomerative vs. Divisive.",
+    "question": "Which hierarchical clustering approach is bottom-up?",
+    "vn_question": "",
+    "options": [
+      "Agglomerative clustering",
+      "Divisive clustering",
+      "$K$-means clustering",
+      "Collaborative filtering"
+    ],
+    "vn_options": [],
+    "correct": 0,
+    "answer": 0,
+    "correct_letter": "A",
+    "correct_letters": [
+      "A"
+    ],
+    "correct_choices": [
+      0
+    ],
+    "is_multi": false,
+    "required_choices": 1,
+    "explanation": "Agglomerative (Bottom-up): Khởi đầu với mỗi tài liệu là một cụm đơn lẻ riêng biệt. Ở mỗi bước lặp, thuật toán tìm và gộp hai cụm gần nhau nhất lại với nhau cho đến khi tất cả quy về một cụm gốc duy nhất.\nDivisive (Top-down): Khởi đầu với toàn bộ dữ liệu nằm trong một cụm lớn duy nhất, sau đó chia nhỏ dần thành các cụm con cho đến khi mỗi cụm chỉ còn một tài liệu.",
+    "image_path": "src/Slide_302.png"
+  },
+  {
+    "id": "seg_fe_303",
+    "slide": 303,
+    "is_info": false,
+    "topic": "Chương 10: Clustering - Clustering vs. Classification in IR.",
+    "question": "What can clustering do for search results that classification cannot?",
+    "vn_question": "",
+    "options": [
+      "Assign predefined labels to documents",
+      "Compute BM25 scores",
+      "Remove stopwords",
+      "Discover structure in the result set of any query"
+    ],
+    "vn_options": [],
+    "correct": 3,
+    "answer": 3,
+    "correct_letter": "D",
+    "correct_letters": [
+      "D"
+    ],
+    "correct_choices": [
+      3
+    ],
+    "is_multi": false,
+    "required_choices": 1,
+    "explanation": "Classification (Có giám sát): Bắt buộc phải có sẵn danh mục nhãn cố định và mô hình được huấn luyện từ trước; không thể thích ứng nếu kết quả tìm kiếm phát sinh một chủ đề hoàn toàn mới.\nClustering (Không giám sát): Không cần gán nhãn trước, có thể gom nhóm động các tài liệu trả về cho những truy vấn đa nghĩa hoặc mới lạ để người dùng dễ dàng định hướng (như công cụ Clusty / Vivisimo).",
+    "image_path": "src/Slide_303.png"
+  },
+  {
+    "id": "seg_fe_304",
+    "slide": 304,
+    "is_info": false,
+    "topic": "Chương 10: Clustering - Clustering vs. Classification in IR.",
+    "question": "What can clustering do for search results that classification cannot?",
+    "vn_question": "",
+    "options": [
+      "Assign predefined labels to documents",
+      "Compute BM25 scores",
+      "Remove stopwords",
+      "Discover structure in the result set of any query"
+    ],
+    "vn_options": [],
+    "correct": 3,
+    "answer": 3,
+    "correct_letter": "D",
+    "correct_letters": [
+      "D"
+    ],
+    "correct_choices": [
+      3
+    ],
+    "is_multi": false,
+    "required_choices": 1,
+    "explanation": "Classification (Có giám sát): Bắt buộc phải có sẵn danh mục nhãn cố định và mô hình được huấn luyện từ trước; không thể thích ứng nếu kết quả tìm kiếm phát sinh một chủ đề hoàn toàn mới.\nClustering (Không giám sát): Không cần gán nhãn trước, có thể gom nhóm động các tài liệu trả về cho những truy vấn đa nghĩa hoặc mới lạ để người dùng dễ dàng định hướng (như công cụ Clusty / Vivisimo).",
+    "image_path": "src/Slide_304.png"
+  },
+  {
+    "id": "seg_fe_305",
+    "slide": 305,
+    "is_info": false,
+    "topic": "Chương 11: Social Search - Tag Taxonomy (Xu et al., 2006).",
+    "question": "According to Xu et al. (2006), \"New York City\" and \"Empire State Building\" are which type of tag?",
+    "vn_question": "",
+    "options": [
+      "Content-based tags",
+      "Subjective tags",
+      "Context-based tags",
+      "Attribute tags"
+    ],
+    "vn_options": [],
+    "correct": 2,
+    "answer": 2,
+    "correct_letter": "C",
+    "correct_letters": [
+      "C"
+    ],
+    "correct_choices": [
+      2
+    ],
+    "is_multi": false,
+    "required_choices": 1,
+    "explanation": "Hệ thống phân loại 4 nhóm thẻ gán trong mạng xã hội / Social Search:\nContext-based: Chỉ ngữ cảnh vị trí địa lý, địa danh, thời gian chụp/tạo tài liệu (\"New York City\", \"Summer 2024\").\nContent-based: Miêu tả đối tượng trực tiếp bên trong tài liệu/ảnh (\"con mèo\", \"xe đạp\").\nSubjective: Thể hiện cảm xúc, đánh giá chủ quan của người gán (\"đẹp\", \"hài hước\", \"tuyệt vời\").\nOrganizational: Thẻ hỗ trợ công việc và phân loại cá nhân (\"todo\", \"my pictures\").",
+    "image_path": "src/Slide_305.png"
+  },
+  {
+    "id": "seg_fe_306",
+    "slide": 306,
+    "is_info": false,
+    "topic": "Chương 11: Social Search - Visualizing Tags: Tag Cloud.",
+    "question": "What is a tag cloud?",
+    "vn_question": "",
+    "options": [
+      "A cluster of servers storing tags",
+      "A list of tags sorted by date",
+      "A weighted list of tags in alphabetical order, weighted by a criterion such as popularity",
+      "A hidden index of spam tags"
+    ],
+    "vn_options": [],
+    "correct": 2,
+    "answer": 2,
+    "correct_letter": "C",
+    "correct_letters": [
+      "C"
+    ],
+    "correct_choices": [
+      2
+    ],
+    "is_multi": false,
+    "required_choices": 1,
+    "explanation": "Tag cloud hiển thị trực quan không gian chủ đề: từ nào được cộng đồng gán nhãn nhiều hơn (tần suất cao hơn) sẽ xuất hiện với cỡ chữ to hơn và nổi bật hơn, giúp người dùng nắm bắt nhanh các xu hướng tìm kiếm phổ biến.",
+    "image_path": "src/Slide_306.png"
+  },
+  {
+    "id": "seg_fe_307",
+    "slide": 307,
+    "is_info": false,
+    "topic": "Chương 11: Social Search / Link Analysis - HITS vs. PageRank.",
+    "question": "How does the HITS algorithm differ from PageRank?",
+    "vn_question": "",
+    "options": [
+      "HITS ignores links",
+      "HITS uses only anchor text",
+      "HITS is used only for desktop search",
+      "HITS is query-dependent and iteratively updates authority and hub scores"
+    ],
+    "vn_options": [],
+    "correct": 3,
+    "answer": 3,
+    "correct_letter": "D",
+    "correct_letters": [
+      "D"
+    ],
+    "correct_choices": [
+      3
+    ],
+    "is_multi": false,
+    "required_choices": 1,
+    "explanation": "PageRank: Độc lập với truy vấn (Query-independent), tính toán tĩnh offline một giá trị độ uy tín duy nhất cho mỗi trang trên toàn bộ web.\nHITS: Phụ thuộc truy vấn (Query-dependent). Nhận câu truy vấn, xây dựng đồ thị cục bộ (Root set và Base set), sau đó chạy lặp để phân tách:\nAuthority score: Đo lường độ tin cậy của trang chứa nội dung chính thống (được nhiều Hub trỏ tới).\nHub score: Đo lường giá trị của trang đóng vai trò như danh bạ/thư mục dẫn đường (trỏ tới nhiều Authority uy tín).",
+    "image_path": "src/Slide_307.png"
+  },
+  {
+    "id": "seg_fe_308",
+    "slide": 308,
+    "is_info": false,
+    "topic": "Chương 11: Social Search - Community-Based Question Answering.",
+    "question": "Which is a disadvantage of community-based question answering?",
+    "vn_question": "",
+    "options": [
+      "The user may wait days for an answer, or get no answer or wrong/spam answers",
+      "Users cannot see multiple opinions",
+      "Users cannot interact with others",
+      "It cannot handle rare information needs"
+    ],
+    "vn_options": [],
+    "correct": 0,
+    "answer": 0,
+    "correct_letter": "A",
+    "correct_letters": [
+      "A"
+    ],
+    "correct_choices": [
+      0
+    ],
+    "is_multi": false,
+    "required_choices": 1,
+    "explanation": "Do phụ thuộc hoàn toàn vào sự tự nguyện và kiến thức của các thành viên trong cộng đồng con người:\n Độ trễ thời gian rất cao so với việc máy tìm kiếm tự động phản hồi trong vài mili-giây.\n Chất lượng câu trả lời không đồng đều, thiếu sự kiểm duyệt học thuật chặt chẽ.",
+    "image_path": "src/Slide_308.png"
+  },
+  {
+    "id": "seg_fe_309",
+    "slide": 309,
+    "is_info": false,
+    "topic": "Chương 11: Social Search / Information Filtering - Document Filtering Architecture.",
+    "question": "What are the two main components of a document filtering system?",
+    "vn_question": "",
+    "options": [
+      "Crawler and indexer",
+      "Mapper and reducer",
+      "Hub and authority",
+      "Profile and decision mechanism"
+    ],
+    "vn_options": [],
+    "correct": 3,
+    "answer": 3,
+    "correct_letter": "D",
+    "correct_letters": [
+      "D"
+    ],
+    "correct_choices": [
+      3
+    ],
+    "is_multi": false,
+    "required_choices": 1,
+    "explanation": "Trong hệ thống lọc tài liệu (ví dụ: luồng thông báo tin tức thời gian thực, lọc email, định tuyến thông tin):\n1. User Profile (Hồ sơ): Đại diện cho mối quan tâm lâu dài của người dùng (tương tự như một truy vấn cố định đứng đợi sẵn).\n2. Decision mechanism (Cơ chế ra quyết định): So khớp mỗi văn bản mới xuất hiện trong luồng dữ liệu (stream) với hồ sơ, tính toán điểm số và quyết định xem văn bản có đạt ngưỡng để gửi thông báo/chuyển tiếp tới người dùng hay không.",
+    "image_path": "src/Slide_309.png"
+  },
+  {
+    "id": "seg_fe_310",
+    "slide": 310,
+    "is_info": false,
+    "topic": "Chương 11: Social Search / Information Filtering - Document Filtering Architecture.",
+    "question": "What are the two main components of a document filtering system?",
+    "vn_question": "",
+    "options": [
+      "Crawler and indexer",
+      "Mapper and reducer",
+      "Hub and authority",
+      "Profile and decision mechanism"
+    ],
+    "vn_options": [],
+    "correct": 3,
+    "answer": 3,
+    "correct_letter": "D",
+    "correct_letters": [
+      "D"
+    ],
+    "correct_choices": [
+      3
+    ],
+    "is_multi": false,
+    "required_choices": 1,
+    "explanation": "Trong hệ thống lọc tài liệu (ví dụ: luồng thông báo tin tức thời gian thực, lọc email, định tuyến thông tin):\n1. User Profile (Hồ sơ): Đại diện cho mối quan tâm lâu dài của người dùng (tương tự như một truy vấn cố định đứng đợi sẵn).\n2. Decision mechanism (Cơ chế ra quyết định): So khớp mỗi văn bản mới xuất hiện trong luồng dữ liệu (stream) với hồ sơ, tính toán điểm số và quyết định xem văn bản có đạt ngưỡng để gửi thông báo/chuyển tiếp tới người dùng hay không.",
+    "image_path": "src/Slide_310.png"
+  },
+  {
+    "id": "seg_fe_311",
+    "slide": 311,
+    "is_info": false,
+    "topic": "Chương 11: Social Search - Recommender Systems: Collaborative Filtering.",
+    "question": "What is the goal of a recommender system using collaborative filtering?",
+    "vn_question": "",
+    "options": [
+      "To crawl e-commerce websites",
+      "To translate product descriptions",
+      "To predict the missing ratings users have not given to items",
+      "To remove duplicate products"
+    ],
+    "vn_options": [],
+    "correct": 2,
+    "answer": 2,
+    "correct_letter": "C",
+    "correct_letters": [
+      "C"
+    ],
+    "correct_choices": [
+      2
+    ],
+    "is_multi": false,
+    "required_choices": 1,
+    "explanation": "Dữ liệu người dùng - sản phẩm được biểu diễn dưới dạng ma trận đánh giá thưa thớt (User-Item Rating Matrix), trong đó hầu hết các ô đều bị bỏ trống.\n Nhiệm vụ của Collaborative Filtering (bằng phương pháp láng giềng k-NN hoặc phân rã ma trận Matrix Factorization) là lấp đầy các ô trống bằng điểm dự đoán, từ đó đề xuất cho người dùng những sản phẩm có điểm dự đoán cao nhất.",
+    "image_path": "src/Slide_311.png"
+  },
+  {
+    "id": "seg_fe_312",
+    "slide": 312,
+    "is_info": false,
+    "topic": "Chương 11: Social Search / Distributed IR - Metasearch Engines.",
+    "question": "How does a metasearch engine work?",
+    "vn_question": "",
+    "options": [
+      "It broadcasts the query to several web search engines and merges their result lists",
+      "It uses a huge number of small peer nodes",
+      "It crawls only one website",
+      "It indexes only metadata"
+    ],
+    "vn_options": [],
+    "correct": 0,
+    "answer": 0,
+    "correct_letter": "A",
+    "correct_letters": [
+      "A"
+    ],
+    "correct_choices": [
+      0
+    ],
+    "is_multi": false,
+    "required_choices": 1,
+    "explanation": "Metasearch Engine (như Dogpile, MetaCrawler) không tự thu thập dữ liệu bằng crawler và không duy trì chỉ mục văn bản khổng lồ.\n Nó đóng vai trò cổng trung gian: Nhận truy vấn → chuyển tiếp tới Google, Bing, Yahoo... → chuẩn hóa điểm số → giải quyết trùng lặp (deduplication) và hợp nhất danh sách xếp hạng (Result Merging).",
+    "image_path": "src/Slide_312.png"
+  }
+];

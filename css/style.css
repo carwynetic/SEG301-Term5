@@ -2712,3 +2712,380 @@ button.option-btn.incorrect-choice {
 
 
 
+
+/* ==========================================================================
+   EXAM UPGRADES: SOURCE SELECTOR, LIGHTBOX MODAL, HISTORY DASHBOARD & KATEX
+   ========================================================================== */
+
+/* 1. Exam Source Selector Cards */
+.exam-source-container {
+  margin: 1.5rem 0 1rem 0;
+  text-align: left;
+}
+
+.exam-source-selector {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 1.25rem;
+  margin-top: 0.75rem;
+}
+
+.source-card {
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+  padding: 1.25rem;
+  background: var(--bg-card);
+  border: 2px solid var(--border-color);
+  border-radius: var(--radius-lg);
+  cursor: pointer;
+  position: relative;
+  transition: all 0.25s ease;
+}
+
+.source-card:hover {
+  border-color: var(--primary);
+  background: var(--bg-card-hover, rgba(99, 102, 241, 0.05));
+  transform: translateY(-2px);
+}
+
+.source-card.selected {
+  border-color: var(--primary);
+  background: rgba(99, 102, 241, 0.08);
+  box-shadow: 0 0 0 1px var(--primary);
+}
+
+.source-card input[type="radio"] {
+  margin-top: 0.35rem;
+  accent-color: var(--primary);
+  width: 1.2rem;
+  height: 1.2rem;
+  cursor: pointer;
+}
+
+.source-info {
+  flex: 1;
+}
+
+.source-title {
+  font-size: 1.05rem;
+  font-weight: 700;
+  color: var(--text-primary);
+  margin-bottom: 0.4rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.source-desc {
+  font-size: 0.88rem;
+  color: var(--text-secondary);
+  line-height: 1.45;
+}
+
+.source-badge {
+  position: absolute;
+  top: -10px;
+  right: 15px;
+  background: linear-gradient(135deg, #f59e0b, #ef4444);
+  color: #fff;
+  font-size: 0.72rem;
+  font-weight: 700;
+  padding: 0.2rem 0.65rem;
+  border-radius: 999px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  box-shadow: 0 2px 6px rgba(245, 158, 11, 0.4);
+}
+
+/* 2. Lightbox Modal for Slide Image Inspection */
+.modal-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.85);
+  backdrop-filter: blur(5px);
+  z-index: 9999;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  padding: 1.5rem;
+  animation: fadeInModal 0.2s ease-out;
+}
+
+.modal-overlay.active {
+  display: flex;
+}
+
+@keyframes fadeInModal {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+.image-modal-box {
+  background: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-lg);
+  max-width: 980px;
+  width: 100%;
+  max-height: 92vh;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.6);
+  animation: slideUpModal 0.25s ease-out;
+}
+
+@keyframes slideUpModal {
+  from { transform: translateY(20px) scale(0.98); }
+  to { transform: translateY(0) scale(1); }
+}
+
+.image-modal-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 1.5rem;
+  border-bottom: 1px solid var(--border-color);
+  font-weight: 700;
+  font-size: 1.1rem;
+  color: var(--text-primary);
+  background: var(--bg-secondary);
+}
+
+.modal-close-btn {
+  background: transparent;
+  border: none;
+  font-size: 1.8rem;
+  line-height: 1;
+  color: var(--text-secondary);
+  cursor: pointer;
+  padding: 0.2rem 0.5rem;
+  border-radius: var(--radius-sm);
+  transition: all 0.2s;
+}
+
+.modal-close-btn:hover {
+  color: var(--accent-rose);
+  background: rgba(239, 68, 68, 0.1);
+}
+
+.image-modal-body {
+  padding: 1.25rem;
+  overflow: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #060913;
+}
+
+.image-modal-body img {
+  max-width: 100%;
+  max-height: 75vh;
+  object-fit: contain;
+  border-radius: var(--radius-sm);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+}
+
+/* 3. Button View Slide Image */
+.btn-view-slide-img {
+  background: rgba(99, 102, 241, 0.15);
+  color: var(--primary);
+  border: 1px solid rgba(99, 102, 241, 0.35);
+  padding: 0.35rem 0.85rem;
+  border-radius: var(--radius-md);
+  font-size: 0.82rem;
+  font-weight: 600;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  transition: all 0.2s ease;
+}
+
+.btn-view-slide-img:hover {
+  background: var(--primary);
+  color: #fff;
+  border-color: var(--primary);
+  transform: translateY(-1px);
+}
+
+/* 4. Exam History Dashboard */
+.exam-history-container {
+  margin-top: 2.5rem;
+  text-align: left;
+  border-top: 1px solid var(--border-color);
+  padding-top: 2rem;
+}
+
+.exam-history-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 1.25rem;
+}
+
+.exam-history-header h3 {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: var(--text-primary);
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  margin: 0;
+}
+
+.exam-history-summary {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.history-metric {
+  background: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-md);
+  padding: 1.1rem 1.25rem;
+  text-align: center;
+}
+
+.history-metric-val {
+  font-size: 1.85rem;
+  font-weight: 800;
+  font-family: var(--font-mono, monospace);
+  margin-bottom: 0.25rem;
+}
+
+.history-metric-lbl {
+  font-size: 0.82rem;
+  color: var(--text-secondary);
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.exam-history-table-wrap {
+  overflow-x: auto;
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-md);
+  background: var(--bg-card);
+}
+
+.exam-history-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.9rem;
+}
+
+.exam-history-table th {
+  background: var(--bg-secondary);
+  color: var(--text-secondary);
+  font-weight: 600;
+  padding: 0.85rem 1rem;
+  text-align: left;
+  border-bottom: 1px solid var(--border-color);
+  white-space: nowrap;
+}
+
+.exam-history-table td {
+  padding: 0.85rem 1rem;
+  border-bottom: 1px solid var(--border-color);
+  color: var(--text-primary);
+  vertical-align: middle;
+}
+
+.exam-history-table tr:last-child td {
+  border-bottom: none;
+}
+
+.exam-history-table tr:hover td {
+  background: var(--bg-card-hover, rgba(255, 255, 255, 0.02));
+}
+
+.badge-source {
+  display: inline-block;
+  padding: 0.2rem 0.6rem;
+  border-radius: 999px;
+  font-size: 0.75rem;
+  font-weight: 600;
+}
+
+.badge-source-fe {
+  background: rgba(245, 158, 11, 0.15);
+  color: #f59e0b;
+  border: 1px solid rgba(245, 158, 11, 0.35);
+}
+
+.badge-source-bank {
+  background: rgba(59, 130, 246, 0.15);
+  color: #3b82f6;
+  border: 1px solid rgba(59, 130, 246, 0.35);
+}
+
+.badge-score-pill {
+  font-weight: 700;
+  font-family: var(--font-mono, monospace);
+  padding: 0.25rem 0.65rem;
+  border-radius: var(--radius-sm);
+  display: inline-block;
+}
+
+.badge-score-pass {
+  background: rgba(16, 185, 129, 0.15);
+  color: #10b981;
+}
+
+.badge-score-fail {
+  background: rgba(239, 68, 68, 0.15);
+  color: #ef4444;
+}
+
+.btn-history-review {
+  background: var(--primary);
+  color: #fff;
+  border: none;
+  padding: 0.35rem 0.85rem;
+  border-radius: var(--radius-sm);
+  font-size: 0.82rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.btn-history-review:hover {
+  background: var(--primary-hover, #4f46e5);
+  transform: translateY(-1px);
+}
+
+.btn-history-clear {
+  background: transparent;
+  color: var(--text-secondary);
+  border: 1px solid var(--border-color);
+  padding: 0.4rem 0.85rem;
+  border-radius: var(--radius-sm);
+  font-size: 0.82rem;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.btn-history-clear:hover {
+  color: var(--accent-rose);
+  border-color: var(--accent-rose);
+}
+
+/* 5. KaTeX Display and Math formatting */
+.katex-display {
+  overflow-x: auto;
+  overflow-y: hidden;
+  padding: 0.5rem 0;
+  margin: 0.75rem 0;
+}
+
+.katex {
+  font-size: 1.05em;
+  text-rendering: geometricPrecision;
+}
+
+.math-scroll {
+  max-width: 100%;
+  overflow-x: auto;
+}
